@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef HMCHIPECOSYSTEMPAIRACCESSORYREQUEST_H
+#define HMCHIPECOSYSTEMPAIRACCESSORYREQUEST_H
+
+@class NSString;
+
+
+#import "HMCHIPEcosystemRequest.h"
+#import "HMMatterHome.h"
+
+@interface HMCHIPEcosystemPairAccessoryRequest : HMCHIPEcosystemRequest
+
+@property (readonly, copy, nonatomic) HMMatterHome *home; // ivar: _home
+@property (readonly, copy, nonatomic) NSString *pairingIdentifier; // ivar: _pairingIdentifier
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(id)attributeDescriptions;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithPairingIdentifier:(id)arg0 home:(id)arg1 ;
+-(id)messageType;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

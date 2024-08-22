@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef TSTCELLDIFFARRAYSEGMENT_H
+#define TSTCELLDIFFARRAYSEGMENT_H
+
+@class TSPAbstractMutableLargeArraySegment;
+
+
+
+@interface TSTCellDiffArraySegment : TSPAbstractMutableLargeArraySegment
+
+
+
+-(NSUInteger)componentReadVersion;
+-(NSUInteger)estimatedByteSizeOfElement:(id)arg0 ;
+-(void)loadFromUnarchiver:(id)arg0 ;
+-(void)saveToArchiver:(id)arg0 ;
+
+
+@end
+
+
+#endif

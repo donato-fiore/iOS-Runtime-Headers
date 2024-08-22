@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _TTC7SWIFTUI21_VIEWLIST_INDIRECTMAP_H
+#define _TTC7SWIFTUI21_VIEWLIST_INDIRECTMAP_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC7SwiftUI21_ViewList_IndirectMap : SwiftObject {
+    ? subgraph;
+    ? map;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

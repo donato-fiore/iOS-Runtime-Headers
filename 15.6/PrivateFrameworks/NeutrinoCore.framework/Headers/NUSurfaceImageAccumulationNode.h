@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef NUSURFACEIMAGEACCUMULATIONNODE_H
+#define NUSURFACEIMAGEACCUMULATIONNODE_H
+
+@protocol NUMutablePurgeableSurfaceImage;
+
+
+#import "NUImageAccumulationNode.h"
+
+@interface NUSurfaceImageAccumulationNode : NUImageAccumulationNode
+
+@property (readonly, nonatomic) NSObject<NUMutablePurgeableSurfaceImage> *surfaceImage;
+
+
+-(id)_newImage;
+
+
+@end
+
+
+#endif

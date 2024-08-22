@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _TTC35_MUSICKITINTERNAL_MEDIAPLAYBACKCOREP33_8177ED806F85F03DE84DAFB709F9152445MUSICKITINTERNAL_MEDIAPLAYBACKCORE_FINALCLASS_H
+#define _TTC35_MUSICKITINTERNAL_MEDIAPLAYBACKCOREP33_8177ED806F85F03DE84DAFB709F9152445MUSICKITINTERNAL_MEDIAPLAYBACKCORE_FINALCLASS_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC35_MusicKitInternal_MediaPlaybackCoreP33_8177ED806F85F03DE84DAFB709F9152445MusicKitInternal_MediaPlaybackCore_FinalClass : NSObject
+
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

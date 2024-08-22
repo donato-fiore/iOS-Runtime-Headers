@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef TAPERSISTENCEMANAGERSETTINGS_H
+#define TAPERSISTENCEMANAGERSETTINGS_H
+
+@class NSURL, NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface TAPersistenceManagerSettings : NSObject
+
+@property (retain, nonatomic) NSURL *persistenceDirectoryURL; // ivar: _persistenceDirectoryURL
+@property (retain, nonatomic) NSString *persistenceStoreFileName; // ivar: _persistenceStoreFileName
+
+
+-(id)_getStoreURL;
+-(id)init;
+-(id)initWithDirectoryURLOrDefault:(id)arg0 storeFileNameOrDefault:(id)arg1 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef AVCONTENTKEYRESPONSEFAIRPLAYSTREAMING_H
+#define AVCONTENTKEYRESPONSEFAIRPLAYSTREAMING_H
+
+@class NSData, NSDate;
+
+
+#import "AVContentKeyResponse.h"
+
+@interface AVContentKeyResponseFairPlayStreaming : AVContentKeyResponse {
+    NSData *_keyData;
+    NSDate *_renewalDate;
+}
+
+
+
+
+-(id)initWithKeyData:(id)arg0 renewalDate:(id)arg1 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

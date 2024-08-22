@@ -1,0 +1,18 @@
+
+
+#include "PanoramaProcessor.h"
+#include "LKTFlowGPU.h"
+#include "PanoramaRegistrationShaders.h"
+#include "PanoramaRegistrationStage.h"
+#include "PanoramaParallaxStageShaders.h"
+#include "PanoramaParallaxStage.h"
+#include "PanoramaStitchingShaders.h"
+#include "PanoramaStitchingStage.h"
+#include "MetalContext.h"
+#include "ACTPanoGPUDownscaler.h"
+#include "PanoramaPreviewOutput.h"
+#include "PanoramaOutput.h"
+#include "PanoramaAssemblyShaders.h"
+#include "StagingBuffer.h"
+#include "PanoramaAssemblyStage.h"
+#include "PanoramaGyroStage.h"

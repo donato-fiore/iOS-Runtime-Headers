@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef STSINGLELINEDETAILTEXTHEADERVIEW_H
+#define STSINGLELINEDETAILTEXTHEADERVIEW_H
+
+@class UILabel;
+
+
+#import "STSingleLineHeaderView.h"
+
+@interface STSingleLineDetailTextHeaderView : STSingleLineHeaderView
+
+@property (readonly, nonatomic) UILabel *detailLabel; // ivar: _detailLabel
+
+
+-(id)initWithSpecifier:(id)arg0 useContentLayoutGuide:(BOOL)arg1 ;
+-(void)reloadFromSpecifier;
+
+
+@end
+
+
+#endif

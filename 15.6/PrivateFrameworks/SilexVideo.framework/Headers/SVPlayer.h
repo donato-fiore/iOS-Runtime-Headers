@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef SVPLAYER_H
+#define SVPLAYER_H
+
+@class AVPlayer;
+
+
+
+@interface SVPlayer : AVPlayer
+
+@property (readonly, nonatomic) int audioMode; // ivar: _audioMode
+
+
+-(id)initWithAudioMode:(int)arg0 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

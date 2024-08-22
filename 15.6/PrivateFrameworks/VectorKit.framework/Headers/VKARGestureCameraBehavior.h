@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef VKARGESTURECAMERABEHAVIOR_H
+#define VKARGESTURECAMERABEHAVIOR_H
+
+
+
+#import "VKGestureCameraBehavior.h"
+#import "VKARCameraController.h"
+
+@interface VKARGestureCameraBehavior : VKGestureCameraBehavior {
+    VKARCameraController *_arCameraController;
+    Geocentric<double> _startPanPosition;
+}
+
+
+
+
+-(id)initWithARCameraController:(id)arg0 ;
+-(void)beginPan:(struct CGPoint )arg0 ;
+-(void)dealloc;
+-(void)updatePan:(struct CGPoint )arg0 lastScreenPoint:(struct CGPoint )arg1 ;
+-(void)updateRotate:(CGFloat)arg0 atScreenPoint:(struct CGPoint )arg1 ;
+-(void)updateZoom:(struct CGPoint )arg0 oldFactor:(CGFloat)arg1 newFactor:(CGFloat)arg2 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,52 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef WFLOCATIONTRIGGERCONFIGURATIONVIEWCONTROLLER_H
+#define WFLOCATIONTRIGGERCONFIGURATIONVIEWCONTROLLER_H
+
+@class WFTriggerConfigurationViewController, NSDateFormatter, NSString, NSArray, UITableView;
+@protocol UITableViewDataSource, UITableViewDelegate, WFLocationPickerViewControllerDelegate, WFTimeRangePickerViewControllerDelegate;
+
+
+
+@interface WFLocationTriggerConfigurationViewController : WFTriggerConfigurationViewController <UITableViewDataSource, UITableViewDelegate, WFLocationPickerViewControllerDelegate, WFTimeRangePickerViewControllerDelegate>
+
+
+
+@property (retain, nonatomic) NSDateFormatter *dateFormatter; // ivar: _dateFormatter
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) BOOL isArrive; // ivar: _isArrive
+@property (nonatomic) BOOL isLocationBasedAlertsEnabled; // ivar: _isLocationBasedAlertsEnabled
+@property (readonly, nonatomic) NSArray *sections; // ivar: _sections
+@property (readonly) Class superclass;
+@property (retain, nonatomic) UITableView *tableView; // ivar: _tableView
+
+
+-(NSInteger)numberOfSectionsInTableView:(id)arg0 ;
+-(NSInteger)tableView:(id)arg0 numberOfRowsInSection:(NSInteger)arg1 ;
+-(id)infoForSection:(NSInteger)arg0 ;
+-(id)initWithTrigger:(id)arg0 mode:(NSUInteger)arg1 ;
+-(id)tableView:(id)arg0 cellForRowAtIndexPath:(id)arg1 ;
+-(id)tableView:(id)arg0 titleForHeaderInSection:(NSInteger)arg1 ;
+-(id)tableView:(id)arg0 viewForFooterInSection:(NSInteger)arg1 ;
+-(id)tableView:(id)arg0 viewForHeaderInSection:(NSInteger)arg1 ;
+-(id)textForSummaryFooterView;
+-(void)checkLocationAuthorization;
+-(void)loadView;
+-(void)locationPicker:(id)arg0 didFinishWithValue:(id)arg1 ;
+-(void)locationPickerDidCancel:(id)arg0 ;
+-(void)presentNavigationControllerWithRootViewController:(id)arg0 ;
+-(void)tableView:(id)arg0 didSelectRowAtIndexPath:(id)arg1 ;
+-(void)timeRangePickerViewController:(id)arg0 didPickStartTime:(id)arg1 endTime:(id)arg2 ;
+-(void)timeRangePickerViewControllerDidCancel:(id)arg0 ;
+-(void)viewWillAppear:(BOOL)arg0 ;
+
+
+@end
+
+
+#endif

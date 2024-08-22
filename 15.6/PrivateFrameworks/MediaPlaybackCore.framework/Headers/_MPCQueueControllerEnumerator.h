@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _MPCQUEUECONTROLLERENUMERATOR_H
+#define _MPCQUEUECONTROLLERENUMERATOR_H
+
+@class NSEnumerator, MPSectionedIdentifierListPosition;
+
+
+#import "MPCQueueController.h"
+
+@interface _MPCQueueControllerEnumerator : NSEnumerator {
+    NSInteger _nextEnumerator;
+    BOOL _isEnumeratingFromRepeatAllBase;
+    BOOL _hasEmittedItemFromRepeatAllBase;
+}
+
+
+@property (readonly, nonatomic) MPSectionedIdentifierListPosition *endPosition; // ivar: _endPosition
+@property (readonly, nonatomic) NSEnumerator *enumerator; // ivar: _enumerator
+@property (readonly, nonatomic) NSInteger mode; // ivar: _mode
+@property (readonly, nonatomic) NSUInteger options; // ivar: _options
+@property (readonly, weak, nonatomic) MPCQueueController *queueController; // ivar: _queueController
+@property (readonly, nonatomic) MPSectionedIdentifierListPosition *startPosition; // ivar: _startPosition
+
+
++(id)enumeratorWithQueueController:(id)arg0 mode:(NSInteger)arg1 options:(NSUInteger)arg2 startPosition:(id)arg3 endPosition:(id)arg4 ;
+-(id)_init;
+-(id)nextObject;
+-(void)_buildEnumerator;
+
+
+@end
+
+
+#endif

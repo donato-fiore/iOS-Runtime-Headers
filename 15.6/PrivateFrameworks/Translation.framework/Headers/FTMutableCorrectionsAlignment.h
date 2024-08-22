@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef FTMUTABLECORRECTIONSALIGNMENT_H
+#define FTMUTABLECORRECTIONSALIGNMENT_H
+
+@class NSString;
+
+
+#import "FTCorrectionsAlignment.h"
+
+@interface FTMutableCorrectionsAlignment : FTCorrectionsAlignment
+
+@property (copy, nonatomic) NSString *corrected_words;
+@property (copy, nonatomic) NSString *original_words;
+
+
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)init;
+
+
+@end
+
+
+#endif

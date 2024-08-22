@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef VKLINE_H
+#define VKLINE_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface VKLine : NSObject
+
+@property (nonatomic) CGFloat a; // ivar: _a
+@property (nonatomic) CGFloat b; // ivar: _b
+
+
+
+
+@end
+
+
+#endif

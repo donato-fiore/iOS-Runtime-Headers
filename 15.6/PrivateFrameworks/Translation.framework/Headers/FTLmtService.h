@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef FTLMTSERVICE_H
+#define FTLMTSERVICE_H
+
+@class OspreyChannel;
+
+
+
+@interface FTLmtService : OspreyChannel
+
+
+
+// -(void)performLmScorer:(id)arg0 requestBuilder:(id)arg1 completion:(unk)arg2  ;
+
+
+@end
+
+
+#endif

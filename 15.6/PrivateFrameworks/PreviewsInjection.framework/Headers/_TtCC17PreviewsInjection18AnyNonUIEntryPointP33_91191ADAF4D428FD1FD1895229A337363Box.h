@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _TTCC17PREVIEWSINJECTION18ANYNONUIENTRYPOINTP33_91191ADAF4D428FD1FD1895229A337363BOX_H
+#define _TTCC17PREVIEWSINJECTION18ANYNONUIENTRYPOINTP33_91191ADAF4D428FD1FD1895229A337363BOX_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCC17PreviewsInjection18AnyNonUIEntryPointP33_91191ADAF4D428FD1FD1895229A337363Box : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

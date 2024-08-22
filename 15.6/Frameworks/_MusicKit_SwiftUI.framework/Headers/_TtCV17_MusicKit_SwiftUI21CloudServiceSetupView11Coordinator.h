@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _TTCV17_MUSICKIT_SWIFTUI21CLOUDSERVICESETUPVIEW11COORDINATOR_H
+#define _TTCV17_MUSICKIT_SWIFTUI21CLOUDSERVICESETUPVIEW11COORDINATOR_H
+
+@protocol SKCloudServiceSetupViewControllerDelegate;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtCV17_MusicKit_SwiftUI21CloudServiceSetupView11Coordinator : NSObject <SKCloudServiceSetupViewControllerDelegate>
+
+ {
+    ? parent;
+}
+
+
+
+
+-(id)init;
+-(void)cloudServiceSetupViewControllerDidDismiss:(id)arg0 ;
+
+
+@end
+
+
+#endif

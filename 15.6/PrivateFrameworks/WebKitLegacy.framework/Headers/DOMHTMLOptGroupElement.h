@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef DOMHTMLOPTGROUPELEMENT_H
+#define DOMHTMLOPTGROUPELEMENT_H
+
+@class NSString;
+
+
+#import "DOMHTMLElement.h"
+
+@interface DOMHTMLOptGroupElement : DOMHTMLElement
+
+@property BOOL disabled;
+@property (copy) NSString *label;
+
+
+
+
+@end
+
+
+#endif

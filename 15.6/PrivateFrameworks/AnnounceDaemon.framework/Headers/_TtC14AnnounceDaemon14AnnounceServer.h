@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _TTC14ANNOUNCEDAEMON14ANNOUNCESERVER_H
+#define _TTC14ANNOUNCEDAEMON14ANNOUNCESERVER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC14AnnounceDaemon14AnnounceServer : NSObject {
+    ? announceServiceListener;
+    ? playbackSessionServiceListener;
+    ? announceReachabilityServiceListener;
+    ? rapportEventStreamHandler;
+    ? systemNotificationObserver;
+    ? tonePlayerServiceListener;
+}
+
+
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

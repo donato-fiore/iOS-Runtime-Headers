@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _TTCE15REMINDERSUICORECSO8NSBUNDLEP33_B3EE024F6F3313E6367BDFB092FD693711LOOKUPCLASS_H
+#define _TTCE15REMINDERSUICORECSO8NSBUNDLEP33_B3EE024F6F3313E6367BDFB092FD693711LOOKUPCLASS_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCE15RemindersUICoreCSo8NSBundleP33_B3EE024F6F3313E6367BDFB092FD693711LookupClass : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

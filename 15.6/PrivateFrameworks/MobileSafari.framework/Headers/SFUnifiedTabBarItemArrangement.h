@@ -1,0 +1,40 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef SFUNIFIEDTABBARITEMARRANGEMENT_H
+#define SFUNIFIEDTABBARITEMARRANGEMENT_H
+
+@class NSIndexSet, NSArray;
+
+#import <Foundation/Foundation.h>
+
+#import "SFUnifiedBarItem.h"
+
+@interface SFUnifiedTabBarItemArrangement : NSObject
+
+@property (readonly, nonatomic) SFUnifiedBarItem *activeItem; // ivar: _activeItem
+@property (readonly, nonatomic) NSUInteger activeItemIndex; // ivar: _activeItemIndex
+@property (readonly, nonatomic) BOOL activeItemIsExpanded; // ivar: _activeItemIsExpanded
+@property (readonly, nonatomic) NSInteger activeItemSquishState; // ivar: _activeItemSquishState
+@property (readonly, copy, nonatomic) NSIndexSet *allItemIndexes;
+@property (readonly, copy, nonatomic) NSArray *items; // ivar: _items
+@property (readonly, nonatomic) BOOL revealsSquishedActiveItem;
+
+
+-(BOOL)isEqualToArrangement:(id)arg0 ;
+-(id)arrangementWithActiveItem:(id)arg0 ;
+-(id)arrangementWithActiveItemIsExpanded:(BOOL)arg0 ;
+-(id)arrangementWithActiveItemSquishState:(NSInteger)arg0 ;
+-(id)init;
+-(id)initWithItem:(id)arg0 activeItemIsExpanded:(BOOL)arg1 ;
+-(id)initWithItems:(id)arg0 activeItem:(id)arg1 ;
+-(id)initWithItems:(id)arg0 activeItem:(id)arg1 activeItemIsExpanded:(BOOL)arg2 ;
+-(void)determineActiveItemSquishStateIfNeeded:(BOOL)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef CSDASHBOARDNOTIFICATIONVERSUSPAGINGSCROLLSETTINGS_H
+#define CSDASHBOARDNOTIFICATIONVERSUSPAGINGSCROLLSETTINGS_H
+
+@class PTSettings;
+
+
+
+@interface CSDashBoardNotificationVersusPagingScrollSettings : PTSettings
+
+@property (nonatomic) BOOL colorsBackground; // ivar: _colorsBackground
+@property (nonatomic) CGFloat leadingInset; // ivar: _leadingInset
+@property (nonatomic) CGFloat trailingInset; // ivar: _trailingInset
+
+
++(id)settingsControllerModule;
+-(void)setDefaultValues;
+
+
+@end
+
+
+#endif

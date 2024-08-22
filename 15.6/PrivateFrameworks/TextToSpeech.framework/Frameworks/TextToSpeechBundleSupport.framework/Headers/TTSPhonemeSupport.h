@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef TTSPHONEMESUPPORT_H
+#define TTSPHONEMESUPPORT_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface TTSPhonemeSupport : NSObject
+
+
+
++(id)lhPhonemesFromIPA:(id)arg0 language:(id)arg1 ;
++(id)phonemesFromIPA:(id)arg0 language:(id)arg1 ;
++(id)supportedIPAPhonemeLanguages;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef MPSMATRIXRANDOMPHILOX_H
+#define MPSMATRIXRANDOMPHILOX_H
+
+@class MPSParallelRandomPhilox;
+
+
+#import "MPSMatrixRandom.h"
+
+@interface MPSMatrixRandomPhilox : MPSMatrixRandom {
+    MPSParallelRandomPhilox *_parallelFilter;
+}
+
+
+
+
+-(id)initWithCoder:(id)arg0 device:(id)arg1 ;
+-(id)initWithDevice:(id)arg0 ;
+-(id)initWithDevice:(id)arg0 destinationDataType:(unsigned int)arg1 seed:(NSUInteger)arg2 ;
+-(id)initWithDevice:(id)arg0 destinationDataType:(unsigned int)arg1 seed:(NSUInteger)arg2 distributionDescriptor:(id)arg3 ;
+-(void)dealloc;
+-(void)encodeToCommandBuffer:(id)arg0 destinationMatrix:(id)arg1 ;
+-(void)encodeToCommandBuffer:(id)arg0 destinationVector:(id)arg1 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

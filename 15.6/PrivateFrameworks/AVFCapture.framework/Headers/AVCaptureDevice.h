@@ -1,0 +1,327 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef AVCAPTUREDEVICE_H
+#define AVCAPTUREDEVICE_H
+
+@class AVCaptureDeviceInputSource, NSArray, NSString;
+
+#import <Foundation/Foundation.h>
+
+#import "AVCaptureDeviceInternal.h"
+#import "AVCaptureDeviceFormat.h"
+
+@interface AVCaptureDevice : NSObject {
+    AVCaptureDeviceInternal *_internal;
+}
+
+
+@property (retain, nonatomic) AVCaptureDeviceFormat *activeFormat;
+@property (retain, nonatomic) AVCaptureDeviceInputSource *activeInputSource;
+@property (nonatomic) ? activeVideoMaxFrameDuration;
+@property (nonatomic) ? activeVideoMinFrameDuration;
+@property (readonly, nonatomic, getter=isConnected) BOOL connected;
+@property (readonly, nonatomic) NSArray *formats;
+@property (readonly, nonatomic, getter=isInUseByAnotherApplication) BOOL inUseByAnotherApplication; // ivar: _inUseByAnotherApplication
+@property (readonly, nonatomic) NSArray *inputSources; // ivar: _inputSources
+@property (readonly, nonatomic) NSArray *linkedDevices; // ivar: _linkedDevices
+@property (readonly, nonatomic) NSString *localizedName;
+@property (readonly, nonatomic) NSString *manufacturer; // ivar: _manufacturer
+@property (readonly, nonatomic) NSString *modelID;
+@property (readonly, nonatomic, getter=isSuspended) BOOL suspended;
+@property (readonly, nonatomic) int transportType; // ivar: _transportType
+@property (readonly, nonatomic) NSString *uniqueID;
+
+
++(BOOL)_defaultCenterStageEnabled;
++(BOOL)isBackgroundBlurEnabled;
++(BOOL)isCenterStageEnabled;
++(BOOL)isCinematicFramingEnabled;
++(BOOL)isEligibleForBackgroundBlur;
++(BOOL)isPortraitEffectEnabled;
++(NSInteger)activeMicrophoneMode;
++(NSInteger)authorizationStatusForMediaType:(id)arg0 ;
++(NSInteger)backgroundBlurControlMode;
++(NSInteger)centerStageControlMode;
++(NSInteger)cinematicFramingControlMode;
++(NSInteger)preferredMicrophoneMode;
++(id)_defaultDeviceWithDeviceType:(id)arg0 mediaType:(id)arg1 position:(NSInteger)arg2 prefersUnsuspendedAndAllowsAnyPosition:(BOOL)arg3 ;
++(id)_devices;
++(id)_devicesWithDeviceTypes:(id)arg0 mediaType:(id)arg1 position:(NSInteger)arg2 ;
++(id)_devicesWithPriorRegisteredDevices:(id)arg0 ;
++(id)_legacyDevicesWithMediaType:(id)arg0 ;
++(id)centerStageAllowList;
++(id)defaultDeviceWithDeviceType:(id)arg0 mediaType:(id)arg1 position:(NSInteger)arg2 ;
++(id)defaultDeviceWithMediaType:(id)arg0 ;
++(id)deviceWithUniqueID:(id)arg0 ;
++(id)devices;
++(id)devicesWithMediaType:(id)arg0 ;
++(id)extrinsicMatrixFromDevice:(id)arg0 toDevice:(id)arg1 ;
++(void)_activeMicrophoneModeChanged:(id)arg0 ;
++(void)_backgroundBlurEnabledChanged:(id)arg0 ;
++(void)_cinematicFramingEnabledChanged:(id)arg0 ;
++(void)_filterConnectedDevices:(id)arg0 withDeviceTypes:(id)arg1 mediaType:(id)arg2 position:(NSInteger)arg3 ;
++(void)_filterConnectedLegacyDevices:(id)arg0 ;
++(void)_preferredMicrophoneModeChanged:(id)arg0 ;
++(void)_reconnectDevices:(id)arg0 ;
++(void)_registerOnceForServerConnectionDiedNotification;
++(void)initialize;
++(void)requestAccessForMediaType:(id)arg0 completionHandler:(id)arg1 ;
++(void)setBackgroundBlurControlMode:(NSInteger)arg0 ;
++(void)setBackgroundBlurEnabled:(BOOL)arg0 ;
++(void)setCenterStageControlMode:(NSInteger)arg0 ;
++(void)setCenterStageEnabled:(BOOL)arg0 ;
++(void)setCinematicFramingControlMode:(NSInteger)arg0 ;
++(void)setCinematicFramingEnabled:(BOOL)arg0 ;
++(void)setControlCenterVideoEffectUnavailableReasonsForVideoEffect:(id)arg0 reasons:(NSUInteger)arg1 ;
++(void)setUpBackgroundBlurStateOnce;
++(void)setUpCenterStageStateOnce;
++(void)setUpMicrophoneModeStateOnce;
++(void)showSystemUserInterface:(NSInteger)arg0 ;
+-(BOOL)_isDepthDataDeliveryEnabled;
+-(BOOL)_isFlashScene;
+-(BOOL)_startUsingDevice:(*id)arg0 ;
+-(BOOL)appliesSessionPresetMaxIntegrationTimeOverrideToActiveFormat;
+-(BOOL)automaticallyAdjustsFaceDrivenAutoExposureEnabled;
+-(BOOL)automaticallyAdjustsFaceDrivenAutoFocusEnabled;
+-(BOOL)automaticallyAdjustsImageControlMode;
+-(BOOL)automaticallyAdjustsVideoHDREnabled;
+-(BOOL)automaticallyEnablesLowLightBoostWhenAvailable;
+-(BOOL)cachesFigCaptureSourceConfigurationChanges;
+-(BOOL)eyeClosedDetectionEnabled;
+-(BOOL)eyeDetectionEnabled;
+-(BOOL)hasFlash;
+-(BOOL)hasMediaType:(id)arg0 ;
+-(BOOL)hasTorch;
+-(BOOL)hevcAllowBFramesForHighCTUCount;
+-(BOOL)isActiveVideoMaxFrameDurationSet;
+-(BOOL)isActiveVideoMinFrameDurationSet;
+-(BOOL)isAdjustingExposure;
+-(BOOL)isAdjustingFocus;
+-(BOOL)isAdjustingWhiteBalance;
+-(BOOL)isAutoFocusRangeRestrictionSupported;
+-(BOOL)isAutoRedEyeReductionSupported;
+-(BOOL)isBackgroundBlurActive;
+-(BOOL)isBuiltInStereoAudioCaptureSupported;
+-(BOOL)isCameraIntrinsicMatrixDeliverySupported;
+-(BOOL)isCenterStageActive;
+-(BOOL)isCinematicFramingActive;
+-(BOOL)isCinematicVideoFocusAtPointSupported;
+-(BOOL)isConstituentPhotoCalibrationDataSupported;
+-(BOOL)isExposureModeSupported:(NSInteger)arg0 ;
+-(BOOL)isExposurePointOfInterestSupported;
+-(BOOL)isEyeClosedDetectionSupported;
+-(BOOL)isEyeDetectionSupported;
+-(BOOL)isFaceDetectionDrivenImageProcessingEnabled;
+-(BOOL)isFaceDetectionDuringVideoPreviewSupported;
+-(BOOL)isFaceDetectionSupported;
+-(BOOL)isFaceDrivenAutoExposureEnabled;
+-(BOOL)isFaceDrivenAutoFocusEnabled;
+-(BOOL)isFlashActive;
+-(BOOL)isFlashAvailable;
+-(BOOL)isFlashModeSupported:(NSInteger)arg0 ;
+-(BOOL)isFlashSceneDetectedForPhotoOutput;
+-(BOOL)isFocusModeSupported:(NSInteger)arg0 ;
+-(BOOL)isFocusPointOfInterestSupported;
+-(BOOL)isFocusedAtMacro;
+-(BOOL)isGeometricDistortionCorrectionEnabled;
+-(BOOL)isGeometricDistortionCorrectionSupported;
+-(BOOL)isGlobalToneMappingEnabled;
+-(BOOL)isHDRSceneDetectedForPhotoOutput;
+-(BOOL)isHEIFSupported;
+-(BOOL)isHEVCPreferred;
+-(BOOL)isHEVCRelaxedAverageBitRateTargetSupported;
+-(BOOL)isHEVCSupported;
+-(BOOL)isImageControlModeSupported:(NSInteger)arg0 ;
+-(BOOL)isLensStabilizationSupported;
+-(BOOL)isLockedForConfiguration;
+-(BOOL)isLockingFocusWithCustomLensPositionSupported;
+-(BOOL)isLockingWhiteBalanceWithCustomDeviceGainsSupported;
+-(BOOL)isLowLightBoostEnabled;
+-(BOOL)isLowLightBoostSupported;
+-(BOOL)isLowLightVideoCaptureEnabled;
+-(BOOL)isMachineReadableCodeDetectionSupported;
+-(BOOL)isNonDestructiveCropEnabled;
+-(BOOL)isOpen;
+-(BOOL)isPortraitEffectActive;
+-(BOOL)isProResSupported;
+-(BOOL)isRampingVideoZoom;
+-(BOOL)isSmileDetectionSupported;
+-(BOOL)isSmoothAutoFocusEnabled;
+-(BOOL)isSmoothAutoFocusSupported;
+-(BOOL)isSpatialOverCaptureEnabled;
+-(BOOL)isSubjectAreaChangeMonitoringEnabled;
+-(BOOL)isTimeOfFlightProjectorModeSupported:(NSInteger)arg0 ;
+-(BOOL)isTorchActive;
+-(BOOL)isTorchAvailable;
+-(BOOL)isTorchModeSupported:(NSInteger)arg0 ;
+-(BOOL)isVariableFrameRateVideoCaptureEnabled;
+-(BOOL)isVideoHDREnabled;
+-(BOOL)isVideoHDRSuspended;
+-(BOOL)isVideoStabilizationSupported;
+-(BOOL)isVirtualDevice;
+-(BOOL)isWhiteBalanceModeSupported:(NSInteger)arg0 ;
+-(BOOL)isWideColorSupported;
+-(BOOL)lockForConfiguration:(*id)arg0 ;
+-(BOOL)open:(*id)arg0 ;
+-(BOOL)providesStortorgetMetadata;
+-(BOOL)setTorchModeOnWithLevel:(float)arg0 error:(*id)arg1 ;
+-(BOOL)smileDetectionEnabled;
+-(BOOL)startUsingDevice:(*id)arg0 ;
+-(BOOL)supportsAVCaptureSessionPreset:(id)arg0 ;
+-(BOOL)supportsMultiCamCaptureWithDevice:(id)arg0 ;
+-(BOOL)usesQuantizationScalingMatrix_H264_Steep_16_48;
+-(BOOL)wideAngleCameraSourcesFromUltraWide;
+-(CGFloat)dualCameraSwitchOverVideoZoomFactor;
+-(CGFloat)maxAvailableVideoZoomFactor;
+-(CGFloat)minAvailableVideoZoomFactor;
+-(CGFloat)videoZoomFactor;
+-(NSInteger)_digitalFlashStatus;
+-(NSInteger)activeColorSpace;
+-(NSInteger)activePrimaryConstituentDeviceSwitchingBehavior;
+-(NSInteger)autoFocusRangeRestriction;
+-(NSInteger)digitalFlashMode;
+-(NSInteger)exposureMode;
+-(NSInteger)flashMode;
+-(NSInteger)focusMode;
+-(NSInteger)imageControlMode;
+-(NSInteger)minimumFocusDistance;
+-(NSInteger)nonDestructiveCropAspectRatio;
+-(NSInteger)position;
+-(NSInteger)primaryConstituentDeviceSwitchingBehavior;
+-(NSInteger)shallowDepthOfFieldEffectStatus;
+-(NSInteger)timeOfFlightBankCount;
+-(NSInteger)timeOfFlightProjectorMode;
+-(NSInteger)torchMode;
+-(NSInteger)whiteBalanceMode;
+-(NSUInteger)activePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions;
+-(NSUInteger)degradedCaptureQualityFactors;
+-(NSUInteger)primaryConstituentDeviceRestrictedSwitchingBehaviorConditions;
+-(float)ISO;
+-(float)ISODigitalThreshold;
+-(float)exposureTargetBias;
+-(float)exposureTargetOffset;
+-(float)focalLength;
+-(float)lensAperture;
+-(float)lensPosition;
+-(float)maxExposureTargetBias;
+-(float)maxWhiteBalanceGain;
+-(float)minExposureTargetBias;
+-(float)timeLapseCaptureRate;
+-(float)torchLevel;
+-(id)AVVideoSettingsForSessionPreset:(id)arg0 ;
+-(id)_digitalFlashExposureTimes;
+-(id)activeDepthDataFormat;
+-(id)activePrimaryConstituentDevice;
+-(id)availableBoxedMetadataFormatDescriptions;
+-(id)bravoCameraSelectionBehavior;
+-(id)cameraPoseMatrix;
+-(id)constituentDeviceWithDeviceType:(id)arg0 ;
+-(id)constituentDevices;
+-(id)debugDescription;
+-(id)description;
+-(id)deviceType;
+-(id)digitalFlashSceneForPhotoOutput;
+-(id)fallbackPrimaryConstituentDevices;
+-(id)initSubclass;
+-(id)preferredPrimaryConstituentDevice;
+-(id)supportedFallbackPrimaryConstituentDevices;
+-(id)supportedMetadataObjectIdentifiers;
+-(id)systemPressureState;
+-(id)virtualDeviceSwitchOverVideoZoomFactors;
+-(int)faceDrivenAEAFMode;
+-(int)faceRectangleAngle;
+-(int)hevcTurboModeVersion;
+-(int)minMacroblocksForHighProfileAbove30fps;
+-(int)minMacroblocksForHighProfileUpTo30fps;
+-(int)powerConsumptionAt30FPSForOISMode:(int)arg0 ;
+-(struct ? )activeDepthDataMinFrameDuration;
+-(struct ? )activeMaxExposureDuration;
+-(struct ? )activeMaxExposureDurationClientOverride;
+-(struct ? )chromaticityValuesForDeviceWhiteBalanceGains:(struct ? )arg0 ;
+-(struct ? )deviceWhiteBalanceGains;
+-(struct ? )deviceWhiteBalanceGainsForChromaticityValues:(struct ? )arg0 ;
+-(struct ? )deviceWhiteBalanceGainsForTemperatureAndTintValues:(struct ? )arg0 ;
+-(struct ? )exposureDuration;
+-(struct ? )grayWorldDeviceWhiteBalanceGains;
+-(struct ? )maxH264PhotoDimensions;
+-(struct ? )maxH264VideoDimensions;
+-(struct ? )temperatureAndTintValuesForDeviceWhiteBalanceGains:(struct ? )arg0 ;
+-(struct CGPoint )exposurePointOfInterest;
+-(struct CGPoint )focusPointOfInterest;
+-(struct CGRect )faceRectangle;
+-(struct OpaqueCMClock *)deviceClock;
+-(void)_checkTCCAccess;
+-(void)_setBackgroundBlurAllowed:(BOOL)arg0 ;
+-(void)_setCameraCalibrationDataDeliveryEnabled:(BOOL)arg0 ;
+-(void)_setCenterStageAllowed:(BOOL)arg0 ;
+-(void)_setDepthDataDeliveryEnabled:(BOOL)arg0 ;
+-(void)_setPhotoSettingsForSceneMonitoring:(id)arg0 ;
+-(void)_setStillImageStabilizationAutomaticallyEnabled:(BOOL)arg0 ;
+-(void)_setVideoHDREnabled:(BOOL)arg0 forceResetVideoHDRSuspended:(BOOL)arg1 ;
+-(void)_stopUsingDevice;
+-(void)cancelVideoZoomRamp;
+-(void)close;
+-(void)dealloc;
+-(void)rampExponentiallyToVideoZoomFactor:(float)arg0 withDuration:(CGFloat)arg1 ;
+-(void)rampToVideoZoomFactor:(CGFloat)arg0 withRate:(float)arg1 ;
+-(void)resetVideoMinFrameDurationOverrideForOwner:(id)arg0 ;
+-(void)setActiveColorSpace:(NSInteger)arg0 ;
+-(void)setActiveDepthDataFormat:(id)arg0 ;
+-(void)setActiveDepthDataMinFrameDuration:(struct ? )arg0 ;
+-(void)setActiveMaxExposureDuration:(struct ? )arg0 ;
+-(void)setAutoFocusRangeRestriction:(NSInteger)arg0 ;
+-(void)setAutomaticallyAdjustsFaceDrivenAutoExposureEnabled:(BOOL)arg0 ;
+-(void)setAutomaticallyAdjustsFaceDrivenAutoFocusEnabled:(BOOL)arg0 ;
+-(void)setAutomaticallyAdjustsImageControlMode:(BOOL)arg0 ;
+-(void)setAutomaticallyAdjustsVideoHDREnabled:(BOOL)arg0 ;
+-(void)setAutomaticallyEnablesLowLightBoostWhenAvailable:(BOOL)arg0 ;
+-(void)setCachesFigCaptureSourceConfigurationChanges:(BOOL)arg0 ;
+-(void)setCinematicVideoFocusAtPoint:(struct CGPoint )arg0 objectID:(NSInteger)arg1 isHardFocus:(BOOL)arg2 isFixedPlaneFocus:(BOOL)arg3 ;
+-(void)setDigitalFlashMode:(NSInteger)arg0 ;
+-(void)setExposureMode:(NSInteger)arg0 ;
+-(void)setExposureModeCustomWithDuration:(struct ? )arg0 ISO:(float)arg1 completionHandler:(id)arg2 ;
+-(void)setExposurePointOfInterest:(struct CGPoint )arg0 ;
+-(void)setExposureTargetBias:(float)arg0 completionHandler:(id)arg1 ;
+-(void)setEyeClosedDetectionEnabled:(BOOL)arg0 ;
+-(void)setEyeDetectionEnabled:(BOOL)arg0 ;
+-(void)setFaceDetectionDrivenImageProcessingEnabled:(BOOL)arg0 ;
+-(void)setFaceDrivenAutoExposureEnabled:(BOOL)arg0 ;
+-(void)setFaceDrivenAutoFocusEnabled:(BOOL)arg0 ;
+-(void)setFallbackPrimaryConstituentDevices:(id)arg0 ;
+-(void)setFlashMode:(NSInteger)arg0 ;
+-(void)setFocusMode:(NSInteger)arg0 ;
+-(void)setFocusModeLockedWithLensPosition:(float)arg0 completionHandler:(id)arg1 ;
+-(void)setFocusPointOfInterest:(struct CGPoint )arg0 ;
+-(void)setGeometricDistortionCorrectionEnabled:(BOOL)arg0 ;
+-(void)setGlobalToneMappingEnabled:(BOOL)arg0 ;
+-(void)setImageControlMode:(NSInteger)arg0 ;
+-(void)setLowLightVideoCaptureEnabled:(BOOL)arg0 ;
+-(void)setNonDestructiveCropAspectRatio:(NSInteger)arg0 ;
+-(void)setNonDestructiveCropEnabled:(BOOL)arg0 ;
+-(void)setPrimaryConstituentDeviceSwitchingBehavior:(NSInteger)arg0 restrictedSwitchingBehaviorConditions:(NSUInteger)arg1 ;
+-(void)setProvidesStortorgetMetadata:(BOOL)arg0 ;
+-(void)setSmileDetectionEnabled:(BOOL)arg0 ;
+-(void)setSmoothAutoFocusEnabled:(BOOL)arg0 ;
+-(void)setSpatialOverCaptureEnabled:(BOOL)arg0 ;
+-(void)setSubjectAreaChangeMonitoringEnabled:(BOOL)arg0 ;
+-(void)setTimeLapseCaptureRate:(float)arg0 ;
+-(void)setTimeOfFlightProjectorMode:(NSInteger)arg0 ;
+-(void)setTorchMode:(NSInteger)arg0 ;
+-(void)setVariableFrameRateVideoCaptureEnabled:(BOOL)arg0 ;
+-(void)setVideoHDREnabled:(BOOL)arg0 ;
+-(void)setVideoHDRSuspended:(BOOL)arg0 ;
+-(void)setVideoMinFrameDurationOverride:(struct ? )arg0 forOwner:(id)arg1 ;
+-(void)setVideoZoomFactor:(CGFloat)arg0 ;
+-(void)setWhiteBalanceMode:(NSInteger)arg0 ;
+-(void)setWhiteBalanceModeLockedWithDeviceWhiteBalanceGains:(struct ? )arg0 completionHandler:(id)arg1 ;
+-(void)stopUsingDevice;
+-(void)unlockForConfiguration;
+
+
+@end
+
+
+#endif

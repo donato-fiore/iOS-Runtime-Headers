@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _SFIESCIPHERTEXT_H
+#define _SFIESCIPHERTEXT_H
+
+@class SFCiphertext, NSData;
+
+
+#import "_SFECPublicKey.h"
+
+@interface _SFIESCiphertext : SFCiphertext {
+    id *_iesCiphertextInternal;
+}
+
+
+@property (readonly) NSData *authenticationCode;
+@property (readonly) _SFECPublicKey *ephemeralSenderPublicKey;
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(id)initWithCiphertext:(id)arg0 ephemeralSenderPublicKey:(id)arg1 authenticationCode:(id)arg2 ;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

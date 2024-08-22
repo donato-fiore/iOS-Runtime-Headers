@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _SFREQUESTDESKTOPSITEQUIRKSSNAPSHOTTRANSFORMER_H
+#define _SFREQUESTDESKTOPSITEQUIRKSSNAPSHOTTRANSFORMER_H
+
+@class WBSConfigurationDataTransformer;
+
+
+
+@interface _SFRequestDesktopSiteQuirksSnapshotTransformer : WBSConfigurationDataTransformer
+
+
+
+-(id)objectFromData:(id)arg0 ;
+
+
+@end
+
+
+#endif

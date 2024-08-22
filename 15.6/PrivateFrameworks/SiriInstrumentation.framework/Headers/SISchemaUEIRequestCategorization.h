@@ -1,0 +1,41 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef SISCHEMAUEIREQUESTCATEGORIZATION_H
+#define SISCHEMAUEIREQUESTCATEGORIZATION_H
+
+@class NSData;
+
+
+#import "SISchemaInstrumentationMessage.h"
+
+@interface SISchemaUEIRequestCategorization : SISchemaInstrumentationMessage {
+    ? _has;
+}
+
+
+@property (nonatomic) BOOL hasRequestStatus;
+@property (nonatomic) BOOL hasRequestType;
+@property (readonly, nonatomic) NSData *jsonData;
+@property (nonatomic) int requestStatus; // ivar: _requestStatus
+@property (nonatomic) int requestType; // ivar: _requestType
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)dictionaryRepresentation;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(id)suppressMessageUnderConditions;
+-(void)deleteRequestStatus;
+-(void)deleteRequestType;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

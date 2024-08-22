@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef TSDCURVEFITTER_H
+#define TSDCURVEFITTER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface TSDCurveFitter : NSObject
+
+@property (nonatomic) CGFloat errorDistance; // ivar: mErrorDistance
+@property (nonatomic) NSInteger errorIterations; // ivar: mErrorIterations
+
+
+-(id)bezierPathFittingPointArray:(struct ? *)arg0 count:(NSInteger)arg1 ;
+-(id)init;
+-(void)fitCurveToPointArray:(struct ? *)arg0 count:(NSInteger)arg1 bezierCallback:(*unk)arg2 context:(*void)arg3 ;
+
+
+@end
+
+
+#endif

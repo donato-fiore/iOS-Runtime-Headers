@@ -1,0 +1,59 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef GEOLOGMSGSTATEMAPUI_H
+#define GEOLOGMSGSTATEMAPUI_H
+
+@class PBCodable;
+@protocol NSCopying;
+
+
+#import "GEOMultiTabsState.h"
+
+@interface GEOLogMsgStateMapUI : PBCodable <NSCopying>
+
+ {
+    GEOMultiTabsState *_multiTabsState;
+    int _layoutInfo;
+    int _layoutStyle;
+    BOOL _landscape;
+    ? _flags;
+}
+
+
+@property (nonatomic) BOOL hasLandscape;
+@property (nonatomic) BOOL hasLayoutInfo;
+@property (nonatomic) BOOL hasLayoutStyle;
+@property (readonly, nonatomic) BOOL hasMultiTabsState;
+@property (nonatomic) BOOL landscape;
+@property (nonatomic) int layoutInfo;
+@property (nonatomic) int layoutStyle;
+@property (retain, nonatomic) GEOMultiTabsState *multiTabsState;
+
+
++(BOOL)isValid:(id)arg0 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)dictionaryRepresentation;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(id)jsonRepresentation;
+-(id)layoutInfoAsString:(int)arg0 ;
+-(id)layoutStyleAsString:(int)arg0 ;
+-(int)StringAsLayoutInfo:(id)arg0 ;
+-(int)StringAsLayoutStyle:(id)arg0 ;
+-(void)copyTo:(id)arg0 ;
+-(void)mergeFrom:(id)arg0 ;
+-(void)readAll:(BOOL)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,47 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _TTC7NEWSUI231MAGAZINEFEEDGROUPEMITTERFACTORY_H
+#define _TTC7NEWSUI231MAGAZINEFEEDGROUPEMITTERFACTORY_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC7NewsUI231MagazineFeedGroupEmitterFactory : SwiftObject {
+    ? tagService;
+    ? headlineService;
+    ? feedTopicClusteringService;
+    ? personalizationService;
+    ? magazineCategoryService;
+    ? magazineCategoryConfigService;
+    ? context;
+    ? currentIssuesChecker;
+    ? offlineIssueList;
+    ? appConfigurationManager;
+    ? bundlePurchasePrewarmer;
+    ? diversityPenalty;
+    ? issueModelFactory;
+    ? issueService;
+    ? sectionHeadlinesService;
+    ? channelPromotedArticlesService;
+    ? newspaperGroupService;
+    ? formatService;
+    ? feedPaywallConfigFactory;
+    ? offerManager;
+    ? myMagazinesStore;
+    ? subscriptionList;
+    ? offlineManager;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

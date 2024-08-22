@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef PKAPPLYDOCUMENTUPLOADPAGE_H
+#define PKAPPLYDOCUMENTUPLOADPAGE_H
+
+@class NSArray, NSString;
+
+
+#import "PKDynamicProvisioningPageContent.h"
+
+@interface PKApplyDocumentUploadPage : PKDynamicProvisioningPageContent
+
+@property (retain, nonatomic) NSArray *acceptableDocuments; // ivar: _acceptableDocuments
+@property (readonly, copy, nonatomic) NSArray *imageCaptureEncryptionCertificates; // ivar: _imageCaptureEncryptionCertificates
+@property (readonly, copy, nonatomic) NSString *imageCaptureEncryptionVersion; // ivar: _imageCaptureEncryptionVersion
+@property (readonly, nonatomic) BOOL requiresCoreIDVImageCaptureUpload; // ivar: _requiresCoreIDVImageCaptureUpload
+
+
+-(id)initWithJSONObject:(id)arg0 ;
+
+
+@end
+
+
+#endif

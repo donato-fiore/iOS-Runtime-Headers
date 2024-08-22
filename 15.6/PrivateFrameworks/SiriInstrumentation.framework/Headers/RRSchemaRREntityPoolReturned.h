@@ -1,0 +1,44 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef RRSCHEMARRENTITYPOOLRETURNED_H
+#define RRSCHEMARRENTITYPOOLRETURNED_H
+
+@class NSArray, NSData;
+
+
+#import "SISchemaInstrumentationMessage.h"
+
+@interface RRSchemaRREntityPoolReturned : SISchemaInstrumentationMessage {
+    ? _has;
+}
+
+
+@property (copy, nonatomic) NSArray *candidateEntities; // ivar: _candidateEntities
+@property (nonatomic) unsigned int entityCount; // ivar: _entityCount
+@property (nonatomic) BOOL hasEntityCount;
+@property (readonly, nonatomic) NSData *jsonData;
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)applySensitiveConditionsPolicy:(id)arg0 ;
+-(id)candidateEntitiesAtIndex:(NSUInteger)arg0 ;
+-(id)dictionaryRepresentation;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(id)suppressMessageUnderConditions;
+-(void)addCandidateEntities:(id)arg0 ;
+-(void)clearCandidateEntities;
+-(void)deleteCandidateEntities;
+-(void)deleteEntityCount;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

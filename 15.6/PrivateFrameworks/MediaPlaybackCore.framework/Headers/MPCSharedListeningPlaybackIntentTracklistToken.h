@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef MPCSHAREDLISTENINGPLAYBACKINTENTTRACKLISTTOKEN_H
+#define MPCSHAREDLISTENINGPLAYBACKINTENTTRACKLISTTOKEN_H
+
+@class ICLiveLinkIdentity;
+@protocol NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+#import "MPCPlaybackSharedListeningProperties.h"
+
+@interface MPCSharedListeningPlaybackIntentTracklistToken : NSObject <NSSecureCoding>
+
+
+
+@property (copy, nonatomic) ICLiveLinkIdentity *identity; // ivar: _identity
+@property (copy, nonatomic) MPCPlaybackSharedListeningProperties *sharedListeningProperties; // ivar: _sharedListeningProperties
+
+
++(BOOL)supportsSecureCoding;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

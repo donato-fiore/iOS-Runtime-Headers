@@ -1,0 +1,44 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef CKDPSETBADGECOUNTREQUEST_H
+#define CKDPSETBADGECOUNTREQUEST_H
+
+@class PBRequest;
+@protocol NSCopying;
+
+
+
+@interface CKDPSetBadgeCountRequest : PBRequest <NSCopying>
+
+ {
+    ? _has;
+}
+
+
+@property (nonatomic) unsigned int badgeCount; // ivar: _badgeCount
+@property (nonatomic) BOOL forDevice; // ivar: _forDevice
+@property (nonatomic) BOOL hasBadgeCount;
+@property (nonatomic) BOOL hasForDevice;
+
+
++(id)options;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(Class)responseClass;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)dictionaryRepresentation;
+-(unsigned int)requestTypeCode;
+-(void)copyTo:(id)arg0 ;
+-(void)mergeFrom:(id)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

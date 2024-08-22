@@ -1,0 +1,42 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef TSPSUPPORTMETADATA_H
+#define TSPSUPPORTMETADATA_H
+
+@protocol OS_dispatch_queue;
+
+
+#import "TSPObject.h"
+
+@interface TSPSupportMetadata : TSPObject {
+    NSObject<OS_dispatch_queue> *_accessQueue;
+    DigestMap<TSP::DataCollaborationProperties> _dataCollaborationPropertiesMap;
+    BOOL _isInCollaborationModeForArchiving;
+    DigestMap<TSP::DataCollaborationProperties> _dataCollaborationPropertiesMapForArchiving;
+}
+
+
+
+
+-(NSInteger)tsp_identifier;
+-(id)initWithContext:(id)arg0 ;
+-(id)packageLocator;
+-(struct DataCollaborationProperties )collaborationPropertiesForData:(id)arg0 ;
+-(unsigned char)componentRequiredPackageIdentifier;
+-(void)collaborationPropertiesForData:(id)arg0 usingBlock:(id)arg1 ;
+-(void)commonInit;
+-(void)loadFromUnarchiver:(id)arg0 ;
+-(void)p_resetServerDataFlags;
+-(void)saveToArchiver:(id)arg0 ;
+-(void)setCollaborationPropertiesForData:(id)arg0 usingBlock:(id)arg1 ;
+-(void)takeSnapshotWithCollaborationMode:(BOOL)arg0 ;
+-(void)validateDataCollaborationProperties:(struct DataCollaborationProperties *)arg0 forData:(id)arg1 ;
+
+
+@end
+
+
+#endif

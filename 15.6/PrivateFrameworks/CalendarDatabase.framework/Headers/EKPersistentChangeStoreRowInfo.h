@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef EKPERSISTENTCHANGESTOREROWINFO_H
+#define EKPERSISTENTCHANGESTOREROWINFO_H
+
+@class NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface EKPersistentChangeStoreRowInfo : NSObject
+
+@property (retain, nonatomic) NSString *clientIdentifier; // ivar: _clientIdentifier
+@property (nonatomic) int consumedSequenceNumber; // ivar: _consumedSequenceNumber
+
+
+-(id)description;
+
+
+@end
+
+
+#endif

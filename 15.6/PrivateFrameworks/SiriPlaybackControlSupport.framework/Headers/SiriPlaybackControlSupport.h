@@ -1,0 +1,7 @@
+
+
+#include "_TtC26SiriPlaybackControlSupport31PlaybackControlsCommandProvider.h"
+#include "_TtC26SiriPlaybackControlSupport11HomeManager.h"
+#include "_TtC26SiriPlaybackControlSupport18PlaybackController.h"
+#include "_TtC26SiriPlaybackControlSupport14DeviceSelector.h"
+#include "_TtC26SiriPlaybackControlSupport20LocalizationProvider.h"

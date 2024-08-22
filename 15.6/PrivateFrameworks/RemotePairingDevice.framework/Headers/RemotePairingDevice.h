@@ -1,0 +1,15 @@
+
+
+#include "_TtC19RemotePairingDevice38RapportIdentityVerificationSessionStub.h"
+#include "_TtC19RemotePairingDevice43RemotePairingDevicePairingServiceConnection.h"
+#include "RPRSDDeviceInfo_Internal.h"
+#include "RPDeviceKeyValueStore_Internal.h"
+#include "_TtC19RemotePairingDevice24ControlChannelConnection.h"
+#include "_TtC19RemotePairingDevice16VirtualInterface.h"
+#include "_TtC19RemotePairingDevice13WiFiKeepAlive.h"
+#include "_TtC19RemotePairingDevice20ManualTunnelListener.h"
+#include "_TtC19RemotePairingDevice25SecureSocketDataTransport.h"
+#include "_TtC19RemotePairingDevice32RemoteXPCControlChannelTransport.h"
+#include "_TtC19RemotePairingDevice35NWConnectionControlChannelTransport.h"
+#include "_TtC19RemotePairingDevice14PairingManager.h"
+#include "_TtC19RemotePairingDevice22SocketTunnelConnection.h"

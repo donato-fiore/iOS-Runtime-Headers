@@ -1,0 +1,42 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef HLPREACHABILITYMANAGER_H
+#define HLPREACHABILITYMANAGER_H
+
+@class NSString;
+@protocol HLPReachabilityManagerDelegate;
+
+#import <Foundation/Foundation.h>
+
+#import "HLPReachability.h"
+
+@interface HLPReachabilityManager : NSObject {
+    BOOL _notifying;
+    BOOL _hostActive;
+}
+
+
+@property (nonatomic) BOOL connected; // ivar: _connected
+@property (weak, nonatomic) NSObject<HLPReachabilityManagerDelegate> *delegate; // ivar: _delegate
+@property (retain, nonatomic) NSString *hostName; // ivar: _hostName
+@property (retain, nonatomic) HLPReachability *hostReachability; // ivar: _hostReachability
+@property (nonatomic) BOOL internetActive; // ivar: _internetActive
+@property (retain, nonatomic) HLPReachability *internetReachability; // ivar: _internetReachability
+@property (nonatomic) BOOL reachabilityInitialized; // ivar: _reachabilityInitialized
+
+
+-(BOOL)isNetworkError:(id)arg0 ;
+-(id)init;
+-(void)dealloc;
+-(void)reachabilityChanged:(id)arg0 ;
+-(void)startNotifier;
+-(void)stopNotifier;
+
+
+@end
+
+
+#endif

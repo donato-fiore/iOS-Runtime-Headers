@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef ARCOACHINGUPDATEMANAGER_H
+#define ARCOACHINGUPDATEMANAGER_H
+
+@class CAMetalLayer, CADisplayLink;
+@protocol MTLCommandQueue, ARCoachingUpdateManagerDelegate;
+
+#import <Foundation/Foundation.h>
+
+
+@interface ARCoachingUpdateManager : NSObject {
+    CAMetalLayer *_metalLayer;
+    id<MTLCommandQueue> *_commandQueue;
+    CADisplayLink *_displayLink;
+    CGFloat _lastUpdateTime;
+}
+
+
+@property (weak, nonatomic) NSObject<ARCoachingUpdateManagerDelegate> *delegate; // ivar: _delegate
+
+
+-(id)init:(id)arg0 metalLayer:(id)arg1 ;
+-(void)dealloc;
+-(void)drawWithTimeDelta:(CGFloat)arg0 ;
+-(void)start;
+-(void)stop;
+-(void)update;
+
+
+@end
+
+
+#endif

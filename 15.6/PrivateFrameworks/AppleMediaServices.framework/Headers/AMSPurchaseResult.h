@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef AMSPURCHASERESULT_H
+#define AMSPURCHASERESULT_H
+
+@class NSString, NSError, NSDictionary;
+@protocol NSCopying, NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+#import "AMSPurchase.h"
+
+@interface AMSPurchaseResult : NSObject <NSCopying, NSSecureCoding>
+
+
+
+@property (copy, nonatomic) NSString *correlationID; // ivar: _correlationID
+@property (copy, nonatomic) NSError *error; // ivar: _error
+@property (copy, nonatomic) AMSPurchase *purchase; // ivar: _purchase
+@property (copy, nonatomic) NSDictionary *responseDictionary; // ivar: _responseDictionary
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)isEqualToPurchaseResult:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

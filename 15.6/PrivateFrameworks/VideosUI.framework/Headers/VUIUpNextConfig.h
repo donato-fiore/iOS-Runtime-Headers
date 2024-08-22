@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef VUIUPNEXTCONFIG_H
+#define VUIUPNEXTCONFIG_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface VUIUpNextConfig : NSObject
+
+@property (nonatomic) NSUInteger upNextCallDelayAfterMarkAsWatched; // ivar: _upNextCallDelayAfterMarkAsWatched
+@property (nonatomic) NSUInteger upNextRefreshCallDelayAfterRemoveFromUpNext; // ivar: _upNextRefreshCallDelayAfterRemoveFromUpNext
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

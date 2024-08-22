@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef CNSHARINGPROFILEMECARDUPDATER_H
+#define CNSHARINGPROFILEMECARDUPDATER_H
+
+@class CNContactStore, CNContact, CNMutableContact;
+@protocol CNSharingProfileMeCardUpdaterDelegate;
+
+#import <Foundation/Foundation.h>
+
+#import "CNSharingProfileLogger.h"
+
+@interface CNSharingProfileMeCardUpdater : NSObject
+
+@property (retain, nonatomic) CNContactStore *contactStore; // ivar: _contactStore
+@property (weak, nonatomic) NSObject<CNSharingProfileMeCardUpdaterDelegate> *delegate; // ivar: _delegate
+@property (retain, nonatomic) CNContact *imageContact; // ivar: _imageContact
+@property (retain, nonatomic) CNSharingProfileLogger *logger; // ivar: _logger
+@property (readonly, nonatomic) CNMutableContact *meContact; // ivar: _meContact
+
+
+-(id)alertControllerForMeCardUpdateWithImageContact:(id)arg0 ;
+-(id)initWithMeContact:(id)arg0 contactStore:(id)arg1 ;
+-(void)performSave;
+-(void)updateContact:(id)arg0 withImagePropertiesFromContact:(id)arg1 ;
+
+
+@end
+
+
+#endif

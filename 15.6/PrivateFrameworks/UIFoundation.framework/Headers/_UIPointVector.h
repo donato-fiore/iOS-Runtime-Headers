@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _UIPOINTVECTOR_H
+#define _UIPOINTVECTOR_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface _UIPointVector : NSObject {
+    ? _vectors;
+}
+
+
+@property (nonatomic) NSUInteger capacity; // ivar: _capacity
+@property (nonatomic) NSUInteger count; // ivar: _count
+@property ? vectors;
+
+
+-(id)vectorAtIndex;
+-(void)addVector;
+-(void)removeVectorAtIndex:(NSUInteger)arg0 ;
+
+
+@end
+
+
+#endif

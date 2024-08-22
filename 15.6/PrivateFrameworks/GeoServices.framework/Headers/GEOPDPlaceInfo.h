@@ -1,0 +1,54 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef GEOPDPLACEINFO_H
+#define GEOPDPLACEINFO_H
+
+@class PBCodable, PBDataReader, PBUnknownFields;
+@protocol NSCopying;
+
+
+#import "GEOPDBasemapRegionMetadata.h"
+#import "GEOLatLng.h"
+#import "GEOTimezone.h"
+
+@interface GEOPDPlaceInfo : PBCodable <NSCopying>
+
+ {
+    PBDataReader *_reader;
+    PBUnknownFields *_unknownFields;
+    CGFloat _area;
+    GEOPDBasemapRegionMetadata *_basemapRegionMetadata;
+    GEOLatLng *_center;
+    GEOLatLng *_enhancedCenter;
+    GEOTimezone *_timezone;
+    unsigned int _readerMarkPos;
+    unsigned int _readerMarkLength;
+    os_unfair_lock_s _readerLock;
+    int _knownAccuracy;
+    BOOL _isApproximateCenter;
+    ? _flags;
+}
+
+
+
+
++(id)placeInfoForPlaceData:(id)arg0 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)dictionaryRepresentation;
+-(id)init;
+-(id)initWithData:(id)arg0 ;
+-(id)jsonRepresentation;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

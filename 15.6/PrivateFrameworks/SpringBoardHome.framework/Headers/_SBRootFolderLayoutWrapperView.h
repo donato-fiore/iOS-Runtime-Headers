@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _SBROOTFOLDERLAYOUTWRAPPERVIEW_H
+#define _SBROOTFOLDERLAYOUTWRAPPERVIEW_H
+
+@class UIView;
+
+
+
+@interface _SBRootFolderLayoutWrapperView : UIView
+
+@property (nonatomic) CGSize extendedSize; // ivar: _extendedSize
+@property (nonatomic) CGFloat headerOffset; // ivar: _headerOffset
+@property (nonatomic) CGFloat statusBarHeightAdjustment; // ivar: _statusBarHeightAdjustment
+@property (retain, nonatomic) UIView *wrappedView; // ivar: _wrappedView
+
+
+-(id)description;
+-(id)descriptionBuilderWithMultilinePrefix:(id)arg0 ;
+-(id)descriptionWithMultilinePrefix:(id)arg0 ;
+-(id)succinctDescription;
+-(id)succinctDescriptionBuilder;
+-(void)_updateLayout;
+-(void)layoutSubviews;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef ALASSETSFILTER_H
+#define ALASSETSFILTER_H
+
+
+#import <Foundation/Foundation.h>
+
+#import "ALAssetsFilterInternal.h"
+
+@interface ALAssetsFilter : NSObject
+
+@property (retain, nonatomic) ALAssetsFilterInternal *internal; // ivar: _internal
+
+
++(id)allAssets;
++(id)allPhotos;
++(id)allVideos;
+-(id)init;
+-(int)_filter;
+-(void)_setFilter:(int)arg0 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

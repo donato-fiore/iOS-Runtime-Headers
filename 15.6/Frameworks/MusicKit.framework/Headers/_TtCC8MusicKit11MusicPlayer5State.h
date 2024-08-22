@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _TTCC8MUSICKIT11MUSICPLAYER5STATE_H
+#define _TTCC8MUSICKIT11MUSICPLAYER5STATE_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCC8MusicKit11MusicPlayer5State : SwiftObject {
+    ? activeMonitoringPublisher;
+    ? underlyingPlayerController;
+    ? observationTask;
+    ? authorizationGrantedObservationTask;
+    ? _playbackStatus;
+    ? _playbackRate;
+    ? _repeatMode;
+    ? _shuffleMode;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

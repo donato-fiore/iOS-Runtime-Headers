@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef TUSCREENTIMEOBSERVER_H
+#define TUSCREENTIMEOBSERVER_H
+
+
+
+#import "TUAbstractScreenTimeObserver.h"
+
+@interface TUScreenTimeObserver : TUAbstractScreenTimeObserver
+
+
+
+-(id)initWithQueue:(id)arg0 ;
+
+
+@end
+
+
+#endif

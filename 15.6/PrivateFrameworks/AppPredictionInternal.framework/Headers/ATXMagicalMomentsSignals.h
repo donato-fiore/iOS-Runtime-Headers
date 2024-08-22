@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef ATXMAGICALMOMENTSSIGNALS_H
+#define ATXMAGICALMOMENTSSIGNALS_H
+
+@class NSDictionary;
+
+#import <Foundation/Foundation.h>
+
+
+@interface ATXMagicalMomentsSignals : NSObject
+
+@property (readonly, nonatomic) NSInteger anchorType; // ivar: _anchorType
+@property (readonly, nonatomic) CGFloat confidence; // ivar: _confidence
+@property (readonly, nonatomic) NSUInteger predictionIndex; // ivar: _predictionIndex
+@property (readonly, nonatomic) NSUInteger predictionSource; // ivar: _predictionSource
+@property (readonly, nonatomic) NSInteger reason; // ivar: _reason
+@property (readonly, nonatomic) NSDictionary *reasonMetadata; // ivar: _reasonMetadata
+
+
+-(id)init;
+-(id)initWithPredictionSource:(NSUInteger)arg0 reason:(NSInteger)arg1 reasonMetadata:(id)arg2 confidence:(CGFloat)arg3 anchorType:(NSInteger)arg4 index:(NSUInteger)arg5 ;
+
+
+@end
+
+
+#endif

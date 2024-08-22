@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef MRUNOWPLAYINGQUEUEHANDOFFCOORDINATOR_H
+#define MRUNOWPLAYINGQUEUEHANDOFFCOORDINATOR_H
+
+@class MRNowPlayingPlayerResponse;
+@protocol MRUNowPlayingQueueHandoffCoordinatorDelegate;
+
+#import <Foundation/Foundation.h>
+
+
+@interface MRUNowPlayingQueueHandoffCoordinator : NSObject
+
+@property (nonatomic) CGSize artworkSize; // ivar: _artworkSize
+@property (weak, nonatomic) NSObject<MRUNowPlayingQueueHandoffCoordinatorDelegate> *delegate; // ivar: _delegate
+@property (nonatomic) BOOL hideArtwork; // ivar: _hideArtwork
+@property (retain, nonatomic) MRNowPlayingPlayerResponse *response; // ivar: _response
+
+
+-(id)description;
+-(void)beginTransition;
+-(void)completeHandoff;
+-(void)endTransition;
+-(void)setupTransition;
+
+
+@end
+
+
+#endif

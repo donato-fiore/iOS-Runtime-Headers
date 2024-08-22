@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef CAMFILTERSTATUSINDICATOR_H
+#define CAMFILTERSTATUSINDICATOR_H
+
+
+
+#import "CAMControlStatusIndicator.h"
+
+@interface CAMFilterStatusIndicator : CAMControlStatusIndicator
+
+@property (nonatomic, getter=isOn) BOOL on; // ivar: _on
+
+
+-(BOOL)shouldUseActiveTintForCurrentState;
+-(BOOL)shouldUseHierarchicalSymbol;
+-(BOOL)shouldUseOutline;
+-(id)imageNameForAXHUD;
+-(id)imageNameForCurrentState;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef FCCKTESTMULTIFETCHQUERYENDPOINT_H
+#define FCCKTESTMULTIFETCHQUERYENDPOINT_H
+
+@class NSString;
+@protocol FCCKTestQueryEndpoint;
+
+#import <Foundation/Foundation.h>
+
+
+@interface FCCKTestMultiFetchQueryEndpoint : NSObject <FCCKTestQueryEndpoint>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(id)_collectRecordIDsFromRecords:(id)arg0 linkKeysByRecordType:(id)arg1 ;
+-(id)_collectRecordsWithRecords:(id)arg0 recordIDs:(id)arg1 linkKeysByRecordType:(id)arg2 visitedRecordIDs:(id)arg3 missingRecordIDs:(id)arg4 ;
+-(void)handleQueryOperation:(id)arg0 withRecords:(id)arg1 droppedFeeds:(id)arg2 ;
+
+
+@end
+
+
+#endif

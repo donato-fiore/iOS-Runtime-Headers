@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef OS_LEGACY_GEOM_BVH_3F_H
+#define OS_LEGACY_GEOM_BVH_3F_H
+
+@class object;
+
+
+
+@interface OS_LEGACY_geom_bvh_3f : object
+
+
+
+-(void)dealloc;
+
+
+@end
+
+
+#endif

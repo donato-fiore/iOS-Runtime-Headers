@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef NASCHEDULER_H
+#define NASCHEDULER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface NAScheduler : NSObject
+
+
+
++(id)globalAsyncScheduler;
++(id)immediateScheduler;
++(id)mainThreadScheduler;
++(id)operationQueueSchedulerWithMaxConcurrentOperationCount:(NSUInteger)arg0 ;
++(id)schedulerWithDispatchQueue:(id)arg0 ;
++(id)serialDispatchQueueSchedulerWithName:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef TRISUBJECTPROVIDERGUARDEDDATA_H
+#define TRISUBJECTPROVIDERGUARDEDDATA_H
+
+@class TRISubject, NSDate, NSMutableDictionary;
+
+#import <Foundation/Foundation.h>
+
+
+@interface TRISubjectProviderGuardedData : NSObject {
+    TRISubject *subject;
+    NSDate *nextRotationDate;
+    NSMutableDictionary *tempDeviceIds;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

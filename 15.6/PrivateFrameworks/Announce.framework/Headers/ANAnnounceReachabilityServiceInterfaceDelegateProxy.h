@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef ANANNOUNCEREACHABILITYSERVICEINTERFACEDELEGATEPROXY_H
+#define ANANNOUNCEREACHABILITYSERVICEINTERFACEDELEGATEPROXY_H
+
+@class NSString;
+@protocol ANAnnounceReachabilityServiceInterfaceDelegate;
+
+#import <Foundation/Foundation.h>
+
+
+@interface ANAnnounceReachabilityServiceInterfaceDelegateProxy : NSObject <ANAnnounceReachabilityServiceInterfaceDelegate>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (weak, nonatomic) NSObject<ANAnnounceReachabilityServiceInterfaceDelegate> *delegate; // ivar: _delegate
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(void)reachabilityLevel:(NSUInteger)arg0 didChangeForHomeName:(id)arg1 ;
+-(void)reachabilityLevel:(NSUInteger)arg0 didChangeForHomeUUID:(id)arg1 ;
+-(void)reachabilityLevel:(NSUInteger)arg0 didChangeForRoomName:(id)arg1 inHomeName:(id)arg2 ;
+-(void)reachabilityLevel:(NSUInteger)arg0 didChangeForRoomUUID:(id)arg1 inHomeUUID:(id)arg2 ;
+
+
+@end
+
+
+#endif

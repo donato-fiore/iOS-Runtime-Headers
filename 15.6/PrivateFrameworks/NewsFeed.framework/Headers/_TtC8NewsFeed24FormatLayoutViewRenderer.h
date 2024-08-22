@@ -1,0 +1,52 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _TTC8NEWSFEED24FORMATLAYOUTVIEWRENDERER_H
+#define _TTC8NEWSFEED24FORMATLAYOUTVIEWRENDERER_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC8NewsFeed24FormatLayoutViewRenderer : SwiftObject {
+    ? presentingViewController;
+    ? parentViewController;
+    ? analyticsDataProvider;
+    ? viewNodeRenderer;
+    ? textNodeRenderer;
+    ? imageNodeRenderer;
+    ? buttonNodeRenderer;
+    ? stateViewNodeRenderer;
+    ? customNodeRenderer;
+    ? groupNodeRenderer;
+    ? webEmbedNodeRenderer;
+    ? adMetricsNodeRenderer;
+    ? micaNodeRenderer;
+    ? layeredMediaNodeRenderer;
+    ? videoNodeRenderer;
+    ? issueCoverNodeRenderer;
+    ? groupMaskNodeRenderer;
+    ? webEmbedViewControllerReuseManager;
+    ? shareAttributionNodeRenderer;
+    ? shareAttributionViewReuseManager;
+    ? videoPlayerNodeRenderer;
+    ? progressViewNodeRenderer;
+    ? rendererTool;
+    ? commandCenter;
+    ? tracker;
+    ? runModeRunner;
+    ? timer;
+    ? visibilityRenderer;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

@@ -1,0 +1,39 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef CCVEGACGLINEARGRADIENT_H
+#define CCVEGACGLINEARGRADIENT_H
+
+@class NSMutableArray;
+@protocol CCVegaCGGradientInterface;
+
+#import <Foundation/Foundation.h>
+
+#import "CCVegaCGContext.h"
+
+@interface CCVegaCGLinearGradient : NSObject <CCVegaCGGradientInterface>
+
+ {
+    CGFloat _x0;
+    CGFloat _y0;
+    CGFloat _x1;
+    CGFloat _y1;
+    NSMutableArray *_colorStops;
+    CCVegaCGContext *_context;
+}
+
+
+
+
+-(id)initWithDictionary:(id)arg0 context:(id)arg1 ;
+-(id)initWithX0:(CGFloat)arg0 y0:(CGFloat)arg1 x1:(CGFloat)arg2 y1:(CGFloat)arg3 ;
+-(void)addColorStopWithOffset:(CGFloat)arg0 color:(id)arg1 ;
+-(void)fillWithContext:(struct CGContext *)arg0 ;
+
+
+@end
+
+
+#endif

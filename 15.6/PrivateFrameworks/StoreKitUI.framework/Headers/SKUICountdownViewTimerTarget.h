@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef SKUICOUNTDOWNVIEWTIMERTARGET_H
+#define SKUICOUNTDOWNVIEWTIMERTARGET_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface SKUICountdownViewTimerTarget : NSObject
+
+@property (copy, nonatomic) id *actionBlock; // ivar: _actionBlock
+
+
+-(void)action;
+
+
+@end
+
+
+#endif

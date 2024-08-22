@@ -1,0 +1,15 @@
+
+
+#include "DSMotionProvider.h"
+#include "DSProvider.h"
+#include "DSListenerDevice.h"
+#include "DSClientMotionDataOptions.h"
+#include "DSMotionStateListenerProxy.h"
+#include "DSKeychainPersistence.h"
+#include "DSSessionMetric.h"
+#include "DSCoreAnalyticsEventHandler.h"
+#include "DSRapportDevice.h"
+#include "DSListener.h"
+#include "DSProviderDevice.h"
+#include "DSLogging.h"
+#include "DSMotionListener.h"

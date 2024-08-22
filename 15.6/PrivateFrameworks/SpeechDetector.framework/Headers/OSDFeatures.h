@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef OSDFEATURES_H
+#define OSDFEATURES_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface OSDFeatures : NSObject
+
+@property (readonly, nonatomic) CGFloat processedAudioMs; // ivar: _processedAudioMs
+@property (readonly, nonatomic) CGFloat silenceDurationMs; // ivar: _silenceDurationMs
+@property (readonly, nonatomic) CGFloat silenceFramesCountMs; // ivar: _silenceFramesCountMs
+@property (readonly, nonatomic) CGFloat silenceProbability; // ivar: _silenceProbability
+
+
+-(id)initWithSilenceFramesCountMs:(CGFloat)arg0 silenceProbability:(CGFloat)arg1 silenceDurationMs:(CGFloat)arg2 processedAudioMs:(CGFloat)arg3 ;
+
+
+@end
+
+
+#endif

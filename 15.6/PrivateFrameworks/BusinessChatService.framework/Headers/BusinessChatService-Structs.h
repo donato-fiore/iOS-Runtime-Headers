@@ -1,0 +1,16 @@
+typedef struct _NSZone {
+} // Error Processing Struct Fields
+
+typedef struct ? {
+    BOOL isDefault;
+} ?;
+
+typedef struct sqlite3 {
+} // Error Processing Struct Fields
+
+typedef struct __CFString {
+} // Error Processing Struct Fields
+
+typedef struct __CFURL {
+} // Error Processing Struct Fields
+

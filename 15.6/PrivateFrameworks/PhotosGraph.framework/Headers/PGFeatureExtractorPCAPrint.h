@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef PGFEATUREEXTRACTORPCAPRINT_H
+#define PGFEATUREEXTRACTORPCAPRINT_H
+
+
+
+#import "PGAssetFeatureExtractor.h"
+
+@interface PGFeatureExtractorPCAPrint : PGAssetFeatureExtractor
+
+
+
+-(BOOL)_generateError:(*id)arg0 code:(NSInteger)arg1 message:(id)arg2 underlyingError:(id)arg3 ;
+-(NSInteger)featureLength;
+-(id)_floatArrayFromSceneprint:(id)arg0 ;
+-(id)featureNames;
+-(id)floatMatrixWithEntities:(id)arg0 progressReporter:(id)arg1 error:(*id)arg2 ;
+-(id)name;
+
+
+@end
+
+
+#endif

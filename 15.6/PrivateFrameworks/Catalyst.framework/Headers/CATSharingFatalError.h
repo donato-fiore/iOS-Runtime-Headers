@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef CATSHARINGFATALERROR_H
+#define CATSHARINGFATALERROR_H
+
+@class NSString, NSError;
+@protocol CATSharingFailureEvent;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CATSharingFatalError : NSObject <CATSharingFailureEvent>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) NSInteger failureType;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+@property (readonly, nonatomic) NSError *underlyingError; // ivar: _underlyingError
+
+
+-(id)initWithUnderlyingError:(id)arg0 ;
+
+
+@end
+
+
+#endif

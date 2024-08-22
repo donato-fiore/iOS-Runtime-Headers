@@ -1,0 +1,59 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef PRPINYINMODIFICATION_H
+#define PRPINYINMODIFICATION_H
+
+@class NSString;
+
+
+#import "PRModification.h"
+
+@interface PRPinyinModification : PRModification {
+    _NSRange _range;
+    NSString *_replacementString;
+    NSUInteger _modificationType;
+    _NSRange _syllableRange;
+    _NSRange _additionalSyllableRange;
+    CGFloat _modificationScore;
+    NSUInteger _syllableCountScore;
+    unsigned char _letters;
+    BOOL _producesPartialSyllable;
+    BOOL _isTemporary;
+}
+
+
+
+
++(id)finalModificationsForInputString:(id)arg0 ;
++(id)modificationsForInputString:(id)arg0 ;
+-(BOOL)_shouldAppendLetter:(unsigned char)arg0 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)isTemporary;
+-(BOOL)producesPartialSyllable;
+-(CGFloat)modificationScore;
+-(NSUInteger)hash;
+-(NSUInteger)modificationType;
+-(NSUInteger)syllableCountScore;
+-(id)description;
+-(id)initWithRange:(struct _NSRange )arg0 replacementString:(id)arg1 modificationType:(NSUInteger)arg2 syllableRange:(struct _NSRange )arg3 additionalSyllableRange:(struct _NSRange )arg4 modificationScore:(CGFloat)arg5 ;
+-(id)initWithRange:(struct _NSRange )arg0 replacementString:(id)arg1 modificationType:(NSUInteger)arg2 syllableRange:(struct _NSRange )arg3 additionalSyllableRange:(struct _NSRange )arg4 modificationScore:(CGFloat)arg5 syllableCountScore:(NSUInteger)arg6 syllableLetters:(char *)arg7 producesPartialSyllable:(BOOL)arg8 ;
+-(id)initWithRange:(struct _NSRange )arg0 replacementString:(id)arg1 modificationType:(NSUInteger)arg2 syllableRange:(struct _NSRange )arg3 additionalSyllableRange:(struct _NSRange )arg4 modificationScore:(CGFloat)arg5 syllableCountScore:(NSUInteger)arg6 syllableLetters:(char *)arg7 producesPartialSyllable:(BOOL)arg8 isTemporary:(BOOL)arg9 ;
+-(id)initWithRange:(struct _NSRange )arg0 replacementString:(id)arg1 modificationType:(NSUInteger)arg2 syllableRange:(struct _NSRange )arg3 modificationScore:(CGFloat)arg4 ;
+-(id)initWithRange:(struct _NSRange )arg0 replacementString:(id)arg1 modificationType:(NSUInteger)arg2 syllableRange:(struct _NSRange )arg3 modificationScore:(CGFloat)arg4 isTemporary:(BOOL)arg5 ;
+-(id)initWithRange:(struct _NSRange )arg0 replacementString:(id)arg1 modificationType:(NSUInteger)arg2 syllableRange:(struct _NSRange )arg3 modificationScore:(CGFloat)arg4 syllableCountScore:(NSUInteger)arg5 syllableLetters:(char *)arg6 producesPartialSyllable:(BOOL)arg7 ;
+-(id)initWithRange:(struct _NSRange )arg0 replacementString:(id)arg1 modificationType:(NSUInteger)arg2 syllableRange:(struct _NSRange )arg3 modificationScore:(CGFloat)arg4 syllableCountScore:(NSUInteger)arg5 syllableLetters:(char *)arg6 producesPartialSyllable:(BOOL)arg7 isTemporary:(BOOL)arg8 ;
+-(id)replacementString;
+-(struct _NSRange )additionalSyllableRange;
+-(struct _NSRange )combinedSyllableRange;
+-(struct _NSRange )range;
+-(struct _NSRange )syllableRange;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,64 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef ASPUBLICKEYCREDENTIALMANAGER_H
+#define ASPUBLICKEYCREDENTIALMANAGER_H
+
+@class _WKWebAuthenticationPanel, NSMutableDictionary, NSString, LAContext, NSError;
+@protocol _WKWebAuthenticationPanelDelegate, ASPublicKeyCredentialManagerInterface, OS_dispatch_queue, ASPublicKeyCredentialManagerDelegate;
+
+#import <Foundation/Foundation.h>
+
+
+@interface ASPublicKeyCredentialManager : NSObject <_WKWebAuthenticationPanelDelegate, ASPublicKeyCredentialManagerInterface>
+
+ {
+    _WKWebAuthenticationPanel *_panel;
+    NSMutableDictionary *_userHandlesToAssertionResponses;
+    id *_selectPlatformAssertionCallback;
+    id *_selectSecurityKeyAssertionCallback;
+    NSString *_currentRelyingPartyIdentifier;
+    LAContext *_currentAuthenticatedContext;
+    BOOL _hasRunningPublicKeyCredentialOperation;
+    NSError *_pendingError;
+    NSObject<OS_dispatch_queue> *_internalQueue;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, weak, nonatomic) NSObject<ASPublicKeyCredentialManagerDelegate> *delegate; // ivar: _delegate
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) BOOL hasRunningPublicKeyCredentialOperation;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(id)_allowedCredentialsForAssertionOptions:(id)arg0 ;
+-(id)_asToWKCredentialAssertionOptions:(id)arg0 ;
+-(id)_asToWKCredentialCreationOptions:(id)arg0 forCredentialKind:(NSUInteger)arg1 ;
+-(id)encodeGetAssertionCommandWithOptions:(id)arg0 authenticatorUserVerificationAvailability:(NSUInteger)arg1 ;
+-(id)encodeMakeCredentialCommandWithOptions:(id)arg0 authenticatorUserVerificationAvailability:(NSUInteger)arg1 ;
+-(id)init;
+-(void)_cancelCurrentOperationSynchronouslyOnInternalQueueIfNecessary;
+-(void)_createCredentialOfKind:(NSUInteger)arg0 withOptions:(id)arg1 ;
+-(void)_tearDownOnMainQueue;
+-(void)assertUsingPlatformCredentialForLoginChoice:(id)arg0 authenticatedContext:(id)arg1 ;
+-(void)assertUsingSecurityKeyCredentialForLoginChoice:(id)arg0 ;
+-(void)beginAssertionsWithOptions:(id)arg0 ;
+-(void)beginCreatingNewSecurityKeyCredentialIfAvailableWithOptions:(id)arg0 ;
+-(void)cancelCurrentOperationIfNecessaryWithOverrideError:(id)arg0 ;
+-(void)clearAllCredentials;
+-(void)createNewPlatformCredentialWithOptions:(id)arg0 authenticatedContext:(id)arg1 ;
+-(void)panel:(id)arg0 dismissWebAuthenticationPanelWithResult:(NSInteger)arg1 ;
+-(void)panel:(id)arg0 requestLAContextForUserVerificationWithCompletionHandler:(id)arg1 ;
+-(void)panel:(id)arg0 requestPINWithRemainingRetries:(NSUInteger)arg1 completionHandler:(id)arg2 ;
+-(void)panel:(id)arg0 selectAssertionResponse:(id)arg1 source:(NSInteger)arg2 completionHandler:(id)arg3 ;
+-(void)panel:(id)arg0 updateWebAuthenticationPanel:(NSInteger)arg1 ;
+
+
+@end
+
+
+#endif

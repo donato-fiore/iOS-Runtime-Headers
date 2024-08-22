@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef PGMOODHOLIDAYRESOLVER_H
+#define PGMOODHOLIDAYRESOLVER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface PGMoodHolidayResolver : NSObject
+
+
+
++(id)moodVectorForHolidayCategory:(NSUInteger)arg0 ;
++(id)moodVectorForMoodIdentifier:(id)arg0 ;
++(void)initialize;
+
+
+@end
+
+
+#endif

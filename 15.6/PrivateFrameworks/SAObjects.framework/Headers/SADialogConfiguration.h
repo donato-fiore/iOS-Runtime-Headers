@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef SADIALOGCONFIGURATION_H
+#define SADIALOGCONFIGURATION_H
+
+@class NSString;
+@protocol SAAceSerializable;
+
+
+#import "SABaseAceObject.h"
+
+@interface SADialogConfiguration : SABaseAceObject <SAAceSerializable>
+
+
+
+@property (retain, nonatomic) NSObject<SAAceSerializable> *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (copy, nonatomic) NSString *gender;
+@property (readonly) NSUInteger hash;
+@property (copy, nonatomic) NSString *languageCode;
+@property (readonly) Class superclass;
+
+
+-(id)encodedClassName;
+-(id)groupIdentifier;
+
+
+@end
+
+
+#endif

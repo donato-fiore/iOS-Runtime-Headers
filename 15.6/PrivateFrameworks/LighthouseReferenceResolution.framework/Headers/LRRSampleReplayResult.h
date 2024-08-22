@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef LRRSAMPLEREPLAYRESULT_H
+#define LRRSAMPLEREPLAYRESULT_H
+
+@class NSDictionary, NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface LRRSampleReplayResult : NSObject
+
+@property (copy, nonatomic) NSDictionary *comparatorResults; // ivar: _comparatorResults
+@property (nonatomic) BOOL evaluated; // ivar: _evaluated
+@property (copy, nonatomic) NSString *originalInteractionId; // ivar: _originalInteractionId
+@property (copy, nonatomic) NSString *replayRequestId; // ivar: _replayRequestId
+@property (nonatomic) CGFloat requestEndTs; // ivar: _requestEndTs
+@property (nonatomic) CGFloat requestStartTs; // ivar: _requestStartTs
+@property (copy, nonatomic) NSString *strRequestEnd; // ivar: _strRequestEnd
+@property (copy, nonatomic) NSString *strRequestStart; // ivar: _strRequestStart
+@property (nonatomic) CGFloat timeRequestInterval; // ivar: _timeRequestInterval
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

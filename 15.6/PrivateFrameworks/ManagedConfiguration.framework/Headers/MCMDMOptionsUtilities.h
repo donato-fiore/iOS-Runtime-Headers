@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef MCMDMOPTIONSUTILITIES_H
+#define MCMDMOPTIONSUTILITIES_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface MCMDMOptionsUtilities : NSObject
+
+
+
++(id)defaultMDMOptions;
++(id)validatedMDMOptionsFromOptionsDictionary:(id)arg0 ;
++(void)setDefaultMDMOptions:(id)arg0 ;
+
+
+@end
+
+
+#endif

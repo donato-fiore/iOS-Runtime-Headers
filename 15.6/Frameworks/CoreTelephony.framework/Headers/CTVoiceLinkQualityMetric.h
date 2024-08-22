@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef CTVOICELINKQUALITYMETRIC_H
+#define CTVOICELINKQUALITYMETRIC_H
+
+@class NSNumber;
+@protocol NSCopying, NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CTVoiceLinkQualityMetric : NSObject <NSCopying, NSSecureCoding>
+
+
+
+@property (retain, nonatomic) NSNumber *linkQuality; // ivar: _linkQuality
+
+
++(BOOL)supportsSecureCoding;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithLinkQuality:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

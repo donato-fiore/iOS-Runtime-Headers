@@ -1,0 +1,48 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef UIPRINTERSELECTIONOPTION_H
+#define UIPRINTERSELECTIONOPTION_H
+
+@class NSString, PKPrinter;
+@protocol UIPrinterBrowserOwner;
+
+
+#import "UIPrintOption.h"
+#import "UIPrinterBrowserViewController.h"
+
+@interface UIPrinterSelectionOption : UIPrintOption <UIPrinterBrowserOwner>
+
+
+
+@property (retain, nonatomic) UIPrinterBrowserViewController *browserController; // ivar: _browserController
+@property (nonatomic) BOOL contactingPrinter; // ivar: _contactingPrinter
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (retain, nonatomic) PKPrinter *printer; // ivar: _printer
+@property (readonly) Class superclass;
+
+
+-(BOOL)filtersPrinters;
+-(BOOL)shouldAutorotateToInterfaceOrientation:(NSInteger)arg0 ;
+-(BOOL)shouldShow;
+-(NSUInteger)supportedInterfaceOrientations;
+-(id)initWithPrintInfo:(id)arg0 printPanelViewController:(id)arg1 ;
+-(id)printOptionTableViewCell;
+-(id)printerDisplayName:(id)arg0 ;
+-(id)summary;
+-(void)cancelPrinting;
+-(void)didSelectPrintOption;
+-(void)dismissAnimated:(BOOL)arg0 ;
+-(void)setCurrentPrinter:(id)arg0 ;
+-(void)setShowContactingPrinter:(BOOL)arg0 ;
+-(void)showContacting;
+
+
+@end
+
+
+#endif

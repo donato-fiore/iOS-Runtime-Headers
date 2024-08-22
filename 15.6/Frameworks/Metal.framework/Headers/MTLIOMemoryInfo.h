@@ -1,0 +1,39 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef MTLIOMEMORYINFO_H
+#define MTLIOMEMORYINFO_H
+
+
+#import <Foundation/Foundation.h>
+
+#import "MTLIOAccelResource.h"
+
+@interface MTLIOMemoryInfo : NSObject {
+    *void memlist_key;
+    MTLIOAccelResource *fResourceListHead;
+    os_unfair_lock_s _memoryInfoLock;
+}
+
+
+
+
++(id)initialize;
+-(*void)addDataSource:(id)arg0 ;
+-(id)init;
+-(struct __CFArray *)annotationList;
+-(void)addResourceToList:(id)arg0 ;
+-(void)dealloc;
+-(void)lock;
+-(void)removeDataSource:(*void)arg0 ;
+-(void)removeResourceFromList:(id)arg0 ;
+-(void)shutdown;
+-(void)unlock;
+
+
+@end
+
+
+#endif

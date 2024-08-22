@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef SKUICOMMENTHEADERVIEWCONTROLLER_H
+#define SKUICOMMENTHEADERVIEWCONTROLLER_H
+
+@class UIViewController, NSString, UILabel;
+
+
+
+@interface SKUICommentHeaderViewController : UIViewController {
+    NSString *_title;
+    UILabel *_titleLabel;
+}
+
+
+
+
+-(id)initWithTitle:(id)arg0 ;
+-(void)viewDidLoad;
+-(void)viewWillLayoutSubviews;
+
+
+@end
+
+
+#endif

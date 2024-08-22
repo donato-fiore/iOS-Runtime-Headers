@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _TTCC14CORECHARTSWIFT21OPCHARTGESTUREHANDLER7HANDLER_H
+#define _TTCC14CORECHARTSWIFT21OPCHARTGESTUREHANDLER7HANDLER_H
+
+@class TtC14CoreChartSwift16SgGestureHandler;
+
+
+
+@interface _TtCC14CoreChartSwift21OpChartGestureHandler7Handler : TtC14CoreChartSwift16SgGestureHandler {
+    ? gestures;
+    ? xScale;
+    ? yScale;
+    ? plotWidth;
+    ? plotHeight;
+    ? isHovering;
+    ? isDragging;
+    ? draggingStartLocation;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

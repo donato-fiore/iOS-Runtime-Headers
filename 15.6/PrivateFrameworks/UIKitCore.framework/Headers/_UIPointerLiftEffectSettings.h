@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _UIPOINTERLIFTEFFECTSETTINGS_H
+#define _UIPOINTERLIFTEFFECTSETTINGS_H
+
+@class UIPointerEffectSettings;
+
+
+
+@interface _UIPointerLiftEffectSettings : UIPointerEffectSettings
+
+
+
++(BOOL)pointerSlipMatchesContentSlip;
+-(void)setDefaultValues;
+
+
+@end
+
+
+#endif

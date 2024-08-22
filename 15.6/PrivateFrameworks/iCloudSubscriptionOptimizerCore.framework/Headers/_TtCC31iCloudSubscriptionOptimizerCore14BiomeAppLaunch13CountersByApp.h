@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _TTCC31ICLOUDSUBSCRIPTIONOPTIMIZERCORE14BIOMEAPPLAUNCH13COUNTERSBYAPP_H
+#define _TTCC31ICLOUDSUBSCRIPTIONOPTIMIZERCORE14BIOMEAPPLAUNCH13COUNTERSBYAPP_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCC31iCloudSubscriptionOptimizerCore14BiomeAppLaunch13CountersByApp : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

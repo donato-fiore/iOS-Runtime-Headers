@@ -1,0 +1,49 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef MBCELLULARDATASUBSCRIPTIONMONITOR_H
+#define MBCELLULARDATASUBSCRIPTIONMONITOR_H
+
+@class NSString, CoreTelephonyClient;
+@protocol CoreTelephonyClientDataDelegate, OS_dispatch_source, OS_dispatch_queue;
+
+#import <Foundation/Foundation.h>
+
+
+@interface MBCellularDataSubscriptionMonitor : NSObject <CoreTelephonyClientDataDelegate>
+
+ {
+    BOOL _backupOnCellularSupportChanged;
+}
+
+
+@property NSInteger backupOnCellularSupport; // ivar: _backupOnCellularSupport
+@property (copy, nonatomic) id *backupOnCellularSupportHandler; // ivar: _backupOnCellularSupportHandler
+@property (readonly, copy) NSString *debugDescription;
+@property (retain, nonatomic) NSObject<OS_dispatch_source> *delegateTimer; // ivar: _delegateTimer
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (retain, nonatomic) NSObject<OS_dispatch_queue> *queue; // ivar: _queue
+@property (readonly) Class superclass;
+@property (retain) CoreTelephonyClient *telephonyClient; // ivar: _telephonyClient
+
+
++(NSInteger)backupOnCellularSupportWithError:(*id)arg0 ;
+-(NSInteger)_backupOnCellularSupportWithError:(*id)arg0 ;
+-(id)init;
+-(id)initWithQueue:(id)arg0 ;
+-(void)_cancelDelegateTimer;
+-(void)_refreshBackupOnCellularSupport;
+-(void)_startDelegateTimer;
+-(void)cancel;
+-(void)currentDataSimChanged:(id)arg0 ;
+-(void)dataSettingsChanged:(id)arg0 ;
+-(void)start;
+
+
+@end
+
+
+#endif

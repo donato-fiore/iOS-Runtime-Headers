@@ -1,0 +1,51 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef BWAPPCLIPCODENODE_H
+#define BWAPPCLIPCODENODE_H
+
+@protocol OS_dispatch_queue, BWMetadataDetectedResultsObserver;
+
+
+#import "BWNode.h"
+#import "FigWeakReference.h"
+
+@interface BWAppClipCodeNode : BWNode {
+    *AppC3DSession _appClipCodeSession;
+    BOOL _appC3DAvailable;
+    NSObject<OS_dispatch_queue> *_processingQueue;
+    FigWeakReference *_weakSelf;
+    BOOL _haveInputTransform;
+    int _rotationDegrees;
+    BOOL _mirroringHorizontal;
+    BOOL _mirroringVertical;
+    NSInteger _lastAppClipCodeCount;
+}
+
+
+@property (nonatomic) NSObject<BWMetadataDetectedResultsObserver> *detectedResultsObserver; // ivar: _detectedResultsObserver
+
+
++(void)initialize;
+-(BOOL)_shouldEmitSBufForAppClipCodeCount:(NSInteger)arg0 originalPTS:(struct ? )arg1 ;
+-(id)_pixelFormatsSupportedByAppC3D;
+-(id)initWithProcessingQueuePriority:(unsigned int)arg0 ;
+-(id)nodeSubType;
+-(id)nodeType;
+-(void)_endAppClipCodeSession;
+-(void)_processSampleBuffer:(struct opaqueCMSampleBuffer *)arg0 ;
+-(void)_startAppClipCodeSession;
+-(void)_updateInputRequirements;
+-(void)dealloc;
+-(void)didReachEndOfDataForInput:(id)arg0 ;
+-(void)didReceiveAppC3DUpdate:(struct AppC3DTrackingResult *)arg0 userData:(id)arg1 ;
+-(void)prepareForCurrentConfigurationToBecomeLive;
+-(void)renderSampleBuffer:(struct opaqueCMSampleBuffer *)arg0 forInput:(id)arg1 ;
+
+
+@end
+
+
+#endif

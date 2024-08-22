@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef IMSTICKERMESSAGEPIPELINEPARAMETER_H
+#define IMSTICKERMESSAGEPIPELINEPARAMETER_H
+
+@protocol IMStickerMessageProcessingParameter;
+
+
+#import "IMAssociatedMessagePipelineParameter.h"
+
+@interface IMStickerMessagePipelineParameter : IMAssociatedMessagePipelineParameter <IMStickerMessageProcessingParameter>
+
+
+
+
+
+-(id)description;
+-(id)fileTransferForBlastDoorFileTransferAttribute:(id)arg0 fileTransferGUIDs:(id)arg1 ;
+-(id)initWithBD:(id)arg0 idsTrustedData:(id)arg1 ;
+
+
+@end
+
+
+#endif

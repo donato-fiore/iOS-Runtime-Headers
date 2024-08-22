@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef DOCTHUMBNAILCACHE_H
+#define DOCTHUMBNAILCACHE_H
+
+@class NSMapTable, NSCache;
+
+#import <Foundation/Foundation.h>
+
+
+@interface DOCThumbnailCache : NSObject
+
+@property (readonly, nonatomic) NSMapTable *cachedThumbnailItems; // ivar: _cachedThumbnailItems
+@property (readonly, nonatomic) NSCache *recentlyUsedItems; // ivar: _recentlyUsedItems
+
+
+-(id)init;
+-(void)clear;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,69 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef GEOMAPITEMROUTINEATTRIBUTES_H
+#define GEOMAPITEMROUTINEATTRIBUTES_H
+
+@class PBCodable, PBDataReader, PBUnknownFields, NSString, NSUUID;
+@protocol NSCopying;
+
+
+
+@interface GEOMapItemRoutineAttributes : PBCodable <NSCopying>
+
+ {
+    PBDataReader *_reader;
+    PBUnknownFields *_unknownFields;
+    CGFloat _eventDate;
+    NSString *_eventName;
+    NSString *_loiIdentifierString;
+    unsigned int _readerMarkPos;
+    unsigned int _readerMarkLength;
+    os_unfair_lock_s _readerLock;
+    int _loiType;
+    BOOL _isEventAllDay;
+    ? _flags;
+}
+
+
+@property (nonatomic) CGFloat eventDate;
+@property (retain, nonatomic) NSString *eventName;
+@property (nonatomic) BOOL hasEventDate;
+@property (readonly, nonatomic) BOOL hasEventName;
+@property (nonatomic) BOOL hasIsEventAllDay;
+@property (readonly, nonatomic) BOOL hasLoiIdentifierString;
+@property (nonatomic) BOOL hasLoiType;
+@property (nonatomic) BOOL isEventAllDay;
+@property (retain, nonatomic) NSUUID *loiIdentifier;
+@property (retain, nonatomic) NSString *loiIdentifierString;
+@property (nonatomic) int loiType;
+@property (readonly, nonatomic) PBUnknownFields *unknownFields;
+
+
++(BOOL)isValid:(id)arg0 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)dictionaryRepresentation;
+-(id)init;
+-(id)initWithData:(id)arg0 ;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(id)jsonRepresentation;
+-(id)loiTypeAsString:(int)arg0 ;
+-(int)StringAsLoiType:(id)arg0 ;
+-(void)clearUnknownFields:(BOOL)arg0 ;
+-(void)copyTo:(id)arg0 ;
+-(void)mergeFrom:(id)arg0 ;
+-(void)readAll:(BOOL)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

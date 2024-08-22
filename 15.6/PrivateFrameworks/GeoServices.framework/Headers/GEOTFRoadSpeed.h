@@ -1,0 +1,57 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef GEOTFROADSPEED_H
+#define GEOTFROADSPEED_H
+
+@class PBCodable, PBDataReader, NSData, NSMutableArray;
+@protocol NSCopying;
+
+
+
+@interface GEOTFRoadSpeed : PBCodable <NSCopying>
+
+ {
+    PBDataReader *_reader;
+    ? _geoIds;
+    ? _latitudeCoordinates;
+    ? _longitudeCoordinates;
+    NSInteger _geoid;
+    NSData *_openlr;
+    NSMutableArray *_predictedSpeeds;
+    NSData *_zilch;
+    unsigned int _readerMarkPos;
+    unsigned int _readerMarkLength;
+    os_unfair_lock_s _readerLock;
+    int _color;
+    float _confidence;
+    unsigned int _decayTimeWindowInMinutes;
+    float _endOffset;
+    unsigned int _speedKph;
+    float _startOffset;
+    BOOL _hidden;
+    ? _flags;
+}
+
+
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)dictionaryRepresentation;
+-(id)init;
+-(id)initWithData:(id)arg0 ;
+-(id)jsonRepresentation;
+-(void)dealloc;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

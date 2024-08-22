@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef CKAPPLICATIONSTATE_H
+#define CKAPPLICATIONSTATE_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface CKApplicationState : NSObject
+
+
+
++(BOOL)_isUIExtension;
++(BOOL)isActive;
++(BOOL)isBackground;
++(BOOL)isResizing;
++(BOOL)isWindowForegroundActive:(id)arg0 ;
++(void)setActive:(BOOL)arg0 ;
+
+
+@end
+
+
+#endif

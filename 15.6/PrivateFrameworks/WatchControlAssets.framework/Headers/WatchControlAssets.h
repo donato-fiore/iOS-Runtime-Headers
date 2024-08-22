@@ -1,0 +1,3 @@
+
+
+#include "WatchControlAssetsHelperClass.h"

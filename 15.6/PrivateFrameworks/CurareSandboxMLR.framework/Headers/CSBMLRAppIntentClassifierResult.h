@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef CSBMLRAPPINTENTCLASSIFIERRESULT_H
+#define CSBMLRAPPINTENTCLASSIFIERRESULT_H
+
+@class NSNumber;
+@protocol CSBMLRSiriXEvaluationResultProtocol;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CSBMLRAppIntentClassifierResult : NSObject <CSBMLRSiriXEvaluationResultProtocol>
+
+
+
+@property (nonatomic) BOOL classified; // ivar: classified
+@property (nonatomic) BOOL classifyResult; // ivar: classifyResult
+@property (retain, nonatomic) NSNumber *probablity; // ivar: probablity
+
+
+-(id)initWithResult:(BOOL)arg0 classifyResult:(BOOL)arg1 probablity:(id)arg2 ;
+
+
+@end
+
+
+#endif

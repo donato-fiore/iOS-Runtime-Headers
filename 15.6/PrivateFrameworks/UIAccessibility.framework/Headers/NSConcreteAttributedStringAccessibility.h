@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef NSCONCRETEATTRIBUTEDSTRINGACCESSIBILITY_H
+#define NSCONCRETEATTRIBUTEDSTRINGACCESSIBILITY_H
+
+@class super;
+
+
+
+@interface NSConcreteAttributedStringAccessibility : super
+
+
+
++(Class)safeCategoryBaseClass;
++(id)safeCategoryTargetClassName;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)initWithAttributedString:(id)arg0 ;
+-(id)initWithString:(id)arg0 ;
+-(id)mutableCopyWithZone:(struct _NSZone *)arg0 ;
+-(id)string;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,52 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef UIKBRENDERFACTORYIPADFUDGELANDSCAPE_H
+#define UIKBRENDERFACTORYIPADFUDGELANDSCAPE_H
+
+
+
+#import "UIKBRenderFactoryiPadFudge.h"
+
+@interface UIKBRenderFactoryiPadFudgeLandscape : UIKBRenderFactoryiPadFudge
+
+
+
+-(CGFloat)_row4ControlSegmentWidthRight;
+-(CGFloat)controlKeyFontSize;
+-(CGFloat)deleteKeyFontSize;
+-(CGFloat)dualStringKeyBottomFontSize:(NSUInteger)arg0 ;
+-(CGFloat)dualStringKeyTopFontSize:(NSUInteger)arg0 ;
+-(CGFloat)keyCornerRadius;
+-(CGFloat)moreKeyFontSize;
+-(CGFloat)spaceKeyFontSize;
+-(CGFloat)stringKeyFontSize:(NSUInteger)arg0 ;
+-(CGFloat)symbolImageControlKeyFontSize;
+-(id)deleteKeyImageName;
+-(id)deleteOnKeyImageName;
+-(id)dictationKeyImageName;
+-(id)dismissKeyImageName;
+-(id)globalEmojiKeyImageName;
+-(id)globalKeyImageName;
+-(id)messagesWriteboardKeyImageName;
+-(id)shiftKeyImageName;
+-(id)shiftLockImageName;
+-(id)shiftOnKeyImageName;
+-(struct CGPoint )deleteKeyOffset:(NSUInteger)arg0 ;
+-(struct CGPoint )dictationKeyOffset;
+-(struct CGPoint )dismissKeyOffset;
+-(struct CGPoint )dualStringKeyBottomTextOffset:(NSUInteger)arg0 ;
+-(struct CGPoint )dualStringKeyTopTextOffset:(NSUInteger)arg0 ;
+-(struct CGPoint )iPadFudgeControlKeyOffset;
+-(struct CGPoint )internationalKeyOffset;
+-(struct CGPoint )moreKeyOffset;
+-(struct CGPoint )symbolImageControlKeyOffset;
+-(struct CGSize )defaultVariantGeometrySize;
+
+
+@end
+
+
+#endif

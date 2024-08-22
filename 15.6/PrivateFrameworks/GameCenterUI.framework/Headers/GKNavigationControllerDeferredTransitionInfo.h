@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef GKNAVIGATIONCONTROLLERDEFERREDTRANSITIONINFO_H
+#define GKNAVIGATIONCONTROLLERDEFERREDTRANSITIONINFO_H
+
+@class UIViewController;
+
+#import <Foundation/Foundation.h>
+
+
+@interface GKNavigationControllerDeferredTransitionInfo : NSObject
+
+@property (nonatomic) BOOL animated; // ivar: _animated
+@property (nonatomic) int type; // ivar: _type
+@property (retain, nonatomic) UIViewController *viewController; // ivar: _viewController
+
+
+
+
+@end
+
+
+#endif

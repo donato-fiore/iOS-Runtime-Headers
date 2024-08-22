@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef ATDEVICEMESSAGELINK_H
+#define ATDEVICEMESSAGELINK_H
+
+@class ATConcreteMessageLink;
+
+
+
+@interface ATDeviceMessageLink : ATConcreteMessageLink
+
+
+
++(id)deviceMessageLink;
+-(id)initWithSocket:(id)arg0 ;
+
+
+@end
+
+
+#endif

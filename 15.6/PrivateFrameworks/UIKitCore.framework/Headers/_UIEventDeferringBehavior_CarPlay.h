@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _UIEVENTDEFERRINGBEHAVIOR_CARPLAY_H
+#define _UIEVENTDEFERRINGBEHAVIOR_CARPLAY_H
+
+@class Default;
+
+
+
+@interface _UIEventDeferringBehavior_CarPlay : Default
+
+
+
+-(BOOL)shouldAllowFallbackWindowForEnvironment:(id)arg0 ;
+
+
+@end
+
+
+#endif

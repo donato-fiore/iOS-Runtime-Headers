@@ -1,0 +1,50 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef GEODYNAMICCONTEXTHYPERLINKDETAILS_H
+#define GEODYNAMICCONTEXTHYPERLINKDETAILS_H
+
+@class PBCodable, NSString;
+@protocol NSCopying;
+
+
+
+@interface GEODynamicContextHyperlinkDetails : PBCodable <NSCopying>
+
+ {
+    NSString *_displayedString;
+    int _layoutType;
+    ? _flags;
+}
+
+
+@property (retain, nonatomic) NSString *displayedString;
+@property (readonly, nonatomic) BOOL hasDisplayedString;
+@property (nonatomic) BOOL hasLayoutType;
+@property (nonatomic) int layoutType;
+
+
++(BOOL)isValid:(id)arg0 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)dictionaryRepresentation;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(id)jsonRepresentation;
+-(id)layoutTypeAsString:(int)arg0 ;
+-(int)StringAsLayoutType:(id)arg0 ;
+-(void)copyTo:(id)arg0 ;
+-(void)mergeFrom:(id)arg0 ;
+-(void)readAll:(BOOL)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

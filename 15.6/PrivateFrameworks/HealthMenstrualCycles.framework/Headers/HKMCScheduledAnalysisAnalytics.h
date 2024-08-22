@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef HKMCSCHEDULEDANALYSISANALYTICS_H
+#define HKMCSCHEDULEDANALYSISANALYTICS_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface HKMCScheduledAnalysisAnalytics : NSObject
+
+
+
++(BOOL)_isAllowed;
++(BOOL)_isMetricEnabled;
++(BOOL)shouldSubmit;
++(void)submitMetricWithDateComponents:(id)arg0 ;
+
+
+@end
+
+
+#endif

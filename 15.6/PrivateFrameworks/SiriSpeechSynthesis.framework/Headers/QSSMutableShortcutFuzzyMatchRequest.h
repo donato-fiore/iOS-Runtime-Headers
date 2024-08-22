@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef QSSMUTABLESHORTCUTFUZZYMATCHREQUEST_H
+#define QSSMUTABLESHORTCUTFUZZYMATCHREQUEST_H
+
+@class NSString, NSArray;
+
+
+#import "QSSShortcutFuzzyMatchRequest.h"
+#import "QSSShortcutFuzzyMatchRequest_StringTokenPair.h"
+
+@interface QSSMutableShortcutFuzzyMatchRequest : QSSShortcutFuzzyMatchRequest
+
+@property (copy, nonatomic) NSString *context;
+@property (copy, nonatomic) NSString *device_type;
+@property (copy, nonatomic) NSString *interaction_id;
+@property (copy, nonatomic) NSString *locale;
+@property (copy, nonatomic) NSString *request_id;
+@property (copy, nonatomic) NSString *session_id;
+@property (copy, nonatomic) NSArray *shortcuts;
+@property (copy, nonatomic) QSSShortcutFuzzyMatchRequest_StringTokenPair *utterance;
+
+
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)init;
+
+
+@end
+
+
+#endif

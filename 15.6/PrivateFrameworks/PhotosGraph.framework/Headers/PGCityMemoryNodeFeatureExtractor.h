@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef PGCITYMEMORYNODEFEATUREEXTRACTOR_H
+#define PGCITYMEMORYNODEFEATUREEXTRACTOR_H
+
+
+
+#import "PGGraphMemoryNodeFeatureExtractor.h"
+
+@interface PGCityMemoryNodeFeatureExtractor : PGGraphMemoryNodeFeatureExtractor
+
+
+
++(id)unlocalizedCityNameFromCityName:(id)arg0 countryCode:(id)arg1 fromCityManager:(id)arg2 ;
+-(id)initWithVersion:(NSInteger)arg0 error:(*id)arg1 ;
+-(id)labelsForVersion:(NSInteger)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef AXUIMESSAGEREPLYHANDLER_H
+#define AXUIMESSAGEREPLYHANDLER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface AXUIMessageReplyHandler : NSObject
+
+
+
++(void)sendReply:(id)arg0 withError:(id)arg1 andOriginalXPCMessage:(id)arg2 usingConnection:(id)arg3 customDataAddingBlock:(id)arg4 ;
+
+
+@end
+
+
+#endif

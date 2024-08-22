@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef HUCAMERAMANAGECLOUDPLANITEM_H
+#define HUCAMERAMANAGECLOUDPLANITEM_H
+
+@class HFStaticItem, HMCameraProfile;
+
+
+
+@interface HUCameraManageCloudPlanItem : HFStaticItem
+
+@property (readonly, copy, nonatomic) HMCameraProfile *cameraProfile; // ivar: _cameraProfile
+
+
+-(id)_subclass_updateWithOptions:(id)arg0 ;
+-(id)initWithCameraProfile:(id)arg0 ;
+
+
+@end
+
+
+#endif

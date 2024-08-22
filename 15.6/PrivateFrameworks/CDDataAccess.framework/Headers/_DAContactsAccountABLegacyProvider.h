@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _DACONTACTSACCOUNTABLEGACYPROVIDER_H
+#define _DACONTACTSACCOUNTABLEGACYPROVIDER_H
+
+
+
+#import "DAContactsAccountProvider.h"
+
+@interface _DAContactsAccountABLegacyProvider : DAContactsAccountProvider
+
+@property (readonly, nonatomic) *void addressBook; // ivar: _addressBook
+
+
+-(id)accountForContainerWithIdentifier:(id)arg0 ;
+-(id)accountWithExternalIdentifier:(id)arg0 createIfNecessary:(BOOL)arg1 ;
+-(id)allAccounts;
+-(id)initWithAddressBook:(*void)arg0 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

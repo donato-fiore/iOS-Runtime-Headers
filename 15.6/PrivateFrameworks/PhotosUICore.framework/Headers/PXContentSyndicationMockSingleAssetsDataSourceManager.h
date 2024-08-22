@@ -1,0 +1,49 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef PXCONTENTSYNDICATIONMOCKSINGLEASSETSDATASOURCEMANAGER_H
+#define PXCONTENTSYNDICATIONMOCKSINGLEASSETSDATASOURCEMANAGER_H
+
+@class PHPhotoLibrary, PHFetchResult, NSString;
+@protocol PXPhotoLibraryUIChangeObserver, PXContentSyndicationAssetFetchResultProvider, PXUIImageProvider, PXContentSyndicationSocialLayerHighlightProvider;
+
+
+#import "PXContentSyndicationDataSourceManager.h"
+#import "PXContentSyndicationMockSingleAssetsDataSource.h"
+
+@interface PXContentSyndicationMockSingleAssetsDataSourceManager : PXContentSyndicationDataSourceManager <PXPhotoLibraryUIChangeObserver>
+
+ {
+    PHPhotoLibrary *_photoLibrary;
+    PHFetchResult *_allPhotosFetchResult;
+    id<PXContentSyndicationAssetFetchResultProvider> *_assetFetchResultProvider;
+    id<PXUIImageProvider> *_imageProvider;
+    id<PXContentSyndicationSocialLayerHighlightProvider> *_highlightProvider;
+}
+
+
+@property (readonly, nonatomic) PXContentSyndicationMockSingleAssetsDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
++(id)createCountsController;
+-(id)allAssetsFetchResult;
+-(id)assetFetchResultProvider;
+-(id)createAssetsDataSourceManager;
+-(id)createInitialDataSource;
+-(id)imageProvider;
+-(id)init;
+-(id)prepareForPhotoLibraryChange:(id)arg0 ;
+-(id)socialLayerHighlightProvider;
+-(void)photoLibraryDidChangeOnMainQueue:(id)arg0 withPreparedInfo:(id)arg1 ;
+
+
+@end
+
+
+#endif

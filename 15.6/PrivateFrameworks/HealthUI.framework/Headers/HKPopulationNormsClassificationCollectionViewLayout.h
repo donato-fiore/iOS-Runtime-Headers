@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef HKPOPULATIONNORMSCLASSIFICATIONCOLLECTIONVIEWLAYOUT_H
+#define HKPOPULATIONNORMSCLASSIFICATIONCOLLECTIONVIEWLAYOUT_H
+
+@class UICollectionViewFlowLayout;
+
+
+
+@interface HKPopulationNormsClassificationCollectionViewLayout : UICollectionViewFlowLayout
+
+
+
+-(BOOL)flipsHorizontallyInOppositeLayoutDirection;
+-(id)init;
+
+
+@end
+
+
+#endif

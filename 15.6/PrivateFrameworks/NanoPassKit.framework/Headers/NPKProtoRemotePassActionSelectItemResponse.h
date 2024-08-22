@@ -1,0 +1,47 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef NPKPROTOREMOTEPASSACTIONSELECTITEMRESPONSE_H
+#define NPKPROTOREMOTEPASSACTIONSELECTITEMRESPONSE_H
+
+@class PBCodable, NSString, NSData;
+@protocol NSCopying;
+
+
+
+@interface NPKProtoRemotePassActionSelectItemResponse : PBCodable <NSCopying>
+
+ {
+    ? _has;
+}
+
+
+@property (nonatomic) BOOL hasIncrementAmount;
+@property (readonly, nonatomic) BOOL hasIncrementCurrency;
+@property (readonly, nonatomic) BOOL hasServiceProviderDataData;
+@property (nonatomic) NSInteger incrementAmount; // ivar: _incrementAmount
+@property (retain, nonatomic) NSString *incrementCurrency; // ivar: _incrementCurrency
+@property (retain, nonatomic) NSString *requestUniqueID; // ivar: _requestUniqueID
+@property (nonatomic) int result; // ivar: _result
+@property (retain, nonatomic) NSData *serviceProviderDataData; // ivar: _serviceProviderDataData
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)dictionaryRepresentation;
+-(id)resultAsString:(int)arg0 ;
+-(int)StringAsResult:(id)arg0 ;
+-(void)copyTo:(id)arg0 ;
+-(void)mergeFrom:(id)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef CDMDATETIMEPROTOSPANMATCHER_H
+#define CDMDATETIMEPROTOSPANMATCHER_H
+
+@class UPDataDetectors, NSString;
+@protocol CDMProtoSpanMatcher;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CDMDateTimeProtoSpanMatcher : NSObject <CDMProtoSpanMatcher>
+
+ {
+    UPDataDetectors *_upDataDetectors;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
++(id)assetFolderNames;
++(id)trialFactorName;
+-(id)initWithDataDetectorPath:(id)arg0 locale:(id)arg1 ;
+-(id)matchSpansForTokenChain:(id)arg0 ;
+
+
+@end
+
+
+#endif

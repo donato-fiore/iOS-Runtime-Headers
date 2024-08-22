@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef PILEVELSLUMINANCEAUTOCALCULATOR_H
+#define PILEVELSLUMINANCEAUTOCALCULATOR_H
+
+
+
+#import "PILevelsAutoCalculator.h"
+
+@interface PILevelsLuminanceAutoCalculator : PILevelsAutoCalculator
+
+
+
+-(id)calculateSettingsForImageHistogram:(id)arg0 ;
+
+
+@end
+
+
+#endif

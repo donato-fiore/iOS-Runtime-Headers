@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _CDENTITYMETADATAKEY_H
+#define _CDENTITYMETADATAKEY_H
+
+@class CDPortraitMetadataKey;
+
+
+
+@interface _CDEntityMetadataKey : CDPortraitMetadataKey
+
+
+
++(id)bestLanguage;
++(id)name;
+
+
+@end
+
+
+#endif

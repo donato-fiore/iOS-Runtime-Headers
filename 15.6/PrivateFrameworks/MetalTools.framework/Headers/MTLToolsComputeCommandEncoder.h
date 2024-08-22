@@ -1,0 +1,82 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef MTLTOOLSCOMPUTECOMMANDENCODER_H
+#define MTLTOOLSCOMPUTECOMMANDENCODER_H
+
+@class NSString;
+@protocol MTLComputeCommandEncoderSPI, MTLDevice;
+
+
+#import "MTLToolsCommandEncoder.h"
+
+@interface MTLToolsComputeCommandEncoder : MTLToolsCommandEncoder <MTLComputeCommandEncoderSPI>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSObject<MTLDevice> *device;
+@property (readonly) NSUInteger dispatchType;
+@property (readonly) NSUInteger hash;
+@property (copy) NSString *label;
+@property (readonly) Class superclass;
+
+
+-(BOOL)encodeEndDoWhile:(id)arg0 offset:(NSUInteger)arg1 comparison:(NSUInteger)arg2 referenceValue:(unsigned int)arg3 ;
+-(BOOL)encodeEndIf;
+-(BOOL)encodeEndWhile;
+-(id)initWithComputeCommandEncoder:(id)arg0 parent:(id)arg1 descriptor:(id)arg2 ;
+-(id)newKernelDebugInfo;
+-(void)dispatchThreadgroups:(struct ? )arg0 threadsPerThreadgroup:(struct ? )arg1 ;
+-(void)dispatchThreadgroupsWithIndirectBuffer:(id)arg0 indirectBufferOffset:(NSUInteger)arg1 threadsPerThreadgroup:(struct ? )arg2 ;
+-(void)dispatchThreads:(struct ? )arg0 threadsPerThreadgroup:(struct ? )arg1 ;
+-(void)dispatchThreadsWithIndirectBuffer:(id)arg0 indirectBufferOffset:(NSUInteger)arg1 ;
+-(void)enableNullBufferBinds:(BOOL)arg0 ;
+-(void)encodeStartDoWhile;
+-(void)encodeStartElse;
+-(void)encodeStartIf:(id)arg0 offset:(NSUInteger)arg1 comparison:(NSUInteger)arg2 referenceValue:(unsigned int)arg3 ;
+-(void)encodeStartWhile:(id)arg0 offset:(NSUInteger)arg1 comparison:(NSUInteger)arg2 referenceValue:(unsigned int)arg3 ;
+-(void)executeCommandsInBuffer:(id)arg0 indirectBuffer:(id)arg1 indirectBufferOffset:(NSUInteger)arg2 ;
+-(void)executeCommandsInBuffer:(id)arg0 withRange:(struct _NSRange )arg1 ;
+-(void)insertCompressedTextureReinterpretationFlush;
+-(void)insertUncompressedToCompressedFlush;
+-(void)memoryBarrierWithResources:(*id)arg0 count:(NSUInteger)arg1 ;
+-(void)memoryBarrierWithScope:(NSUInteger)arg0 ;
+-(void)sampleCountersInBuffer:(id)arg0 atSampleIndex:(NSUInteger)arg1 withBarrier:(BOOL)arg2 ;
+-(void)setAccelerationStructure:(id)arg0 atBufferIndex:(NSUInteger)arg1 ;
+-(void)setBuffer:(id)arg0 offset:(NSUInteger)arg1 atIndex:(NSUInteger)arg2 ;
+-(void)setBufferOffset:(NSUInteger)arg0 atIndex:(NSUInteger)arg1 ;
+-(void)setBuffers:(*id)arg0 offsets:(*NSUInteger)arg1 withRange:(struct _NSRange )arg2 ;
+-(void)setBytes:(*void)arg0 length:(NSUInteger)arg1 atIndex:(NSUInteger)arg2 ;
+-(void)setComputePipelineState:(id)arg0 ;
+-(void)setImageBlockWidth:(NSUInteger)arg0 height:(NSUInteger)arg1 ;
+-(void)setImageblockWidth:(NSUInteger)arg0 height:(NSUInteger)arg1 ;
+-(void)setIntersectionFunctionTable:(id)arg0 atBufferIndex:(NSUInteger)arg1 ;
+-(void)setIntersectionFunctionTables:(*id)arg0 withBufferRange:(struct _NSRange )arg1 ;
+-(void)setSamplerState:(id)arg0 atIndex:(NSUInteger)arg1 ;
+-(void)setSamplerState:(id)arg0 lodMinClamp:(float)arg1 lodMaxClamp:(float)arg2 atIndex:(NSUInteger)arg3 ;
+-(void)setSamplerStates:(*id)arg0 lodMinClamps:(*float)arg1 lodMaxClamps:(*float)arg2 withRange:(struct _NSRange )arg3 ;
+-(void)setSamplerStates:(*id)arg0 withRange:(struct _NSRange )arg1 ;
+-(void)setStageInRegion:(struct ? )arg0 ;
+-(void)setStageInRegionWithIndirectBuffer:(id)arg0 indirectBufferOffset:(NSUInteger)arg1 ;
+-(void)setTexture:(id)arg0 atIndex:(NSUInteger)arg1 ;
+-(void)setTextures:(*id)arg0 withRange:(struct _NSRange )arg1 ;
+-(void)setThreadgroupMemoryLength:(NSUInteger)arg0 atIndex:(NSUInteger)arg1 ;
+-(void)setVisibleFunctionTable:(id)arg0 atBufferIndex:(NSUInteger)arg1 ;
+-(void)setVisibleFunctionTables:(*id)arg0 withBufferRange:(struct _NSRange )arg1 ;
+-(void)updateFence:(id)arg0 ;
+-(void)useHeap:(id)arg0 ;
+-(void)useHeaps:(*id)arg0 count:(NSUInteger)arg1 ;
+-(void)useResource:(id)arg0 usage:(NSUInteger)arg1 ;
+-(void)useResourceGroup:(id)arg0 usage:(NSUInteger)arg1 ;
+-(void)useResources:(*id)arg0 count:(NSUInteger)arg1 usage:(NSUInteger)arg2 ;
+-(void)waitForFence:(id)arg0 ;
+
+
+@end
+
+
+#endif

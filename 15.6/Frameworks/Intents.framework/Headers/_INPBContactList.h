@@ -1,0 +1,49 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _INPBCONTACTLIST_H
+#define _INPBCONTACTLIST_H
+
+@class PBCodable, NSArray, NSString;
+@protocol _INPBContactList, NSSecureCoding, NSCopying;
+
+
+#import "_INPBCondition.h"
+
+@interface _INPBContactList : PBCodable <_INPBContactList, NSSecureCoding, NSCopying>
+
+ {
+    ? _has;
+}
+
+
+@property (retain, nonatomic) _INPBCondition *condition; // ivar: _condition
+@property (copy, nonatomic) NSArray *contacts; // ivar: _contacts
+@property (readonly, nonatomic) NSUInteger contactsCount;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) BOOL hasCondition;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
++(BOOL)supportsSecureCoding;
++(Class)contactType;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(id)contactAtIndex:(NSUInteger)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)dictionaryRepresentation;
+-(id)initWithCoder:(id)arg0 ;
+-(void)addContact:(id)arg0 ;
+-(void)clearContacts;
+-(void)encodeWithCoder:(id)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

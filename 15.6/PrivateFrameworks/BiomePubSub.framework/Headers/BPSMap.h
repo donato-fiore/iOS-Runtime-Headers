@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef BPSMAP_H
+#define BPSMAP_H
+
+@protocol BPSPublisher;
+
+
+#import "BMBookmarkablePublisher.h"
+
+@interface BPSMap : BMBookmarkablePublisher
+
+@property (copy, nonatomic) id *transform; // ivar: _transform
+@property (readonly, nonatomic) NSObject<BPSPublisher> *upstream; // ivar: _upstream
+
+
++(id)publisherWithPublisher:(id)arg0 upstreams:(id)arg1 bookmarkState:(id)arg2 ;
+-(id)bookmarkableUpstreams;
+-(id)init;
+-(id)initWithUpstream:(id)arg0 transform:(id)arg1 ;
+-(void)subscribe:(id)arg0 ;
+
+
+@end
+
+
+#endif

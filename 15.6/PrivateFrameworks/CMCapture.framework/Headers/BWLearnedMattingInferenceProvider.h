@@ -1,0 +1,47 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef BWLEARNEDMATTINGINFERENCEPROVIDER_H
+#define BWLEARNEDMATTINGINFERENCEPROVIDER_H
+
+
+
+#import "BWTiledEspressoInferenceProvider.h"
+#import "BWInferenceVideoRequirement.h"
+#import "FigLearnedMattingMetalStage.h"
+
+@interface BWLearnedMattingInferenceProvider : BWTiledEspressoInferenceProvider {
+    BWInferenceVideoRequirement *_inputImageVideoRequirement;
+    BWInferenceVideoRequirement *_inputAlphaVideoRequirement;
+    BWInferenceVideoRequirement *_outputAlphaVideoRequirement;
+    *opaqueCMFormatDescription _outputFormatDescription;
+    FigLearnedMattingMetalStage *_metalProcessor;
+    ? _outputTileSize;
+    ? _inputTileSize;
+    ? _inputAlphaScale;
+    ? _outputTileOverlap;
+    ? _inputTileOverlap;
+    ? _numTiles;
+}
+
+
+
+
++(void)initialize;
+-(id)initWithConfiguration:(id)arg0 resourceProvider:(id)arg1 ;
+-(int)createInputTileFor:(id)arg0 to:(struct __CVBuffer *)arg1 withInputs:(id)arg2 atPosition:(*id)arg3 cmdBuffer;
+-(int)preProcessOutputBuffer:(struct __CVBuffer *)arg0 ;
+-(int)prepareForSubmissionWithWorkQueue:(id)arg0 ;
+-(int)propagateInferenceResultsFrom:(struct __CVBuffer *)arg0 to:(struct opaqueCMSampleBuffer *)arg1 ;
+-(int)purgeIntermediateResources;
+-(int)type;
+-(int)writeOutputTile:(struct __CVBuffer *)arg0 to:(struct __CVBuffer *)arg1 withAdditionalPixelBuffers:(id)arg2 withInputTilePixelBuffers:(id)arg3 withInputFullPixelBuffers:(id)arg4 atPosition:(*id)arg5 cmdBuffer;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

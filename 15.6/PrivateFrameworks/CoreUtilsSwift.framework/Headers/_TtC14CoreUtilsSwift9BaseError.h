@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _TTC14COREUTILSSWIFT9BASEERROR_H
+#define _TTC14COREUTILSSWIFT9BASEERROR_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC14CoreUtilsSwift9BaseError : SwiftObject {
+    ? domain;
+    ? code;
+    ? message;
+    ? underlyingError;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

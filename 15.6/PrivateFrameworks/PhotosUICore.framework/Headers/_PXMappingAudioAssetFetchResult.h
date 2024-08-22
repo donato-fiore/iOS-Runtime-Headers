@@ -1,0 +1,43 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef _PXMAPPINGAUDIOASSETFETCHRESULT_H
+#define _PXMAPPINGAUDIOASSETFETCHRESULT_H
+
+@class NSString;
+@protocol PXAudioAssetFetchResult, PXAudioAsset;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _PXMappingAudioAssetFetchResult : NSObject <PXAudioAssetFetchResult>
+
+ {
+    id<PXAudioAssetFetchResult> *_fetchResult;
+    id *_block;
+}
+
+
+@property (readonly, nonatomic) NSInteger count;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) NSObject<PXAudioAsset> *firstObject;
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) NSObject<PXAudioAsset> *lastObject;
+@property (readonly) Class superclass;
+
+
+-(BOOL)containsObject:(id)arg0 ;
+-(id)initWithFetchResult:(id)arg0 block:(id)arg1 ;
+-(id)objectAtIndex:(NSUInteger)arg0 ;
+-(id)objectAtIndexedSubscript:(NSUInteger)arg0 ;
+-(id)objectsAtIndexes:(id)arg0 ;
+-(void)enumerateObjectsUsingBlock:(id)arg0 ;
+
+
+@end
+
+
+#endif

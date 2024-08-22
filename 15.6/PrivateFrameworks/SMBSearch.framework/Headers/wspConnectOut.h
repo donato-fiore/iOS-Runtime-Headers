@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef WSPCONNECTOUT_H
+#define WSPCONNECTOUT_H
+
+
+#import <Foundation/Foundation.h>
+
+#import "wspHeader.h"
+
+@interface wspConnectOut : NSObject
+
+@property unsigned int serverVersion; // ivar: _serverVersion
+@property (retain) wspHeader *whdr; // ivar: _whdr
+
+
+-(id)init;
+-(int)decodeBuffer:(id)arg0 BufferOffset:(unsigned int)arg1 BytesDecoded:(*unsigned int)arg2 ;
+
+
+@end
+
+
+#endif

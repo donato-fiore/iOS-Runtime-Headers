@@ -1,0 +1,77 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef IMMESSAGEPARTCHATITEM_H
+#define IMMESSAGEPARTCHATITEM_H
+
+@class NSString, NSAttributedString, NSArray, IMMessageItem;
+@protocol IMVisibleAssociatedMessageHost;
+
+
+#import "IMMessageChatItem.h"
+#import "IMMessagePartHighlightChatItem.h"
+
+@interface IMMessagePartChatItem : IMMessageChatItem <IMVisibleAssociatedMessageHost>
+
+
+
+@property (nonatomic, getter=isAllowlistedRichLinkSender) BOOL allowlistedRichLinkSender; // ivar: _allowlistedRichLinkSender
+@property (nonatomic) BOOL chatInScrutinyMode; // ivar: _chatInScrutinyMode
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy, nonatomic) NSAttributedString *fallbackCorruptText; // ivar: _fallbackCorruptText
+@property (readonly) NSUInteger hash;
+@property (nonatomic, setter=_setIndex:) NSInteger index; // ivar: _index
+@property (nonatomic) BOOL isBusiness; // ivar: _isBusiness
+@property (readonly, nonatomic) BOOL isCorrupt;
+@property (readonly, nonatomic) NSArray *messageEditChatItems; // ivar: _messageEditChatItems
+@property (readonly, copy, nonatomic) IMMessagePartHighlightChatItem *messageHighlightChatItem; // ivar: _messageHighlightChatItem
+@property (nonatomic) _NSRange messagePartRange; // ivar: _messagePartRange
+@property (nonatomic) NSUInteger replyCount; // ivar: _replyCount
+@property (readonly, nonatomic) BOOL requiresSiriAttribution;
+@property (readonly) Class superclass;
+@property (readonly, nonatomic) NSInteger syndicationBehavior; // ivar: _syndicationBehavior
+@property (readonly, nonatomic) NSInteger syndicationStatus; // ivar: _syndicationStatus
+@property (readonly, nonatomic) NSInteger syndicationType; // ivar: _syndicationType
+@property (readonly, copy, nonatomic) NSAttributedString *text; // ivar: _text
+@property (readonly, copy, nonatomic) NSString *threadIdentifier;
+@property (readonly, nonatomic) IMMessageItem *threadOriginator;
+@property (retain, nonatomic, setter=_setVisibleAssociatedMessageChatItems:) NSArray *visibleAssociatedMessageChatItems; // ivar: _visibleAssociatedMessageChatItems
+
+
++(BOOL)_isAllowlistedRichLinkSender:(id)arg0 isBusiness:(BOOL)arg1 ;
++(BOOL)_isAllowlistedURL:(id)arg0 ;
++(BOOL)_shouldAggregateForTransferType:(id)arg0 ;
++(BOOL)_supportsRichLinkURL:(id)arg0 forSender:(id)arg1 isAllowlistedRichLinkSender:(BOOL)arg2 ;
++(BOOL)isSiriEnabled;
++(NSInteger)_attachmentStackAggregationThreshold;
++(id)_additionalSupportedRichLinkSchemesForAllowlistedSender:(id)arg0 ;
++(id)_defaultRichLinkAllowlist;
++(id)_guidForMessage:(id)arg0 url:(id)arg1 ;
++(id)_messageItemWithPartsDeleted:(id)arg0 fromMessageItem:(id)arg1 indexesOfItemsDeleted:(*id)arg2 indexToRangeMapping:(*id)arg3 ;
++(id)_newMessagePartsForMessageItem:(id)arg0 ;
++(id)_newMessagePartsForMessageItem:(id)arg0 chatContext:(id)arg1 ;
++(id)_newMessagePartsForMessageItem:(id)arg0 chatContext:(id)arg1 photosPluginPayload:(id)arg2 ;
++(id)_richLinkRangesForMessageText:(id)arg0 sender:(id)arg1 isAllowlistedRichLinkSender:(BOOL)arg2 ;
++(id)aggregatePartsForParts:(id)arg0 forMessage:(id)arg1 context:(id)arg2 ;
++(id)messageBodyStringForAttachmentGUIDs:(id)arg0 ;
++(id)messageBodyStringForCMMMessage:(id)arg0 ;
+-(BOOL)__im_ff_isInterstellarEnabled;
+-(BOOL)canDelete;
+-(BOOL)canSendMessageAcknowledgment;
+-(BOOL)isHighlighted;
+-(NSInteger)messagePartAttributeName;
+-(id)_initWithItem:(id)arg0 index:(NSInteger)arg1 messagePartRange:(struct _NSRange )arg2 ;
+-(id)_initWithItem:(id)arg0 index:(NSInteger)arg1 messagePartRange:(struct _NSRange )arg2 syndicationBehavior:(NSInteger)arg3 ;
+-(id)_initWithItem:(id)arg0 text:(id)arg1 index:(NSInteger)arg2 messagePartRange:(struct _NSRange )arg3 visibleAssociatedMessageChatItems:(id)arg4 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)replyContextPreviewChatItemForReply:(id)arg0 chatContext:(id)arg1 ;
+-(id)transcriptText;
+
+
+@end
+
+
+#endif

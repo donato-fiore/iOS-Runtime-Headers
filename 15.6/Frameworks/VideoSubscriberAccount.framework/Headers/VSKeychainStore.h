@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef VSKEYCHAINSTORE_H
+#define VSKEYCHAINSTORE_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface VSKeychainStore : NSObject
+
+
+
+-(BOOL)_fixUpdateConflictForItemWithAttributes:(id)arg0 andAttributesToUpdate:(id)arg1 ;
+-(BOOL)deleteItemsMatchingQuery:(id)arg0 error:(*id)arg1 ;
+-(BOOL)updateAttributes:(id)arg0 ofItemsMatchingQuery:(id)arg1 error:(*id)arg2 ;
+-(id)addItem:(id)arg0 error:(*id)arg1 ;
+-(id)findItemsMatchingQuery:(id)arg0 error:(*id)arg1 ;
+
+
+@end
+
+
+#endif

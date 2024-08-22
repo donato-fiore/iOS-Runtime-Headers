@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef GEOSEARCHSECTIONGUIDE_H
+#define GEOSEARCHSECTIONGUIDE_H
+
+@class NSArray;
+
+#import <Foundation/Foundation.h>
+
+
+@interface GEOSearchSectionGuide : NSObject
+
+@property (readonly, nonatomic) NSArray *placeCollections; // ivar: _placeCollections
+
+
+-(id)init;
+-(id)initWithPlaceCollections:(id)arg0 ;
+-(id)initWithSearchSectionGuide:(id)arg0 mapsResults:(id)arg1 ;
+
+
+@end
+
+
+#endif

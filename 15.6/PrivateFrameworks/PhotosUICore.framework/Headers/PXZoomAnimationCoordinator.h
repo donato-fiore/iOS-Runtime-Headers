@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef PXZOOMANIMATIONCOORDINATOR_H
+#define PXZOOMANIMATIONCOORDINATOR_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface PXZoomAnimationCoordinator : NSObject
+
+
+
+-(void)animateContentForEndPointType:(NSInteger)arg0 inView:(id)arg1 withLayerType:(NSInteger)arg2 zoomAnimationContext:(id)arg3 ;
+-(void)animateContentForEndPointType:(NSInteger)arg0 withZoomAnimationContext:(id)arg1 ;
+
+
+@end
+
+
+#endif

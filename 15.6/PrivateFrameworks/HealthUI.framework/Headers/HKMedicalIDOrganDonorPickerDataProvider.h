@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef HKMEDICALIDORGANDONORPICKERDATAPROVIDER_H
+#define HKMEDICALIDORGANDONORPICKERDATAPROVIDER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface HKMedicalIDOrganDonorPickerDataProvider : NSObject
+
+
+
++(NSInteger)numberOfRowsWithDonateLifeSignup:(BOOL)arg0 ;
++(NSUInteger)emergencyCardOrganDonorStatus:(id)arg0 ;
++(id)displayValueForOrganDonorStatus:(NSUInteger)arg0 ;
++(id)medicalIDOrganDonorStatus:(NSUInteger)arg0 ;
+
+
+@end
+
+
+#endif

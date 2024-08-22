@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.6.0 | SDK: 15.6.0
+
+
+#ifndef CRKCONCRETETRUST_H
+#define CRKCONCRETETRUST_H
+
+@class NSString;
+@protocol CRKTrust, CRKCertificate;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CRKConcreteTrust : NSObject <CRKTrust>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) NSObject<CRKCertificate> *leafCertificate;
+@property (readonly) Class superclass;
+@property (readonly, nonatomic) *__SecTrust underlyingTrust; // ivar: _underlyingTrust
+
+
+-(id)initWithTrust:(struct __SecTrust *)arg0 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif
