@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC19APPSTOREKITINTERNAL15TITLEDPARAGRAPH_H
+#define _TTC19APPSTOREKITINTERNAL15TITLEDPARAGRAPH_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC19AppStoreKitInternal15TitledParagraph : SwiftObject {
+    ? languageAwareText;
+    ? $__lazy_storage_$_text;
+    ? languageAwareCollapsedText;
+    ? $__lazy_storage_$_collapsedText;
+    ? primarySubtitle;
+    ? secondarySubtitle;
+    ? style;
+    ? id;
+    ? clickAction;
+    ? clickSender;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

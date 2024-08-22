@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef INGETINTENTPARAMETEROPTIONSFORWARDINGACTION_H
+#define INGETINTENTPARAMETEROPTIONSFORWARDINGACTION_H
+
+@class NSString;
+
+
+#import "INIntentForwardingAction.h"
+
+@interface INGetIntentParameterOptionsForwardingAction : INIntentForwardingAction
+
+@property (readonly, nonatomic) NSString *parameterName; // ivar: _parameterName
+@property (readonly, nonatomic) NSString *searchTerm; // ivar: _searchTerm
+
+
++(BOOL)supportsSecureCoding;
++(Class)responseClass;
+-(BOOL)executeRemotelyWithVendorRemote:(id)arg0 completionHandler:(id)arg1 ;
+-(id)_completionHandlerWithActionCompletionHandler:(SEL)arg0 ;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithIntent:(id)arg0 parameterName:(id)arg1 searchTerm:(id)arg2 ;
+-(void)encodeWithCoder:(id)arg0 ;
+-(void)executeLocallyWithIntentDeliverer:(id)arg0 completionHandler:(id)arg1 ;
+
+
+@end
+
+
+#endif

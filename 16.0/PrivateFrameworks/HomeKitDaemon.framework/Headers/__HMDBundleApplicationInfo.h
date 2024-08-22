@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef __HMDBUNDLEAPPLICATIONINFO_H
+#define __HMDBUNDLEAPPLICATIONINFO_H
+
+@class LSPropertyList;
+
+
+#import "HMDApplicationInfo.h"
+
+@interface __HMDBundleApplicationInfo : HMDApplicationInfo {
+    LSPropertyList *_entitlements;
+}
+
+
+
+
+-(BOOL)isEntitledForAPIAccess;
+-(BOOL)isEntitledForSPIAccess;
+-(id)initWithBundleIdentifier:(id)arg0 ;
+-(id)initWithRecord:(id)arg0 ;
+
+
+@end
+
+
+#endif

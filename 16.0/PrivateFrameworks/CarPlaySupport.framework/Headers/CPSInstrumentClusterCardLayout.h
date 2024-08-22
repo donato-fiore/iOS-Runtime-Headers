@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CPSINSTRUMENTCLUSTERCARDLAYOUT_H
+#define CPSINSTRUMENTCLUSTERCARDLAYOUT_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface CPSInstrumentClusterCardLayout : NSObject
+
+@property (nonatomic) NSUInteger layoutForCard; // ivar: _layoutForCard
+@property (nonatomic) CGRect safeAreaFrame; // ivar: _safeAreaFrame
+@property (nonatomic) UIEdgeInsets safeAreaInsets; // ivar: _safeAreaInsets
+@property (nonatomic) CGRect viewAreaFrame; // ivar: _viewAreaFrame
+
+
+-(id)initWithSafeArea:(struct CGRect )arg0 frame:(struct CGRect )arg1 safeAreaInsets:(struct UIEdgeInsets )arg2 ;
+
+
+@end
+
+
+#endif

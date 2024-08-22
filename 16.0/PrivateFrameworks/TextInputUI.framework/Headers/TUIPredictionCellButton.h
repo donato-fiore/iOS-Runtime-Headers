@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef TUIPREDICTIONCELLBUTTON_H
+#define TUIPREDICTIONCELLBUTTON_H
+
+@class UIButton;
+
+
+#import "TUIPredictionViewCell.h"
+
+@interface TUIPredictionCellButton : UIButton
+
+@property (readonly, nonatomic) TUIPredictionViewCell *cellView; // ivar: _cellView
+
+
+-(id)initWithFrame:(struct CGRect )arg0 ;
+-(void)layoutSubviews;
+-(void)setHighlighted:(BOOL)arg0 ;
+
+
+@end
+
+
+#endif

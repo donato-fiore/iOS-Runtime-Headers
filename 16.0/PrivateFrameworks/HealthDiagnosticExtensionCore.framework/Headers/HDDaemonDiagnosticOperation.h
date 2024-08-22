@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef HDDAEMONDIAGNOSTICOPERATION_H
+#define HDDAEMONDIAGNOSTICOPERATION_H
+
+
+
+#import "HDDiagnosticOperation.h"
+
+@interface HDDaemonDiagnosticOperation : HDDiagnosticOperation
+
+
+
+-(id)_daemonUserDefaultValueForKey:(id)arg0 ;
+-(id)reportFilename;
+-(void)run;
+
+
+@end
+
+
+#endif

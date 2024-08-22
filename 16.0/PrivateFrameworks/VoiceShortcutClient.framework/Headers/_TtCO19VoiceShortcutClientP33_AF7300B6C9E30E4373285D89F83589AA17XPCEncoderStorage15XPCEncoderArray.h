@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTCO19VOICESHORTCUTCLIENTP33_AF7300B6C9E30E4373285D89F83589AA17XPCENCODERSTORAGE15XPCENCODERARRAY_H
+#define _TTCO19VOICESHORTCUTCLIENTP33_AF7300B6C9E30E4373285D89F83589AA17XPCENCODERSTORAGE15XPCENCODERARRAY_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCO19VoiceShortcutClientP33_AF7300B6C9E30E4373285D89F83589AA17XPCEncoderStorage15XPCEncoderArray : SwiftObject {
+    ? array;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

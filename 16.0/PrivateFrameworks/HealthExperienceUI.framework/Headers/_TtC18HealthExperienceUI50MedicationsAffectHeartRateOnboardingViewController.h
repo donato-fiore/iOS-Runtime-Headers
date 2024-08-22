@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC18HEALTHEXPERIENCEUI50MEDICATIONSAFFECTHEARTRATEONBOARDINGVIEWCONTROLLER_H
+#define _TTC18HEALTHEXPERIENCEUI50MEDICATIONSAFFECTHEARTRATEONBOARDINGVIEWCONTROLLER_H
+
+@class TtC18HealthExperienceUI29OnboardingTableViewController;
+
+
+
+@interface _TtC18HealthExperienceUI50MedicationsAffectHeartRateOnboardingViewController : TtC18HealthExperienceUI29OnboardingTableViewController {
+    ? healthStore;
+    ? actionStyle;
+    ? dataSource;
+    ? dataSourceDelegate;
+    ? primaryButton;
+    ? primaryButtonTintColorOverride;
+    ? delegate;
+}
+
+
+
+
+-(void)hxui_primaryFooterButtonTapped;
+-(void)viewDidLoad;
+
+
+@end
+
+
+#endif

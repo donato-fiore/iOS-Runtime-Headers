@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PKPEERPAYMENTPREFERENCESRESPONSE_H
+#define PKPEERPAYMENTPREFERENCESRESPONSE_H
+
+
+
+#import "PKPeerPaymentWebServiceResponse.h"
+#import "PKPeerPaymentPreferences.h"
+
+@interface PKPeerPaymentPreferencesResponse : PKPeerPaymentWebServiceResponse
+
+@property (readonly, nonatomic) PKPeerPaymentPreferences *peerPaymentPreferences; // ivar: _peerPaymentPreferences
+
+
+-(id)initWithData:(id)arg0 ;
+
+
+@end
+
+
+#endif

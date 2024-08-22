@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef EFPRIVACY_H
+#define EFPRIVACY_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface EFPrivacy : NSObject
+
+
+
++(NSInteger)bucketedMessageAgeSinceDate:(id)arg0 leadingDigits:(NSInteger)arg1 ;
++(NSInteger)bucketedNumber:(int)arg0 leadingDigits:(NSInteger)arg1 ;
++(NSInteger)weeksSinceDate:(id)arg0 ;
++(id)dateByRemovingTimeComponentsFromDate:(id)arg0 ;
++(id)fullyRedactedStringForString:(id)arg0 ;
++(id)partiallyRedactedDictionary:(id)arg0 ;
++(id)partiallyRedactedStringForString:(id)arg0 ;
++(id)partiallyRedactedStringForString:(id)arg0 maximumUnredactedLength:(NSUInteger)arg1 ;
++(id)partiallyRedactedStringFromArray:(id)arg0 ;
++(unsigned int)bucketMessageCount:(NSUInteger)arg0 ;
+
+
+@end
+
+
+#endif

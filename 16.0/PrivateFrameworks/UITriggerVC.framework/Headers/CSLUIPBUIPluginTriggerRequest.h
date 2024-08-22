@@ -1,0 +1,45 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CSLUIPBUIPLUGINTRIGGERREQUEST_H
+#define CSLUIPBUIPLUGINTRIGGERREQUEST_H
+
+@class PBRequest, NSMutableArray, NSString;
+@protocol NSCopying;
+
+
+
+@interface CSLUIPBUIPluginTriggerRequest : PBRequest <NSCopying>
+
+ {
+    ? _has;
+}
+
+
+@property (retain, nonatomic) NSMutableArray *dictionarys; // ivar: _dictionarys
+@property (readonly, nonatomic) BOOL hasName;
+@property (nonatomic) BOOL hasReason;
+@property (retain, nonatomic) NSString *name; // ivar: _name
+@property (nonatomic) int reason; // ivar: _reason
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)dictionaryAtIndex:(NSUInteger)arg0 ;
+-(id)dictionaryRepresentation;
+-(void)addDictionary:(id)arg0 ;
+-(void)clearDictionarys;
+-(void)copyTo:(id)arg0 ;
+-(void)mergeFrom:(id)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _IKDOMMUTATIONRULESET_H
+#define _IKDOMMUTATIONRULESET_H
+
+@class NSSet, NSArray;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _IKDOMMutationRuleSet : NSObject
+
+@property (readonly, copy, nonatomic) NSSet *dependentPathStrings; // ivar: _dependentPathStrings
+@property (readonly, copy, nonatomic) NSArray *mutationRules; // ivar: _mutationRules
+
+
+-(id)initWithMutationRules:(id)arg0 ;
+
+
+@end
+
+
+#endif

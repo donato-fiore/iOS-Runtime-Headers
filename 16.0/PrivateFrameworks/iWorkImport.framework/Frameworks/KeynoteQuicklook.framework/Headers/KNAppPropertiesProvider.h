@@ -1,0 +1,42 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef KNAPPPROPERTIESPROVIDER_H
+#define KNAPPPROPERTIESPROVIDER_H
+
+@class TSAApplicationPropertiesProvider, NSArray;
+
+
+
+@interface KNAppPropertiesProvider : TSAApplicationPropertiesProvider
+
+@property (readonly, nonatomic) NSArray *powerPointDocumentTypes;
+
+
+-(Class)documentRootClass;
+-(NSUInteger)applicationType;
+-(NSUInteger)webVideoRequiredDocumentWriteVersion;
+-(id)appChartPropertyOverrides;
+-(id)applicationDisplayName;
+-(id)applicationName;
+-(id)applicationTemplateVariantsForLocale:(id)arg0 ;
+-(id)bladerunnerContainerIdentifier;
+-(id)cloudKitContainerIdentifier;
+-(id)cloudKitSyncContainerIdentifier;
+-(id)documentTypeDisplayName;
+-(id)documentTypeDisplayNameForSharingInvitation;
+-(id)importableDocumentTypes;
+-(id)nativeDocumentType;
+-(id)nativeSFFDocumentType;
+-(id)tangierEditingFormatDocumentType;
+-(id)templateDocumentType;
+-(id)templateSFFDocumentType;
+-(id)templateTypeDisplayName;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef NTKVICTORYDIGITALCOLOREDITOPTION_H
+#define NTKVICTORYDIGITALCOLOREDITOPTION_H
+
+
+
+#import "NTKVictoryColorEditOption.h"
+
+@interface NTKVictoryDigitalColorEditOption : NTKVictoryColorEditOption
+
+
+
++(id)_orderedValuesForDevice:(id)arg0 ;
++(id)domain;
++(id)pigmentFaceDomain;
+-(BOOL)optionExistsInDevice:(id)arg0 ;
+
+
+@end
+
+
+#endif

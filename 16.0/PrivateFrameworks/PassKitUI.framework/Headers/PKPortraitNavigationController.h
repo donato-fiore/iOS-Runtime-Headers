@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PKPORTRAITNAVIGATIONCONTROLLER_H
+#define PKPORTRAITNAVIGATIONCONTROLLER_H
+
+@class UINavigationController;
+
+
+
+@interface PKPortraitNavigationController : UINavigationController
+
+
+
+-(BOOL)_canShowWhileLocked;
+-(BOOL)shouldAutorotate;
+-(NSUInteger)supportedInterfaceOrientations;
+
+
+@end
+
+
+#endif

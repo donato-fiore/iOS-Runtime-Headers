@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC8VIDEOSUI17TEMPLATEVIEWMODEL_H
+#define _TTC8VIDEOSUI17TEMPLATEVIEWMODEL_H
+
+@class TtC8VideosUI9ViewModel;
+
+
+
+@interface _TtC8VideosUI17TemplateViewModel : TtC8VideosUI9ViewModel {
+    ? templateType;
+    ? eventMonitorDescriptors;
+    ? controllerRef;
+    ? contextDataRef;
+    ? appendContextDataRef;
+    ? backgroundViewModel;
+    ? templateBackgroundImage;
+    ? delegate;
+    ? updateRequestor;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

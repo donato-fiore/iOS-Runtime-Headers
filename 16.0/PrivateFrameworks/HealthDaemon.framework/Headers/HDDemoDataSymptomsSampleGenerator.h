@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef HDDEMODATASYMPTOMSSAMPLEGENERATOR_H
+#define HDDEMODATASYMPTOMSSAMPLEGENERATOR_H
+
+
+
+#import "HDDemoDataBaseSampleGenerator.h"
+
+@interface HDDemoDataSymptomsSampleGenerator : HDDemoDataBaseSampleGenerator {
+    CGFloat _nextCommonColdSymptomsTime;
+    CGFloat _nextFoodPoisoningSymptomsTime;
+    CGFloat _nextSingleRandomSymptomTime;
+}
+
+
+
+
++(BOOL)supportsSecureCoding;
+-(id)init;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+-(void)generateObjectsForDemoPerson:(id)arg0 fromTime:(CGFloat)arg1 toTime:(CGFloat)arg2 currentDate:(id)arg3 objectCollection:(id)arg4 ;
+-(void)setupWithDemoDataGenerator:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef BWREVERSEDEPTHFIRSTENUMERATOR_H
+#define BWREVERSEDEPTHFIRSTENUMERATOR_H
+
+@class NSMutableArray;
+
+
+#import "BWNodeEnumerator.h"
+
+@interface BWReverseDepthFirstEnumerator : BWNodeEnumerator {
+    int _ordering;
+    NSMutableArray *_stack;
+    NSUInteger _currentSinkIndex;
+}
+
+
+
+
+-(id)initWithGraph:(id)arg0 vertexOrdering:(int)arg1 ;
+-(id)nextObject;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

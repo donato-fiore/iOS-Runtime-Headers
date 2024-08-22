@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MSTIMERGATE_H
+#define MSTIMERGATE_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface MSTimerGate : NSObject
+
+@property (nonatomic) BOOL enabled; // ivar: _enabled
+
+
+-(id)init;
+-(void)disable;
+-(void)enable;
+
+
+@end
+
+
+#endif

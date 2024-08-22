@@ -1,0 +1,6 @@
+
+
+#include "_TtC17SiriAudioInternal34INUpdateMediaAffinityIntentHandler.h"
+#include "_TtC17SiriAudioInternal29INSearchForMediaIntentHandler.h"
+#include "_TtC17SiriAudioInternal23INAddMediaIntentHandler.h"
+#include "_TtC17SiriAudioInternal24INPlayMediaIntentHandler.h"

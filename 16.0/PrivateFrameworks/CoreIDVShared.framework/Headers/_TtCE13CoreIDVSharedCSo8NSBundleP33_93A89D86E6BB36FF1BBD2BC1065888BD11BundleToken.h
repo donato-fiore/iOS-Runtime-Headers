@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTCE13COREIDVSHAREDCSO8NSBUNDLEP33_93A89D86E6BB36FF1BBD2BC1065888BD11BUNDLETOKEN_H
+#define _TTCE13COREIDVSHAREDCSO8NSBUNDLEP33_93A89D86E6BB36FF1BBD2BC1065888BD11BUNDLETOKEN_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCE13CoreIDVSharedCSo8NSBundleP33_93A89D86E6BB36FF1BBD2BC1065888BD11BundleToken : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

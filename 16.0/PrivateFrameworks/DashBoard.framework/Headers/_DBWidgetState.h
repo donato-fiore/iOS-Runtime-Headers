@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _DBWIDGETSTATE_H
+#define _DBWIDGETSTATE_H
+
+@class UIView;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _DBWidgetState : NSObject
+
+@property (retain, nonatomic) UIView *view; // ivar: _view
+@property (nonatomic) BOOL wantsLargeSize; // ivar: _wantsLargeSize
+
+
+
+
+@end
+
+
+#endif

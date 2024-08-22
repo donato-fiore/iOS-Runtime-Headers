@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef HMDBACKINGSTORECACHEUPDATEGROUPSUBSCRIPTIONOPERATION_H
+#define HMDBACKINGSTORECACHEUPDATEGROUPSUBSCRIPTIONOPERATION_H
+
+@class CKRecordZoneSubscription;
+
+
+#import "HMDBackingStoreOperation.h"
+#import "HMDBackingStoreCacheGroup.h"
+
+@interface HMDBackingStoreCacheUpdateGroupSubscriptionOperation : HMDBackingStoreOperation
+
+@property (retain, nonatomic) HMDBackingStoreCacheGroup *record; // ivar: _record
+@property (retain, nonatomic) CKRecordZoneSubscription *subscription; // ivar: _subscription
+
+
+-(id)initWithGroup:(id)arg0 subscription:(id)arg1 resultBlock:(id)arg2 ;
+-(id)mainReturningError;
+
+
+@end
+
+
+#endif

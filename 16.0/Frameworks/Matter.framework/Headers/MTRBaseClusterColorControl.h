@@ -1,0 +1,241 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MTRBASECLUSTERCOLORCONTROL_H
+#define MTRBASECLUSTERCOLORCONTROL_H
+
+
+
+#import "MTRCluster.h"
+
+@interface MTRBaseClusterColorControl : MTRCluster
+
+@property (readonly) *void cppCluster; // ivar: _cppCluster
+
+
++(void)readAttributeAcceptedCommandListWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeAttributeListWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeClusterRevisionWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorCapabilitiesWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorLoopActiveWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorLoopDirectionWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorLoopStartEnhancedHueWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorLoopStoredEnhancedHueWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorLoopTimeWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorModeWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorPointBIntensityWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorPointBXWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorPointBYWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorPointGIntensityWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorPointGXWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorPointGYWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorPointRIntensityWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorPointRXWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorPointRYWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorTempPhysicalMaxMiredsWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorTempPhysicalMinMiredsWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeColorTemperatureWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeCompensationTextWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeCoupleColorTempToLevelMinMiredsWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeCurrentHueWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeCurrentSaturationWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeCurrentXWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeCurrentYWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeDriftCompensationWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeEnhancedColorModeWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeEnhancedCurrentHueWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeFeatureMapWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeGeneratedCommandListWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeNumberOfPrimariesWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeOptionsWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary1IntensityWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary1XWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary1YWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary2IntensityWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary2XWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary2YWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary3IntensityWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary3XWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary3YWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary4IntensityWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary4XWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary4YWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary5IntensityWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary5XWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary5YWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary6IntensityWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary6XWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePrimary6YWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeRemainingTimeWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeStartUpColorTemperatureMiredsWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeWhitePointXWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeWhitePointYWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
+-(id)initWithDevice:(id)arg0 endpoint:(unsigned short)arg1 queue:(id)arg2 ;
+-(void)colorLoopSetWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)dealloc;
+-(void)enhancedMoveHueWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)enhancedMoveToHueAndSaturationWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)enhancedMoveToHueWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)enhancedStepHueWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)moveColorTemperatureWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)moveColorWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)moveHueWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)moveSaturationWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)moveToColorTemperatureWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)moveToColorWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)moveToHueAndSaturationWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)moveToHueWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)moveToSaturationWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)readAttributeAcceptedCommandListWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeAttributeListWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeClusterRevisionWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorCapabilitiesWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorLoopActiveWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorLoopDirectionWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorLoopStartEnhancedHueWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorLoopStoredEnhancedHueWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorLoopTimeWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorModeWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorPointBIntensityWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorPointBXWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorPointBYWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorPointGIntensityWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorPointGXWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorPointGYWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorPointRIntensityWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorPointRXWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorPointRYWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorTempPhysicalMaxMiredsWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorTempPhysicalMinMiredsWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeColorTemperatureWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeCompensationTextWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeCoupleColorTempToLevelMinMiredsWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeCurrentHueWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeCurrentSaturationWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeCurrentXWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeCurrentYWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeDriftCompensationWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeEnhancedColorModeWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeEnhancedCurrentHueWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeFeatureMapWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeGeneratedCommandListWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeNumberOfPrimariesWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeOptionsWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary1IntensityWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary1XWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary1YWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary2IntensityWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary2XWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary2YWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary3IntensityWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary3XWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary3YWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary4IntensityWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary4XWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary4YWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary5IntensityWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary5XWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary5YWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary6IntensityWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary6XWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePrimary6YWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeRemainingTimeWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeStartUpColorTemperatureMiredsWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeWhitePointXWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeWhitePointYWithCompletionHandler:(id)arg0 ;
+-(void)stepColorTemperatureWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)stepColorWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)stepHueWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)stepSaturationWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)stopMoveStepWithParams:(id)arg0 completionHandler:(id)arg1 ;
+// -(void)subscribeAttributeAcceptedCommandListWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeAttributeListWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeClusterRevisionWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorCapabilitiesWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorLoopActiveWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorLoopDirectionWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorLoopStartEnhancedHueWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorLoopStoredEnhancedHueWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorLoopTimeWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorModeWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorPointBIntensityWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorPointBXWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorPointBYWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorPointGIntensityWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorPointGXWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorPointGYWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorPointRIntensityWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorPointRXWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorPointRYWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorTempPhysicalMaxMiredsWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorTempPhysicalMinMiredsWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeColorTemperatureWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeCompensationTextWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeCoupleColorTempToLevelMinMiredsWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeCurrentHueWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeCurrentSaturationWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeCurrentXWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeCurrentYWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeDriftCompensationWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeEnhancedColorModeWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeEnhancedCurrentHueWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeFeatureMapWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeGeneratedCommandListWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeNumberOfPrimariesWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeOptionsWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary1IntensityWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary1XWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary1YWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary2IntensityWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary2XWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary2YWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary3IntensityWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary3XWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary3YWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary4IntensityWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary4XWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary4YWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary5IntensityWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary5XWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary5YWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary6IntensityWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary6XWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePrimary6YWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeRemainingTimeWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeStartUpColorTemperatureMiredsWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeWhitePointXWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeWhitePointYWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+-(void)writeAttributeColorPointBIntensityWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeColorPointBIntensityWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeColorPointBXWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeColorPointBXWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeColorPointBYWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeColorPointBYWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeColorPointGIntensityWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeColorPointGIntensityWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeColorPointGXWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeColorPointGXWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeColorPointGYWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeColorPointGYWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeColorPointRIntensityWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeColorPointRIntensityWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeColorPointRXWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeColorPointRXWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeColorPointRYWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeColorPointRYWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeOptionsWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeOptionsWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeStartUpColorTemperatureMiredsWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeStartUpColorTemperatureMiredsWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeWhitePointXWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeWhitePointXWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeWhitePointYWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeWhitePointYWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+
+
+@end
+
+
+#endif

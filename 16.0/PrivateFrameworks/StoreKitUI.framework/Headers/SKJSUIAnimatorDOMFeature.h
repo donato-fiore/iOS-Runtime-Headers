@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SKJSUIANIMATORDOMFEATURE_H
+#define SKJSUIANIMATORDOMFEATURE_H
+
+@class IKJSObject;
+@protocol SKJSUIAnimatorDOMFeature;
+
+
+#import "SKUIAnimatorDOMFeature.h"
+
+@interface SKJSUIAnimatorDOMFeature : IKJSObject <SKJSUIAnimatorDOMFeature>
+
+ {
+    SKUIAnimatorDOMFeature *_feature;
+}
+
+
+
+
+-(id)initWithAppContext:(id)arg0 DOMFeature:(id)arg1 ;
+-(void)animate:(id)arg0 ;
+
+
+@end
+
+
+#endif

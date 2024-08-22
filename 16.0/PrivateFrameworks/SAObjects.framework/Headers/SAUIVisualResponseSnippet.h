@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SAUIVISUALRESPONSESNIPPET_H
+#define SAUIVISUALRESPONSESNIPPET_H
+
+@class NSData, NSString;
+
+
+#import "SAUISnippet.h"
+
+@interface SAUIVisualResponseSnippet : SAUISnippet
+
+@property (copy, nonatomic) NSData *modelData;
+@property (copy, nonatomic) NSString *viewIdentifier;
+
+
+-(id)encodedClassName;
+-(id)groupIdentifier;
+
+
+@end
+
+
+#endif

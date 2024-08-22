@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _AVTAVATARTOSTATICNOTRANSITION_H
+#define _AVTAVATARTOSTATICNOTRANSITION_H
+
+@protocol AVTAvatarTransitionModel;
+
+
+#import "AVTTransition.h"
+
+@interface _AVTAvatarToStaticNoTransition : AVTTransition
+
+@property (readonly, nonatomic) NSObject<AVTAvatarTransitionModel> *avatarTransitionModel; // ivar: _avatarTransitionModel
+
+
+// -(id)initWithModel:(id)arg0 animated:(BOOL)arg1 completionHandler:(id)arg2 logger:(unk)arg3  ;
+-(id)model;
+-(void)performTransition;
+
+
+@end
+
+
+#endif

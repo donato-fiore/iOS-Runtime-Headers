@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SBICONDRAGPLATTERWINDOW_H
+#define SBICONDRAGPLATTERWINDOW_H
+
+@class NSHashTable;
+@protocol SBIconDragPreviewContaining;
+
+
+#import "SBSecureWindow.h"
+
+@interface SBIconDragPlatterWindow : SBSecureWindow <SBIconDragPreviewContaining>
+
+ {
+    NSHashTable *_platterViews;
+}
+
+
+
+
+-(id)_iconDragPreviewContainerView;
+-(void)beginTrackingPlatterView:(id)arg0 ;
+-(void)stopTrackingPlatterView:(id)arg0 ;
+
+
+@end
+
+
+#endif

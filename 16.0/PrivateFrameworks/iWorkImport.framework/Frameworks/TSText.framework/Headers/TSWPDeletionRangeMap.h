@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef TSWPDELETIONRANGEMAP_H
+#define TSWPDELETIONRANGEMAP_H
+
+
+#import <Foundation/Foundation.h>
+
+#import "TSWPMutableRangeArray.h"
+
+@interface TSWPDeletionRangeMap : NSObject {
+    _NSRange _subRange;
+    TSWPMutableRangeArray *_removedRanges;
+}
+
+
+
+
+-(BOOL)containsCharIndex:(NSUInteger)arg0 ;
+-(NSUInteger)mappedCharIndex:(NSUInteger)arg0 ;
+-(NSUInteger)unmappedCharIndex:(NSUInteger)arg0 ;
+-(id)initWithSubRange:(struct _NSRange )arg0 removeRanges:(id)arg1 ;
+-(id)inverseRangesInStorageRange:(struct _NSRange )arg0 ;
+-(struct _NSRange )mappedCharRange:(struct _NSRange )arg0 ;
+-(struct _NSRange )unmappedCharRange:(struct _NSRange )arg0 ;
+-(void)adjustByDelta:(NSInteger)arg0 startingAt:(NSUInteger)arg1 ;
+
+
+@end
+
+
+#endif

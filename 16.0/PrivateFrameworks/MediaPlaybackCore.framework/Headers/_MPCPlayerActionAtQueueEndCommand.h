@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _MPCPLAYERACTIONATQUEUEENDCOMMAND_H
+#define _MPCPLAYERACTIONATQUEUEENDCOMMAND_H
+
+@class MPCPlayerCommand, NSString, NSArray;
+@protocol MPCPlayerActionAtQueueEndCommand;
+
+
+
+@interface _MPCPlayerActionAtQueueEndCommand : MPCPlayerCommand <MPCPlayerActionAtQueueEndCommand>
+
+
+
+@property (nonatomic) NSInteger actionAtQueueEnd; // ivar: _actionAtQueueEnd
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+@property (retain, nonatomic) NSArray *supportedActions; // ivar: _supportedActions
+
+
+-(id)setQueueEndAction:(NSInteger)arg0 ;
+
+
+@end
+
+
+#endif

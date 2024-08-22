@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PVPERSONDEDUPERSOCIALGROUPOVERLAPS_H
+#define PVPERSONDEDUPERSOCIALGROUPOVERLAPS_H
+
+
+
+#import "PVPersonDeduperStep.h"
+
+@interface PVPersonDeduperSocialGroupOverlaps : PVPersonDeduperStep
+
+
+
+-(BOOL)isPersonSimilar:(id)arg0 withOtherPerson:(id)arg1 withDistance:(float)arg2 minAgeType:(unsigned short)arg3 ;
+-(id)metricsKey;
+-(id)name;
+// -(void)dedupePersons:(id)arg0 withOtherPersons:(id)arg1 updateBlock:(id)arg2 resultBlock:(unk)arg3  ;
+-(void)mergePersons:(id)arg0 otherPersonLocalIdentifiers:(id)arg1 personsFetchResult:(id)arg2 mergeSocialGroupPersonIdentifiers:(id)arg3 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef DACOREDAVLOGGER_H
+#define DACOREDAVLOGGER_H
+
+@class DATrafficLogger, NSString;
+@protocol CoreDAVLogDelegate;
+
+
+
+@interface DACoreDAVLogger : DATrafficLogger <CoreDAVLogDelegate>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
++(id)registerDefaultLoggerWithCoreDAV;
+-(BOOL)shouldLogTransmittedData;
+-(NSInteger)coreDAVLogLevel;
+-(NSInteger)coreDAVOutputLevel;
+-(void)coreDAVLogDiagnosticMessage:(id)arg0 atLevel:(NSInteger)arg1 ;
+-(void)coreDAVLogTransmittedDataPartial:(id)arg0 ;
+-(void)coreDAVTransmittedDataFinished;
+
+
+@end
+
+
+#endif

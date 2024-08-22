@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTCC7SWIFTUI43CLARITYUIADMINMODEENABLEDSETTINGSDIFFACTIONP33_1E69CA3FA2D73F16E28B525BF091E59421SETTINGSDIFFINSPECTOR_H
+#define _TTCC7SWIFTUI43CLARITYUIADMINMODEENABLEDSETTINGSDIFFACTIONP33_1E69CA3FA2D73F16E28B525BF091E59421SETTINGSDIFFINSPECTOR_H
+
+@class UIApplicationSceneSettingsDiffInspector;
+
+
+
+@interface _TtCC7SwiftUI43ClarityUIAdminModeEnabledSettingsDiffActionP33_1E69CA3FA2D73F16E28B525BF091E59421SettingsDiffInspector : UIApplicationSceneSettingsDiffInspector
+
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

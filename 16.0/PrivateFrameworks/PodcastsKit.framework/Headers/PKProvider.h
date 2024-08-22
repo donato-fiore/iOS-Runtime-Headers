@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PKPROVIDER_H
+#define PKPROVIDER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface PKProvider : NSObject
+
+
+
++(void)createCatalogWithCompletion:(id)arg0 ;
++(void)createLibraryWithCompletion:(id)arg0 ;
++(void)createPlayerControllerWithCompletion:(id)arg0 ;
+-(id)init;
+
+
+@end
+
+
+#endif

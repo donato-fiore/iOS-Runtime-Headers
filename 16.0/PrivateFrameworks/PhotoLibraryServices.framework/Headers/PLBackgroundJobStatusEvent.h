@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PLBACKGROUNDJOBSTATUSEVENT_H
+#define PLBACKGROUNDJOBSTATUSEVENT_H
+
+@class NSDate, NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface PLBackgroundJobStatusEvent : NSObject
+
+@property (retain) NSDate *eventTimestamp; // ivar: _eventTimestamp
+@property (readonly) NSString *statusDump;
+
+
+
+
+@end
+
+
+#endif

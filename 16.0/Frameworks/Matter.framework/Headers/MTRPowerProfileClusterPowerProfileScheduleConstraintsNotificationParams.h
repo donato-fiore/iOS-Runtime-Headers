@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MTRPOWERPROFILECLUSTERPOWERPROFILESCHEDULECONSTRAINTSNOTIFICATIONPARAMS_H
+#define MTRPOWERPROFILECLUSTERPOWERPROFILESCHEDULECONSTRAINTSNOTIFICATIONPARAMS_H
+
+@class NSNumber;
+
+#import <Foundation/Foundation.h>
+
+
+@interface MTRPowerProfileClusterPowerProfileScheduleConstraintsNotificationParams : NSObject
+
+@property (retain, nonatomic) NSNumber *powerProfileId; // ivar: _powerProfileId
+@property (retain, nonatomic) NSNumber *startAfter; // ivar: _startAfter
+@property (retain, nonatomic) NSNumber *stopBefore; // ivar: _stopBefore
+@property (retain, nonatomic) NSNumber *timedInvokeTimeoutMs; // ivar: _timedInvokeTimeoutMs
+
+
+-(id)description;
+-(id)init;
+
+
+@end
+
+
+#endif

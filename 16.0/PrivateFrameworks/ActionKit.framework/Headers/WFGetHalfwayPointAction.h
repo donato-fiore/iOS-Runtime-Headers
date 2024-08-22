@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef WFGETHALFWAYPOINTACTION_H
+#define WFGETHALFWAYPOINTACTION_H
+
+@class WFAction;
+
+
+
+@interface WFGetHalfwayPointAction : WFAction
+
+
+
+-(void)getPlacemarkFromCollection:(id)arg0 completionHandler:(id)arg1 ;
+-(void)runAsynchronouslyWithInput:(id)arg0 ;
+
+
+@end
+
+
+#endif

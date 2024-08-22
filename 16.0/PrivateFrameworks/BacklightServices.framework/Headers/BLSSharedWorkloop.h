@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef BLSSHAREDWORKLOOP_H
+#define BLSSHAREDWORKLOOP_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface BLSSharedWorkloop : NSObject
+
+
+
++(id)serialQueueWithQOSClass:(unsigned int)arg0 label:(char *)arg1 ;
++(id)workloop;
++(void)dispatchWithQOSClass:(unsigned int)arg0 block:(id)arg1 ;
+
+
+@end
+
+
+#endif

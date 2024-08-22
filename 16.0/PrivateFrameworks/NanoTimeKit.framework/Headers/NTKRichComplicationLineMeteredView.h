@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef NTKRICHCOMPLICATIONLINEMETEREDVIEW_H
+#define NTKRICHCOMPLICATIONLINEMETEREDVIEW_H
+
+@class NSArray;
+
+
+#import "NTKRichComplicationLineView.h"
+
+@interface NTKRichComplicationLineMeteredView : NTKRichComplicationLineView
+
+@property (retain, nonatomic) NSArray *meterLayers; // ivar: _meterLayers
+
+
+-(id)_shapeStrokeColor;
+-(struct CGPoint )_pointAtProgress:(float)arg0 ;
+-(void)_setupShapeLayer:(id)arg0 ;
+-(void)_updateGradient;
+-(void)colorMetersWithProgress:(CGFloat)arg0 ;
+-(void)setProgress:(CGFloat)arg0 ;
+
+
+@end
+
+
+#endif

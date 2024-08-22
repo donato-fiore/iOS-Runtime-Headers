@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC15CONVERSATIONKIT27AUDIOPOWERSPECTRUMVIEWMODEL_H
+#define _TTC15CONVERSATIONKIT27AUDIOPOWERSPECTRUMVIEWMODEL_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC15ConversationKit27AudioPowerSpectrumViewModel : NSObject {
+    ? call;
+    ? _localPowerSpectrum;
+    ? _remotePowerSpectrum;
+    ? callCenter;
+    ? notificationCenter;
+    ? localParticipantStreamToken;
+    ? remoteParticipantStreamToken;
+    ? observationTask;
+    ? cancellables;
+    ? uplinkPowerTap;
+    ? downlinkPowerTap;
+    ? audioPowerTapQueue;
+}
+
+
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

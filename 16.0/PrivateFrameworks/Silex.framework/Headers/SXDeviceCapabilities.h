@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SXDEVICECAPABILITIES_H
+#define SXDEVICECAPABILITIES_H
+
+@class NSString;
+@protocol SXDeviceCapabilities;
+
+#import <Foundation/Foundation.h>
+
+
+@interface SXDeviceCapabilities : NSObject <SXDeviceCapabilities>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) BOOL hasCellularTelephonyCapabilities;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+
+
+@end
+
+
+#endif

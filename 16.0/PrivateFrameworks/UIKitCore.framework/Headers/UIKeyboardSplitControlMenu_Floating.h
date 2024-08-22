@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef UIKEYBOARDSPLITCONTROLMENU_FLOATING_H
+#define UIKEYBOARDSPLITCONTROLMENU_FLOATING_H
+
+@class NSString;
+@protocol UIKeyboardSplitControlMenuItem;
+
+#import <Foundation/Foundation.h>
+
+
+@interface UIKeyboardSplitControlMenu_Floating : NSObject <UIKeyboardSplitControlMenuItem>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) NSString *label;
+@property (readonly) Class superclass;
+@property (readonly) BOOL visible;
+
+
+-(void)actionForMenu:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,55 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PREDITORCOLORPICKERCONSTANTCOLOR_H
+#define PREDITORCOLORPICKERCONSTANTCOLOR_H
+
+@class NSString;
+@protocol BSDescriptionStreamable, BSXPCSecureCoding, PREditorColorPickerColor, NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+#import "PRPosterColor.h"
+
+@interface PREditorColorPickerConstantColor : NSObject <BSDescriptionStreamable, BSXPCSecureCoding, PREditorColorPickerColor, NSSecureCoding>
+
+
+
+@property (readonly, copy, nonatomic) PRPosterColor *baseColor; // ivar: _baseColor
+@property (readonly, nonatomic) PRPosterColor *color; // ivar: _color
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) CGFloat initialVariation; // ivar: _initialVariation
+@property (readonly) BOOL isCustomColor;
+@property (readonly) BOOL isVibrantColor;
+@property (readonly, nonatomic) PRPosterColor *leftSliderColor;
+@property (readonly, copy, nonatomic) NSString *localizedName; // ivar: _localizedName
+@property (readonly, nonatomic) PRPosterColor *rightSliderColor;
+@property (readonly) Class superclass;
+
+
++(BOOL)supportsBSXPCSecureCoding;
++(BOOL)supportsSecureCoding;
++(CGFloat)luminanceForPosterColor:(id)arg0 withAppliedVariation:(CGFloat)arg1 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(CGFloat)variationForLuminance:(CGFloat)arg0 ;
+-(id)colorWithVariation:(CGFloat)arg0 ;
+-(id)displayColorWithVariation:(CGFloat)arg0 ;
+-(id)init;
+-(id)initWithBSXPCCoder:(id)arg0 ;
+-(id)initWithBaseUIColor:(id)arg0 ;
+-(id)initWithBaseUIColor:(id)arg0 initialVariation:(CGFloat)arg1 ;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithColor:(id)arg0 initialVariation:(CGFloat)arg1 ;
+-(void)appendDescriptionToFormatter:(id)arg0 ;
+-(void)encodeWithBSXPCCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

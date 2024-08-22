@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef WFUSC2257TAG_H
+#define WFUSC2257TAG_H
+
+
+
+#import "WFTagFlyweight.h"
+
+@interface WFUSC2257Tag : WFTagFlyweight
+
+
+
++(id)twoTwoFiveSevenTag;
++(id)unitedStatesCodeTag;
+-(id)tagWithWebpage:(id)arg0 ;
+
+
+@end
+
+
+#endif

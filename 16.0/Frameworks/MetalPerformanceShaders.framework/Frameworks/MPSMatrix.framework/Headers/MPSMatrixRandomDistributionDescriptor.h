@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MPSMATRIXRANDOMDISTRIBUTIONDESCRIPTOR_H
+#define MPSMATRIXRANDOMDISTRIBUTIONDESCRIPTOR_H
+
+@protocol NSCopying;
+
+#import <Foundation/Foundation.h>
+
+
+@interface MPSMatrixRandomDistributionDescriptor : NSObject <NSCopying>
+
+
+
+@property (nonatomic) NSUInteger distributionType; // ivar: _distributionType
+@property (nonatomic) float maximum; // ivar: _maximum
+@property (nonatomic) float mean; // ivar: _mean
+@property (nonatomic) float minimum; // ivar: _minimum
+@property (nonatomic) float standardDeviation; // ivar: _standardDeviation
+
+
++(id)defaultDistributionDescriptor;
++(id)normalDistributionDescriptorWithMean:(float)arg0 standardDeviation:(float)arg1 ;
++(id)normalDistributionDescriptorWithMean:(float)arg0 standardDeviation:(float)arg1 minimum:(float)arg2 maximum:(float)arg3 ;
++(id)uniformDistributionDescriptorWithMinimum:(float)arg0 maximum:(float)arg1 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+
+
+@end
+
+
+#endif

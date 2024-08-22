@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC6TIPSUI26CONSTELLATIONCONTENTPARSER_H
+#define _TTC6TIPSUI26CONSTELLATIONCONTENTPARSER_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC6TipsUI26ConstellationContentParser : SwiftObject {
+    ? _bodyText;
+    ? language;
+    ? assetsBaseURL;
+    ? attributes;
+    ? assetFileInfoManager;
+    ? viewSize;
+    ? textIsSelectable;
+    ? maxWidth;
+    ? gradientTitle;
+    ? delegate;
+    ? rawContent;
+    ? numberOfParagraphTags;
+    ? assetsSessionItemMap;
+    ? syncQueue;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

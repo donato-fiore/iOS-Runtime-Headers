@@ -1,0 +1,15 @@
+
+
+#include "SNAProminentPresentationAssertion.h"
+#include "SNAPresentationAssertion.h"
+#include "SNAAssertionTarget.h"
+#include "SNAAssertion.h"
+#include "_TtC16SessionAssertion10UnfairLock.h"
+#include "_TtC16SessionAssertion15AssertionClient.h"
+#include "_TtC16SessionAssertion21PresentationAssertion.h"
+#include "_TtC16SessionAssertion30ProminentPresentationAssertion.h"
+#include "_TtC16SessionAssertion25AttributeAssertionManager.h"
+#include "_TtCC16SessionAssertion25AttributeAssertionManager22WeakAttributeAssertion.h"
+#include "_TtC16SessionAssertion16AssertionOptions.h"
+#include "_TtC16SessionAssertion23SessionRequestAssertion.h"
+#include "_TtC16SessionAssertion18AttributeAssertion.h"

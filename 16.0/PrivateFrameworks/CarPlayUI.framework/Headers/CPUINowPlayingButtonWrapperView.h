@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CPUINOWPLAYINGBUTTONWRAPPERVIEW_H
+#define CPUINOWPLAYINGBUTTONWRAPPERVIEW_H
+
+@class UIView;
+
+
+#import "CPUINowPlayingButton.h"
+
+@interface CPUINowPlayingButtonWrapperView : UIView
+
+@property (readonly, nonatomic) CPUINowPlayingButton *nowPlayingButton; // ivar: _nowPlayingButton
+
+
+-(id)initWithFrame:(struct CGRect )arg0 bundleIdentifier:(id)arg1 ;
+
+
+@end
+
+
+#endif

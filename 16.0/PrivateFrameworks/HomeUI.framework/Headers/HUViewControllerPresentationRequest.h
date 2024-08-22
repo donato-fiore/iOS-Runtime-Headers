@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef HUVIEWCONTROLLERPRESENTATIONREQUEST_H
+#define HUVIEWCONTROLLERPRESENTATIONREQUEST_H
+
+@class UIViewController;
+
+#import <Foundation/Foundation.h>
+
+
+@interface HUViewControllerPresentationRequest : NSObject
+
+@property (nonatomic) BOOL animated; // ivar: _animated
+@property (nonatomic) NSUInteger preferredPresentationType; // ivar: _preferredPresentationType
+@property (readonly, nonatomic) UIViewController *viewController; // ivar: _viewController
+
+
++(id)requestWithViewController:(id)arg0 ;
+-(id)asGeneric;
+-(id)initWithViewController:(id)arg0 ;
+
+
+@end
+
+
+#endif

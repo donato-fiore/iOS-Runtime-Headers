@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SFHMACOPERATION_H
+#define SFHMACOPERATION_H
+
+@protocol SFDigestOperation;
+
+
+#import "SFMessageAuthenticationCodeOperation.h"
+
+@interface SFHMACOperation : SFMessageAuthenticationCodeOperation {
+    id *_hmacOperationInternal;
+}
+
+
+@property (copy, nonatomic) NSObject<SFDigestOperation> *digestOperation;
+
+
+-(id)init;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithDigestOperation:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

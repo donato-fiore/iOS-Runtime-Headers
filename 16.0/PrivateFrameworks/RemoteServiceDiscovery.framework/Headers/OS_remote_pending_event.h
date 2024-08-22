@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef OS_REMOTE_PENDING_EVENT_H
+#define OS_REMOTE_PENDING_EVENT_H
+
+@protocol OS_xpc_object;
+
+#import <Foundation/Foundation.h>
+
+#import "OS_remote_pending_event.h"
+
+@interface OS_remote_pending_event : NSObject {
+    char * service_name;
+    NSObject<OS_xpc_object> *event;
+    OS_remote_pending_event *next;
+}
+
+
+
+
+-(void)dealloc;
+
+
+@end
+
+
+#endif

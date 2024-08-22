@@ -1,0 +1,6 @@
+
+
+#include "_TtC25SiriSystemCommandsIntents30SCRestartShutdownYesNoStrategy.h"
+#include "_TtC25SiriSystemCommandsIntents20LocalizationProvider.h"
+#include "_TtC25SiriSystemCommandsIntents26SystemCommandsFlowProvider.h"
+#include "_TtC25SiriSystemCommandsIntents21SCRestartShutdownFlow.h"

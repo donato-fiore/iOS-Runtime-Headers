@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SAFILEOUTPUTSTREAM_H
+#define SAFILEOUTPUTSTREAM_H
+
+
+
+#import "SAOutputStream.h"
+
+@interface SAFileOutputStream : SAOutputStream {
+    *__sFILE _outputFileStream;
+}
+
+
+
+
+-(BOOL)hasSpaceAvailable;
+-(NSInteger)write:(char *)arg0 maxLength:(NSUInteger)arg1 ;
+-(int)appendData:(id)arg0 ;
+
+
+@end
+
+
+#endif

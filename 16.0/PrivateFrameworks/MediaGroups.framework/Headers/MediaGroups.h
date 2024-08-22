@@ -1,0 +1,16 @@
+
+
+#include "MGHome.h"
+#include "MGSoloDevice.h"
+#include "MGZone.h"
+#include "MGGroup.h"
+#include "MGAudioReceiverAccessory.h"
+#include "MGClientConnectionProvider.h"
+#include "MGClientService.h"
+#include "MGPermanentGroup.h"
+#include "MGSpeakerAccessory.h"
+#include "MGGroupIdentifier.h"
+#include "MGHomePodAccessory.h"
+#include "MGGroupQuery.h"
+#include "MGRoom.h"
+#include "MGMediaSystem.h"

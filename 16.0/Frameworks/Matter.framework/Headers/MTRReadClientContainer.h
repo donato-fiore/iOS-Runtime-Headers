@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MTRREADCLIENTCONTAINER_H
+#define MTRREADCLIENTCONTAINER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface MTRReadClientContainer : NSObject
+
+@property (nonatomic) NSUInteger deviceId; // ivar: _deviceId
+@property (nonatomic) *AttributePathParams pathParams; // ivar: _pathParams
+@property (nonatomic) *void readClientPtr; // ivar: _readClientPtr
+
+
+-(void)dealloc;
+-(void)onDone;
+
+
+@end
+
+
+#endif

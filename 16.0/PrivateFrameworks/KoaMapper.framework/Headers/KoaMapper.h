@@ -1,0 +1,17 @@
+
+
+#include "KMMapper_SASyncSiriKitAppVocabulary.h"
+#include "KMMapper_PKLibraryPreview.h"
+#include "KMItemMapper.h"
+#include "KMMapper_INVocabularyItem.h"
+#include "KMMapper_EKEvent.h"
+#include "KMMapper_PortraitEntity.h"
+#include "KMMapper_RTLocationOfInterest.h"
+#include "KMMapper_SAPerson.h"
+#include "KMMapper_CNContact.h"
+#include "KMMapper_SAAppInfo.h"
+#include "KMMapper_AppIntentVocabulary.h"
+#include "KMFieldValue.h"
+#include "KMMapper_MPMediaEntity.h"
+#include "KMMapper_HMHome.h"
+#include "KMMapper_LSApplicationRecord.h"

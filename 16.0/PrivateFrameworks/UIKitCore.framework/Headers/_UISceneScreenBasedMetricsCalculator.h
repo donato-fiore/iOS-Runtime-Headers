@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _UISCENESCREENBASEDMETRICSCALCULATOR_H
+#define _UISCENESCREENBASEDMETRICSCALCULATOR_H
+
+@class NSString;
+@protocol _UISceneMetricsCalculating;
+
+#import <Foundation/Foundation.h>
+
+#import "UIWindowScene.h"
+
+@interface _UISceneScreenBasedMetricsCalculator : NSObject <_UISceneMetricsCalculating>
+
+
+
+@property (weak, nonatomic, setter=_setScene:) UIWindowScene *_scene; // ivar: _scene
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(void)_updateMetricsOnWindows:(id)arg0 animated:(BOOL)arg1 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MPSTOREMODELPLAYLISTBUILDER_H
+#define MPSTOREMODELPLAYLISTBUILDER_H
+
+
+
+#import "MPStoreModelObjectBuilder.h"
+
+@interface MPStoreModelPlaylistBuilder : MPStoreModelObjectBuilder {
+    ? _requestedPlaylistProperties;
+}
+
+
+
+
++(id)allSupportedProperties;
+-(id)modelObjectWithStoreItemMetadata:(id)arg0 sourceModelObject:(id)arg1 userIdentity:(id)arg2 ;
+
+
+@end
+
+
+#endif

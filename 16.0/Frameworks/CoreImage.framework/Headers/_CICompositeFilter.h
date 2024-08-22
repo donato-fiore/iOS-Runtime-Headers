@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _CICOMPOSITEFILTER_H
+#define _CICOMPOSITEFILTER_H
+
+
+
+#import "CIFilter.h"
+#import "CIImage.h"
+
+@interface _CICompositeFilter : CIFilter
+
+@property (retain, nonatomic) CIImage *inputBackgroundImage; // ivar: inputBackgroundImage
+@property (retain, nonatomic) CIImage *inputImage; // ivar: inputImage
+
+
++(id)_kernel;
++(id)customAttributes;
+-(id)outputImage;
+
+
+@end
+
+
+#endif

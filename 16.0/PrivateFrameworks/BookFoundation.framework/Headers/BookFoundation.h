@@ -1,0 +1,16 @@
+
+
+#include "BFMCatalogServiceBridgedConfig.h"
+#include "BFMCatalogServiceBridge.h"
+#include "_TtC14BookFoundation12MResourceSet.h"
+#include "BFMAssetBase.h"
+#include "BCMResource.h"
+#include "BFMBookSeries.h"
+#include "_TtC14BookFoundation5MBook.h"
+#include "_TtC14BookFoundation15MCatalogRequest.h"
+#include "BFMCatalogServiceConfig.h"
+#include "_TtC14BookFoundation16MAudiobookSeries.h"
+#include "_TtC14BookFoundation25MCatalogRequestURLBuilder.h"
+#include "BFMCatalogService.h"
+#include "BFMAudiobook.h"
+#include "BFMSeriesBase.h"

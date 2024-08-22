@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef OITSUINTEGERKEYDICTIONARYKEYENUMERATOR_H
+#define OITSUINTEGERKEYDICTIONARYKEYENUMERATOR_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface OITSUIntegerKeyDictionaryKeyEnumerator : NSObject {
+    **NSInteger _keys;
+    NSUInteger _count;
+    NSUInteger _index;
+}
+
+
+
+
+-(NSInteger)nextKey;
+-(id)initWithIntegerKeyDictionary:(id)arg0 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

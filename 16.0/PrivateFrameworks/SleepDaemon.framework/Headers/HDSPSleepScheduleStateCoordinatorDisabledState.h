@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef HDSPSLEEPSCHEDULESTATECOORDINATORDISABLEDSTATE_H
+#define HDSPSLEEPSCHEDULESTATECOORDINATORDISABLEDSTATE_H
+
+
+
+#import "HDSPSleepScheduleStateCoordinatorStateMachineState.h"
+
+@interface HDSPSleepScheduleStateCoordinatorDisabledState : HDSPSleepScheduleStateCoordinatorStateMachineState
+
+
+
+-(NSUInteger)scheduleState;
+-(id)nextStateWithContext:(*id)arg0 forceUpdate:(BOOL)arg1 ;
+-(id)stateName;
+
+
+@end
+
+
+#endif

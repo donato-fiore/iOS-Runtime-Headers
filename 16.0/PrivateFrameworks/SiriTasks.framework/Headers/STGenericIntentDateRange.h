@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef STGENERICINTENTDATERANGE_H
+#define STGENERICINTENTDATERANGE_H
+
+@class NSDate, NSString;
+@protocol NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+
+@interface STGenericIntentDateRange : NSObject <NSSecureCoding>
+
+
+
+@property (readonly, copy, nonatomic) NSDate *endDate; // ivar: _endDate
+@property (copy, nonatomic) NSString *name; // ivar: _name
+@property (readonly, copy, nonatomic) NSDate *startDate; // ivar: _startDate
+
+
++(BOOL)supportsSecureCoding;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithStartDate:(id)arg0 endDate:(id)arg1 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

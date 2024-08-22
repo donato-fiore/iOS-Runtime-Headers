@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MPCSHAREDLISTENINGCUSTOMEVENT_H
+#define MPCSHAREDLISTENINGCUSTOMEVENT_H
+
+@class NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface MPCSharedListeningCustomEvent : NSObject
+
+@property (readonly, copy, nonatomic) NSString *localizedMessage; // ivar: _localizedMessage
+
+
+-(id)description;
+-(id)initWithLocalizedMessage:(id)arg0 ;
+
+
+@end
+
+
+#endif

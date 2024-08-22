@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef TSUREADWRITEQUEUE_H
+#define TSUREADWRITEQUEUE_H
+
+@protocol OS_dispatch_semaphore, OS_dispatch_queue, OS_dispatch_group;
+
+#import <Foundation/Foundation.h>
+
+
+@interface TSUReadWriteQueue : NSObject {
+    NSObject<OS_dispatch_semaphore> *mCanEnqueueReaders;
+    NSObject<OS_dispatch_queue> *mGlobalQueue;
+    NSObject<OS_dispatch_group> *mInFlightReaders;
+    NSObject<OS_dispatch_group> *mInFlightWriters;
+}
+
+
+
+
+-(id)initWithIdentifier:(id)arg0 ;
+-(void)dealloc;
+-(void)performAsyncWrite:(id)arg0 ;
+-(void)performSyncRead:(id)arg0 ;
+-(void)performSyncWrite:(id)arg0 ;
+-(void)waitOnInFlightWriters;
+
+
+@end
+
+
+#endif

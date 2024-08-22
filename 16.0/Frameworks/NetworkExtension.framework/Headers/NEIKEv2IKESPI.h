@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef NEIKEV2IKESPI_H
+#define NEIKEV2IKESPI_H
+
+@protocol NSCopying;
+
+
+#import "NEIKEv2SPI.h"
+
+@interface NEIKEv2IKESPI : NEIKEv2SPI <NSCopying>
+
+ {
+    NSUInteger _value;
+}
+
+
+@property (readonly) NSUInteger value;
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)initWithValue:(NSUInteger)arg0 ;
+
+
+@end
+
+
+#endif

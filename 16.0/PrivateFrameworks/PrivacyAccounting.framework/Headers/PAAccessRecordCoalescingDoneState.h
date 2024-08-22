@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PAACCESSRECORDCOALESCINGDONESTATE_H
+#define PAACCESSRECORDCOALESCINGDONESTATE_H
+
+@class NSArray, NSString;
+@protocol PAAccessRecordCoalescingState;
+
+#import <Foundation/Foundation.h>
+
+
+@interface PAAccessRecordCoalescingDoneState : NSObject <PAAccessRecordCoalescingState>
+
+ {
+    NSArray *_groupedRecordsToRepublish;
+    BOOL _reversed;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(id)initByEndingLastWindow:(id)arg0 reversed:(BOOL)arg1 ;
+-(id)recordsToRepublish;
+
+
+@end
+
+
+#endif

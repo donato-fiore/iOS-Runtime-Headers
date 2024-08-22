@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PPTHYPERLINKBLOCK_H
+#define PPTHYPERLINKBLOCK_H
+
+
+#import <Foundation/Foundation.h>
+
+#import "ESDContainer.h"
+#import "ESDObject.h"
+
+@interface PptHyperlinkBlock : NSObject {
+    ESDContainer *mInteractiveInfoContainerHolder;
+    ESDObject *mTxInteractiveInfoAtomHolder;
+}
+
+
+
+
+-(id)interactiveInfoContainerHolder;
+-(struct PptTxInteracInfoAtom *)txtInteractiveInfoAtom;
+-(void)setInteractiveInfoContainerHolder:(id)arg0 ;
+-(void)setTxInteractiveInfoAtomHolder:(id)arg0 ;
+
+
+@end
+
+
+#endif

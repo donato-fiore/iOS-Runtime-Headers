@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC17COREODIESSENTIALS23IDENTITYKEYWITHKEYCHAIN_H
+#define _TTC17COREODIESSENTIALS23IDENTITYKEYWITHKEYCHAIN_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC17CoreODIEssentials23IdentityKeyWithKeychain : SwiftObject {
+    ? keychainLabel;
+    ? privateKey;
+    ? privateKeyAttribute;
+    ? laContext;
+    ? publicKeyData;
+    ? hardwareAttestationType;
+    ? isTemporary;
+    ? uamEnabled;
+    ? seBacked;
+    ? attestationIsAboutToExpire;
+    ? timer;
+    ? timerRunning;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

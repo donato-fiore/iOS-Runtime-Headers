@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef READINGLISTLEADIMAGECACHE_H
+#define READINGLISTLEADIMAGECACHE_H
+
+@class WBSCache, NSURL;
+
+#import <Foundation/Foundation.h>
+
+
+@interface ReadingListLeadImageCache : NSObject {
+    WBSCache *_cache;
+    NSURL *_directoryURL;
+}
+
+
+
+
+-(id)initWithDirectoryURL:(id)arg0 ;
+-(id)loadImageSynchronouslyForIconUUID:(id)arg0 ;
+-(void)clearCache;
+
+
+@end
+
+
+#endif

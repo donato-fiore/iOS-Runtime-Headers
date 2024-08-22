@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PLACCOUNTINGRULEENTRY_H
+#define PLACCOUNTINGRULEENTRY_H
+
+@class PLEntry;
+
+
+
+@interface PLAccountingRuleEntry : PLEntry
+
+
+
++(id)ruleWithString:(id)arg0 withRegex:(id)arg1 withEntryDate:(id)arg2 ;
+
+
+@end
+
+
+#endif

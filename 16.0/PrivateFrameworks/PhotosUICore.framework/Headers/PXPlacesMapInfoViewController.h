@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PXPLACESMAPINFOVIEWCONTROLLER_H
+#define PXPLACESMAPINFOVIEWCONTROLLER_H
+
+@class UIViewController, PXPlacesMapView;
+
+
+
+@interface PXPlacesMapInfoViewController : UIViewController
+
+@property (weak) PXPlacesMapView *mapView; // ivar: _mapView
+
+
+-(NSInteger)_segmentIndexForConfiguration:(id)arg0 ;
+-(id)_configurationForSegmentIndex:(NSInteger)arg0 pitch:(CGFloat)arg1 ;
+-(id)initWithMapView:(id)arg0 ;
+-(void)mapTypeChanged:(id)arg0 ;
+-(void)tapped3dButton:(id)arg0 ;
+-(void)tappedDimView:(id)arg0 ;
+-(void)tappedDone:(id)arg0 ;
+-(void)viewDidLoad;
+
+
+@end
+
+
+#endif

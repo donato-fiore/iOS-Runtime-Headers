@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC7NEWSUI222FOLLOWINGLAYOUTBUILDER_H
+#define _TTC7NEWSUI222FOLLOWINGLAYOUTBUILDER_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC7NewsUI222FollowingLayoutBuilder : SwiftObject {
+    ? titleViewLayoutAttributesFactory;
+    ? followingFooterViewLayoutAttributesFactory;
+    ? browseButtonViewLayoutAttributesFactory;
+    ? settingsButtonViewLayoutAttributesFactory;
+    ? tagViewLayoutAttributesFactory;
+    ? followingEngagementViewLayoutAttributesFactory;
+    ? featureAvailability;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

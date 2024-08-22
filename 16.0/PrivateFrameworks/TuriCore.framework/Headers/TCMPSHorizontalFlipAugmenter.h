@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef TCMPSHORIZONTALFLIPAUGMENTER_H
+#define TCMPSHORIZONTALFLIPAUGMENTER_H
+
+@class NSString;
+@protocol TCMPSImageAugmenting;
+
+#import <Foundation/Foundation.h>
+
+
+@interface TCMPSHorizontalFlipAugmenter : NSObject <TCMPSImageAugmenting>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (nonatomic) CGFloat skipProbability; // ivar: _skipProbability
+@property (readonly) Class superclass;
+
+
+-(id)imageAugmentedFromImage:(id)arg0 generator:(id)arg1 ;
+-(id)init;
+
+
+@end
+
+
+#endif

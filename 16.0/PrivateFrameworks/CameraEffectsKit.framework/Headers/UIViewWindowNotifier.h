@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef UIVIEWWINDOWNOTIFIER_H
+#define UIVIEWWINDOWNOTIFIER_H
+
+@class UIView;
+@protocol UIViewWindowListener;
+
+
+
+@interface UIViewWindowNotifier : UIView
+
+@property (weak, nonatomic) NSObject<UIViewWindowListener> *windowListener; // ivar: _windowListener
+
+
+-(void)willMoveToWindow:(id)arg0 ;
+
+
+@end
+
+
+#endif

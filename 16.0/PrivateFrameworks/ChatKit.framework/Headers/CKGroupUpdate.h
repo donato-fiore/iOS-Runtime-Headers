@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CKGROUPUPDATE_H
+#define CKGROUPUPDATE_H
+
+@class NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CKGroupUpdate : NSObject
+
+@property (nonatomic) NSUInteger groupUpdateType; // ivar: _groupUpdateType
+@property (retain, nonatomic) NSString *handleID; // ivar: _handleID
+
+
+-(id)description;
+-(id)initWithType:(NSUInteger)arg0 handleID:(id)arg1 ;
+
+
+@end
+
+
+#endif

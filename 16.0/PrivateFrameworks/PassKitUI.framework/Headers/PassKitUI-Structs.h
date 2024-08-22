@@ -1,0 +1,219 @@
+typedef struct CGSize {
+    CGFloat width;
+    CGFloat height;
+} CGSize;
+
+typedef struct UIEdgeInsets {
+    CGFloat top;
+    CGFloat left;
+    CGFloat bottom;
+    CGFloat right;
+} UIEdgeInsets;
+
+typedef struct ? {
+    BOOL hasOverrideClient;
+    BOOL hasOverrideHost;
+    BOOL hasInputAssistantItem;
+    BOOL suppressSoftwareKeyboard;
+    BOOL conformsToUIKeyInputIsSet;
+    BOOL conformsToUIKeyInput;
+} ?;
+
+typedef struct CGPoint {
+    CGFloat x;
+    CGFloat y;
+} CGPoint;
+
+typedef struct CGRect {
+    CGPoint origin;
+    CGSize size;
+} CGRect;
+
+typedef struct CATransform3D {
+    CGFloat field0;
+    CGFloat field1;
+    CGFloat field2;
+    CGFloat field3;
+    CGFloat field4;
+    CGFloat field5;
+    CGFloat field6;
+    CGFloat field7;
+    CGFloat field8;
+    CGFloat field9;
+    CGFloat field10;
+    CGFloat field11;
+    CGFloat field12;
+    CGFloat field13;
+    CGFloat field14;
+    CGFloat field15;
+} CATransform3D;
+
+typedef struct _NSRange {
+    NSUInteger location;
+    NSUInteger length;
+} _NSRange;
+
+typedef struct _NSZone {
+} // Error Processing Struct Fields
+
+typedef struct __GSEvent {
+} // Error Processing Struct Fields
+
+typedef struct CGVector {
+    CGFloat field0;
+    CGFloat field1;
+} CGVector;
+
+typedef struct NSDirectionalEdgeInsets {
+    CGFloat top;
+    CGFloat leading;
+    CGFloat bottom;
+    CGFloat trailing;
+} NSDirectionalEdgeInsets;
+
+typedef struct CGAffineTransform {
+    CGFloat field0;
+    CGFloat field1;
+    CGFloat field2;
+    CGFloat field3;
+    CGFloat field4;
+    CGFloat field5;
+} CGAffineTransform;
+
+typedef struct CGContext {
+} // Error Processing Struct Fields
+
+typedef struct _UITraitCollectionTraitChanges {
+    BOOL field0;
+    BOOL field1;
+    BOOL field2;
+    BOOL field3;
+    BOOL field4;
+    BOOL field5;
+    BOOL field6;
+    BOOL field7;
+    BOOL field8;
+    BOOL field9;
+} _UITraitCollectionTraitChanges;
+
+typedef struct _UITraitCollectionChangeDescription {
+    id field0;
+    id field1;
+    BOOL field2;
+    _UITraitCollectionTraitChanges field3;
+} _UITraitCollectionChangeDescription;
+
+typedef struct CGColor {
+} // Error Processing Struct Fields
+
+typedef struct CGImage {
+} // Error Processing Struct Fields
+
+typedef struct UIRectCornerRadii {
+    CGFloat field0;
+    CGFloat field1;
+    CGFloat field2;
+    CGFloat field3;
+} UIRectCornerRadii;
+
+typedef struct CAFrameRateRange {
+    float field0;
+    float field1;
+    float field2;
+} CAFrameRateRange;
+
+typedef struct os_unfair_lock_s {
+    unsigned int _os_unfair_lock_opaque;
+} os_unfair_lock_s;
+
+typedef struct __CFDictionary {
+} // Error Processing Struct Fields
+
+typedef struct atomic_flag {
+    uint8_t _Value;
+    BOOL field1;
+} atomic_flag;
+
+typedef struct __CTLine {
+} // Error Processing Struct Fields
+
+typedef struct PKBarcodeQuietZone {
+    CGFloat field0;
+    CGFloat field1;
+    CGFloat field2;
+    CGFloat field3;
+} PKBarcodeQuietZone;
+
+typedef struct _UIUpdateRequest {
+    unsigned int flags;
+    unsigned int minRate;
+    unsigned int preferredRate;
+    unsigned int maxRate;
+    NSUInteger phase;
+    NSUInteger load;
+} _UIUpdateRequest;
+
+typedef struct __CVBuffer {
+} // Error Processing Struct Fields
+
+typedef struct opaqueCMSampleBuffer {
+} // Error Processing Struct Fields
+
+typedef struct vImage_Buffer {
+    void field0;
+    NSUInteger field1;
+    NSUInteger field2;
+    NSUInteger field3;
+} vImage_Buffer;
+
+typedef struct __CFString {
+} // Error Processing Struct Fields
+
+typedef struct _UIUpdateRequestRecord {
+} // Error Processing Struct Fields
+
+typedef struct UIOffset {
+    CGFloat horizontal;
+    CGFloat vertical;
+} UIOffset;
+
+typedef struct CLLocationCoordinate2D {
+    CGFloat field0;
+    CGFloat field1;
+} CLLocationCoordinate2D;
+
+typedef struct __IOSurface {
+} // Error Processing Struct Fields
+
+typedef struct __CFCharacterSet {
+} // Error Processing Struct Fields
+
+typedef struct _UITableViewVisibleCellsUpdateRanges {
+    _NSRange field0;
+    _NSRange field1;
+    _NSRange field2;
+    _NSRange field3;
+    _NSRange field4;
+    BOOL field5;
+} _UITableViewVisibleCellsUpdateRanges;
+
+typedef struct __IOHIDEventSystemClient {
+} // Error Processing Struct Fields
+
+typedef struct configuration_t {
+    BOOL small;
+} configuration_t;
+
+typedef struct __SecAccessControl {
+} // Error Processing Struct Fields
+
+typedef struct _opaque_pthread_mutex_t {
+    NSInteger __sig;
+    char __opaque;
+} _opaque_pthread_mutex_t;
+
+typedef struct _opaque_pthread_cond_t {
+    NSInteger __sig;
+    char __opaque;
+} _opaque_pthread_cond_t;
+

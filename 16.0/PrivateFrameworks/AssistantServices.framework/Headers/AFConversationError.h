@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef AFCONVERSATIONERROR_H
+#define AFCONVERSATIONERROR_H
+
+@class NSError;
+
+
+
+@interface AFConversationError : NSError
+
+
+
++(id)errorWithCode:(NSInteger)arg0 ;
++(id)errorWithCode:(NSInteger)arg0 localizedFailureReason:(id)arg1 ;
++(id)errorWithCode:(NSInteger)arg0 userInfo:(id)arg1 ;
+-(id)initWithCode:(NSInteger)arg0 ;
+-(id)initWithCode:(NSInteger)arg0 localizedFailureReason:(id)arg1 ;
+-(id)initWithCode:(NSInteger)arg0 userInfo:(id)arg1 ;
+
+
+@end
+
+
+#endif

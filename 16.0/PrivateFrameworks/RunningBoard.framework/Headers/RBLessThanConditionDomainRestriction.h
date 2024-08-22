@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef RBLESSTHANCONDITIONDOMAINRESTRICTION_H
+#define RBLESSTHANCONDITIONDOMAINRESTRICTION_H
+
+@class NSString;
+
+
+#import "RBDomainRestriction.h"
+
+@interface RBLessThanConditionDomainRestriction : RBDomainRestriction {
+    NSString *_condition;
+    NSInteger _value;
+}
+
+
+
+
++(id)domainRestrictionForDictionary:(id)arg0 withError:(*id)arg1 ;
+-(BOOL)allowsContext:(id)arg0 withError:(*id)arg1 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)_initWithCondition:(id)arg0 value:(NSInteger)arg1 ;
+-(id)allEntitlements;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+
+
+@end
+
+
+#endif

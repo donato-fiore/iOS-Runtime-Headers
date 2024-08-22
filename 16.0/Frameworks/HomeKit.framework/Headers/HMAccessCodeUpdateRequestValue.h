@@ -1,0 +1,45 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef HMACCESSCODEUPDATEREQUESTVALUE_H
+#define HMACCESSCODEUPDATEREQUESTVALUE_H
+
+@class NSUUID, NSArray, NSString;
+@protocol HMFObject, HMAccessCodeModificationRequestValue, NSCopying, NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+#import "HMAccessoryAccessCodeValue.h"
+#import "HMAccessCodeValue.h"
+
+@interface HMAccessCodeUpdateRequestValue : NSObject <HMFObject, HMAccessCodeModificationRequestValue, NSCopying, NSSecureCoding>
+
+
+
+@property (readonly, copy) HMAccessoryAccessCodeValue *accessoryAccessCodeValue; // ivar: _accessoryAccessCodeValue
+@property (readonly, copy) NSUUID *accessoryUUID;
+@property (readonly, copy, nonatomic) NSArray *attributeDescriptions;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly, copy) NSString *privateDescription;
+@property (readonly, copy) NSString *propertyDescription;
+@property (readonly, copy) NSString *shortDescription;
+@property (readonly) Class superclass;
+@property (readonly, copy) HMAccessCodeValue *updatedAccessCodeValue; // ivar: _updatedAccessCodeValue
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)initWithAccessoryAccessCodeValue:(id)arg0 updatedAccessCodeValue:(id)arg1 ;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

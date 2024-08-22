@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SKRFLOWEXTENSIONCONTEXTHOST_H
+#define SKRFLOWEXTENSIONCONTEXTHOST_H
+
+@class NSExtensionContext;
+@protocol SKRRemoteConversationHostXPC;
+
+
+
+@interface SKRFlowExtensionContextHost : NSExtensionContext <SKRRemoteConversationHostXPC>
+
+
+
+
+
++(id)_extensionAuxiliaryHostProtocol;
++(id)_extensionAuxiliaryVendorProtocol;
+-(id)init;
+-(id)initWithInputItems:(id)arg0 ;
+-(id)initWithInputItems:(id)arg0 contextUUID:(id)arg1 ;
+-(id)initWithInputItems:(id)arg0 listenerEndpoint:(id)arg1 contextUUID:(id)arg2 ;
+
+
+@end
+
+
+#endif

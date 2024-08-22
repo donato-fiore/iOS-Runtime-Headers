@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MNTRACENAVIGATIONUPDATESROW_H
+#define MNTRACENAVIGATIONUPDATESROW_H
+
+@class NSString, NSArray;
+@protocol MNTracePlayerTimelineStreamObjectType;
+
+#import <Foundation/Foundation.h>
+
+
+@interface MNTraceNavigationUpdatesRow : NSObject <MNTracePlayerTimelineStreamObjectType>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (nonatomic) NSInteger navigationUpdateType; // ivar: _navigationUpdateType
+@property (retain, nonatomic) NSArray *parameters; // ivar: _parameters
+@property (readonly, nonatomic) CGFloat position;
+@property (readonly) Class superclass;
+@property (nonatomic) CGFloat timestamp; // ivar: _timestamp
+
+
+
+
+@end
+
+
+#endif

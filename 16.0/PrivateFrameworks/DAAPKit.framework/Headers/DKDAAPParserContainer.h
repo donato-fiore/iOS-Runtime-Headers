@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef DKDAAPPARSERCONTAINER_H
+#define DKDAAPPARSERCONTAINER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface DKDAAPParserContainer : NSObject
+
+@property (nonatomic) unsigned int code; // ivar: _code
+@property (nonatomic) unsigned int length; // ivar: _length
+@property (nonatomic) unsigned int remaining; // ivar: _remaining
+
+
+
+
+@end
+
+
+#endif

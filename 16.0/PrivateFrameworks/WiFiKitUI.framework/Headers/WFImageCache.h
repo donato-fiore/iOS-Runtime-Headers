@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef WFIMAGECACHE_H
+#define WFIMAGECACHE_H
+
+@class NSMutableDictionary;
+
+#import <Foundation/Foundation.h>
+
+
+@interface WFImageCache : NSObject
+
+@property (retain, nonatomic) NSMutableDictionary *imageCache; // ivar: _imageCache
+
+
++(id)sharedImageCache;
+-(BOOL)_isUIKitImageName:(id)arg0 ;
+-(id)imageNamed:(id)arg0 ;
+-(id)imageNamed:(id)arg0 variableValue:(CGFloat)arg1 ;
+-(id)init;
+-(void)clearCache;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef DSARCHIVEDITEMDESCRIPTOR_H
+#define DSARCHIVEDITEMDESCRIPTOR_H
+
+@class NSString, NSNumber;
+@protocol NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+
+@interface DSArchivedItemDescriptor : NSObject <NSSecureCoding>
+
+
+
+@property (copy, nonatomic) NSString *filePath; // ivar: _filePath
+@property (copy, nonatomic) NSNumber *fileSize; // ivar: _fileSize
+@property (copy, nonatomic) NSString *typeIdentifier; // ivar: _typeIdentifier
+
+
++(BOOL)supportsSecureCoding;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

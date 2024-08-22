@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef APODMLVALIDATOR_H
+#define APODMLVALIDATOR_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface APOdmlValidator : NSObject
+
+
+
++(NSInteger)permissionCheck:(id)arg0 personalizedAdsEnabled:(BOOL)arg1 trialKillswitch:(BOOL)arg2 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef TSKCHANGERECORD_H
+#define TSKCHANGERECORD_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface TSKChangeRecord : NSObject
+
+@property (readonly, nonatomic) BOOL allowedInCommit;
+@property (readonly, nonatomic) id *details; // ivar: mDetails
+@property (readonly, nonatomic) int kind; // ivar: mKind
+
+
++(id)changeRecordWithKind:(int)arg0 details:(id)arg1 ;
+-(id)initWithKind:(int)arg0 details:(id)arg1 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

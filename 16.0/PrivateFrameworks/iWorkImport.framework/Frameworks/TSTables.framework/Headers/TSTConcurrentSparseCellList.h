@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef TSTCONCURRENTSPARSECELLLIST_H
+#define TSTCONCURRENTSPARSECELLLIST_H
+
+@class NSMutableIndexSet;
+
+
+#import "TSTConcurrentCellList.h"
+
+@interface TSTConcurrentSparseCellList : TSTConcurrentCellList
+
+@property (retain, nonatomic) NSMutableIndexSet *validCells; // ivar: _validCells
+
+
+-(?)appendCellUIDRange;
+-(?)initWithContext:(?)arg0 viewCellRectcellUIDRange;
+-(BOOL)hasCells;
+-(NSUInteger)cellCount;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)p_interestingCellIndexes;
+-(void)addCell:(id)arg0 atUidOffset:(struct TSUColumnRowOffset )arg1 ;
+-(void)addCell:(id)arg0 atViewCellCoord:(struct TSUViewCellCoord )arg1 ;
+// -(void)p_accumulateBordersConcurrentlyUsingBlock:(id)arg0 accumulateCellsConcurrentlyUsingBlock:(unk)arg1  ;
+-(void)p_enumerateRowsOfCellsConcurrentlyUsingBlock:(id)arg0 ;
+-(void)p_invokeBlock:(id)arg0 ;
+-(void)p_pruneCellsAtColumn:(NSUInteger)arg0 rowsSize:(NSUInteger)arg1 columnsSize:(NSUInteger)arg2 ;
+-(void)p_pruneCellsAtRow:(NSUInteger)arg0 rowsSize:(NSUInteger)arg1 columnsSize:(NSUInteger)arg2 ;
+
+
+@end
+
+
+#endif

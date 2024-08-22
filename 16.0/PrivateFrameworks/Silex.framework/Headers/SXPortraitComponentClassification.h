@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SXPORTRAITCOMPONENTCLASSIFICATION_H
+#define SXPORTRAITCOMPONENTCLASSIFICATION_H
+
+
+
+#import "SXDefaultScalableImageComponentClassification.h"
+
+@interface SXPortraitComponentClassification : SXDefaultScalableImageComponentClassification
+
+
+
++(id)roleString;
++(id)typeString;
++(int)role;
+-(id)accessibilityContextualLabel;
+-(id)accessibilityCustomRotorMembership;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SBSWITCHERLAYOUTCALCULATIONS_H
+#define SBSWITCHERLAYOUTCALCULATIONS_H
+
+@class NSString;
+@protocol BSDescriptionProviding;
+
+#import <Foundation/Foundation.h>
+
+
+@interface SBSwitcherLayoutCalculations : NSObject <BSDescriptionProviding>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) CGRect frame; // ivar: _frame
+@property (readonly) NSUInteger hash;
+@property (nonatomic) CGFloat scale; // ivar: _scale
+@property (readonly) Class superclass;
+
+
+-(id)descriptionBuilderWithMultilinePrefix:(id)arg0 ;
+-(id)descriptionWithMultilinePrefix:(id)arg0 ;
+-(id)succinctDescription;
+-(id)succinctDescriptionBuilder;
+
+
+@end
+
+
+#endif

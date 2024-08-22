@@ -1,0 +1,46 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef FTMTTRANSLATIONMESSAGE_H
+#define FTMTTRANSLATIONMESSAGE_H
+
+@class NSMutableDictionary, NSData;
+@protocol FLTBFBufferAccessor, NSCopying, FLTBFBufferAccessor><NSCopying;
+
+#import <Foundation/Foundation.h>
+
+#import "FTTranslationRequest.h"
+#import "FTTranslationResponse.h"
+
+@interface FTMtTranslationMessage : NSObject <FLTBFBufferAccessor, NSCopying>
+
+ {
+    NSMutableDictionary *_storage;
+    NSData *_data;
+    *MtTranslationMessage _root;
+}
+
+
+@property (readonly, nonatomic) NSObject<FLTBFBufferAccessor><NSCopying> *session_message;
+@property (readonly, nonatomic) FTTranslationRequest *session_messageAsFTTranslationRequest;
+@property (readonly, nonatomic) FTTranslationResponse *session_messageAsFTTranslationResponse;
+@property (readonly, nonatomic) NSInteger session_message_type;
+
+
++(Class)session_message_immutableClassForType:(NSInteger)arg0 ;
++(NSInteger)session_message_typeForImmutableObject:(id)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)flatbuffData;
+-(id)initAndVerifyWithFlatbuffData:(id)arg0 ;
+-(id)initWithFlatbuffData:(id)arg0 ;
+-(id)initWithFlatbuffData:(id)arg0 root:(struct MtTranslationMessage *)arg1 ;
+-(id)initWithFlatbuffData:(id)arg0 root:(struct MtTranslationMessage *)arg1 verify:(BOOL)arg2 ;
+-(struct Offset<siri::speech::qss_fb::MtTranslationMessage> )addObjectToBuffer:(*void)arg0 ;
+
+
+@end
+
+
+#endif

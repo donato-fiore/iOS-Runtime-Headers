@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MFTIMEHEADERCOLLECTIONVIEWCELL_H
+#define MFTIMEHEADERCOLLECTIONVIEWCELL_H
+
+@class UICollectionViewListCell;
+@protocol MFTimeHeaderCollectionViewCellDelegate;
+
+
+
+@interface MFTimeHeaderCollectionViewCell : UICollectionViewListCell
+
+@property (weak, nonatomic) NSObject<MFTimeHeaderCollectionViewCellDelegate> *delegate; // ivar: _delegate
+
+
++(id)reusableIdentifier;
+-(id)initWithFrame:(struct CGRect )arg0 ;
+-(void)showTimeWheelCell:(id)arg0 ;
+-(void)updateSecondaryTextWithTime:(id)arg0 ;
+
+
+@end
+
+
+#endif

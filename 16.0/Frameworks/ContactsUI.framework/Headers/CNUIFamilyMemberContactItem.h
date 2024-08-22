@@ -1,0 +1,39 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CNUIFAMILYMEMBERCONTACTITEM_H
+#define CNUIFAMILYMEMBERCONTACTITEM_H
+
+@class NSString;
+@protocol NSCopying;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CNUIFamilyMemberContactItem : NSObject <NSCopying>
+
+
+
+@property (readonly, nonatomic) NSString *contactIdentifier; // ivar: _contactIdentifier
+@property (readonly, nonatomic) NSString *detailLabel; // ivar: _detailLabel
+@property (readonly, nonatomic) NSString *label; // ivar: _label
+@property (readonly, nonatomic, getter=isUnreachable) BOOL unreachable; // ivar: _unreachable
+
+
++(id)familyMemberContactItemFromCoreFamilyMemberContactItem:(id)arg0 ;
++(id)typeLabelStringFromContactType:(NSInteger)arg0 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)init;
+-(id)initWithContactIdentifier:(id)arg0 label:(id)arg1 detailLabel:(id)arg2 unreachable:(BOOL)arg3 ;
+-(id)initWithLabel:(id)arg0 ;
+-(id)initWithLabel:(id)arg0 detailLabel:(id)arg1 unreachable:(BOOL)arg2 ;
+
+
+@end
+
+
+#endif

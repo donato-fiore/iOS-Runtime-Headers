@@ -1,0 +1,26 @@
+typedef struct _NSZone {
+} // Error Processing Struct Fields
+
+typedef struct CGPoint {
+    CGFloat x;
+    CGFloat y;
+} CGPoint;
+
+typedef struct CGSize {
+    CGFloat field0;
+    CGFloat field1;
+} CGSize;
+
+typedef struct CGRect {
+    CGPoint field0;
+    CGSize field1;
+} CGRect;
+
+typedef struct CGPath {
+} // Error Processing Struct Fields
+
+typedef struct _NSRange {
+    NSUInteger field0;
+    NSUInteger field1;
+} _NSRange;
+

@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PXINBOXTABLEVIEWCELLLAYOUTCOORDINATOR_H
+#define PXINBOXTABLEVIEWCELLLAYOUTCOORDINATOR_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface PXInboxTableViewCellLayoutCoordinator : NSObject
+
+
+
++(CGFloat)dynamicCellHeight;
++(CGFloat)dynamicDistanceFromFirstBaselineToSecondBaseline;
+-(void)_layoutSubviewsInCell:(id)arg0 ;
+-(void)_toggleShownSubviewsInCell:(id)arg0 ;
+-(void)layoutInCell:(id)arg0 ;
+
+
+@end
+
+
+#endif

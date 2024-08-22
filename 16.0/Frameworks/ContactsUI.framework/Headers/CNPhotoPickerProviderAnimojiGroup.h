@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CNPHOTOPICKERPROVIDERANIMOJIGROUP_H
+#define CNPHOTOPICKERPROVIDERANIMOJIGROUP_H
+
+
+
+#import "CNPhotoPickerProviderGroup.h"
+
+@interface CNPhotoPickerProviderAnimojiGroup : CNPhotoPickerProviderGroup
+
+
+
+-(BOOL)allowAddItem;
+-(BOOL)canCreateMemoji;
+-(id)initWithProviders:(id)arg0 environment:(id)arg1 allowAddItem:(BOOL)arg2 ;
+
+
+@end
+
+
+#endif

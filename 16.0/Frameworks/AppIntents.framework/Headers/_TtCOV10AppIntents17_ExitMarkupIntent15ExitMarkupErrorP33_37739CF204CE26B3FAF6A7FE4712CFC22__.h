@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTCOV10APPINTENTS17_EXITMARKUPINTENT15EXITMARKUPERRORP33_37739CF204CE26B3FAF6A7FE4712CFC22___H
+#define _TTCOV10APPINTENTS17_EXITMARKUPINTENT15EXITMARKUPERRORP33_37739CF204CE26B3FAF6A7FE4712CFC22___H
+
+@class SwiftObject;
+
+
+
+@interface _TtCOV10AppIntents17_ExitMarkupIntent15ExitMarkupErrorP33_37739CF204CE26B3FAF6A7FE4712CFC22__ : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

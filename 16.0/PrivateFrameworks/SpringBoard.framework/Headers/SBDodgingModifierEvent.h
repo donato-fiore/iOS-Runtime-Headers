@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SBDODGINGMODIFIEREVENT_H
+#define SBDODGINGMODIFIEREVENT_H
+
+
+
+#import "SBChainableModifierEvent.h"
+
+@interface SBDodgingModifierEvent : SBChainableModifierEvent
+
+@property (readonly, nonatomic) NSUInteger type;
+
+
+-(id)description;
+
+
+@end
+
+
+#endif

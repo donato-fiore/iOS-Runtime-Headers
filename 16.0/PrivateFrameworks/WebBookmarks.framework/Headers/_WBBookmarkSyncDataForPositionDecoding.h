@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _WBBOOKMARKSYNCDATAFORPOSITIONDECODING_H
+#define _WBBOOKMARKSYNCDATAFORPOSITIONDECODING_H
+
+@class WBSCRDTPosition;
+@protocol NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _WBBookmarkSyncDataForPositionDecoding : NSObject <NSSecureCoding>
+
+
+
+@property (readonly, nonatomic) WBSCRDTPosition *position; // ivar: _position
+
+
++(BOOL)supportsSecureCoding;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

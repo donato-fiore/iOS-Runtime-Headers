@@ -1,0 +1,59 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef HFACCESSORYTYPEGROUP_H
+#define HFACCESSORYTYPEGROUP_H
+
+@class NSString, NSSet, NSUUID;
+@protocol HFAccessoryRepresentableObjectFiltering;
+
+#import <Foundation/Foundation.h>
+
+
+@interface HFAccessoryTypeGroup : NSObject <HFAccessoryRepresentableObjectFiltering>
+
+
+
+@property (retain, nonatomic) NSString *_fullName; // ivar: __fullName
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) NSString *fullName;
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) NSString *name; // ivar: _name
+@property (readonly) Class superclass;
+@property (readonly, nonatomic) NSSet *types; // ivar: _types
+@property (readonly, nonatomic) NSUUID *uniqueIdentifier; // ivar: _uniqueIdentifier
+
+
++(id)accessoryTypeGroupWithIdentifier:(id)arg0 ;
++(id)climateAccessoryTypeGroup;
++(id)hiddenFromScenesAndAutomationsAccessoryTypeGroup;
++(id)lightAccessoryTypeGroup;
++(id)mediaAccessoryTypeGroup;
++(id)otherAccessoryTypeGroup;
++(id)outletAccessoryTypeGroup;
++(id)securityAccessoryTypeGroup;
++(id)sensorAccessoryTypeGroup;
++(id)switchAccessoryTypeGroup;
++(id)unionGroups:(id)arg0 ;
++(id)waterAccessoryTypeGroup;
++(void)warmUp;
+-(BOOL)containsType:(id)arg0 ;
+-(BOOL)intersectsGroup:(id)arg0 ;
+-(id)_initWithIdentifier:(id)arg0 name:(id)arg1 set:(id)arg2 ;
+-(id)_initWithIdentifierString:(id)arg0 name:(id)arg1 accessoryTypes:(id)arg2 ;
+-(id)_initWithName:(id)arg0 set:(id)arg1 ;
+-(id)filterAccessoryRepresentableObjects:(id)arg0 ;
+-(id)groupByIntersectingGroup:(id)arg0 ;
+-(id)groupBySubtractingGroup:(id)arg0 ;
+-(id)groupByUnioningGroup:(id)arg0 ;
+-(id)initWithAccessoryTypes:(id)arg0 ;
+-(id)initWithName:(id)arg0 accessoryTypes:(id)arg1 ;
+
+
+@end
+
+
+#endif

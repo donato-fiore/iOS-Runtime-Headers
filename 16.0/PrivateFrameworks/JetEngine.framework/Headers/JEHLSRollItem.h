@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef JEHLSROLLITEM_H
+#define JEHLSROLLITEM_H
+
+
+
+#import "JEHLSItem.h"
+
+@interface JEHLSRollItem : JEHLSItem
+
+@property (nonatomic) NSUInteger duration; // ivar: _duration
+
+
+-(BOOL)containsOverallPosition:(NSUInteger)arg0 ;
+-(NSUInteger)endOverallPosition;
+-(id)initWithStartOverallPosition:(NSUInteger)arg0 duration:(NSUInteger)arg1 metricsData:(id)arg2 ;
+
+
+@end
+
+
+#endif

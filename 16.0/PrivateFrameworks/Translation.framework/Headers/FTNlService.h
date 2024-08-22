@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef FTNLSERVICE_H
+#define FTNLSERVICE_H
+
+@class OspreyChannel;
+
+
+
+@interface FTNlService : OspreyChannel
+
+
+
+// -(void)performShortcutFuzzyMatch:(id)arg0 requestBuilder:(id)arg1 completion:(unk)arg2  ;
+
+
+@end
+
+
+#endif

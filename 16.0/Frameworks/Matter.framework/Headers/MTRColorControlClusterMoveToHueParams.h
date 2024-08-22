@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MTRCOLORCONTROLCLUSTERMOVETOHUEPARAMS_H
+#define MTRCOLORCONTROLCLUSTERMOVETOHUEPARAMS_H
+
+@class NSNumber;
+
+#import <Foundation/Foundation.h>
+
+
+@interface MTRColorControlClusterMoveToHueParams : NSObject
+
+@property (retain, nonatomic) NSNumber *direction; // ivar: _direction
+@property (retain, nonatomic) NSNumber *hue; // ivar: _hue
+@property (retain, nonatomic) NSNumber *optionsMask; // ivar: _optionsMask
+@property (retain, nonatomic) NSNumber *optionsOverride; // ivar: _optionsOverride
+@property (retain, nonatomic) NSNumber *timedInvokeTimeoutMs; // ivar: _timedInvokeTimeoutMs
+@property (retain, nonatomic) NSNumber *transitionTime; // ivar: _transitionTime
+
+
+-(id)description;
+-(id)init;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC21PROXIMITYAPPLEIDSETUP25PASFLOWSTEPDEPENDENTERROR_H
+#define _TTC21PROXIMITYAPPLEIDSETUP25PASFLOWSTEPDEPENDENTERROR_H
+
+@class TtC21ProximityAppleIDSetup24PASDependentFlowStepBase;
+
+
+
+@interface _TtC21ProximityAppleIDSetup25PASFlowStepDependentError : TtC21ProximityAppleIDSetup24PASDependentFlowStepBase {
+    ? error;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

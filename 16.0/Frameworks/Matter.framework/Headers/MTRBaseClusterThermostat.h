@@ -1,0 +1,246 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MTRBASECLUSTERTHERMOSTAT_H
+#define MTRBASECLUSTERTHERMOSTAT_H
+
+
+
+#import "MTRCluster.h"
+
+@interface MTRBaseClusterThermostat : MTRCluster
+
+@property (readonly) *void cppCluster; // ivar: _cppCluster
+
+
++(void)readAttributeACCapacityWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeACCapacityformatWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeACCoilTemperatureWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeACCompressorTypeWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeACErrorCodeWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeACLouverPositionWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeACRefrigerantTypeWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeACTypeWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeAbsMaxCoolSetpointLimitWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeAbsMaxHeatSetpointLimitWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeAbsMinCoolSetpointLimitWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeAbsMinHeatSetpointLimitWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeAcceptedCommandListWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeAttributeListWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeClusterRevisionWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeControlSequenceOfOperationWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeEmergencyHeatDeltaWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeFeatureMapWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeGeneratedCommandListWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeHVACSystemTypeConfigurationWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeLocalTemperatureCalibrationWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeLocalTemperatureWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeMaxCoolSetpointLimitWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeMaxHeatSetpointLimitWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeMinCoolSetpointLimitWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeMinHeatSetpointLimitWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeMinSetpointDeadBandWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeNumberOfDailyTransitionsWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeNumberOfWeeklyTransitionsWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeOccupancyWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeOccupiedCoolingSetpointWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeOccupiedHeatingSetpointWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeOccupiedSetbackMaxWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeOccupiedSetbackMinWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeOccupiedSetbackWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeOutdoorTemperatureWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePICoolingDemandWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributePIHeatingDemandWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeRemoteSensingWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeSetpointChangeAmountWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeSetpointChangeSourceTimestampWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeSetpointChangeSourceWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeStartOfWeekWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeSystemModeWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeTemperatureSetpointHoldDurationWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeTemperatureSetpointHoldWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeThermostatProgrammingOperationModeWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeThermostatRunningModeWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeThermostatRunningStateWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeUnoccupiedCoolingSetpointWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeUnoccupiedHeatingSetpointWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeUnoccupiedSetbackMaxWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeUnoccupiedSetbackMinWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
++(void)readAttributeUnoccupiedSetbackWithAttributeCache:(id)arg0 endpoint:(id)arg1 queue:(id)arg2 completionHandler:(id)arg3 ;
+-(id)initWithDevice:(id)arg0 endpoint:(unsigned short)arg1 queue:(id)arg2 ;
+-(void)clearWeeklyScheduleWithCompletionHandler:(id)arg0 ;
+-(void)clearWeeklyScheduleWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)dealloc;
+-(void)getWeeklyScheduleWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)readAttributeACCapacityWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeACCapacityformatWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeACCoilTemperatureWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeACCompressorTypeWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeACErrorCodeWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeACLouverPositionWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeACRefrigerantTypeWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeACTypeWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeAbsMaxCoolSetpointLimitWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeAbsMaxHeatSetpointLimitWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeAbsMinCoolSetpointLimitWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeAbsMinHeatSetpointLimitWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeAcceptedCommandListWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeAttributeListWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeClusterRevisionWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeControlSequenceOfOperationWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeEmergencyHeatDeltaWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeFeatureMapWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeGeneratedCommandListWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeHVACSystemTypeConfigurationWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeLocalTemperatureCalibrationWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeLocalTemperatureWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeMaxCoolSetpointLimitWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeMaxHeatSetpointLimitWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeMinCoolSetpointLimitWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeMinHeatSetpointLimitWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeMinSetpointDeadBandWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeNumberOfDailyTransitionsWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeNumberOfWeeklyTransitionsWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeOccupancyWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeOccupiedCoolingSetpointWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeOccupiedHeatingSetpointWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeOccupiedSetbackMaxWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeOccupiedSetbackMinWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeOccupiedSetbackWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeOutdoorTemperatureWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePICoolingDemandWithCompletionHandler:(id)arg0 ;
+-(void)readAttributePIHeatingDemandWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeRemoteSensingWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeSetpointChangeAmountWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeSetpointChangeSourceTimestampWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeSetpointChangeSourceWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeStartOfWeekWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeSystemModeWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeTemperatureSetpointHoldDurationWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeTemperatureSetpointHoldWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeThermostatProgrammingOperationModeWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeThermostatRunningModeWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeThermostatRunningStateWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeUnoccupiedCoolingSetpointWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeUnoccupiedHeatingSetpointWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeUnoccupiedSetbackMaxWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeUnoccupiedSetbackMinWithCompletionHandler:(id)arg0 ;
+-(void)readAttributeUnoccupiedSetbackWithCompletionHandler:(id)arg0 ;
+-(void)setWeeklyScheduleWithParams:(id)arg0 completionHandler:(id)arg1 ;
+-(void)setpointRaiseLowerWithParams:(id)arg0 completionHandler:(id)arg1 ;
+// -(void)subscribeAttributeACCapacityWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeACCapacityformatWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeACCoilTemperatureWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeACCompressorTypeWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeACErrorCodeWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeACLouverPositionWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeACRefrigerantTypeWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeACTypeWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeAbsMaxCoolSetpointLimitWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeAbsMaxHeatSetpointLimitWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeAbsMinCoolSetpointLimitWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeAbsMinHeatSetpointLimitWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeAcceptedCommandListWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeAttributeListWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeClusterRevisionWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeControlSequenceOfOperationWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeEmergencyHeatDeltaWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeFeatureMapWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeGeneratedCommandListWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeHVACSystemTypeConfigurationWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeLocalTemperatureCalibrationWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeLocalTemperatureWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeMaxCoolSetpointLimitWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeMaxHeatSetpointLimitWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeMinCoolSetpointLimitWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeMinHeatSetpointLimitWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeMinSetpointDeadBandWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeNumberOfDailyTransitionsWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeNumberOfWeeklyTransitionsWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeOccupancyWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeOccupiedCoolingSetpointWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeOccupiedHeatingSetpointWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeOccupiedSetbackMaxWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeOccupiedSetbackMinWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeOccupiedSetbackWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeOutdoorTemperatureWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePICoolingDemandWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributePIHeatingDemandWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeRemoteSensingWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeSetpointChangeAmountWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeSetpointChangeSourceTimestampWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeSetpointChangeSourceWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeStartOfWeekWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeSystemModeWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeTemperatureSetpointHoldDurationWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeTemperatureSetpointHoldWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeThermostatProgrammingOperationModeWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeThermostatRunningModeWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeThermostatRunningStateWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeUnoccupiedCoolingSetpointWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeUnoccupiedHeatingSetpointWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeUnoccupiedSetbackMaxWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeUnoccupiedSetbackMinWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+// -(void)subscribeAttributeUnoccupiedSetbackWithMinInterval:(id)arg0 maxInterval:(id)arg1 params:(id)arg2 subscriptionEstablished:(id)arg3 reportHandler:(unk)arg4  ;
+-(void)writeAttributeACCapacityWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeACCapacityWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeACCapacityformatWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeACCapacityformatWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeACCompressorTypeWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeACCompressorTypeWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeACErrorCodeWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeACErrorCodeWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeACLouverPositionWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeACLouverPositionWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeACRefrigerantTypeWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeACRefrigerantTypeWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeACTypeWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeACTypeWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeControlSequenceOfOperationWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeControlSequenceOfOperationWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeEmergencyHeatDeltaWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeEmergencyHeatDeltaWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeHVACSystemTypeConfigurationWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeHVACSystemTypeConfigurationWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeLocalTemperatureCalibrationWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeLocalTemperatureCalibrationWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeMaxCoolSetpointLimitWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeMaxCoolSetpointLimitWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeMaxHeatSetpointLimitWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeMaxHeatSetpointLimitWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeMinCoolSetpointLimitWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeMinCoolSetpointLimitWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeMinHeatSetpointLimitWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeMinHeatSetpointLimitWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeMinSetpointDeadBandWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeMinSetpointDeadBandWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeOccupiedCoolingSetpointWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeOccupiedCoolingSetpointWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeOccupiedHeatingSetpointWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeOccupiedHeatingSetpointWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeOccupiedSetbackWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeOccupiedSetbackWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeRemoteSensingWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeRemoteSensingWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeSystemModeWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeSystemModeWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeTemperatureSetpointHoldDurationWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeTemperatureSetpointHoldDurationWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeTemperatureSetpointHoldWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeTemperatureSetpointHoldWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeThermostatProgrammingOperationModeWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeThermostatProgrammingOperationModeWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeUnoccupiedCoolingSetpointWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeUnoccupiedCoolingSetpointWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeUnoccupiedHeatingSetpointWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeUnoccupiedHeatingSetpointWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+-(void)writeAttributeUnoccupiedSetbackWithValue:(id)arg0 completionHandler:(id)arg1 ;
+-(void)writeAttributeUnoccupiedSetbackWithValue:(id)arg0 params:(id)arg1 completionHandler:(id)arg2 ;
+
+
+@end
+
+
+#endif

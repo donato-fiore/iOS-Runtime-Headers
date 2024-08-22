@@ -1,0 +1,49 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef BWSLAVEFRAMESYNCHRONIZERNODE_H
+#define BWSLAVEFRAMESYNCHRONIZERNODE_H
+
+@class NSMutableArray;
+
+
+#import "BWNode.h"
+
+@interface BWSlaveFrameSynchronizerNode : BWNode {
+    int _numEODMessagesReceived;
+    os_unfair_lock_s _bufferServicingLock;
+    ? _inputSampleBufferQueues;
+    int _numBufferedFrames;
+    BOOL _slaveStreamHasStarted;
+    int _numSlaveFramesReceived;
+    int _numSlaveFramesToSkip;
+    BOOL _startEmittingMasterFramesBeforeSlaveStreamStarts;
+    NSMutableArray *_droppedFramePTSs;
+    int _mostRecentMasterInputIndex;
+}
+
+
+
+
++(void)initialize;
+-(id)initWithDepthEnabled:(BOOL)arg0 numberOfInputs:(int)arg1 ;
+-(id)initWithDepthEnabled:(BOOL)arg0 numberOfInputs:(int)arg1 bufferSize:(int)arg2 numberOfSlaveFramesToSkip:(int)arg3 startEmittingMasterFramesBeforeSlaveStreamStarts:(BOOL)arg4 ;
+-(id)nodeSubType;
+-(id)nodeType;
+-(void)configurationWithID:(NSInteger)arg0 updatedFormat:(id)arg1 didBecomeLiveForInput:(id)arg2 ;
+-(void)dealloc;
+-(void)didReachEndOfDataForInput:(id)arg0 ;
+-(void)didSelectFormat:(id)arg0 forInput:(id)arg1 forAttachedMediaKey:(id)arg2 ;
+-(void)handleDroppedSample:(id)arg0 forInput:(id)arg1 ;
+-(void)handleNodeError:(id)arg0 forInput:(id)arg1 ;
+-(void)handleStillImageReferenceFrameBracketedCaptureSequenceNumber:(int)arg0 forInput:(id)arg1 ;
+-(void)prepareForCurrentConfigurationToBecomeLive;
+-(void)renderSampleBuffer:(struct opaqueCMSampleBuffer *)arg0 forInput:(id)arg1 ;
+
+
+@end
+
+
+#endif

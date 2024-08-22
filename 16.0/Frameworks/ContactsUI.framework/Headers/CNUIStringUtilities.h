@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CNUISTRINGUTILITIES_H
+#define CNUISTRINGUTILITIES_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface CNUIStringUtilities : NSObject
+
+
+
++(BOOL)stringContainsEmoji:(id)arg0 ;
++(BOOL)stringIsSingleEmoji:(id)arg0 ;
++(NSInteger)composedCharacterCountForString:(id)arg0 ;
++(NSInteger)composedCharacterCountForString:(id)arg0 containsEmoji:(*BOOL)arg1 ;
+
+
+@end
+
+
+#endif

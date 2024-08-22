@@ -1,0 +1,67 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PSVIEWCONTROLLER_H
+#define PSVIEWCONTROLLER_H
+
+@class UIViewController, UIViewController<PSController>, NSString;
+@protocol PSController;
+
+
+#import "PSRootController.h"
+#import "PSSpecifier.h"
+
+@interface PSViewController : UIViewController <PSController>
+
+ {
+    UIViewController<PSController> *_parentController;
+    PSRootController *_rootController;
+    PSSpecifier *_specifier;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(BOOL)canBeShownFromSuspendedState;
+-(NSInteger)navigationItemLargeTitleDisplayMode;
+-(id)init;
+-(id)installCloudSyncButton:(id)arg0 delegate:(id)arg1 ;
+-(id)parentController;
+-(id)readPreferenceValue:(id)arg0 ;
+-(id)rootController;
+-(id)specifier;
+-(void)didLock;
+-(void)didUnlock;
+-(void)didWake;
+-(void)formSheetViewDidDisappear;
+-(void)formSheetViewWillDisappear;
+-(void)handleURL:(id)arg0 ;
+-(void)handleURL:(id)arg0 withCompletion:(id)arg1 ;
+-(void)popupViewDidDisappear;
+-(void)popupViewWillDisappear;
+-(void)pushController:(id)arg0 ;
+-(void)pushController:(id)arg0 animate:(BOOL)arg1 ;
+-(void)setParentController:(id)arg0 ;
+-(void)setPreferenceValue:(id)arg0 specifier:(id)arg1 ;
+-(void)setRootController:(id)arg0 ;
+-(void)setSpecifier:(id)arg0 ;
+-(void)showController:(id)arg0 ;
+-(void)showController:(id)arg0 animate:(BOOL)arg1 ;
+-(void)statusBarWillAnimateByHeight:(CGFloat)arg0 ;
+-(void)suspend;
+-(void)viewDidLoad;
+-(void)willBecomeActive;
+-(void)willResignActive;
+-(void)willUnlock;
+
+
+@end
+
+
+#endif

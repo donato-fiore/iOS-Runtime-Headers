@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SNSOUNDPRINT100KFIREALARMMODELOUTPUT_H
+#define SNSOUNDPRINT100KFIREALARMMODELOUTPUT_H
+
+@class MLMultiArray, NSSet;
+@protocol MLFeatureProvider;
+
+#import <Foundation/Foundation.h>
+
+
+@interface SNSoundPrint100kFireAlarmModelOutput : NSObject <MLFeatureProvider>
+
+
+
+@property (retain, nonatomic) MLMultiArray *Sigmoid; // ivar: _Sigmoid
+@property (readonly, nonatomic) NSSet *featureNames;
+
+
+-(id)featureValueForName:(id)arg0 ;
+-(id)initWithSigmoid:(id)arg0 ;
+
+
+@end
+
+
+#endif

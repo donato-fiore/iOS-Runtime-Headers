@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef TSCHCHARTTYPEMIXED_H
+#define TSCHCHARTTYPEMIXED_H
+
+
+
+#import "TSCH2DChartType.h"
+
+@interface TSCHChartTypeMixed : TSCH2DChartType
+
+
+
+-(NSInteger)userInterfaceTag;
+-(id)defaultSeriesType:(NSUInteger)arg0 ;
+-(id)init;
+-(id)name;
+-(id)userInterfaceName;
+
+
+@end
+
+
+#endif

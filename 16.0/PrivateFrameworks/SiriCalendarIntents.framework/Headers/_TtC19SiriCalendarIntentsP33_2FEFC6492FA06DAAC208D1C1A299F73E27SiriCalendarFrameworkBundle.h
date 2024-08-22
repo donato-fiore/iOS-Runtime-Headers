@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC19SIRICALENDARINTENTSP33_2FEFC6492FA06DAAC208D1C1A299F73E27SIRICALENDARFRAMEWORKBUNDLE_H
+#define _TTC19SIRICALENDARINTENTSP33_2FEFC6492FA06DAAC208D1C1A299F73E27SIRICALENDARFRAMEWORKBUNDLE_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC19SiriCalendarIntentsP33_2FEFC6492FA06DAAC208D1C1A299F73E27SiriCalendarFrameworkBundle : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

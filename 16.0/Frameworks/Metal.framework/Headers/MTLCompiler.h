@@ -1,0 +1,106 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MTLCOMPILER_H
+#define MTLCOMPILER_H
+
+@class NSString;
+@protocol OS_dispatch_queue;
+
+#import <Foundation/Foundation.h>
+
+#import "_MTLDevice.h"
+
+@interface MTLCompiler : NSObject {
+    _MTLDevice *_device;
+    shared_ptr<MTLCompilerCache> _shaderCache;
+    unique_ptr<MTLCompilerBinaryArchiveCache, std::default_delete<MTLCompilerBinaryArchiveCache>> _binaryArchiveCache;
+    BOOL _useOfflinePath;
+}
+
+
+@property (readonly) *MTLCompilerConnectionManager compilerConnectionManager; // ivar: _compilerConnectionManager
+@property (readonly) NSUInteger compilerFlags; // ivar: _compilerFlags
+@property (readonly) unsigned int compilerId; // ivar: _compilerId
+@property (readonly) NSObject<OS_dispatch_queue> *compilerQueue; // ivar: _compilerQueue
+@property (readonly, copy) NSString *pluginPath; // ivar: _pluginPath
+
+
+-(*void)getFunctionKeyWithComputePipelineState:(id)arg0 options:(NSUInteger)arg1 keySize:(*NSUInteger)arg2 ;
+-(*void)getFunctionKeyWithRenderPipelineDescriptor:(id)arg0 options:(NSUInteger)arg1 function:(id)arg2 functionType:(NSUInteger)arg3 compiledNextStageVariant:(id)arg4 keySize:(*NSUInteger)arg5 ;
+-(*void)getHashForScript:(*void)arg0 device:(id)arg1 function:(id)arg2 functionType:(NSUInteger)arg3 compilerOptions:(*char *)arg4 compilerOptionsSize:(NSUInteger)arg5 compiledNextStageVariant:(id)arg6 ;
+-(*void)getProgramObject:(id)arg0 destinationArchive:(id)arg1 sourceBinaryArchives:(id)arg2 variantKey:(struct VariantKey *)arg3 requiredKeys:(struct RequiredFunctionKeys *)arg4 failOnMiss:(BOOL)arg5 ;
+-(*void)getProgramObjectForFunction:(id)arg0 variantKey:(struct VariantKey *)arg1 requiredKeys:(struct RequiredFunctionKeys *)arg2 sourceBinaryArchives:(id)arg3 ;
+-(*void)getShaderCacheKeys;
+-(?)addCompiledOutput:(?)arg0 cachedCompiledOutput:(?)arg1 importedSymbols:(?)arg2 importedLibraries:(?)arg3 hashKey:(?)arg4 typefunctionCache;
+-(?)addCompiledOutput:(?)arg0 importedSymbols:(?)arg1 importedLibraries:(?)arg2 hashKey:(?)arg3 typefunctionCache;
+-(BOOL)addComputePipelineStateWithDescriptor:(id)arg0 destinationBinaryArchive:(id)arg1 error:(*id)arg2 ;
+-(BOOL)addComputePipelineStateWithDescriptor:(id)arg0 destinationBinaryArchive:(id)arg1 options:(NSUInteger)arg2 error:(*id)arg3 ;
+-(BOOL)addMeshRenderPipelineStateWithDescriptor:(id)arg0 destinationBinaryArchive:(id)arg1 error:(*id)arg2 ;
+-(BOOL)addMeshRenderPipelineStateWithDescriptor:(id)arg0 destinationBinaryArchive:(id)arg1 options:(NSUInteger)arg2 error:(*id)arg3 ;
+-(BOOL)addRenderPipelineStateWithDescriptor:(id)arg0 destinationBinaryArchive:(id)arg1 error:(*id)arg2 ;
+-(BOOL)addRenderPipelineStateWithDescriptor:(id)arg0 destinationBinaryArchive:(id)arg1 options:(NSUInteger)arg2 error:(*id)arg3 ;
+-(BOOL)addTileRenderPipelineStateWithDescriptor:(id)arg0 destinationBinaryArchive:(id)arg1 error:(*id)arg2 ;
+-(BOOL)addTileRenderPipelineStateWithDescriptor:(id)arg0 destinationBinaryArchive:(id)arg1 options:(NSUInteger)arg2 error:(*id)arg3 ;
+-(BOOL)copyShaderCacheToPath:(id)arg0 ;
+-(BOOL)initializeVendorPluginFunctionId:(id)arg0 script:(*void)arg1 driverCompilerOptions:(id)arg2 compiledNextStageVariant:(id)arg3 vendorPlugin:(struct ? *)arg4 ;
+-(BOOL)validateLanguageAndAIRVersionForFunction:(id)arg0 completionHandler:(id)arg1 ;
+-(id)compileDynamicLibraryWithDescriptor:(id)arg0 computePipelineDescriptor:(id)arg1 error:(*id)arg2 ;
+-(id)createMeshStageAndLinkPipelineWithFragment:(*void)arg0 fragmentVariant:(id)arg1 objectFunction:(id)arg2 serializedObjectDescriptor:(id)arg3 meshFunction:(id)arg4 serializedMeshDescriptor:(id)arg5 descriptor:(id)arg6 destinationArchive:(id)arg7 options:(NSUInteger)arg8 reflection:(*id)arg9 compileStatistics:(id)arg10 fragmentCompileTimeData:(id)arg11 pipelineArchiverId:(id)arg12 error:(*id)arg13 completionHandler:(id)arg14 ;
+-(id)createVertexStageAndLinkPipelineWithFragment:(*void)arg0 fragmentVariant:(id)arg1 vertexFunction:(id)arg2 serializedVertexDescriptor:(id)arg3 descriptor:(id)arg4 destinationArchive:(id)arg5 options:(NSUInteger)arg6 reflection:(*id)arg7 compileStatistics:(id)arg8 fragmentCompileTimeData:(id)arg9 pipelineArchiverId:(id)arg10 error:(*id)arg11 completionHandler:(id)arg12 ;
+-(id)initWithTargetData:(id)arg0 cacheUUID:(struct ? *)arg1 pluginPath:(id)arg2 device:(id)arg3 compilerFlags:(NSUInteger)arg4 ;
+-(id)lookupBinaryInArchives:(id)arg0 legacyHash:(struct ? *)arg1 ;
+-(id)newComputePipelineStateWithDescriptor:(id)arg0 options:(NSUInteger)arg1 reflection:(*id)arg2 error:(*id)arg3 completionHandler:(id)arg4 ;
+-(id)newComputePipelineStateWithDescriptorInternal:(id)arg0 options:(NSUInteger)arg1 pipelineCache:(id)arg2 destinationBinaryArchive:(id)arg3 reflection:(*id)arg4 error:(*id)arg5 completionHandler:(id)arg6 ;
+-(id)newRenderPipelineStateWithDescriptor:(id)arg0 options:(NSUInteger)arg1 reflection:(*id)arg2 error:(*id)arg3 completionHandler:(id)arg4 ;
+-(id)newRenderPipelineStateWithDescriptorInternal:(id)arg0 options:(NSUInteger)arg1 reflection:(*id)arg2 destinationBinaryArchive:(id)arg3 error:(*id)arg4 completionHandler:(id)arg5 ;
+-(id)newRenderPipelineStateWithTileDescriptor:(id)arg0 options:(NSUInteger)arg1 reflection:(*id)arg2 error:(*id)arg3 completionHandler:(id)arg4 ;
+-(id)pipelineStateWithVariant:(struct VariantEntry *)arg0 descriptor:(id)arg1 options:(NSUInteger)arg2 computeProgram:(*void)arg3 kernelDriverCompileTimeData:(id)arg4 serializedComputeDataDescriptor:(id)arg5 compileTimeStatistics:(id)arg6 reflection:(*id)arg7 error:(*id)arg8 completionHandler:(id)arg9 ;
+-(struct ? )getGPUCompilerHashForScript:(struct PipelineScript *)arg0 type:(NSUInteger)arg1 ;
+-(struct ? )hashKeyForLibraryRequest:(struct MTLCompileLibraryRequestData *)arg0 ;
+-(struct ? )hashKeyForStatelessCompilationRequest:(id)arg0 ;
+-(struct ? )libraryCacheStats;
+-(struct ? )pipelineCacheStats;
+-(struct MTLFunctionId )getFunctionId:(id)arg0 ;
+-(struct MTLFunctionId )getFunctionId:(id)arg0 pipelineScript:(*void)arg1 vendorPluginFunctionId:(struct ? *)arg2 ;
+-(struct RequiredFunctionKeys )requiredKeysForFunction:(id)arg0 variantKey:(struct VariantKey *)arg1 frameworkData:(id)arg2 compilerOptions:(int)arg3 driverCompilerOptions:(id)arg4 pipelineScript:(*void)arg5 archives:(id)arg6 compiledNextStageVariant:(id)arg7 ;
+-(struct VariantEntry *)computeVariantEntryWithDescriptor:(id)arg0 options:(NSUInteger)arg1 serializedComputeDataDescriptor:(id)arg2 asyncCompile:(BOOL)arg3 pipelineCache:(id)arg4 destinationBinaryArchive:(id)arg5 computeProgram:(struct MTLProgramObject **)arg6 kernelDriverCompileTimeData:(*id)arg7 compileTimeStatistics:(id)arg8 ;
+-(void)addExtraDataToAirntBinaryArchive:(id)arg0 functionId:(struct MTLFunctionId *)arg1 cachedData:(*void)arg2 ;
+-(void)addFunctionKeys:(struct RequiredFunctionKeys *)arg0 function:(id)arg1 driverData:(id)arg2 frameworkData:(id)arg3 compilerOptions:(int)arg4 ;
+-(void)allowLibrariesFromOtherPlatforms;
+-(void)cacheCompilerData:(*void)arg0 cachedData:(*void)arg1 hashMap:(*void)arg2 libraryData:(struct MTLLibraryData *)arg3 functionCache:(struct MultiLevelPipelineCache *)arg4 ;
+-(void)compileDynamicLibraryWithDescriptor:(id)arg0 computePipelineDescriptor:(id)arg1 completionHandler:(id)arg2 ;
+-(void)compileFunction:(id)arg0 frameworkData:(id)arg1 driverKeyData:(id)arg2 options:(NSUInteger)arg3 pipelineCache:(id)arg4 completionHandler:(id)arg5 ;
+-(void)compileFunction:(id)arg0 frameworkData:(id)arg1 driverKeyData:(id)arg2 options:(NSUInteger)arg3 pipelineCache:(id)arg4 sync:(BOOL)arg5 completionHandler:(id)arg6 ;
+-(void)compileFunction:(id)arg0 serializedData:(id)arg1 stateData:(id)arg2 options:(NSUInteger)arg3 completionHandler:(id)arg4 ;
+-(void)compileFunction:(id)arg0 serializedPipelineData:(id)arg1 stateData:(id)arg2 linkDataSize:(NSUInteger)arg3 frameworkLinking:(BOOL)arg4 options:(unsigned int)arg5 pipelineCache:(id)arg6 sync:(BOOL)arg7 completionHandler:(id)arg8 ;
+-(void)compileFunction:(id)arg0 serializedPipelineData:(id)arg1 stateData:(id)arg2 linkDataSize:(NSUInteger)arg3 frameworkLinking:(BOOL)arg4 options:(unsigned int)arg5 sync:(BOOL)arg6 completionHandler:(id)arg7 ;
+-(void)compileFunction:(id)arg0 visibleFunctions:(id)arg1 privateVisibleFunctions:(id)arg2 visibleFunctionGroups:(id)arg3 frameworkData:(id)arg4 driverKeyData:(id)arg5 options:(NSUInteger)arg6 pipelineCache:(id)arg7 sync:(BOOL)arg8 completionHandler:(id)arg9 ;
+-(void)compileFunction:(id)arg0 visibleFunctions:(id)arg1 visibleFunctionGroups:(id)arg2 frameworkData:(id)arg3 driverKeyData:(id)arg4 options:(NSUInteger)arg5 pipelineCache:(id)arg6 sync:(BOOL)arg7 completionHandler:(id)arg8 ;
+-(void)compileFunctionRequest:(id)arg0 completionHandler:(id)arg1 ;
+-(void)compileFunctionRequestInternal:(id)arg0 frameworkLinking:(BOOL)arg1 linkDataSize:(NSUInteger)arg2 reflectionOnly:(BOOL)arg3 completionHandler:(id)arg4 ;
+-(void)compileLibraryRequest:(struct MTLCompileLibraryRequestData )arg0 completionHandler:(id)arg1 ;
+-(void)compileRequest:(id)arg0 completionHandler:(id)arg1 ;
+-(void)compileRequest:(id)arg0 pipelineCache:(id)arg1 completionHandler:(id)arg2 ;
+-(void)compileRequest:(id)arg0 pipelineCache:(id)arg1 sync:(BOOL)arg2 completionHandler:(id)arg3 ;
+-(void)compileStatelessFunctionRequest:(id)arg0 reflectionOnly:(BOOL)arg1 completionHandler:(id)arg2 ;
+-(void)createBinaryArchiveWithCompletionHanlder:(id)arg0 ;
+-(void)dealloc;
+-(void)generateMachOWithID:(char *)arg0 binaryEntries:(struct machOEntry *)arg1 numEntries:(NSUInteger)arg2 machOSpecializedData:(*void)arg3 machOType:(int)arg4 Path:(id)arg5 platform:(NSUInteger)arg6 completionHandler:(id)arg7 ;
+-(void)initializeFunctionRequestScriptAndFunctionId:(id)arg0 script:(*void)arg1 driverCompilerOptions:(id)arg2 compiledNextStageVariant:(id)arg3 ;
+-(void)reflectionWithFunction:(id)arg0 options:(NSUInteger)arg1 completionHandler:(id)arg2 ;
+-(void)reflectionWithFunction:(id)arg0 options:(NSUInteger)arg1 sync:(BOOL)arg2 binaryArchives:(id)arg3 completionHandler:(id)arg4 ;
+-(void)reflectionWithFunction:(id)arg0 options:(NSUInteger)arg1 sync:(BOOL)arg2 completionHandler:(id)arg3 ;
+-(void)reflectionWithFunction:(id)arg0 options:(NSUInteger)arg1 sync:(BOOL)arg2 pipelineLibrary:(id)arg3 binaryArchives:(id)arg4 completionHandler:(id)arg5 ;
+-(void)reflectionWithFunction:(id)arg0 options:(NSUInteger)arg1 sync:(BOOL)arg2 pipelineLibrary:(id)arg3 completionHandler:(id)arg4 ;
+-(void)releaseCompilerOutputBlocks:(*void)arg0 ;
+-(void)statelessBackendCompileRequestInternal:(struct MTLCompilerFunctionRequest *)arg0 sync:(BOOL)arg1 compilerHash:(struct ? *)arg2 reflectionOnly:(BOOL)arg3 completionHandler:(id)arg4 ;
+-(void)unloadShaderCaches;
+
+
+@end
+
+
+#endif

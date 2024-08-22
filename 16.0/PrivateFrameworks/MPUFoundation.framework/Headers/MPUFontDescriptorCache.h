@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MPUFONTDESCRIPTORCACHE_H
+#define MPUFONTDESCRIPTORCACHE_H
+
+@class NSMutableArray;
+
+#import <Foundation/Foundation.h>
+
+#import "MPUMutableFontDescriptor.h"
+
+@interface MPUFontDescriptorCache : NSObject {
+    MPUMutableFontDescriptor *_reusableMutableFontDescriptor;
+    NSUInteger _maximumCapacity;
+    NSMutableArray *_orderedCachedFontDescriptors;
+}
+
+
+
+
++(id)sharedFontDescriptorCache;
+-(id)_cachedImmutableFontDescriptorMatchingMutableFontDescriptor:(id)arg0 ;
+-(id)cachedImmutableFontDescriptorForConfigurationBlock:(id)arg0 ;
+-(id)cachedImmutableFontDescriptorMatchingMutableFontDescriptor:(id)arg0 ;
+-(id)init;
+-(void)_handleContentSizeCategoryDidChangeNotification:(id)arg0 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _DKDEVICESTANDBYTIMERMETADATAKEY_H
+#define _DKDEVICESTANDBYTIMERMETADATAKEY_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface _DKDeviceStandbyTimerMetadataKey : NSObject
+
+
+
++(id)delay;
++(id)timerType;
+
+
+@end
+
+
+#endif

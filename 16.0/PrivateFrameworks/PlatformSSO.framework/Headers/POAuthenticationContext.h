@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef POAUTHENTICATIONCONTEXT_H
+#define POAUTHENTICATIONCONTEXT_H
+
+@class NSString, NSURLSession;
+
+#import <Foundation/Foundation.h>
+
+
+@interface POAuthenticationContext : NSObject
+
+@property (retain, nonatomic) NSString *apv; // ivar: _apv
+@property NSUInteger loginType; // ivar: _loginType
+@property (retain, nonatomic) NSString *nonce; // ivar: _nonce
+@property (retain, nonatomic) NSString *requestIdentifier; // ivar: _requestIdentifier
+@property (retain, nonatomic) NSString *scope; // ivar: _scope
+@property (retain, nonatomic) NSString *serverNonce; // ivar: _serverNonce
+@property (retain, nonatomic) NSURLSession *urlSession; // ivar: _urlSession
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

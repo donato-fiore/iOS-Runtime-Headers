@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PXTILINGCOORDINATESPACE_H
+#define PXTILINGCOORDINATESPACE_H
+
+
+#import <Foundation/Foundation.h>
+
+#import "PXTilingCoordinateSpace.h"
+
+@interface PXTilingCoordinateSpace : NSObject
+
+@property (readonly, nonatomic) *void identifier;
+@property (weak, nonatomic) PXTilingCoordinateSpace *parentSpace; // ivar: _parentSpace
+@property (nonatomic) CGAffineTransform transform; // ivar: _transform
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

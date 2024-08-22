@@ -1,0 +1,87 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef GKMULTIPLAYERP2PVIEWCONTROLLER_H
+#define GKMULTIPLAYERP2PVIEWCONTROLLER_H
+
+@class GKInvite;
+@protocol GKMultiplayerP2PViewControllerDelegate;
+
+
+#import "GKMultiplayerViewController.h"
+
+@interface GKMultiplayerP2PViewController : GKMultiplayerViewController
+
+@property (retain, nonatomic) GKInvite *acceptedInvite; // ivar: _acceptedInvite
+@property BOOL datasourceConfigured; // ivar: _datasourceConfigured
+@property (weak, nonatomic) NSObject<GKMultiplayerP2PViewControllerDelegate> *delegate; // ivar: _delegate
+@property (nonatomic, getter=isHosted) BOOL hosted; // ivar: _hosted
+@property (nonatomic) CGFloat inviteeConnectionTimeStamp; // ivar: _inviteeConnectionTimeStamp
+@property (nonatomic) NSInteger mode; // ivar: _mode
+@property BOOL userCancelledMatching; // ivar: _userCancelledMatching
+
+
+-(BOOL)canStartForcedAutomatch;
+-(BOOL)haveInvitedPlayers;
+-(BOOL)havePendingPlayers;
+-(BOOL)isCanceling;
+-(BOOL)isInSetupMode;
+-(BOOL)shouldChangeModeFromOldMode:(NSInteger)arg0 toNewMode:(NSInteger)arg1 ;
+-(NSInteger)automatchParticipantStatus;
+-(id)initWithAcceptedInvite:(id)arg0 ;
+-(void)applicationWillEnterForeground;
+-(void)cancel;
+-(void)cancelAlertWithoutDelegateCallback;
+-(void)cancelPendingInvites;
+-(void)configureDataSource;
+-(void)dealloc;
+-(void)didUpdateAutoMatchPlayerCount;
+-(void)displayCancelConfirmationDialog;
+-(void)finishWithError:(id)arg0 ;
+-(void)groupActivityJoiningPlayer:(id)arg0 devicePushToken:(id)arg1 ;
+-(void)incrementOneAutoMatchPlayerCountIfPossible;
+-(void)invitePlayers:(id)arg0 ;
+-(void)inviterCancelled;
+-(void)loadShareURLWithCompletion:(id)arg0 ;
+-(void)performActionsForButtonCancelCurrentMatching;
+-(void)playNow;
+-(void)playerConnected:(id)arg0 ;
+-(void)playerDisconnected:(id)arg0 ;
+-(void)processStatusUpdateMessageFromPlayer:(id)arg0 bytes:(char *)arg1 withLength:(unsigned int)arg2 ;
+-(void)removedPlayer:(id)arg0 ;
+-(void)resetInviteesStatus;
+-(void)sendInvitesToContactPlayers:(id)arg0 legacyPlayers:(id)arg1 ;
+-(void)sendInvitesToSharePlayPlayer:(id)arg0 devicePushToken:(id)arg1 ;
+-(void)sendStatusUpdate;
+-(void)setAutomatchFailedWithError:(id)arg0 ;
+-(void)setAutomatchPlayerCount:(NSInteger)arg0 ;
+-(void)setConnectingStateForPlayer:(id)arg0 ;
+-(void)setExistingPlayers:(id)arg0 ;
+-(void)setFailedWithError:(id)arg0 ;
+-(void)setInvitesFailedWithError:(id)arg0 ;
+-(void)setPlayer:(id)arg0 connected:(BOOL)arg1 ;
+-(void)setPlayer:(id)arg0 responded:(NSInteger)arg1 ;
+-(void)setPlayer:(id)arg0 sentData:(id)arg1 ;
+-(void)setShareInvitees;
+-(void)showAutomatchingErrorAlert;
+-(void)showInviterDisconnectedAlert;
+-(void)showMatchDisconnectedAlertForPlayer:(id)arg0 ;
+-(void)showNoInternetAlert;
+-(void)showParentalControlsRestrictionAlert;
+-(void)startGame;
+-(void)startGameButtonPressed;
+-(void)updateFooterButtonStates;
+-(void)updateForNewMode;
+-(void)updateMode;
+-(void)updateStartGameButtonTitle;
+-(void)viewDidAppear:(BOOL)arg0 ;
+-(void)viewDidLoad;
+-(void)willPresentPlayerPicker:(id)arg0 ;
+
+
+@end
+
+
+#endif

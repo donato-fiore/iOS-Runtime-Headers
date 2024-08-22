@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef DKPASSCODEVIEWCONTROLLER_H
+#define DKPASSCODEVIEWCONTROLLER_H
+
+@class OBPasscodeViewController, NSString;
+@protocol OBPasscodeViewControllerDelegate;
+
+
+
+@interface DKPasscodeViewController : OBPasscodeViewController <OBPasscodeViewControllerDelegate>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (copy, nonatomic) id *passcodeVerified; // ivar: _passcodeVerified
+@property (nonatomic) int simplePasscodeType; // ivar: _simplePasscodeType
+@property (readonly) Class superclass;
+@property (copy, nonatomic) id *verifyPasscode; // ivar: _verifyPasscode
+
+
+-(BOOL)passcodeViewController:(id)arg0 shouldEnableCompletionButtonForPasscode:(id)arg1 ;
+-(id)completionButtonTitleForPasscodeViewController:(id)arg0 ;
+-(id)init;
+-(void)passcodeViewController:(id)arg0 didEnterPasscode:(id)arg1 ;
+-(void)setUnlockScreenType:(int)arg0 simplePasscodeType:(int)arg1 ;
+
+
+@end
+
+
+#endif

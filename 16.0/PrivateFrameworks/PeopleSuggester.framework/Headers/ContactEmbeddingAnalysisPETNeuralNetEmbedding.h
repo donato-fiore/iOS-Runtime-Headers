@@ -1,0 +1,43 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CONTACTEMBEDDINGANALYSISPETNEURALNETEMBEDDING_H
+#define CONTACTEMBEDDINGANALYSISPETNEURALNETEMBEDDING_H
+
+@class PBCodable;
+@protocol NSCopying;
+
+
+
+@interface ContactEmbeddingAnalysisPETNeuralNetEmbedding : PBCodable <NSCopying>
+
+ {
+    ? _embeddings;
+}
+
+
+@property (readonly, nonatomic) *float embeddings;
+@property (readonly, nonatomic) NSUInteger embeddingsCount;
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(float)embeddingsAtIndex:(NSUInteger)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)dictionaryRepresentation;
+-(void)addEmbeddings:(float)arg0 ;
+-(void)clearEmbeddings;
+-(void)copyTo:(id)arg0 ;
+-(void)dealloc;
+-(void)mergeFrom:(id)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef UISTATUSBARSTYLEANIMATIONPARAMETERS_H
+#define UISTATUSBARSTYLEANIMATIONPARAMETERS_H
+
+
+
+#import "UIStatusBarAnimationParameters.h"
+
+@interface UIStatusBarStyleAnimationParameters : UIStatusBarAnimationParameters
+
+@property (nonatomic) int styleAnimation; // ivar: _styleAnimation
+
+
+-(BOOL)shouldAnimate;
+-(id)initWithDefaultParameters;
+
+
+@end
+
+
+#endif

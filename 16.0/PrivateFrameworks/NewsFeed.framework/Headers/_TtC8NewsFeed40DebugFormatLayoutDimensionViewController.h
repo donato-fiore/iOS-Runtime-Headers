@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC8NEWSFEED40DEBUGFORMATLAYOUTDIMENSIONVIEWCONTROLLER_H
+#define _TTC8NEWSFEED40DEBUGFORMATLAYOUTDIMENSIONVIEWCONTROLLER_H
+
+@class TtC8NewsFeed38DebugFormatInspectorPaneViewController;
+
+
+
+@interface _TtC8NewsFeed40DebugFormatLayoutDimensionViewController : TtC8NewsFeed38DebugFormatInspectorPaneViewController
+
+
+
+-(id)initWithCoder:(id)arg0 ;
+-(void)doDismiss;
+-(void)viewDidLoad;
+
+
+@end
+
+
+#endif

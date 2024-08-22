@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PKMETALPARTICLERENDERCACHEBUFFER_H
+#define PKMETALPARTICLERENDERCACHEBUFFER_H
+
+
+#import <Foundation/Foundation.h>
+
+#import "PKMetalBuffer.h"
+
+@interface PKMetalParticleRenderCacheBuffer : NSObject {
+    PKMetalBuffer *_pkUniformsBuffer;
+    PKMetalBuffer *_pkStrokePointBuffer;
+    NSUInteger _uniformsBufferOffset;
+    NSUInteger _strokePointBufferOffset;
+    NSUInteger _numVertices;
+    NSUInteger _numParticles;
+    NSUInteger _numPoints;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

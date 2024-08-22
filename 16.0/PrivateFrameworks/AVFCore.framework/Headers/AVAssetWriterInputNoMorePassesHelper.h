@@ -1,0 +1,40 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef AVASSETWRITERINPUTNOMOREPASSESHELPER_H
+#define AVASSETWRITERINPUTNOMOREPASSESHELPER_H
+
+
+
+#import "AVAssetWriterInputHelper.h"
+#import "AVAssetWriterInputWritingHelper.h"
+
+@interface AVAssetWriterInputNoMorePassesHelper : AVAssetWriterInputHelper {
+    AVAssetWriterInputWritingHelper *_writingHelper;
+}
+
+
+
+
+-(BOOL)appendPixelBuffer:(struct __CVBuffer *)arg0 withPresentationTime:(struct ? )arg1 ;
+-(BOOL)canPerformMultiplePasses;
+-(BOOL)isReadyForMoreMediaData;
+-(NSInteger)appendSampleBuffer:(struct opaqueCMSampleBuffer *)arg0 error:(*id)arg1 ;
+-(NSInteger)status;
+-(id)currentPassDescription;
+-(id)initWithConfigurationState:(id)arg0 ;
+-(id)initWithWritingHelper:(id)arg0 ;
+-(struct __CVPixelBufferPool *)pixelBufferPool;
+-(void)dealloc;
+-(void)markAsFinished;
+-(void)markCurrentPassAsFinished;
+-(void)requestMediaDataWhenReadyOnQueue:(id)arg0 usingBlock:(id)arg1 ;
+-(void)stopRequestingMediaData;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CRAUDIOSTATUS_H
+#define CRAUDIOSTATUS_H
+
+
+
+#import "CRComponentAuth.h"
+
+@interface CRAudioStatus : CRComponentAuth
+
+
+
+-(NSInteger)copyComponentStatusForQuery:(id)arg0 ;
+
+
+@end
+
+
+#endif

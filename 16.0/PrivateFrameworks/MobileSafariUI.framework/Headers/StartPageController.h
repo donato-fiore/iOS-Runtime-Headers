@@ -1,0 +1,145 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef STARTPAGECONTROLLER_H
+#define STARTPAGECONTROLLER_H
+
+@class WebBookmarkCollection, SFSectionModel, NSItemProvider, NSMutableArray, WebBookmarkList, WBSPrivacyReportData, NSArray, NSString, SFStartPageViewController;
+@protocol _SFWebBookmarkActionHandler, WBTabGroupManagerObserver, SFStartPageCustomizationDataSource, SFStartPageDataSource, SFStartPageVisualStyleProviding, WBSUserDefaultObservation, StartPageDataSource;
+
+#import <Foundation/Foundation.h>
+
+#import "FrequentlyVisitedSitesController.h"
+#import "ForYouRecommendationMediator.h"
+#import "CloudTabStore.h"
+
+@interface StartPageController : NSObject <_SFWebBookmarkActionHandler, WBTabGroupManagerObserver, SFStartPageCustomizationDataSource, SFStartPageDataSource>
+
+ {
+    id<SFStartPageVisualStyleProviding> *_visualStyleProvider;
+    WebBookmarkCollection *_bookmarkCollection;
+    SFSectionModel *_cachedCloudTabsSection;
+    SFSectionModel *_cachedTabGroupHeadingSection;
+    NSItemProvider *_cachedItemProvider;
+    NSMutableArray *_cachedSections;
+    WebBookmarkList *_favoritesList;
+    FrequentlyVisitedSitesController *_frequentlyVisitedSitesController;
+    WBSPrivacyReportData *_privacyReportData;
+    WebBookmarkList *_readingList;
+    NSArray *_siriSuggestions;
+    ForYouRecommendationMediator *_siriSuggestionsMediator;
+    id<WBSUserDefaultObservation> *_selectedCloudDeviceObservation;
+    BOOL _isDroppingFavorites;
+    NSMutableArray *_siriSuggestionsMetadataTokens;
+    NSInteger _updatePolicy;
+    NSInteger _cachedNumberOfTrackers;
+    NSString *_searchPattern;
+    id<WBSUserDefaultObservation> *_tabGroupFavoritesObservation;
+    WebBookmarkList *_tabGroupScopedFavoritesList;
+}
+
+
+@property (retain, nonatomic) CloudTabStore *cloudTabStore; // ivar: _cloudTabStore
+@property (weak, nonatomic) NSObject<StartPageDataSource> *dataSource; // ivar: _dataSource
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (copy, nonatomic) NSString *libraryType; // ivar: _libraryType
+@property (nonatomic, getter=isRecentlyClosedTabsSectionEnabled) BOOL recentlyClosedTabsSectionEnabled;
+@property (readonly) Class superclass;
+@property (nonatomic, getter=isTabGroupFavoritesSectionEnabled) BOOL tabGroupFavoritesSectionEnabled;
+@property (retain, nonatomic) SFStartPageViewController *viewController; // ivar: _viewController
+
+
++(void)initialize;
+-(BOOL)isBackgroundImageEnabledForStartPageCustomizationViewController:(id)arg0 ;
+-(BOOL)isCloudSyncAvailableForStartPageCustomizationViewController:(id)arg0 ;
+-(BOOL)isCloudSyncEnabledForStartPageCustomizationViewController:(id)arg0 ;
+-(BOOL)startPageViewController:(id)arg0 isSectionExpanded:(id)arg1 ;
+-(BOOL)startPageViewControllerShouldShowSearchField:(id)arg0 ;
+-(NSInteger)effectiveUpdatePolicy;
+-(id)_banActionForSiriSuggestion:(id)arg0 ;
+-(id)_bookmarkSectionForBookmark:(id)arg0 orList:(id)arg1 forFavoritesSection:(BOOL)arg2 forScopedFavoritesSection:(BOOL)arg3 sectionTitle:(id)arg4 ;
+-(id)_cloudTabsSectionWithDevice:(id)arg0 ;
+-(id)_cloudTabsSections;
+-(id)_downvoteActionForSiriSuggestion:(id)arg0 ;
+-(id)_favoritesSection;
+-(id)_frequentlyVisitedSection;
+-(id)_highlightsSection;
+-(id)_openMenuElementForSiriSuggestion:(id)arg0 forTabGroup:(BOOL)arg1 ;
+-(id)_privacyReportSection;
+-(id)_readingListSection;
+-(id)_recentlyClosedTabs;
+-(id)_recentlyClosedTabsSection;
+-(id)_selectedCloudTabsDevice;
+-(id)_shareActionForSiriSuggestion:(id)arg0 ;
+-(id)_siriSuggestionsSection;
+-(id)_siriSuggestionsWelcomeBanner;
+-(id)_tabGroupHeadingSection;
+-(id)_tabGroupScopedFavoritesSection;
+-(id)backgroundImageForStartPageCustomizationViewController:(id)arg0 ;
+-(id)backgroundImageIdentifierForStartPageViewController:(id)arg0 ;
+-(id)init;
+-(id)initWithVisualStyleProvider:(id)arg0 ;
+-(id)sectionsForStartPageViewController:(id)arg0 ;
+-(id)startPageBackgroundImageIdentifier;
+-(id)startPageCustomizationViewController:(id)arg0 customizationItemsForSectionsWithKind:(NSInteger)arg1 ;
+-(id)startPageViewController:(id)arg0 detailSectionForItemIdentifier:(id)arg1 ;
+-(void)_appendSectionModelsForIdentifier:(id)arg0 toArray:(id)arg1 ;
+-(void)_bookmarkFolderDidChange:(id)arg0 ;
+-(void)_bookmarksDidReload:(id)arg0 ;
+-(void)_cloudTabsDidChange;
+-(void)_cloudTabsDidChange:(id)arg0 ;
+-(void)_fetchHandoffResult;
+-(void)_frequentlyVisitedSitesDidChange:(id)arg0 ;
+-(void)_highlightsDidChange:(id)arg0 ;
+-(void)_historyWasAltered;
+-(void)_historyWasCleared;
+-(void)_privacyProxyStateDidChange;
+-(void)_privacyReportDataDidChange;
+-(void)_refreshSiriSuggestions;
+-(void)_reloadPrivacyReportSection;
+-(void)_reportBookmarkNavigationAnalytics:(id)arg0 withIntent:(id)arg1 ;
+-(void)_requestLeadImageForRecommendation:(id)arg0 ;
+-(void)_scheduleHandoffApplicationUpdate:(id)arg0 ;
+-(void)_sectionsDidChange:(id)arg0 ;
+-(void)_setLeadImageForCard:(id)arg0 withRecommendation:(id)arg1 ;
+-(void)_setReadingListRecommendationAsReadWithRecommendation:(id)arg0 ;
+-(void)_setSiriSuggestions:(id)arg0 ;
+-(void)_setUpContextMenuForBookmarksSection:(id)arg0 ;
+-(void)_setUpDragItemProviderForBookmarksSection:(id)arg0 ;
+-(void)_updateImageForRecommendation:(id)arg0 ;
+-(void)_updatePrivacyReportData;
+-(void)_updateRecommendationsForAllTopics;
+-(void)_updateRecommendationsForTopics:(id)arg0 ;
+-(void)_updateSiriSuggestionsMediator;
+-(void)bookmark:(id)arg0 didProduceNavigationIntent:(id)arg1 userInfo:(id)arg2 ;
+-(void)bookmark:(id)arg0 shareItems:(id)arg1 userInfo:(id)arg2 ;
+-(void)dealloc;
+-(void)deleteBookmark:(id)arg0 userInfo:(id)arg1 ;
+-(void)didReorderSectionIdentifiersForStartPageCustomizationViewController:(id)arg0 ;
+-(void)editBookmark:(id)arg0 userInfo:(id)arg1 ;
+-(void)startPageCustomizationViewController:(id)arg0 didCustomizeItems:(id)arg1 forSectionsWithKind:(NSInteger)arg2 ;
+-(void)startPageCustomizationViewController:(id)arg0 didModifyBackgroundImageEnabled:(BOOL)arg1 ;
+-(void)startPageCustomizationViewController:(id)arg0 didSelectBuiltInBackgroundImageAtURL:(id)arg1 precomputedLuminance:(CGFloat)arg2 ;
+-(void)startPageCustomizationViewController:(id)arg0 didSelectCustomBackgroundImage:(id)arg1 ;
+-(void)startPageCustomizationViewController:(id)arg0 willModifySectionWithIdentifier:(id)arg1 enabled:(BOOL)arg2 ;
+-(void)startPageCustomizationViewControllerDidDisableCloudSync:(id)arg0 ;
+-(void)startPageCustomizationViewControllerDidEnableCloudSync:(id)arg0 withPreference:(NSInteger)arg1 ;
+-(void)startPageCustomizationViewControllerDidFinish:(id)arg0 ;
+-(void)startPageViewController:(id)arg0 didSelectItemWithIdentifier:(id)arg1 ;
+-(void)startPageViewController:(id)arg0 didUpdateSearchPattern:(id)arg1 ;
+-(void)startPageViewController:(id)arg0 toggleSectionExpanded:(id)arg1 ;
+-(void)startPageViewControllerDidChangeRootViewVisibility:(id)arg0 ;
+-(void)tabGroupManager:(id)arg0 didUpdateScopedBookmarkList:(id)arg1 ;
+-(void)updatePolicyDidChange;
+-(void)updatePrivacyReportIfEnabled;
+-(void)updateTabGroupHeading;
+
+
+@end
+
+
+#endif

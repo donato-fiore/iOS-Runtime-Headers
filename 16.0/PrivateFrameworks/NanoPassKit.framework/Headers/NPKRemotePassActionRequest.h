@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef NPKREMOTEPASSACTIONREQUEST_H
+#define NPKREMOTEPASSACTIONREQUEST_H
+
+@class PKPaymentPassAction, NSString;
+
+
+#import "NPKRemotePassAction.h"
+
+@interface NPKRemotePassActionRequest : NPKRemotePassAction
+
+@property (readonly, nonatomic) PKPaymentPassAction *action;
+@property (readonly, nonatomic) NSString *actionText;
+@property (readonly, nonatomic) NSString *identifier;
+
+
+-(id)description;
+
+
+@end
+
+
+#endif

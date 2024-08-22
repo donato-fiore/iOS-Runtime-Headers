@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC19APPSTOREKITINTERNAL21CLIENTORDERINGWRAPPER_H
+#define _TTC19APPSTOREKITINTERNAL21CLIENTORDERINGWRAPPER_H
+
+@protocol _TtP19AppStoreKitInternal29ClientOrderingWrapperProtocol_;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC19AppStoreKitInternal21ClientOrderingWrapper : NSObject <_TtP19AppStoreKitInternal29ClientOrderingWrapperProtocol_>
+
+ {
+    ? clientOrdering;
+}
+
+
+
+
+-(id)init;
+-(void)orderedVisibleIAPs:(id)arg0 ;
+-(void)visibilityForIAPs:(id)arg0 ;
+
+
+@end
+
+
+#endif

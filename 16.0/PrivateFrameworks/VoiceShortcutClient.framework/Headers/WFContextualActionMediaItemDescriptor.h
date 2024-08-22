@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef WFCONTEXTUALACTIONMEDIAITEMDESCRIPTOR_H
+#define WFCONTEXTUALACTIONMEDIAITEMDESCRIPTOR_H
+
+@class NSString, NSNumber;
+@protocol NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+
+@interface WFContextualActionMediaItemDescriptor : NSObject <NSSecureCoding>
+
+
+
+@property (readonly, copy, nonatomic) NSString *name; // ivar: _name
+@property (readonly, copy, nonatomic) NSNumber *playbackStoreId; // ivar: _playbackStoreId
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)description;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithPlaybackStoreId:(id)arg0 name:(id)arg1 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

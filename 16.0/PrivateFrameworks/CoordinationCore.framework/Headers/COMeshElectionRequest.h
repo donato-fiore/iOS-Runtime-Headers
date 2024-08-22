@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef COMESHELECTIONREQUEST_H
+#define COMESHELECTIONREQUEST_H
+
+
+
+#import "COMeshBaseBallotRequest.h"
+
+@interface COMeshElectionRequest : COMeshBaseBallotRequest
+
+@property (readonly, nonatomic) unsigned short listeningPort; // ivar: _listeningPort
+
+
++(BOOL)supportsSecureCoding;
++(id)acceptableResponses;
+-(id)initWithBallot:(id)arg0 generation:(NSUInteger)arg1 listeningPort:(unsigned short)arg2 ;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

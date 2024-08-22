@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CLKUIRESOURCEPROVIDERKEY_H
+#define CLKUIRESOURCEPROVIDERKEY_H
+
+@class NSNumber;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CLKUIResourceProviderKey : NSObject
+
+@property (readonly, nonatomic) NSNumber *key; // ivar: _key
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

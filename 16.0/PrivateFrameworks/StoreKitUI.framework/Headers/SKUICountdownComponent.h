@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SKUICOUNTDOWNCOMPONENT_H
+#define SKUICOUNTDOWNCOMPONENT_H
+
+
+
+#import "SKUIPageComponent.h"
+#import "SKUICountdown.h"
+
+@interface SKUICountdownComponent : SKUIPageComponent
+
+@property (retain, nonatomic) SKUICountdown *countdown; // ivar: _countdown
+
+
+-(NSInteger)componentType;
+-(id)initWithCustomPageContext:(id)arg0 ;
+
+
+@end
+
+
+#endif

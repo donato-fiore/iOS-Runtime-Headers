@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef NEIKEV2AUTHPAYLOAD_H
+#define NEIKEV2AUTHPAYLOAD_H
+
+@class NSData;
+
+
+#import "NEIKEv2Payload.h"
+#import "NEIKEv2AuthenticationProtocol.h"
+
+@interface NEIKEv2AuthPayload : NEIKEv2Payload {
+    NEIKEv2AuthenticationProtocol *_authProtocol;
+    NSData *_authenticationData;
+}
+
+
+
+
++(id)copyTypeDescription;
+-(BOOL)generatePayloadData;
+-(BOOL)hasRequiredFields;
+-(BOOL)parsePayloadData;
+-(NSUInteger)type;
+-(id)description;
+-(id)descriptionWithIndent:(int)arg0 options:(NSUInteger)arg1 ;
+
+
+@end
+
+
+#endif

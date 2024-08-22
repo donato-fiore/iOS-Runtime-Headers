@@ -1,0 +1,478 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef EKEVENT_H
+#define EKEVENT_H
+
+@class NSDate, NSMutableArray, NSString, NSSet, NSURL, EKCalendarDate, NSArray, NSNumber;
+@protocol EKJunkInvitationProtocol_Private, CalDateRangeProtocol;
+
+
+#import "EKCalendarItem.h"
+#import "EKStructuredLocation.h"
+#import "EKReadWriteLock.h"
+#import "EKEventStore.h"
+#import "EKParticipant.h"
+#import "EKRecurrenceIdentifier.h"
+#import "EKSuggestedEventInfo.h"
+#import "EKVirtualConference.h"
+
+@interface EKEvent : EKCalendarItem <EKJunkInvitationProtocol_Private, CalDateRangeProtocol>
+
+ {
+    EKStructuredLocation *_cachedLocationPrediction;
+    NSDate *_cachedLocationPredictionExpirationDate;
+    BOOL _locationPredictionFrozen;
+    BOOL _locationPredictionAllowed;
+    EKReadWriteLock *_locationPredictionLock;
+    NSMutableArray *_virtualConferenceURLsToInvalidateOnCommit;
+}
+
+
+@property (readonly, nonatomic) NSString *UUID;
+@property (copy, nonatomic) NSSet *actions;
+@property (nonatomic, getter=isAllDay) BOOL allDay;
+@property (readonly, nonatomic) BOOL allowsAllDayModifications;
+@property (readonly, nonatomic) BOOL allowsAvailabilityModifications;
+@property (readonly, nonatomic) BOOL allowsParticipationStatusModifications;
+@property (readonly, nonatomic) BOOL allowsPrivacyLevelModifications;
+@property (readonly, nonatomic) BOOL allowsProposedTimeModifications;
+@property (readonly, nonatomic) BOOL allowsResponseCommentModifications;
+@property (readonly, nonatomic) BOOL allowsTravelTimeModifications;
+@property (nonatomic) BOOL attendeeComment;
+@property (nonatomic) BOOL attendeeDeclinedStartDate;
+@property (nonatomic) BOOL attendeeProposedStartDate;
+@property (nonatomic) BOOL attendeeReplyChanged;
+@property (nonatomic) BOOL attendeeStatus;
+@property (readonly, nonatomic) BOOL automaticLocationGeocodingAllowed;
+@property (nonatomic) NSInteger availability;
+@property (readonly, nonatomic) NSString *birthdayContactIdentifier;
+@property (readonly, nonatomic) NSInteger birthdayPersonID;
+@property (readonly, nonatomic) NSString *birthdayPersonUniqueID; // ivar: _birthdayPersonUniqueID
+@property (nonatomic) NSUInteger cachedJunkStatus;
+@property (readonly, nonatomic) BOOL canBeRespondedTo;
+@property (readonly, nonatomic) BOOL canDetachSingleOccurrence;
+@property (nonatomic) int clearModifiedFlags; // ivar: _clearModifiedFlags
+@property (retain, nonatomic) NSURL *conferenceURL;
+@property (readonly, nonatomic) NSInteger currentUserGeneralizedParticipantRole;
+@property (readonly, nonatomic, getter=isCurrentUserInvitedAttendee) BOOL currentUserInvitedAttendee;
+@property (nonatomic) BOOL dateChanged;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) CGFloat duration;
+@property (readonly, nonatomic) CGFloat durationIncludingTravel;
+@property (readonly, nonatomic) BOOL eligibleForTravelAdvisories;
+@property (readonly, nonatomic) EKCalendarDate *endCalendarDate;
+@property (copy, nonatomic) NSDate *endDate;
+@property (retain, nonatomic) NSDate *endDateUnadjustedForLegacyClients;
+@property (retain, nonatomic) EKStructuredLocation *endLocation;
+@property (readonly, nonatomic) NSString *eventIdentifier;
+@property (readonly, nonatomic) NSString *eventOccurrenceID;
+@property (readonly, nonatomic) EKEventStore *eventStore;
+@property (nonatomic) int externalTrackingStatus;
+@property (readonly, nonatomic) NSURL *externalURL;
+@property (nonatomic) BOOL firedTTL;
+@property (readonly, nonatomic) BOOL hasAttachmentChanges;
+@property (readonly, nonatomic) BOOL hasComplexRecurrence;
+@property (readonly, nonatomic) BOOL hasPredictedLocation;
+@property (readonly) NSUInteger hash;
+@property (readonly, copy, nonatomic) NSDate *initialEndDate;
+@property (readonly, copy, nonatomic) NSDate *initialStartDate;
+@property (nonatomic) NSUInteger invitationStatus;
+@property (nonatomic) BOOL isAlerted;
+@property (readonly, nonatomic) BOOL isAllDayDirty;
+@property (readonly, nonatomic) BOOL isDetached;
+@property (readonly, nonatomic) BOOL isEditable;
+@property (readonly, nonatomic) BOOL isEndDateDirty;
+@property (readonly, nonatomic) BOOL isMainOccurrence; // ivar: _isMainOccurrence
+@property (readonly, nonatomic) BOOL isMaster;
+@property (readonly, nonatomic) BOOL isMasterOrDetachedOccurrence;
+@property (nonatomic) BOOL isPhantom;
+@property (readonly, nonatomic) BOOL isPrivateEventSharedToMe;
+@property (readonly, nonatomic) BOOL isSignificantlyDetached;
+@property (readonly, nonatomic) BOOL isSignificantlyDetachedIgnoringParticipation;
+@property (readonly, nonatomic) BOOL isStartDateDirty;
+@property (readonly, nonatomic) BOOL isStatusDirty;
+@property (readonly, nonatomic) BOOL isUndetached;
+@property (nonatomic) NSUInteger junkStatus;
+@property (readonly, nonatomic) NSURL *launchURL;
+@property (nonatomic) BOOL locationChanged;
+@property (readonly, nonatomic) BOOL locationIsAConferenceRoom;
+@property (nonatomic) NSInteger locationPredictionState;
+@property (readonly, nonatomic) NSString *locationWithoutPrediction;
+@property (retain, nonatomic) NSArray *locations;
+@property (readonly, nonatomic) NSArray *locationsWithoutPrediction;
+@property (nonatomic) BOOL needsGeocoding;
+@property (readonly, nonatomic) NSDate *occurrenceDate;
+@property (copy, nonatomic) EKCalendarDate *occurrenceEndDate; // ivar: _occurrenceEndDate
+@property (nonatomic) BOOL occurrenceIsAllDay; // ivar: _occurrenceIsAllDay
+@property (copy, nonatomic) EKCalendarDate *occurrenceStartDate; // ivar: _occurrenceStartDate
+@property (readonly, nonatomic) EKParticipant *organizer;
+@property (copy, nonatomic) EKCalendarDate *originalOccurrenceEndDate; // ivar: _originalOccurrenceEndDate
+@property (copy, nonatomic) NSNumber *originalOccurrenceIsAllDay; // ivar: _originalOccurrenceIsAllDay
+@property (copy, nonatomic) EKCalendarDate *originalOccurrenceStartDate; // ivar: _originalOccurrenceStartDate
+@property (readonly, nonatomic) NSDate *originalStartDate;
+@property (nonatomic) NSInteger participationStatus;
+@property (retain, nonatomic) NSDate *participationStatusModifiedDate;
+@property (readonly, nonatomic) NSInteger pendingParticipationStatus;
+@property (readonly, nonatomic) BOOL potentiallyEligibleForTravelAdvisories;
+@property (readonly, nonatomic) EKStructuredLocation *preferredLocationWithoutPrediction;
+@property (nonatomic) BOOL preventConferenceURLDetection; // ivar: _preventConferenceURLDetection
+@property (nonatomic) NSInteger privacyLevel;
+@property (readonly, nonatomic, getter=isPrivacySet) BOOL privacySet;
+@property (readonly, nonatomic) NSDate *proposedEndDate;
+@property (retain, nonatomic) NSDate *proposedStartDate;
+@property (nonatomic) BOOL recurrenceChanged;
+@property (readonly, nonatomic) NSDate *recurrenceDate;
+@property (readonly, nonatomic) EKRecurrenceIdentifier *recurrenceIdentifier;
+@property (copy, nonatomic) NSString *recurrenceSet;
+@property (nonatomic) BOOL requiresDetachDueToSnoozedAlarm; // ivar: _requiresDetachDueToSnoozedAlarm
+@property (readonly, nonatomic) BOOL responseMustApplyToAll;
+@property (readonly, nonatomic) NSString *sendersEmail;
+@property (readonly, nonatomic) NSString *sendersPhoneNumber;
+@property (readonly, nonatomic) NSString *showEventURLString; // ivar: _showEventURLString
+@property (nonatomic) NSInteger specialDayType;
+@property (readonly, nonatomic) EKCalendarDate *startCalendarDate;
+@property (readonly, nonatomic) EKCalendarDate *startCalendarDateIncludingTravelTime;
+@property (copy, nonatomic) NSDate *startDate;
+@property (readonly, nonatomic) NSDate *startDateIncludingTravel;
+@property (nonatomic) NSInteger status;
+@property (copy, nonatomic) EKStructuredLocation *structuredLocation;
+@property (retain, nonatomic) EKSuggestedEventInfo *suggestionInfo;
+@property (readonly) Class superclass;
+@property (readonly, nonatomic) BOOL supportsJunkReporting;
+@property (readonly, nonatomic) BOOL supportsParticipationStatusModificationsWithoutNotification;
+@property (nonatomic) BOOL timeChanged;
+@property (nonatomic) BOOL titleChanged;
+@property (nonatomic) NSInteger travelAdvisoryBehavior;
+@property (readonly, nonatomic) BOOL travelAdvisoryBehaviorIsEffectivelyEnabled;
+@property (readonly, nonatomic) NSInteger travelRoutingMode;
+@property (retain, nonatomic) EKStructuredLocation *travelStartLocation;
+@property (nonatomic) CGFloat travelTime;
+@property (nonatomic) BOOL videoConferenceChanged;
+@property (retain, nonatomic) EKVirtualConference *virtualConference;
+@property (retain, nonatomic) NSString *virtualConferenceTextRepresentation; // ivar: _virtualConferenceTextRepresentation
+
+
++(BOOL)_allowSlicingFromDetachedOccurrence;
++(BOOL)_calendarsAreSharedToMeInSameSourceAndHaveSameOwner:(id)arg0 ;
++(BOOL)_notDetachedOccurrenceOfEvent:(id)arg0 existsInDateRangeWithStartDate:(id)arg1 endDate:(id)arg2 inTimeZone:(id)arg3 ;
++(BOOL)_validateSpanForRemove:(NSInteger)arg0 error:(*id)arg1 ;
++(BOOL)isMultiDayTimedEventWithStartDate:(id)arg0 endDate:(id)arg1 allDay:(BOOL)arg2 inCalendar:(id)arg3 ;
++(Class)frozenClass;
++(NSInteger)_coercedEventAvailabilityForDesiredAvailability:(NSInteger)arg0 supportedAvailabilities:(NSUInteger)arg1 ;
++(NSInteger)_eventAvailabilityForParticipantStatus:(NSInteger)arg0 supportedEventAvailabilities:(NSUInteger)arg1 isAllDayEvent:(BOOL)arg2 ;
++(NSInteger)ekWeekDayFromVCSWeekDay:(NSUInteger)arg0 ;
++(id)EKObjectChangeSummarizer_multiValueDiffKeys;
++(id)EKObjectChangeSummarizer_singleValueDiffKeys;
++(id)_basicChangesRequiringSpanAll;
++(id)_locationStringForLocations:(id)arg0 ;
++(id)_modifiedNotificationUserInfoWithIdentifier:(id)arg0 forRevert:(BOOL)arg1 ;
++(id)_relatedCachedTimeKeys;
++(id)_updatedPredictedLocationRespectingTimeoutBudgetForEvent:(id)arg0 error:(*id)arg1 ;
++(id)eventFromICSEvent:(id)arg0 inStore:(id)arg1 ;
++(id)eventWithEventStore:(id)arg0 ;
++(id)externalUriScheme;
++(id)generateUniqueIDWithEvent:(id)arg0 originalEvent:(id)arg1 calendar:(id)arg2 ;
++(id)knownKeysToSkipForFutureChanges;
++(id)knownKeysToUseForFutureChanges;
++(id)knownPerUserPropertyKeys;
++(id)knownRelationshipMultiValueKeys;
++(id)knownRelationshipSingleValueKeys;
++(id)knownRequireRSVPKeys;
++(id)knownSingleValueKeysForComparison;
++(void)_detachOrSliceEvent:(id)arg0 withSpan:(NSInteger)arg1 savingEvent:(id)arg2 withOriginalStartDate:(id)arg3 newStartDate:(id)arg4 ;
+-(BOOL)_canMoveOrCopyFromCalendar:(id)arg0 toCalendar:(id)arg1 allowedRequirements:(NSInteger)arg2 error:(*id)arg3 ;
+-(BOOL)_cancelWithSpan:(NSInteger)arg0 error:(*id)arg1 ;
+-(BOOL)_changesRequireDetachOrSlice;
+-(BOOL)_checkStartDateConstraintAgainstDate:(struct ? )arg0 timeZone:(id)arg1 error:(*id)arg2 ;
+-(BOOL)_couldBeJunkCommon;
+-(BOOL)_detectedConferenceURLOnBackingObjectMayBeInvalid;
+-(BOOL)_diff:(id)arg0 isDifferentFromCommittedEventHelperRequiresReschedule:(BOOL)arg1 ;
+-(BOOL)_eligibleForTravelAdvisoriesIncludePotential:(BOOL)arg0 ;
+-(BOOL)_eventIsTheOnlyRemainingOccurrence;
+-(BOOL)_fetchedEventIsConflict:(id)arg0 forStartDate:(id)arg1 endDate:(id)arg2 ;
+-(BOOL)_hasAbsoluteAlarms;
+-(BOOL)_hasBasicChangesRequiringSpanAll;
+-(BOOL)_hasExternalIDOrDeliverySource;
+-(BOOL)_hasOrHadRecurrenceRule;
+-(BOOL)_hasRecurrenceRuleChangeRequiringSpanAll;
+-(BOOL)_invitationChangedPropertyForFlag:(unsigned int)arg0 ;
+-(BOOL)_isOnlyChangeToAttendeesSelfAttendeeParticipationStatus;
+-(BOOL)_isOriginalOccurrenceStartDateSameAsCommittedStartDate;
+-(BOOL)_isParticipationStatusDirty;
+-(BOOL)_isSignificantlyDetachedComparedToMaster:(id)arg0 shouldIgnorePartStat:(BOOL)arg1 ;
+-(BOOL)_isSimpleRepeatingEvent;
+-(BOOL)_isValidAttendee:(id)arg0 forCalendar:(id)arg1 selfAttendeeIsValid:(BOOL)arg2 ;
+-(BOOL)_needsAttendeePartStatReset;
+-(BOOL)_needsPredictedLocationCacheUpdateHoldingLock;
+-(BOOL)_noRemainingEarlierOccurrences;
+-(BOOL)_occurrenceExistsOnDate:(id)arg0 timeZone:(id)arg1 ;
+-(BOOL)_requirementsToMoveOrCopyToCalendarHelperAllowedToMoveOrCopyEventFromCalendar:(id)arg0 toCalendar:(id)arg1 ;
+-(BOOL)_requirementsToMoveToCalendarHelperAlterationsRequiredToMoveEventFromCalendar:(id)arg0 toCalendar:(id)arg1 ;
+-(BOOL)_requirementsToMoveToCalendarHelperDuplicationRequiredToMoveEventFromCalendar:(id)arg0 toCalendar:(id)arg1 ;
+-(BOOL)_requirementsToMoveToCalendarHelperNeedToRemoveOriginalToMoveEventFromCalendar:(id)arg0 toCalendar:(id)arg1 ;
+-(BOOL)_requirementsToMoveToCalendarHelperReinviteAttendeesRequiredToMoveEventFromCalendar:(id)arg0 toCalendar:(id)arg1 ;
+-(BOOL)_requirementsToMoveToCalendarHelperRemoveAttendeesRequiredToMoveEventFromCalendar:(id)arg0 toCalendar:(id)arg1 ;
+-(BOOL)_reset;
+-(BOOL)_saveUndetachedOccurrenceWithError:(*id)arg0 ;
+-(BOOL)_settingTimeZoneChangesStartEndDates;
+-(BOOL)_shouldAlertInviteeDeclines;
+-(BOOL)_shouldCancelInsteadOfDeleteWithSpan:(NSInteger)arg0 ;
+-(BOOL)_shouldDeclineInsteadOfDelete;
+-(BOOL)_shouldPreserveFutureWhenSlicingWithStartDate:(id)arg0 newStartDate:(id)arg1 ;
+-(BOOL)_suggestedStartDateHelperRecurrenceRuleRequiresExpansion:(id)arg0 forDate:(id)arg1 ;
+-(BOOL)_userAddressesRepresentInvitedAttendee:(id)arg0 checkEmailAddresses:(BOOL)arg1 ;
+-(BOOL)_validateDatesAndRecurrencesGivenSpan:(NSInteger)arg0 error:(*id)arg1 ;
+-(BOOL)allowsAlarmModifications;
+-(BOOL)allowsAttendeesModifications;
+-(BOOL)allowsCalendarModifications;
+-(BOOL)allowsRecurrenceModifications;
+-(BOOL)allowsSpansOtherThanThisEvent;
+-(BOOL)canForward;
+-(BOOL)canMoveOrCopyToCalendar:(id)arg0 fromCalendar:(id)arg1 error:(*id)arg2 ;
+-(BOOL)canMoveToCalendar:(id)arg0 fromCalendar:(id)arg1 allowedRequirements:(NSInteger)arg2 error:(*id)arg3 ;
+-(BOOL)canMoveToCalendar:(id)arg0 fromCalendar:(id)arg1 error:(*id)arg2 ;
+-(BOOL)changingAllDayPropertyIsAllowed;
+-(BOOL)conformsToRecurrenceRules:(id)arg0 ;
+-(BOOL)couldBeJunk;
+-(BOOL)currentUserMayActAsOrganizer;
+-(BOOL)disallowProposeNewTime;
+-(BOOL)futureOccurrencesCannotBeAffectedByChangingStartDateToDate:(id)arg0 ;
+-(BOOL)hasAttendeeProposedTimes;
+-(BOOL)hasChangesRequiringSpanAll;
+-(BOOL)hasValidEventAction;
+-(BOOL)isAttendeeSameAsOrganizer:(id)arg0 ;
+-(BOOL)isBirthday;
+-(BOOL)isDifferentAndHasForwardedAttendeesWithDiff:(id)arg0 ;
+-(BOOL)isDifferentAndHasNewProposedTimeWithDiff:(id)arg0 ;
+-(BOOL)isDifferentAndHasUnscheduledAttendeesWithDiff:(id)arg0 ;
+-(BOOL)isDifferentAndModifiedAttendeesWithDiff:(id)arg0 ;
+-(BOOL)isDifferentAndRequiresRSVPWithDiff:(id)arg0 ;
+-(BOOL)isDifferentAndRequiresRescheduleWithDiff:(id)arg0 ;
+-(BOOL)isDifferentExceptingPerUserPropertiesWithDiff:(id)arg0 ;
+-(BOOL)isDifferentFromCommittedEventAndHasUnscheduledAttendees;
+-(BOOL)isDifferentFromCommittedEventAndRequiresRSVP;
+-(BOOL)isDifferentFromCommittedEventAndRequiresReschedule;
+-(BOOL)isDifferentWithDiff:(id)arg0 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)isEqual:(id)arg0 comparingKeys:(id)arg1 ;
+-(BOOL)isFirstOccurrence;
+-(BOOL)isFloating;
+-(BOOL)isMultiDayTimedEventInCalendar:(id)arg0 ;
+-(BOOL)isOnlyOccurrence;
+-(BOOL)isOutOfOrderWithEventInSeries;
+-(BOOL)isPartOfExistingRecurringSeries;
+-(BOOL)isProposedTimeEvent;
+-(BOOL)isTentative;
+-(BOOL)isValidAttendee:(id)arg0 forCalendar:(id)arg1 ;
+-(BOOL)needsOccurrenceCacheUpdate;
+-(BOOL)overlapsWithOrIsSameDayAsEventInSeries;
+-(BOOL)phantomMaster;
+-(BOOL)refresh;
+-(BOOL)refreshAndNotify:(BOOL)arg0 ;
+-(BOOL)removeWithSpan:(NSInteger)arg0 error:(*id)arg1 ;
+-(BOOL)requiresCopyToMoveFromCalendar:(id)arg0 toCalendar:(id)arg1 ;
+-(BOOL)requiresDetach;
+-(BOOL)revert;
+-(BOOL)saveWithSpan:(NSInteger)arg0 error:(*id)arg1 ;
+-(BOOL)seriesHasOutOfOrderEvents;
+-(BOOL)seriesHasOverlappingOrOnSameDayOrOutOfOrderEvents;
+-(BOOL)serverSupportedProposeNewTime;
+-(BOOL)shouldHaveDefaultAlarms;
+-(BOOL)supportsAddingAttachments;
+-(BOOL)updateEventToEvent:(id)arg0 ;
+-(BOOL)updateEventToEvent:(id)arg0 commit:(BOOL)arg1 ;
+-(BOOL)updateWithGeocodedMapItemAndSaveWithCommit:(id)arg0 eventStore:(id)arg1 error:(*id)arg2 ;
+-(BOOL)validate:(*id)arg0 ;
+-(BOOL)validateOccurrenceDateStillMatchesRecurrenceRules;
+-(BOOL)validateRecurrenceRule:(id)arg0 error:(*id)arg1 ;
+-(BOOL)validateWithSpan:(NSInteger)arg0 error:(*id)arg1 ;
+-(NSInteger)_parentParticipationStatus;
+-(NSInteger)compareOriginalStartDateWithEvent:(id)arg0 ;
+-(NSInteger)compareStartDateIncludingTravelWithEvent:(id)arg0 ;
+-(NSInteger)compareStartDateWithEvent:(id)arg0 ;
+-(NSInteger)daysSpannedInCalendar:(id)arg0 ;
+-(NSInteger)requirementsToMoveFromCalendar:(id)arg0 toCalendar:(id)arg1 ;
+-(NSInteger)requirementsToMoveToCalendar:(id)arg0 ;
+-(NSInteger)selfParticipantStatus;
+-(NSUInteger)countOfAttendeeProposedTimes;
+-(NSUInteger)entityType;
+-(id)URL;
+-(id)_adjustDateIfFloatingForDate:(id)arg0 ;
+-(id)_buildConferenceStringFromNotesWithoutConference:(id)arg0 serializedConference:(id)arg1 ;
+-(id)_calculateDurationWithStart:(id)arg0 end:(id)arg1 allDay:(BOOL)arg2 ;
+-(id)_committedEndDate;
+-(id)_committedStartDate;
+-(id)_conferenceRoomDisplayStrings;
+-(id)_defaultAlarmOffset;
+-(id)_detectConferenceURL;
+-(id)_ekRecurrenceRuleFromICSRecurrenceRule:(id)arg0 ;
+-(id)_ekRecurrenceRuleFromVCSRecurrenceRule:(id)arg0 ;
+-(id)_eventKitPropertyKeyForCalendarItemErrorPropertyKey:(id)arg0 ;
+-(id)_firstNonConferenceRoomLocationTitle;
+-(id)_generateNewUniqueID;
+-(id)_keysToChangeForDuplicateWithOptions:(NSInteger)arg0 ;
+-(id)_lastRecurrenceDate;
+-(id)_leftoversInDates:(id)arg0 withGeneratedDates:(id)arg1 ;
+-(id)_nsCalendar;
+-(id)_occurrenceDatesForCount:(NSUInteger)arg0 ;
+-(id)_originallyCommittedVirtualConference;
+-(id)_pinDate:(id)arg0 withPinMode:(NSUInteger)arg1 ;
+-(id)_prioritizedConferencesSources;
+-(id)_updateMasterDate:(id)arg0 forChangeToOccurrenceDate:(id)arg1 fromOriginalOccurrenceDate:(id)arg2 ;
+-(id)_updatePredictedLocationCacheIfNeeded;
+-(id)_updatePredictedLocationCacheIfNeededHoldingLock;
+-(id)adjustedPersistedDateForDate:(id)arg0 persistedDateIsInUTC:(BOOL)arg1 withAdjustmentMode:(NSUInteger)arg2 pinMode:(NSUInteger)arg3 clientCalendarDate:(*id)arg4 ;
+-(id)adjustedPersistedDateForDate:(id)arg0 withAdjustmentMode:(NSUInteger)arg1 pinMode:(NSUInteger)arg2 clientCalendarDate:(*id)arg3 ;
+-(id)attendeesNotIncludingOrganizer;
+-(id)birthdayContactName;
+-(id)birthdayID;
+-(id)committedValueForKey:(id)arg0 ;
+-(id)copyToCalendar:(id)arg0 withOptions:(NSInteger)arg1 ;
+-(id)defaultAlarms;
+-(id)diffFromCommitted;
+-(id)displayNotes;
+-(id)duplicateWithOptions:(NSInteger)arg0 ;
+-(id)earliestOccurrenceEndingAfter:(id)arg0 ;
+-(id)earliestOccurrenceEndingAfter:(id)arg0 excludeSignificantDetachments:(BOOL)arg1 excludeCanceledDetachments:(BOOL)arg2 excludeDeclinedDetachments:(BOOL)arg3 ;
+-(id)effectiveTimeZone;
+-(id)externalURI;
+-(id)init;
+-(id)initWithEventStore:(id)arg0 ;
+-(id)initWithPersistentObject:(id)arg0 ;
+-(id)initWithPersistentObject:(id)arg0 objectForCopy:(id)arg1 ;
+-(id)initWithPersistentObject:(id)arg0 occurrenceDate:(id)arg1 ;
+-(id)lunarCalendarString;
+-(id)masterEvent;
+-(id)nextOccurrenceOrDetachmentAfter:(id)arg0 ;
+-(id)potentialConflictOccurrenceDatesInTimePeriod:(*CGFloat)arg0 ;
+-(id)previouslySavedCopy;
+-(id)privacyDescription;
+-(id)recurrenceRule;
+-(id)responseComment;
+-(id)roomAttendees;
+-(id)scanForConflicts;
+-(id)snapshotCopyWithPropertyKeysToCopy:(id)arg0 propertyKeysToSkip:(id)arg1 ;
+-(id)specialDayString;
+-(id)specificIdentifier;
+-(id)startOfDayForEndDateInCalendar:(id)arg0 ;
+-(id)startOfDayForStartDateInCalendar:(id)arg0 ;
+-(id)suggestedStartDateForCurrentRecurrenceRule;
+-(id)suggestedStartDateForCurrentRecurrenceRuleWithSimulatedNowDate:(id)arg0 ;
+-(id)title;
+-(id)uniqueId;
+-(unsigned int)invitationChangedProperties;
+-(void)_addNewAttendeesToRecentsIfNeeded;
+-(void)_addOrganizerToRecentsIfNeeded;
+-(void)_adjustAfterMovingOrCopyingFromOldCalendar:(id)arg0 toNewCalendar:(id)arg1 savingItem:(id)arg2 ;
+-(void)_adjustAlarmsAfterMovingOrCopyingFromCalendar:(id)arg0 toCalendar:(id)arg1 ;
+-(void)_adjustAttachmentsAfterMovingOrCopyingFromCalendar:(id)arg0 toCalendar:(id)arg1 savingItem:(id)arg2 ;
+-(void)_adjustAttendeesAfterMovingOrCopyingFromCalendar:(id)arg0 toCalendar:(id)arg1 ;
+-(void)_adjustAvailabilityAfterMovingOrCopyingFromCalendar:(id)arg0 toCalendar:(id)arg1 ;
+-(void)_adjustPrivacyAfterMovingOrCopyingFromCalendar:(id)arg0 toCalendar:(id)arg1 savingItem:(id)arg2 ;
+-(void)_adjustRecurrenceRulesAfterMovingOrCopyingFromCalendar:(id)arg0 toCalendar:(id)arg1 notes:(id)arg2 ;
+-(void)_adjustScheduleAgentAfterMovingOrCopyingFromCalendar:(id)arg0 toCalendar:(id)arg1 ;
+-(void)_adjustTimeZoneAfterMovingOrCopyingFromCalendar:(id)arg0 toCalendar:(id)arg1 notes:(id)arg2 ;
+-(void)_adjustURLAfterMovingOrCopyingFromCalendar:(id)arg0 toCalendar:(id)arg1 notes:(id)arg2 ;
+-(void)_applyTimeChangesToMaster;
+-(void)_assignAllAttachmentsNewIdentities;
+-(void)_cancelDetachedEvents;
+-(void)_clearAttendeeChangedFlags;
+-(void)_clearExceptionDatesAndUpdateDetachedOriginalDates:(id)arg0 ;
+-(void)_clearLocationPredictionCacheIfNotFrozen;
+-(void)_clearLocationPredictionCacheIfNotFrozenHoldingLock;
+-(void)_clearOriginalDateFields;
+-(void)_deleteErrorIfInvalid;
+-(void)_deleteFromOccurrenceDateOnward:(id)arg0 ;
+-(void)_deleteThisOccurrence;
+-(void)_deleteWithSpan:(NSInteger)arg0 ;
+-(void)_detachOrSliceWithSpan:(NSInteger)arg0 withOriginalStartDate:(id)arg1 newStartDate:(id)arg2 ;
+-(void)_duplicateAddedAttachmentsToDetachedEvents:(id)arg0 significantlyDetachedEvents:(id)arg1 ;
+-(void)_extendConferenceURLExpirationDateToDate:(id)arg0 ;
+-(void)_filterExceptionDatesAndDetachments;
+-(void)_invalidateRecurrenceIdentifier;
+-(void)_propagateAlarmChangesToDetachedEvents:(id)arg0 ;
+-(void)_propagateChangesToDetachedEvents:(id)arg0 significantlyDetachedEvents:(id)arg1 startDateOffset:(id)arg2 duration:(id)arg3 calendar:(id)arg4 ;
+-(void)_recursivelyAssignAllAttachmentsNewIdentities;
+-(void)_removeInvalidAlarmsDuringSave;
+-(void)_resetInternalState;
+-(void)_respondToProposedTimeFromAttendee:(id)arg0 shouldAccept:(BOOL)arg1 ;
+-(void)_saveUndeletedDetachedOccurrence;
+-(void)_setInvitationChangedProperty:(BOOL)arg0 forFlag:(unsigned int)arg1 ;
+-(void)_snoozeAlarm:(id)arg0 withTimeIntervalFromNow:(CGFloat)arg1 orTargetDate:(id)arg2 ;
+-(void)_updateEndDateForDate:(id)arg0 withAdjustmentMode:(NSUInteger)arg1 ;
+-(void)_updateModifiedProperties;
+-(void)_updateModifiedPropertiesForThisEventAndAllDetachments;
+-(void)_updateRecurrenceEndDatesWithAdjustmentMode:(NSUInteger)arg0 ;
+-(void)_updateSelfAttendeeToMatchSelfAttendee:(id)arg0 ;
+-(void)_updateSelfFromDetachedEventIfNeededForDelete;
+-(void)_updateStartDateForDate:(id)arg0 withAdjustmentMode:(NSUInteger)arg1 ;
+-(void)_updateVideoConferenceOnlyModified;
+-(void)_willSave;
+-(void)acceptProposedTimeNotificationFromAttendee:(id)arg0 ;
+-(void)addConferenceRooms:(id)arg0 ;
+-(void)addEventAction:(id)arg0 ;
+-(void)clearCachedTimeValues;
+-(void)clearDetectedConferenceURL;
+-(void)clearInvitationStatus;
+-(void)clearParsedConference;
+-(void)clearVirtualConferenceURLsQueuedForInvalidation;
+-(void)confirmPredictedLocation:(id)arg0 ;
+-(void)declineProposedTimeNotificationFromAttendee:(id)arg0 ;
+-(void)dismissAcceptedProposeNewTimeNotification;
+-(void)dismissAttendeeRepliedNotification;
+-(void)forceLocationPredictionUpdate;
+-(void)forceSetTimeZone:(id)arg0 ;
+-(void)invalidateRemovedVirtualConferences;
+-(void)invalidateVirtualConferenceURLIfNeededOnCommit:(id)arg0 ;
+-(void)makeRecurrenceEndCountBased;
+-(void)makeRecurrenceEndDateBased;
+-(void)markAsCommitted;
+-(void)markAsSaved;
+-(void)markAsUndeleted;
+-(void)markAsUndetachedWithStartDate:(id)arg0 endDate:(id)arg1 ;
+-(void)markEventAsAttendeeForward;
+-(void)overrideStartDate:(id)arg0 ;
+-(void)parsedConference:(*id)arg0 andNotes:(*id)arg1 ;
+-(void)postModifiedNotification;
+-(void)postModifiedNotificationWithUserInfo:(id)arg0 ;
+-(void)rebaseSkippingRelationProperties:(id)arg0 ;
+-(void)rebaseToEventStore:(id)arg0 ;
+-(void)rejectPredictedLocation;
+-(void)removeConferenceRooms:(id)arg0 ;
+-(void)removeEventAction:(id)arg0 ;
+-(void)removeServerRefreshRelatedProperties;
+-(void)reset;
+-(void)rollback;
+-(void)setBirthdayContact:(id)arg0 ;
+-(void)setCalendar:(id)arg0 ;
+-(void)setDisplayNotes:(id)arg0 ;
+-(void)setInvitationChangedProperties:(unsigned int)arg0 ;
+-(void)setIsJunk:(BOOL)arg0 shouldSave:(BOOL)arg1 ;
+-(void)setLocationPredictionAllowed:(BOOL)arg0 ;
+-(void)setLunarCalendarString:(id)arg0 ;
+-(void)setNeedsOccurrenceCacheUpdate:(BOOL)arg0 ;
+-(void)setNotes:(id)arg0 ;
+-(void)setNotesCommon:(id)arg0 ;
+-(void)setPhantomMaster:(BOOL)arg0 ;
+-(void)setPredictedLocationFrozen:(BOOL)arg0 ;
+-(void)setRecurrenceRule:(id)arg0 ;
+-(void)setRecurrenceRuleString:(id)arg0 ;
+-(void)setResponseComment:(id)arg0 ;
+-(void)setSpecialDayString:(id)arg0 ;
+-(void)setTimeZone:(id)arg0 ;
+-(void)setTitle:(id)arg0 ;
+-(void)setURL:(id)arg0 ;
+-(void)setURLCommon:(id)arg0 ;
+-(void)snoozeAlarm:(id)arg0 untilTargetDate:(id)arg1 ;
+-(void)snoozeAlarm:(id)arg0 withTimeIntervalFromNow:(CGFloat)arg1 ;
+-(void)updateWithVCSEntity:(id)arg0 inCalendar:(id)arg1 ;
+
+
+@end
+
+
+#endif

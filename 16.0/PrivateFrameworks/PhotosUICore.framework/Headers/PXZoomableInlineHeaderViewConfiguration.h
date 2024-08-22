@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PXZOOMABLEINLINEHEADERVIEWCONFIGURATION_H
+#define PXZOOMABLEINLINEHEADERVIEWCONFIGURATION_H
+
+@class NSString;
+@protocol NSCopying;
+
+#import <Foundation/Foundation.h>
+
+
+@interface PXZoomableInlineHeaderViewConfiguration : NSObject <NSCopying>
+
+
+
+@property (readonly, nonatomic) NSUInteger style; // ivar: _style
+@property (readonly, copy, nonatomic) NSString *subtitle; // ivar: _subtitle
+@property (readonly, nonatomic) BOOL swapTitleAndSubtitle; // ivar: _swapTitleAndSubtitle
+@property (readonly, copy, nonatomic) NSString *title; // ivar: _title
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)init;
+-(id)initWithTitle:(id)arg0 subtitle:(id)arg1 swapTitleAndSubtitle:(BOOL)arg2 style:(NSUInteger)arg3 ;
+
+
+@end
+
+
+#endif

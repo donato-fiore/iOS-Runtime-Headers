@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC7NEWSADS37VIDEOADINTERACTIONPRESENTATIONHANDLER_H
+#define _TTC7NEWSADS37VIDEOADINTERACTIONPRESENTATIONHANDLER_H
+
+@class SwiftObject;
+@protocol APPCMetricsInteractionPresentationDelegate;
+
+
+
+@interface _TtC7NewsAds37VideoAdInteractionPresentationHandler : SwiftObject <APPCMetricsInteractionPresentationDelegate>
+
+ {
+    ? videoPlayerViewController;
+}
+
+
+
+
+-(id)viewControllerToPresentFrom;
+
+
+@end
+
+
+#endif

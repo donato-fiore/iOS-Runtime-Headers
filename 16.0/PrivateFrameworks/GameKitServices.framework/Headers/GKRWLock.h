@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef GKRWLOCK_H
+#define GKRWLOCK_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface GKRWLock : NSObject {
+    _opaque_pthread_rwlock_t _rwLock;
+}
+
+
+
+
+-(id)init;
+-(int)tryrdlock;
+-(void)dealloc;
+-(void)rdlock;
+-(void)unlock;
+-(void)wrlock;
+
+
+@end
+
+
+#endif

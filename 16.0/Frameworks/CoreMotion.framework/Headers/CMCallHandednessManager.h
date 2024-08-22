@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CMCALLHANDEDNESSMANAGER_H
+#define CMCALLHANDEDNESSMANAGER_H
+
+@protocol OS_dispatch_queue, CMCallHandednessDelegate;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CMCallHandednessManager : NSObject {
+    NSObject<OS_dispatch_queue> *fPrivateQueue;
+    *Dispatcher fDispatcher;
+}
+
+
+@property (nonatomic) NSObject<CMCallHandednessDelegate> *delegate; // ivar: _delegate
+
+
++(BOOL)isCallHandednessAvailable;
+-(id)init;
+-(void)dealloc;
+-(void)onCallHandednessStateUpdated:(struct Sample *)arg0 ;
+-(void)startCallHandednessUpdates;
+-(void)stopCallHandednessUpdates;
+
+
+@end
+
+
+#endif

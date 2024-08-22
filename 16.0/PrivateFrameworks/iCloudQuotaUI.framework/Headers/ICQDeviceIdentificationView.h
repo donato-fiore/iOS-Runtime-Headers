@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef ICQDEVICEIDENTIFICATIONVIEW_H
+#define ICQDEVICEIDENTIFICATIONVIEW_H
+
+@class UIView, UIImageView, UILabel, UIImage;
+
+
+
+@interface ICQDeviceIdentificationView : UIView {
+    UIImageView *_deviceImageView;
+    UILabel *_deviceNameLabel;
+    UILabel *_deviceModelLabel;
+}
+
+
+@property (nonatomic) CGFloat bottomMargin; // ivar: _bottomMargin
+@property (retain, nonatomic) UIImage *deviceImage;
+@property (nonatomic) CGFloat imageTextPadding; // ivar: _imageTextPadding
+@property (nonatomic) CGFloat leftExtraMargin; // ivar: _leftExtraMargin
+@property (nonatomic) CGFloat topMargin; // ivar: _topMargin
+
+
++(void)initialize;
+-(id)initWithFrame:(struct CGRect )arg0 deviceName:(id)arg1 deviceIdentifier:(id)arg2 imageURL:(id)arg3 isCurrentDevice:(BOOL)arg4 ;
+-(void)layoutSubviews;
+-(void)loadImageForDeviceIdentifier:(id)arg0 URL:(id)arg1 ;
+-(void)setFrame:(struct CGRect )arg0 ;
+-(void)sizeToFit;
+
+
+@end
+
+
+#endif

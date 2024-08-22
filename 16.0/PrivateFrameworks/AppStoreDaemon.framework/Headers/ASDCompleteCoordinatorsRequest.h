@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef ASDCOMPLETECOORDINATORSREQUEST_H
+#define ASDCOMPLETECOORDINATORSREQUEST_H
+
+
+
+#import "ASDEphemeralRequest.h"
+
+@interface ASDCompleteCoordinatorsRequest : ASDEphemeralRequest
+
+
+
++(NSInteger)requestType;
+-(void)startWithCompletionHandler:(id)arg0 ;
+
+
+@end
+
+
+#endif

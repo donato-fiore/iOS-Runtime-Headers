@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC7NEWSUI235QUERYNEWSAPPENGAGEMENTDONORPROPERTY_H
+#define _TTC7NEWSUI235QUERYNEWSAPPENGAGEMENTDONORPROPERTY_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC7NewsUI235QueryNewsAppEngagementDonorProperty : SwiftObject {
+    ? id;
+    ? configuration;
+    ? bundleSubscriptionStatus;
+    ? newsletterSubscription;
+    ? notificationCategoriesAllowlist;
+    ? authorizationStatus;
+    ? firstAppLaunchDate;
+    ? userSegmentsSetIDs;
+    ? sportsOnboardingStatus;
+    ? sportsOnboardingCompletedDate;
+    ? lastFetchedSettings;
+    ? userInfo;
+    ? configurationManager;
+    ? notificationService;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

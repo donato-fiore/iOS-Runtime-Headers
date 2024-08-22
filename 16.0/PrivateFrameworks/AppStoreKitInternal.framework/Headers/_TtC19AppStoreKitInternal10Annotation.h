@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC19APPSTOREKITINTERNAL10ANNOTATION_H
+#define _TTC19APPSTOREKITINTERNAL10ANNOTATION_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC19AppStoreKitInternal10Annotation : SwiftObject {
+    ? title;
+    ? summary;
+    ? items;
+    ? shouldAlwaysPresentExpanded;
+    ? linkAction;
+    ? expandAction;
+    ? artwork;
+    ? id;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

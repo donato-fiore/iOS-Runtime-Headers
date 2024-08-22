@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef TSPRESOURCELOCATIONPROVIDER_H
+#define TSPRESOURCELOCATIONPROVIDER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface TSPResourceLocationProvider : NSObject
+
+
+
++(id)alternateBundle;
++(id)bundle;
++(id)documentResourceAlternateFileURLProvider;
++(void)setAlternateBundle:(id)arg0 ;
++(void)setDocumentResourceAlternateFileURLProvider:(id)arg0 ;
+
+
+@end
+
+
+#endif

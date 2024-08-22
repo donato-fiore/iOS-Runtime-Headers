@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC17_APPINTENTS_UIKIT22UIAPPENTITYINTERACTION_H
+#define _TTC17_APPINTENTS_UIKIT22UIAPPENTITYINTERACTION_H
+
+@class UIView;
+@protocol UIInteraction;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC17_AppIntents_UIKit22UIAppEntityInteraction : NSObject <UIInteraction>
+
+ {
+    ? entityIdentifier;
+    ? interactionId;
+    ? entity;
+}
+
+
+@property (nonatomic, weak) UIView *view; // ivar: view
+
+
+-(id)init;
+-(void)dealloc;
+-(void)didMoveToView:(id)arg0 ;
+-(void)willMoveToView:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef GEOREGIONALRESOURCETILEDECODER_H
+#define GEOREGIONALRESOURCETILEDECODER_H
+
+@class NSString;
+@protocol GEOTileDecoder;
+
+#import <Foundation/Foundation.h>
+
+
+@interface GEORegionalResourceTileDecoder : NSObject <GEOTileDecoder>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(BOOL)canDecodeTile:(struct _GEOTileKey *)arg0 quickly:(*BOOL)arg1 ;
+-(id)decodeTile:(id)arg0 forKey:(struct _GEOTileKey *)arg1 ;
+
+
+@end
+
+
+#endif

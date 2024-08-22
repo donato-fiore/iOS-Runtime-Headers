@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CDMSERVICETYPENAMES_H
+#define CDMSERVICETYPENAMES_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface CDMServiceTypeNames : NSObject
+
+
+
++(id)getNameStringToEnumDict;
++(id)getServiceTypeNames;
+
+
+@end
+
+
+#endif

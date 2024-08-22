@@ -1,0 +1,44 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef ANCSCHEMAANCAPPNOTIFICATIONMETADATA_H
+#define ANCSCHEMAANCAPPNOTIFICATIONMETADATA_H
+
+@class NSData;
+
+
+#import "SISchemaInstrumentationMessage.h"
+
+@interface ANCSchemaANCAppNotificationMetadata : SISchemaInstrumentationMessage {
+    ? _has;
+}
+
+
+@property (nonatomic) int commsNotificationType; // ivar: _commsNotificationType
+@property (nonatomic) BOOL hasCommsNotificationType;
+@property (nonatomic) BOOL hasIsAskWithSiriEnabled;
+@property (nonatomic) BOOL hasIsSmsEligible;
+@property (nonatomic) BOOL isAskWithSiriEnabled; // ivar: _isAskWithSiriEnabled
+@property (nonatomic) BOOL isSmsEligible; // ivar: _isSmsEligible
+@property (readonly, nonatomic) NSData *jsonData;
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)dictionaryRepresentation;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(id)suppressMessageUnderConditions;
+-(void)deleteCommsNotificationType;
+-(void)deleteIsAskWithSiriEnabled;
+-(void)deleteIsSmsEligible;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

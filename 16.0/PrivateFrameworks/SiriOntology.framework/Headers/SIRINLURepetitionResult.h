@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SIRINLUREPETITIONRESULT_H
+#define SIRINLUREPETITIONRESULT_H
+
+@protocol NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+
+@interface SIRINLURepetitionResult : NSObject <NSSecureCoding>
+
+
+
+@property unsigned int asrHypothesisIndex; // ivar: _asrHypothesisIndex
+@property unsigned int repetitionType; // ivar: _repetitionType
+
+
++(BOOL)supportsSecureCoding;
+-(id)description;
+-(id)initWithAsrHypothesisIndex:(unsigned int)arg0 repetitionType:(unsigned int)arg1 ;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

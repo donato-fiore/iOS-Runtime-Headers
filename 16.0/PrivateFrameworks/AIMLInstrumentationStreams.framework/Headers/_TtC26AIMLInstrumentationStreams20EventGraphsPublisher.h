@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC26AIMLINSTRUMENTATIONSTREAMS20EVENTGRAPHSPUBLISHER_H
+#define _TTC26AIMLINSTRUMENTATIONSTREAMS20EVENTGRAPHSPUBLISHER_H
+
+@class BMBookmarkablePublisher, NSArray;
+
+
+
+@interface _TtC26AIMLInstrumentationStreams20EventGraphsPublisher : BMBookmarkablePublisher {
+    ? windowLength;
+    ? upstream;
+    ? inner;
+    ? logger;
+}
+
+
+@property (nonatomic, readonly) NSArray *bookmarkableUpstreams;
+
+
++(id)publisherWithPublisher:(id)arg0 upstreams:(id)arg1 bookmarkState:(id)arg2 ;
+-(id)init;
+-(void)subscribe:(id)arg0 ;
+
+
+@end
+
+
+#endif

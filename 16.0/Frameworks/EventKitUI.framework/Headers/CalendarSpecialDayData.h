@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef CALENDARSPECIALDAYDATA_H
+#define CALENDARSPECIALDAYDATA_H
+
+@class UIColor, NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CalendarSpecialDayData : NSObject
+
+@property (retain, nonatomic) UIColor *color; // ivar: _color
+@property (nonatomic) NSInteger dayType; // ivar: _dayType
+@property (retain, nonatomic) NSString *locale; // ivar: _locale
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,42 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef FTTEXTTOSPEECHREQUESTPROSODYTRANSFERCONFIG_H
+#define FTTEXTTOSPEECHREQUESTPROSODYTRANSFERCONFIG_H
+
+@class NSMutableDictionary, NSData;
+@protocol FLTBFBufferAccessor, NSCopying;
+
+#import <Foundation/Foundation.h>
+
+#import "FTTextToSpeechUserVoiceProfile.h"
+#import "FTTextToSpeechSpeechFeatureInputWave.h"
+
+@interface FTTextToSpeechRequestProsodyTransferConfig : NSObject <FLTBFBufferAccessor, NSCopying>
+
+ {
+    NSMutableDictionary *_storage;
+    NSData *_data;
+    *TextToSpeechRequestProsodyTransferConfig _root;
+}
+
+
+@property (readonly, nonatomic) FTTextToSpeechUserVoiceProfile *user_voice_profile;
+@property (readonly, nonatomic) FTTextToSpeechSpeechFeatureInputWave *wave_data;
+
+
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)flatbuffData;
+-(id)initAndVerifyWithFlatbuffData:(id)arg0 ;
+-(id)initWithFlatbuffData:(id)arg0 ;
+-(id)initWithFlatbuffData:(id)arg0 root:(struct TextToSpeechRequestProsodyTransferConfig *)arg1 ;
+-(id)initWithFlatbuffData:(id)arg0 root:(struct TextToSpeechRequestProsodyTransferConfig *)arg1 verify:(BOOL)arg2 ;
+-(struct Offset<siri::speech::schema_fb::TextToSpeechRequestProsodyTransferConfig> )addObjectToBuffer:(*void)arg0 ;
+
+
+@end
+
+
+#endif

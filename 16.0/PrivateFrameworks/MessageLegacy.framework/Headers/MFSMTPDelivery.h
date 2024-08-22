@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef MFSMTPDELIVERY_H
+#define MFSMTPDELIVERY_H
+
+
+
+#import "MFMailDelivery.h"
+#import "MFSMTPConnection.h"
+
+@interface MFSMTPDelivery : MFMailDelivery {
+    MFSMTPConnection *_connection;
+}
+
+
+
+
+-(Class)deliveryClass;
+-(id)deliverMessageData:(id)arg0 toRecipients:(id)arg1 ;
+-(void)_openConnection;
+-(void)dealloc;
+-(void)setAccount:(id)arg0 ;
+
+
+@end
+
+
+#endif

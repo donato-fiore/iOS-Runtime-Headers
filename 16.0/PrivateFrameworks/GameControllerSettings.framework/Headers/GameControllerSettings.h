@@ -1,0 +1,16 @@
+
+
+#include "GCSGamesCollection.h"
+#include "GCSSettingsStore.h"
+#include "GCSDirectionPadMapping.h"
+#include "GCSElement.h"
+#include "GCSCopilotFusedController.h"
+#include "GCSCopilotFusedControllersCollection.h"
+#include "GCSController.h"
+#include "GCSProfile.h"
+#include "GCSControllersCollection.h"
+#include "GCSTombstone.h"
+#include "GCSElementMapping.h"
+#include "GCSProfilesCollection.h"
+#include "GCSTombstonesCollection.h"
+#include "GCSGame.h"

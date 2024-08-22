@@ -1,0 +1,43 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PSFOOTERHYPERLINKVIEW_H
+#define PSFOOTERHYPERLINKVIEW_H
+
+@class UITableViewHeaderFooterView, NSURL, NSString, UITextView;
+@protocol PSHeaderFooterView, UITextViewDelegate;
+
+
+
+@interface PSFooterHyperlinkView : UITableViewHeaderFooterView <PSHeaderFooterView, UITextViewDelegate>
+
+
+
+@property (retain, nonatomic) NSURL *URL; // ivar: _URL
+@property (nonatomic) SEL action; // ivar: _action
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (nonatomic) _NSRange linkRange; // ivar: _linkRange
+@property (readonly) Class superclass;
+@property (weak, nonatomic) id *target; // ivar: _target
+@property (retain, nonatomic) NSString *text; // ivar: _text
+@property (retain, nonatomic) UITextView *textView; // ivar: _textView
+
+
+-(BOOL)isValidLinkRange;
+-(BOOL)textView:(id)arg0 shouldInteractWithURL:(id)arg1 inRange:(struct _NSRange )arg2 ;
+-(CGFloat)preferredHeightForWidth:(CGFloat)arg0 inTableView:(id)arg1 ;
+-(id)initWithSpecifier:(id)arg0 ;
+-(void)_accessibilitySetInterfaceStyleIntent:(NSUInteger)arg0 ;
+-(void)_linkify;
+-(void)refreshContentsWithSpecifier:(id)arg0 ;
+-(void)setupSubviewsAndContstraints;
+
+
+@end
+
+
+#endif

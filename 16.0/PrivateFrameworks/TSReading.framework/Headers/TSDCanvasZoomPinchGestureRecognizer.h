@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef TSDCANVASZOOMPINCHGESTURERECOGNIZER_H
+#define TSDCANVASZOOMPINCHGESTURERECOGNIZER_H
+
+@class UIPinchGestureRecognizer;
+
+
+
+@interface TSDCanvasZoomPinchGestureRecognizer : UIPinchGestureRecognizer {
+    BOOL mZoomTimedOut;
+}
+
+
+
+
+-(void)p_cancelAfterDelay;
+-(void)p_startCancellationTimer;
+-(void)p_stopCancellationTimer;
+-(void)reset;
+-(void)touchesBegan:(id)arg0 withEvent:(id)arg1 ;
+-(void)touchesCancelled:(id)arg0 withEvent:(id)arg1 ;
+-(void)touchesEnded:(id)arg0 withEvent:(id)arg1 ;
+-(void)touchesMoved:(id)arg0 withEvent:(id)arg1 ;
+
+
+@end
+
+
+#endif

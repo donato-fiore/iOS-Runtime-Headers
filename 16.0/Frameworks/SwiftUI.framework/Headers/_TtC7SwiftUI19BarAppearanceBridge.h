@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTC7SWIFTUI19BARAPPEARANCEBRIDGE_H
+#define _TTC7SWIFTUI19BARAPPEARANCEBRIDGE_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC7SwiftUI19BarAppearanceBridge : NSObject {
+    ? platformStorage;
+    ? updateContext;
+    ? allowedBars;
+    ? lastEnvironment;
+    ? lastBarUpdates;
+    ? barConfigurations;
+    ? toUpdateBars;
+    ? seedTracker;
+    ? pendingUpdates;
+}
+
+
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

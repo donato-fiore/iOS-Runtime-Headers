@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef WCCLOUDMIGRATOR_H
+#define WCCLOUDMIGRATOR_H
+
+
+#import <Foundation/Foundation.h>
+
+#import "WCDeviceLookup.h"
+
+@interface WCCloudMigrator : NSObject
+
+@property (readonly, nonatomic) WCDeviceLookup *deviceLookup; // ivar: _deviceLookup
+
+
+-(BOOL)storeRequiresMigration:(id)arg0 ;
+-(id)init;
+-(void)eraseStoreIfNeeded:(id)arg0 ;
+-(void)migrateStore:(id)arg0 toStore:(id)arg1 completionBlock:(id)arg2 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef APUIBOLDTRAYBUTTON_H
+#define APUIBOLDTRAYBUTTON_H
+
+
+
+#import "APUITrayButton.h"
+
+@interface APUIBoldTrayButton : APUITrayButton
+
+
+
++(id)boldButton;
+-(void)_setButtonBackgroundColor:(id)arg0 ;
+-(void)tintColorDidChange;
+
+
+@end
+
+
+#endif

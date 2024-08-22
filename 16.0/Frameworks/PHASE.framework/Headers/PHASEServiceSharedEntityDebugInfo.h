@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PHASESERVICESHAREDENTITYDEBUGINFO_H
+#define PHASESERVICESHAREDENTITYDEBUGINFO_H
+
+@class NSDictionary;
+@protocol NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+#import "PHASESharedListenerDebugInfo.h"
+
+@interface PHASEServiceSharedEntityDebugInfo : NSObject <NSSecureCoding>
+
+
+
+@property (readonly, copy, nonatomic) NSDictionary *sessionSharedRoots; // ivar: _sessionSharedRoots
+@property (readonly, nonatomic) PHASESharedListenerDebugInfo *sharedListener; // ivar: _sharedListener
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(id)description;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

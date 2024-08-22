@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef _TTCE15BATTERYCENTERUICSO8NSBUNDLEP33_7F2044B7EA7BD1FBE02933F5E053B62D13CURRENTBUNDLE_H
+#define _TTCE15BATTERYCENTERUICSO8NSBUNDLEP33_7F2044B7EA7BD1FBE02933F5E053B62D13CURRENTBUNDLE_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCE15BatteryCenterUICSo8NSBundleP33_7F2044B7EA7BD1FBE02933F5E053B62D13currentBundle : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

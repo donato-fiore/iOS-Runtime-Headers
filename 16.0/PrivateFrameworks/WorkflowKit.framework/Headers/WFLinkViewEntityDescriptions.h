@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef WFLINKVIEWENTITYDESCRIPTIONS_H
+#define WFLINKVIEWENTITYDESCRIPTIONS_H
+
+@protocol WFLinkEntityDescriptions;
+
+#import <Foundation/Foundation.h>
+
+
+@interface WFLinkViewEntityDescriptions : NSObject <WFLinkEntityDescriptions>
+
+
+
+
+
++(id)countDescription;
++(id)pluralTypeDescription;
++(id)typeDescription;
+
+
+@end
+
+
+#endif

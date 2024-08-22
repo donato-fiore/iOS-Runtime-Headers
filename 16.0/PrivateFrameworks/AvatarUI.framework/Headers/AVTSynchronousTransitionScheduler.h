@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef AVTSYNCHRONOUSTRANSITIONSCHEDULER_H
+#define AVTSYNCHRONOUSTRANSITIONSCHEDULER_H
+
+@protocol AVTTransitionScheduler;
+
+#import <Foundation/Foundation.h>
+
+
+@interface AVTSynchronousTransitionScheduler : NSObject <AVTTransitionScheduler>
+
+
+
+@property (readonly, copy, nonatomic) id *eventHandler; // ivar: _eventHandler
+@property (nonatomic) BOOL isRunningEvent; // ivar: _isRunningEvent
+
+
+-(id)initWithEventHandler:(id)arg0 ;
+-(void)didCompleteEvent;
+-(void)scheduleEvent;
+-(void)stop;
+
+
+@end
+
+
+#endif

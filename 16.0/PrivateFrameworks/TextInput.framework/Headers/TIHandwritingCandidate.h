@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef TIHANDWRITINGCANDIDATE_H
+#define TIHANDWRITINGCANDIDATE_H
+
+
+
+#import "TIKeyboardCandidateSingle.h"
+
+@interface TIHandwritingCandidate : TIKeyboardCandidateSingle
+
+@property (readonly, nonatomic) NSUInteger completionUniqueID; // ivar: _completionUniqueID
+@property (readonly, nonatomic) NSUInteger uniqueID; // ivar: _uniqueID
+
+
++(BOOL)supportsSecureCoding;
++(int)type;
+-(BOOL)isCompletionCandidate;
+-(BOOL)isInlineCompletionCandidate;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)initWithCandidate:(id)arg0 forInput:(id)arg1 uniqueID:(NSUInteger)arg2 completionUniqueID:(NSUInteger)arg3 ;
+-(id)initWithCandidateResultSetCoder:(id)arg0 ;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCandidateResultSetCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

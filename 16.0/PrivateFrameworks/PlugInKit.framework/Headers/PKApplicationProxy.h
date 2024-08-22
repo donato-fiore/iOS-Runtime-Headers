@@ -1,0 +1,40 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef PKAPPLICATIONPROXY_H
+#define PKAPPLICATIONPROXY_H
+
+@class NSString, NSURL, NSDictionary, NSArray;
+@protocol PKApplicationProxy;
+
+
+#import "PKBundleProxy.h"
+
+@interface PKApplicationProxy : PKBundleProxy <PKApplicationProxy>
+
+
+
+@property (readonly, nonatomic) NSString *bundleIdentifier;
+@property (readonly, nonatomic) NSURL *bundleURL;
+@property (readonly, nonatomic) NSString *bundleVersion;
+@property (readonly, nonatomic) NSURL *dataContainerURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) NSDictionary *entitlements;
+@property (readonly) NSUInteger hash;
+@property (readonly, copy, nonatomic) NSString *localizedName;
+@property (readonly, nonatomic, getter=isPlaceholder) BOOL placeholder;
+@property (readonly, nonatomic) NSArray *plugInKitPlugins;
+@property (readonly, nonatomic) NSURL *relativeAppStoreReceiptURL;
+@property (readonly) Class superclass;
+
+
++(id)applicationProxyForBundleURL:(id)arg0 ;
+
+
+@end
+
+
+#endif

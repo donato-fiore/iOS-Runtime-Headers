@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.0.0 | SDK: 16.0.0
+
+
+#ifndef SKUIAPPDEVICECONFIG_H
+#define SKUIAPPDEVICECONFIG_H
+
+@class NSString;
+@protocol IKAppDeviceConfig;
+
+#import <Foundation/Foundation.h>
+
+
+@interface SKUIAppDeviceConfig : NSObject <IKAppDeviceConfig>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(BOOL)isTimeZoneSet;
+-(NSUInteger)preferredVideoFormat;
+-(NSUInteger)preferredVideoPreviewFormat;
+-(id)currentSizeClasses;
+-(id)storeFrontCountryCode;
+-(id)systemLanguage;
+-(id)timeZone;
+-(struct CGSize )screenSize;
+
+
+@end
+
+
+#endif
