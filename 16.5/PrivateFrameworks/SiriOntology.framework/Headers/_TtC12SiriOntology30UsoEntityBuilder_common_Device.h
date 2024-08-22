@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC12SIRIONTOLOGY30USOENTITYBUILDER_COMMON_DEVICE_H
+#define _TTC12SIRIONTOLOGY30USOENTITYBUILDER_COMMON_DEVICE_H
+
+@class TtC12SiriOntology26UsoEntityBuilderGlobalArgs;
+
+
+
+@interface _TtC12SiriOntology30UsoEntityBuilder_common_Device : TtC12SiriOntology26UsoEntityBuilderGlobalArgs
+
+
+
+
+
+@end
+
+
+#endif

@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef APPCOUTSTREAMVIDEOINFO_H
+#define APPCOUTSTREAMVIDEOINFO_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface APPCOutstreamVideoInfo : NSObject {
+    ? videoAssetURL;
+    ? videoDuration;
+    ? bitrate;
+    ? signalStrength;
+    ? connectionType;
+}
+
+
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC15CONVERSATIONKIT20LOCALPARTICIPANTVIEW_H
+#define _TTC15CONVERSATIONKIT20LOCALPARTICIPANTVIEW_H
+
+@class UIView;
+
+
+#import "_TtC15ConversationKit28LocalParticipantControlsView.h"
+
+@interface _TtC15ConversationKit20LocalParticipantView : UIView {
+    ? participantView;
+    ? delegate;
+    ? dragEnabled;
+    ? blurEnabled;
+    ? prefersControlsHidden;
+    ? controlsHiddenByViewModel;
+    ? isInRoster;
+}
+
+
+@property (nonatomic, readonly) _TtC15ConversationKit28LocalParticipantControlsView *controlsView; // ivar: controlsView
+
+
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithFrame:(struct CGRect )arg0 ;
+-(void)layoutSubviews;
+
+
+@end
+
+
+#endif

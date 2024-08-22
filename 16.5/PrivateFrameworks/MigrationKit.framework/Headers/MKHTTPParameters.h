@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef MKHTTPPARAMETERS_H
+#define MKHTTPPARAMETERS_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface MKHTTPParameters : NSObject
+
+
+
+-(id)initWithDictionary:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _UITEXTINTERACTABLEATTACHMENT_H
+#define _UITEXTINTERACTABLEATTACHMENT_H
+
+@class UITextInteractableItem, NSTextAttachment;
+
+
+
+@interface _UITextInteractableAttachment : UITextInteractableItem
+
+@property (retain, nonatomic) NSTextAttachment *attachment; // ivar: _attachment
+
+
+-(BOOL)isAttachment;
+-(BOOL)isEqual:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,40 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef WLKSCHEDULE_H
+#define WLKSCHEDULE_H
+
+@class NSMutableArray, NSDictionary, NSDate, NSArray, NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface WLKSchedule : NSObject {
+    NSMutableArray *_mutableEvents;
+    NSDictionary *_dictionary;
+}
+
+
+@property (readonly, copy, nonatomic) NSDate *endDate; // ivar: _endDate
+@property (readonly, copy, nonatomic) NSArray *events;
+@property (readonly, copy, nonatomic) NSString *serviceID; // ivar: _serviceID
+@property (readonly, copy, nonatomic) NSDate *startDate; // ivar: _startDate
+
+
+-(BOOL)_isDate:(id)arg0 containedByDate:(id)arg1 andDate:(id)arg2 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)adjacentEventsForDate:(id)arg0 fuzziness:(CGFloat)arg1 ;
+-(id)eventAfterDate:(id)arg0 ;
+-(id)eventForDate:(id)arg0 ;
+-(id)eventForDate:(id)arg0 fuzziness:(CGFloat)arg1 ;
+-(id)initWithDictionary:(id)arg0 ;
+-(void)prune;
+
+
+@end
+
+
+#endif

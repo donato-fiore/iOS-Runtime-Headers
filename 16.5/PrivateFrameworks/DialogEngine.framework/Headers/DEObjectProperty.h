@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef DEOBJECTPROPERTY_H
+#define DEOBJECTPROPERTY_H
+
+@class NSString, NSArray;
+
+#import <Foundation/Foundation.h>
+
+
+@interface DEObjectProperty : NSObject {
+    optional<siri::dialogengine::ObjectProperty> _This;
+}
+
+
+@property ? This;
+@property shared_ptr<siri::dialogengine::ObjectProperty> ThisShared; // ivar: _ThisShared
+@property (readonly) NSString *description;
+@property (readonly) NSString *name;
+@property (readonly) NSArray *sampleValueLocales;
+@property (readonly) NSString *semanticConcept;
+@property (readonly) NSString *type;
+
+
+-(id)initWithOpt:(*void)arg0 ;
+-(id)initWithSharedPtr:(*void)arg0 ;
+-(id)sampleValuesForLocale:(id)arg0 ;
+
+
+@end
+
+
+#endif

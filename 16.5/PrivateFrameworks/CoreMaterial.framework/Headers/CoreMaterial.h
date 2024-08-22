@@ -1,0 +1,15 @@
+
+
+#include "MTMaterialLayer.h"
+#include "MTPrunePromise.h"
+#include "MTCoreMaterialVisualStyling.h"
+#include "MTTintingMaterialSettings.h"
+#include "MTTintingFilteringMaterialSettings.h"
+#include "MTRecipeMaterialSettings.h"
+#include "MTColor.h"
+#include "MTRGBColor.h"
+#include "MTWhiteColor.h"
+#include "MTMaterialSettingsInterpolator.h"
+#include "MTVisualStyleSet.h"
+#include "MTStylingProvidingSolidColorLayer.h"
+#include "MTCoreMaterialVisualStylingProvider.h"

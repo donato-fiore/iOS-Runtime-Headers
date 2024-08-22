@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef WFTRELLOADDCARDACTION_H
+#define WFTRELLOADDCARDACTION_H
+
+@class WFAction;
+
+
+
+@interface WFTrelloAddCardAction : WFAction
+
+
+
+-(id)contentDestinationWithError:(*id)arg0 ;
+-(id)smartPromptWithContentDescription:(id)arg0 contentDestination:(id)arg1 workflowName:(id)arg2 ;
+-(void)initializeParameters;
+-(void)runAsynchronouslyWithInput:(id)arg0 ;
+
+
+@end
+
+
+#endif

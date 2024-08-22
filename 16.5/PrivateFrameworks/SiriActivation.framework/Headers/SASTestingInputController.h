@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef SASTESTINGINPUTCONTROLLER_H
+#define SASTESTINGINPUTCONTROLLER_H
+
+
+#import <Foundation/Foundation.h>
+
+#import "SiriTestingContext.h"
+
+@interface SASTestingInputController : NSObject
+
+@property (readonly, nonatomic) SiriTestingContext *preloadedTestingInput; // ivar: _preloadedTestingInput
+
+
+-(id)dequeuePreloadedTestingContext;
+-(id)init;
+-(void)_registerForTestingNotifications;
+-(void)_testingAudioInputPathsDidChange:(id)arg0 ;
+-(void)_testingStringsDidChange:(id)arg0 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

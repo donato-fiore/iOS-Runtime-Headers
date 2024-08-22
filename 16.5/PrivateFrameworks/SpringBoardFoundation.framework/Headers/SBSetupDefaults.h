@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef SBSETUPDEFAULTS_H
+#define SBSETUPDEFAULTS_H
+
+
+
+#import "SBAbstractSpringBoardDefaultDomain.h"
+
+@interface SBSetupDefaults : SBAbstractSpringBoardDefaultDomain
+
+@property (nonatomic) BOOL inSetupModeForActivationChange;
+
+
+-(void)_bindAndRegisterDefaults;
+
+
+@end
+
+
+#endif

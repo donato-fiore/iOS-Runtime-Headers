@@ -1,0 +1,50 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef RFSCHEMARFSNIPPETRENDERINGCONTEXT_H
+#define RFSCHEMARFSNIPPETRENDERINGCONTEXT_H
+
+@class NSData;
+
+
+#import "SISchemaInstrumentationMessage.h"
+#import "RFSchemaRFSnippetRenderingCancelled.h"
+#import "RFSchemaRFSnippetRenderingEnded.h"
+#import "RFSchemaRFSnippetRenderingFailed.h"
+#import "RFSchemaRFSnippetRenderingStarted.h"
+
+@interface RFSchemaRFSnippetRenderingContext : SISchemaInstrumentationMessage
+
+@property (retain, nonatomic) RFSchemaRFSnippetRenderingCancelled *cancelled; // ivar: _cancelled
+@property (retain, nonatomic) RFSchemaRFSnippetRenderingEnded *ended; // ivar: _ended
+@property (retain, nonatomic) RFSchemaRFSnippetRenderingFailed *failed; // ivar: _failed
+@property (nonatomic) BOOL hasCancelled; // ivar: _hasCancelled
+@property (nonatomic) BOOL hasEnded; // ivar: _hasEnded
+@property (nonatomic) BOOL hasFailed; // ivar: _hasFailed
+@property (nonatomic) BOOL hasStartedOrChanged; // ivar: _hasStartedOrChanged
+@property (readonly, nonatomic) NSData *jsonData;
+@property (retain, nonatomic) RFSchemaRFSnippetRenderingStarted *startedOrChanged; // ivar: _startedOrChanged
+@property (readonly, nonatomic) NSUInteger whichContextevent; // ivar: _whichContextevent
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)applySensitiveConditionsPolicy:(id)arg0 ;
+-(id)dictionaryRepresentation;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(id)suppressMessageUnderConditions;
+-(void)deleteCancelled;
+-(void)deleteEnded;
+-(void)deleteFailed;
+-(void)deleteStartedOrChanged;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

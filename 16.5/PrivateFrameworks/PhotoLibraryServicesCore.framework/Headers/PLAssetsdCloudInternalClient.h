@@ -1,0 +1,63 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PLASSETSDCLOUDINTERNALCLIENT_H
+#define PLASSETSDCLOUDINTERNALCLIENT_H
+
+
+
+#import "PLAssetsdBaseClient.h"
+
+@interface PLAssetsdCloudInternalClient : PLAssetsdBaseClient
+
+
+
+-(BOOL)isReadyForAnalysis;
+-(BOOL)isReadyForCloudPhotoLibrary;
+-(BOOL)shouldAutoEnableiCPLOnOSXWithError:(*id)arg0 ;
+-(NSInteger)keyForEmailAddress:(id)arg0 error:(*id)arg1 ;
+-(NSUInteger)cloudSharingSpaceManagementRequestWithType:(NSUInteger)arg0 optionalBytesToPurge:(NSUInteger)arg1 error:(*id)arg2 ;
+-(NSUInteger)getResetSyncStatusWithError:(*id)arg0 ;
+-(id)activateLibraryScope:(id)arg0 completionHandler:(id)arg1 ;
+-(id)emailAddressForKey:(NSInteger)arg0 error:(*id)arg1 ;
+-(id)markOnboardingPreviewAssetsByProcessingRulesOnLibraryScope:(id)arg0 excludePersonUUIDs:(id)arg1 completionHandler:(id)arg2 ;
+-(id)personInfoDictionaryForPersonID:(id)arg0 error:(*id)arg1 ;
+-(void)acceptShare:(id)arg0 completionHandler:(id)arg1 ;
+-(void)confirmAllRemainingOnboardingPreviewAssetsOnLibraryScope:(id)arg0 completionHandler:(id)arg1 ;
+-(void)createPhotostreamAlbumWithStreamID:(id)arg0 ;
+-(void)deactivateLibraryScope:(id)arg0 completionHandler:(id)arg1 ;
+-(void)enablePhotostreamsWithStreamID:(id)arg0 ;
+-(void)fetchShareFromShareURL:(id)arg0 ignoreExistingShare:(BOOL)arg1 completionHandler:(id)arg2 ;
+-(void)forceParticipantAssetTrashNotificationCompletionHandler:(id)arg0 ;
+-(void)forceSyncMomentShare:(id)arg0 completionHandler:(id)arg1 ;
+-(void)getCurrentTransferProgress:(id)arg0 ;
+-(void)getLibraryScopeStatusCountsForScopeWithIdentifier:(id)arg0 completionHandler:(id)arg1 ;
+-(void)getNotUploadedCount:(id)arg0 ;
+-(void)getSystemBudgetsWithReply:(id)arg0 ;
+-(void)markResourcesPurgeableWithUrgency:(NSInteger)arg0 assetUuids:(id)arg1 completionHandler:(id)arg2 ;
+-(void)overrideSystemBudgetsForSyncSession:(BOOL)arg0 pauseReason:(id)arg1 systemBudgets:(NSUInteger)arg2 reply:(id)arg3 ;
+-(void)publishShare:(id)arg0 completionHandler:(id)arg1 ;
+-(void)queryParticipantsWithEmails:(id)arg0 phoneNumbers:(id)arg1 completionHandler:(id)arg2 ;
+-(void)rampingRequestForResourceType:(NSUInteger)arg0 numRequested:(NSUInteger)arg1 reply:(id)arg2 ;
+-(void)removeParticipantsWithParticipantUUIDs:(id)arg0 fromLibraryScopeWithIdentifier:(id)arg1 retentionPolicy:(NSInteger)arg2 exitSource:(NSInteger)arg3 completionHandler:(id)arg4 ;
+-(void)requestDeviceLibraryConfigurationChange:(NSInteger)arg0 completionHandler:(id)arg1 ;
+-(void)resetLocalOnlyLibraryScopesAndAllLibraryScopeAssetStatesWithCompletionHandler:(id)arg0 ;
+-(void)setCloudPhotoLibraryEnabledState:(BOOL)arg0 ;
+-(void)setCloudPhotoLibraryEnabledStateSync:(BOOL)arg0 ;
+-(void)setCloudPhotoLibraryPauseState:(BOOL)arg0 reason:(short)arg1 ;
+-(void)setPersonInfoDictionary:(id)arg0 forPersonID:(id)arg1 ;
+-(void)sharedLibraryRampCheckWithCompletionHandler:(id)arg0 ;
+-(void)startExitFromLibraryScopeWithIdentifier:(id)arg0 retentionPolicy:(NSInteger)arg1 exitSource:(NSInteger)arg2 completionHandler:(id)arg3 ;
+-(void)syncCloudPhotoLibrary;
+-(void)synchronouslySetCloudPhotoLibraryPauseState:(BOOL)arg0 reason:(short)arg1 ;
+-(void)unsharePendingAssetsSharedToScopeWithIdentifier:(id)arg0 ;
+-(void)updateSharedAlbumsCachedServerConfigurationLimits;
+-(void)userViewedSharedLibraryParticipantAssetTrashNotificationWithCompletionHandler:(id)arg0 ;
+
+
+@end
+
+
+#endif

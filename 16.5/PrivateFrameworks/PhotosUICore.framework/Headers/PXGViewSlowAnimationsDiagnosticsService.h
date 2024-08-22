@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PXGVIEWSLOWANIMATIONSDIAGNOSTICSSERVICE_H
+#define PXGVIEWSLOWANIMATIONSDIAGNOSTICSSERVICE_H
+
+
+
+#import "PXDiagnosticsService.h"
+#import "PXGView.h"
+
+@interface PXGViewSlowAnimationsDiagnosticsService : PXDiagnosticsService
+
+@property (readonly, nonatomic) PXGView *gridView; // ivar: _gridView
+
+
+-(BOOL)canPerformAction;
+-(id)initWithItemProviders:(id)arg0 ;
+-(id)title;
+-(void)performAction;
+
+
+@end
+
+
+#endif

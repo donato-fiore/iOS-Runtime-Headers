@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC9SEYMOURUI23TVSTANDARDBRICKITEMCELL_H
+#define _TTC9SEYMOURUI23TVSTANDARDBRICKITEMCELL_H
+
+@class TtC9SeymourUI29TVFocusableCollectionViewCell, UILabel;
+
+
+
+@interface _TtC9SeymourUI23TVStandardBrickItemCell : TtC9SeymourUI29TVFocusableCollectionViewCell {
+    ? delegate;
+    ? itemInfo;
+    ? layout;
+    ? tvArtworkView;
+    ? captionLabel;
+    ? titleLabel;
+    ? subtitleLabel;
+}
+
+
+@property (nonatomic, readonly) UILabel *accessibilityCaptionLabel;
+@property (nonatomic, readonly) UILabel *accessibilitySubtitleLabel;
+@property (nonatomic, readonly) UILabel *accessibilityTitleLabel;
+
+
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithFrame:(struct CGRect )arg0 ;
+-(struct CGSize )systemLayoutSizeFittingSize:(struct CGSize )arg0 withHorizontalFittingPriority:(float)arg1 verticalFittingPriority:(float)arg2 ;
+-(void)prepareForReuse;
+
+
+@end
+
+
+#endif

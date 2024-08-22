@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTCE14CLOUDKITDAEMONCSO36CKDBACKINGEXPLICITCREDENTIALSACCOUNTP33_510E43923520F9C83D223A8087C06B6B29EXPLICITCREDENTIALACCOUNTLIST_H
+#define _TTCE14CLOUDKITDAEMONCSO36CKDBACKINGEXPLICITCREDENTIALSACCOUNTP33_510E43923520F9C83D223A8087C06B6B29EXPLICITCREDENTIALACCOUNTLIST_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCE14CloudKitDaemonCSo36CKDBackingExplicitCredentialsAccountP33_510E43923520F9C83D223A8087C06B6B29ExplicitCredentialAccountList : SwiftObject {
+    ? $defaultActor;
+    ? explicitCredentialsAccounts;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

@@ -1,0 +1,385 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PGSURVEYQUESTIONSMETRICEVENT_H
+#define PGSURVEYQUESTIONSMETRICEVENT_H
+
+@class NSDictionary, PHFetchResult, NSSet;
+
+
+#import "PGAbstractMetricEvent.h"
+#import "PGSuggestionSession.h"
+#import "PGManager.h"
+#import "PGPhotosChallengeMetricEventFetchHelper.h"
+
+@interface PGSurveyQuestionsMetricEvent : PGAbstractMetricEvent {
+    PGSuggestionSession *_featuredPhotosSuggestionSession;
+    NSDictionary *_payload;
+}
+
+
+@property (nonatomic) NSUInteger PHMemoryCategoryBestOfPastPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryBestOfPastPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryBestOfPastPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryBestOfPastPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryCelebratedHolidayInHistoryPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryCelebratedHolidayInHistoryPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryCelebratedHolidayInHistoryPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryCelebratedHolidayInHistoryPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryCelebrationOverTimePHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryCelebrationOverTimePHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryCelebrationOverTimePHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryCelebrationOverTimePHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryContextualPHMemorySubcategoryContextualLocationAndPeopleNumFalsePositives; // ivar: _PHMemoryCategoryContextualPHMemorySubcategoryContextualLocationAndPeopleNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryContextualPHMemorySubcategoryContextualLocationAndPeopleNumTruePositives; // ivar: _PHMemoryCategoryContextualPHMemorySubcategoryContextualLocationAndPeopleNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryContextualPHMemorySubcategoryContextualLocationNumFalsePositives; // ivar: _PHMemoryCategoryContextualPHMemorySubcategoryContextualLocationNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryContextualPHMemorySubcategoryContextualLocationNumTruePositives; // ivar: _PHMemoryCategoryContextualPHMemorySubcategoryContextualLocationNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryContextualPHMemorySubcategoryContextualPeopleNumFalsePositives; // ivar: _PHMemoryCategoryContextualPHMemorySubcategoryContextualPeopleNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryContextualPHMemorySubcategoryContextualPeopleNumTruePositives; // ivar: _PHMemoryCategoryContextualPHMemorySubcategoryContextualPeopleNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryContextualPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryContextualPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryContextualPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryContextualPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryDayInHistoryPHMemorySubcategoryFeaturedMeaningfulEventNumFalsePositives; // ivar: _PHMemoryCategoryDayInHistoryPHMemorySubcategoryFeaturedMeaningfulEventNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryDayInHistoryPHMemorySubcategoryFeaturedMeaningfulEventNumTruePositives; // ivar: _PHMemoryCategoryDayInHistoryPHMemorySubcategoryFeaturedMeaningfulEventNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryDayInHistoryPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryDayInHistoryPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryDayInHistoryPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryDayInHistoryPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryEarlyMomentsWithPeoplePHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryEarlyMomentsWithPeoplePHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryEarlyMomentsWithPeoplePHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryEarlyMomentsWithPeoplePHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedBabyNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedBabyNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedBabyNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedBabyNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedBirthdayNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedBirthdayNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedBirthdayNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedBirthdayNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedMeaningfulEventAggregationNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedMeaningfulEventAggregationNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedMeaningfulEventAggregationNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedMeaningfulEventAggregationNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedMeaningfulEventNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedMeaningfulEventNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedMeaningfulEventNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedMeaningfulEventNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedNeighborNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedNeighborNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedNeighborNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedNeighborNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPastSupersetNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPastSupersetNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPastSupersetNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPastSupersetNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPeopleNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPeopleNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPeopleNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPeopleNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPeopleVisitingNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPeopleVisitingNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPeopleVisitingNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPeopleVisitingNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPersonNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPersonNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPersonNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPersonNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPetNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPetNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPetNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedPetNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedRecurrentTripNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedRecurrentTripNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedRecurrentTripNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedRecurrentTripNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedSocialGroupNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedSocialGroupNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedSocialGroupNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedSocialGroupNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedSomeTimeNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedSomeTimeNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedSomeTimeNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedSomeTimeNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedTripNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedTripNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedTripNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedTripNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedWeekendNumFalsePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedWeekendNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedWeekendNumTruePositives; // ivar: _PHMemoryCategoryFeaturedPHMemorySubcategoryFeaturedWeekendNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryHolidayInHistoryPHMemorySubcategoryFeaturedMeaningfulEventNumFalsePositives; // ivar: _PHMemoryCategoryHolidayInHistoryPHMemorySubcategoryFeaturedMeaningfulEventNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryHolidayInHistoryPHMemorySubcategoryFeaturedMeaningfulEventNumTruePositives; // ivar: _PHMemoryCategoryHolidayInHistoryPHMemorySubcategoryFeaturedMeaningfulEventNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryHolidayInHistoryPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryHolidayInHistoryPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryHolidayInHistoryPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryHolidayInHistoryPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryHomeAggregationPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryHomeAggregationPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryHomeAggregationPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryHomeAggregationPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryKeyPeopleForUpcomingHolidayEventPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryKeyPeopleForUpcomingHolidayEventPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryKeyPeopleForUpcomingHolidayEventPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryKeyPeopleForUpcomingHolidayEventPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryLastSeasonPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryLastSeasonPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryLastSeasonPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryLastSeasonPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryLastWeekPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryLastWeekPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryLastWeekPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryLastWeekPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryNearbyTodayPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryNearbyTodayPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryNearbyTodayPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryNearbyTodayPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPeopleOverTimePHMemorySubcategoryFeaturedPersonNumFalsePositives; // ivar: _PHMemoryCategoryPeopleOverTimePHMemorySubcategoryFeaturedPersonNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPeopleOverTimePHMemorySubcategoryFeaturedPersonNumTruePositives; // ivar: _PHMemoryCategoryPeopleOverTimePHMemorySubcategoryFeaturedPersonNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPeopleOverTimePHMemorySubcategoryFeaturedSocialGroupNumFalsePositives; // ivar: _PHMemoryCategoryPeopleOverTimePHMemorySubcategoryFeaturedSocialGroupNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPeopleOverTimePHMemorySubcategoryFeaturedSocialGroupNumTruePositives; // ivar: _PHMemoryCategoryPeopleOverTimePHMemorySubcategoryFeaturedSocialGroupNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPeopleOverTimePHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryPeopleOverTimePHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPeopleOverTimePHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryPeopleOverTimePHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPlacePHMemorySubcategoryPlaceAreaNumFalsePositives; // ivar: _PHMemoryCategoryPlacePHMemorySubcategoryPlaceAreaNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPlacePHMemorySubcategoryPlaceAreaNumTruePositives; // ivar: _PHMemoryCategoryPlacePHMemorySubcategoryPlaceAreaNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPlacePHMemorySubcategoryPlaceBusinessNumFalsePositives; // ivar: _PHMemoryCategoryPlacePHMemorySubcategoryPlaceBusinessNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPlacePHMemorySubcategoryPlaceBusinessNumTruePositives; // ivar: _PHMemoryCategoryPlacePHMemorySubcategoryPlaceBusinessNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPlacePHMemorySubcategoryPlaceLocationNumFalsePositives; // ivar: _PHMemoryCategoryPlacePHMemorySubcategoryPlaceLocationNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPlacePHMemorySubcategoryPlaceLocationNumTruePositives; // ivar: _PHMemoryCategoryPlacePHMemorySubcategoryPlaceLocationNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPlacePHMemorySubcategoryPlaceRegionNumFalsePositives; // ivar: _PHMemoryCategoryPlacePHMemorySubcategoryPlaceRegionNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryPlacePHMemorySubcategoryPlaceRegionNumTruePositives; // ivar: _PHMemoryCategoryPlacePHMemorySubcategoryPlaceRegionNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryEventCalendarNumFalsePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryEventCalendarNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryEventCalendarNumTruePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryEventCalendarNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryEventHolidayNumFalsePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryEventHolidayNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryEventHolidayNumTruePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryEventHolidayNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryEventPeopleNumFalsePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryEventPeopleNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryEventPeopleNumTruePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryEventPeopleNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedMeaningfulEventNumFalsePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedMeaningfulEventNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedMeaningfulEventNumTruePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedMeaningfulEventNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedPersonNumFalsePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedPersonNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedPersonNumTruePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedPersonNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedSocialGroupNumFalsePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedSocialGroupNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedSocialGroupNumTruePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedSocialGroupNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedTripNumFalsePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedTripNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedTripNumTruePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedTripNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedWeekendNumFalsePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedWeekendNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedWeekendNumTruePositives; // ivar: _PHMemoryCategoryRecentEventPHMemorySubcategoryFeaturedWeekendNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategorySeasonInHistoryPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategorySeasonInHistoryPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategorySeasonInHistoryPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategorySeasonInHistoryPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryThisWeekPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryThisWeekPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryThisWeekPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryThisWeekPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryThrowbackThursdayPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryThrowbackThursdayPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryThrowbackThursdayPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryThrowbackThursdayPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryEventHolidayNumFalsePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryEventHolidayNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryEventHolidayNumTruePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryEventHolidayNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedBabyNumFalsePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedBabyNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedBabyNumTruePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedBabyNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedMeaningfulEventAggregationNumFalsePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedMeaningfulEventAggregationNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedMeaningfulEventAggregationNumTruePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedMeaningfulEventAggregationNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedMeaningfulEventNumFalsePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedMeaningfulEventNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedMeaningfulEventNumTruePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedMeaningfulEventNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedPetNumFalsePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedPetNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedPetNumTruePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedPetNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedTripNumFalsePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedTripNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedTripNumTruePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryFeaturedTripNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryPlaceRegionNumFalsePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryPlaceRegionNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUnknownPHMemorySubcategoryPlaceRegionNumTruePositives; // ivar: _PHMemoryCategoryUnknownPHMemorySubcategoryPlaceRegionNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUpcomingEventPHMemorySubcategoryEventCalendarNumFalsePositives; // ivar: _PHMemoryCategoryUpcomingEventPHMemorySubcategoryEventCalendarNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUpcomingEventPHMemorySubcategoryEventCalendarNumTruePositives; // ivar: _PHMemoryCategoryUpcomingEventPHMemorySubcategoryEventCalendarNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUpcomingEventPHMemorySubcategoryEventHolidayNumFalsePositives; // ivar: _PHMemoryCategoryUpcomingEventPHMemorySubcategoryEventHolidayNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUpcomingEventPHMemorySubcategoryEventHolidayNumTruePositives; // ivar: _PHMemoryCategoryUpcomingEventPHMemorySubcategoryEventHolidayNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUpcomingEventPHMemorySubcategoryEventPeopleNumFalsePositives; // ivar: _PHMemoryCategoryUpcomingEventPHMemorySubcategoryEventPeopleNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUpcomingEventPHMemorySubcategoryEventPeopleNumTruePositives; // ivar: _PHMemoryCategoryUpcomingEventPHMemorySubcategoryEventPeopleNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUpcomingEventPHMemorySubcategoryFeaturedMeaningfulEventNumFalsePositives; // ivar: _PHMemoryCategoryUpcomingEventPHMemorySubcategoryFeaturedMeaningfulEventNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryUpcomingEventPHMemorySubcategoryFeaturedMeaningfulEventNumTruePositives; // ivar: _PHMemoryCategoryUpcomingEventPHMemorySubcategoryFeaturedMeaningfulEventNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryWeekInHistoryPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryWeekInHistoryPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryWeekInHistoryPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryWeekInHistoryPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryYearSummaryPHMemorySubcategoryNoneNumFalsePositives; // ivar: _PHMemoryCategoryYearSummaryPHMemorySubcategoryNoneNumFalsePositives
+@property (nonatomic) NSUInteger PHMemoryCategoryYearSummaryPHMemorySubcategoryNoneNumTruePositives; // ivar: _PHMemoryCategoryYearSummaryPHMemorySubcategoryNoneNumTruePositives
+@property (nonatomic) NSUInteger ageCategoryAlgorithmVersion; // ivar: _ageCategoryAlgorithmVersion
+@property (nonatomic) NSUInteger ageCategoryNumFalseNegatives; // ivar: _ageCategoryNumFalseNegatives
+@property (nonatomic) NSUInteger ageCategoryNumFalsePositives; // ivar: _ageCategoryNumFalsePositives
+@property (nonatomic) NSUInteger ageCategoryNumTrueNegatives; // ivar: _ageCategoryNumTrueNegatives
+@property (nonatomic) NSUInteger ageCategoryNumTruePositives; // ivar: _ageCategoryNumTruePositives
+@property (retain, nonatomic) NSDictionary *assetByAssetUUID; // ivar: _assetByAssetUUID
+@property (nonatomic) NSUInteger businessItemAlgorithmVersion; // ivar: _businessItemAlgorithmVersion
+@property (nonatomic) NSUInteger businessItemNumFalseNegatives; // ivar: _businessItemNumFalseNegatives
+@property (nonatomic) NSUInteger businessItemNumFalsePositives; // ivar: _businessItemNumFalsePositives
+@property (nonatomic) NSUInteger businessItemNumTrueNegatives; // ivar: _businessItemNumTrueNegatives
+@property (nonatomic) NSUInteger businessItemNumTruePositives; // ivar: _businessItemNumTruePositives
+@property (nonatomic) NSUInteger featuredPhotoAlgorithmVersion; // ivar: _featuredPhotoAlgorithmVersion
+@property (nonatomic) NSUInteger featuredPhotoNumFalseNegatives; // ivar: _featuredPhotoNumFalseNegatives
+@property (nonatomic) NSUInteger featuredPhotoNumFalsePositives; // ivar: _featuredPhotoNumFalsePositives
+@property (nonatomic) NSUInteger featuredPhotoNumTrueNegatives; // ivar: _featuredPhotoNumTrueNegatives
+@property (nonatomic) NSUInteger featuredPhotoNumTruePositives; // ivar: _featuredPhotoNumTruePositives
+@property (nonatomic) NSUInteger graphSchemaVersion; // ivar: _graphSchemaVersion
+@property (nonatomic) NSUInteger holidayAlgorithmVersion; // ivar: _holidayAlgorithmVersion
+@property (nonatomic) NSUInteger holidayNumFalseNegatives; // ivar: _holidayNumFalseNegatives
+@property (nonatomic) NSUInteger holidayNumFalsePositives; // ivar: _holidayNumFalsePositives
+@property (nonatomic) NSUInteger holidayNumTrueNegatives; // ivar: _holidayNumTrueNegatives
+@property (nonatomic) NSUInteger holidayNumTruePositives; // ivar: _holidayNumTruePositives
+@property (nonatomic) NSUInteger homeLocationAlgorithmVersion; // ivar: _homeLocationAlgorithmVersion
+@property (nonatomic) NSUInteger homeLocationNumFalseNegatives; // ivar: _homeLocationNumFalseNegatives
+@property (nonatomic) NSUInteger homeLocationNumFalsePositives; // ivar: _homeLocationNumFalsePositives
+@property (nonatomic) NSUInteger homeLocationNumTrueNegatives; // ivar: _homeLocationNumTrueNegatives
+@property (nonatomic) NSUInteger homeLocationNumTruePositives; // ivar: _homeLocationNumTruePositives
+@property (nonatomic) NSUInteger longTailFeaturedPhotoAlgorithmVersion; // ivar: _longTailFeaturedPhotoAlgorithmVersion
+@property (nonatomic) NSUInteger longTailFeaturedPhotoNumFalseNegatives; // ivar: _longTailFeaturedPhotoNumFalseNegatives
+@property (nonatomic) NSUInteger longTailFeaturedPhotoNumFalsePositives; // ivar: _longTailFeaturedPhotoNumFalsePositives
+@property (nonatomic) NSUInteger longTailFeaturedPhotoNumTrueNegatives; // ivar: _longTailFeaturedPhotoNumTrueNegatives
+@property (nonatomic) NSUInteger longTailFeaturedPhotoNumTruePositives; // ivar: _longTailFeaturedPhotoNumTruePositives
+@property (retain, nonatomic) PGManager *manager; // ivar: _manager
+@property (nonatomic) NSUInteger meaningAlgorithmVersion; // ivar: _meaningAlgorithmVersion
+@property (nonatomic) NSUInteger meaningAmusementParkNumFalseNegatives; // ivar: _meaningAmusementParkNumFalseNegatives
+@property (nonatomic) NSUInteger meaningAmusementParkNumFalsePositives; // ivar: _meaningAmusementParkNumFalsePositives
+@property (nonatomic) NSUInteger meaningAmusementParkNumTrueNegatives; // ivar: _meaningAmusementParkNumTrueNegatives
+@property (nonatomic) NSUInteger meaningAmusementParkNumTruePositives; // ivar: _meaningAmusementParkNumTruePositives
+@property (nonatomic) NSUInteger meaningAnniversaryNumFalseNegatives; // ivar: _meaningAnniversaryNumFalseNegatives
+@property (nonatomic) NSUInteger meaningAnniversaryNumFalsePositives; // ivar: _meaningAnniversaryNumFalsePositives
+@property (nonatomic) NSUInteger meaningAnniversaryNumTrueNegatives; // ivar: _meaningAnniversaryNumTrueNegatives
+@property (nonatomic) NSUInteger meaningAnniversaryNumTruePositives; // ivar: _meaningAnniversaryNumTruePositives
+@property (nonatomic) NSUInteger meaningBeachingNumFalseNegatives; // ivar: _meaningBeachingNumFalseNegatives
+@property (nonatomic) NSUInteger meaningBeachingNumFalsePositives; // ivar: _meaningBeachingNumFalsePositives
+@property (nonatomic) NSUInteger meaningBeachingNumTrueNegatives; // ivar: _meaningBeachingNumTrueNegatives
+@property (nonatomic) NSUInteger meaningBeachingNumTruePositives; // ivar: _meaningBeachingNumTruePositives
+@property (nonatomic) NSUInteger meaningBirthdayNumFalseNegatives; // ivar: _meaningBirthdayNumFalseNegatives
+@property (nonatomic) NSUInteger meaningBirthdayNumFalsePositives; // ivar: _meaningBirthdayNumFalsePositives
+@property (nonatomic) NSUInteger meaningBirthdayNumTrueNegatives; // ivar: _meaningBirthdayNumTrueNegatives
+@property (nonatomic) NSUInteger meaningBirthdayNumTruePositives; // ivar: _meaningBirthdayNumTruePositives
+@property (nonatomic) NSUInteger meaningBreakfastNumFalseNegatives; // ivar: _meaningBreakfastNumFalseNegatives
+@property (nonatomic) NSUInteger meaningBreakfastNumFalsePositives; // ivar: _meaningBreakfastNumFalsePositives
+@property (nonatomic) NSUInteger meaningBreakfastNumTrueNegatives; // ivar: _meaningBreakfastNumTrueNegatives
+@property (nonatomic) NSUInteger meaningBreakfastNumTruePositives; // ivar: _meaningBreakfastNumTruePositives
+@property (nonatomic) NSUInteger meaningCelebrationNumFalseNegatives; // ivar: _meaningCelebrationNumFalseNegatives
+@property (nonatomic) NSUInteger meaningCelebrationNumFalsePositives; // ivar: _meaningCelebrationNumFalsePositives
+@property (nonatomic) NSUInteger meaningCelebrationNumTrueNegatives; // ivar: _meaningCelebrationNumTrueNegatives
+@property (nonatomic) NSUInteger meaningCelebrationNumTruePositives; // ivar: _meaningCelebrationNumTruePositives
+@property (nonatomic) NSUInteger meaningClimbingNumFalseNegatives; // ivar: _meaningClimbingNumFalseNegatives
+@property (nonatomic) NSUInteger meaningClimbingNumFalsePositives; // ivar: _meaningClimbingNumFalsePositives
+@property (nonatomic) NSUInteger meaningClimbingNumTrueNegatives; // ivar: _meaningClimbingNumTrueNegatives
+@property (nonatomic) NSUInteger meaningClimbingNumTruePositives; // ivar: _meaningClimbingNumTruePositives
+@property (nonatomic) NSUInteger meaningConcertNumFalseNegatives; // ivar: _meaningConcertNumFalseNegatives
+@property (nonatomic) NSUInteger meaningConcertNumFalsePositives; // ivar: _meaningConcertNumFalsePositives
+@property (nonatomic) NSUInteger meaningConcertNumTrueNegatives; // ivar: _meaningConcertNumTrueNegatives
+@property (nonatomic) NSUInteger meaningConcertNumTruePositives; // ivar: _meaningConcertNumTruePositives
+@property (nonatomic) NSUInteger meaningDanceNumFalseNegatives; // ivar: _meaningDanceNumFalseNegatives
+@property (nonatomic) NSUInteger meaningDanceNumFalsePositives; // ivar: _meaningDanceNumFalsePositives
+@property (nonatomic) NSUInteger meaningDanceNumTrueNegatives; // ivar: _meaningDanceNumTrueNegatives
+@property (nonatomic) NSUInteger meaningDanceNumTruePositives; // ivar: _meaningDanceNumTruePositives
+@property (nonatomic) NSUInteger meaningDinnerNumFalseNegatives; // ivar: _meaningDinnerNumFalseNegatives
+@property (nonatomic) NSUInteger meaningDinnerNumFalsePositives; // ivar: _meaningDinnerNumFalsePositives
+@property (nonatomic) NSUInteger meaningDinnerNumTrueNegatives; // ivar: _meaningDinnerNumTrueNegatives
+@property (nonatomic) NSUInteger meaningDinnerNumTruePositives; // ivar: _meaningDinnerNumTruePositives
+@property (nonatomic) NSUInteger meaningDivingNumFalseNegatives; // ivar: _meaningDivingNumFalseNegatives
+@property (nonatomic) NSUInteger meaningDivingNumFalsePositives; // ivar: _meaningDivingNumFalsePositives
+@property (nonatomic) NSUInteger meaningDivingNumTrueNegatives; // ivar: _meaningDivingNumTrueNegatives
+@property (nonatomic) NSUInteger meaningDivingNumTruePositives; // ivar: _meaningDivingNumTruePositives
+@property (nonatomic) NSUInteger meaningEntertainmentNumFalseNegatives; // ivar: _meaningEntertainmentNumFalseNegatives
+@property (nonatomic) NSUInteger meaningEntertainmentNumFalsePositives; // ivar: _meaningEntertainmentNumFalsePositives
+@property (nonatomic) NSUInteger meaningEntertainmentNumTrueNegatives; // ivar: _meaningEntertainmentNumTrueNegatives
+@property (nonatomic) NSUInteger meaningEntertainmentNumTruePositives; // ivar: _meaningEntertainmentNumTruePositives
+@property (nonatomic) NSUInteger meaningFestivalNumFalseNegatives; // ivar: _meaningFestivalNumFalseNegatives
+@property (nonatomic) NSUInteger meaningFestivalNumFalsePositives; // ivar: _meaningFestivalNumFalsePositives
+@property (nonatomic) NSUInteger meaningFestivalNumTrueNegatives; // ivar: _meaningFestivalNumTrueNegatives
+@property (nonatomic) NSUInteger meaningFestivalNumTruePositives; // ivar: _meaningFestivalNumTruePositives
+@property (nonatomic) NSUInteger meaningGatheringNumFalseNegatives; // ivar: _meaningGatheringNumFalseNegatives
+@property (nonatomic) NSUInteger meaningGatheringNumFalsePositives; // ivar: _meaningGatheringNumFalsePositives
+@property (nonatomic) NSUInteger meaningGatheringNumTrueNegatives; // ivar: _meaningGatheringNumTrueNegatives
+@property (nonatomic) NSUInteger meaningGatheringNumTruePositives; // ivar: _meaningGatheringNumTruePositives
+@property (nonatomic) NSUInteger meaningHikingNumFalseNegatives; // ivar: _meaningHikingNumFalseNegatives
+@property (nonatomic) NSUInteger meaningHikingNumFalsePositives; // ivar: _meaningHikingNumFalsePositives
+@property (nonatomic) NSUInteger meaningHikingNumTrueNegatives; // ivar: _meaningHikingNumTrueNegatives
+@property (nonatomic) NSUInteger meaningHikingNumTruePositives; // ivar: _meaningHikingNumTruePositives
+@property (nonatomic) NSUInteger meaningHolidayEventNumFalseNegatives; // ivar: _meaningHolidayEventNumFalseNegatives
+@property (nonatomic) NSUInteger meaningHolidayEventNumFalsePositives; // ivar: _meaningHolidayEventNumFalsePositives
+@property (nonatomic) NSUInteger meaningHolidayEventNumTrueNegatives; // ivar: _meaningHolidayEventNumTrueNegatives
+@property (nonatomic) NSUInteger meaningHolidayEventNumTruePositives; // ivar: _meaningHolidayEventNumTruePositives
+@property (nonatomic) NSUInteger meaningLunchNumFalseNegatives; // ivar: _meaningLunchNumFalseNegatives
+@property (nonatomic) NSUInteger meaningLunchNumFalsePositives; // ivar: _meaningLunchNumFalsePositives
+@property (nonatomic) NSUInteger meaningLunchNumTrueNegatives; // ivar: _meaningLunchNumTrueNegatives
+@property (nonatomic) NSUInteger meaningLunchNumTruePositives; // ivar: _meaningLunchNumTruePositives
+@property (nonatomic) NSUInteger meaningMuseumNumFalseNegatives; // ivar: _meaningMuseumNumFalseNegatives
+@property (nonatomic) NSUInteger meaningMuseumNumFalsePositives; // ivar: _meaningMuseumNumFalsePositives
+@property (nonatomic) NSUInteger meaningMuseumNumTrueNegatives; // ivar: _meaningMuseumNumTrueNegatives
+@property (nonatomic) NSUInteger meaningMuseumNumTruePositives; // ivar: _meaningMuseumNumTruePositives
+@property (nonatomic) NSUInteger meaningNightOutNumFalseNegatives; // ivar: _meaningNightOutNumFalseNegatives
+@property (nonatomic) NSUInteger meaningNightOutNumFalsePositives; // ivar: _meaningNightOutNumFalsePositives
+@property (nonatomic) NSUInteger meaningNightOutNumTrueNegatives; // ivar: _meaningNightOutNumTrueNegatives
+@property (nonatomic) NSUInteger meaningNightOutNumTruePositives; // ivar: _meaningNightOutNumTruePositives
+@property (nonatomic) NSUInteger meaningPerformanceNumFalseNegatives; // ivar: _meaningPerformanceNumFalseNegatives
+@property (nonatomic) NSUInteger meaningPerformanceNumFalsePositives; // ivar: _meaningPerformanceNumFalsePositives
+@property (nonatomic) NSUInteger meaningPerformanceNumTrueNegatives; // ivar: _meaningPerformanceNumTrueNegatives
+@property (nonatomic) NSUInteger meaningPerformanceNumTruePositives; // ivar: _meaningPerformanceNumTruePositives
+@property (nonatomic) NSUInteger meaningRestaurantNumFalseNegatives; // ivar: _meaningRestaurantNumFalseNegatives
+@property (nonatomic) NSUInteger meaningRestaurantNumFalsePositives; // ivar: _meaningRestaurantNumFalsePositives
+@property (nonatomic) NSUInteger meaningRestaurantNumTrueNegatives; // ivar: _meaningRestaurantNumTrueNegatives
+@property (nonatomic) NSUInteger meaningRestaurantNumTruePositives; // ivar: _meaningRestaurantNumTruePositives
+@property (nonatomic) NSUInteger meaningSportEventNumFalseNegatives; // ivar: _meaningSportEventNumFalseNegatives
+@property (nonatomic) NSUInteger meaningSportEventNumFalsePositives; // ivar: _meaningSportEventNumFalsePositives
+@property (nonatomic) NSUInteger meaningSportEventNumTrueNegatives; // ivar: _meaningSportEventNumTrueNegatives
+@property (nonatomic) NSUInteger meaningSportEventNumTruePositives; // ivar: _meaningSportEventNumTruePositives
+@property (nonatomic) NSUInteger meaningTheaterNumFalseNegatives; // ivar: _meaningTheaterNumFalseNegatives
+@property (nonatomic) NSUInteger meaningTheaterNumFalsePositives; // ivar: _meaningTheaterNumFalsePositives
+@property (nonatomic) NSUInteger meaningTheaterNumTrueNegatives; // ivar: _meaningTheaterNumTrueNegatives
+@property (nonatomic) NSUInteger meaningTheaterNumTruePositives; // ivar: _meaningTheaterNumTruePositives
+@property (nonatomic) NSUInteger meaningWeddingNumFalseNegatives; // ivar: _meaningWeddingNumFalseNegatives
+@property (nonatomic) NSUInteger meaningWeddingNumFalsePositives; // ivar: _meaningWeddingNumFalsePositives
+@property (nonatomic) NSUInteger meaningWeddingNumTrueNegatives; // ivar: _meaningWeddingNumTrueNegatives
+@property (nonatomic) NSUInteger meaningWeddingNumTruePositives; // ivar: _meaningWeddingNumTruePositives
+@property (nonatomic) NSUInteger meaningWinterSportNumFalseNegatives; // ivar: _meaningWinterSportNumFalseNegatives
+@property (nonatomic) NSUInteger meaningWinterSportNumFalsePositives; // ivar: _meaningWinterSportNumFalsePositives
+@property (nonatomic) NSUInteger meaningWinterSportNumTrueNegatives; // ivar: _meaningWinterSportNumTrueNegatives
+@property (nonatomic) NSUInteger meaningWinterSportNumTruePositives; // ivar: _meaningWinterSportNumTruePositives
+@property (nonatomic) NSUInteger memoryAlgorithmVersion; // ivar: _memoryAlgorithmVersion
+@property (nonatomic) NSUInteger memoryQualityNumFalsePositives; // ivar: _memoryQualityNumFalsePositives
+@property (nonatomic) NSUInteger memoryQualityNumTruePositives; // ivar: _memoryQualityNumTruePositives
+@property (retain, nonatomic) PGPhotosChallengeMetricEventFetchHelper *metricsCache; // ivar: _metricsCache
+@property (nonatomic) NSUInteger namingAlgorithmVersion; // ivar: _namingAlgorithmVersion
+@property (nonatomic) NSUInteger namingNumFalseNegatives; // ivar: _namingNumFalseNegatives
+@property (nonatomic) NSUInteger namingNumFalsePositives; // ivar: _namingNumFalsePositives
+@property (nonatomic) NSUInteger namingNumTrueNegatives; // ivar: _namingNumTrueNegatives
+@property (nonatomic) NSUInteger namingNumTruePositives; // ivar: _namingNumTruePositives
+@property (retain, nonatomic) NSDictionary *personLocalIdentifierByEntityIdentifier; // ivar: _personLocalIdentifierByEntityIdentifier
+@property (nonatomic) NSUInteger petAlgorithmVersion; // ivar: _petAlgorithmVersion
+@property (nonatomic) NSUInteger petKnowledgeNumFalsePositives; // ivar: _petKnowledgeNumFalsePositives
+@property (nonatomic) NSUInteger petKnowledgeNumTruePositives; // ivar: _petKnowledgeNumTruePositives
+@property (nonatomic) NSUInteger petNumFalseNegatives; // ivar: _petNumFalseNegatives
+@property (nonatomic) NSUInteger petNumFalsePositives; // ivar: _petNumFalsePositives
+@property (nonatomic) NSUInteger petNumTrueNegatives; // ivar: _petNumTrueNegatives
+@property (nonatomic) NSUInteger petNumTruePositives; // ivar: _petNumTruePositives
+@property (nonatomic) NSUInteger publicEventAlgorithmVersion; // ivar: _publicEventAlgorithmVersion
+@property (nonatomic) NSUInteger publicEventNumFalseNegatives; // ivar: _publicEventNumFalseNegatives
+@property (nonatomic) NSUInteger publicEventNumFalsePositives; // ivar: _publicEventNumFalsePositives
+@property (nonatomic) NSUInteger publicEventNumTrueNegatives; // ivar: _publicEventNumTrueNegatives
+@property (nonatomic) NSUInteger publicEventNumTruePositives; // ivar: _publicEventNumTruePositives
+@property (retain, nonatomic) PHFetchResult *questions; // ivar: _questions
+@property (nonatomic) NSUInteger questionsVersion; // ivar: _questionsVersion
+@property (nonatomic) NSUInteger relationshipAlgorithmVersion; // ivar: _relationshipAlgorithmVersion
+@property (nonatomic) NSUInteger relationshipChildNumFalseNegatives; // ivar: _relationshipChildNumFalseNegatives
+@property (nonatomic) NSUInteger relationshipChildNumFalsePositives; // ivar: _relationshipChildNumFalsePositives
+@property (nonatomic) NSUInteger relationshipChildNumTrueNegatives; // ivar: _relationshipChildNumTrueNegatives
+@property (nonatomic) NSUInteger relationshipChildNumTruePositives; // ivar: _relationshipChildNumTruePositives
+@property (nonatomic) NSUInteger relationshipCoworkerNumFalseNegatives; // ivar: _relationshipCoworkerNumFalseNegatives
+@property (nonatomic) NSUInteger relationshipCoworkerNumFalsePositives; // ivar: _relationshipCoworkerNumFalsePositives
+@property (nonatomic) NSUInteger relationshipCoworkerNumTrueNegatives; // ivar: _relationshipCoworkerNumTrueNegatives
+@property (nonatomic) NSUInteger relationshipCoworkerNumTruePositives; // ivar: _relationshipCoworkerNumTruePositives
+@property (nonatomic) NSUInteger relationshipFamilyNumFalseNegatives; // ivar: _relationshipFamilyNumFalseNegatives
+@property (nonatomic) NSUInteger relationshipFamilyNumFalsePositives; // ivar: _relationshipFamilyNumFalsePositives
+@property (nonatomic) NSUInteger relationshipFamilyNumTrueNegatives; // ivar: _relationshipFamilyNumTrueNegatives
+@property (nonatomic) NSUInteger relationshipFamilyNumTruePositives; // ivar: _relationshipFamilyNumTruePositives
+@property (nonatomic) NSUInteger relationshipFriendNumFalseNegatives; // ivar: _relationshipFriendNumFalseNegatives
+@property (nonatomic) NSUInteger relationshipFriendNumFalsePositives; // ivar: _relationshipFriendNumFalsePositives
+@property (nonatomic) NSUInteger relationshipFriendNumTrueNegatives; // ivar: _relationshipFriendNumTrueNegatives
+@property (nonatomic) NSUInteger relationshipFriendNumTruePositives; // ivar: _relationshipFriendNumTruePositives
+@property (nonatomic) NSUInteger relationshipParentNumFalseNegatives; // ivar: _relationshipParentNumFalseNegatives
+@property (nonatomic) NSUInteger relationshipParentNumFalsePositives; // ivar: _relationshipParentNumFalsePositives
+@property (nonatomic) NSUInteger relationshipParentNumTrueNegatives; // ivar: _relationshipParentNumTrueNegatives
+@property (nonatomic) NSUInteger relationshipParentNumTruePositives; // ivar: _relationshipParentNumTruePositives
+@property (nonatomic) NSUInteger relationshipPartnerNumFalseNegatives; // ivar: _relationshipPartnerNumFalseNegatives
+@property (nonatomic) NSUInteger relationshipPartnerNumFalsePositives; // ivar: _relationshipPartnerNumFalsePositives
+@property (nonatomic) NSUInteger relationshipPartnerNumTrueNegatives; // ivar: _relationshipPartnerNumTrueNegatives
+@property (nonatomic) NSUInteger relationshipPartnerNumTruePositives; // ivar: _relationshipPartnerNumTruePositives
+@property (nonatomic) NSUInteger relationshipSiblingNumFalseNegatives; // ivar: _relationshipSiblingNumFalseNegatives
+@property (nonatomic) NSUInteger relationshipSiblingNumFalsePositives; // ivar: _relationshipSiblingNumFalsePositives
+@property (nonatomic) NSUInteger relationshipSiblingNumTrueNegatives; // ivar: _relationshipSiblingNumTrueNegatives
+@property (nonatomic) NSUInteger relationshipSiblingNumTruePositives; // ivar: _relationshipSiblingNumTruePositives
+@property (nonatomic) NSUInteger syndicatedAssetsNumFalseNegatives; // ivar: _syndicatedAssetsNumFalseNegatives
+@property (nonatomic) NSUInteger syndicatedAssetsNumFalsePositives; // ivar: _syndicatedAssetsNumFalsePositives
+@property (nonatomic) NSUInteger syndicatedAssetsNumTrueNegatives; // ivar: _syndicatedAssetsNumTrueNegatives
+@property (nonatomic) NSUInteger syndicatedAssetsNumTruePositives; // ivar: _syndicatedAssetsNumTruePositives
+@property (nonatomic) NSUInteger tripKeyAssetAlgorithmVersion; // ivar: _tripKeyAssetAlgorithmVersion
+@property (nonatomic) NSUInteger tripKeyAssetNumberOfFalsePositives; // ivar: _tripKeyAssetNumberOfFalsePositives
+@property (nonatomic) NSUInteger tripKeyAssetNumberOfTruePositives; // ivar: _tripKeyAssetNumberOfTruePositives
+@property (retain, nonatomic) NSSet *tripKeyAssetUUIDs; // ivar: _tripKeyAssetUUIDs
+@property (nonatomic) NSUInteger workLocationAlgorithmVersion; // ivar: _workLocationAlgorithmVersion
+@property (nonatomic) NSUInteger workLocationNumFalseNegatives; // ivar: _workLocationNumFalseNegatives
+@property (nonatomic) NSUInteger workLocationNumFalsePositives; // ivar: _workLocationNumFalsePositives
+@property (nonatomic) NSUInteger workLocationNumTrueNegatives; // ivar: _workLocationNumTrueNegatives
+@property (nonatomic) NSUInteger workLocationNumTruePositives; // ivar: _workLocationNumTruePositives
+
+
+-(id)_personLocalIdentifierByEntityIdentifierFromQuestions:(id)arg0 ;
+-(id)identifier;
+-(id)initForTestingWithGraphManager:(id)arg0 ;
+-(id)initWithGraphManager:(id)arg0 ;
+-(id)memoryCategorySubcategoryPairKeys;
+-(id)payload;
+-(void)_gatherAlgorithmVersions;
+-(void)_gatherMetricsForAgeCategoryQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)_gatherMetricsForBusinessItemQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)_gatherMetricsForBusinessItemQuestion:(id)arg0 withMomentNode:(id)arg1 ;
+-(void)_gatherMetricsForFeaturedPhotoQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)_gatherMetricsForFrequentLocationQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)_gatherMetricsForHolidayQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)_gatherMetricsForHolidayQuestion:(id)arg0 withMomentNode:(id)arg1 ;
+-(void)_gatherMetricsForInitialPetQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)_gatherMetricsForMeaningQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)_gatherMetricsForMeaningQuestion:(id)arg0 withMomentNode:(id)arg1 ;
+-(void)_gatherMetricsForMemoryQualityQuestion:(id)arg0 ;
+-(void)_gatherMetricsForMemoryQualityQuestion:(id)arg0 memoryCategorySubcategoryPairKeys:(id)arg1 ;
+-(void)_gatherMetricsForNamingQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)_gatherMetricsForPetQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)_gatherMetricsForPetQuestion:(id)arg0 withMomentNode:(id)arg1 meNode:(id)arg2 ;
+-(void)_gatherMetricsForPublicEventQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)_gatherMetricsForPublicEventQuestion:(id)arg0 withMomentNode:(id)arg1 ;
+-(void)_gatherMetricsForRelationshipQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)_gatherMetricsForSyndicatedAssetsQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)_gatherMetricsForTripKeyAssetQuestion:(id)arg0 ;
+-(void)_gatherMetricsForTripKeyAssetQuestion:(id)arg0 fromGraph:(id)arg1 ;
+-(void)gatherMetricsWithProgressBlock:(id)arg0 ;
+
+
+@end
+
+
+#endif

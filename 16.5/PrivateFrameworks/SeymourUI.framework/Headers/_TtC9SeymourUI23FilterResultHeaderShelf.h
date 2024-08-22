@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC9SEYMOURUI23FILTERRESULTHEADERSHELF_H
+#define _TTC9SEYMOURUI23FILTERRESULTHEADERSHELF_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC9SeymourUI23FilterResultHeaderShelf : SwiftObject {
+    ? delegate;
+    ? identifier;
+    ? eventHub;
+    ? storefrontLocalizer;
+    ? mediaTagStringBuilder;
+    ? rootProperty;
+    ? sortModes;
+    ? activeSortMode;
+    ? title;
+    ? row;
+    ? subscriptionToken;
+    ? hasDetail;
+    ? filter;
+    ? filterResult;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

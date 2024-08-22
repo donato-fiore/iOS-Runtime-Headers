@@ -1,0 +1,61 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PKADDPASSBUTTON_H
+#define PKADDPASSBUTTON_H
+
+@class UIButton, CAShapeLayer, UIImageView, UILabel, CAFilter;
+
+
+#import "PKShapeView.h"
+
+@interface PKAddPassButton : UIButton {
+    CAShapeLayer *_layer;
+    CGSize _boundsSize;
+    PKShapeView *_maskView;
+    UIImageView *_iconView;
+    UILabel *_singleLineLabel;
+    UILabel *_multiLineLabel;
+    CAFilter *_highlightFilter;
+    BOOL _highlighted;
+    CGSize _iconSize;
+    CGSize _singleLineSize;
+    UIEdgeInsets _singleLineAlignmentInset;
+    CGSize _multiLineSize;
+    UIEdgeInsets _multiLineAlignmentInset;
+    BOOL _useLayoutMargins;
+}
+
+
+@property (nonatomic) NSInteger addPassButtonStyle; // ivar: _addPassButtonStyle
+
+
++(Class)layerClass;
++(id)addPassButtonWithStyle:(NSInteger)arg0 ;
+-(BOOL)_shouldAnimatePropertyWithKey:(id)arg0 ;
+-(BOOL)_singleLineFitsSize:(struct CGSize )arg0 ;
+-(id)init;
+-(id)initWithAddPassButtonStyle:(NSInteger)arg0 ;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithFrame:(struct CGRect )arg0 ;
+-(struct CGSize )_baseIntrinsicMultiLineSize;
+-(struct CGSize )_baseIntrinsicSingleLineSize;
+-(struct CGSize )_intrinsicContentSizeForSingleLine:(BOOL)arg0 ;
+-(struct CGSize )intrinsicContentSize;
+-(struct CGSize )sizeThatFits:(struct CGSize )arg0 ;
+-(void)_adjustVisibleLabelWithBounds:(struct CGRect )arg0 ;
+-(void)_applyStyle;
+-(void)_createHighlightFilterIfNecessary;
+-(void)_sharedInit;
+-(void)dealloc;
+-(void)encodeWithCoder:(id)arg0 ;
+-(void)layoutSubviews;
+-(void)setHighlighted:(BOOL)arg0 ;
+
+
+@end
+
+
+#endif

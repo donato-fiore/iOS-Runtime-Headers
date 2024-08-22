@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _BNBANNERSCENECOMPONENTPROVIDERIGNORESINVERTCOLORSSECUREWINDOW_H
+#define _BNBANNERSCENECOMPONENTPROVIDERIGNORESINVERTCOLORSSECUREWINDOW_H
+
+@class BNBannerSceneComponentProviderSecureWindow;
+
+
+
+@interface _BNBannerSceneComponentProviderIgnoresInvertColorsSecureWindow : BNBannerSceneComponentProviderSecureWindow
+
+
+
+-(BOOL)_accessibilityInvertColorsIsDarkWindow;
+-(void)accessibilityApplyInvertFilter;
+
+
+@end
+
+
+#endif

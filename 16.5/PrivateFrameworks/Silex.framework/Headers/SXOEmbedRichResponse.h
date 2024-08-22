@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef SXOEMBEDRICHRESPONSE_H
+#define SXOEMBEDRICHRESPONSE_H
+
+@class NSString;
+
+
+#import "SXOEmbedResponse.h"
+
+@interface SXOEmbedRichResponse : SXOEmbedResponse
+
+@property (readonly, nonatomic) NSString *HTML;
+@property (readonly, nonatomic) CGFloat height;
+@property (readonly, nonatomic) CGSize size;
+@property (readonly, nonatomic) CGFloat width;
+
+
++(id)jsonPropertyNameForObjCPropertyName:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,44 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef VCPMADVIUSERFEEDBACKTASK_H
+#define VCPMADVIUSERFEEDBACKTASK_H
+
+@class MADVIUserFeedbackRequest, NSString;
+@protocol VCPMADServiceImageProcessingSubtaskProtocol, VCPMADTaskProtocol, MTLDevice, OS_dispatch_queue, VICancellable;
+
+#import <Foundation/Foundation.h>
+
+#import "VCPMADServiceImageAsset.h"
+
+@interface VCPMADVIUserFeedbackTask : NSObject <VCPMADServiceImageProcessingSubtaskProtocol, VCPMADTaskProtocol>
+
+ {
+    MADVIUserFeedbackRequest *_request;
+    VCPMADServiceImageAsset *_imageAsset;
+    NSString *_signpostPayload;
+    id<MTLDevice> *_preferredMetalDevice;
+    NSObject<OS_dispatch_queue> *_cancelQueue;
+    atomic<bool> _canceled;
+    id<VICancellable> *_cancellable;
+}
+
+
+
+
++(id)dependencies;
++(id)taskWithRequest:(id)arg0 imageAsset:(id)arg1 andSignpostPayload:(id)arg2 ;
+-(BOOL)autoCancellable;
+-(float)resourceRequirement;
+-(id)initWithRequest:(id)arg0 imageAsset:(id)arg1 andSignpostPayload:(id)arg2 ;
+-(int)run;
+-(void)cancel;
+-(void)setPreferredMetalDevice:(id)arg0 ;
+
+
+@end
+
+
+#endif

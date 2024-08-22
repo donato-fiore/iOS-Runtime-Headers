@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PRPOSTERCOLORHSLVALUES_H
+#define PRPOSTERCOLORHSLVALUES_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface PRPosterColorHSLValues : NSObject
+
+@property (readonly, nonatomic) CGFloat hue; // ivar: _hue
+@property (readonly, nonatomic) CGFloat luminance; // ivar: _luminance
+@property (readonly, nonatomic) CGFloat saturation; // ivar: _saturation
+
+
+-(id)hsbValues;
+-(id)initWithHue:(CGFloat)arg0 saturation:(CGFloat)arg1 luminance:(CGFloat)arg2 ;
+
+
+@end
+
+
+#endif

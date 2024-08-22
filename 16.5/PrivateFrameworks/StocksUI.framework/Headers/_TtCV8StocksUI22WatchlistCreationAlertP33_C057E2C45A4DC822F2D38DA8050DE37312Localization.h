@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTCV8STOCKSUI22WATCHLISTCREATIONALERTP33_C057E2C45A4DC822F2D38DA8050DE37312LOCALIZATION_H
+#define _TTCV8STOCKSUI22WATCHLISTCREATIONALERTP33_C057E2C45A4DC822F2D38DA8050DE37312LOCALIZATION_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCV8StocksUI22WatchlistCreationAlertP33_C057E2C45A4DC822F2D38DA8050DE37312Localization : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

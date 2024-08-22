@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef OBBOLDTRAYBUTTON_H
+#define OBBOLDTRAYBUTTON_H
+
+@class NSNumber;
+
+
+#import "OBTrayButton.h"
+
+@interface OBBoldTrayButton : OBTrayButton
+
+@property (retain, nonatomic) NSNumber *buttonStateRequiredHeight; // ivar: _buttonStateRequiredHeight
+
+
++(id)boldButton;
+-(id)boldConfiguration;
+-(struct CGSize )intrinsicContentSize;
+-(void)hidesBusyIndicator;
+-(void)setEnabled:(BOOL)arg0 ;
+-(void)showsBusyIndicator;
+-(void)tintColorDidChange;
+-(void)updateConfiguration;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,17 @@
+
+
+#include "SPEstimatedLocation.h"
+#include "SPBeaconPayload.h"
+#include "SPAdvertisement.h"
+#include "SPScheduler.h"
+#include "SPBeaconPayloadCacheSearchCriteria.h"
+#include "SPBeaconAdvertisement.h"
+#include "SPAdvertisementCacheSearchResult.h"
+#include "SPSchedulerInformation.h"
+#include "SPFinderStateManager.h"
+#include "SPSearchResultMarker.h"
+#include "SPFinderInterface.h"
+#include "SPBeaconPayloadCacheSearchResult.h"
+#include "SPFinderStateInfo.h"
+#include "SPAdvertisementCacheSearchCriteria.h"
+#include "SPAdvertisementCache.h"

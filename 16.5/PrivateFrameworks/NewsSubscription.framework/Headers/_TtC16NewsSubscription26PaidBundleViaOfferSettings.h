@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC16NEWSSUBSCRIPTION26PAIDBUNDLEVIAOFFERSETTINGS_H
+#define _TTC16NEWSSUBSCRIPTION26PAIDBUNDLEVIAOFFERSETTINGS_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC16NewsSubscription26PaidBundleViaOfferSettings : NSObject {
+    ? allowPaywalls;
+    ? allowSubscriptionsDeeplink;
+    ? allowMastheadBanner;
+    ? allowIconBadge;
+    ? allowIconBadgeMercury;
+    ? allowLocalNotification;
+    ? allowUpsell;
+    ? allowAppLaunchUpsell;
+}
+
+
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

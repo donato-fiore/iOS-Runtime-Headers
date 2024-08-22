@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef ICNAINLINEDRAWINGV1FINGERSTROKERATIOHISTOGRAM_H
+#define ICNAINLINEDRAWINGV1FINGERSTROKERATIOHISTOGRAM_H
+
+
+
+#import "ICNAHistogramBase.h"
+
+@interface ICNAInlineDrawingV1FingerStrokeRatioHistogram : ICNAHistogramBase
+
+
+
+-(void)setup;
+
+
+@end
+
+
+#endif

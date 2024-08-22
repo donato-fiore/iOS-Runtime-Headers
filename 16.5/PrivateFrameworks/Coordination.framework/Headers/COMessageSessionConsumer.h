@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef COMESSAGESESSIONCONSUMER_H
+#define COMESSAGESESSIONCONSUMER_H
+
+@class NSMutableDictionary, NSString;
+@protocol COMessageSessionConsumerDelegate, OS_dispatch_queue;
+
+#import <Foundation/Foundation.h>
+
+#import "COMessageChannel.h"
+
+@interface COMessageSessionConsumer : NSObject
+
+@property (weak, nonatomic) NSObject<COMessageSessionConsumerDelegate> *delegate; // ivar: _delegate
+@property (retain, nonatomic) NSObject<OS_dispatch_queue> *delegateQueue; // ivar: _delegateQueue
+@property (readonly, weak, nonatomic) COMessageChannel *messageChannel; // ivar: _messageChannel
+@property (retain, nonatomic) NSMutableDictionary *sessions; // ivar: _sessions
+@property (readonly, retain, nonatomic) NSString *subTopic; // ivar: _subTopic
+
+
+-(id)description;
+-(id)initWithChannel:(id)arg0 subTopic:(id)arg1 delegate:(id)arg2 dispatchQueue:(id)arg3 ;
+
+
+@end
+
+
+#endif

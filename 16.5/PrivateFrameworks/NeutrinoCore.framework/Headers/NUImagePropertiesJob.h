@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef NUIMAGEPROPERTIESJOB_H
+#define NUIMAGEPROPERTIESJOB_H
+
+@protocol NUImageProperties;
+
+
+#import "NURenderJob.h"
+
+@interface NUImagePropertiesJob : NURenderJob {
+    id<NUImageProperties> *_imageProperties;
+}
+
+
+
+
+-(BOOL)prepare:(*id)arg0 ;
+-(BOOL)wantsCompleteStage;
+-(BOOL)wantsRenderStage;
+-(id)result;
+
+
+@end
+
+
+#endif

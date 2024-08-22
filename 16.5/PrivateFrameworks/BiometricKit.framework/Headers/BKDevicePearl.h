@@ -1,0 +1,43 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef BKDEVICEPEARL_H
+#define BKDEVICEPEARL_H
+
+@protocol BKDevicePearlDelegate;
+
+
+#import "BKDevice.h"
+
+@interface BKDevicePearl : BKDevice
+
+@property (weak, nonatomic) NSObject<BKDevicePearlDelegate> *delegate;
+@property (readonly, nonatomic) NSInteger pearlState;
+
+
++(BOOL)deviceAvailableWithFailure:(*BOOL)arg0 ;
+-(BOOL)clearIdentityMigrationFailureForUser:(unsigned int)arg0 error:(*id)arg1 ;
+-(BOOL)removePeriocularEnrollmentsForUser:(unsigned int)arg0 removeAll:(BOOL)arg1 error:(*id)arg2 ;
+-(BOOL)removePeriocularEnrollmentsFromIdentity:(id)arg0 removeAll:(BOOL)arg1 error:(*id)arg2 ;
+-(BOOL)setTemplate:(id)arg0 forIdentity:(id)arg1 error:(*id)arg2 ;
+-(NSInteger)deviceEventWithStatus:(unsigned int)arg0 ;
+-(NSInteger)deviceStateWithStatus:(unsigned int)arg0 ;
+-(id)createEnrollOperationWithError:(*id)arg0 ;
+-(id)createMatchOperationWithError:(*id)arg0 ;
+-(id)createPresenceDetectOperationWithError:(*id)arg0 ;
+-(id)periocularMatchStateForUser:(unsigned int)arg0 error:(*id)arg1 ;
+-(id)periocularMatchStateWithError:(*id)arg0 ;
+-(id)queryIdentityMigrationFailureForUser:(unsigned int)arg0 error:(*id)arg1 ;
+-(id)supportsPeriocularEnrollmentWithError:(*id)arg0 ;
+-(void)removePeriocularEnrollmentsForUser:(unsigned int)arg0 identityUUID:(id)arg1 removeAll:(BOOL)arg2 async:(BOOL)arg3 reply:(id)arg4 ;
+-(void)removePeriocularEnrollmentsForUser:(unsigned int)arg0 removeAll:(BOOL)arg1 reply:(id)arg2 ;
+-(void)removePeriocularEnrollmentsFromIdentity:(id)arg0 removeAll:(BOOL)arg1 reply:(id)arg2 ;
+-(void)statusMessage:(unsigned int)arg0 client:(NSUInteger)arg1 ;
+
+
+@end
+
+
+#endif

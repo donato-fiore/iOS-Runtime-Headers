@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _CNFORKJOINOBSERVABLE_H
+#define _CNFORKJOINOBSERVABLE_H
+
+@class NSArray;
+@protocol CNForkJoinResultReportingStrategy;
+
+
+#import "CNObservable.h"
+
+@interface _CNForkJoinObservable : CNObservable {
+    NSArray *_observables;
+    id<CNForkJoinResultReportingStrategy> *_resultReportingStrategy;
+}
+
+
+
+
++(id)forkJoin:(id)arg0 ;
++(id)progressiveForkJoin:(id)arg0 ;
+-(id)initWithObservables:(id)arg0 reportingStrategy:(id)arg1 ;
+-(id)subscribe:(id)arg0 ;
+
+
+@end
+
+
+#endif

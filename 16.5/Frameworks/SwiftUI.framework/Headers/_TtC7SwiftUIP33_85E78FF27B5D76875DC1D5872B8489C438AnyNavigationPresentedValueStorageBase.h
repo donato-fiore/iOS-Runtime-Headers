@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC7SWIFTUIP33_85E78FF27B5D76875DC1D5872B8489C438ANYNAVIGATIONPRESENTEDVALUESTORAGEBASE_H
+#define _TTC7SWIFTUIP33_85E78FF27B5D76875DC1D5872B8489C438ANYNAVIGATIONPRESENTEDVALUESTORAGEBASE_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC7SwiftUIP33_85E78FF27B5D76875DC1D5872B8489C438AnyNavigationPresentedValueStorageBase : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

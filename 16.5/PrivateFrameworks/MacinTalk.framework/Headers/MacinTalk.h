@@ -1,0 +1,18 @@
+
+
+#include "MTFrontendSimple.h"
+#include "MTWrappedPhraseProcessor.h"
+#include "MTObjCUtils.h"
+#include "MTFWrappedSpeechElement.h"
+#include "MTFWrappedSentence.h"
+#include "MTFWrappedIntonationalPhrase.h"
+#include "MTFWrappedIntermediatePhrase.h"
+#include "MTFWrappedWord.h"
+#include "MTFWrappedHomograph.h"
+#include "MTFWrappedSyllable.h"
+#include "MTFWrappedPhoneme.h"
+#include "MTFWrappedCommand.h"
+#include "MTAudioUnitFactory.h"
+#include "MTFVoice.h"
+#include "MTVoiceUtils.h"
+#include "MTMacinTalkAUSPAudioUnit.h"

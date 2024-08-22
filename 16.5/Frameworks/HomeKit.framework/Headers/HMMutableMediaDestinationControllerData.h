@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef HMMUTABLEMEDIADESTINATIONCONTROLLERDATA_H
+#define HMMUTABLEMEDIADESTINATIONCONTROLLERDATA_H
+
+@class NSArray, NSUUID;
+
+
+#import "HMMediaDestinationControllerData.h"
+
+@interface HMMutableMediaDestinationControllerData : HMMediaDestinationControllerData
+
+@property (copy) NSArray *availableDestinationIdentifiers;
+@property (copy) NSUUID *destinationIdentifier;
+@property NSUInteger supportedOptions;
+
+
++(id)logCategory;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+
+
+@end
+
+
+#endif

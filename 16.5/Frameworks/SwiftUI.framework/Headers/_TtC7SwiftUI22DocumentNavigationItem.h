@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC7SWIFTUI22DOCUMENTNAVIGATIONITEM_H
+#define _TTC7SWIFTUI22DOCUMENTNAVIGATIONITEM_H
+
+@class UINavigationItem, NSString;
+
+
+
+@interface _TtC7SwiftUI22DocumentNavigationItem : UINavigationItem {
+    ? onDismiss;
+    ? documentBrowserButton;
+}
+
+
+@property (nonatomic, copy) NSString *title;
+
+
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithTitle:(id)arg0 ;
+
+
+@end
+
+
+#endif

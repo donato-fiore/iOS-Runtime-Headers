@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC25NANOWEATHERKITUICOMPANIONP33_62A64D66728D49E2724C17D463600A2211NWKUIBUNDLE_H
+#define _TTC25NANOWEATHERKITUICOMPANIONP33_62A64D66728D49E2724C17D463600A2211NWKUIBUNDLE_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC25NanoWeatherKitUICompanionP33_62A64D66728D49E2724C17D463600A2211NWKUIBundle : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

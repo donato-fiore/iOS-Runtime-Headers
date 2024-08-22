@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTCC18PREVIEWSFOUNDATION13IOPOWERSOURCEP33_8F6E2C702C921C25D40C944BB2A1B89127NOTIFICATIONCALLBACKWRAPPER_H
+#define _TTCC18PREVIEWSFOUNDATION13IOPOWERSOURCEP33_8F6E2C702C921C25D40C944BB2A1B89127NOTIFICATIONCALLBACKWRAPPER_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCC18PreviewsFoundation13IOPowerSourceP33_8F6E2C702C921C25D40C944BB2A1B89127NotificationCallbackWrapper : SwiftObject {
+    ? powerSource;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

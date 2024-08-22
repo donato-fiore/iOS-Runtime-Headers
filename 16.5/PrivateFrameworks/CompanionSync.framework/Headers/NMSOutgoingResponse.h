@@ -1,0 +1,48 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef NMSOUTGOINGRESPONSE_H
+#define NMSOUTGOINGRESPONSE_H
+
+@class NSData, NSString, NSDictionary, IDSMessageContext, NSSet;
+@protocol NMSDeviceTargetable, NMSObfuscatableDescriptionProviding, OS_os_transaction;
+
+#import <Foundation/Foundation.h>
+
+#import "NMSIncomingRequest.h"
+
+@interface NMSOutgoingResponse : NSObject <NMSDeviceTargetable, NMSObfuscatableDescriptionProviding>
+
+
+
+@property (retain, nonatomic) NSData *data; // ivar: _data
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain, nonatomic) NSDictionary *extraIDSOptions; // ivar: _extraIDSOptions
+@property (readonly) NSUInteger hash;
+@property (retain, nonatomic) IDSMessageContext *idsContext; // ivar: _idsContext
+@property (copy, nonatomic) NSString *idsIdentifier; // ivar: _idsIdentifier
+@property (retain, nonatomic) id *pbResponse; // ivar: _pbResponse
+@property (retain, nonatomic) NSDictionary *persistentUserInfo; // ivar: _persistentUserInfo
+@property (nonatomic) NSUInteger priority; // ivar: _priority
+@property (weak, nonatomic) NMSIncomingRequest *request; // ivar: _request
+@property (nonatomic) CGFloat sendTimeout; // ivar: _sendTimeout
+@property (getter=isSent) BOOL sent; // ivar: _sent
+@property (readonly) Class superclass;
+@property (copy, nonatomic) NSSet *targetDeviceIDs; // ivar: targetDeviceIDs
+@property (retain, nonatomic) NSObject<OS_os_transaction> *transaction; // ivar: _transaction
+
+
+-(id)CPObfuscatedDescriptionObject;
+-(id)_makePBResponse;
+-(id)init;
+-(void)dealloc;
+-(void)send;
+
+
+@end
+
+
+#endif

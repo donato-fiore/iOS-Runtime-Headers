@@ -1,0 +1,77 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef AVTRENDERER_H
+#define AVTRENDERER_H
+
+@class SCNRenderer, SCNNode, NSLock, SCNTechnique, NSString;
+@protocol _SCNSceneCommandBufferStatusMonitor, _SCNSceneRendererResourceManagerMonitor, SCNSceneRendererDelegate, _SCNSceneRendererDelegateSPI;
+
+
+#import "AVTAvatarEnvironment.h"
+#import "AVTPresentationConfiguration.h"
+#import "AVTAvatar.h"
+#import "AVTFaceTracker.h"
+#import "AVTARMaskRenderer.h"
+
+@interface AVTRenderer : SCNRenderer <_SCNSceneCommandBufferStatusMonitor, _SCNSceneRendererResourceManagerMonitor, SCNSceneRendererDelegate, _SCNSceneRendererDelegateSPI>
+
+ {
+    AVTAvatarEnvironment *_environment;
+    AVTPresentationConfiguration *_presentationConfiguration;
+    AVTAvatar *_avatar;
+    SCNNode *_avatarNode;
+    NSLock *_lock;
+    BOOL _pauseSimulation;
+    AVTFaceTracker *_faceTracker;
+    NSUInteger _antialiasingMode;
+    SCNTechnique *_arMaskTechnique;
+    AVTARMaskRenderer *_arMaskRenderer;
+    BOOL _arMaskRendererHasFlippedDepth;
+}
+
+
+@property (nonatomic) BOOL arMode;
+@property (retain, nonatomic) AVTAvatar *avatar;
+@property (nonatomic) NSUInteger avt_antialiasingMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain, nonatomic) AVTFaceTracker *faceTracker;
+@property (copy, nonatomic) NSString *framingMode;
+@property (readonly) NSUInteger hash;
+@property (nonatomic) BOOL pauseSimulation;
+@property (retain, nonatomic) AVTPresentationConfiguration *presentationConfiguration;
+@property (readonly) Class superclass;
+
+
++(id)renderer;
+-(BOOL)enableDepthMask;
+-(id)_initWithOptions:(id)arg0 isPrivateRenderer:(BOOL)arg1 privateRendererOwner:(id)arg2 clearsOnDraw:(BOOL)arg3 context:(*void)arg4 renderingAPI:(NSUInteger)arg5 ;
+-(id)_renderer:(id)arg0 subdivDataForHash:(id)arg1 ;
+-(id)capturedDepth;
+-(void)_avtSetupWithOptions:(id)arg0 ;
+-(void)_detachAvatarFromRenderer;
+-(void)_renderer:(id)arg0 didApplyAnimationsAtTime:(CGFloat)arg1 ;
+-(void)_renderer:(id)arg0 didBuildSubdivDataForHash:(id)arg1 dataProvider:(id)arg2 ;
+-(void)_renderer:(id)arg0 updateAtTime:(CGFloat)arg1 ;
+-(void)_updatePhysicsWorldForAvatarARScaleAndARMode:(BOOL)arg0 ;
+-(void)dealloc;
+-(void)faceTrackerDidUpdate:(id)arg0 withARFrame:(id)arg1 ;
+-(void)fadePuppetToWhite:(float)arg0 ;
+-(void)renderAtTime:(CGFloat)arg0 viewport:(struct CGRect )arg1 commandBuffer:(id)arg2 passDescriptor:(id)arg3 ;
+-(void)renderWithViewport:(struct CGRect )arg0 commandBuffer:(id)arg1 passDescriptor:(id)arg2 ;
+-(void)renderer:(id)arg0 commandBufferDidCompleteWithError:(id)arg1 ;
+-(void)renderer:(id)arg0 didFallbackToDefaultTextureForSource:(id)arg1 message:(id)arg2 ;
+-(void)setCapturedDepth:(id)arg0 ;
+-(void)setEnableDepthMask:(BOOL)arg0 ;
+-(void)setEnableDepthMask:(BOOL)arg0 withFlippedDepth:(BOOL)arg1 ;
+-(void)setValue:(id)arg0 forUndefinedKey:(id)arg1 ;
+-(void)updateProjectionMatrixForARModeIfNeeded:(struct CGSize )arg0 ;
+
+
+@end
+
+
+#endif

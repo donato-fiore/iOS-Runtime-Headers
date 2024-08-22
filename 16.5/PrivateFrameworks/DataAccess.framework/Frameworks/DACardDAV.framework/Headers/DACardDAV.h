@@ -1,0 +1,15 @@
+
+
+#include "CardDAVVCardItemCNImplementation.h"
+#include "DAContactsGroup.h"
+#include "CardDAVVCardItemABImplementation.h"
+#include "CardDAVDelegateManager.h"
+#include "CardDAVLocalDBHelper.h"
+#include "CardDAVPropertiesHelper.h"
+#include "CardDAViCloudDelegateInfoProvider.h"
+#include "DAABLegacyGroup.h"
+#include "DAABLegacyContact.h"
+#include "CardDAVVCardItem.h"
+#include "CardDAVDelegateInfo.h"
+#include "DAContactsContact.h"
+#include "CardDAVAccount.h"

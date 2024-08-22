@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef USAGETALLYSAMPLE_H
+#define USAGETALLYSAMPLE_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface UsageTallySample : NSObject
+
+@property (nonatomic) NSUInteger byteCount; // ivar: _byteCount
+@property (nonatomic) CGFloat elapsedTime; // ivar: _elapsedTime
+@property (nonatomic) CGFloat startTimeIntervalSinceReferenceDate; // ivar: _startTimeIntervalSinceReferenceDate
+
+
+-(id)description;
+
+
+@end
+
+
+#endif

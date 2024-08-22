@@ -1,0 +1,18 @@
+
+
+#include "SearchForSportsIntent.h"
+#include "SearchForSportsIntentResponse.h"
+#include "GetSuggestionsIntent.h"
+#include "GetSuggestionsIntentResponse.h"
+#include "ExecuteSuggestionIntent.h"
+#include "ExecuteSuggestionIntentResponse.h"
+#include "Suggestion.h"
+#include "SuggestionResolutionResult.h"
+#include "ActionParameter.h"
+#include "ActionParameterResolutionResult.h"
+#include "SocialConversationIntent.h"
+#include "SocialConversationIntentResponse.h"
+#include "SiriLinkFlowIntent.h"
+#include "SiriLinkFlowIntentResponse.h"
+#include "DisambiguateActionsIntent.h"
+#include "DisambiguateActionsIntentResponse.h"

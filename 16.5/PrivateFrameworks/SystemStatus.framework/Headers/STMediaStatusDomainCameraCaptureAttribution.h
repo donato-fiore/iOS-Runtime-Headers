@@ -1,0 +1,44 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef STMEDIASTATUSDOMAINCAMERACAPTUREATTRIBUTION_H
+#define STMEDIASTATUSDOMAINCAMERACAPTUREATTRIBUTION_H
+
+@class NSString;
+@protocol NSSecureCoding, BSDescriptionProviding, NSCopying;
+
+#import <Foundation/Foundation.h>
+
+#import "STActivityAttribution.h"
+#import "STMediaStatusDomainCameraDescriptor.h"
+
+@interface STMediaStatusDomainCameraCaptureAttribution : NSObject <NSSecureCoding, BSDescriptionProviding, NSCopying>
+
+
+
+@property (readonly, copy, nonatomic) STActivityAttribution *activityAttribution; // ivar: _activityAttribution
+@property (readonly, copy, nonatomic) STMediaStatusDomainCameraDescriptor *cameraDescriptor; // ivar: _cameraDescriptor
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)descriptionBuilderWithMultilinePrefix:(id)arg0 ;
+-(id)descriptionWithMultilinePrefix:(id)arg0 ;
+-(id)initWithCameraDescriptor:(id)arg0 activityAttribution:(id)arg1 ;
+-(id)initWithCoder:(id)arg0 ;
+-(id)succinctDescription;
+-(id)succinctDescriptionBuilder;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

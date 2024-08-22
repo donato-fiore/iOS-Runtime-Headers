@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _SFPBURL_H
+#define _SFPBURL_H
+
+@class PBCodable, NSString, NSData;
+@protocol _SFPBURL, NSSecureCoding;
+
+
+
+@interface _SFPBURL : PBCodable <_SFPBURL, NSSecureCoding>
+
+
+
+@property (copy, nonatomic) NSString *address; // ivar: _address
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) NSData *jsonData;
+@property (readonly) Class superclass;
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(id)dictionaryRepresentation;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(id)initWithNSURL:(id)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

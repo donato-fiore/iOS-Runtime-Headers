@@ -1,0 +1,75 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef DNDCONFIGURATION_H
+#define DNDCONFIGURATION_H
+
+@class NSDictionary, NSSet;
+@protocol NSCopying, NSMutableCopying, NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+#import "DNDBypassSettings.h"
+#import "DNDSenderConfiguration.h"
+
+@interface DNDConfiguration : NSObject <NSCopying, NSMutableCopying, NSSecureCoding>
+
+
+
+@property (readonly, copy, nonatomic) NSDictionary *allowedApplicationIdentifiers; // ivar: _allowedApplicationIdentifiers
+@property (copy, nonatomic) NSSet *allowedWebApplicationIdentifiers; // ivar: _allowedWebApplicationIdentifiers
+@property (readonly, nonatomic) NSUInteger applicationConfigurationType; // ivar: _applicationConfigurationType
+@property (readonly, copy, nonatomic) NSSet *applicationsWithExceptions;
+@property (readonly, nonatomic) NSInteger compatibilityVersion; // ivar: _compatibilityVersion
+@property (readonly, copy, nonatomic) NSSet *contactsWithExceptions;
+@property (readonly, copy, nonatomic) NSSet *deniedApplicationIdentifiers; // ivar: _deniedApplicationIdentifiers
+@property (copy, nonatomic) NSSet *deniedWebApplicationIdentifiers; // ivar: _deniedWebApplicationIdentifiers
+@property (readonly, nonatomic) NSUInteger hideApplicationBadges; // ivar: _hideApplicationBadges
+@property (readonly, nonatomic) NSUInteger minimumBreakthroughUrgency; // ivar: _minimumBreakthroughUrgency
+@property (readonly, copy, nonatomic) DNDBypassSettings *phoneCallBypassSettings;
+@property (readonly, nonatomic) NSInteger rawCompatibilityVersion;
+@property (readonly, copy, nonatomic) DNDSenderConfiguration *senderConfiguration; // ivar: _senderConfiguration
+@property (readonly, nonatomic) NSUInteger senderConfigurationType; // ivar: _senderConfigurationType
+@property (readonly, nonatomic, getter=isSupportedConfiguration) BOOL supportedConfiguration;
+@property (readonly, nonatomic) NSUInteger suppressionType; // ivar: _suppressionType
+@property (readonly, nonatomic) NSUInteger threadConfigurationType;
+@property (readonly, copy, nonatomic) NSDictionary *threadsWithExceptions;
+@property (readonly, nonatomic) NSUInteger type;
+@property (readonly, copy, nonatomic) NSSet *webApplicationsWithExceptions;
+
+
++(BOOL)supportsSecureCoding;
++(NSUInteger)defaultConfigurationType;
++(NSUInteger)defaultMinimumBreakthroughUrgency;
++(NSUInteger)defaultSuppressionType;
+-(BOOL)isEqual:(id)arg0 ;
+-(NSUInteger)_exceptionForApplicationIdentifier:(id)arg0 thread:(id)arg1 ;
+-(NSUInteger)exceptionForApplication:(id)arg0 ;
+-(NSUInteger)exceptionForApplication:(id)arg0 thread:(id)arg1 ;
+-(NSUInteger)exceptionForApplicationIdentifier:(id)arg0 ;
+-(NSUInteger)exceptionForApplicationIdentifier:(id)arg0 thread:(id)arg1 ;
+-(NSUInteger)exceptionForContact:(id)arg0 ;
+-(NSUInteger)exceptionForContactHandle:(id)arg0 ;
+-(NSUInteger)exceptionForWebApplicationIdentifier:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)_descriptionForRedacted:(BOOL)arg0 ;
+-(id)_initWithConfigurationType:(NSUInteger)arg0 ;
+-(id)_initWithSuppressionType:(NSUInteger)arg0 allowedApplicationIdentifiers:(id)arg1 deniedApplicationIdentifiers:(id)arg2 allowedWebApplicationIdentifiers:(id)arg3 deniedWebApplicationIdentifiers:(id)arg4 senderConfiguration:(id)arg5 minimumBreakthroughUrgency:(NSUInteger)arg6 hideApplicationBadges:(NSUInteger)arg7 compatibilityVersion:(NSInteger)arg8 applicationConfigurationType:(NSUInteger)arg9 senderConfigurationType:(NSUInteger)arg10 ;
+-(id)allowedApplications;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)deniedApplications;
+-(id)description;
+-(id)initWithCoder:(id)arg0 ;
+-(id)mutableCopyWithZone:(struct _NSZone *)arg0 ;
+-(id)redactedDescription;
+-(void)diffAgainstObject:(id)arg0 usingDiffBuilder:(id)arg1 withDescription:(id)arg2 ;
+-(void)encodeWithCoder:(id)arg0 ;
+-(void)log:(id)arg0 withPrefix:(id)arg1 ;
+
+
+@end
+
+
+#endif

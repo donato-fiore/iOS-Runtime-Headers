@@ -1,0 +1,52 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef DODMLASRSCHEMADODMLASRCONFUSIONPAIR_H
+#define DODMLASRSCHEMADODMLASRCONFUSIONPAIR_H
+
+@class NSData;
+
+
+#import "SISchemaInstrumentationMessage.h"
+#import "SISchemaUUID.h"
+
+@interface DODMLASRSchemaDODMLASRConfusionPair : SISchemaInstrumentationMessage {
+    ? _has;
+}
+
+
+@property (retain, nonatomic) SISchemaUUID *asrId; // ivar: _asrId
+@property (nonatomic) int editMethod; // ivar: _editMethod
+@property (nonatomic) int editReason; // ivar: _editReason
+@property (nonatomic) int errorCode; // ivar: _errorCode
+@property (nonatomic) BOOL hasAsrId; // ivar: _hasAsrId
+@property (nonatomic) BOOL hasEditMethod;
+@property (nonatomic) BOOL hasEditReason;
+@property (nonatomic) BOOL hasErrorCode;
+@property (nonatomic) BOOL hasRecognizedTextStartIndex;
+@property (readonly, nonatomic) NSData *jsonData;
+@property (nonatomic) int recognizedTextStartIndex; // ivar: _recognizedTextStartIndex
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)applySensitiveConditionsPolicy:(id)arg0 ;
+-(id)dictionaryRepresentation;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(id)suppressMessageUnderConditions;
+-(void)deleteAsrId;
+-(void)deleteEditMethod;
+-(void)deleteEditReason;
+-(void)deleteErrorCode;
+-(void)deleteRecognizedTextStartIndex;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

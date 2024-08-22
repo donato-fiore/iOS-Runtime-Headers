@@ -1,0 +1,7 @@
+
+
+#include "_TtC32InfoQueryPersonalizationFeatures37PegasusRequestPersonalizationFeatures.h"
+#include "_TtC32InfoQueryPersonalizationFeatures24AugmentedPegasusResponse.h"
+#include "_TtC32InfoQueryPersonalizationFeatures19UpcomingReservation.h"
+#include "_TtC32InfoQueryPersonalizationFeatures38PegasusResponsePersonalizationFeatures.h"
+#include "_TtC32InfoQueryPersonalizationFeatures27PersonalizationEntityLookup.h"

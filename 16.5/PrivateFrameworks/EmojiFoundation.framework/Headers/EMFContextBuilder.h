@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef EMFCONTEXTBUILDER_H
+#define EMFCONTEXTBUILDER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface EMFContextBuilder : NSObject
+
+
+
+-(id)init;
+-(void)enumerateWindowsForContext:(id)arg0 range:(struct _NSRange )arg1 searchAnchors:(id)arg2 usingBlock:(id)arg3 ;
+
+
+@end
+
+
+#endif

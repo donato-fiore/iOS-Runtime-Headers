@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef HMDACCESSORYFIRMWAREUPDATEMANAGERWINGMAN_H
+#define HMDACCESSORYFIRMWAREUPDATEMANAGERWINGMAN_H
+
+@class UARPController;
+@protocol HMDAccessoryFirmwareUpdateManagerWingman;
+
+#import <Foundation/Foundation.h>
+
+
+@interface HMDAccessoryFirmwareUpdateManagerWingman : NSObject <HMDAccessoryFirmwareUpdateManagerWingman>
+
+
+
+@property (readonly, nonatomic) UARPController *defaultUARPController; // ivar: _defaultUARPController
+@property (readonly, nonatomic) UARPController *matterUARPController; // ivar: _matterUARPController
+@property (readonly, nonatomic) CGFloat registerDelay; // ivar: _registerDelay
+
+
+-(id)init;
+-(id)newAccessoryFirmwareUpdateSessionWithHAPAccessory:(id)arg0 uarpAccessory:(id)arg1 accessoryFirmwareUpdateManager:(id)arg2 logEventManager:(id)arg3 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef CKXPROXYCACHE_H
+#define CKXPROXYCACHE_H
+
+@class NSMapTable, NSMutableArray;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CKXProxyCache : NSObject
+
+@property (retain, nonatomic) NSMapTable *cachedProxies; // ivar: _cachedProxies
+@property (retain, nonatomic) NSMutableArray *scopedProxies; // ivar: _scopedProxies
+@property (nonatomic) NSInteger totalProxiesCreated; // ivar: _totalProxiesCreated
+@property (nonatomic) NSInteger totalProxiesReclaimed; // ivar: _totalProxiesReclaimed
+@property (nonatomic) NSInteger totalProxiesRetainedOutOfScope; // ivar: _totalProxiesRetainedOutOfScope
+
+
+-(id)debugDescription;
+-(id)init;
+-(id)proxyForClass:(Class)arg0 withScope:(NSInteger)arg1 ;
+-(void)_putBackProxyWithoutCheckingScope:(id)arg0 ;
+-(void)dealloc;
+-(void)putBackAllProxiesWithScope:(NSInteger)arg0 ;
+
+
+@end
+
+
+#endif

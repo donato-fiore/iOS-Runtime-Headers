@@ -1,0 +1,54 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef VKCVISUALSEARCHCORNERVIEW_H
+#define VKCVISUALSEARCHCORNERVIEW_H
+
+@class NSString, NSMutableArray, NSArray;
+@protocol VKCCornerLookupButtonDelegate, VKCVisualSearchCornerViewDelegate;
+
+
+#import "VKCTappableView.h"
+#import "VKCImageAnalysis.h"
+
+@interface VKCVisualSearchCornerView : VKCTappableView <VKCCornerLookupButtonDelegate>
+
+
+
+@property (copy, nonatomic) NSString *_customAnalyticsIdentifier; // ivar: __customAnalyticsIdentifier
+@property (retain, nonatomic) VKCImageAnalysis *analysis; // ivar: _analysis
+@property (readonly, nonatomic) CGFloat buttonSpacing;
+@property (retain, nonatomic) NSMutableArray *cornerButtons; // ivar: _cornerButtons
+@property (retain, nonatomic) NSArray *cornerResultItems; // ivar: _cornerResultItems
+@property (weak, nonatomic) NSObject<VKCVisualSearchCornerViewDelegate> *delegate; // ivar: _delegate
+@property (nonatomic) CGRect normalizedVisibleRect; // ivar: _normalizedVisibleRect
+@property (readonly, nonatomic) CGFloat windowScale;
+
+
+-(BOOL)_itemObscuredByViewport:(id)arg0 ;
+-(id)_resultItems;
+-(id)init;
+-(struct CGSize )intrinsicContentSize;
+-(void)_contentSizeChanged:(id)arg0 ;
+-(void)_showCornerLookupButtonsForResults:(id)arg0 ;
+-(void)_updateButtonFramesWithScale:(CGFloat)arg0 ;
+-(void)addMetadataToVSFeedbackItem:(id)arg0 ;
+-(void)automaticallyShowVisualSearchResultsIfApplicable;
+-(void)generateVisualSearchResultForItems:(id)arg0 queryID:(NSUInteger)arg1 completionHandler:(id)arg2 ;
+-(void)invalidateButtonsForResults;
+-(void)lookupButton:(id)arg0 didProcessResultWithDuration:(CGFloat)arg1 ;
+-(void)lookupButton:(id)arg0 didTapVisualSearchIndicatorWithNormalizedBoundingBox:(struct CGRect )arg1 ;
+-(void)lookupButtonDidDismissController:(id)arg0 ;
+-(void)sendDismissedAnalyticsEventEventWithItem:(id)arg0 ;
+-(void)sendProcessingAnalyticsEventEventWithItem:(id)arg0 duration:(CGFloat)arg1 ;
+-(void)showVisualSearchResultView;
+-(void)submitVisualSearchUserFeedbackForReportIdentifier:(id)arg0 userFeedbackPayload:(id)arg1 sfReportData:(id)arg2 ;
+-(void)traitCollectionDidChange:(id)arg0 ;
+
+
+@end
+
+
+#endif

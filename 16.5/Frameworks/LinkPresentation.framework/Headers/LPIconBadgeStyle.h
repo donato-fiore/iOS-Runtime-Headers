@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef LPICONBADGESTYLE_H
+#define LPICONBADGESTYLE_H
+
+@protocol NSCopying;
+
+
+#import "LPImageViewStyle.h"
+
+@interface LPIconBadgeStyle : LPImageViewStyle <NSCopying>
+
+
+
+@property (nonatomic) CGFloat offset; // ivar: _offset
+
+
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+
+
+@end
+
+
+#endif

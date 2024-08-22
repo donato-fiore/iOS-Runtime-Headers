@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTCV10SNIPPETKIT20_PROTOREFERENCE_RICHP33_6651C9A5DAA023CDF6F3DE60C332CBAD13_STORAGECLASS_H
+#define _TTCV10SNIPPETKIT20_PROTOREFERENCE_RICHP33_6651C9A5DAA023CDF6F3DE60C332CBAD13_STORAGECLASS_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCV10SnippetKit20_ProtoReference_RichP33_6651C9A5DAA023CDF6F3DE60C332CBAD13_StorageClass : SwiftObject {
+    ? _text1;
+    ? _text2;
+    ? _thumbnail;
+    ? _action;
+    ? _componentName;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

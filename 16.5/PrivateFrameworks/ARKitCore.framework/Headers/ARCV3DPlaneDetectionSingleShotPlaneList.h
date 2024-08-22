@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef ARCV3DPLANEDETECTIONSINGLESHOTPLANELIST_H
+#define ARCV3DPLANEDETECTIONSINGLESHOTPLANELIST_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface ARCV3DPlaneDetectionSingleShotPlaneList : NSObject
+
+@property (readonly, nonatomic) *CV3DPlaneDetectionSingleShotPlaneList cv3dPlaneDetections; // ivar: _cv3dPlaneDetections
+
+
+-(id)initWithDetectionResult:(struct CV3DPlaneDetectionSingleShotPlaneList *)arg0 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

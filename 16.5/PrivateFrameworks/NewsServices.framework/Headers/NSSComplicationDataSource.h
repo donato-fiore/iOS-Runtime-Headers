@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef NSSCOMPLICATIONDATASOURCE_H
+#define NSSCOMPLICATIONDATASOURCE_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface NSSComplicationDataSource : NSObject
+
+
+
++(id)nss_newsComplicationTemplateForFamily:(NSInteger)arg0 compact:(BOOL)arg1 ;
+
+
+@end
+
+
+#endif

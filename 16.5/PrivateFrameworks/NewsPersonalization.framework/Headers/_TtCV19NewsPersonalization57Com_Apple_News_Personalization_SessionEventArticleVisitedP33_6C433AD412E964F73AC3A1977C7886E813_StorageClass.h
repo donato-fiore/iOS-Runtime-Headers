@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTCV19NEWSPERSONALIZATION57COM_APPLE_NEWS_PERSONALIZATION_SESSIONEVENTARTICLEVISITEDP33_6C433AD412E964F73AC3A1977C7886E813_STORAGECLASS_H
+#define _TTCV19NEWSPERSONALIZATION57COM_APPLE_NEWS_PERSONALIZATION_SESSIONEVENTARTICLEVISITEDP33_6C433AD412E964F73AC3A1977C7886E813_STORAGECLASS_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCV19NewsPersonalization57Com_Apple_News_Personalization_SessionEventArticleVisitedP33_6C433AD412E964F73AC3A1977C7886E813_StorageClass : SwiftObject {
+    ? _article;
+    ? _duration;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

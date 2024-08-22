@@ -1,0 +1,12 @@
+
+
+#include "_TtC25SiriSystemCommandsIntents29SCSystemCommandsYesNoStrategy.h"
+#include "_TtC25SiriSystemCommandsIntents20LocalizationProvider.h"
+#include "_TtC25SiriSystemCommandsIntents26SystemCommandsFlowProvider.h"
+#include "_TtC25SiriSystemCommandsIntents26SystemCommandsFeatureFlags.h"
+#include "_TtC25SiriSystemCommandsIntents17SCSystemQueryFlow.h"
+#include "_TtC25SiriSystemCommandsIntents16SCScreenshotFlow.h"
+#include "_TtC25SiriSystemCommandsIntents10SCLockFlow.h"
+#include "_TtC25SiriSystemCommandsIntents26SCStartScreenRecordingFlow.h"
+#include "_TtC25SiriSystemCommandsIntents21SCRestartShutdownFlow.h"
+#include "_TtC25SiriSystemCommandsIntents25SCStopScreenRecordingFlow.h"

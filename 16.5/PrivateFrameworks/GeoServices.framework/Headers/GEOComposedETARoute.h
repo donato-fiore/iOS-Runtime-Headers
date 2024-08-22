@@ -1,0 +1,60 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef GEOCOMPOSEDETAROUTE_H
+#define GEOCOMPOSEDETAROUTE_H
+
+@class NSUUID, NSArray;
+@protocol _GEORouteHypothesisMonitorETAProvider, NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+#import "GEOETATrafficUpdateWaypointRoute.h"
+
+@interface GEOComposedETARoute : NSObject <_GEORouteHypothesisMonitorETAProvider, NSSecureCoding>
+
+ {
+    NSUInteger _startingStepIndex;
+    GEOETATrafficUpdateWaypointRoute *_geoETAWaypointRoute;
+}
+
+
+@property (readonly, nonatomic) CGFloat _hypothesis_travelDuration;
+@property (readonly, nonatomic) CGFloat _hypothesis_travelDurationAggressiveEstimate;
+@property (readonly, nonatomic) CGFloat _hypothesis_travelDurationConservativeEstimate;
+@property (readonly, nonatomic) NSUUID *etauResponseID; // ivar: _etauResponseID
+@property (readonly, nonatomic) BOOL hasValidTravelDurations; // ivar: _hasValidTravelDurations
+@property (readonly, nonatomic) CGFloat historicTravelDuration; // ivar: _historicTravelDuration
+@property (readonly, nonatomic) NSArray *legs; // ivar: _legs
+@property (readonly, nonatomic) CGFloat length; // ivar: _length
+@property (readonly, nonatomic) ? startRouteCoordinate; // ivar: _startRouteCoordinate
+@property (readonly, nonatomic) CGFloat travelDuration; // ivar: _travelDuration
+@property (readonly, nonatomic) CGFloat travelDurationAggressiveEstimate; // ivar: _travelDurationAggressiveEstimate
+@property (readonly, nonatomic) CGFloat travelDurationConservativeEstimate; // ivar: _travelDurationConservativeEstimate
+@property (readonly, nonatomic) NSUUID *uniqueRouteID; // ivar: _uniqueRouteID
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)prepareForRequest:(id)arg0 route:(id)arg1 routeMatch:(id)arg2 targetLegIndex:(NSUInteger)arg3 state:(int)arg4 ;
+-(BOOL)updateForResponse:(id)arg0 route:(id)arg1 ;
+-(CGFloat)_hypothesis_travelDurationFromStep:(id)arg0 stepRemainingDistance:(CGFloat)arg1 ;
+-(CGFloat)_travelDurationFromStepID:(NSUInteger)arg0 toStepID:(NSUInteger)arg1 currentStepRemainingDistance:(CGFloat)arg2 ;
+-(CGFloat)travelDurationToEndOfLegFromStepID:(NSUInteger)arg0 currentStepRemainingDistance:(CGFloat)arg1 ;
+-(CGFloat)travelDurationToEndOfRouteFromStepID:(NSUInteger)arg0 currentStepRemainingDistance:(CGFloat)arg1 ;
+-(id)description;
+-(id)evChargingStationInfos;
+-(id)evStepInfos;
+-(id)geoETAWaypointRoute;
+-(id)geoTrafficBannerText;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithRouteForTesting:(id)arg0 ;
+-(id)navigabilityInfo;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

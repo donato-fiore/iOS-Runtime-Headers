@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC12SESSIONALERT11ALERTCENTER_H
+#define _TTC12SESSIONALERT11ALERTCENTER_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC12SessionAlert11AlertCenter : SwiftObject {
+    ? queue;
+    ? calloutQueue;
+    ? syncEngine;
+    ? presenter;
+    ? watchdogIntervals;
+    ? _queue_store;
+    ? _queue_watchdogs;
+    ? _queue_delegate;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

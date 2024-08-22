@@ -1,0 +1,260 @@
+typedef struct _NSZone {
+} // Error Processing Struct Fields
+
+typedef struct CGPoint {
+    CGFloat x;
+    CGFloat y;
+} CGPoint;
+
+typedef struct CGSize {
+    CGFloat width;
+    CGFloat height;
+} CGSize;
+
+typedef struct CGRect {
+    CGPoint origin;
+    CGSize size;
+} CGRect;
+
+typedef struct _NSRange {
+    NSUInteger field0;
+    NSUInteger field1;
+} _NSRange;
+
+typedef struct __GSEvent {
+} // Error Processing Struct Fields
+
+typedef struct ? {
+    BOOL hasOverrideClient;
+    BOOL hasOverrideHost;
+    BOOL hasInputAssistantItem;
+    BOOL suppressSoftwareKeyboard;
+    BOOL conformsToUIKeyInputIsSet;
+    BOOL conformsToUIKeyInput;
+} ?;
+
+typedef struct CGVector {
+    CGFloat field0;
+    CGFloat field1;
+} CGVector;
+
+typedef struct UIEdgeInsets {
+    CGFloat top;
+    CGFloat left;
+    CGFloat bottom;
+    CGFloat right;
+} UIEdgeInsets;
+
+typedef struct NSDirectionalEdgeInsets {
+    CGFloat top;
+    CGFloat leading;
+    CGFloat bottom;
+    CGFloat trailing;
+} NSDirectionalEdgeInsets;
+
+typedef struct CGAffineTransform {
+    CGFloat a;
+    CGFloat b;
+    CGFloat c;
+    CGFloat d;
+    CGFloat tx;
+    CGFloat ty;
+} CGAffineTransform;
+
+typedef struct _UITraitCollectionTraitChanges {
+    BOOL field0;
+    BOOL field1;
+    BOOL field2;
+    BOOL field3;
+    BOOL field4;
+    BOOL field5;
+    BOOL field6;
+    BOOL field7;
+    BOOL field8;
+    BOOL field9;
+} _UITraitCollectionTraitChanges;
+
+typedef struct _UITraitCollectionChangeDescription {
+    id field0;
+    id field1;
+    BOOL field2;
+    _UITraitCollectionTraitChanges field3;
+} _UITraitCollectionChangeDescription;
+
+typedef struct CGContext {
+} // Error Processing Struct Fields
+
+typedef struct CATransform3D {
+    CGFloat m11;
+    CGFloat m12;
+    CGFloat m13;
+    CGFloat m14;
+    CGFloat m21;
+    CGFloat m22;
+    CGFloat m23;
+    CGFloat m24;
+    CGFloat m31;
+    CGFloat m32;
+    CGFloat m33;
+    CGFloat m34;
+    CGFloat m41;
+    CGFloat m42;
+    CGFloat m43;
+    CGFloat m44;
+} CATransform3D;
+
+typedef struct CGColor {
+} // Error Processing Struct Fields
+
+typedef struct UIRectCornerRadii {
+    CGFloat field0;
+    CGFloat field1;
+    CGFloat field2;
+    CGFloat field3;
+} UIRectCornerRadii;
+
+typedef struct CGImage {
+} // Error Processing Struct Fields
+
+typedef struct CAFrameRateRange {
+    float field0;
+    float field1;
+    float field2;
+} CAFrameRateRange;
+
+typedef struct __tree_end_node<std::__tree_node_base<void *> *> {
+    void __left_;
+} __tree_end_node<std::__tree_node_base<void *> *>;
+
+typedef struct __compressed_pair<std::__tree_end_node<std::__tree_node_base<void *> *>, std::allocator<std::__tree_node<std::__value_type<UIView *, _NUIContainerViewArrangedSubview>, void *>>> {
+    __tree_end_node<std::__tree_node_base<void *> *> __value_;
+} __compressed_pair<std::__tree_end_node<std::__tree_node_base<void *> *>, std::allocator<std::__tree_node<std::__value_type<UIView *, _NUIContainerViewArrangedSubview>, void *>>>;
+
+typedef struct __compressed_pair<unsigned long, std::__map_value_compare<UIView *, std::__value_type<UIView *, _NUIContainerViewArrangedSubview>, std::less<UIView *>, true>> {
+    NSUInteger __value_;
+} __compressed_pair<unsigned long, std::__map_value_compare<UIView *, std::__value_type<UIView *, _NUIContainerViewArrangedSubview>, std::less<UIView *>, true>>;
+
+typedef struct __tree<std::__value_type<UIView *, _NUIContainerViewArrangedSubview>, std::__map_value_compare<UIView *, std::__value_type<UIView *, _NUIContainerViewArrangedSubview>, std::less<UIView *>, true>, std::allocator<std::__value_type<UIView *, _NUIContainerViewArrangedSubview>>> {
+    void __begin_node_;
+    __compressed_pair<std::__tree_end_node<std::__tree_node_base<void *> *>, std::allocator<std::__tree_node<std::__value_type<UIView *, _NUIContainerViewArrangedSubview>, void *>>> __pair1_;
+    __compressed_pair<unsigned long, std::__map_value_compare<UIView *, std::__value_type<UIView *, _NUIContainerViewArrangedSubview>, std::less<UIView *>, true>> __pair3_;
+} __tree<std::__value_type<UIView *, _NUIContainerViewArrangedSubview>, std::__map_value_compare<UIView *, std::__value_type<UIView *, _NUIContainerViewArrangedSubview>, std::less<UIView *>, true>, std::allocator<std::__value_type<UIView *, _NUIContainerViewArrangedSubview>>>;
+
+typedef struct map<UIView *, _NUIContainerViewArrangedSubview, std::less<UIView *>, std::allocator<std::pair<UIView *const, _NUIContainerViewArrangedSubview>>> {
+    __tree<std::__value_type<UIView *, _NUIContainerViewArrangedSubview>, std::__map_value_compare<UIView *, std::__value_type<UIView *, _NUIContainerViewArrangedSubview>, std::less<UIView *>, true>, std::allocator<std::__value_type<UIView *, _NUIContainerViewArrangedSubview>>> __tree_;
+} map<UIView *, _NUIContainerViewArrangedSubview, std::less<UIView *>, std::allocator<std::pair<UIView *const, _NUIContainerViewArrangedSubview>>>;
+
+typedef struct __compressed_pair<CALayer **, std::allocator<CALayer *>> {
+    id __value_;
+} __compressed_pair<CALayer **, std::allocator<CALayer *>>;
+
+typedef struct vector<CALayer *, std::allocator<CALayer *>> {
+    id __begin_;
+    id __end_;
+    __compressed_pair<CALayer **, std::allocator<CALayer *>> __end_cap_;
+} vector<CALayer *, std::allocator<CALayer *>>;
+
+typedef struct _NUIGridArrangementCell {
+} // Error Processing Struct Fields
+
+typedef struct vector<_NUIGridArrangementCell, std::allocator<_NUIGridArrangementCell>> {
+} // Error Processing Struct Fields
+
+typedef struct _NUIGridArrangementDimension {
+} // Error Processing Struct Fields
+
+typedef struct vector<_NUIGridArrangementDimension, std::allocator<_NUIGridArrangementDimension>> {
+} // Error Processing Struct Fields
+
+typedef struct _NUIGridArrangement {
+} // Error Processing Struct Fields
+
+typedef struct __compressed_pair<std::__tree_end_node<std::__tree_node_base<void *> *>, std::allocator<std::__tree_node<std::__value_type<UIView *, double>, void *>>> {
+    __tree_end_node<std::__tree_node_base<void *> *> __value_;
+} __compressed_pair<std::__tree_end_node<std::__tree_node_base<void *> *>, std::allocator<std::__tree_node<std::__value_type<UIView *, double>, void *>>>;
+
+typedef struct __compressed_pair<unsigned long, std::__map_value_compare<UIView *, std::__value_type<UIView *, double>, std::less<UIView *>, true>> {
+    NSUInteger __value_;
+} __compressed_pair<unsigned long, std::__map_value_compare<UIView *, std::__value_type<UIView *, double>, std::less<UIView *>, true>>;
+
+typedef struct __tree<std::__value_type<UIView *, double>, std::__map_value_compare<UIView *, std::__value_type<UIView *, double>, std::less<UIView *>, true>, std::allocator<std::__value_type<UIView *, double>>> {
+    void __begin_node_;
+    __compressed_pair<std::__tree_end_node<std::__tree_node_base<void *> *>, std::allocator<std::__tree_node<std::__value_type<UIView *, double>, void *>>> __pair1_;
+    __compressed_pair<unsigned long, std::__map_value_compare<UIView *, std::__value_type<UIView *, double>, std::less<UIView *>, true>> __pair3_;
+} __tree<std::__value_type<UIView *, double>, std::__map_value_compare<UIView *, std::__value_type<UIView *, double>, std::less<UIView *>, true>, std::allocator<std::__value_type<UIView *, double>>>;
+
+typedef struct map<UIView *, double, std::less<UIView *>, std::allocator<std::pair<UIView *const, double>>> {
+    __tree<std::__value_type<UIView *, double>, std::__map_value_compare<UIView *, std::__value_type<UIView *, double>, std::less<UIView *>, true>, std::allocator<std::__value_type<UIView *, double>>> __tree_;
+} map<UIView *, double, std::less<UIView *>, std::allocator<std::pair<UIView *const, double>>>;
+
+typedef struct NSEdgeInsets {
+    CGFloat field0;
+    CGFloat field1;
+    CGFloat field2;
+    CGFloat field3;
+} NSEdgeInsets;
+
+typedef struct UIOffset {
+    CGFloat horizontal;
+    CGFloat vertical;
+} UIOffset;
+
+typedef struct _UIUpdateRequest {
+} // Error Processing Struct Fields
+
+typedef struct _UIUpdateRequestRecord {
+    _UIUpdateRequest field0;
+    unsigned int field1;
+} _UIUpdateRequestRecord;
+
+typedef struct __CFCharacterSet {
+} // Error Processing Struct Fields
+
+typedef struct _NUIBoxArrangementCell {
+} // Error Processing Struct Fields
+
+typedef struct vector<_NUIBoxArrangementCell, std::allocator<_NUIBoxArrangementCell>> {
+} // Error Processing Struct Fields
+
+typedef struct vector<CGRect, std::allocator<CGRect>> {
+} // Error Processing Struct Fields
+
+typedef struct _NUIBoxArrangement {
+    id container;
+    NSInteger <_NUIBoxArrangementContainer>;
+    NSInteger horzDist;
+    BOOL vertDist;
+    vector<_NUIBoxArrangementCell, std::allocator<_NUIBoxArrangementCell>> hasValidMeasurement;
+    CGSize cells;
+    vector<CGRect, std::allocator<CGRect>> measureSize;
+    ? viewFrames;
+} _NUIBoxArrangement;
+
+typedef struct __CFDictionary {
+} // Error Processing Struct Fields
+
+typedef struct _UICollectionViewVisibleCellsUpdateResult {
+    NSUInteger field0;
+    NSUInteger field1;
+    NSUInteger field2;
+    BOOL field3;
+} _UICollectionViewVisibleCellsUpdateResult;
+
+typedef struct __CFString {
+} // Error Processing Struct Fields
+
+typedef struct SBIconImageInfo {
+    CGSize size;
+    CGFloat scale;
+    CGFloat continuousCornerRadius;
+} SBIconImageInfo;
+
+typedef struct SBIconApproximateLayoutPosition {
+    NSUInteger horizontal;
+    NSUInteger vertical;
+} SBIconApproximateLayoutPosition;
+
+typedef struct os_activity_scope_state_s {
+    NSUInteger opaque;
+} os_activity_scope_state_s;
+

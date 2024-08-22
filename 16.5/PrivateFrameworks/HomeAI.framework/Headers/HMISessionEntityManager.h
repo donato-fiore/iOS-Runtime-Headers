@@ -1,0 +1,47 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef HMISESSIONENTITYMANAGER_H
+#define HMISESSIONENTITYMANAGER_H
+
+@class HMFObject, NSMutableDictionary, NSString;
+@protocol HMFLogging;
+
+
+#import "HMIPersonTracker.h"
+
+@interface HMISessionEntityManager : HMFObject <HMFLogging>
+
+ {
+    NSMutableDictionary *_sessionUUIDToPreviousFaceprints;
+    NSMutableDictionary *_sessionUUIDToPreviousTorsoprints;
+    HMIPersonTracker *_personTracker;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) CGFloat faceVIPThresholdForTorsoAnnotation; // ivar: _faceVIPThresholdForTorsoAnnotation
+@property (readonly) NSUInteger hash;
+@property (readonly) NSMutableDictionary *sessionEntities; // ivar: _sessionEntities
+@property (readonly) Class superclass;
+
+
++(id)logCategory;
++(id)updatePersonEventWithPersonEvent:(id)arg0 sessionEntityUUID:(id)arg1 predictedLinkedEntityUUIDs:(id)arg2 sessionEntityAssignment:(NSInteger)arg3 ;
+-(id)assignSessionEntitiesToPersonEvents:(id)arg0 regionOfInterest:(struct CGRect )arg1 timeStamp:(struct ? )arg2 homeUUID:(id)arg3 ;
+-(id)assignSessionEntityToFaceRecognition:(id)arg0 torsoRecognition:(id)arg1 predictedLinkedEntityUUIDs:(id)arg2 availableSessionEntityUUIDs:(id)arg3 sessionEntityAssignment:(*NSInteger)arg4 ;
+-(id)clusterSessionEntityToFaceRecognition:(id)arg0 torsoRecognition:(id)arg1 predictedLinkedEntityUUIDs:(id)arg2 availableSessionEntityUUIDs:(id)arg3 sessionEntityAssignment:(*NSInteger)arg4 ;
+-(id)init;
+-(id)updateTorsoModelAndGetTorsoAnnotationsForHome:(id)arg0 ;
+-(void)createSessionEntityWithUUID:(id)arg0 faceRecognition:(id)arg1 torsoRecognition:(id)arg2 predictedLinkedEntityUUIDs:(id)arg3 sessionEntityAssignment:(*NSInteger)arg4 ;
+-(void)submitTorsoprintsToModelManagerForHome:(id)arg0 withTorsoAnnotations:(id)arg1 ;
+-(void)updatePreviousPrintsForSessionEntityUUID:(id)arg0 faceRecognition:(id)arg1 torsoRecognition:(id)arg2 ;
+
+
+@end
+
+
+#endif

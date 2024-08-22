@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC11PHOTOSGRAPHP33_683D308B2AE5B564D85468A19021D44E20MAESTROSONGSINMEMORY_H
+#define _TTC11PHOTOSGRAPHP33_683D308B2AE5B564D85468A19021D44E20MAESTROSONGSINMEMORY_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC11PhotosGraphP33_683D308B2AE5B564D85468A19021D44E20MaestroSongsInMemory : SwiftObject {
+    ? songs;
+    ? index;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

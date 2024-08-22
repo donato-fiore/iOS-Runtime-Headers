@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef AVMOBILECONTENTTAG_H
+#define AVMOBILECONTENTTAG_H
+
+@class UIColor, NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface AVMobileContentTag : NSObject
+
+@property (readonly, nonatomic) UIColor *labelTextColor; // ivar: _labelTextColor
+@property (readonly, nonatomic) UIEdgeInsets layoutMargins; // ivar: _layoutMargins
+@property (readonly, nonatomic) float normalizedCornerRadius; // ivar: _normalizedCornerRadius
+@property (readonly, nonatomic) NSUInteger placement; // ivar: _placement
+@property (readonly, nonatomic) UIColor *tintColor; // ivar: _tintColor
+@property (readonly, nonatomic) NSString *title; // ivar: _title
+
+
++(id)_liveContentTagWithTintColor:(id)arg0 withTextColor:(id)arg1 ;
++(id)adContentTag;
++(id)adContentTagWithTintColor:(id)arg0 ;
++(id)liveContentTag;
++(id)liveEdgeContentTag;
+-(id)_initInternal;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC11WEATHERMAPS15OVERLAYRENDERER_H
+#define _TTC11WEATHERMAPS15OVERLAYRENDERER_H
+
+@class TtC11WeatherMaps16OverlayGenerator;
+
+
+
+@interface _TtC11WeatherMaps15OverlayRenderer : TtC11WeatherMaps16OverlayGenerator {
+    ? signposter;
+    ? captureScope;
+    ? overlayDescriptor;
+    ? viewportManager;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

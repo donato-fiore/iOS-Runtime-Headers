@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef TSUSAFESAVEASSISTANT_H
+#define TSUSAFESAVEASSISTANT_H
+
+@class NSURL;
+
+#import <Foundation/Foundation.h>
+
+
+@interface TSUSafeSaveAssistant : NSObject {
+    NSURL *_saveURL;
+    NSURL *_temporaryDirectoryURL;
+}
+
+
+@property (readonly, nonatomic) NSURL *writeURL; // ivar: _writeURL
+
+
++(BOOL)finishWritingToURL:(id)arg0 byMovingItemAtURL:(id)arg1 addingAttributes:(id)arg2 error:(*id)arg3 ;
++(id)temporaryDirectoryURLForWritingToURL:(id)arg0 error:(*id)arg1 ;
++(void)removeTemporaryDirectoryAtURL:(id)arg0 ;
++(void)writeAttributes:(id)arg0 toURL:(id)arg1 ;
+-(BOOL)endSaveWithSuccess:(BOOL)arg0 addingAttributes:(id)arg1 error:(*id)arg2 ;
+-(BOOL)endSaveWithSuccess:(BOOL)arg0 toURL:(id)arg1 addingAttributes:(id)arg2 error:(*id)arg3 ;
+-(id)init;
+-(id)initForSavingToURL:(id)arg0 error:(*id)arg1 ;
+-(void)dealloc;
+-(void)removeTemporaryDirectory;
+
+
+@end
+
+
+#endif

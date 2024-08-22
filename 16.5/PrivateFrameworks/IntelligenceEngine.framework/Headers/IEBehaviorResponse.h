@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef IEBEHAVIORRESPONSE_H
+#define IEBEHAVIORRESPONSE_H
+
+@class NSString, NSDictionary;
+
+
+#import "IEResponse.h"
+#import "IEBehaviorResponseUndo.h"
+
+@interface IEBehaviorResponse : IEResponse
+
+@property (retain, nonatomic) NSString *name; // ivar: _name
+@property (retain, nonatomic) NSDictionary *parameters; // ivar: _parameters
+@property (retain, nonatomic) IEBehaviorResponseUndo *undo; // ivar: _undo
+
+
+
+
+@end
+
+
+#endif

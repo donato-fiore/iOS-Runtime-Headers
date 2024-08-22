@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef AMSUIWEBBAGKEY_H
+#define AMSUIWEBBAGKEY_H
+
+@class NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface AMSUIWebBagKey : NSObject
+
+@property (retain, nonatomic) NSString *key; // ivar: _key
+@property (nonatomic) NSUInteger valueType; // ivar: _valueType
+
+
+-(id)description;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,119 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _UIKEYBOARDARBITER_H
+#define _UIKEYBOARDARBITER_H
+
+@class NSXPCListener, NSMutableArray, FBSSceneIdentityToken, NSMutableOrderedSet, FBSWorkspace, FBSScene, BKSApplicationStateMonitor, FBSSceneLayer, NSString, _UIKeyboardChangedInformation;
+@protocol NSXPCListenerDelegate, _UIKeyboardArbiterAdvisor, OS_dispatch_queue, _UIKeyboardArbiterOmniscientDelegate, _UIKeyboardArbiterSceneDelegate, _UIKeyboardArbiterLink;
+
+#import <Foundation/Foundation.h>
+
+#import "_UIKeyboardArbiterClientHandle.h"
+
+@interface _UIKeyboardArbiter : NSObject <NSXPCListenerDelegate, _UIKeyboardArbiterAdvisor>
+
+ {
+    NSObject<OS_dispatch_queue> *_queue;
+    NSXPCListener *_listener;
+    NSMutableArray *_clients;
+    _UIKeyboardArbiterClientHandle *_previouslyActiveHandle;
+    int _currentFocusPID;
+    FBSSceneIdentityToken *_currentFocusSceneIdentity;
+    os_unfair_lock_s _pendingFocusLock;
+    NSUInteger _pendingFocusLock_generation;
+    int _pendingFocusLock_PID;
+    FBSSceneIdentityToken *_pendingFocusLock_sceneIdentity;
+    _UIKeyboardArbiterClientHandle *_lastActivatedHandle;
+    NSMutableOrderedSet *_recentlyActiveSceneIdentities;
+    FBSWorkspace *_workspace;
+    FBSScene *_scene;
+    int _updateCounter;
+    BKSApplicationStateMonitor *_stateMonitor;
+    NSInteger _lastEventSource;
+    FBSSceneLayer *_sceneLayer;
+    _UIKeyboardArbiterClientHandle *_disablingHandle;
+}
+
+
+@property (readonly, weak) _UIKeyboardArbiterClientHandle *activeInputDestinationHandle; // ivar: _activeInputDestinationHandle
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, weak) _UIKeyboardArbiterClientHandle *focusRequestedHandle; // ivar: _focusRequestedHandle
+@property (readonly) NSUInteger hash;
+@property (nonatomic) NSUInteger keyboardScenePresentationMode; // ivar: _keyboardScenePresentationMode
+@property (weak, nonatomic) _UIKeyboardArbiterClientHandle *keyboardUIHandle; // ivar: _keyboardUIHandle
+@property (retain, nonatomic) _UIKeyboardChangedInformation *lastUpdate; // ivar: _lastUpdate
+@property (weak, nonatomic) NSObject<_UIKeyboardArbiterOmniscientDelegate> *omniscientDelegate; // ivar: _omniscientDelegate
+@property (readonly, nonatomic) int presentingKeyboardProcessIdentifier;
+@property (weak, nonatomic) NSObject<_UIKeyboardArbiterSceneDelegate> *sceneDelegate; // ivar: _sceneDelegate
+@property (readonly) FBSSceneLayer *sceneLayer;
+@property (readonly, nonatomic) NSObject<_UIKeyboardArbiterLink> *sceneLink; // ivar: _sceneLink
+@property (readonly) Class superclass;
+
+
++(BOOL)unitTestEnvironment;
++(void)configureEncodedClassesForXPCConnection:(id)arg0 ;
+-(BOOL)activateHandle:(id)arg0 ;
+-(BOOL)deactivateHandle:(id)arg0 ;
+-(BOOL)listener:(id)arg0 shouldAcceptNewConnection:(id)arg1 ;
+-(id)_activeHandleForFocusEvaluation;
+-(id)_currentFocusedHandle;
+-(id)_descriptionWithScene:(BOOL)arg0 ;
+-(id)focusContext;
+-(id)handlerForBundleID:(id)arg0 ;
+-(id)handlerForPID:(int)arg0 ;
+-(id)handlerForToken:(id)arg0 ;
+-(id)hostBundleIdentifierForHandle:(id)arg0 hosts:(id)arg1 ;
+-(id)hostForHandle:(id)arg0 hosts:(id)arg1 ;
+-(id)initWithLink:(id)arg0 ;
+-(id)lastActivatedHandle;
+-(id)preferredSceneIdentityForKeyboardFocusWithChangeInformation:(id)arg0 ;
+-(id)remoteFocusContext;
+-(void)_applyPendingSceneFocusUpdateFromOmniscientDelegateForGeneration:(NSUInteger)arg0 ;
+-(void)_arbiterQueue_keyboardFocusDidChangeWithoutAdvisorInputForGeneration:(NSUInteger)arg0 pid:(int)arg1 sceneIdentity:(id)arg2 ;
+-(void)_cullRecentlyActiveSceneIdentities;
+-(void)_findForHandle:(id)arg0 deepestHandleHandler:(id)arg1 ;
+// -(void)_findForHandle:(id)arg0 deepestHandleHandler:(id)arg1 checklist:(unk)arg2  ;
+-(void)_trackRecentlyActiveArbiterHandle:(id)arg0 ;
+-(void)_updateCurrentKeyboardFocusToPID:(int)arg0 sceneIdentity:(id)arg1 ;
+-(void)activateClients;
+-(void)attemptConnection;
+-(void)captureStateForDebug;
+-(void)checkHostingState;
+-(void)completeKeyboardStatusChangedFromHandler:(id)arg0 ;
+-(void)dealloc;
+-(void)handleUnexpectedDeallocForHandler:(id)arg0 ;
+-(void)handlerRequestedFocus:(id)arg0 shouldStealKeyboard:(BOOL)arg1 ;
+-(void)handlerRequestedForcedClientSceneIdentityUpdate:(id)arg0 ;
+-(void)keyboardFocusDidChangeWithoutAdvisorInputToPid:(int)arg0 sceneIdentity:(id)arg1 ;
+-(void)newClientConnected:(id)arg0 withExpectedState:(id)arg1 onConnected:(id)arg2 ;
+-(void)notifyHeightUpdated:(id)arg0 ;
+-(void)processWithPID:(int)arg0 foreground:(BOOL)arg1 suspended:(BOOL)arg2 ;
+-(void)reevaluateFocusedSceneIdentityForKeyboardFocusWithChangeInformation:(id)arg0 stealingKeyboardOnSuccess:(BOOL)arg1 ;
+-(void)reevaluateHardwareKeyboardClientStealingKeyboardOnSuccess:(BOOL)arg0 ;
+-(void)reevaluateSceneClientSettings;
+-(void)resume;
+-(void)retrieveClientDebugInformationWithCompletion:(id)arg0 ;
+-(void)retrieveDebugInformationWithCompletion:(id)arg0 ;
+// -(void)runOperations:(id)arg0 onHandler:(unk)arg1 fromFunction:(id)arg2  ;
+-(void)scheduleWindowTimeout;
+-(void)setKeyboardTotalDisable:(BOOL)arg0 withFence:(id)arg1 fromHandler:(id)arg2 completionHandler:(id)arg3 ;
+-(void)setSuppressionCount:(int)arg0 ofPIDs:(id)arg1 ;
+-(void)signalEventSourceChanged:(NSInteger)arg0 fromHandler:(id)arg1 completionHandler:(id)arg2 ;
+-(void)transition:(id)arg0 eventStage:(NSUInteger)arg1 withInfo:(id)arg2 fromHandler:(id)arg3 ;
+-(void)updateInterestedBundleIDs;
+-(void)updateKeyboardSceneSettings;
+-(void)updateKeyboardStatus:(id)arg0 fromHandler:(id)arg1 ;
+-(void)updateKeyboardUIStatus:(id)arg0 fromHandler:(id)arg1 ;
+-(void)updateSceneClientSettings:(id)arg0 ;
+-(void)updateSuppression:(BOOL)arg0 ofPID:(id)arg1 active:(BOOL)arg2 ;
+-(void)updateSuppression:(BOOL)arg0 ofPIDs:(id)arg1 active:(BOOL)arg2 ;
+
+
+@end
+
+
+#endif

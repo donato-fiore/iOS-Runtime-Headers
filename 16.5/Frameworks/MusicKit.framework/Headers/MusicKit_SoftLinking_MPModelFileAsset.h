@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef MUSICKIT_SOFTLINKING_MPMODELFILEASSET_H
+#define MUSICKIT_SOFTLINKING_MPMODELFILEASSET_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface MusicKit_SoftLinking_MPModelFileAsset : NSObject
+
+
+
++(NSInteger)protectionTypeForRawValue:(NSInteger)arg0 ;
++(NSInteger)rawValueForProtectionType:(NSInteger)arg0 ;
+
+
+@end
+
+
+#endif

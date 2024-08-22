@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef IKDOMCOMMENT_H
+#define IKDOMCOMMENT_H
+
+
+
+#import "IKDOMCharacterData.h"
+
+@interface IKDOMComment : IKDOMCharacterData
+
+
+
+-(NSInteger)nodeType;
+-(id)nodeName;
+-(id)nodeValue;
+-(id)textContent;
+-(void)setTextContent:(id)arg0 ;
+
+
+@end
+
+
+#endif

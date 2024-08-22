@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef CNPHOTOPICKERPROVIDERADDITEMSGROUP_H
+#define CNPHOTOPICKERPROVIDERADDITEMSGROUP_H
+
+
+
+#import "CNPhotoPickerProviderGroup.h"
+
+@interface CNPhotoPickerProviderAddItemsGroup : CNPhotoPickerProviderGroup
+
+
+
+-(id)initWithProviders:(id)arg0 environment:(id)arg1 ;
+
+
+@end
+
+
+#endif

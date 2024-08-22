@@ -1,0 +1,43 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _UIVISUALEFFECTIMAGEVIEW_H
+#define _UIVISUALEFFECTIMAGEVIEW_H
+
+@class UIView<_UIVisualEffectViewParticipating>, NSString, NSArray;
+@protocol _UIVisualEffectViewParticipatingInternal, _UIVisualEffectViewSubviewMonitoring;
+
+
+#import "UIImageView.h"
+#import "_UIVisualEffectViewBackdropCaptureGroup.h"
+
+@interface _UIVisualEffectImageView : UIImageView <_UIVisualEffectViewParticipatingInternal>
+
+
+
+@property (retain, nonatomic) UIView<_UIVisualEffectViewParticipating> *containedView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) BOOL disableGroupFiltering;
+@property (copy, nonatomic) NSArray *filters; // ivar: _filters
+@property (readonly) NSUInteger hash;
+@property (retain, nonatomic) _UIVisualEffectViewBackdropCaptureGroup *primaryCaptureGroup; // ivar: _primaryCaptureGroup
+@property (weak, nonatomic) NSObject<_UIVisualEffectViewSubviewMonitoring> *subviewMonitor;
+@property (readonly) Class superclass;
+@property (copy, nonatomic) NSArray *viewEffects; // ivar: _viewEffects
+
+
+-(BOOL)_shouldAnimatePropertyWithKey:(id)arg0 ;
+-(id)_initialValueForLayer:(id)arg0 keyPath:(id)arg1 usePresentationValue:(BOOL)arg2 ;
+-(void)applyIdentityFilterEffects;
+-(void)applyIdentityViewEffects;
+-(void)applyRequestedFilterEffects;
+-(void)applyRequestedViewEffects;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef HMAUDIOANALYSISSTEREOPAIRDETECTEDEVENT_H
+#define HMAUDIOANALYSISSTEREOPAIRDETECTEDEVENT_H
+
+@class HMAudioAnalysisEventBulletin, NSUUID;
+
+#import <Foundation/Foundation.h>
+
+
+@interface HMAudioAnalysisStereoPairDetectedEvent : NSObject
+
+@property (copy) HMAudioAnalysisEventBulletin *event; // ivar: _event
+@property (copy) NSUUID *notificationUUID; // ivar: _notificationUUID
+@property NSUInteger state; // ivar: _state
+
+
+-(id)initWithEventBulletin:(id)arg0 state:(NSUInteger)arg1 notificationUUID:(id)arg2 ;
+
+
+@end
+
+
+#endif

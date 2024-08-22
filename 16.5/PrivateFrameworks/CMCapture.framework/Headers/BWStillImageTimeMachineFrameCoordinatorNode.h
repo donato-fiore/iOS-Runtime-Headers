@@ -1,0 +1,43 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef BWSTILLIMAGETIMEMACHINEFRAMECOORDINATORNODE_H
+#define BWSTILLIMAGETIMEMACHINEFRAMECOORDINATORNODE_H
+
+@class NSDictionary, NSMutableDictionary;
+
+
+#import "BWNode.h"
+#import "BWStillImageCaptureSettings.h"
+
+@interface BWStillImageTimeMachineFrameCoordinatorNode : BWNode {
+    NSDictionary *_portTypeToInput;
+    NSDictionary *_portTypeToOutput;
+    NSMutableDictionary *_portTypeToFrameCounts;
+    BWStillImageCaptureSettings *_currentResolvedStillImageCaptureSettings;
+}
+
+
+
+
++(void)initialize;
+-(id)initWithPortTypes:(id)arg0 ;
+-(id)inputForPortType:(id)arg0 ;
+-(id)nodeSubType;
+-(id)nodeType;
+-(id)outputForPortType:(id)arg0 ;
+-(void)configurationWithID:(NSInteger)arg0 updatedFormat:(id)arg1 didBecomeLiveForInput:(id)arg2 ;
+-(void)dealloc;
+-(void)didReachEndOfDataForInput:(id)arg0 ;
+-(void)didSelectFormat:(id)arg0 forInput:(id)arg1 ;
+-(void)handleDroppedSample:(id)arg0 forInput:(id)arg1 ;
+-(void)handleNodeError:(id)arg0 forInput:(id)arg1 ;
+-(void)renderSampleBuffer:(struct opaqueCMSampleBuffer *)arg0 forInput:(id)arg1 ;
+
+
+@end
+
+
+#endif

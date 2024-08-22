@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _UICURSORREGION_H
+#define _UICURSORREGION_H
+
+@protocol NSCopying;
+
+
+#import "UIPointerRegion.h"
+
+@interface _UICursorRegion : UIPointerRegion <NSCopying>
+
+
+
+
+
++(id)regionWithIdentifier:(id)arg0 rect:(struct CGRect )arg1 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC16HEALTHEXPERIENCE14MEDICALIDCACHE_H
+#define _TTC16HEALTHEXPERIENCE14MEDICALIDCACHE_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC16HealthExperience14MedicalIDCache : NSObject {
+    ? _medicalIDDataResult;
+    ? medicalIDFetchOperation;
+    ? medicalIDChangeObserver;
+    ? medicalIDStore;
+    ? medicalIDFetchQueue;
+}
+
+
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

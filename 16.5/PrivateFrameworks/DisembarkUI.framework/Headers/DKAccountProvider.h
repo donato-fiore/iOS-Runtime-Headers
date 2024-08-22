@@ -1,0 +1,60 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef DKACCOUNTPROVIDER_H
+#define DKACCOUNTPROVIDER_H
+
+@class AIDAAccountManager, ACAccountStore, CDPLocalSecret, NSString, UIViewController, AAUIRecoveryFactorController, CDPWalrusStateController;
+@protocol AASignOutFlowControllerDelegate, AAUIRecoveryFactorControllerDelegate, AIDAAccountManagerDelegate, DKAccountProvider, DKFindMyProvider, AIDAServiceOwnerProtocol;
+
+#import <Foundation/Foundation.h>
+
+
+@interface DKAccountProvider : NSObject <AASignOutFlowControllerDelegate, AAUIRecoveryFactorControllerDelegate, AIDAAccountManagerDelegate, DKAccountProvider>
+
+
+
+@property (retain, nonatomic) AIDAAccountManager *accountManager; // ivar: _accountManager
+@property (retain, nonatomic) ACAccountStore *accountStore; // ivar: _accountStore
+@property (retain, nonatomic) CDPLocalSecret *cachedLocalSecret; // ivar: _cachedLocalSecret
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain, nonatomic) NSObject<DKFindMyProvider> *findMyProvider; // ivar: _findMyProvider
+@property (readonly) NSUInteger hash;
+@property (copy, nonatomic) id *pendingWalrusValidationCompletion; // ivar: _pendingWalrusValidationCompletion
+@property (weak, nonatomic) UIViewController *presentingViewController; // ivar: _presentingViewController
+@property (retain, nonatomic) AAUIRecoveryFactorController *recoveryFactorController; // ivar: _recoveryFactorController
+@property (retain, nonatomic) NSObject<AIDAServiceOwnerProtocol> *serviceOwnersManager; // ivar: _serviceOwnersManager
+@property (readonly) Class superclass;
+@property (retain, nonatomic) CDPWalrusStateController *walrusStateController; // ivar: _walrusStateController
+
+
+-(id)_unknownFailureAlertControllerWithCompletion:(id)arg0 ;
+-(id)accountsForAccountManager:(id)arg0 ;
+-(id)initWithFindMyProvider:(id)arg0 ;
+-(void)_addAccountDataForAccounts:(id)arg0 toAccountsData:(id)arg1 completion:(id)arg2 ;
+-(void)_determineEligibilityWithCompletion:(id)arg0 ;
+-(void)_fetchAccountDataForAccount:(id)arg0 completion:(id)arg1 ;
+-(void)_performLastDeviceCheckWithCompletion:(id)arg0 ;
+-(void)_presentLastDeviceAlertWithCompletion:(id)arg0 ;
+-(void)_presentLastDeviceAlertWithRecoveryFactors:(NSUInteger)arg0 withCompletion:(id)arg1 ;
+-(void)_verifyAndRepairManateeWithPresentingViewController:(id)arg0 completion:(id)arg1 ;
+-(void)_walrusStatusWithCompletion:(id)arg0 ;
+-(void)cacheLocalDevicePasscode:(id)arg0 passcodeType:(int)arg1 ;
+-(void)fetchAccounts:(id)arg0 ;
+-(void)preparationRequiredForPrimaryAppleAccountWithCompletion:(id)arg0 ;
+-(void)preparePrimaryAppleAccountForSignOutWithPresentingViewController:(id)arg0 completion:(id)arg1 ;
+-(void)recoveryFactorController:(id)arg0 didFinishAddingRecoveryContactWithError:(id)arg1 ;
+-(void)signOutFlowController:(id)arg0 disableFindMyDeviceForAccount:(id)arg1 completion:(id)arg2 ;
+-(void)signOutFlowController:(id)arg0 performWalrusValidationForAccount:(id)arg1 completion:(id)arg2 ;
+-(void)signOutFlowController:(id)arg0 showAlertWithTitle:(id)arg1 message:(id)arg2 completion:(id)arg3 ;
+-(void)signOutFlowController:(id)arg0 signOutAccount:(id)arg1 completion:(id)arg2 ;
+-(void)signOutPrimaryAppleAccountWithPresentingViewController:(id)arg0 completion:(id)arg1 ;
+
+
+@end
+
+
+#endif

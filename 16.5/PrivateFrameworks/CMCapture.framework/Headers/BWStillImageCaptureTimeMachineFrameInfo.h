@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef BWSTILLIMAGECAPTURETIMEMACHINEFRAMEINFO_H
+#define BWSTILLIMAGECAPTURETIMEMACHINEFRAMEINFO_H
+
+@protocol NSSecureCoding;
+
+
+#import "BWStillImageCaptureFrameInfo.h"
+
+@interface BWStillImageCaptureTimeMachineFrameInfo : BWStillImageCaptureFrameInfo <NSSecureCoding>
+
+
+
+@property (nonatomic) BOOL isNoLongErrorRecoveryFrame; // ivar: _isNoLongErrorRecoveryFrame
+@property (readonly, nonatomic) int timeMachineIndex; // ivar: _timeMachineIndex
+
+
++(BOOL)supportsSecureCoding;
++(id)infoWithTimeMachineIndex:(int)arg0 mainFlags:(NSUInteger)arg1 sifrFlags:(NSUInteger)arg2 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)description;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithTimeMachineIndex:(int)arg0 mainFlags:(NSUInteger)arg1 sifrFlags:(NSUInteger)arg2 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

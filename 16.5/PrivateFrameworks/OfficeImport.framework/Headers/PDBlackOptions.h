@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PDBLACKOPTIONS_H
+#define PDBLACKOPTIONS_H
+
+
+
+#import "PDTransitionOptions.h"
+
+@interface PDBlackOptions : PDTransitionOptions {
+    BOOL mIsThroughBlack;
+}
+
+
+
+
+-(BOOL)isThroughBlack;
+-(void)setIsThroughBlack:(BOOL)arg0 ;
+
+
+@end
+
+
+#endif

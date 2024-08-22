@@ -1,0 +1,17 @@
+
+
+#include "CacheManagementAsset.h"
+#include "CDRecentVolumeInfo.h"
+#include "CacheDeleteServiceInfo.h"
+#include "CDPurgeableResultCache.h"
+#include "TestTelemetry.h"
+#include "CacheDeleteVolume.h"
+#include "CacheDeleteListener.h"
+#include "CDRemoveEventsConsumer.h"
+#include "CacheDeleteHostExtensionContext.h"
+#include "CDRecentInfo.h"
+#include "AppCache.h"
+#include "CacheDeleteServiceListener.h"
+#include "OperationState.h"
+#include "CDRecentServiceInfo.h"
+#include "CacheDeleteRemoteExtensionContext.h"

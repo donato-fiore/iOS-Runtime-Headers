@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef NUEMBEDDATAMANAGER_H
+#define NUEMBEDDATAMANAGER_H
+
+@class NSString, SXJSONDictionary;
+@protocol NUEmbedDataManager, NUEmbedConfigurationLoader;
+
+#import <Foundation/Foundation.h>
+
+
+@interface NUEmbedDataManager : NSObject <NUEmbedDataManager>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain, nonatomic) SXJSONDictionary *embedConfiguration; // ivar: _embedConfiguration
+@property (readonly, nonatomic) NSObject<NUEmbedConfigurationLoader> *embedConfigurationLoader; // ivar: _embedConfigurationLoader
+@property (readonly, nonatomic) BOOL hasLoaded; // ivar: _hasLoaded
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(id)embedForType:(id)arg0 ;
+-(id)initWithEmbedConfigurationLoader:(id)arg0 ;
+-(void)loadEmbedDataWithCompletion:(id)arg0 ;
+
+
+@end
+
+
+#endif

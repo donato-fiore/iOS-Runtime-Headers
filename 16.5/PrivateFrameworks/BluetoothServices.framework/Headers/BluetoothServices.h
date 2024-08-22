@@ -1,0 +1,17 @@
+
+
+#include "BTCloudServicesClient.h"
+#include "BTAudioRoutingRequest.h"
+#include "BTAudioRoutingResponse.h"
+#include "BTAudioSession.h"
+#include "BTBluetoothPairingSession.h"
+#include "BTServicesClient.h"
+#include "BTCloudAccountInfo.h"
+#include "BTShareAudioSessionClient.h"
+#include "BTBannerUISession.h"
+#include "BTCloudDevice.h"
+#include "BTCloudDeviceSupportInformation.h"
+#include "BTMagicPairingSettings.h"
+#include "BTCloudSoundProfileRecord.h"
+#include "BTAirPodsControlRequest.h"
+#include "BTAirPodsControlServiceClient.h"

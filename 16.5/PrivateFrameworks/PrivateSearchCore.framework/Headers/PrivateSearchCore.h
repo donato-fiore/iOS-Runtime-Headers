@@ -1,0 +1,16 @@
+
+
+#include "_TtC17PrivateSearchCore31AESCounterRandomNumberGenerator.h"
+#include "_TtCV17PrivateSearchCore15BenchmarkReportP33_2A336E79A46A37691DD5F92414E6F50C13_StorageClass.h"
+#include "_TtC17PrivateSearchCore15CallContextImpl.h"
+#include "_TtC17PrivateSearchCore26CapacityAwareLevelStrategy.h"
+#include "_TtC17PrivateSearchCore22CaseInsensitiveIndexer.h"
+#include "_TtC17PrivateSearchCore24EncryptedDocumentIndexer.h"
+#include "_TtC17PrivateSearchCore32EncryptedDocumentIndexerSearcher.h"
+#include "_TtC17PrivateSearchCore25EncryptedDocumentSearcher.h"
+#include "_TtC17PrivateSearchCore13InMemoryStore.h"
+#include "_TtC17PrivateSearchCore23LevelCapacityUsageState.h"
+#include "_TtC17PrivateSearchCore16LogLevelStrategy.h"
+#include "_TtC17PrivateSearchCore23PlainBloomFilterIndexer.h"
+#include "_TtC17PrivateSearchCore9Stopwatch.h"
+#include "_TtCE17PrivateSearchCoreSSP33_0C89718AC50F9A27E7AE26D112D1EB4018ExtensionConstants.h"

@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef OITSUMUTABLECUSTOMFORMAT_H
+#define OITSUMUTABLECUSTOMFORMAT_H
+
+
+
+#import "OITSUCustomFormat.h"
+
+@interface OITSUMutableCustomFormat : OITSUCustomFormat
+
+
+
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(void)addConditionalFormatOfType:(int)arg0 value:(CGFloat)arg1 data:(id)arg2 ;
+
+
+@end
+
+
+#endif

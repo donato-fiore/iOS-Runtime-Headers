@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTCV13MATTERSUPPORT22MATTERADDDEVICEREQUESTP33_1A83A92E88F6D049FA318E551745945D24FIRSTONEWINSCONTINUATION_H
+#define _TTCV13MATTERSUPPORT22MATTERADDDEVICEREQUESTP33_1A83A92E88F6D049FA318E551745945D24FIRSTONEWINSCONTINUATION_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCV13MatterSupport22MatterAddDeviceRequestP33_1A83A92E88F6D049FA318E551745945D24FirstOneWinsContinuation : SwiftObject {
+    ? continuation;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

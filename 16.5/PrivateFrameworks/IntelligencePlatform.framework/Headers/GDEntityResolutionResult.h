@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef GDENTITYRESOLUTIONRESULT_H
+#define GDENTITYRESOLUTIONRESULT_H
+
+@class NSArray;
+@protocol NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+
+@interface GDEntityResolutionResult : NSObject <NSSecureCoding>
+
+
+
+@property (readonly, copy, nonatomic) NSArray *rankedResults; // ivar: _rankedResults
+
+
++(BOOL)supportsSecureCoding;
+-(id)description;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithRankedResults:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

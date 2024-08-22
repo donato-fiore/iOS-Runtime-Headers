@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PXSEARCHZEROKEYWORDDATEVIEWMODEL_H
+#define PXSEARCHZEROKEYWORDDATEVIEWMODEL_H
+
+
+
+#import "PXSearchZeroKeywordAssetCollectionViewModel.h"
+
+@interface PXSearchZeroKeywordDateViewModel : PXSearchZeroKeywordAssetCollectionViewModel
+
+
+
+-(id)initWithTitle:(id)arg0 representedObject:(id)arg1 displayInfo:(id)arg2 ;
+
+
+@end
+
+
+#endif

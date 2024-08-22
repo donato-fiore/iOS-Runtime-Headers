@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC33APPLEMEDIASERVICESUIPAYMENTSHEETS33AMSUIPAYMENTSHEETPSD2VIEWPROVIDER_H
+#define _TTC33APPLEMEDIASERVICESUIPAYMENTSHEETS33AMSUIPAYMENTSHEETPSD2VIEWPROVIDER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC33AppleMediaServicesUIPaymentSheets33AMSUIPaymentSheetPSD2ViewProvider : NSObject {
+    ? header;
+    ? content;
+    ? footer;
+}
+
+
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

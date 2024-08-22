@@ -1,0 +1,16 @@
+
+
+#include "SFSearchResult_Compatibility.h"
+#include "SPCoreSpotlightResult.h"
+#include "SPApplication.h"
+#include "SPResultSet.h"
+#include "SPSearchQuery.h"
+#include "SPDaemonConnection.h"
+#include "SPDaemonQueryToken.h"
+#include "SPDomainManager.h"
+#include "SPMLLogging.h"
+#include "SPMatcher.h"
+#include "SPXPCConnection.h"
+#include "SPXPCServer.h"
+#include "SPXPCMessage.h"
+#include "SPFeedbackManager.h"

@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef MTUTILS_H
+#define MTUTILS_H
+
+
+
+#import "MTObject.h"
+
+@interface MTUtils : MTObject
+
+
+
+-(id)applyFieldsMap:(id)arg0 sectionName:(id)arg1 ;
+
+
+@end
+
+
+#endif

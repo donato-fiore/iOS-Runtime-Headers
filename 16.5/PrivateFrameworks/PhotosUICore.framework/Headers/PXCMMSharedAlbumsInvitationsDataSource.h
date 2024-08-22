@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PXCMMSHAREDALBUMSINVITATIONSDATASOURCE_H
+#define PXCMMSHAREDALBUMSINVITATIONSDATASOURCE_H
+
+
+
+#import "PXCMMInvitationsDataSource.h"
+#import "PXCMMSharedAlbumsInvitationsDataSourceState.h"
+
+@interface PXCMMSharedAlbumsInvitationsDataSource : PXCMMInvitationsDataSource
+
+@property (readonly, nonatomic) PXCMMSharedAlbumsInvitationsDataSourceState *_state; // ivar: __state
+
+
+-(NSInteger)numberOfItemsInSection:(NSInteger)arg0 ;
+-(NSInteger)numberOfSections;
+-(id)initWithState:(id)arg0 ;
+-(id)invitationAtItemIndexPath:(struct PXSimpleIndexPath )arg0 ;
+-(id)invitationForObjectID:(id)arg0 ;
+-(id)objectAtIndexPath:(struct PXSimpleIndexPath )arg0 ;
+-(id)objectIDAtItemIndexPath:(struct PXSimpleIndexPath )arg0 ;
+-(struct PXSimpleIndexPath )indexPathForObjectReference:(id)arg0 ;
+
+
+@end
+
+
+#endif

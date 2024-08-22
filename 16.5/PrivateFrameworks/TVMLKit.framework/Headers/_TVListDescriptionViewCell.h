@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TVLISTDESCRIPTIONVIEWCELL_H
+#define _TVLISTDESCRIPTIONVIEWCELL_H
+
+@class UICollectionViewCell;
+
+
+
+@interface _TVListDescriptionViewCell : UICollectionViewCell
+
+@property (nonatomic, getter=isDisabled) BOOL disabled; // ivar: _disabled
+
+
+-(BOOL)canBecomeFocused;
+-(id)preferredFocusEnvironments;
+-(void)didUpdateFocusFromView:(id)arg0 ;
+-(void)layoutSubviews;
+-(void)prepareForReuse;
+
+
+@end
+
+
+#endif

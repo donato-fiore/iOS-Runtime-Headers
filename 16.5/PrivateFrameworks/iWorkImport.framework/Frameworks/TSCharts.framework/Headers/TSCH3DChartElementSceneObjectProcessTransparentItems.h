@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef TSCH3DCHARTELEMENTSCENEOBJECTPROCESSTRANSPARENTITEMS_H
+#define TSCH3DCHARTELEMENTSCENEOBJECTPROCESSTRANSPARENTITEMS_H
+
+
+
+#import "TSCH3DChartElementSceneObjectProcessItems.h"
+
+@interface TSCH3DChartElementSceneObjectProcessTransparentItems : TSCH3DChartElementSceneObjectProcessItems
+
+
+
+-(BOOL)processEnumeratorSeries:(id)arg0 ;
+-(BOOL)pushStates;
+-(void)processElementInfo:(id)arg0 eachValue:(BOOL)arg1 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _UISEARCHTEXTFIELDVISUALSTYLE_TVOS_H
+#define _UISEARCHTEXTFIELDVISUALSTYLE_TVOS_H
+
+@class UISearchTextFieldVisualStyle;
+
+
+
+@interface _UISearchTextFieldVisualStyle_tvOS : UISearchTextFieldVisualStyle
+
+
+
+-(CGFloat)leftViewInsetAddition;
+
+
+@end
+
+
+#endif

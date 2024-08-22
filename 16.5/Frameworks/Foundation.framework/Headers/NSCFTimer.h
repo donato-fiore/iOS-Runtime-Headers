@@ -1,0 +1,43 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef NSCFTIMER_H
+#define NSCFTIMER_H
+
+@class NSTimer;
+
+
+
+@interface NSCFTimer : NSTimer
+
+
+
++(BOOL)automaticallyNotifiesObserversForKey:(id)arg0 ;
++(id)allocWithZone:(struct _NSZone *)arg0 ;
+-(BOOL)allowsWeakReference;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)isValid;
+-(BOOL)retainWeakReference;
+-(CGFloat)timeInterval;
+-(CGFloat)tolerance;
+-(NSUInteger)_cfTypeID;
+-(NSUInteger)hash;
+-(NSUInteger)retainCount;
+-(id)fireDate;
+-(id)init;
+-(id)initWithFireDate:(id)arg0 interval:(CGFloat)arg1 target:(id)arg2 selector:(SEL)arg3 userInfo:(id)arg4 repeats:(BOOL)arg5 ;
+-(id)retain;
+-(id)userInfo;
+-(void)fire;
+-(void)invalidate;
+-(void)release;
+-(void)setFireDate:(id)arg0 ;
+-(void)setTolerance:(CGFloat)arg0 ;
+
+
+@end
+
+
+#endif

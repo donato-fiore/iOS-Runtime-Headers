@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef NSPORT_H
+#define NSPORT_H
+
+@protocol NSCopying, NSCoding;
+
+#import <Foundation/Foundation.h>
+
+
+@interface NSPort : NSObject <NSCopying, NSCoding>
+
+
+
+@property (readonly) NSUInteger reservedSpaceLength; // ivar: _reservedSpaceLength
+@property (readonly, getter=isValid) BOOL valid; // ivar: _valid
+
+
+
+
+@end
+
+
+#endif

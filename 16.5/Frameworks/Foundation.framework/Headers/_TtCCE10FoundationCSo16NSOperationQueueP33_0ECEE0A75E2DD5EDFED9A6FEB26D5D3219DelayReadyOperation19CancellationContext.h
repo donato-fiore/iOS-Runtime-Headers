@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTCCE10FOUNDATIONCSO16NSOPERATIONQUEUEP33_0ECEE0A75E2DD5EDFED9A6FEB26D5D3219DELAYREADYOPERATION19CANCELLATIONCONTEXT_H
+#define _TTCCE10FOUNDATIONCSO16NSOPERATIONQUEUEP33_0ECEE0A75E2DD5EDFED9A6FEB26D5D3219DELAYREADYOPERATION19CANCELLATIONCONTEXT_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCCE10FoundationCSo16NSOperationQueueP33_0ECEE0A75E2DD5EDFED9A6FEB26D5D3219DelayReadyOperation19CancellationContext : SwiftObject {
+    ? lock;
+    ? currentOperation;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

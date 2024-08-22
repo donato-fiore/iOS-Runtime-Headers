@@ -1,0 +1,58 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef AVPICTUREINPICTURECONTENTVIEWCONTROLLER_H
+#define AVPICTUREINPICTURECONTENTVIEWCONTROLLER_H
+
+@class UIViewController, UIWindow, NSString, NSTimer;
+@protocol AVPictureInPictureContentSource;
+
+
+#import "AVPlayerController.h"
+#import "AVPictureInPictureControllerContentSource.h"
+#import "AVPictureInPictureController.h"
+#import "AVPictureInPictureViewController.h"
+
+@interface AVPictureInPictureContentViewController : UIViewController <AVPictureInPictureContentSource>
+
+ {
+    AVPlayerController *_playerController;
+}
+
+
+@property (readonly, nonatomic) BOOL avkit_isVisible;
+@property (readonly, nonatomic) CGRect avkit_videoRectInWindow;
+@property (readonly, nonatomic) UIWindow *avkit_window;
+@property (weak, nonatomic) AVPictureInPictureControllerContentSource *contentSource; // ivar: _contentSource
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (nonatomic) BOOL lastKnownIsVisible; // ivar: _lastKnownIsVisible
+@property (nonatomic) CGRect lastKnownVideoRectInWindow; // ivar: _lastKnownVideoRectInWindow
+@property (retain, nonatomic) NSTimer *observeSourceViewTimer; // ivar: _observeSourceViewTimer
+@property (weak, nonatomic) AVPictureInPictureController *pictureInPictureController; // ivar: _pictureInPictureController
+@property (weak, nonatomic) AVPictureInPictureViewController *pictureInPictureViewController; // ivar: _pictureInPictureViewController
+@property (retain, nonatomic) AVPlayerController *playerController;
+@property (readonly) Class superclass;
+
+
+-(BOOL)avkit_wantsManagedSecondScreenPlayback;
+-(id)avkit_makePlayerControllerIfNeeded:(id)arg0 ;
+-(id)initWithNibName:(id)arg0 bundle:(id)arg1 ;
+-(void)_observeSourceView;
+-(void)_removeFromParent;
+-(void)avkit_beginReducingResourcesForPictureInPictureViewController:(id)arg0 playerController:(id)arg1 ;
+-(void)avkit_endReducingResourcesForPictureInPictureViewController:(id)arg0 playerController:(id)arg1 ;
+-(void)avkit_startRoutingVideoToPictureInPictureViewController:(id)arg0 ;
+-(void)avkit_stopRoutingVideoToPictureInPictureViewController:(id)arg0 ;
+-(void)avkit_willBeginStoppingPictureInPictureForPictureInPictureViewController:(id)arg0 ;
+-(void)startObservingSourceView;
+-(void)stopObservingSourceView;
+
+
+@end
+
+
+#endif

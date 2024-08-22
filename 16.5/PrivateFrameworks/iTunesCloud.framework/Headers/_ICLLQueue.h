@@ -1,0 +1,43 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _ICLLQUEUE_H
+#define _ICLLQUEUE_H
+
+@class PBCodable, NSString, NSMutableArray;
+@protocol NSCopying;
+
+
+
+@interface _ICLLQueue : PBCodable <NSCopying>
+
+ {
+    ? _storefronts;
+    NSString *_currentRadioStationId;
+    int _demarkationPos;
+    int _explicitSetting;
+    NSMutableArray *_items;
+    NSString *_queueId;
+    int _revision;
+    ? _has;
+}
+
+
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)dictionaryRepresentation;
+-(void)dealloc;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

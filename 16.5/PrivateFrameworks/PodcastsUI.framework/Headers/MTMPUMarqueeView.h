@@ -1,0 +1,69 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef MTMPUMARQUEEVIEW_H
+#define MTMPUMARQUEEVIEW_H
+
+@class UIView, NSUUID, NSPointerArray, NSArray, NSString;
+@protocol CAAnimationDelegate, MTMPUMarqueeViewDelegate;
+
+
+#import "MTMPUMarqueeView.h"
+
+@interface MTMPUMarqueeView : UIView <CAAnimationDelegate>
+
+ {
+    NSUUID *_currentAnimationID;
+    NSInteger _options;
+    NSPointerArray *_coordinatedMarqueeViews;
+    MTMPUMarqueeView *_primaryMarqueeView;
+}
+
+
+@property (nonatomic) NSInteger animationDirection; // ivar: _animationDirection
+@property (weak, nonatomic) UIView *animationReferenceView; // ivar: _animationReferenceView
+@property (nonatomic) CGFloat contentGap; // ivar: _contentGap
+@property (nonatomic) CGSize contentSize; // ivar: _contentSize
+@property (readonly, nonatomic) UIView *contentView; // ivar: _contentView
+@property (readonly, nonatomic) NSArray *coordinatedMarqueeViews;
+@property (readonly, copy) NSString *debugDescription;
+@property (weak, nonatomic) NSObject<MTMPUMarqueeViewDelegate> *delegate; // ivar: _delegate
+@property (readonly, copy) NSString *description;
+@property (nonatomic) UIEdgeInsets fadeEdgeInsets; // ivar: _fadeEdgeInsets
+@property (nonatomic) BOOL fadeOnlyWhenAnimating; // ivar: _fadeOnlyWhenAnimating
+@property (readonly) NSUInteger hash;
+@property (nonatomic) CGFloat marqueeDelay; // ivar: _marqueeDelay
+@property (nonatomic, getter=isMarqueeEnabled) BOOL marqueeEnabled; // ivar: _marqueeEnabled
+@property (nonatomic) CGFloat marqueeScrollRate; // ivar: _marqueeScrollRate
+@property (readonly) Class superclass;
+@property (retain, nonatomic) UIView *viewForContentSize; // ivar: _viewForContentSize
+
+
+-(CGFloat)_duration;
+-(id)initWithFrame:(struct CGRect )arg0 ;
+-(id)viewForFirstBaselineLayout;
+-(id)viewForLastBaselineLayout;
+-(struct CGSize )intrinsicContentSize;
+-(void)_applyMarqueeFade;
+-(void)_applyMarqueeFadeIfNeeded;
+-(void)_createMarqueeAnimationIfNeeded;
+-(void)_createMarqueeAnimationIfNeededWithMaximumDuration:(CGFloat)arg0 beginTime:(CGFloat)arg1 ;
+-(void)_removeMarqueeFade;
+-(void)_tearDownMarqueeAnimation;
+-(void)addCoordinatedMarqueeView:(id)arg0 ;
+-(void)animationDidStart:(id)arg0 ;
+-(void)animationDidStop:(id)arg0 finished:(BOOL)arg1 ;
+-(void)didMoveToWindow;
+-(void)invalidateIntrinsicContentSize;
+-(void)layoutSubviews;
+-(void)resetMarqueePosition;
+-(void)setBounds:(struct CGRect )arg0 ;
+-(void)setFrame:(struct CGRect )arg0 ;
+
+
+@end
+
+
+#endif

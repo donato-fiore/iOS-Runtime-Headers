@@ -1,0 +1,52 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef APPSTATEHANDLER_H
+#define APPSTATEHANDLER_H
+
+@class NSMutableDictionary, NSString;
+@protocol NWAppStateEventListenerDelegate, OS_dispatch_queue;
+
+#import <Foundation/Foundation.h>
+
+#import "NWEntityMapper.h"
+
+@interface AppStateHandler : NSObject <NWAppStateEventListenerDelegate>
+
+ {
+    NSObject<OS_dispatch_queue> *_queue;
+    NSMutableDictionary *_appBundlesMonitored;
+    NSMutableDictionary *_appsWithStates;
+    NWEntityMapper *_entityMapper;
+    BOOL _hasAnyForegroundApp;
+    BOOL _handlesRnf;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
++(id)getAppsWithStates;
+-(BOOL)_trackerSetHasForeground:(id)arg0 ;
+-(BOOL)currentForegroundStateForProcessWithPid:(int)arg0 ;
+-(BOOL)hasAnyForegroundApp;
+-(BOOL)identifierShouldBeIgnored:(id)arg0 ;
+-(BOOL)rbsProcessStateToForeground:(id)arg0 ;
+-(id)_getAppsWithStates;
+-(id)foregroundAppKeys;
+-(id)initWithMapper:(id)arg0 ;
+-(id)trackerForPid:(int)arg0 ;
+-(void)_removeStateTracker:(id)arg0 hadForeground:(*BOOL)arg1 hasForeground:(*BOOL)arg2 ;
+-(void)configure:(id)arg0 ;
+-(void)handleStateUpdate:(id)arg0 forProcess:(id)arg1 ;
+
+
+@end
+
+
+#endif

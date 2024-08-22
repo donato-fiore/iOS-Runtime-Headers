@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef CKUITHEMENOTIFICATION_H
+#define CKUITHEMENOTIFICATION_H
+
+
+
+#import "CKUITheme.h"
+
+@interface CKUIThemeNotification : CKUITheme
+
+
+
+-(id)entryFieldPlaceholderColor;
+-(id)entryViewBackgroundColor;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC14WORKFLOWEDITORP33_FA761DC98093C80AEEA5EF5E79114EB711ACTIONGROUP_H
+#define _TTC14WORKFLOWEDITORP33_FA761DC98093C80AEEA5EF5E79114EB711ACTIONGROUP_H
+
+@class FA761DC98093C80AEEA5EF5E79114EB710EditorNode;
+
+
+
+@interface _TtC14WorkflowEditorP33_FA761DC98093C80AEEA5EF5E79114EB711ActionGroup : FA761DC98093C80AEEA5EF5E79114EB710EditorNode {
+    ? groupingIdentifier;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

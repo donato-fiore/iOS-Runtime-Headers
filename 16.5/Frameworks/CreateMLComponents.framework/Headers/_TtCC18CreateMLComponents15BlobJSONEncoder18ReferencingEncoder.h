@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTCC18CREATEMLCOMPONENTS15BLOBJSONENCODER18REFERENCINGENCODER_H
+#define _TTCC18CREATEMLCOMPONENTS15BLOBJSONENCODER18REFERENCINGENCODER_H
+
+@class TtCC18CreateMLComponents15BlobJSONEncoder19IntermediateEncoder;
+
+
+
+@interface _TtCC18CreateMLComponents15BlobJSONEncoder18ReferencingEncoder : TtCC18CreateMLComponents15BlobJSONEncoder19IntermediateEncoder {
+    ? encoder;
+    ? reference;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

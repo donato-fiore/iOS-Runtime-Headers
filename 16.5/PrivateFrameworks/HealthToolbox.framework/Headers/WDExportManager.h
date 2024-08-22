@@ -1,0 +1,123 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef WDEXPORTMANAGER_H
+#define WDEXPORTMANAGER_H
+
+@class NSMutableArray, NSArray, NSString, NSDateFormatter, NSDictionary;
+@protocol OS_dispatch_queue, OS_dispatch_semaphore;
+
+#import <Foundation/Foundation.h>
+
+#import "WDProfile.h"
+
+@interface WDExportManager : NSObject {
+    WDProfile *_profile;
+    NSObject<OS_dispatch_queue> *_outputSerialQueue;
+    *_xmlTextWriter _writer;
+    *_xmlTextWriter _writerCDA;
+    NSObject<OS_dispatch_semaphore> *_sem;
+    NSMutableArray *_resultsTypes;
+    NSMutableArray *_vitalsTypes;
+    NSArray *_completedRecords;
+    NSString *_documentsPath;
+    NSString *_exportPath;
+    NSString *_filePath;
+    NSString *_CDAFilePath;
+    NSString *_archivePath;
+    NSDateFormatter *_xmlDateFormatter;
+    NSDateFormatter *_cdaDateFormatter;
+    NSDictionary *_dateIntervalsBySampleType;
+}
+
+
+@property BOOL exportFailed; // ivar: _exportFailed
+@property BOOL exportInProgress; // ivar: _exportInProgress
+
+
++(id)allSupportedMedicalTypes;
+-(BOOL)_addSourceDirectory:(id)arg0 asPath:(id)arg1 archive:(id)arg2 fileManager:(id)arg3 ;
+-(BOOL)_writeElectrocardiogramsToDisk:(id)arg0 header:(id)arg1 version:(id)arg2 ;
+-(id)_electrocardiogramHeaderWithName:(id)arg0 dateOfBirth:(id)arg1 ;
+-(id)_formatBPMForBeatToBeatReading:(id)arg0 ;
+-(id)_formatTimeForBeatToBeatReading:(id)arg0 ;
+-(id)_preferredUnitForObjectType:(id)arg0 ;
+-(id)initWithProfile:(id)arg0 ;
+-(void)_archiveExportDirectory:(id)arg0 toFile:(id)arg1 ;
+-(void)_completeAndCloseStreamingXML;
+-(void)_exportElectrocardiogramsWithName:(id)arg0 dateOfBirth:(id)arg1 ;
+-(void)_exportHealthRecords;
+-(void)_getAllOrdinaryDataTypesOfCategory:(NSInteger)arg0 withArray:(id)arg1 ;
+-(void)_getAllOrdinaryDataTypesOfClass:(Class)arg0 withArray:(id)arg1 ;
+-(void)_outputSerialQueue_beginWritingQuantityType:(id)arg0 startDate:(id)arg1 endDate:(id)arg2 ;
+-(void)_outputSerialQueue_finishWritingQuantityType:(id)arg0 count:(NSUInteger)arg1 ;
+-(void)_outputSerialQueue_writeSamples:(id)arg0 forQuantityType:(id)arg1 ;
+-(void)_queryForDateRanges;
+-(void)_queryForSamplesOfType:(id)arg0 batchHandler:(id)arg1 ;
+-(void)_writeActivitySummaries;
+-(void)_writeAudiogramType;
+-(void)_writeCDAEntryWithValue:(id)arg0 type:(id)arg1 sourceName:(id)arg2 sourceVersion:(id)arg3 device:(id)arg4 unit:(id)arg5 metadata:(id)arg6 startDate:(id)arg7 endDate:(id)arg8 ;
+-(void)_writeCDAHeaderWithName:(id)arg0 birthData:(id)arg1 biologicalSex:(NSInteger)arg2 ;
+-(void)_writeCDAOrganizerEnd;
+-(void)_writeCDAResultsHeader;
+-(void)_writeCDAResultsOrganizerStart;
+-(void)_writeCDASectionFooter;
+-(void)_writeCDAVitalHeader;
+-(void)_writeCDAVitalsOrganizerStartWithStartDate:(id)arg0 endDate:(id)arg1 ;
+-(void)_writeCategoryType:(id)arg0 ;
+-(void)_writeContactsRx:(id)arg0 ;
+-(void)_writeContactsRxSphere:(id)arg0 cylinder:(id)arg1 axis:(id)arg2 add:(id)arg3 baseCurve:(id)arg4 diameter:(id)arg5 ;
+-(void)_writeCorrelationType:(id)arg0 ;
+-(void)_writeDataForActivitySummaries;
+-(void)_writeDataForAudiogramType;
+-(void)_writeDataForCategoryType:(id)arg0 ;
+-(void)_writeDataForCorrelationType:(id)arg0 ;
+-(void)_writeDataForHRVAndTachograms;
+-(void)_writeDataForMedicalRecords:(id)arg0 ;
+-(void)_writeDataForVisionRx;
+-(void)_writeDataForWorkoutRoutes:(id)arg0 semaphore:(id)arg1 ;
+-(void)_writeDataForWorkoutType;
+-(void)_writeGlassesRx:(id)arg0 ;
+-(void)_writeGlassesRxSphere:(id)arg0 cylinder:(id)arg1 axis:(id)arg2 add:(id)arg3 vertex:(id)arg4 prismAmount:(id)arg5 prismAngle:(id)arg6 farPD:(id)arg7 nearPD:(id)arg8 ;
+-(void)_writeHRVAndTachograms;
+-(void)_writeHealthRecord:(id)arg0 documentDirectory:(id)arg1 fileNamesInUse:(id)arg2 ;
+-(void)_writeMedicalRecords;
+-(void)_writePrescriptionType;
+-(void)_writeQuantityType:(id)arg0 ;
+-(void)_writeVisionRx:(id)arg0 ;
+-(void)_writeVisionRxDevice:(id)arg0 metadata:(id)arg1 ;
+-(void)_writeVisionRxSphere:(id)arg0 cylinder:(id)arg1 axis:(id)arg2 add:(id)arg3 ;
+-(void)_writeVisionRxType:(NSUInteger)arg0 dateIssued:(id)arg1 expirationDate:(id)arg2 ;
+-(void)_writeWorkoutRouteForWorkout:(id)arg0 semaphore:(id)arg1 ;
+-(void)_writeWorkoutType;
+-(void)_writeXMLActivitySummary:(id)arg0 activeEnergyBurnedUnit:(id)arg1 ;
+-(void)_writeXMLAudiogramEnd;
+-(void)_writeXMLAudiogramSensitivityPoint:(id)arg0 ;
+-(void)_writeXMLAudiogramStartWithAudiogram:(id)arg0 ;
+-(void)_writeXMLCorrelationEnd;
+-(void)_writeXMLCorrelationStartWithType:(id)arg0 sourceName:(id)arg1 sourceVersion:(id)arg2 device:(id)arg3 metadata:(id)arg4 creationDate:(id)arg5 startDate:(id)arg6 endDate:(id)arg7 ;
+-(void)_writeXMLMedicalRecordWithType:(id)arg0 identifier:(id)arg1 sourceName:(id)arg2 sourceURL:(id)arg3 fhirVersion:(id)arg4 receivedDate:(id)arg5 jsonFilePath:(id)arg6 ;
+-(void)_writeXMLMetadataEntries:(id)arg0 ;
+-(void)_writeXMLObjectAttributes:(id)arg0 ;
+-(void)_writeXMLPersonWithDateOfBirth:(id)arg0 biologicalSex:(NSInteger)arg1 bloodType:(NSInteger)arg2 skinType:(NSInteger)arg3 cardioFitnessMedicationsUse:(id)arg4 ;
+-(void)_writeXMLRecordWithType:(id)arg0 sourceName:(id)arg1 sourceVersion:(id)arg2 device:(id)arg3 unit:(id)arg4 metadata:(id)arg5 hrvMetadataList:(id)arg6 creationDate:(id)arg7 startDate:(id)arg8 endDate:(id)arg9 value:(id)arg10 ;
+-(void)_writeXMLSampleAttributes:(id)arg0 ;
+-(void)_writeXMLWorkoutActivity:(id)arg0 ;
+-(void)_writeXMLWorkoutEnd;
+-(void)_writeXMLWorkoutEvent:(id)arg0 ;
+-(void)_writeXMLWorkoutRouteEnd;
+-(void)_writeXMLWorkoutRouteFileReference:(id)arg0 ;
+-(void)_writeXMLWorkoutRouteStart:(id)arg0 ;
+-(void)_writeXMLWorkoutStartWithActivityType:(id)arg0 duration:(id)arg1 durationUnit:(id)arg2 sourceName:(id)arg3 sourceVersion:(id)arg4 device:(id)arg5 metadata:(id)arg6 creationDate:(id)arg7 startDate:(id)arg8 endDate:(id)arg9 ;
+-(void)_writeXMLWorkoutStatistics:(id)arg0 ;
+-(void)cancelCurrentExport;
+-(void)cleanupExportFilesWithError:(id)arg0 ;
+-(void)createExportFileWithCompletion:(id)arg0 ;
+
+
+@end
+
+
+#endif

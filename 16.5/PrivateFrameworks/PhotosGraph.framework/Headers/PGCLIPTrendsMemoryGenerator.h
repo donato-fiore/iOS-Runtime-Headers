@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PGCLIPTRENDSMEMORYGENERATOR_H
+#define PGCLIPTRENDSMEMORYGENERATOR_H
+
+
+
+#import "PGTrendsMemoryGenerator.h"
+
+@interface PGCLIPTrendsMemoryGenerator : PGTrendsMemoryGenerator {
+    NSUInteger _minimumSceneAnalysisVersion;
+}
+
+
+
+
++(id)CLIPTrendsConfigurations;
++(id)_CLIPTrends;
+-(NSUInteger)minimumSceneAnalysisVersion;
+-(id)initWithMemoryGenerationContext:(id)arg0 configurations:(id)arg1 ;
+-(void)setMinimumSceneAnalysisVersion:(NSUInteger)arg0 ;
+
+
+@end
+
+
+#endif

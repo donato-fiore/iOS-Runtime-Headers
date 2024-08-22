@@ -1,0 +1,50 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef HLPURLSESSIONHANDLER_H
+#define HLPURLSESSIONHANDLER_H
+
+@class NSString, NSIndexSet;
+@protocol HLPURLSessionManagerDelegate, HLPURLSessionDelegate;
+
+#import <Foundation/Foundation.h>
+
+
+@interface HLPURLSessionHandler : NSObject <HLPURLSessionManagerDelegate, HLPURLSessionDelegate>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain, nonatomic) NSIndexSet *excludeCachingDataTypes; // ivar: _excludeCachingDataTypes
+@property (readonly) NSUInteger hash;
+@property (nonatomic) BOOL shouldIgnoreInMemoryCaching; // ivar: _shouldIgnoreInMemoryCaching
+@property (readonly) Class superclass;
+
+
++(id)sharedInstance;
++(void)setRootViewController:(id)arg0 ;
+-(BOOL)URLSessionManagerShouldCoalesceRequest:(id)arg0 ;
+-(BOOL)respectCachingForRequest:(id)arg0 ;
+-(BOOL)shouldCacheToDiskForSessionTask:(id)arg0 ;
+-(id)URLSessionManagerSessionConfiguration:(id)arg0 ;
+-(id)URLSessionManagerSessionOperationQueue:(id)arg0 ;
+-(id)cacheControllerForDataType:(NSInteger)arg0 ;
+-(id)init;
+-(id)processJSONFormattedDataForCDSError:(id)arg0 ;
+-(void)URLSessionManagerDidReceiveChallenge:(id)arg0 completionHandler:(id)arg1 ;
+-(void)URLSessionManagerRequestCompleted:(id)arg0 sessionTask:(id)arg1 ;
+-(void)URLSessionManagerRequestResumed:(id)arg0 sessionTask:(id)arg1 ;
+-(void)sessionTask:(id)arg0 didCompleteWithError:(id)arg1 ;
+-(void)sessionTask:(id)arg0 didFinishDownloadingToURL:(id)arg1 ;
+-(void)sessionTask:(id)arg0 didReceiveChallenge:(id)arg1 completionHandler:(id)arg2 ;
+-(void)sessionTask:(id)arg0 didReceiveResponse:(id)arg1 completionHandler:(id)arg2 ;
+-(void)sessionTask:(id)arg0 willCacheResponse:(id)arg1 completionHandler:(id)arg2 ;
+
+
+@end
+
+
+#endif

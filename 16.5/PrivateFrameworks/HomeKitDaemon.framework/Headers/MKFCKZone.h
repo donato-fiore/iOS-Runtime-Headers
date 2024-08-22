@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef MKFCKZONE_H
+#define MKFCKZONE_H
+
+@class NSUUID, NSString, NSSet, NSDate;
+
+
+#import "MKFCKHomeObject.h"
+#import "MKFCKHome.h"
+
+@interface MKFCKZone : MKFCKHomeObject
+
+@property (copy, nonatomic) NSUUID *flags;
+@property (retain, nonatomic) MKFCKHome *home;
+@property (copy, nonatomic) NSUUID *homeModelID;
+@property (copy, nonatomic) NSUUID *modelID;
+@property (copy, nonatomic) NSString *name;
+@property (retain, nonatomic) NSSet *rooms;
+@property (retain, nonatomic) NSSet *rooms2;
+@property (copy, nonatomic) NSDate *writerTimestamp;
+@property (copy, nonatomic) NSString *writerVersion;
+
+
++(id)fetchRequest;
+-(BOOL)exportFromLocalModel:(id)arg0 updatedProperties:(id)arg1 context:(id)arg2 ;
+-(BOOL)importIntoLocalModel:(id)arg0 updatedProperties:(id)arg1 context:(id)arg2 ;
+
+
+@end
+
+
+#endif

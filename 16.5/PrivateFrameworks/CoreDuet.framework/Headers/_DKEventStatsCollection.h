@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _DKEVENTSTATSCOLLECTION_H
+#define _DKEVENTSTATSCOLLECTION_H
+
+@class NSMutableDictionary, NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _DKEventStatsCollection : NSObject {
+    NSMutableDictionary *_eventCounterStats;
+    NSString *_name;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

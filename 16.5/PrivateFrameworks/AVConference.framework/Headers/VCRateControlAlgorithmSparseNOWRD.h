@@ -1,0 +1,82 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef VCRATECONTROLALGORITHMSPARSENOWRD_H
+#define VCRATECONTROLALGORITHMSPARSENOWRD_H
+
+
+
+#import "VCRateControlAlgorithmBase.h"
+
+@interface VCRateControlAlgorithmSparseNOWRD : VCRateControlAlgorithmBase {
+    CGFloat _pauseStartTime;
+    unsigned short _previousTimestamp;
+    unsigned int _timestampWrapAroundCounter;
+    CGFloat _statisticsArrivalTime;
+    CGFloat _previousStatisticsArrivalTime;
+    CGFloat _lastCongestionTime;
+    CGFloat _lastRampUpTime;
+    CGFloat _lastAllowRampUpTime;
+    unsigned int _actualSendBitrate;
+    unsigned int _instantBitrate;
+    unsigned int _expectedBitrate;
+    int _recentTierWindow;
+    unsigned int _recentTierWindowSize;
+    unsigned int _recentTierWindowIndex;
+    unsigned int _totalTierNumbersInWindow;
+    CGFloat _recentAverageTier;
+    CGFloat _lastTimeDetectNoOscillation;
+    BOOL _isTargetBitrateOscillating;
+    int _deviationChangeCount;
+    unsigned int _totalPacketSent;
+    unsigned int _roundTripTimeTick;
+    CGFloat _averageRoundTripTime;
+    CGFloat _basebandNotificationArrivalTime;
+    unsigned int _basebandAverageBitrate;
+    unsigned int _basebandTotalQueueDepth;
+    CGFloat _basebandExpectedQueuingDelay;
+    CGFloat _basebandNormalizedBDCD;
+    CGFloat _basebandNormalizedQueuingDelay;
+    BOOL _isWaitingForBasebandRampDown;
+    CGFloat _lastBasebandRampDownTime;
+    CGFloat _lastHighNBDCDTime;
+    CGFloat _lastEmergencyBasebandRampDownTime;
+    int _basebandAdditionalTiersForRampUp;
+}
+
+
+@property (readonly, nonatomic) BOOL basebandAdaptationEnabled; // ivar: _basebandAdaptationEnabled
+
+
+-(BOOL)doRateControlWithBasebandStatistics:(struct tagVCStatisticsMessage )arg0 ;
+-(BOOL)doRateControlWithStatistics:(struct tagVCStatisticsMessage )arg0 ;
+-(BOOL)doRateControlWithVCRCStatistics:(struct tagVCStatisticsMessage )arg0 ;
+-(BOOL)noServerStatsActivityDetected;
+-(BOOL)shouldBlockRampUpDueToNetworkUnstable;
+-(BOOL)shouldBlockRampUpDueToRecentLossEvent;
+-(BOOL)shouldRampDown;
+-(BOOL)shouldRampDownDueToBaseband;
+-(BOOL)shouldRampUp;
+-(BOOL)shouldRampUpDueToBaseband;
+-(BOOL)shouldUnblockRampUpAfterTimeOut;
+-(BOOL)updateRecentTierWindow;
+-(id)init;
+-(int)countDeviationChangeInTierWindow;
+-(int)rampDownTier;
+-(int)rampDownTierDueToBaseband;
+-(int)rampUpTier;
+-(void)checkActualBitrates;
+-(void)checkCongestionStatus;
+-(void)checkTargetBitrateOscillation;
+-(void)configure:(struct tagVCRateControlAlgorithmConfig )arg0 restartRequired:(BOOL)arg1 ;
+-(void)printRateControlInfoToLogDump;
+-(void)resetOscillationDetection;
+-(void)updateLastEmergencyBasebandRampDownTimeWithTierIndex:(int)arg0 ;
+
+
+@end
+
+
+#endif

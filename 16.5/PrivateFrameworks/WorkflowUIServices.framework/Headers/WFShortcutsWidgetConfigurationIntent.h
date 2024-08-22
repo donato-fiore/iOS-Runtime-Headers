@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef WFSHORTCUTSWIDGETCONFIGURATIONINTENT_H
+#define WFSHORTCUTSWIDGETCONFIGURATIONINTENT_H
+
+@class INIntent;
+
+
+#import "WFFolder.h"
+
+@interface WFShortcutsWidgetConfigurationIntent : INIntent
+
+@property (copy, nonatomic) WFFolder *folder;
+
+
+
+
+@end
+
+
+#endif

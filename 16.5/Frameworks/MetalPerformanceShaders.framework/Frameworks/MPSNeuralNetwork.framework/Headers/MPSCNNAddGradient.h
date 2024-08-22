@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef MPSCNNADDGRADIENT_H
+#define MPSCNNADDGRADIENT_H
+
+
+
+#import "MPSCNNArithmeticGradient.h"
+
+@interface MPSCNNAddGradient : MPSCNNArithmeticGradient
+
+
+
+-(id)initWithDevice:(id)arg0 isSecondarySourceFilter:(BOOL)arg1 ;
+
+
+@end
+
+
+#endif

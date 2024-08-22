@@ -1,0 +1,40 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef MTPODCASTPLAYLISTSETTINGS_H
+#define MTPODCASTPLAYLISTSETTINGS_H
+
+@class NSManagedObject, NSOrderedSet, NSString;
+
+
+#import "MTPlaylist.h"
+#import "MTPodcast.h"
+
+@interface MTPodcastPlaylistSettings : NSManagedObject
+
+@property (nonatomic) int downloaded;
+@property (nonatomic) CGFloat earliestEpisodeAvailabilityDate;
+@property (nonatomic) NSInteger episodeCount;
+@property (retain, nonatomic) NSOrderedSet *episodes;
+@property (nonatomic) NSInteger episodesToShow;
+@property (nonatomic) NSInteger flags;
+@property (nonatomic) CGFloat latestEpisodeAvailabilityDate;
+@property (nonatomic) NSInteger mediaType;
+@property (nonatomic) NSInteger playOrder;
+@property (retain, nonatomic) MTPlaylist *playlist;
+@property (retain, nonatomic) MTPlaylist *playlistIfDefault;
+@property (retain, nonatomic) MTPodcast *podcast;
+@property (nonatomic) BOOL showPlayedEpisodes;
+@property (nonatomic) NSInteger sortOrder;
+@property (retain, nonatomic) NSString *uuid;
+@property (nonatomic) BOOL visible;
+
+
+
+
+@end
+
+
+#endif

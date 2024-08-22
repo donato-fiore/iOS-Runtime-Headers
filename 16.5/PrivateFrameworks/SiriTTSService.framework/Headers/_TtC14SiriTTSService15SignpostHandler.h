@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC14SIRITTSSERVICE15SIGNPOSTHANDLER_H
+#define _TTC14SIRITTSSERVICE15SIGNPOSTHANDLER_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC14SiriTTSService15SignpostHandler : SwiftObject {
+    ? notificationCenter;
+    ? observers;
+    ? signposter;
+    ? synthesisInterval;
+    ? voiceSelectionInternal;
+    ? engineSelectionInterval;
+    ? audioStartingInterval;
+    ? playbackInterval;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef RWIPROTOCOLDOMSTYLEABLE_H
+#define RWIPROTOCOLDOMSTYLEABLE_H
+
+
+
+#import "RWIProtocolJSONObject.h"
+
+@interface RWIProtocolDOMStyleable : RWIProtocolJSONObject
+
+@property (nonatomic) int nodeId;
+@property (nonatomic) NSInteger pseudoId;
+
+
+-(id)initWithNodeId:(int)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,53 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef SFSITECARDCELL_H
+#define SFSITECARDCELL_H
+
+@class UICollectionViewCell, UIImageView, UIVisualEffectView, UILabel, UILayoutGuide, UIImage, NSString;
+@protocol WBSStartPageCardProxy;
+
+
+#import "SFSiteCardSourceView.h"
+#import "_SFSiteIconView.h"
+
+@interface SFSiteCardCell : UICollectionViewCell <WBSStartPageCardProxy>
+
+ {
+    UIImageView *_badgeView;
+    SFSiteCardSourceView *_captionLabel;
+    _SFSiteIconView *_imageView;
+    UIVisualEffectView *_subtitleEffectView;
+    UILabel *_subtitleLabel;
+    UILayoutGuide *_textLayoutGuide;
+    UILabel *_titleLabel;
+    UIVisualEffectView *_backgroundEffectView;
+}
+
+
+@property (retain, nonatomic) UIImage *badge;
+@property (copy, nonatomic) NSString *caption;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (retain, nonatomic) UIImage *image;
+@property (copy, nonatomic) NSString *subtitle;
+@property (readonly) Class superclass;
+@property (copy, nonatomic) NSString *title;
+
+
++(id)reuseIdentifier;
+-(id)focusEffect;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithFrame:(struct CGRect )arg0 ;
+-(void)_updateVibrancy;
+-(void)setHighlighted:(BOOL)arg0 ;
+-(void)traitCollectionDidChange:(id)arg0 ;
+
+
+@end
+
+
+#endif

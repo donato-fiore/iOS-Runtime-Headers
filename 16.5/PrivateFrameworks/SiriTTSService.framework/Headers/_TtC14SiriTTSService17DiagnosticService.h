@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC14SIRITTSSERVICE17DIAGNOSTICSERVICE_H
+#define _TTC14SIRITTSSERVICE17DIAGNOSTICSERVICE_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC14SiriTTSService17DiagnosticService : SwiftObject {
+    ? notificationCenter;
+    ? observers;
+    ? requestId;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

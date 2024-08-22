@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef MDMDEVICEQUERYUTILITIES_H
+#define MDMDEVICEQUERYUTILITIES_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface MDMDeviceQueryUtilities : NSObject
+
+
+
++(id)allowedDeviceQueriesForAccessRights:(NSUInteger)arg0 ;
++(id)allowedDeviceQueriesOnUserChannelForAccessRights:(NSUInteger)arg0 ;
++(id)allowedDeviceQueriesWithUserEnrollment;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef CALCRASHREPORTER_H
+#define CALCRASHREPORTER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface CalCrashReporter : NSObject
+
+
+
++(BOOL)isAvailable;
++(void)simulateCrashWithMessage:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef HMDCAMERARECORDINGMEDIACONTAINERCONFIGURATION_H
+#define HMDCAMERARECORDINGMEDIACONTAINERCONFIGURATION_H
+
+@class HAPTLVBase, NSData;
+@protocol HAPTLVCreateParse, NSSecureCoding;
+
+
+#import "HMDCameraRecordingMediaContainer.h"
+#import "HMDCameraRecordingMediaContainerParameters.h"
+
+@interface HMDCameraRecordingMediaContainerConfiguration : HAPTLVBase <HAPTLVCreateParse, NSSecureCoding>
+
+
+
+@property (readonly, copy, nonatomic) HMDCameraRecordingMediaContainer *container; // ivar: _container
+@property (readonly, copy, nonatomic) HMDCameraRecordingMediaContainerParameters *parameters; // ivar: _parameters
+@property (readonly, copy) NSData *tlvData;
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)_parseFromTLVData;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithMediaContainer:(id)arg0 containerParameters:(id)arg1 ;
+-(void)description:(id)arg0 indent:(id)arg1 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

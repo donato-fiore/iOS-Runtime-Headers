@@ -1,0 +1,141 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef MNGUIDANCEMANAGER_H
+#define MNGUIDANCEMANAGER_H
+
+@class NSMutableDictionary, NSMutableSet, NSMutableArray, NSDictionary, GEOComposedGuidanceEvent, NSArray, NSString, GEOComposedRoute;
+@protocol MNTimeManagerObserver, MNNavigationSessionStateListener, MNGuidanceManagerDelegate;
+
+#import <Foundation/Foundation.h>
+
+#import "MNAnnouncementEngine.h"
+#import "MNAnnouncementPlanEvent.h"
+#import "MNGuidanceSignInfo.h"
+#import "MNJunctionViewImageLoader.h"
+#import "MNLocation.h"
+#import "MNNavigationSessionState.h"
+
+@interface MNGuidanceManager : NSObject <MNTimeManagerObserver, MNNavigationSessionStateListener>
+
+ {
+    MNAnnouncementEngine *_announcementEngine;
+    NSMutableDictionary *_announcementsSpoken;
+    NSMutableSet *_exclusiveSetAnnouncementsSpoken;
+    NSMutableDictionary *_specialSpokenEvents;
+    NSMutableDictionary *_specialSignEvents;
+    NSMutableDictionary *_specialAREvents;
+    NSMutableArray *_events;
+    NSDictionary *_eventIndexes;
+    GEOComposedGuidanceEvent *_nextEvent;
+    BOOL _hasBeenOnRouteOnce;
+    BOOL _canSpeakReturnToRouteAnnouncement;
+    CGFloat _timeLastAnnouncementStarted;
+    CGFloat _timeLastAnnouncementEnded;
+    BOOL _hasPersistentEvents;
+    MNAnnouncementPlanEvent *_lastAnnouncementEvent;
+    NSMutableDictionary *_hapticsTriggered;
+    MNGuidanceSignInfo *_signInfo;
+    NSArray *_arEvents;
+    NSArray *_previousSignEvents;
+    GEOComposedGuidanceEvent *_currentLaneGuidanceEvent;
+    GEOComposedGuidanceEvent *_previousLaneGuidanceEvent;
+    MNJunctionViewImageLoader *_junctionViewImageLoader;
+    GEOComposedGuidanceEvent *_pendingJunctionViewGuidanceEvent;
+    GEOComposedGuidanceEvent *_currentJunctionViewGuidanceEvent;
+    NSMutableArray *_validEvents;
+    NSMutableDictionary *_feedback;
+}
+
+
+@property (readonly, nonatomic) NSUInteger currentLegIndex;
+@property (readonly, copy) NSString *debugDescription;
+@property (weak, nonatomic) NSObject<MNGuidanceManagerDelegate> *delegate; // ivar: _delegate
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) NSArray *events;
+@property (readonly) NSUInteger hash;
+@property (nonatomic) BOOL isInPreArrivalState; // ivar: _isInPreArrivalState
+@property (retain, nonatomic) MNLocation *location; // ivar: _location
+@property (copy, nonatomic) MNNavigationSessionState *navigationSessionState; // ivar: _navigationSessionState
+@property (readonly, nonatomic) GEOComposedRoute *route;
+@property (nonatomic) BOOL shouldShowChargingInfo; // ivar: _shouldShowChargingInfo
+@property (nonatomic) CGFloat speed; // ivar: _speed
+@property (readonly) Class superclass;
+
+
+-(BOOL)_considerArrivalAnnouncements;
+-(BOOL)_considerChargingAnnouncements;
+-(BOOL)_considerGetOnRouteAnnouncements;
+-(BOOL)_considerOtherSpecialAnnouncements;
+-(BOOL)_considerStartingAnnouncements;
+-(BOOL)_eventWasSpoken:(id)arg0 ;
+-(BOOL)_hasPersistentEvents;
+-(BOOL)_isEVChargingEvent:(id)arg0 ;
+-(BOOL)_isInArrivalState;
+-(BOOL)_isValidEvent:(id)arg0 ;
+-(BOOL)repeatLastGuidanceAnnouncement:(id)arg0 ;
+-(CGFloat)_adjustedVehicleSpeed;
+-(CGFloat)_distanceToEndOfRoute;
+-(CGFloat)_distanceToManeuverStart;
+-(CGFloat)_distanceToRouteCoordinate:(struct ? )arg0 ;
+-(CGFloat)_headingForArEvent:(id)arg0 ;
+-(CGFloat)_timeRemainingForEvent:(id)arg0 ;
+-(CGFloat)_timeUntilEventTrigger:(id)arg0 ;
+-(CGFloat)durationOfAnnouncement:(id)arg0 ;
+-(CGFloat)durationOfEvent:(id)arg0 announcementIndex:(NSUInteger)arg1 distance:(CGFloat)arg2 ;
+-(CGFloat)timeSinceLastAnnouncement;
+-(CGFloat)timeUntilNextAnnouncement;
+-(NSUInteger)_trafficColorForRoute:(id)arg0 routeCoordinate:(struct ? )arg1 ;
+-(id)_arrivalARGuidanceEventsForLeg:(NSUInteger)arg0 ;
+-(id)_closestContinueAREventToRouteCoordinate:(struct ? )arg0 ;
+-(id)_createArGuidanceInfosForEvent:(id)arg0 forStep:(id)arg1 ;
+-(id)_durationsForEvent:(id)arg0 ;
+-(id)_junctionViewEvents;
+-(id)_nextJunctionViewGuidanceEvent;
+-(id)_nextLaneGuidanceEvent;
+-(id)_selectAnnouncementForEvent:(id)arg0 withTimeRemaining:(CGFloat)arg1 withMinWaypointCategory:(int)arg2 selectedWaypointCategory:(*int)arg3 waypoints:(id)arg4 ;
+-(id)_serverStringDictionaryForChargingEvent:(id)arg0 ;
+-(id)_serverStringDictionaryForEvent:(id)arg0 distance:(CGFloat)arg1 validDistance:(CGFloat)arg2 spoken:(BOOL)arg3 waypoints:(id)arg4 ;
+-(id)_signForGuidanceEvent:(id)arg0 isPrimary:(BOOL)arg1 shouldOverridePrimaryDistances:(BOOL)arg2 distance:(*CGFloat)arg3 ;
+-(id)_sortedSignEventsFromValidSignEvents:(id)arg0 ;
+-(id)_specialAREvents:(int)arg0 forLeg:(NSUInteger)arg1 ;
+-(id)_specialSignEvents:(int)arg0 forLeg:(NSUInteger)arg1 ;
+-(id)_specialSpokenEvents:(int)arg0 forLegIndex:(NSUInteger)arg1 ;
+-(id)_spokenEventsRemainingInStep;
+-(id)_validEventsForARGuidance;
+-(id)_validEventsForSignGuidance:(*BOOL)arg0 ;
+-(id)initWithNavigationSessionState:(id)arg0 andIsReconnecting:(BOOL)arg1 announcementsToIgnore:(id)arg2 ;
+-(int)_indexForEventUUID:(id)arg0 ;
+-(int)_maneuverTypeForAREvent:(id)arg0 ;
+-(void)_considerARGuidance;
+-(void)_considerAnnouncements;
+-(void)_considerHaptics;
+-(void)_considerJunctionViewGuidance;
+-(void)_considerLaneGuidance;
+-(void)_considerPersistence;
+-(void)_considerSignGuidance;
+-(void)_filterValidEvents;
+-(void)_handleJunctionViewInfo:(id)arg0 ;
+-(void)_initSpecialGuidanceEventsForRoute:(id)arg0 ;
+-(void)_markEventSpoken:(id)arg0 ;
+-(void)_notifyAnalyticsForNewEvents:(id)arg0 previousEvents:(id)arg1 ;
+-(void)_notifySpeechEvent:(id)arg0 waypointCategory:(int)arg1 ignorePromptStyle:(BOOL)arg2 ;
+-(void)_planAnnouncements;
+-(void)_repeatSpokenEvent:(id)arg0 ;
+-(void)_resetLastAnnouncementTime;
+-(void)dealloc;
+-(void)reset;
+-(void)setJunctionViewImageWidth:(CGFloat)arg0 height:(CGFloat)arg1 ;
+-(void)stop;
+-(void)timeManagerDidChangeProvider:(id)arg0 ;
+-(void)updateDestination:(id)arg0 ;
+-(void)updateGuidanceForLocation:(id)arg0 navigatorState:(int)arg1 ;
+-(void)updateSessionStateForReroute:(id)arg0 reason:(NSUInteger)arg1 location:(id)arg2 ;
+
+
+@end
+
+
+#endif

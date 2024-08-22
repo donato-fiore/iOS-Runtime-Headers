@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef MKFLOCALSETTINGS_H
+#define MKFLOCALSETTINGS_H
+
+@class NSManagedObject;
+
+
+
+@interface MKFLocalSettings : NSManagedObject
+
+@property (nonatomic) BOOL accessAllowedWhenLocked;
+
+
++(id)fetchRequest;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef HDREMOTETINKEROPTINREQUESTCONTEXT_H
+#define HDREMOTETINKEROPTINREQUESTCONTEXT_H
+
+
+#import <Foundation/Foundation.h>
+
+#import "HDCodableTinkerOptInRequest.h"
+
+@interface HDRemoteTinkerOptInRequestContext : NSObject {
+    HDCodableTinkerOptInRequest *_request;
+    id *_completion;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

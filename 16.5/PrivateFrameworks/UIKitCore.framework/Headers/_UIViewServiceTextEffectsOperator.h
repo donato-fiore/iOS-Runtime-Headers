@@ -1,0 +1,88 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _UIVIEWSERVICETEXTEFFECTSOPERATOR_H
+#define _UIVIEWSERVICETEXTEFFECTSOPERATOR_H
+
+@class NSArray, NSString;
+@protocol _UIHostedWindowDelegate, _UIViewServiceTextEffectsOperator_RemoteViewControllerInterface, _UIViewServiceDeputy, _UIViewServiceDeputyRotationDelegate;
+
+#import <Foundation/Foundation.h>
+
+#import "_UIAsyncInvocation.h"
+#import "_UIHostedWindow.h"
+
+@interface _UIViewServiceTextEffectsOperator : NSObject <_UIHostedWindowDelegate, _UIViewServiceTextEffectsOperator_RemoteViewControllerInterface, _UIViewServiceDeputy, _UIViewServiceDeputyRotationDelegate>
+
+ {
+    id *_remoteViewControllerProxy;
+    BOOL _wasInvalidated;
+    _UIAsyncInvocation *_prepareForDisconnectionInvocation;
+    _UIAsyncInvocation *_invalidationInvocation;
+    _UIHostedWindow *_hostedWindow;
+    CGPoint _windowOrigin;
+    UIEdgeInsets _safeAreaInsets;
+    CGSize _hostedViewSize;
+    CGRect _hostedViewReference;
+    BOOL _canRestoreInputViews;
+    BOOL _isRestoringInputViews;
+    BOOL _didResignForDisappear;
+    BOOL _localVCDisablesAutomaticBehaviors;
+    NSArray *_allowedNotifications;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
++(BOOL)_shouldAddServiceOperator;
++(id)XPCInterface;
++(id)operatorWithRemoteViewControllerProxy:(id)arg0 hostPID:(int)arg1 ;
++(void)initialize;
+-(id)_queue;
+-(id)invalidate;
+-(void)__createHostedTextEffectsWithReplyHandler:(id)arg0 ;
+-(void)__hostDidEnterBackground;
+-(void)__hostDidReceiveGestureDirection:(NSInteger)arg0 authenticationMessage:(id)arg1 ;
+-(void)__hostViewDidMoveToScreenWithNewHostingHandleReplyHandler:(id)arg0 ;
+-(void)__hostViewWillAppear:(BOOL)arg0 ;
+-(void)__hostViewWillDisappear:(BOOL)arg0 ;
+-(void)__hostWillEnterForeground;
+-(void)__prepareForDisconnectionWithCompletionHandler:(id)arg0 ;
+-(void)__setHostAllowedNotifications:(id)arg0 ;
+-(void)__setHostedViewReference:(struct CGRect )arg0 ;
+-(void)__setHostedViewSize:(struct CGSize )arg0 ;
+-(void)__setNextAutomaticOrderOutDirection:(int)arg0 duration:(CGFloat)arg1 ;
+-(void)__setRemoteTextEffectsWindowMatchesLayerWithContextId:(unsigned int)arg0 renderId:(NSUInteger)arg1 ;
+-(void)__setSafeAreaInsets:(struct UIEdgeInsets )arg0 ;
+-(void)__setWindowOffset:(struct CGPoint )arg0 ;
+-(void)_invalidateUnconditionallyThen:(id)arg0 ;
+-(void)_objc_initiateDealloc;
+-(void)_prepareForDisconnectionUnconditionallyThen:(id)arg0 ;
+-(void)_reloadSafeInsets;
+-(void)_removeTextEffectsWindowMatchAnimations;
+-(void)_resetHostedViewSize;
+-(void)_restoreInputViews;
+-(void)_screenInterfaceOrientationDidChange:(id)arg0 ;
+-(void)_viewServiceHostWillEnterForeground:(id)arg0 ;
+-(void)dealloc;
+-(void)finishRotationFromInterfaceOrientation:(NSInteger)arg0 ;
+-(void)forceSyncToStatusBarOrientation;
+-(void)hostedWindow:(id)arg0 didSetFirstResponder:(id)arg1 ;
+-(void)hostedWindow:(id)arg0 didSetResponderTargetForCalloutBar:(id)arg1 ;
+-(void)makeHostWindowKey;
+-(void)performOnRelevantWindows:(id)arg0 ;
+-(void)rotateToInterfaceOrientation:(NSInteger)arg0 duration:(CGFloat)arg1 ;
+-(void)setHostedWindow:(id)arg0 disableAutomaticBehaviors:(BOOL)arg1 ;
+-(void)willRotateToInterfaceOrientation:(NSInteger)arg0 duration:(CGFloat)arg1 ;
+
+
+@end
+
+
+#endif

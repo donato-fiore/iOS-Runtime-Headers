@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef CDMREPETITIONDETECTIONSERVICE_H
+#define CDMREPETITIONDETECTIONSERVICE_H
+
+@class QueryRewriter;
+
+
+#import "CDMDAGBaseService.h"
+
+@interface CDMRepetitionDetectionService : CDMDAGBaseService
+
+@property (retain, nonatomic) QueryRewriter *repetitionDetector; // ivar: _repetitionDetector
+
+
++(BOOL)isAssetRequired;
++(BOOL)isEnabled;
++(id)getAssetFolderNamesByTrialFactorNames;
+-(id)doInference:(id)arg0 status:(*id)arg1 ;
+-(id)getPredictor:(id)arg0 FilesPath:(id)arg1 status:(*id)arg2 ;
+-(id)handle:(id)arg0 ;
+-(id)handleRequestCommandTypeNames;
+-(id)setup:(id)arg0 ;
+
+
+@end
+
+
+#endif

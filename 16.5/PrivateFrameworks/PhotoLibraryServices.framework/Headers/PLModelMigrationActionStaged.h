@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PLMODELMIGRATIONACTIONSTAGED_H
+#define PLMODELMIGRATIONACTIONSTAGED_H
+
+
+
+#import "PLModelMigrationActionCore.h"
+
+@interface PLModelMigrationActionStaged : PLModelMigrationActionCore
+
+
+
+-(id)actionName;
+
+
+@end
+
+
+#endif

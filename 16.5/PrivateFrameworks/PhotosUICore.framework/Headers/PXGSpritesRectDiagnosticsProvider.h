@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PXGSPRITESRECTDIAGNOSTICSPROVIDER_H
+#define PXGSPRITESRECTDIAGNOSTICSPROVIDER_H
+
+@protocol PXGRectDiagnosticsProvider;
+
+#import <Foundation/Foundation.h>
+
+
+@interface PXGSpritesRectDiagnosticsProvider : NSObject <PXGRectDiagnosticsProvider>
+
+
+
+
+
+-(void)enumerateRectDiagnosticsForLayout:(id)arg0 usingBlock:(id)arg1 ;
+
+
+@end
+
+
+#endif

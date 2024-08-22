@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PSUIAPPDESCRIPTION_H
+#define PSUIAPPDESCRIPTION_H
+
+@class NSString, UIImage;
+
+#import <Foundation/Foundation.h>
+
+
+@interface PSUIAppDescription : NSObject
+
+@property (copy, nonatomic) NSString *bundleID; // ivar: _bundleID
+@property (retain, nonatomic) UIImage *icon; // ivar: _icon
+@property (copy, nonatomic) NSString *name; // ivar: _name
+@property (copy, nonatomic) NSString *persistentID; // ivar: _persistentID
+@property (copy, nonatomic) NSString *publisher; // ivar: _publisher
+
+
+-(id)description;
+
+
+@end
+
+
+#endif

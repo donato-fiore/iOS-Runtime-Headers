@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC12FMNETWORKING13FMNHTTPCLIENT_H
+#define _TTC12FMNETWORKING13FMNHTTPCLIENT_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC12FMNetworking13FMNHttpClient : NSObject {
+    ? authenticationChallengeHandler;
+    ? bundleIdentifierFallback;
+    ? httpSuccessCodeMin;
+    ? httpSuccessCodeMax;
+    ? credential;
+    ? urlSessionFactory;
+    ? statusCodeHandlers;
+    ? statusCodeHandlerQueue;
+    ? session;
+    ? sessionLock;
+}
+
+
+
+
+-(id)init;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

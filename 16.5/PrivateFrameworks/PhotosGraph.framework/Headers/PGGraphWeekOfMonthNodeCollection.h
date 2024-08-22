@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PGGRAPHWEEKOFMONTHNODECOLLECTION_H
+#define PGGRAPHWEEKOFMONTHNODECOLLECTION_H
+
+
+
+#import "PGGraphCalendarUnitNodeCollection.h"
+
+@interface PGGraphWeekOfMonthNodeCollection : PGGraphCalendarUnitNodeCollection
+
+
+
++(NSUInteger)calendarUnit;
++(id)dateOfWeekOfMonth;
++(id)weekOfMonthNodesForWeekOfMonth:(NSInteger)arg0 inGraph:(id)arg1 ;
+
+
+@end
+
+
+#endif

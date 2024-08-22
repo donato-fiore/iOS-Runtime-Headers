@@ -1,0 +1,46 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef SFEXPANDINLINECOMMAND_H
+#define SFEXPANDINLINECOMMAND_H
+
+@class NSString, NSDictionary, NSData;
+@protocol SFExpandInlineCommand, NSSecureCoding, NSCopying;
+
+
+#import "SFCommand.h"
+#import "SFTopic.h"
+
+@interface SFExpandInlineCommand : SFCommand <SFExpandInlineCommand, NSSecureCoding, NSCopying>
+
+ {
+    ? _has;
+}
+
+
+@property (copy, nonatomic) NSString *commandDetail;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) NSDictionary *dictionaryRepresentation;
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) NSData *jsonData;
+@property (retain, nonatomic) SFTopic *normalizedTopic;
+@property (nonatomic) BOOL placeHolderProperty; // ivar: _placeHolderProperty
+@property (readonly) Class superclass;
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)hasPlaceHolderProperty;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)init;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithProtobuf:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

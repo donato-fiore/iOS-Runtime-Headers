@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC16SIRIVIDEOINTENTS35PLAYLIVESERVICEHANDLEINTENTSTRATEGY_H
+#define _TTC16SIRIVIDEOINTENTS35PLAYLIVESERVICEHANDLEINTENTSTRATEGY_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC16SiriVideoIntents35PlayLiveServiceHandleIntentStrategy : SwiftObject {
+    ? aceService;
+    ? deviceState;
+    ? dialogProvider;
+    ? liveTuneInDialogs;
+    ? deviceLoggingUtil;
+    ? analyticsService;
+    ? moveToGroupDevices;
+    ? contextService;
+    ? remoteDevice;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

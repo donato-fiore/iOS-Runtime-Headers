@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef SFIMAGECONTEXT_H
+#define SFIMAGECONTEXT_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface SFImageContext : NSObject
+
+@property BOOL hasDarkAppearance; // ivar: _hasDarkAppearance
+@property (nonatomic) BOOL ignoreImageDataCache; // ivar: _ignoreImageDataCache
+@property CGFloat uiScale; // ivar: _uiScale
+
+
+
+
+@end
+
+
+#endif

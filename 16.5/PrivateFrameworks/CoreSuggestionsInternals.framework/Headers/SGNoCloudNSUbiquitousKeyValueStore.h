@@ -1,0 +1,36 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef SGNOCLOUDNSUBIQUITOUSKEYVALUESTORE_H
+#define SGNOCLOUDNSUBIQUITOUSKEYVALUESTORE_H
+
+@class NSUbiquitousKeyValueStore, NSMutableDictionary;
+
+
+
+@interface SGNoCloudNSUbiquitousKeyValueStore : NSUbiquitousKeyValueStore {
+    NSMutableDictionary *_kv;
+    _opaque_pthread_mutex_t _lock;
+}
+
+
+
+
+-(BOOL)synchronize;
+-(id)arrayForKey:(id)arg0 ;
+-(id)dataForKey:(id)arg0 ;
+-(id)init;
+-(id)objectForKey:(id)arg0 ;
+-(void)dealloc;
+-(void)setArray:(id)arg0 forKey:(id)arg1 ;
+-(void)setData:(id)arg0 forKey:(id)arg1 ;
+-(void)setObject:(id)arg0 forKey:(id)arg1 ;
+-(void)synchronizeWithCompletionHandler:(id)arg0 ;
+
+
+@end
+
+
+#endif

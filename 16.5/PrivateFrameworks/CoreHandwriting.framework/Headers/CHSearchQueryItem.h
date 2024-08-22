@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef CHSEARCHQUERYITEM_H
+#define CHSEARCHQUERYITEM_H
+
+@class NSSet;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CHSearchQueryItem : NSObject
+
+@property (readonly, copy, nonatomic) NSSet *strokeIdentifiers; // ivar: _strokeIdentifiers
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)isEqualToSearchQueryItem:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)description;
+-(id)initWithStrokeIdentifiers:(id)arg0 ;
+
+
+@end
+
+
+#endif

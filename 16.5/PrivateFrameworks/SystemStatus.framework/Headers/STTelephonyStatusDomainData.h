@@ -1,0 +1,53 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef STTELEPHONYSTATUSDOMAINDATA_H
+#define STTELEPHONYSTATUSDOMAINDATA_H
+
+@class NSString;
+@protocol STStatusDomainDataDifferencing, NSSecureCoding, STStatusDomainData;
+
+#import <Foundation/Foundation.h>
+
+#import "STTelephonyStatusDomainSIMInfo.h"
+
+@interface STTelephonyStatusDomainData : NSObject <STStatusDomainDataDifferencing, NSSecureCoding, STStatusDomainData>
+
+
+
+@property (readonly, copy, nonatomic) STTelephonyStatusDomainSIMInfo *SIMOneInfo; // ivar: _SIMOneInfo
+@property (readonly, copy, nonatomic) STTelephonyStatusDomainSIMInfo *SIMTwoInfo; // ivar: _SIMTwoInfo
+@property (readonly, nonatomic, getter=isCellularRadioCapabilityEnabled) BOOL cellularRadioCapabilityEnabled; // ivar: _cellularRadioCapabilityEnabled
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic, getter=isDualSIMEnabled) BOOL dualSIMEnabled; // ivar: _dualSIMEnabled
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic, getter=isInactiveSOSEnabled) BOOL inactiveSOSEnabled; // ivar: _inactiveSOSEnabled
+@property (readonly, copy, nonatomic) STTelephonyStatusDomainSIMInfo *primarySIMInfo;
+@property (readonly, nonatomic, getter=isRadioModuleDead) BOOL radioModuleDead; // ivar: _radioModuleDead
+@property (readonly, copy, nonatomic) STTelephonyStatusDomainSIMInfo *secondarySIMInfo;
+@property (readonly) Class superclass;
+@property (readonly, nonatomic, getter=isUsingStewieForSOS) BOOL usingStewieForSOS; // ivar: _usingStewieForSOS
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)dataByApplyingDiff:(id)arg0 ;
+-(id)descriptionBuilderWithMultilinePrefix:(id)arg0 ;
+-(id)descriptionWithMultilinePrefix:(id)arg0 ;
+-(id)diffFromData:(id)arg0 ;
+-(id)init;
+-(id)initWithCoder:(id)arg0 ;
+-(id)mutableCopyWithZone:(struct _NSZone *)arg0 ;
+-(id)succinctDescription;
+-(id)succinctDescriptionBuilder;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

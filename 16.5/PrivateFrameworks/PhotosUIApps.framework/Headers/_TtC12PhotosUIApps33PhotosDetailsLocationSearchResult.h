@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC12PHOTOSUIAPPS33PHOTOSDETAILSLOCATIONSEARCHRESULT_H
+#define _TTC12PHOTOSUIAPPS33PHOTOSDETAILSLOCATIONSEARCHRESULT_H
+
+@class NSString;
+@protocol PXPhotosDetailsLocationSearchResult;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC12PhotosUIApps33PhotosDetailsLocationSearchResult : NSObject <PXPhotosDetailsLocationSearchResult>
+
+ {
+    ? id;
+    ? title;
+    ? subtitle;
+    ? image;
+    ? imageColor;
+    ? suggestion;
+}
+
+
+@property (nonatomic, readonly) NSString *subtitle;
+@property (nonatomic, readonly) NSString *title;
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,173 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC15SEYMOURSERVICES6DAEMON_H
+#define _TTC15SEYMOURSERVICES6DAEMON_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC15SeymourServices6Daemon : SwiftObject {
+    ? appInstallCoordinator;
+    ? activationGate;
+    ? analyticsReporter;
+    ? xpcStreamHandler;
+    ? xpcStreamPublisher;
+    ? xpcBroadcastConnection;
+    ? managedProfileObserver;
+    ? eventHub;
+    ? pairedCompanionConnection;
+    ? pairedCompanionLink;
+    ? remoteParticipantBroadcastLink;
+    ? remoteParticipantBroadcastConnection;
+    ? accountProvider;
+    ? accountDeviceObserver;
+    ? appLauncher;
+    ? dataProtectionMonitor;
+    ? persistenceStore;
+    ? scriptConnection;
+    ? scriptListener;
+    ? scriptSystem;
+    ? scriptUpdateJournal;
+    ? scriptBundleLoader;
+    ? serverContainer;
+    ? publicServerEndpoint;
+    ? privateServerEndpoint;
+    ? serverSyncCoordinator;
+    ? pairedSyncCoordinator;
+    ? syncCoordinator;
+    ? syncListener;
+    ? syncSystem;
+    ? adminListener;
+    ? adminSystem;
+    ? bookmarkDataStore;
+    ? bookmarkListener;
+    ? bookmarkSystem;
+    ? catalogDataStore;
+    ? catalogListener;
+    ? catalogScriptClient;
+    ? catalogSystem;
+    ? configurationDataStore;
+    ? configurationListener;
+    ? configurationScriptClient;
+    ? configurationSystem;
+    ? contactService;
+    ? displayPreferenceDataStore;
+    ? displayPreferenceListener;
+    ? displayPreferenceSystem;
+    ? privacyPreferenceDataSource;
+    ? privacyPreferenceListener;
+    ? privacyPreferenceSystem;
+    ? scoreListener;
+    ? scoreSystem;
+    ? scoreServer;
+    ? archivedSessionDataStore;
+    ? archivedSessionListener;
+    ? archivedSessionSystem;
+    ? programCompletionDataStore;
+    ? healthKitMindfulSessionService;
+    ? healthKitWorkoutService;
+    ? healthDataSystem;
+    ? healthDataListener;
+    ? estimatedCaloriesSystem;
+    ? estimatedCaloriesListener;
+    ? localDeviceProvider;
+    ? metricIdentifierProvider;
+    ? recommendationDataStore;
+    ? recommendationScriptClient;
+    ? recommendationSystem;
+    ? recommendationListener;
+    ? schedulingListener;
+    ? duetObserver;
+    ? schedulingSystem;
+    ? achievementAwardingSource;
+    ? achievementDataStore;
+    ? achievementListener;
+    ? achievementTemplateSource;
+    ? achievementSystem;
+    ? achievementWorkoutDataSource;
+    ? assetBundleHandler;
+    ? assetBundleProgressPublisher;
+    ? assetCancellationHandler;
+    ? assetCatalogUpdater;
+    ? assetDataStore;
+    ? assetDeviceScreen;
+    ? assetFileStore;
+    ? assetImageLoader;
+    ? assetKeyDeletionHander;
+    ? assetListener;
+    ? assetLoaderRegistry;
+    ? assetMediaStreamLoader;
+    ? assetMediaStreamKeyProvider;
+    ? assetPersistentKeyLoader;
+    ? assetPreferencesObserver;
+    ? assetRequestHandler;
+    ? assetRequestProvider;
+    ? assetScriptClient;
+    ? assetSystem;
+    ? assetDefaultPriorityQueue;
+    ? assetHighPriorityOperationQueue;
+    ? assetLowPriorityOperationQueue;
+    ? assetValidator;
+    ? powerMonitor;
+    ? bagConsumer;
+    ? deviceRegistry;
+    ? supportedDeviceAvailability;
+    ? syncServer;
+    ? pushServiceObserver;
+    ? accountStatusObserver;
+    ? metricIdentifierStore;
+    ? metricRecorderBroker;
+    ? metricSystem;
+    ? metricListener;
+    ? assetPurgeListener;
+    ? keyDeliveryDataStore;
+    ? keyRequestBagConsumer;
+    ? keyProvider;
+    ? keyDeliverySystem;
+    ? keyDeliveryListener;
+    ? contentAvailabilityListener;
+    ? contentAvailabilitySystem;
+    ? contentAvailabilityObserver;
+    ? contentAvailabilityScriptClient;
+    ? contentRestrictionObserver;
+    ? storefrontObserver;
+    ? engagementDataStore;
+    ? engagementListener;
+    ? engagementNotificationCoordinator;
+    ? engagementPushHandler;
+    ? engagementPushCoordinator;
+    ? engagementSystem;
+    ? engagementScriptClient;
+    ? notificationSettingsProvider;
+    ? serviceSubscriptionListener;
+    ? serviceSubscriptionObserver;
+    ? serviceSubscriptionProviderBroker;
+    ? serviceSubscriptionSystem;
+    ? remoteBrowsingEnvironmentBuilder;
+    ? remoteBrowsingGuestPairingAuthenticator;
+    ? remoteBrowsingGuestPairingVerifier;
+    ? remoteBrowsingConfirmationCoordinator;
+    ? remoteBrowsingListener;
+    ? remoteBrowsingSystem;
+    ? userNotificationCoordinator;
+    ? participantConnectionBrokerProvider;
+    ? siriSystem;
+    ? siriListener;
+    ? siriScriptClient;
+    ? sigTermHandler;
+    ? journalingSystem;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

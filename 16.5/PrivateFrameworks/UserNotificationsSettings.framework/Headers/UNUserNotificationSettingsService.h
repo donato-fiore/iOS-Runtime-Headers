@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef UNUSERNOTIFICATIONSETTINGSSERVICE_H
+#define UNUSERNOTIFICATIONSETTINGSSERVICE_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface UNUserNotificationSettingsService : NSObject
+
+
+
++(id)clientInterface;
++(id)serverInterface;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTCC8SETTINGSP33_D536CAB592FD6D1F6F74399A1DC2AD1D13XPCCONNECTION32CONNECTIONANDREMOTEOBJECTMANAGER_H
+#define _TTCC8SETTINGSP33_D536CAB592FD6D1F6F74399A1DC2AD1D13XPCCONNECTION32CONNECTIONANDREMOTEOBJECTMANAGER_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCC8SettingsP33_D536CAB592FD6D1F6F74399A1DC2AD1D13XPCConnection32ConnectionAndRemoteObjectManager : SwiftObject {
+    ? list;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

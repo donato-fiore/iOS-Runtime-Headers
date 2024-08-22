@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef CLKCOMPLICATIONTEMPLATEGRAPHICCIRCULARIMAGE_H
+#define CLKCOMPLICATIONTEMPLATEGRAPHICCIRCULARIMAGE_H
+
+
+
+#import "CLKComplicationTemplateGraphicCircular.h"
+#import "CLKFullColorImageProvider.h"
+
+@interface CLKComplicationTemplateGraphicCircularImage : CLKComplicationTemplateGraphicCircular
+
+@property (copy, nonatomic) CLKFullColorImageProvider *imageProvider; // ivar: _imageProvider
+
+
++(id)templateWithImageProvider:(id)arg0 ;
+-(id)initWithImageProvider:(id)arg0 ;
+-(void)_enumerateFullColorImageProviderKeysWithBlock:(id)arg0 ;
+
+
+@end
+
+
+#endif

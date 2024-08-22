@@ -1,0 +1,102 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef GEORPPROBLEMCORRECTIONS_H
+#define GEORPPROBLEMCORRECTIONS_H
+
+@class PBCodable, PBDataReader, NSString, NSMutableArray;
+@protocol NSCopying;
+
+
+#import "GEORPCorrectedCoordinate.h"
+#import "GEORPCorrectedLabel.h"
+#import "GEORPMapLocation.h"
+#import "GEORPCorrectedSearch.h"
+#import "GEORPDirectionsProblem.h"
+#import "GEORPMerchantLookupCorrections.h"
+#import "GEORPPlaceProblem.h"
+
+@interface GEORPProblemCorrections : PBCodable <NSCopying>
+
+ {
+    PBDataReader *_reader;
+    NSString *_comments;
+    GEORPCorrectedCoordinate *_correctedCoordinate;
+    NSMutableArray *_correctedFields;
+    NSMutableArray *_correctedFlags;
+    GEORPCorrectedLabel *_correctedLabel;
+    GEORPMapLocation *_correctedMapLocation;
+    GEORPCorrectedSearch *_correctedSearch;
+    GEORPDirectionsProblem *_directionsProblem;
+    GEORPMerchantLookupCorrections *_merchantLookupCorrections;
+    NSMutableArray *_photoWithMetadatas;
+    GEORPPlaceProblem *_placeProblem;
+    unsigned int _readerMarkPos;
+    unsigned int _readerMarkLength;
+    os_unfair_lock_s _readerLock;
+    BOOL _delayed;
+    ? _flags;
+}
+
+
+@property (retain, nonatomic) NSString *comments;
+@property (retain, nonatomic) GEORPCorrectedCoordinate *correctedCoordinate;
+@property (retain, nonatomic) NSMutableArray *correctedFields;
+@property (retain, nonatomic) NSMutableArray *correctedFlags;
+@property (retain, nonatomic) GEORPCorrectedLabel *correctedLabel;
+@property (retain, nonatomic) GEORPMapLocation *correctedMapLocation;
+@property (retain, nonatomic) GEORPCorrectedSearch *correctedSearch;
+@property (nonatomic) BOOL delayed;
+@property (retain, nonatomic) GEORPDirectionsProblem *directionsProblem;
+@property (readonly, nonatomic) BOOL hasComments;
+@property (readonly, nonatomic) BOOL hasCorrectedCoordinate;
+@property (readonly, nonatomic) BOOL hasCorrectedLabel;
+@property (readonly, nonatomic) BOOL hasCorrectedMapLocation;
+@property (readonly, nonatomic) BOOL hasCorrectedSearch;
+@property (nonatomic) BOOL hasDelayed;
+@property (readonly, nonatomic) BOOL hasDirectionsProblem;
+@property (readonly, nonatomic) BOOL hasMerchantLookupCorrections;
+@property (readonly, nonatomic) BOOL hasPlaceProblem;
+@property (retain, nonatomic) GEORPMerchantLookupCorrections *merchantLookupCorrections;
+@property (retain, nonatomic) NSMutableArray *photoWithMetadatas;
+@property (retain, nonatomic) GEORPPlaceProblem *placeProblem;
+
+
++(BOOL)isValid:(id)arg0 ;
++(Class)correctedFieldType;
++(Class)correctedFlagType;
++(Class)photoWithMetadataType;
+-(BOOL)hasGreenTeaWithValue:(BOOL)arg0 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)correctedFieldAtIndex:(NSUInteger)arg0 ;
+-(id)correctedFlagAtIndex:(NSUInteger)arg0 ;
+-(id)description;
+-(id)dictionaryRepresentation;
+-(id)init;
+-(id)initWithData:(id)arg0 ;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(id)jsonRepresentation;
+-(id)photoWithMetadataAtIndex:(NSUInteger)arg0 ;
+-(void)addCorrectedField:(id)arg0 ;
+-(void)addCorrectedFlag:(id)arg0 ;
+-(void)addPhotoWithMetadata:(id)arg0 ;
+-(void)clearCorrectedFields;
+-(void)clearCorrectedFlags;
+-(void)clearPhotoWithMetadatas;
+-(void)clearSensitiveFields:(NSUInteger)arg0 ;
+-(void)copyTo:(id)arg0 ;
+-(void)mergeFrom:(id)arg0 ;
+-(void)readAll:(BOOL)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

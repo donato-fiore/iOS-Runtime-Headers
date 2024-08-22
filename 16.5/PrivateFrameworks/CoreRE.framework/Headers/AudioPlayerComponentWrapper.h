@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef AUDIOPLAYERCOMPONENTWRAPPER_H
+#define AUDIOPLAYERCOMPONENTWRAPPER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface AudioPlayerComponentWrapper : NSObject
+
+@property (nonatomic) *void component; // ivar: _component
+
+
+-(id)initWithComponent:(*void)arg0 ;
+
+
+@end
+
+
+#endif

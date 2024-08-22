@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC6PEOPLE16MESSAGESENDRULES_H
+#define _TTC6PEOPLE16MESSAGESENDRULES_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC6People16MessageSendRules : SwiftObject {
+    ? serviceAvailabiltyProvider;
+    ? lookupProvider;
+    ? featureFlags;
+    ? serverFeatureFlag;
+    ? listenerId;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

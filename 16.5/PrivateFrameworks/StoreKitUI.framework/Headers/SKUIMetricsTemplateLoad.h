@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef SKUIMETRICSTEMPLATELOAD_H
+#define SKUIMETRICSTEMPLATELOAD_H
+
+@class NSDictionary;
+@protocol NSCopying;
+
+#import <Foundation/Foundation.h>
+
+
+@interface SKUIMetricsTemplateLoad : NSObject <NSCopying>
+
+
+
+@property (readonly, nonatomic) NSDictionary *dictionaryRepresentation;
+@property (nonatomic) CGFloat requestStartTime; // ivar: _requestStartTime
+@property (nonatomic) CGFloat responseEndTime; // ivar: _responseEndTime
+@property (nonatomic) CGFloat responseStartTime; // ivar: _responseStartTime
+@property (nonatomic) BOOL responseWasCached; // ivar: _responseWasCached
+
+
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+
+
+@end
+
+
+#endif

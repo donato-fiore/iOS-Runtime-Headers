@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef HMBLOCALSQLCONTEXTROWBLOCK_H
+#define HMBLOCALSQLCONTEXTROWBLOCK_H
+
+@class HMFObject, NSData;
+
+
+
+@interface HMBLocalSQLContextRowBlock : HMFObject
+
+@property (readonly, nonatomic) NSUInteger blockRow; // ivar: _blockRow
+@property (readonly, nonatomic) NSData *optionsData; // ivar: _optionsData
+@property (readonly, nonatomic) NSUInteger type; // ivar: _type
+
+
+-(id)attributeDescriptions;
+-(id)initWithBlockRow:(NSUInteger)arg0 type:(NSUInteger)arg1 options:(id)arg2 ;
+
+
+@end
+
+
+#endif

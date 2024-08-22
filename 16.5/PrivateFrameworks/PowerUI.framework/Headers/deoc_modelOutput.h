@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef DEOC_MODELOUTPUT_H
+#define DEOC_MODELOUTPUT_H
+
+@class NSDictionary, NSSet;
+@protocol MLFeatureProvider;
+
+#import <Foundation/Foundation.h>
+
+
+@interface deoc_modelOutput : NSObject <MLFeatureProvider>
+
+
+
+@property (retain, nonatomic) NSDictionary *classProbability; // ivar: _classProbability
+@property (readonly, nonatomic) NSSet *featureNames;
+@property (nonatomic) NSInteger next_drain_is_significant; // ivar: _next_drain_is_significant
+
+
+-(id)featureValueForName:(id)arg0 ;
+-(id)initWithNext_drain_is_significant:(NSInteger)arg0 classProbability:(id)arg1 ;
+
+
+@end
+
+
+#endif

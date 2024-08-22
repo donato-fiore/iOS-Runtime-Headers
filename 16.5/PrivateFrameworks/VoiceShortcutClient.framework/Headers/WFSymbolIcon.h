@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef WFSYMBOLICON_H
+#define WFSYMBOLICON_H
+
+@class NSString;
+
+
+#import "WFIcon.h"
+#import "WFIconBackground.h"
+#import "WFColor.h"
+
+@interface WFSymbolIcon : WFIcon
+
+@property (readonly, nonatomic) WFIconBackground *background; // ivar: _background
+@property (readonly, nonatomic) WFColor *symbolColor; // ivar: _symbolColor
+@property (readonly, nonatomic) NSString *symbolName; // ivar: _symbolName
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)hasClearBackground;
+-(BOOL)hasTransparentBackground;
+-(BOOL)isEqual:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)iconWithSymbolColor:(id)arg0 background:(id)arg1 ;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithSymbolName:(id)arg0 background:(id)arg1 ;
+-(id)initWithSymbolName:(id)arg0 symbolColor:(id)arg1 background:(id)arg2 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

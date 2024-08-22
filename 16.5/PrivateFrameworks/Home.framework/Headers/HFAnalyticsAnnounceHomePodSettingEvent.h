@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef HFANALYTICSANNOUNCEHOMEPODSETTINGEVENT_H
+#define HFANALYTICSANNOUNCEHOMEPODSETTINGEVENT_H
+
+@class NSNumber, NSString;
+
+
+#import "HFAnalyticsEvent.h"
+
+@interface HFAnalyticsAnnounceHomePodSettingEvent : HFAnalyticsEvent
+
+@property (retain, nonatomic) NSNumber *announceEnabledForHomePod; // ivar: _announceEnabledForHomePod
+@property (retain, nonatomic) NSNumber *announceSettingChangeFailed; // ivar: _announceSettingChangeFailed
+@property (copy, nonatomic) NSString *processName; // ivar: _processName
+@property (retain, nonatomic) NSNumber *settingChangedByAdmin; // ivar: _settingChangedByAdmin
+@property (retain, nonatomic) NSNumber *settingChangedByOwner; // ivar: _settingChangedByOwner
+@property (retain, nonatomic) NSNumber *settingChangedDuringOnboarding; // ivar: _settingChangedDuringOnboarding
+@property (retain, nonatomic) NSNumber *settingChangedFromHomePodSettings; // ivar: _settingChangedFromHomePodSettings
+@property (retain, nonatomic) NSNumber *settingChangedFromUserSettings; // ivar: _settingChangedFromUserSettings
+
+
+-(id)initWithData:(id)arg0 ;
+-(id)payload;
+
+
+@end
+
+
+#endif

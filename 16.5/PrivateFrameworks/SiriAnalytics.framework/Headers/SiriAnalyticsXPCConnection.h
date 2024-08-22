@@ -1,0 +1,70 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef SIRIANALYTICSXPCCONNECTION_H
+#define SIRIANALYTICSXPCCONNECTION_H
+
+@class NSString, NSXPCConnection;
+@protocol SiriAnalyticsXPCService, OS_dispatch_queue, OS_dispatch_source, OS_dispatch_group;
+
+#import <Foundation/Foundation.h>
+
+
+@interface SiriAnalyticsXPCConnection : NSObject <SiriAnalyticsXPCService>
+
+ {
+    NSString *_machServiceName;
+    NSObject<OS_dispatch_queue> *_queue;
+    NSXPCConnection *_connection;
+    NSObject<OS_dispatch_source> *_idleTimer;
+    NSObject<OS_dispatch_group> *_xpcPublishingGroup;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(id)_currentConnection;
+-(id)initWithMachServiceName:(id)arg0 ;
+-(void)_cleanupConnection;
+-(void)_connectionInterrupted;
+-(void)_connectionInvalidated;
+-(void)_fetchLogicalClocksWithCompletion:(id)arg0 ;
+-(void)_fetchStateForPluginWithCompletion:(id)arg0 ;
+-(void)_idleTimerFired;
+-(void)_publishLargeMessage:(id)arg0 completion:(id)arg1 ;
+-(void)_publishLargeMessageToRemote:(id)arg0 attempts:(NSUInteger)arg1 completion:(id)arg2 ;
+-(void)_publishMessages:(id)arg0 completion:(id)arg1 ;
+-(void)_publishMessagesToRemote:(id)arg0 attempts:(NSUInteger)arg1 completion:(id)arg2 ;
+-(void)_publishUnorderedMessages:(id)arg0 attempts:(NSUInteger)arg1 completion:(id)arg2 ;
+-(void)_resetLogicalClockWithCompletion:(id)arg0 ;
+-(void)_resolveMessages:(id)arg0 completion:(id)arg1 ;
+-(void)_resolveMessagesAtRemote:(id)arg0 attempts:(NSUInteger)arg1 completion:(id)arg2 ;
+-(void)_saveState:(id)arg0 forPluginWithCompletion:(id)arg1 ;
+-(void)_startIdleTimer;
+-(void)_stopIdleTimer;
+-(void)_vendSandboxExtensionWithResource:(NSInteger)arg0 readonly:(BOOL)arg1 completion:(id)arg2 ;
+-(void)barrierWithCompletion:(id)arg0 ;
+-(void)dealloc;
+-(void)fetchLogicalClocksWithCompletion:(id)arg0 ;
+-(void)fetchStateForPluginWithCompletion:(id)arg0 ;
+-(void)publishLargeMessage:(id)arg0 completion:(id)arg1 ;
+-(void)publishMessages:(id)arg0 completion:(id)arg1 ;
+-(void)publishUnorderedMessages:(id)arg0 completion:(id)arg1 ;
+-(void)resetLogicalClockWithCompletion:(id)arg0 ;
+-(void)resolveMessages:(id)arg0 completion:(id)arg1 ;
+-(void)saveState:(id)arg0 forPluginWithCompletion:(id)arg1 ;
+-(void)sensitiveCondition:(int)arg0 endedAt:(NSUInteger)arg1 completion:(id)arg2 ;
+-(void)sensitiveCondition:(int)arg0 startedAt:(NSUInteger)arg1 completion:(id)arg2 ;
+-(void)vendSandboxExtensionWithResource:(NSInteger)arg0 readonly:(BOOL)arg1 completion:(id)arg2 ;
+
+
+@end
+
+
+#endif

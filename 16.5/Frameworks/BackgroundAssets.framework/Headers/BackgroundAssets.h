@@ -1,0 +1,18 @@
+
+
+#include "BADownloaderExtensionConnection.h"
+#include "BAAgentClientProxy.h"
+#include "BAManifestDownload.h"
+#include "BAAppStorePrepareDescriptor.h"
+#include "BAAppStoreEventDescriptor.h"
+#include "BAApplicationConfigurationOverrides.h"
+#include "BAAppExtensionInfo.h"
+#include "BACloudKitDownload.h"
+#include "BAAppStoreClient.h"
+#include "BAAppStoreProgressObserver.h"
+#include "BAAppStoreProgressConfiguration.h"
+#include "BAAppStoreProgressInfoDescriptor.h"
+#include "BAURLDownload.h"
+#include "BADownload.h"
+#include "BAAgentSystemProxy.h"
+#include "BADownloadManager.h"

@@ -1,0 +1,50 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef HMDAPPLICATIONDATA_H
+#define HMDAPPLICATIONDATA_H
+
+@class HMFObject, NSMutableDictionary, NSString, NSUUID;
+@protocol HMFLogging, NSSecureCoding, NSCopying, HMFDumpState;
+
+
+
+@interface HMDApplicationData : HMFObject <HMFLogging, NSSecureCoding, NSCopying, HMFDumpState>
+
+
+
+@property (retain, nonatomic) NSMutableDictionary *appDataDictionary; // ivar: _appDataDictionary
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic, getter=isEmpty) BOOL empty;
+@property (readonly) NSUInteger hash;
+@property (copy, nonatomic) NSUUID *parentUUID; // ivar: _parentUUID
+@property (readonly) Class superclass;
+@property (retain, nonatomic) NSUUID *uuid; // ivar: _uuid
+
+
++(BOOL)supportsSecureCoding;
++(id)logCategory;
+-(id)applicationDataForIdentifier:(id)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)dictionary;
+-(id)dumpState;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithDictionary:(id)arg0 parentUUID:(id)arg1 ;
+-(id)initWithParentUUID:(id)arg0 ;
+-(id)logIdentifier;
+-(id)modelObjectWithChangeType:(NSUInteger)arg0 ;
+-(void)encodeForXPCTransportWithCoder:(id)arg0 key:(id)arg1 ;
+-(void)encodeWithCoder:(id)arg0 ;
+-(void)removeApplicationDataForIdentifier:(id)arg0 ;
+-(void)setApplicationData:(id)arg0 forIdentifier:(id)arg1 ;
+-(void)updateParentUUIDIfNil:(id)arg0 ;
+-(void)updateWithModel:(id)arg0 ;
+
+
+@end
+
+
+#endif

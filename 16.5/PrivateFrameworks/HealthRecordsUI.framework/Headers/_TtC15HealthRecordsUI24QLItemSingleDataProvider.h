@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC15HEALTHRECORDSUI24QLITEMSINGLEDATAPROVIDER_H
+#define _TTC15HEALTHRECORDSUI24QLITEMSINGLEDATAPROVIDER_H
+
+@protocol QLPreviewItemDataProvider;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC15HealthRecordsUI24QLItemSingleDataProvider : NSObject <QLPreviewItemDataProvider>
+
+ {
+    ? data;
+}
+
+
+
+
+-(id)init;
+-(id)provideDataForItem:(id)arg0 ;
+
+
+@end
+
+
+#endif

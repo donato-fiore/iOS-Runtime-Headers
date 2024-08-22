@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef SXADVERTISEMENTCOMPONENTSIZERFACTORY_H
+#define SXADVERTISEMENTCOMPONENTSIZERFACTORY_H
+
+@class NSString;
+@protocol SXComponentSizerFactory;
+
+#import <Foundation/Foundation.h>
+
+
+@interface SXAdvertisementComponentSizerFactory : NSObject <SXComponentSizerFactory>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) int role;
+@property (readonly) Class superclass;
+@property (readonly, nonatomic) NSString *type;
+
+
+-(id)sizerForComponent:(id)arg0 componentLayout:(id)arg1 layoutOptions:(id)arg2 DOMObjectProvider:(id)arg3 ;
+
+
+@end
+
+
+#endif

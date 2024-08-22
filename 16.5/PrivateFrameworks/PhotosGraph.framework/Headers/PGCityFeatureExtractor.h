@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PGCITYFEATUREEXTRACTOR_H
+#define PGCITYFEATUREEXTRACTOR_H
+
+@class MARelationCollectionFeatureExtractor;
+
+
+
+@interface PGCityFeatureExtractor : MARelationCollectionFeatureExtractor
+
+
+
++(id)unlocalizedCityNameFromCityName:(id)arg0 countryCode:(id)arg1 fromCityManager:(id)arg2 ;
+-(id)initWithVersion:(NSInteger)arg0 error:(*id)arg1 ;
+-(id)labelsForVersion:(NSInteger)arg0 ;
+
+
+@end
+
+
+#endif

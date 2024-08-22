@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTCC15PREVIEWSHELLKIT24ANYCANVASCONTENTPROVIDERP33_9493629C1EFF935295490D7ACA30F0B53BOX_H
+#define _TTCC15PREVIEWSHELLKIT24ANYCANVASCONTENTPROVIDERP33_9493629C1EFF935295490D7ACA30F0B53BOX_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCC15PreviewShellKit24AnyCanvasContentProviderP33_9493629C1EFF935295490D7ACA30F0B53Box : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

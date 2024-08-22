@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTCC11SESSIONCORE16ACTIVITYDATABASE44MUTABLESYNCENGINEPAIREDDEVICEIDENTIFIERSTORE_H
+#define _TTCC11SESSIONCORE16ACTIVITYDATABASE44MUTABLESYNCENGINEPAIREDDEVICEIDENTIFIERSTORE_H
+
+@class TtCC11SessionCore16ActivityDatabase29SyncEngineRecordMetadataStore;
+
+
+
+@interface _TtCC11SessionCore16ActivityDatabase44MutableSyncEnginePairedDeviceIdentifierStore : TtCC11SessionCore16ActivityDatabase29SyncEngineRecordMetadataStore
+
+
+
+
+
+@end
+
+
+#endif

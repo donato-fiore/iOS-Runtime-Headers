@@ -1,0 +1,55 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef VCREDUNDANCYCONTROLLERVIDEO_H
+#define VCREDUNDANCYCONTROLLERVIDEO_H
+
+@class NSString, NSArray;
+@protocol VCRedundancyControllerProtocol, VCRedundancyControlAlgorithm;
+
+#import <Foundation/Foundation.h>
+
+#import "AVCStatisticsCollector.h"
+
+@interface VCRedundancyControllerVideo : NSObject <VCRedundancyControllerProtocol>
+
+ {
+    id *_redundancyControllerDelegate;
+    unsigned int _mode;
+    id<VCRedundancyControlAlgorithm> *_algorithm;
+    unsigned int _currentRedundancyPercentage;
+    int _forceRedundancyPercentage;
+    CGFloat _lastDefaultSettingLoadingTime;
+    unsigned char _mediaControlInfoFECFeedbackVersion;
+    int _type;
+    BOOL _isNWConnectionEnabled;
+    int _btNotificationHandlerIndex;
+    BOOL _isUsingInternalStatisticsCollector;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) NSArray *fecLevelPerFrameSizeVector; // ivar: _fecLevelPerFrameSizeVector
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) AVCStatisticsCollector *statisticsCollector; // ivar: _statisticsCollector
+@property (nonatomic) NSUInteger statisticsID; // ivar: _statisticsID
+@property (readonly) Class superclass;
+
+
+-(id)initWithDelegate:(id)arg0 mode:(unsigned int)arg1 parameters:(struct VCRedundancyControllerVideoParameters_t )arg2 ;
+-(void)dealloc;
+-(void)loadDefaultSettings;
+-(void)reportRedundancyPercentage:(unsigned int)arg0 redundancyInterval:(CGFloat)arg1 ;
+-(void)resetRedundancyStrategy:(struct ? *)arg0 ;
+-(void)setBtNotificationMonitor;
+-(void)unregisterStatistics;
+-(void)updateRedundancyStrategyWithNetworkStatistics:(struct tagVCStatisticsMessage )arg0 ;
+
+
+@end
+
+
+#endif

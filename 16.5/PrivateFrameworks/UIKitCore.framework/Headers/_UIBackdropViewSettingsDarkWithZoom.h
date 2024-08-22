@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _UIBACKDROPVIEWSETTINGSDARKWITHZOOM_H
+#define _UIBACKDROPVIEWSETTINGSDARKWITHZOOM_H
+
+@class UIBackdropViewSettingsDark;
+
+
+
+@interface _UIBackdropViewSettingsDarkWithZoom : UIBackdropViewSettingsDark
+
+
+
+-(void)setDefaultValues;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PUPHOTOKITDELETEACTIONPERFORMER_H
+#define PUPHOTOKITDELETEACTIONPERFORMER_H
+
+
+
+#import "PUPhotoKitDestructiveActionsPerformer.h"
+
+@interface PUPhotoKitDeleteActionPerformer : PUPhotoKitDestructiveActionsPerformer
+
+
+
++(BOOL)canPerformOnAsset:(id)arg0 inAssetCollection:(id)arg1 ;
+-(NSInteger)destructivePhotosAction;
+
+
+@end
+
+
+#endif

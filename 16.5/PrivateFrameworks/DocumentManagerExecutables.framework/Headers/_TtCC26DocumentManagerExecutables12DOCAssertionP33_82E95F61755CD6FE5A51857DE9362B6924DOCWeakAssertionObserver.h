@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTCC26DOCUMENTMANAGEREXECUTABLES12DOCASSERTIONP33_82E95F61755CD6FE5A51857DE9362B6924DOCWEAKASSERTIONOBSERVER_H
+#define _TTCC26DOCUMENTMANAGEREXECUTABLES12DOCASSERTIONP33_82E95F61755CD6FE5A51857DE9362B6924DOCWEAKASSERTIONOBSERVER_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCC26DocumentManagerExecutables12DOCAssertionP33_82E95F61755CD6FE5A51857DE9362B6924DOCWeakAssertionObserver : SwiftObject {
+    ? wrappedObserver;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

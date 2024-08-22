@@ -1,0 +1,97 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _SFACCOUNTPICKERTABLEVIEWCONTROLLER_H
+#define _SFACCOUNTPICKERTABLEVIEWCONTROLLER_H
+
+@class SFAccountTableViewController, NSMutableArray, NSArray, WBSPasskeyAutoFillFromNearbyDeviceOptions, WBSAuthenticationServicesAgentProxy, NSIndexPath, UIBarButtonItem, NSMutableSet, LAContext, NSString, WBSSavedAccount;
+@protocol SFAccountDetailViewControllerDelegate, SFAccountTableViewCellDelegate, SFAddSavedAccountViewControllerDelegate, _SFTableLinkableFooterViewDelegate, _SFAccountPickerTableViewControllerDelegate;
+
+
+#import "SFAddSavedAccountViewController.h"
+#import "SFAccountDetailViewController.h"
+#import "SFAccountPickerConfiguration.h"
+
+@interface _SFAccountPickerTableViewController : SFAccountTableViewController <SFAccountDetailViewControllerDelegate, SFAccountTableViewCellDelegate, SFAddSavedAccountViewControllerDelegate, _SFTableLinkableFooterViewDelegate>
+
+ {
+    NSMutableArray *_savedAccountsMatchingHintStrings;
+    NSMutableArray *_savedAccounts;
+    NSMutableArray *_matchingSavedAccounts;
+    NSArray *_autoFillPasskeys;
+    NSMutableArray *_savedAccountWithUsablePasskeys;
+    WBSPasskeyAutoFillFromNearbyDeviceOptions *_passkeyNearbyDeviceOptions;
+    NSInteger _sectionForPasskeys;
+    WBSAuthenticationServicesAgentProxy *_authenticationServicesAgentProxy;
+    NSInteger _sectionForPasswordsMatchingHintStrings;
+    NSInteger _sectionForAllPasswords;
+    NSIndexPath *_indexPathOfRowShowingDetailView;
+    UIBarButtonItem *_addNavigationBarItem;
+    SFAddSavedAccountViewController *_addPasswordViewController;
+    NSMutableSet *_selectedSavedAccounts;
+    SFAccountDetailViewController *_detailViewController;
+}
+
+
+@property (retain, nonatomic) LAContext *authenticatedContext; // ivar: _authenticatedContext
+@property (readonly, nonatomic) SFAccountPickerConfiguration *configuration; // ivar: _configuration
+@property (readonly, copy) NSString *debugDescription;
+@property (weak, nonatomic) NSObject<_SFAccountPickerTableViewControllerDelegate> *delegate; // ivar: _delegate
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (retain, nonatomic) WBSSavedAccount *savedAccountToRemoveAfterCompletedUpgradeInDetailView;
+@property (readonly) Class superclass;
+
+
+-(BOOL)_shouldShowAutoFillPasskeys;
+-(BOOL)_shouldShowPasswordsMatchingHintStringsSection;
+-(BOOL)tableView:(id)arg0 canPerformAction:(SEL)arg1 forRowAtIndexPath:(id)arg2 withSender:(id)arg3 ;
+-(BOOL)tableView:(id)arg0 shouldShowMenuForRowAtIndexPath:(id)arg1 ;
+-(CGFloat)tableView:(id)arg0 estimatedHeightForRowAtIndexPath:(id)arg1 ;
+-(NSInteger)_rowTypeForIndexPath:(id)arg0 ;
+-(NSInteger)numberOfSectionsInTableView:(id)arg0 ;
+-(NSInteger)tableView:(id)arg0 numberOfRowsInSection:(NSInteger)arg1 ;
+-(id)_savedAccountForIndexPath:(id)arg0 ;
+-(id)iconControllerForAddSavedAccountDetailViewController:(id)arg0 ;
+-(id)initWithConfiguration:(id)arg0 ;
+-(id)tableView:(id)arg0 cellForRowAtIndexPath:(id)arg1 ;
+-(id)tableView:(id)arg0 titleForHeaderInSection:(NSInteger)arg1 ;
+-(id)tableView:(id)arg0 trailingSwipeActionsConfigurationForRowAtIndexPath:(id)arg1 ;
+-(id)tableView:(id)arg0 viewForFooterInSection:(NSInteger)arg1 ;
+-(void)_accountStoreDidChange;
+-(void)_addExistingPasswordsBarItemTapped:(id)arg0 ;
+-(void)_addNavigationBarItemTapped:(id)arg0 ;
+-(void)_cancel;
+-(void)_deletePasswordAtIndexPath:(id)arg0 ;
+-(void)_didPickSavedAccountForPassword:(id)arg0 ;
+-(void)_presentAddPasswordViewController;
+-(void)_presentAlertToConfirmDeletingAccountsAtIndexPath:(id)arg0 ;
+-(void)_presentErrorAlertWithString:(id)arg0 ;
+-(void)_reloadSavedAccountsWithCompletionHandler:(id)arg0 ;
+-(void)_updateMatchingPasswords;
+-(void)_updateNavigationBarItems;
+-(void)_updateNavigationItemTitleAndPrompt;
+-(void)_updateSections;
+-(void)addSavedAccountViewControllerDidFinish:(id)arg0 withSavedAccount:(id)arg1 ;
+-(void)dealloc;
+-(void)handleContextMenuDeleteForIndexPath:(id)arg0 ;
+-(void)handleIconDidUpdateForDomain:(id)arg0 ;
+-(void)linkableFooterViewDidInteractWithLink:(id)arg0 ;
+-(void)newAutoFillablePasskeysAvailable:(id)arg0 ;
+-(void)reloadTable;
+-(void)searchPatternDidUpdate;
+-(void)tableView:(id)arg0 accessoryButtonTappedForRowWithIndexPath:(id)arg1 ;
+-(void)tableView:(id)arg0 didDeselectRowAtIndexPath:(id)arg1 ;
+-(void)tableView:(id)arg0 didSelectRowAtIndexPath:(id)arg1 ;
+-(void)viewDidDisappear:(BOOL)arg0 ;
+-(void)viewDidLoad;
+-(void)viewWillAppear:(BOOL)arg0 ;
+-(void)viewWillDisappear:(BOOL)arg0 ;
+
+
+@end
+
+
+#endif

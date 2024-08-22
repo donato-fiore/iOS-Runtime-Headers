@@ -1,0 +1,203 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef MWTSCHEMAMWTMUSICMETADATAREPORTED_H
+#define MWTSCHEMAMWTMUSICMETADATAREPORTED_H
+
+@class NSString, NSData;
+
+
+#import "SISchemaInstrumentationMessage.h"
+
+@interface MWTSchemaMWTMusicMetadataReported : SISchemaInstrumentationMessage {
+    ? _has;
+}
+
+
+@property (nonatomic) int assetEndPoint; // ivar: _assetEndPoint
+@property (nonatomic) int assetLocation; // ivar: _assetLocation
+@property (nonatomic) int assetSource; // ivar: _assetSource
+@property (copy, nonatomic) NSString *audioQueueType; // ivar: _audioQueueType
+@property (nonatomic) unsigned int cmInitialStartupItemCreationToLtluDurationInMs; // ivar: _cmInitialStartupItemCreationToLtluDurationInMs
+@property (nonatomic) unsigned int cmInitialStartupItemCreationToReadyToPlayDurationInMs; // ivar: _cmInitialStartupItemCreationToReadyToPlayDurationInMs
+@property (nonatomic) unsigned int contentConnectionTlsHandshakeDurationInMs; // ivar: _contentConnectionTlsHandshakeDurationInMs
+@property (nonatomic) unsigned int contentFirstSegmentDurationInMs; // ivar: _contentFirstSegmentDurationInMs
+@property (nonatomic) int endPointType; // ivar: _endPointType
+@property (copy, nonatomic) NSString *errorResolutionType; // ivar: _errorResolutionType
+@property (nonatomic) unsigned int formatBitDepth; // ivar: _formatBitDepth
+@property (nonatomic) unsigned int formatBitrate; // ivar: _formatBitrate
+@property (nonatomic) unsigned int formatChannels; // ivar: _formatChannels
+@property (nonatomic) int formatCodec; // ivar: _formatCodec
+@property (nonatomic) int formatLayout; // ivar: _formatLayout
+@property (nonatomic) unsigned int formatLayoutValue; // ivar: _formatLayoutValue
+@property (nonatomic) unsigned int formatSampleRate; // ivar: _formatSampleRate
+@property (nonatomic) int formatTier; // ivar: _formatTier
+@property (nonatomic) BOOL hasAssetEndPoint;
+@property (nonatomic) BOOL hasAssetLocation;
+@property (nonatomic) BOOL hasAssetSource;
+@property (nonatomic) BOOL hasAudioQueueType; // ivar: _hasAudioQueueType
+@property (nonatomic) BOOL hasBagWaitTime; // ivar: _hasBagWaitTime
+@property (nonatomic) BOOL hasCmInitialStartupItemCreationToLtluDurationInMs;
+@property (nonatomic) BOOL hasCmInitialStartupItemCreationToReadyToPlayDurationInMs;
+@property (nonatomic) BOOL hasContentConnectionTlsHandshakeDurationInMs;
+@property (nonatomic) BOOL hasContentFirstSegmentDurationInMs;
+@property (nonatomic) BOOL hasEndPointType;
+@property (nonatomic) BOOL hasErrorResolutionType; // ivar: _hasErrorResolutionType
+@property (nonatomic) BOOL hasFormatBitDepth;
+@property (nonatomic) BOOL hasFormatBitrate;
+@property (nonatomic) BOOL hasFormatChannels;
+@property (nonatomic) BOOL hasFormatCodec;
+@property (nonatomic) BOOL hasFormatLayout;
+@property (nonatomic) BOOL hasFormatLayoutValue;
+@property (nonatomic) BOOL hasFormatSampleRate;
+@property (nonatomic) BOOL hasFormatTier;
+@property (nonatomic) BOOL hasHasBagWaitTime;
+@property (nonatomic) BOOL hasHasLeaseWaitTime;
+@property (nonatomic) BOOL hasHasLookupWaitTime;
+@property (nonatomic) BOOL hasHasMediaRedownloadWaitTime;
+@property (nonatomic) BOOL hasHasSubscriptionAssetLoadWaitTime;
+@property (nonatomic) BOOL hasHasSuzeLeaseWaitTime;
+@property (nonatomic) BOOL hasIsAccountDataReady;
+@property (nonatomic) BOOL hasIsAutoPlay;
+@property (nonatomic) BOOL hasIsDelegatedPlayback;
+@property (nonatomic) BOOL hasIsFirstPlayAfterAppLaunch;
+@property (nonatomic) BOOL hasIsHlsKeysReady;
+@property (nonatomic) BOOL hasIsInterruptingPlayback;
+@property (nonatomic) BOOL hasIsLeaseReady;
+@property (nonatomic) BOOL hasIsMiniSinfAvailable;
+@property (nonatomic) BOOL hasIsNonDefaultUser;
+@property (nonatomic) BOOL hasIsOfflineKeyReady;
+@property (nonatomic) BOOL hasIsOnlineKeyReady;
+@property (nonatomic) BOOL hasIsPrimaryUser;
+@property (nonatomic) BOOL hasIsRemoteSetQueue;
+@property (nonatomic) BOOL hasIsSharePlayPlayback;
+@property (nonatomic) BOOL hasIsShuffled;
+@property (nonatomic) BOOL hasIsStoreBagReady;
+@property (nonatomic) BOOL hasIsSuzeLease;
+@property (nonatomic) BOOL hasLeaseWaitTime; // ivar: _hasLeaseWaitTime
+@property (nonatomic) BOOL hasLookupWaitTime; // ivar: _hasLookupWaitTime
+@property (nonatomic) BOOL hasMasterPlaylistConnectionTlsHandshakeDurationInMs;
+@property (nonatomic) BOOL hasMasterPlaylistRequestDurationInMs;
+@property (nonatomic) BOOL hasMediaRedownloadWaitTime; // ivar: _hasMediaRedownloadWaitTime
+@property (nonatomic) BOOL hasMusicDomain;
+@property (nonatomic) BOOL hasNetworkConnectionType;
+@property (nonatomic) BOOL hasNumberOfSpeakers;
+@property (nonatomic) BOOL hasPrefetchedMetadataSource;
+@property (nonatomic) BOOL hasQueueSize;
+@property (nonatomic) BOOL hasQueueType;
+@property (nonatomic) BOOL hasRouteConfiguration;
+@property (nonatomic) BOOL hasRouteType;
+@property (nonatomic) BOOL hasStreamingContentType;
+@property (nonatomic) BOOL hasSubPlaylistConnectionTlsHandshakeDurationInMs;
+@property (nonatomic) BOOL hasSubPlaylistRequestDurationInMs;
+@property (nonatomic) BOOL hasSubscriptionAssetLoadWaitTime; // ivar: _hasSubscriptionAssetLoadWaitTime
+@property (nonatomic) BOOL hasSubscriptionType;
+@property (nonatomic) BOOL hasSuzeLeaseWaitTime; // ivar: _hasSuzeLeaseWaitTime
+@property (nonatomic) BOOL hasWasMediaLibraryDatabaseUpgraded;
+@property (nonatomic) BOOL isAccountDataReady; // ivar: _isAccountDataReady
+@property (nonatomic) BOOL isAutoPlay; // ivar: _isAutoPlay
+@property (nonatomic) BOOL isDelegatedPlayback; // ivar: _isDelegatedPlayback
+@property (nonatomic) BOOL isFirstPlayAfterAppLaunch; // ivar: _isFirstPlayAfterAppLaunch
+@property (nonatomic) BOOL isHlsKeysReady; // ivar: _isHlsKeysReady
+@property (nonatomic) BOOL isInterruptingPlayback; // ivar: _isInterruptingPlayback
+@property (nonatomic) BOOL isLeaseReady; // ivar: _isLeaseReady
+@property (nonatomic) BOOL isMiniSinfAvailable; // ivar: _isMiniSinfAvailable
+@property (nonatomic) BOOL isNonDefaultUser; // ivar: _isNonDefaultUser
+@property (nonatomic) BOOL isOfflineKeyReady; // ivar: _isOfflineKeyReady
+@property (nonatomic) BOOL isOnlineKeyReady; // ivar: _isOnlineKeyReady
+@property (nonatomic) BOOL isPrimaryUser; // ivar: _isPrimaryUser
+@property (nonatomic) BOOL isRemoteSetQueue; // ivar: _isRemoteSetQueue
+@property (nonatomic) BOOL isSharePlayPlayback; // ivar: _isSharePlayPlayback
+@property (nonatomic) BOOL isShuffled; // ivar: _isShuffled
+@property (nonatomic) BOOL isStoreBagReady; // ivar: _isStoreBagReady
+@property (nonatomic) BOOL isSuzeLease; // ivar: _isSuzeLease
+@property (readonly, nonatomic) NSData *jsonData;
+@property (nonatomic) unsigned int masterPlaylistConnectionTlsHandshakeDurationInMs; // ivar: _masterPlaylistConnectionTlsHandshakeDurationInMs
+@property (nonatomic) unsigned int masterPlaylistRequestDurationInMs; // ivar: _masterPlaylistRequestDurationInMs
+@property (nonatomic) int musicDomain; // ivar: _musicDomain
+@property (nonatomic) int networkConnectionType; // ivar: _networkConnectionType
+@property (nonatomic) unsigned int numberOfSpeakers; // ivar: _numberOfSpeakers
+@property (nonatomic) int prefetchedMetadataSource; // ivar: _prefetchedMetadataSource
+@property (nonatomic) unsigned int queueSize; // ivar: _queueSize
+@property (nonatomic) int queueType; // ivar: _queueType
+@property (nonatomic) int routeConfiguration; // ivar: _routeConfiguration
+@property (nonatomic) int routeType; // ivar: _routeType
+@property (nonatomic) int streamingContentType; // ivar: _streamingContentType
+@property (nonatomic) unsigned int subPlaylistConnectionTlsHandshakeDurationInMs; // ivar: _subPlaylistConnectionTlsHandshakeDurationInMs
+@property (nonatomic) unsigned int subPlaylistRequestDurationInMs; // ivar: _subPlaylistRequestDurationInMs
+@property (nonatomic) int subscriptionType; // ivar: _subscriptionType
+@property (nonatomic) BOOL wasMediaLibraryDatabaseUpgraded; // ivar: _wasMediaLibraryDatabaseUpgraded
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)dictionaryRepresentation;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(id)suppressMessageUnderConditions;
+-(void)deleteAssetEndPoint;
+-(void)deleteAssetLocation;
+-(void)deleteAssetSource;
+-(void)deleteAudioQueueType;
+-(void)deleteCmInitialStartupItemCreationToLtluDurationInMs;
+-(void)deleteCmInitialStartupItemCreationToReadyToPlayDurationInMs;
+-(void)deleteContentConnectionTlsHandshakeDurationInMs;
+-(void)deleteContentFirstSegmentDurationInMs;
+-(void)deleteEndPointType;
+-(void)deleteErrorResolutionType;
+-(void)deleteFormatBitDepth;
+-(void)deleteFormatBitrate;
+-(void)deleteFormatChannels;
+-(void)deleteFormatCodec;
+-(void)deleteFormatLayout;
+-(void)deleteFormatLayoutValue;
+-(void)deleteFormatSampleRate;
+-(void)deleteFormatTier;
+-(void)deleteHasBagWaitTime;
+-(void)deleteHasLeaseWaitTime;
+-(void)deleteHasLookupWaitTime;
+-(void)deleteHasMediaRedownloadWaitTime;
+-(void)deleteHasSubscriptionAssetLoadWaitTime;
+-(void)deleteHasSuzeLeaseWaitTime;
+-(void)deleteIsAccountDataReady;
+-(void)deleteIsAutoPlay;
+-(void)deleteIsDelegatedPlayback;
+-(void)deleteIsFirstPlayAfterAppLaunch;
+-(void)deleteIsHlsKeysReady;
+-(void)deleteIsInterruptingPlayback;
+-(void)deleteIsLeaseReady;
+-(void)deleteIsMiniSinfAvailable;
+-(void)deleteIsNonDefaultUser;
+-(void)deleteIsOfflineKeyReady;
+-(void)deleteIsOnlineKeyReady;
+-(void)deleteIsPrimaryUser;
+-(void)deleteIsRemoteSetQueue;
+-(void)deleteIsSharePlayPlayback;
+-(void)deleteIsShuffled;
+-(void)deleteIsStoreBagReady;
+-(void)deleteIsSuzeLease;
+-(void)deleteMasterPlaylistConnectionTlsHandshakeDurationInMs;
+-(void)deleteMasterPlaylistRequestDurationInMs;
+-(void)deleteMusicDomain;
+-(void)deleteNetworkConnectionType;
+-(void)deleteNumberOfSpeakers;
+-(void)deletePrefetchedMetadataSource;
+-(void)deleteQueueSize;
+-(void)deleteQueueType;
+-(void)deleteRouteConfiguration;
+-(void)deleteRouteType;
+-(void)deleteStreamingContentType;
+-(void)deleteSubPlaylistConnectionTlsHandshakeDurationInMs;
+-(void)deleteSubPlaylistRequestDurationInMs;
+-(void)deleteSubscriptionType;
+-(void)deleteWasMediaLibraryDatabaseUpgraded;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

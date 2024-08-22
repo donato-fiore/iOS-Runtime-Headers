@@ -1,0 +1,15 @@
+
+
+#include "HALB_TailspinImpl.h"
+#include "DSP_ADM.h"
+#include "DSP_HALMock_IOProcessor.h"
+#include "DSP_HALMock_Factory.h"
+#include "DSP_HAL_Mock.h"
+#include "DSP_HALBypass_IOProcessor.h"
+#include "DSP_HALBypass_Factory.h"
+#include "DSP_HAL_Bypass.h"
+#include "Core_Audio_XPC_Raw_Transporter.h"
+#include "CAProcessDevicePair.h"
+#include "CAActiveDeviceStreamsForProcess.h"
+#include "CATapDescription.h"
+#include "DSP_HostCallbacks.h"

@@ -1,0 +1,49 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef BRCFETCHPARENTCHAINOPERATION_H
+#define BRCFETCHPARENTCHAINOPERATION_H
+
+@class BRCOperation, CKRecordID, NSMutableArray, NSString;
+@protocol BRCOperationSubclass;
+
+
+#import "BRCServerZone.h"
+#import "BRCItemID.h"
+
+@interface BRCFetchParentChainOperation : BRCOperation <BRCOperationSubclass>
+
+ {
+    NSUInteger _recordsFetched;
+    NSUInteger _recordsFetchedTotalMetadataSize;
+    NSUInteger _xattrsFetchedTotalSize;
+    CKRecordID *_parentRecordID;
+    BRCServerZone *_serverZone;
+    BRCItemID *_parentID;
+    NSMutableArray *_fetchParentChainCompletionBlocks;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) BRCItemID *parentIDToList;
+@property (readonly) Class superclass;
+
+
+-(BOOL)shouldRetryForError:(id)arg0 ;
+-(id)createActivity;
+-(id)initWithParentID:(id)arg0 zone:(id)arg1 isUserWaiting:(BOOL)arg2 ;
+-(void)_fetchParentChain:(id)arg0 ;
+-(void)addFetchParentChainCompletionBlock:(id)arg0 ;
+-(void)cancelToBeReplacedByOperation:(id)arg0 ;
+-(void)finishWithResult:(id)arg0 error:(id)arg1 ;
+-(void)main;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef VNFACEANALYZERMULTIDETECTORFAREV2_CAMERALIGHTWEIGHT_H
+#define VNFACEANALYZERMULTIDETECTORFAREV2_CAMERALIGHTWEIGHT_H
+
+
+
+#import "VNFaceAnalyzerMultiDetector.h"
+
+@interface VNFaceAnalyzerMultiDetectorFArev2_CameraLightweight : VNFaceAnalyzerMultiDetector
+
+
+
++(*void)modelVersionForOptions:(id)arg0 ;
++(id)espressoModelFileNameForConfigurationOptions:(id)arg0 ;
+-(BOOL)_isFaceprintJunk:(struct shared_ptr<vision::mod::ImageDescriptorBufferAbstract> )arg0 ;
+
+
+@end
+
+
+#endif

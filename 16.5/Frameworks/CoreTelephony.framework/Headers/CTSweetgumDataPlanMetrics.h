@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef CTSWEETGUMDATAPLANMETRICS_H
+#define CTSWEETGUMDATAPLANMETRICS_H
+
+@class NSDate, NSNumber;
+@protocol NSSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+#import "CTSweetgumDataPlanMetricsItem.h"
+
+@interface CTSweetgumDataPlanMetrics : NSObject <NSSecureCoding>
+
+
+
+@property (retain, nonatomic) NSDate *billingCycleEndDate; // ivar: _billingCycleEndDate
+@property (retain, nonatomic) CTSweetgumDataPlanMetricsItem *domestic; // ivar: _domestic
+@property (retain, nonatomic) NSNumber *domesticCapacity; // ivar: _domesticCapacity
+@property (nonatomic) NSInteger regStatus; // ivar: _regStatus
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(id)description;
+-(id)init;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

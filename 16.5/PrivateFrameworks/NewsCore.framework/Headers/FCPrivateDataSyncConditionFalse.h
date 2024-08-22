@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef FCPRIVATEDATASYNCCONDITIONFALSE_H
+#define FCPRIVATEDATASYNCCONDITIONFALSE_H
+
+@protocol FCPrivateDataSyncCondition;
+
+#import <Foundation/Foundation.h>
+
+
+@interface FCPrivateDataSyncConditionFalse : NSObject <FCPrivateDataSyncCondition>
+
+
+
+@property (readonly, nonatomic, getter=isSatisfied) BOOL satisfied;
+
+
+-(id)description;
+
+
+@end
+
+
+#endif

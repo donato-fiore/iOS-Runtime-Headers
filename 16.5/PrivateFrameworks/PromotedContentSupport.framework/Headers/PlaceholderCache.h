@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PLACEHOLDERCACHE_H
+#define PLACEHOLDERCACHE_H
+
+@protocol APPurgeableCacheNotifierP;
+
+#import <Foundation/Foundation.h>
+
+
+@interface PlaceholderCache : NSObject <APPurgeableCacheNotifierP>
+
+
+
+
+
+-(BOOL)isObjectInCache:(id)arg0 ;
+-(void)recentlyAccessedObject:(id)arg0 ;
+
+
+@end
+
+
+#endif

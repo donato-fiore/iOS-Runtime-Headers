@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef UIINTERFACEACTIONCONCRETEVISUALSTYLE_IOSALERT_H
+#define UIINTERFACEACTIONCONCRETEVISUALSTYLE_IOSALERT_H
+
+@class iOS;
+
+
+
+@interface UIInterfaceActionConcreteVisualStyle_iOSAlert : iOS
+
+
+
+-(id)_preferredActionFont;
+-(id)_regularActionFont;
+-(id)newActionBackgroundViewForViewState:(id)arg0 ;
+-(struct CGSize )minimumActionContentSize;
+
+
+@end
+
+
+#endif

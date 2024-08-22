@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef RWIPROTOCOLCSSFONT_H
+#define RWIPROTOCOLCSSFONT_H
+
+@class NSString, NSArray;
+
+
+#import "RWIProtocolJSONObject.h"
+
+@interface RWIProtocolCSSFont : RWIProtocolJSONObject
+
+@property (copy, nonatomic) NSString *displayName;
+@property (nonatomic) BOOL synthesizedBold;
+@property (nonatomic) BOOL synthesizedOblique;
+@property (copy, nonatomic) NSArray *variationAxes;
+
+
+-(id)initWithDisplayName:(id)arg0 variationAxes:(id)arg1 ;
+
+
+@end
+
+
+#endif

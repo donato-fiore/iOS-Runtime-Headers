@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef _TTC11WEATHERMAPSP33_102CF191975FCC28D2DC691610BD4FC345OVERLAYACCESSIBILITYDATASINGLEFRAMETILELOADER_H
+#define _TTC11WEATHERMAPSP33_102CF191975FCC28D2DC691610BD4FC345OVERLAYACCESSIBILITYDATASINGLEFRAMETILELOADER_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC11WeatherMapsP33_102CF191975FCC28D2DC691610BD4FC345OverlayAccessibilityDataSingleFrameTileLoader : SwiftObject {
+    ? loader;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

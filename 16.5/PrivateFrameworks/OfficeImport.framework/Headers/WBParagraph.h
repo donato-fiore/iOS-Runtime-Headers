@@ -1,0 +1,42 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef WBPARAGRAPH_H
+#define WBPARAGRAPH_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface WBParagraph : NSObject
+
+
+
++(?)readOfficeArtFor:(?)arg0 from:(?)arg1 attextRun;
++(?)readPictureFor:(?)arg0 from:(?)arg1 attextRun;
++(?)readRunsFor:(?)arg0 fromtextRun;
++(?)readSpecialCharacterFor:(?)arg0 from:(?)arg1 attextRun;
++(?)readSpecialCharactersFor:(?)arg0 fromtextRun;
++(?)readSymbolsFor:(?)arg0 fromtextRun;
++(BOOL)isCPAnnotationRangeEnd:(int)arg0 bookmarkTable:(*void)arg1 ;
++(int)blockType;
++(void)check:(id)arg0 forFieldMarkerFrom:(id)arg1 runEnd:(*int)arg2 readState:(*void)arg3 ;
++(void)checkForAnnotationBookmarkFrom:(id)arg0 runEnd:(*int)arg1 readState:(*void)arg2 ;
++(void)checkForAnnotationFrom:(id)arg0 runEnd:(*int)arg1 readState:(*void)arg2 ;
++(void)checkForBookmarkFrom:(id)arg0 runEnd:(*int)arg1 readState:(*void)arg2 ;
++(void)checkForNoteFrom:(id)arg0 footnote:(BOOL)arg1 runEnd:(*int)arg2 readState:(*void)arg3 ;
++(void)readAnnotationBookmarkFor:(id)arg0 from:(id)arg1 readState:(*void)arg2 ;
++(void)readAnnotationFor:(id)arg0 from:(id)arg1 readState:(*void)arg2 ;
++(void)readBookmarkFor:(id)arg0 from:(id)arg1 readState:(*void)arg2 ;
++(void)readCharacterRunsFor:(id)arg0 from:(id)arg1 readState:(*void)arg2 ;
++(void)readFieldMarkerFor:(id)arg0 from:(id)arg1 readState:(*void)arg2 ;
++(void)readFrom:(id)arg0 textRun:(struct WrdParagraphTextRun *)arg1 paragraph:(id)arg2 ;
++(void)readNoteFor:(id)arg0 from:(id)arg1 readState:(*void)arg2 ;
+
+
+@end
+
+
+#endif

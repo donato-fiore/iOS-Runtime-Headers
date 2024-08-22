@@ -1,0 +1,45 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef NPKPROTOREMOTEPASSACTIONENTERVALUERESPONSE_H
+#define NPKPROTOREMOTEPASSACTIONENTERVALUERESPONSE_H
+
+@class PBCodable, NSString;
+@protocol NSCopying;
+
+
+
+@interface NPKProtoRemotePassActionEnterValueResponse : PBCodable <NSCopying>
+
+ {
+    ? _has;
+}
+
+
+@property (nonatomic) BOOL hasIncrementAmount;
+@property (readonly, nonatomic) BOOL hasIncrementCurrency;
+@property (nonatomic) NSInteger incrementAmount; // ivar: _incrementAmount
+@property (retain, nonatomic) NSString *incrementCurrency; // ivar: _incrementCurrency
+@property (retain, nonatomic) NSString *requestUniqueID; // ivar: _requestUniqueID
+@property (nonatomic) int result; // ivar: _result
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)dictionaryRepresentation;
+-(id)resultAsString:(int)arg0 ;
+-(int)StringAsResult:(id)arg0 ;
+-(void)copyTo:(id)arg0 ;
+-(void)mergeFrom:(id)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

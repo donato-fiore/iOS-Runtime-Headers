@@ -1,0 +1,46 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef OITSUPROGRESSSTAGE_H
+#define OITSUPROGRESSSTAGE_H
+
+
+#import <Foundation/Foundation.h>
+
+#import "OITSUProgressStage.h"
+#import "OITSUProgressContext.h"
+
+@interface OITSUProgressStage : NSObject {
+    CGFloat m_currentPosition;
+    CGFloat m_totalSteps;
+    CGFloat m_stepsInParent;
+    CGFloat m_startInParent;
+    CGFloat m_nextSubStageParentSize;
+    OITSUProgressStage *m_parentStage;
+    OITSUProgressContext *m_context;
+}
+
+
+
+
+-(CGFloat)currentPosition;
+-(CGFloat)nextSubStageParentSize;
+-(CGFloat)overallProgress;
+-(id)description;
+-(id)initRootStageInContext:(id)arg0 ;
+-(id)initWithSteps:(CGFloat)arg0 takingSteps:(CGFloat)arg1 inContext:(id)arg2 ;
+-(id)parentStage;
+-(void)advanceProgress:(CGFloat)arg0 ;
+-(void)dealloc;
+-(void)end;
+-(void)setNextSubStageParentSize:(CGFloat)arg0 ;
+-(void)setProgress:(CGFloat)arg0 ;
+-(void)setProgressPercentage:(CGFloat)arg0 ;
+
+
+@end
+
+
+#endif

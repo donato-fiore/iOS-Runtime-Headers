@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef PLXPCPHOTOLIBRARYSTOREPOLICYSANDBOX_H
+#define PLXPCPHOTOLIBRARYSTOREPOLICYSANDBOX_H
+
+@class NSString;
+@protocol PLXPCPhotoLibraryStorePolicy;
+
+#import <Foundation/Foundation.h>
+
+
+@interface PLXPCPhotoLibraryStorePolicySandbox : NSObject <PLXPCPhotoLibraryStorePolicy>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(BOOL)hasSandboxAccessForPath:(id)arg0 ;
+-(BOOL)shouldUseXPCStoreForDatabasePath:(id)arg0 auditToken:(struct ? )arg1 ;
+
+
+@end
+
+
+#endif

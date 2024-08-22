@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef AMSFRAUDREPORTTASK_H
+#define AMSFRAUDREPORTTASK_H
+
+
+
+#import "AMSTask.h"
+
+@interface AMSFraudReportTask : AMSTask
+
+
+
++(id)ams_performFraudReportRefreshWithAccount:(id)arg0 transactionID:(id)arg1 nameSpace:(id)arg2 fsrData:(id)arg3 keyID:(id)arg4 ;
++(id)performFraudReportRefreshWithAccount:(id)arg0 transactionID:(id)arg1 nameSpace:(id)arg2 fsrData:(id)arg3 keyID:(id)arg4 ;
+
+
+@end
+
+
+#endif

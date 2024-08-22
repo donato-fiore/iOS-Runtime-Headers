@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 16.5.0 | SDK: 16.5.0
+
+
+#ifndef BLASTDOORSMSCTPARTPLAIN_H
+#define BLASTDOORSMSCTPARTPLAIN_H
+
+@class NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface BlastDoorSMSCTPartPlain : NSObject {
+    ? sMSCTPartPlain;
+}
+
+
+@property (nonatomic, readonly) NSString *description;
+@property (nonatomic, readonly) NSString *plainTextContentBody;
+
+
+-(id)init;
+
+
+@end
+
+
+#endif
