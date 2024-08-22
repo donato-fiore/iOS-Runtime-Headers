@@ -1,0 +1,41 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef TSUUIIMAGE_H
+#define TSUUIIMAGE_H
+
+@class UIImage;
+
+
+#import "TSUImage.h"
+#import "TSUUIImageAutoreleasePoolGuard.h"
+
+@interface TSUUIImage : TSUImage {
+    UIImage *mUIImage;
+    TSUUIImageAutoreleasePoolGuard *mGuard;
+}
+
+
+
+
++(id)imageNamed:(id)arg0 ;
++(void)i_performBlockWithUIImageLock:(id)arg0 ;
+-(CGFloat)scale;
+-(NSInteger)imageOrientation;
+-(id)UIImage;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)initWithContentsOfFile:(id)arg0 ;
+-(id)initWithUIImage:(id)arg0 ;
+-(id)p_initWithUIImage:(id)arg0 needsGuard:(BOOL)arg1 ;
+-(struct CGImage *)CGImage;
+-(struct CGImage *)CGImageForSize:(struct CGSize )arg0 ;
+-(struct CGSize )size;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

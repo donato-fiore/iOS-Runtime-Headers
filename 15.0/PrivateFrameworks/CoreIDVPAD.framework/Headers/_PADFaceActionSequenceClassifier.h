@@ -1,0 +1,64 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _PADFACEACTIONSEQUENCECLASSIFIER_H
+#define _PADFACEACTIONSEQUENCECLASSIFIER_H
+
+@class NSMutableArray, NSArray, NSMutableDictionary, NSNumber, NSString;
+@protocol PADFaceActionSequenceClassifier, PADFaceActionModuleDelegate, PADFaceActionClassifier;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _PADFaceActionSequenceClassifier : NSObject <PADFaceActionSequenceClassifier, PADFaceActionModuleDelegate>
+
+ {
+    NSUInteger _currentGestureIdx;
+    NSUInteger _minRequiredGestures;
+    NSUInteger _detectedGestures;
+    NSMutableArray *_gestureTypesToSkip;
+    NSArray *_gestureTypes;
+    id<PADFaceActionClassifier> *_monitor;
+    id *_onGesturesFinished;
+    id *_onGestureStart;
+    id *_onIncorrectGestureDetected;
+    BOOL _processSingleBuffer;
+    NSUInteger _consecutiveBuffersNotDetected;
+    BOOL _wasGestureSkippedWithAccessibility;
+    NSMutableDictionary *_scoresByGesture;
+    NSUInteger _currentGestureBufferCount;
+}
+
+
+@property (readonly, nonatomic) NSNumber *assessment;
+@property (retain, nonatomic) NSMutableArray *assessmentsFAC; // ivar: _assessmentsFAC
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain, nonatomic) NSMutableArray *faceprintsID; // ivar: _faceprintsID
+@property (retain, nonatomic) NSMutableArray *gestureSequence; // ivar: _gestureSequence
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+@property (retain, nonatomic) NSMutableArray *timestampsFAC; // ivar: _timestampsFAC
+@property (retain, nonatomic) NSMutableArray *timestampsID; // ivar: _timestampsID
+
+
+-(NSInteger)_detectedGestures;
+-(id)init;
+-(void)_handleGestureMonitorResult:(id)arg0 ;
+-(void)_startNextGesture;
+-(void)faceActionModuleDidFinishGestureDetectionWithAssessment:(id)arg0 ;
+-(void)pauseGesture;
+-(void)processFrame:(id)arg0 ;
+-(void)restartGesture;
+-(void)resumeGesture;
+-(void)skipGesture:(BOOL)arg0 ;
+-(void)skipRecordedGesture;
+// -(void)startLivenessCheck:(id)arg0 gestureTypes:(id)arg1 minNumberOfGestures:(NSUInteger)arg2 processSingleBuffer:(BOOL)arg3 onGestureStart:(id)arg4 onIncorrectGestureDetected:(unk)arg5 onGesturesFinished:(id)arg6  ;
+
+
+@end
+
+
+#endif

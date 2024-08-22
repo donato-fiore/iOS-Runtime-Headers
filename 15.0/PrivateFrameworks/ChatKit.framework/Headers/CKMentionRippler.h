@@ -1,0 +1,46 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CKMENTIONRIPPLER_H
+#define CKMENTIONRIPPLER_H
+
+@class NSArray;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CKMentionRippler : NSObject {
+    NSArray *_colors;
+    NSArray *_shadowColors;
+    NSArray *_scales;
+    NSArray *_offsets;
+    CGFloat _startTime;
+    NSUInteger _preFrames;
+    NSUInteger _animateFrames;
+    NSUInteger _postFrames;
+    NSUInteger _delayFrames;
+    BOOL _reduceMotion;
+}
+
+
+
+
+-(BOOL)finishedForGlyphIndex:(NSUInteger)arg0 numberOfGlyphs:(NSUInteger)arg1 timeIndex:(NSUInteger)arg2 ;
+-(CGFloat)currentScaleForGlyphIndex:(NSUInteger)arg0 numberOfGlyphs:(NSUInteger)arg1 timeIndex:(NSUInteger)arg2 ;
+-(NSUInteger)currentIndexForGlyphIndex:(NSUInteger)arg0 numberOfGlyphs:(NSUInteger)arg1 timeIndex:(NSUInteger)arg2 isFinished:(*BOOL)arg3 ;
+-(NSUInteger)currentTimeIndex;
+-(NSUInteger)finishedTimeIndex;
+-(id)currentColorForGlyphIndex:(NSUInteger)arg0 numberOfGlyphs:(NSUInteger)arg1 timeIndex:(NSUInteger)arg2 ;
+-(id)currentShadowColorForGlyphIndex:(NSUInteger)arg0 numberOfGlyphs:(NSUInteger)arg1 timeIndex:(NSUInteger)arg2 ;
+-(id)init;
+-(struct CGSize )currentOffsetForGlyphIndex:(NSUInteger)arg0 numberOfGlyphs:(NSUInteger)arg1 timeIndex:(NSUInteger)arg2 ;
+-(void)generateValues;
+-(void)start;
+
+
+@end
+
+
+#endif

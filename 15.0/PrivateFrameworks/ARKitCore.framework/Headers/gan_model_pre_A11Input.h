@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef GAN_MODEL_PRE_A11INPUT_H
+#define GAN_MODEL_PRE_A11INPUT_H
+
+@class NSSet, MLMultiArray;
+@protocol MLFeatureProvider;
+
+#import <Foundation/Foundation.h>
+
+
+@interface gan_model_pre_A11Input : NSObject <MLFeatureProvider>
+
+
+
+@property (readonly, nonatomic) NSSet *featureNames;
+@property (retain, nonatomic) MLMultiArray *input; // ivar: _input
+
+
+-(id)featureValueForName:(id)arg0 ;
+-(id)initWithInput:(id)arg0 ;
+
+
+@end
+
+
+#endif

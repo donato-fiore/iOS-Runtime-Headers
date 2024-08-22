@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CKFULLSCREENBALLOONVIEWCONTROLLERSOCIALLAYER_H
+#define CKFULLSCREENBALLOONVIEWCONTROLLERSOCIALLAYER_H
+
+
+
+#import "CKFullScreenBalloonViewControllerPhone.h"
+
+@interface CKFullScreenBalloonViewControllerSocialLayer : CKFullScreenBalloonViewControllerPhone
+
+
+
+-(BOOL)constrainToPresentingVCBounds;
+-(BOOL)forceWindowedPresentation;
+-(BOOL)preserveModalPresentationStyle;
+-(BOOL)shouldShowVotingView;
+-(BOOL)showActionMenu;
+-(BOOL)wantsWindowedPresentation;
+
+
+@end
+
+
+#endif

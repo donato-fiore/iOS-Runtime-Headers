@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef HUTELEVISIONSETTINGSITEMMODULECONTROLLER_H
+#define HUTELEVISIONSETTINGSITEMMODULECONTROLLER_H
+
+
+
+#import "HUItemTableModuleController.h"
+
+@interface HUTelevisionSettingsItemModuleController : HUItemTableModuleController
+
+
+
+-(Class)cellClassForItem:(id)arg0 ;
+-(NSUInteger)didSelectItem:(id)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CDPDACCOUNT_H
+#define CDPDACCOUNT_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface CDPDAccount : NSObject
+
+@property (nonatomic) BOOL hasDisabledKeychainExplicitly;
+
+
++(id)sharedInstance;
+-(BOOL)isICDPEnabledForDSID:(id)arg0 ;
+-(BOOL)isICDPEnabledForDSID:(id)arg0 checkWithServer:(BOOL)arg1 ;
+
+
+@end
+
+
+#endif

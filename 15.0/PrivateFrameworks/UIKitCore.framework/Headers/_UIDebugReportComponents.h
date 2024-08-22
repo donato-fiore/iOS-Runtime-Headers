@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _UIDEBUGREPORTCOMPONENTS_H
+#define _UIDEBUGREPORTCOMPONENTS_H
+
+@class NSString;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _UIDebugReportComponents : NSObject
+
+@property (copy, nonatomic) NSString *body; // ivar: _body
+@property (copy, nonatomic) NSString *footer; // ivar: _footer
+@property (copy, nonatomic) NSString *header; // ivar: _header
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTCC7NEWSUI219STUBFEEDPOOLSERVICEP33_6ED57CCA159D5E24D5DD08B6744269B018STUBHISTORYSERVICE_H
+#define _TTCC7NEWSUI219STUBFEEDPOOLSERVICEP33_6ED57CCA159D5E24D5DD08B6744269B018STUBHISTORYSERVICE_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCC7NewsUI219StubFeedPoolServiceP33_6ED57CCA159D5E24D5DD08B6744269B018StubHistoryService : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

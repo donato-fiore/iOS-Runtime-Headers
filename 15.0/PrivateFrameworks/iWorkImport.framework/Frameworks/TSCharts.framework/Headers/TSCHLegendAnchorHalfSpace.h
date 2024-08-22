@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef TSCHLEGENDANCHORHALFSPACE_H
+#define TSCHLEGENDANCHORHALFSPACE_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface TSCHLegendAnchorHalfSpace : NSObject
+
+@property (readonly, nonatomic) TSCHLegendAnchorLine line; // ivar: _line
+
+
++(id)halfSpaceWithLine:(struct TSCHLegendAnchorLine )arg0 ;
+-(id)description;
+-(id)initWithLine:(struct TSCHLegendAnchorLine )arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTCC18PREVIEWSFOUNDATION17DELAYEDINVOCATIONP33_3F9A6BB13CF14F159F01BBDC160BCE9124BASEDELAYEDINVOCATIONBOX_H
+#define _TTCC18PREVIEWSFOUNDATION17DELAYEDINVOCATIONP33_3F9A6BB13CF14F159F01BBDC160BCE9124BASEDELAYEDINVOCATIONBOX_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCC18PreviewsFoundation17DelayedInvocationP33_3F9A6BB13CF14F159F01BBDC160BCE9124BaseDelayedInvocationBox : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

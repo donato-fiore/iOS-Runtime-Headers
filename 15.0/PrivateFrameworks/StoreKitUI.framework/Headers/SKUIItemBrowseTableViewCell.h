@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SKUIITEMBROWSETABLEVIEWCELL_H
+#define SKUIITEMBROWSETABLEVIEWCELL_H
+
+
+
+#import "SKUIItemTableViewCell.h"
+#import "SKUIItemBrowseCellLayout.h"
+
+@interface SKUIItemBrowseTableViewCell : SKUIItemTableViewCell
+
+@property (readonly, nonatomic) SKUIItemBrowseCellLayout *layout; // ivar: _layout
+
+
+-(id)initWithStyle:(NSInteger)arg0 reuseIdentifier:(id)arg1 ;
+-(void)configureForItem:(id)arg0 clientContext:(id)arg1 rowIndex:(NSInteger)arg2 ;
+
+
+@end
+
+
+#endif

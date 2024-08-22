@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef FTMUTABLERECOGNITIONTOKEN_H
+#define FTMUTABLERECOGNITIONTOKEN_H
+
+@class NSString;
+
+
+#import "FTRecognitionToken.h"
+
+@interface FTMutableRecognitionToken : FTRecognitionToken
+
+@property (nonatomic) BOOL add_space_after;
+@property (nonatomic) int confidence;
+@property (nonatomic) int end_milli_seconds;
+@property (copy, nonatomic) NSString *ipa_phone_seq;
+@property (copy, nonatomic) NSString *phone_seq;
+@property (nonatomic) int silence_start_milli_seconds;
+@property (nonatomic) int start_milli_seconds;
+@property (copy, nonatomic) NSString *token_text;
+
+
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)init;
+
+
+@end
+
+
+#endif

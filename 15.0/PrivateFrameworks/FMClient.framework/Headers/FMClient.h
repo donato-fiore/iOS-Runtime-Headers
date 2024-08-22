@@ -1,0 +1,17 @@
+
+
+#include "_TtC8FMClient7Session.h"
+#include "_TtC8FMClient17URLSessionFactory.h"
+#include "_TtC8FMClient15PlaySoundDevice.h"
+#include "_TtC8FMClient19ClientConfiguration.h"
+#include "_TtC8FMClient12SearchFilter.h"
+#include "_TtC8FMClient24VoiceAssistantSyncResult.h"
+#include "_TtC8FMClient24AuthenticationCredential.h"
+#include "_TtC8FMClient11SessionInfo.h"
+#include "_TtC8FMClient21FMClientXPCConnection.h"
+#include "_TtC8FMClient24VoiceAssistantDeviceName.h"
+#include "_TtC8FMClient16DiscoveredDevice.h"
+#include "_TtC8FMClient12SearchResult.h"
+#include "_TtC8FMClient10HttpClient.h"
+#include "_TtC8FMClient18SearchResultDevice.h"
+#include "_TtC8FMClient18SearchFilterDevice.h"

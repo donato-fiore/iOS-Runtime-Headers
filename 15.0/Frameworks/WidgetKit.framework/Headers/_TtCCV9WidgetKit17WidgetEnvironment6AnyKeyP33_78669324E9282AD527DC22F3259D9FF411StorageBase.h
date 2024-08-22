@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTCCV9WIDGETKIT17WIDGETENVIRONMENT6ANYKEYP33_78669324E9282AD527DC22F3259D9FF411STORAGEBASE_H
+#define _TTCCV9WIDGETKIT17WIDGETENVIRONMENT6ANYKEYP33_78669324E9282AD527DC22F3259D9FF411STORAGEBASE_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCCV9WidgetKit17WidgetEnvironment6AnyKeyP33_78669324E9282AD527DC22F3259D9FF411StorageBase : SwiftObject
+
+
+
+
+
+@end
+
+
+#endif

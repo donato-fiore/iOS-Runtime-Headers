@@ -1,0 +1,18 @@
+
+
+#include "AXPIFingerEventTouchInfo.h"
+#include "AXPIFingerEventSender.h"
+#include "AXPIEventSender.h"
+#include "AXPIFingerUtilities.h"
+#include "AXPISystemActionHelper.h"
+#include "AXPIPinchChainView.h"
+#include "AXPIFingerModel.h"
+#include "AXPIFingerController.h"
+#include "AXPIPointSmoother.h"
+#include "AXPIFingerLayer.h"
+#include "AXPIFingerView.h"
+#include "AXPIFingerSmallAppearance.h"
+#include "AXPIFingerLargeAppearance.h"
+#include "AXPISystemPointerPreciseAppearance.h"
+#include "AXPISystemPointerLargeAppearance.h"
+#include "AXPIFingerContainerView.h"

@@ -1,0 +1,57 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CAMSTORAGECONTROLLER_H
+#define CAMSTORAGECONTROLLER_H
+
+@class NSByteCountFormatter, NSDate;
+@protocol OS_dispatch_queue, CAMStorageControllerDelegate;
+
+#import <Foundation/Foundation.h>
+
+#import "CAMCaptureGraphConfiguration.h"
+
+@interface CAMStorageController : NSObject
+
+@property (readonly, nonatomic) NSByteCountFormatter *_byteFormatter; // ivar: __byteFormatter
+@property (readonly, nonatomic) NSObject<OS_dispatch_queue> *_cacheDeleteQueryQueue; // ivar: __cacheDeleteQueryQueue
+@property (nonatomic, setter=_setCachedEstimatedSpace:) ? _cachedEstimatedSpace; // ivar: __cachedEstimatedSpace
+@property (nonatomic) NSInteger _cachedLegacyMGDiskThreshold; // ivar: __cachedLegacyMGDiskThreshold
+@property (nonatomic) NSInteger _cachedLowDiskThreshold; // ivar: __cachedLowDiskThreshold
+@property (nonatomic) NSInteger _cachedVeryLowDiskThreshold; // ivar: __cachedVeryLowDiskThreshold
+@property (retain, nonatomic) NSDate *_lastPurgeRequestUpdateTime; // ivar: __lastPurgeRequestUpdateTime
+@property (nonatomic, setter=_setPurging:) BOOL _purging; // ivar: __purging
+@property (nonatomic) *CacheDeleteToken _queryQueue_currentToken; // ivar: __queryQueue_currentToken
+@property (nonatomic) BOOL _shouldCancelNextPurge; // ivar: __shouldCancelNextPurge
+@property (weak, nonatomic) NSObject<CAMStorageControllerDelegate> *delegate; // ivar: _delegate
+@property (retain, nonatomic) CAMCaptureGraphConfiguration *graphConfiguration; // ivar: _graphConfiguration
+@property (readonly, nonatomic, getter=isPurging) BOOL purging;
+
+
+-(BOOL)hasDiskSpaceToAllowCaptureWithConfiguration:(id)arg0 allowPurging:(BOOL)arg1 ;
+-(CGFloat)availableRecordingTimeInSecondsForGraphConfiguration:(id)arg0 ;
+-(NSInteger)_absoluteMinimumBytesForMode:(NSInteger)arg0 ;
+-(NSInteger)_preferredMinimumBytesForConfiguration:(id)arg0 ;
+-(NSInteger)_totalBytesInSystem;
+-(NSInteger)_totalFreeBytes;
+-(NSInteger)bytesPerMinuteForGraphConfiguration:(id)arg0 ;
+-(NSInteger)minimumDiskUsageThresholdInBytesForGraphConfiguration:(id)arg0 ;
+-(id)_cacheDeleteVolume;
+-(id)_pathForStorageMountPoint;
+-(id)init;
+-(void)_legacyDiskSpaceDidBecomeLowNotification;
+-(void)_loadFreeDiskThresholds;
+-(void)_notifyDelegateAndUpdateContinuousPurgeStatus:(BOOL)arg0 forceStop:(BOOL)arg1 ;
+-(void)_queryQueue_aggregateLowDiskEventWithIdentifier:(id)arg0 ;
+-(void)_queryQueue_updatePurgeRequestStateForTotalFreeBytes:(NSInteger)arg0 preferredFreeBytes:(NSInteger)arg1 ;
+-(void)_statMountPoint:(struct statfs *)arg0 ;
+-(void)_updatePurgeRequestStateForConfiguration:(id)arg0 totalFreeBytes:(NSInteger)arg1 ;
+-(void)reportLowDiskEventWithIdentifier:(id)arg0 ;
+
+
+@end
+
+
+#endif

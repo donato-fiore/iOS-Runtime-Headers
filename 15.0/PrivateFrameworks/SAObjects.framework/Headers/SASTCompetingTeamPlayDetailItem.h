@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SASTCOMPETINGTEAMPLAYDETAILITEM_H
+#define SASTCOMPETINGTEAMPLAYDETAILITEM_H
+
+@class NSString;
+@protocol SASTTemplateItem;
+
+
+#import "AceObject.h"
+#import "SAUIDecoratedText.h"
+
+@interface SASTCompetingTeamPlayDetailItem : AceObject <SASTTemplateItem>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) BOOL firstEntity;
+@property (readonly) NSUInteger hash;
+@property (retain, nonatomic) SAUIDecoratedText *playDetail;
+@property (readonly) Class superclass;
+
+
++(id)competingTeamPlayDetailItem;
++(id)competingTeamPlayDetailItemWithDictionary:(id)arg0 context:(id)arg1 ;
+-(id)encodedClassName;
+-(id)groupIdentifier;
+
+
+@end
+
+
+#endif

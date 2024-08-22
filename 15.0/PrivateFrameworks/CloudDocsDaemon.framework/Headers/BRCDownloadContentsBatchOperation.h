@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef BRCDOWNLOADCONTENTSBATCHOPERATION_H
+#define BRCDOWNLOADCONTENTSBATCHOPERATION_H
+
+
+
+#import "BRCTransferBatchOperation.h"
+
+@interface BRCDownloadContentsBatchOperation : BRCTransferBatchOperation
+
+@property (copy) id *perDownloadCompletionBlock; // ivar: _perDownloadCompletionBlock
+
+
+-(id)actionPrettyName;
+-(id)createActivity;
+-(id)initWithSyncContext:(id)arg0 ;
+-(id)transferredObjectsPrettyName;
+-(void)addDownload:(id)arg0 ;
+-(void)finishWithResult:(id)arg0 error:(id)arg1 ;
+-(void)mainWithTransfers:(id)arg0 ;
+-(void)sendTransferCompletionCallBack:(id)arg0 error:(id)arg1 ;
+
+
+@end
+
+
+#endif

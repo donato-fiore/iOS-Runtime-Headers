@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef WDHEARTEVENTLISTDATAPROVIDER_H
+#define WDHEARTEVENTLISTDATAPROVIDER_H
+
+
+
+#import "WDSampleListDataProvider.h"
+
+@interface WDHeartEventListDataProvider : WDSampleListDataProvider
+
+
+
+-(CGFloat)customCellHeight;
+-(CGFloat)customEstimatedCellHeight;
+-(NSInteger)cellStyle;
+-(id)_heartEventType;
+-(id)createQueryForSampleType:(id)arg0 predicate:(id)arg1 limit:(NSInteger)arg2 sortDescriptors:(id)arg3 resultsHandler:(id)arg4 ;
+-(id)customCellForObject:(id)arg0 indexPath:(id)arg1 tableView:(id)arg2 ;
+-(id)sampleTypes;
+-(id)titleForSection:(NSUInteger)arg0 ;
+
+
+@end
+
+
+#endif

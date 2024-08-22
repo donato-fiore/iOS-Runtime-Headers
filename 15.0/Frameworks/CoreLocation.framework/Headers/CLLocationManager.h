@@ -1,0 +1,251 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CLLOCATIONMANAGER_H
+#define CLLOCATIONMANAGER_H
+
+@class NSSet, NSString;
+@protocol CLLocationManagerDelegate;
+
+#import <Foundation/Foundation.h>
+
+#import "CLHeading.h"
+#import "CLLocation.h"
+
+@interface CLLocationManager : NSObject {
+    id *_internal;
+}
+
+
+@property (readonly, nonatomic) int _authorizationStatus;
+@property (nonatomic, getter=_isGroundAltitudeEnabled, setter=_setGroundAltitudeEnabled:) BOOL _groundAltitudeEnabled;
+@property (readonly, nonatomic) BOOL _limitsPrecision;
+@property (readonly, nonatomic) NSInteger accuracyAuthorization;
+@property (nonatomic) NSInteger activityType;
+@property (nonatomic) BOOL allowsAlteredAccessoryLocations;
+@property (nonatomic) BOOL allowsBackgroundLocationUpdates;
+@property (readonly, nonatomic) int authorizationStatus;
+@property (readonly, nonatomic, getter=isAuthorizedForPreciseLocation) BOOL authorizedForPreciseLocation;
+@property (readonly, nonatomic, getter=isAuthorizedForWidgetUpdates) BOOL authorizedForWidgetUpdates;
+@property (weak, nonatomic) NSObject<CLLocationManagerDelegate> *delegate;
+@property (nonatomic) CGFloat desiredAccuracy;
+@property (nonatomic) CGFloat distanceFilter;
+@property (nonatomic, getter=isDynamicAccuracyReductionEnabled) BOOL dynamicAccuracyReductionEnabled;
+@property (readonly, nonatomic) CGFloat expectedGpsUpdateInterval;
+@property (readonly, copy, nonatomic) CLHeading *heading;
+@property (readonly, nonatomic) BOOL headingAvailable;
+@property (nonatomic) CGFloat headingFilter;
+@property (nonatomic) int headingOrientation;
+@property (readonly, nonatomic) *__CLClient internalClient;
+@property (readonly, copy, nonatomic) CLLocation *location;
+@property (readonly, nonatomic) BOOL locationServicesApproved;
+@property (readonly, nonatomic) BOOL locationServicesAvailable;
+@property (readonly, nonatomic) BOOL locationServicesEnabled;
+@property (nonatomic, getter=isLocationServicesPreferencesDialogEnabled) BOOL locationServicesPreferencesDialogEnabled;
+@property (nonatomic, getter=isMatchInfoEnabled) BOOL matchInfoEnabled;
+@property (readonly, nonatomic) CGFloat maximumRegionMonitoringDistance;
+@property (readonly, copy, nonatomic) NSSet *monitoredRegions;
+@property (nonatomic) BOOL pausesLocationUpdatesAutomatically;
+@property (nonatomic) BOOL privateMode;
+@property (copy, nonatomic) NSString *purpose;
+@property (readonly, copy, nonatomic) NSSet *rangedBeaconConstraints;
+@property (readonly, copy, nonatomic) NSSet *rangedRegions;
+@property (nonatomic) BOOL showsBackgroundLocationIndicator;
+@property (nonatomic) BOOL supportInfo;
+
+
++(BOOL)_checkAndExerciseAuthorizationForBundle:(id)arg0 error:(*id)arg1 ;
++(BOOL)_checkAndExerciseAuthorizationForBundleID:(id)arg0 error:(*id)arg1 ;
++(BOOL)advertiseAsBeacon:(id)arg0 withPower:(id)arg1 ;
++(BOOL)authorizationPromptMapDisplayEnabled;
++(BOOL)backgroundIndicatorEnabledForLocationDictionary:(id)arg0 ;
++(BOOL)bundleSupported:(id)arg0 ;
++(BOOL)correctiveCompensationStatusForLocationDictionary:(id)arg0 ;
++(BOOL)deferredLocationUpdatesAvailable;
++(BOOL)dumpLogsWithMessage:(id)arg0 ;
++(BOOL)hasUsedBackgroundLocationServices:(id)arg0 ;
++(BOOL)isEntityAuthorizedForLocationDictionary:(id)arg0 ;
++(BOOL)isInterestZoneReleventForLocationDictionary:(id)arg0 ;
++(BOOL)isLocationActiveForLocationDictionary:(id)arg0 ;
++(BOOL)isMonitoringAvailableForClass:(Class)arg0 ;
++(BOOL)isPeerRangingAvailable;
++(BOOL)isRangingAvailable;
++(BOOL)isStatusBarIconEnabledForLocationEntityClass:(NSUInteger)arg0 ;
++(BOOL)locationServicesEnabled:(BOOL)arg0 ;
++(BOOL)mapCorrectionAvailable;
++(BOOL)regionMonitoringAvailable;
++(BOOL)regionMonitoringEnabled;
++(BOOL)shutdownDaemon;
++(BOOL)significantLocationChangeMonitoringAvailable;
++(NSUInteger)activeLocationServiceTypesForLocationDictionary:(id)arg0 ;
++(NSUInteger)allowableAuthorizationForLocationDictionary:(id)arg0 ;
++(NSUInteger)entityAuthorizationForLocationDictionary:(id)arg0 ;
++(NSUInteger)entityClassesForLocationDictionary:(id)arg0 ;
++(NSUInteger)incidentalUseModeForLocationDictionary:(id)arg0 ;
++(NSUInteger)primaryEntityClassForLocationDictionary:(id)arg0 ;
++(id)_applyArchivedAuthorizationDecisions:(id)arg0 ;
++(id)_archivedAuthorizationDecisionsWithError:(*id)arg0 ;
++(id)_getClientTransientAuthorizationInfoForBundleId:(id)arg0 error:(*id)arg1 ;
++(id)_getClientTransientAuthorizationInfoForBundlePath:(id)arg0 error:(*id)arg1 ;
++(id)_setClientTransientAuthorizationInfoForBundleId:(id)arg0 data:(id)arg1 ;
++(id)_setClientTransientAuthorizationInfoForBundlePath:(id)arg0 data:(id)arg1 ;
++(id)dateLocationLastUsedForLocationDictionary:(id)arg0 ;
++(id)interestZoneDictionaryIdentifiedById:(id)arg0 forLocationDictionary:(id)arg1 ;
++(id)interestZonesIdentifierListForLocationDictionary:(id)arg0 ;
++(id)metadataForHomekitAccessoryControlEventWithUUID:(id)arg0 stateString:(id)arg1 serviceUUID:(id)arg2 serviceType:(id)arg3 characteristicType:(id)arg4 serviceGroupUUID:(id)arg5 source:(id)arg6 roomUUID:(id)arg7 ;
++(id)metadataForHomekitActionSetEventWithUUID:(id)arg0 name:(id)arg1 type:(id)arg2 clientName:(id)arg3 source:(id)arg4 homeName:(id)arg5 ;
++(id)setAuthorizationPromptMapDisplayEnabled:(BOOL)arg0 ;
++(id)sharedManager;
++(int)_authorizationStatusForBundleIdentifier:(id)arg0 bundle:(id)arg1 ;
++(int)authorizationStatusForBundle:(id)arg0 ;
++(int)authorizationStatusForBundleIdentifier:(id)arg0 ;
++(void)deleteInterestZoneWithId:(id)arg0 registeredForBundle:(id)arg1 error:(*id)arg2 ;
++(void)deleteInterestZoneWithId:(id)arg0 registeredForBundleIdentifier:(id)arg1 error:(*id)arg2 ;
++(void)dumpDiagnosticFilesWithHandler:(id)arg0 ;
++(void)getIncidentalUseMode:(*int)arg0 forBundle:(id)arg1 ;
++(void)getIncidentalUseMode:(*int)arg0 forBundleIdentifier:(id)arg1 ;
++(void)grantTemporaryAuthorizationUsingLocationButtonToClientWithAuditToken:(struct ? )arg0 voiceInteractionEnabled:(BOOL)arg1 ;
++(void)registerCircularInterestZoneWithId:(id)arg0 latitue:(CGFloat)arg1 longitude:(CGFloat)arg2 radius:(CGFloat)arg3 serviceMaskOperator:(int)arg4 provenanceType:(int)arg5 forBundle:(id)arg6 error:(*id)arg7 ;
++(void)registerCircularInterestZoneWithId:(id)arg0 latitue:(CGFloat)arg1 longitude:(CGFloat)arg2 radius:(CGFloat)arg3 serviceMaskOperator:(int)arg4 provenanceType:(int)arg5 forBundleIdentifier:(id)arg6 error:(*id)arg7 ;
++(void)registerPhenolicInterestZoneWithId:(id)arg0 phenolicLocation:(int)arg1 serviceMaskOperator:(int)arg2 provenanceType:(int)arg3 forBundle:(id)arg4 error:(*id)arg5 ;
++(void)registerPhenolicInterestZoneWithId:(id)arg0 phenolicLocation:(int)arg1 serviceMaskOperator:(int)arg2 provenanceType:(int)arg3 forBundleIdentifier:(id)arg4 error:(*id)arg5 ;
++(void)setBackgroundIndicatorEnabled:(BOOL)arg0 forBundle:(id)arg1 ;
++(void)setBackgroundIndicatorEnabled:(BOOL)arg0 forBundleIdentifier:(id)arg1 ;
++(void)setBackgroundIndicatorEnabled:(BOOL)arg0 forLocationDictionary:(id)arg1 ;
++(void)setDefaultEffectiveBundle:(id)arg0 ;
++(void)setDefaultEffectiveBundleIdentifier:(id)arg0 ;
++(void)setEntityAuthorization:(NSUInteger)arg0 forLocationDictionary:(id)arg1 ;
++(void)setEntityAuthorization:(NSUInteger)arg0 withCorrectiveCompensation:(BOOL)arg1 forLocationDictionary:(id)arg2 ;
++(void)setEntityAuthorization:(NSUInteger)arg0 withCorrectiveCompensationType:(int)arg1 forLocationDictionary:(id)arg2 ;
++(void)setEntityAuthorized:(BOOL)arg0 forLocationDictionary:(id)arg1 ;
++(void)setIncidentalUseMode:(int)arg0 forBundle:(id)arg1 ;
++(void)setIncidentalUseMode:(int)arg0 forBundleIdentifier:(id)arg1 ;
++(void)setRelevance:(BOOL)arg0 forInterestZoneWithId:(id)arg1 registeredForBundle:(id)arg2 error:(*id)arg3 ;
++(void)setRelevance:(BOOL)arg0 forInterestZoneWithId:(id)arg1 registeredForBundleIdentifier:(id)arg2 error:(*id)arg3 ;
++(void)setStatusBarIconEnabled:(BOOL)arg0 forLocationEntityClass:(NSUInteger)arg1 ;
++(void)setTemporaryAuthorizationGranted:(BOOL)arg0 forBundle:(id)arg1 ;
++(void)setTemporaryAuthorizationGranted:(BOOL)arg0 forBundleIdentifier:(id)arg1 ;
++(void)updateCorrectiveCompensationChoiceForOutstandingPrompt:(int)arg0 ;
+-(BOOL)_isFusionInfoEnabled;
+-(id)_groundAltitudeAtLocation:(id)arg0 ;
+-(id)_initWithDelegate:(id)arg0 onQueue:(id)arg1 ;
+-(id)_startPlaceInferencesCommonLogic:(NSUInteger)arg0 handler:(id)arg1 ;
+-(id)_zAxisStatistics;
+-(id)appsUsingLocation;
+-(id)appsUsingLocationWithDetails;
+-(id)getMicroLocationInternalVersion;
+-(id)init;
+-(id)initWithEffectiveBundle:(id)arg0 ;
+-(id)initWithEffectiveBundle:(id)arg0 delegate:(id)arg1 onQueue:(id)arg2 ;
+-(id)initWithEffectiveBundle:(id)arg0 limitingBundleIdentifier:(id)arg1 delegate:(id)arg2 onQueue:(id)arg3 ;
+-(id)initWithEffectiveBundleIdentifier:(id)arg0 ;
+-(id)initWithEffectiveBundleIdentifier:(id)arg0 bundle:(id)arg1 delegate:(id)arg2 silo:(id)arg3 ;
+-(id)initWithEffectiveBundleIdentifier:(id)arg0 delegate:(id)arg1 onQueue:(id)arg2 ;
+-(id)initWithIdentifier:(id)arg0 ;
+-(id)technologiesInUse;
+-(void)_fetchContinuousPlaceInferencesWithFidelityPolicy:(NSUInteger)arg0 handler:(id)arg1 ;
+-(void)_fetchEstimatedLocationAtDate:(id)arg0 handler:(id)arg1 ;
+-(void)_fetchPlaceInferencesWithFidelityPolicy:(NSUInteger)arg0 handler:(id)arg1 ;
+-(void)_requestTemporaryFullAccuracyWithUsageDescription:(id)arg0 ;
+-(void)_requestTemporaryFullAccuracyWithUsageDescription:(id)arg0 completion:(id)arg1 ;
+-(void)_requestVisitState;
+-(void)_setFusionInfoEnabled:(BOOL)arg0 ;
+-(void)_startLeechingVisits;
+-(void)_startMonitoringSignificantLocationChangesOfDistance:(CGFloat)arg0 withPowerBudget:(int)arg1 ;
+-(void)_stopFetchingContinuousPlaceInferences;
+-(void)_updateARSessionState:(NSUInteger)arg0 ;
+-(void)_updateVIOEstimation:(id)arg0 ;
+-(void)_updateVLLocalizationResult:(id)arg0 ;
+-(void)allowDeferredLocationUpdatesUntilTraveled:(CGFloat)arg0 timeout:(CGFloat)arg1 ;
+-(void)callPlaceInferenceHandlerWithResult:(id)arg0 error:(id)arg1 ;
+-(void)changeFencesStateMatchingHandoffTags:(id)arg0 forDeviceID:(id)arg1 completion:(id)arg2 ;
+-(void)dealloc;
+-(void)disallowDeferredLocationUpdates;
+-(void)dismissHeadingCalibrationDisplay;
+-(void)markAsHavingReceivedLocation;
+-(void)onClientEvent:(int)arg0 supportInfo:(id)arg1 ;
+-(void)onClientEventAuthStatus:(id)arg0 ;
+-(void)onClientEventAutopauseStatus:(id)arg0 ;
+-(void)onClientEventBatch:(id)arg0 ;
+-(void)onClientEventError:(id)arg0 ;
+-(void)onClientEventHeading:(id)arg0 ;
+-(void)onClientEventHeadingCalibration:(id)arg0 ;
+-(void)onClientEventInterrupted:(id)arg0 ;
+-(void)onClientEventLocation:(id)arg0 forceMapMatching:(BOOL)arg1 type:(id)arg2 ;
+-(void)onClientEventLocationUnavailable:(id)arg0 ;
+-(void)onClientEventNoLocationWatchdog:(id)arg0 ;
+-(void)onClientEventPeerRanging:(id)arg0 ;
+-(void)onClientEventPeerRangingError:(id)arg0 ;
+-(void)onClientEventPeerRangingRequestProcessed:(id)arg0 ;
+-(void)onClientEventPlaceInferenceError:(id)arg0 ;
+-(void)onClientEventPlaceInferenceResult:(id)arg0 ;
+-(void)onClientEventRanging:(id)arg0 ;
+-(void)onClientEventRangingError:(id)arg0 ;
+-(void)onClientEventRegion:(id)arg0 ;
+-(void)onClientEventRegionError:(id)arg0 ;
+-(void)onClientEventRegionResponseDelayed:(id)arg0 ;
+-(void)onClientEventRegionSetupCompleted:(id)arg0 ;
+-(void)onClientEventRegionState:(id)arg0 ;
+-(void)onClientEventSignificantLocationVisit:(id)arg0 ;
+-(void)onClientEventSignificantLocationVisitStateRequest:(id)arg0 ;
+-(void)onClientEventVehicleHeading:(id)arg0 ;
+-(void)onClientEventVehicleSpeed:(id)arg0 ;
+-(void)onDidBecomeActive:(id)arg0 ;
+-(void)onLocationRequestTimeout;
+-(void)onRangingRequestTimeout;
+-(void)pauseLocationUpdates:(BOOL)arg0 ;
+-(void)registerAsLocationClient;
+-(void)requestAlwaysAuthorization;
+-(void)requestCurrentMicroLocationWithAdditionalInformation:(id)arg0 ;
+-(void)requestLocation;
+-(void)requestMicroLocationRecordingScanWithAdditionalInformation:(id)arg0 ;
+-(void)requestRangingToPeers:(id)arg0 timeoutSeconds:(CGFloat)arg1 ;
+-(void)requestStateForRegion:(id)arg0 ;
+-(void)requestTemporaryFullAccuracyAuthorizationWithPurposeKey:(id)arg0 ;
+-(void)requestTemporaryFullAccuracyAuthorizationWithPurposeKey:(id)arg0 completion:(id)arg1 ;
+-(void)requestTemporaryPreciseLocationAuthorizationWithPurposeKey:(id)arg0 ;
+-(void)requestTemporaryPreciseLocationAuthorizationWithPurposeKey:(id)arg0 completion:(id)arg1 ;
+-(void)requestWhenInUseAuthorization;
+-(void)requestWhenInUseAuthorizationWithPrompt;
+-(void)resetApps;
+-(void)respondToRangingFromPeers:(id)arg0 timeoutSeconds:(CGFloat)arg1 ;
+-(void)resumeLocationUpdates;
+-(void)setIsActuallyAWatchKitExtension:(BOOL)arg0 ;
+-(void)startAppStatusUpdates;
+-(void)startMonitoringForRegion:(id)arg0 ;
+-(void)startMonitoringForRegion:(id)arg0 desiredAccuracy:(CGFloat)arg1 ;
+-(void)startMonitoringLocationPushesWithCompletion:(id)arg0 ;
+-(void)startMonitoringSignificantLocationChanges;
+-(void)startMonitoringVisits;
+-(void)startRangingBeaconsInRegion:(id)arg0 ;
+-(void)startRangingBeaconsSatisfyingConstraint:(id)arg0 ;
+-(void)startRangingFromPeers:(id)arg0 ;
+-(void)startRangingToPeers:(id)arg0 intervalSeconds:(NSUInteger)arg1 ;
+-(void)startTechStatusUpdates;
+-(void)startUpdatingHeading;
+-(void)startUpdatingLocation;
+-(void)startUpdatingLocationWithPrompt;
+-(void)startUpdatingVehicleHeading;
+-(void)startUpdatingVehicleSpeed;
+-(void)stopAppStatusUpdates;
+-(void)stopMonitoringForRegion:(id)arg0 ;
+-(void)stopMonitoringLocationPushes;
+-(void)stopMonitoringSignificantLocationChanges;
+-(void)stopMonitoringVisits;
+-(void)stopRangingBeaconsInRegion:(id)arg0 ;
+-(void)stopRangingBeaconsSatisfyingConstraint:(id)arg0 ;
+-(void)stopRangingFromPeers:(id)arg0 ;
+-(void)stopRangingToPeers:(id)arg0 ;
+-(void)stopTechStatusUpdates;
+-(void)stopUpdatingHeading;
+-(void)stopUpdatingLocation;
+-(void)stopUpdatingVehicleHeading;
+-(void)stopUpdatingVehicleSpeed;
+
+
+@end
+
+
+#endif

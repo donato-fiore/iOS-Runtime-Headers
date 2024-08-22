@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CDMPROTOSPANMATCHERHELPER_H
+#define CDMPROTOSPANMATCHERHELPER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface CDMProtoSpanMatcherHelper : NSObject
+
+
+
++(BOOL)isTrailingSpanAdjacent:(id)arg0 secondSpan:(id)arg1 tokenChain:(id)arg2 ;
++(id)ascendingStartIndexComparator:(SEL)arg0 ;
++(id)buildMatchingSpanProtoWithLabel:(id)arg0 inputStringForDebug:(id)arg1 startTokenIndex:(unsigned int)arg2 endTokenIndex:(unsigned int)arg3 spanMatcherName:(int)arg4 ;
++(id)buildMatchingSpanProtoWithLabel:(id)arg0 inputStringForDebug:(id)arg1 startTokenIndex:(unsigned int)arg2 endTokenIndex:(unsigned int)arg3 startCharIndex:(unsigned int)arg4 endCharIndex:(unsigned int)arg5 spanMatcherName:(int)arg6 ;
++(id)descendingLengthComparator:(SEL)arg0 ;
++(id)voiceCommandSpanComparator:(SEL)arg0 ;
++(void)enumerateTokenChain:(id)arg0 usingCleanValues:(BOOL)arg1 withCallback:(id)arg2 ;
++(void)enumerateTokenChain:(id)arg0 withOptions:(unsigned int)arg1 withCallback:(id)arg2 ;
+
+
+@end
+
+
+#endif

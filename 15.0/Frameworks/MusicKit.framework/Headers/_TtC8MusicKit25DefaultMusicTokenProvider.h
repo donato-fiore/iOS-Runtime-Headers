@@ -1,0 +1,22 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC8MUSICKIT25DEFAULTMUSICTOKENPROVIDER_H
+#define _TTC8MUSICKIT25DEFAULTMUSICTOKENPROVIDER_H
+
+@class TtC8MusicKit22MusicUserTokenProvider;
+
+
+
+@interface _TtC8MusicKit25DefaultMusicTokenProvider : TtC8MusicKit22MusicUserTokenProvider
+
+
+
+
+
+@end
+
+
+#endif

@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef MANAGEDHEALTHKITSTANDALONEMINDFULSESSIONJOB_H
+#define MANAGEDHEALTHKITSTANDALONEMINDFULSESSIONJOB_H
+
+@class NSManagedObject, NSString, NSSet;
+
+
+
+@interface ManagedHealthKitStandaloneMindfulSessionJob : NSManagedObject
+
+@property (nonatomic, copy) NSString *catalogWorkoutIdentifier;
+@property (nonatomic, copy) NSString *sessionIdentifier;
+@property (nonatomic, retain) NSSet *sessions;
+
+
+-(id)initWithEntity:(id)arg0 insertIntoManagedObjectContext:(id)arg1 ;
+
+
+@end
+
+
+#endif

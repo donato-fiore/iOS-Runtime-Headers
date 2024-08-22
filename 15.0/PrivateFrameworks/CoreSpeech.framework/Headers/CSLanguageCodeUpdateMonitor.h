@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CSLANGUAGECODEUPDATEMONITOR_H
+#define CSLANGUAGECODEUPDATEMONITOR_H
+
+
+
+#import "CSEventMonitor.h"
+
+@interface CSLanguageCodeUpdateMonitor : CSEventMonitor
+
+
+
++(id)sharedInstance;
+-(void)_startMonitoringWithQueue:(id)arg0 ;
+-(void)_stopMonitoring;
+-(void)notifySiriLanguageCodeChanged:(id)arg0 ;
+
+
+@end
+
+
+#endif

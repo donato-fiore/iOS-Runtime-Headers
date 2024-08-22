@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SUTWOLINETRACKCELLCONFIGURATION_H
+#define SUTWOLINETRACKCELLCONFIGURATION_H
+
+
+
+#import "SUMediaItemCellConfiguration.h"
+
+@interface SUTwoLineTrackCellConfiguration : SUMediaItemCellConfiguration
+
+
+
++(CGFloat)rowHeightForContext:(id)arg0 representedObject:(id)arg1 ;
++(id)copyDefaultContext;
+-(NSUInteger)indexOfLabelForPurchaseAnimation;
+-(id)colorForLabelAtIndex:(NSUInteger)arg0 withModifiers:(NSUInteger)arg1 ;
+-(id)fontForLabelAtIndex:(NSUInteger)arg0 ;
+-(id)init;
+-(void)reloadImages;
+-(void)reloadLayoutInformation;
+-(void)reloadStrings;
+
+
+@end
+
+
+#endif

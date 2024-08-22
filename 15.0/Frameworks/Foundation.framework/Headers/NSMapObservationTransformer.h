@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef NSMAPOBSERVATIONTRANSFORMER_H
+#define NSMAPOBSERVATIONTRANSFORMER_H
+
+
+
+#import "NSObservationTransformer.h"
+
+@interface NSMapObservationTransformer : NSObservationTransformer {
+    id *_block;
+    int _tag;
+}
+
+
+
+
+-(id)initWithBlock:(id)arg0 tag:(int)arg1 ;
+-(void)_receiveBox:(id)arg0 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

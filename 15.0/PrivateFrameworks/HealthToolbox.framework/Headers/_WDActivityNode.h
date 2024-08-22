@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _WDACTIVITYNODE_H
+#define _WDACTIVITYNODE_H
+
+@class NSMutableDictionary, NSDictionary, NSMapTable;
+@protocol WDUserActivityResponder;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _WDActivityNode : NSObject {
+    NSMutableDictionary *_responderActivity;
+    NSDictionary *_nextResponderActivity;
+    NSMapTable *_responderTable;
+}
+
+
+@property (weak, nonatomic) NSObject<WDUserActivityResponder> *nextResponder; // ivar: _nextResponder
+@property (weak, nonatomic) NSObject<WDUserActivityResponder> *responder; // ivar: _responder
+
+
+-(id)_nextNode;
+-(id)changeActivityForResponder:(id)arg0 activityDictionary:(id)arg1 ;
+-(id)description;
+-(id)initWithResponder:(id)arg0 ;
+-(id)transitionActivityForResponder:(id)arg0 newResponder:(id)arg1 transitionDictionary:(id)arg2 ;
+-(void)addActivitiesToArray:(id)arg0 currentNode:(id)arg1 ;
+
+
+@end
+
+
+#endif

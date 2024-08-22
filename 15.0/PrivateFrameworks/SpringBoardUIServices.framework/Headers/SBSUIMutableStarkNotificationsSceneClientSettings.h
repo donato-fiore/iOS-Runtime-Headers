@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SBSUIMUTABLESTARKNOTIFICATIONSSCENECLIENTSETTINGS_H
+#define SBSUIMUTABLESTARKNOTIFICATIONSSCENECLIENTSETTINGS_H
+
+@class UIMutableApplicationSceneClientSettings, NSString;
+@protocol SBSUIStarkNotificationsSceneClientSettings;
+
+
+
+@interface SBSUIMutableStarkNotificationsSceneClientSettings : UIMutableApplicationSceneClientSettings <SBSUIStarkNotificationsSceneClientSettings>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, getter=isDisplayingNotification) BOOL displayingNotification;
+@property (readonly) NSUInteger hash;
+@property (nonatomic) BOOL shouldBorrowScreen;
+@property (readonly) Class superclass;
+
+
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)keyDescriptionForSetting:(NSUInteger)arg0 ;
+-(id)valueDescriptionForFlag:(NSInteger)arg0 object:(id)arg1 ofSetting:(NSUInteger)arg2 ;
+
+
+@end
+
+
+#endif

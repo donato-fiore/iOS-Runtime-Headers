@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC26DOCUMENTMANAGEREXECUTABLES15DOCITEMOBSERVER_H
+#define _TTC26DOCUMENTMANAGEREXECUTABLES15DOCITEMOBSERVER_H
+
+@class FPItem;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC26DocumentManagerExecutables15DOCItemObserver : NSObject {
+    ? collection;
+    ? subscribers;
+}
+
+
+@property (nonatomic, retain) FPItem *item; // ivar: item
+
+
+-(id)init;
+-(id)initWithObservedItem:(id)arg0 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

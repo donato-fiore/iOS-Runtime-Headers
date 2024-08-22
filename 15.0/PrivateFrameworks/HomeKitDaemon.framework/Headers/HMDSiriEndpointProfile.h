@@ -1,0 +1,109 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef HMDSIRIENDPOINTPROFILE_H
+#define HMDSIRIENDPOINTPROFILE_H
+
+@class NSArray, NSNumber, NSString, NSUUID, HMFStagedValue;
+@protocol HMFStagedValueDelegate, HMFLogging, HMFLocking;
+
+
+#import "HMDAccessoryProfile.h"
+
+@interface HMDSiriEndpointProfile : HMDAccessoryProfile <HMFStagedValueDelegate, HMFLogging>
+
+ {
+    id<HMFLocking> *_lock;
+}
+
+
+@property (readonly, copy) NSArray *_allCharacteristicsToMonitor;
+@property (readonly) NSUInteger _capability;
+@property (copy) NSNumber *activeIdentifier; // ivar: _activeIdentifier
+@property (retain) NSArray *assistants; // ivar: _assistants
+@property (readonly) NSString *clientIdentifier; // ivar: _clientIdentifier
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property BOOL manuallyDisabled; // ivar: _manuallyDisabled
+@property NSInteger multifunctionButton; // ivar: _multifunctionButton
+@property (readonly) NSNumber *needsOnboarding;
+@property (retain) NSArray *profileServices; // ivar: _profileServices
+@property (copy) NSUUID *sessionHubIdentifer; // ivar: _sessionHubIdentifer
+@property NSInteger sessionState; // ivar: _sessionState
+@property NSInteger siriEnable; // ivar: _siriEnable
+@property (copy) NSString *siriEndpointVersion; // ivar: _siriEndpointVersion
+@property (copy) NSString *siriEngineVersion; // ivar: _siriEngineVersion
+@property NSInteger siriLightOnUse; // ivar: _siriLightOnUse
+@property NSInteger siriListening; // ivar: _siriListening
+@property NSInteger siriTouchToUse; // ivar: _siriTouchToUse
+@property (readonly) HMFStagedValue *stagedNeedsOnboarding; // ivar: _stagedNeedsOnboarding
+@property (readonly) Class superclass;
+
+
++(BOOL)supportsSecureCoding;
++(id)logCategory;
++(id)namespace;
++(id)uniqueIdentifierFromAccessory:(id)arg0 ;
++(void)initialize;
+-(NSInteger)siriSoundOnUse;
+-(id)_siriEndpointActiveIdentifierCharacteristic;
+-(id)_siriEndpointActiveIdentifierReadRequest;
+-(id)_siriEndpointManuallyDisabledCharacteristic;
+-(id)_siriEndpointManuallyDisabledReadRequest;
+-(id)_siriEndpointService;
+-(id)_siriEndpointSessionStatusCharacteristic;
+-(id)_siriEndpointSessionStatusReadRequest;
+-(id)_siriService;
+-(id)_siriSettingMultifunctionButtonCharacteristic;
+-(id)_siriSettingMultifunctionButtonReadRequest;
+-(id)_siriSettingSiriEnableCharacteristic;
+-(id)_siriSettingSiriEnableReadRequest;
+-(id)_siriSettingSiriEngineVersionCharacteristic;
+-(id)_siriSettingSiriEngineVersionReadRequest;
+-(id)_siriSettingSiriLightOnUseCharacteristic;
+-(id)_siriSettingSiriLightOnUseReadRequest;
+-(id)_siriSettingSiriListeningCharacteristic;
+-(id)_siriSettingSiriListeningReadRequest;
+-(id)_siriSettingSiriTouchCharacteristic;
+-(id)_siriSettingSiriTouchReadRequest;
+-(id)attributeDescriptions;
+-(id)initWithSiriEndpointServices:(id)arg0 ;
+-(id)services;
+-(void)_disableCharacteristicNotifications;
+-(void)_handleCharacteristicChanges:(id)arg0 ;
+-(void)_handleRefreshProfileState:(id)arg0 ;
+-(void)_handleRefreshProfileState:(id)arg0 completionHandler:(id)arg1 ;
+-(void)_notifyProfileSettingsUpdated:(id)arg0 ;
+-(void)_setCharacteristicNotifications:(BOOL)arg0 ;
+-(void)_updateSessionState:(id)arg0 settings:(id)arg1 message:(id)arg2 ;
+-(void)addService:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+-(void)handleAccessoryConnected:(id)arg0 ;
+-(void)handleDeviceCapabilitiesUpdated:(id)arg0 ;
+-(void)handleHomeCharacteristicValuesChanged:(id)arg0 ;
+-(void)handlePrimaryResidentChanged:(id)arg0 ;
+-(void)handleResidentAdded:(id)arg0 ;
+-(void)handleUpdateNeedsOnboarding:(id)arg0 ;
+-(void)notifyClientsDidUpdateStagedNeedsOnboarding;
+-(void)refreshStateWithCompletionHandler:(id)arg0 ;
+-(void)registerForMessages;
+-(void)registerForNotifications;
+-(void)setEnable:(NSInteger)arg0 completionHandler:(id)arg1 ;
+-(void)setLightOnUse:(NSInteger)arg0 completionHandler:(id)arg1 ;
+-(void)setListening:(NSInteger)arg0 completionHandler:(id)arg1 ;
+-(void)setSoundOnUse:(NSInteger)arg0 completionHandler:(id)arg1 ;
+-(void)setTouchToUse:(NSInteger)arg0 completionHandler:(id)arg1 ;
+-(void)stageNeedsOnboarding:(NSInteger)arg0 ;
+-(void)stageNeedsOnboarding:(NSInteger)arg0 withTimeout:(CGFloat)arg1 ;
+-(void)stagedValue:(id)arg0 didExpireValue:(id)arg1 ;
+-(void)unregisterForNotifications;
+-(void)updateNeedsOnboarding:(NSInteger)arg0 withTimeout:(CGFloat)arg1 ;
+
+
+@end
+
+
+#endif

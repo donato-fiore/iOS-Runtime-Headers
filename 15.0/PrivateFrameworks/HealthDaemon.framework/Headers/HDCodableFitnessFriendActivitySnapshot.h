@@ -1,0 +1,81 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef HDCODABLEFITNESSFRIENDACTIVITYSNAPSHOT_H
+#define HDCODABLEFITNESSFRIENDACTIVITYSNAPSHOT_H
+
+@class PBCodable, NSString, NSData;
+@protocol HDDecoding, NSCopying;
+
+
+#import "HDCodableSample.h"
+
+@interface HDCodableFitnessFriendActivitySnapshot : PBCodable <HDDecoding, NSCopying>
+
+ {
+    ? _has;
+}
+
+
+@property (nonatomic) CGFloat activeHours; // ivar: _activeHours
+@property (nonatomic) CGFloat activeHoursGoal; // ivar: _activeHoursGoal
+@property (nonatomic) NSInteger amm; // ivar: _amm
+@property (nonatomic) CGFloat briskMinutes; // ivar: _briskMinutes
+@property (nonatomic) CGFloat briskMinutesGoal; // ivar: _briskMinutesGoal
+@property (nonatomic) CGFloat date; // ivar: _date
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) CGFloat energyBurned; // ivar: _energyBurned
+@property (nonatomic) CGFloat energyBurnedGoal; // ivar: _energyBurnedGoal
+@property (retain, nonatomic) NSData *friendUUID; // ivar: _friendUUID
+@property (nonatomic) BOOL hasActiveHours;
+@property (nonatomic) BOOL hasActiveHoursGoal;
+@property (nonatomic) BOOL hasAmm;
+@property (nonatomic) BOOL hasBriskMinutes;
+@property (nonatomic) BOOL hasBriskMinutesGoal;
+@property (nonatomic) BOOL hasDate;
+@property (nonatomic) BOOL hasEnergyBurned;
+@property (nonatomic) BOOL hasEnergyBurnedGoal;
+@property (readonly, nonatomic) BOOL hasFriendUUID;
+@property (nonatomic) BOOL hasMmg;
+@property (nonatomic) BOOL hasMmv;
+@property (nonatomic) BOOL hasPushCount;
+@property (readonly, nonatomic) BOOL hasSample;
+@property (nonatomic) BOOL hasSnapshotIndex;
+@property (readonly, nonatomic) BOOL hasSourceUUID;
+@property (nonatomic) BOOL hasStepCount;
+@property (nonatomic) BOOL hasTimeZoneOffsetFromUTCForNoon;
+@property (nonatomic) BOOL hasUploadedDate;
+@property (nonatomic) BOOL hasWalkingAndRunningDistance;
+@property (nonatomic) BOOL hasWheelchairUse;
+@property (readonly) NSUInteger hash;
+@property (nonatomic) CGFloat mmg; // ivar: _mmg
+@property (nonatomic) CGFloat mmv; // ivar: _mmv
+@property (nonatomic) CGFloat pushCount; // ivar: _pushCount
+@property (retain, nonatomic) HDCodableSample *sample; // ivar: _sample
+@property (nonatomic) NSInteger snapshotIndex; // ivar: _snapshotIndex
+@property (retain, nonatomic) NSData *sourceUUID; // ivar: _sourceUUID
+@property (nonatomic) CGFloat stepCount; // ivar: _stepCount
+@property (readonly) Class superclass;
+@property (nonatomic) NSInteger timeZoneOffsetFromUTCForNoon; // ivar: _timeZoneOffsetFromUTCForNoon
+@property (nonatomic) CGFloat uploadedDate; // ivar: _uploadedDate
+@property (nonatomic) CGFloat walkingAndRunningDistance; // ivar: _walkingAndRunningDistance
+@property (nonatomic) NSInteger wheelchairUse; // ivar: _wheelchairUse
+
+
+-(BOOL)applyToObject:(id)arg0 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)dictionaryRepresentation;
+-(void)copyTo:(id)arg0 ;
+-(void)mergeFrom:(id)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

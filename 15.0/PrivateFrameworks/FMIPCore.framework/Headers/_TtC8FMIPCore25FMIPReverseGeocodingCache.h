@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC8FMIPCORE25FMIPREVERSEGEOCODINGCACHE_H
+#define _TTC8FMIPCORE25FMIPREVERSEGEOCODINGCACHE_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC8FMIPCore25FMIPReverseGeocodingCache : SwiftObject {
+    ? delegate;
+    ? processQueue;
+    ? geocodingQueue;
+    ? locale;
+    ? recordsPerGeoHash;
+    ? recordsPerIdentifier;
+    ? pendingOperations;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

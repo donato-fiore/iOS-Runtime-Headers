@@ -1,0 +1,85 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef NLXSCHEMANLXCLIENTEVENT_H
+#define NLXSCHEMANLXCLIENTEVENT_H
+
+@class NSData;
+
+
+#import "SISchemaTopLevelUnionType.h"
+#import "NLXSchemaCDMContextUpdateEnded.h"
+#import "NLXSchemaCDMDelegatedUserDialogActTier1.h"
+#import "NLXSchemaCDMMatchingSpanEnded.h"
+#import "NLXSchemaCDMMatchingSpanEndedTier1.h"
+#import "NLXSchemaCDMMatchingSpanTier1.h"
+#import "NLXSchemaCDMRequestContext.h"
+#import "NLXSchemaCDMServiceContext.h"
+#import "NLXSchemaCDMSystemDialogActTier1.h"
+#import "NLXSchemaCDMTokenizationEnded.h"
+#import "NLXSchemaCDMUsoGraphTier1.h"
+#import "NLXSchemaNLXClientEventMetadata.h"
+#import "NLXSchemaMARRSQueryRewriteContext.h"
+#import "NLXSchemaMARRSQueryRewriteEvaluatedTier1.h"
+#import "NLXSchemaMARRSRepetitionDetectionContext.h"
+#import "NLXSchemaNLXCurareContext.h"
+#import "NLXSchemaNLXDeviceFixedContext.h"
+#import "NLXSchemaNLXLegacyNLContextTier1.h"
+
+@interface NLXSchemaNLXClientEvent : SISchemaTopLevelUnionType
+
+@property (retain, nonatomic) NLXSchemaCDMContextUpdateEnded *cdmContextUpdateEnded; // ivar: _cdmContextUpdateEnded
+@property (retain, nonatomic) NLXSchemaCDMDelegatedUserDialogActTier1 *cdmDelegatedUserDialogActTier1; // ivar: _cdmDelegatedUserDialogActTier1
+@property (retain, nonatomic) NLXSchemaCDMMatchingSpanEnded *cdmMatchingSpanEnded; // ivar: _cdmMatchingSpanEnded
+@property (retain, nonatomic) NLXSchemaCDMMatchingSpanEndedTier1 *cdmMatchingSpanEndedTier1; // ivar: _cdmMatchingSpanEndedTier1
+@property (retain, nonatomic) NLXSchemaCDMMatchingSpanTier1 *cdmMatchingSpanTier1; // ivar: _cdmMatchingSpanTier1
+@property (retain, nonatomic) NLXSchemaCDMRequestContext *cdmRequestContext; // ivar: _cdmRequestContext
+@property (retain, nonatomic) NLXSchemaCDMServiceContext *cdmServiceContext; // ivar: _cdmServiceContext
+@property (retain, nonatomic) NLXSchemaCDMSystemDialogActTier1 *cdmSystemDialogActTier1; // ivar: _cdmSystemDialogActTier1
+@property (retain, nonatomic) NLXSchemaCDMTokenizationEnded *cdmTokenizationEnded; // ivar: _cdmTokenizationEnded
+@property (retain, nonatomic) NLXSchemaCDMUsoGraphTier1 *cdmUsoGraphTier1; // ivar: _cdmUsoGraphTier1
+@property (retain, nonatomic) NLXSchemaNLXClientEventMetadata *eventMetadata; // ivar: _eventMetadata
+@property (nonatomic) BOOL hasCdmContextUpdateEnded; // ivar: _hasCdmContextUpdateEnded
+@property (nonatomic) BOOL hasCdmDelegatedUserDialogActTier1; // ivar: _hasCdmDelegatedUserDialogActTier1
+@property (nonatomic) BOOL hasCdmMatchingSpanEnded; // ivar: _hasCdmMatchingSpanEnded
+@property (nonatomic) BOOL hasCdmMatchingSpanEndedTier1; // ivar: _hasCdmMatchingSpanEndedTier1
+@property (nonatomic) BOOL hasCdmMatchingSpanTier1; // ivar: _hasCdmMatchingSpanTier1
+@property (nonatomic) BOOL hasCdmRequestContext; // ivar: _hasCdmRequestContext
+@property (nonatomic) BOOL hasCdmServiceContext; // ivar: _hasCdmServiceContext
+@property (nonatomic) BOOL hasCdmSystemDialogActTier1; // ivar: _hasCdmSystemDialogActTier1
+@property (nonatomic) BOOL hasCdmTokenizationEnded; // ivar: _hasCdmTokenizationEnded
+@property (nonatomic) BOOL hasCdmUsoGraphTier1; // ivar: _hasCdmUsoGraphTier1
+@property (nonatomic) BOOL hasEventMetadata; // ivar: _hasEventMetadata
+@property (nonatomic) BOOL hasMarrsQueryRewriteContext; // ivar: _hasMarrsQueryRewriteContext
+@property (nonatomic) BOOL hasMarrsQueryRewriteEvaluatedTier1; // ivar: _hasMarrsQueryRewriteEvaluatedTier1
+@property (nonatomic) BOOL hasMarrsRepetitionDetectionContext; // ivar: _hasMarrsRepetitionDetectionContext
+@property (nonatomic) BOOL hasNlxCurareContext; // ivar: _hasNlxCurareContext
+@property (nonatomic) BOOL hasNlxDeviceFixedContext; // ivar: _hasNlxDeviceFixedContext
+@property (nonatomic) BOOL hasNlxLegacyNLContextTier1; // ivar: _hasNlxLegacyNLContextTier1
+@property (readonly, nonatomic) NSData *jsonData;
+@property (retain, nonatomic) NLXSchemaMARRSQueryRewriteContext *marrsQueryRewriteContext; // ivar: _marrsQueryRewriteContext
+@property (retain, nonatomic) NLXSchemaMARRSQueryRewriteEvaluatedTier1 *marrsQueryRewriteEvaluatedTier1; // ivar: _marrsQueryRewriteEvaluatedTier1
+@property (retain, nonatomic) NLXSchemaMARRSRepetitionDetectionContext *marrsRepetitionDetectionContext; // ivar: _marrsRepetitionDetectionContext
+@property (retain, nonatomic) NLXSchemaNLXCurareContext *nlxCurareContext; // ivar: _nlxCurareContext
+@property (retain, nonatomic) NLXSchemaNLXDeviceFixedContext *nlxDeviceFixedContext; // ivar: _nlxDeviceFixedContext
+@property (retain, nonatomic) NLXSchemaNLXLegacyNLContextTier1 *nlxLegacyNLContextTier1; // ivar: _nlxLegacyNLContextTier1
+@property (readonly, nonatomic) NSUInteger whichEvent_Type; // ivar: _whichEvent_Type
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)dictionaryRepresentation;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(id)qualifiedMessageName;
+-(int)getAnyEventType;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

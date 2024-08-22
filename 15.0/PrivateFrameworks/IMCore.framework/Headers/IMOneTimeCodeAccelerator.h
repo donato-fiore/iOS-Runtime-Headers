@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef IMONETIMECODEACCELERATOR_H
+#define IMONETIMECODEACCELERATOR_H
+
+@class IMDaemonController<IMRemoteDaemonProtocol>;
+
+#import <Foundation/Foundation.h>
+
+
+@interface IMOneTimeCodeAccelerator : NSObject
+
+@property (retain, nonatomic) IMDaemonController<IMRemoteDaemonProtocol> *daemon; // ivar: _daemon
+@property (nonatomic) BOOL requestedOneTimeCodeStatusForConnection; // ivar: _requestedOneTimeCodeStatusForConnection
+@property (copy, nonatomic) id *updateBlock; // ivar: _updateBlock
+
+
+-(id)initWithBlockForUpdates:(id)arg0 ;
+-(id)initWithDaemon:(id)arg0 andBlock:(id)arg1 ;
+-(void)_incomingCodeUpdateFromDaemon:(id)arg0 ;
+-(void)consumeCodeWithGuid:(id)arg0 ;
+-(void)dealloc;
+-(void)setUpConnectionToDaemaon;
+
+
+@end
+
+
+#endif

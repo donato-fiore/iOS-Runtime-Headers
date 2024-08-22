@@ -1,0 +1,252 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef WBSWEBEXTENSIONSCONTROLLER_H
+#define WBSWEBEXTENSIONSCONTROLLER_H
+
+@class NSHashTable, NSMutableDictionary, NSMapTable, _WKRemoteObjectInterface, WBSCoreAnalyticsExtensionsStatistics;
+@protocol WBSWebExtensionsControllerDelegate, WBSWebExtensionWindow;
+
+
+#import "WBSExtensionsController.h"
+
+@interface WBSWebExtensionsController : WBSExtensionsController {
+    NSHashTable *_extensionsWithWebRequestListeners;
+    NSHashTable *_extensionsWithWebNavigationListeners;
+    NSMutableDictionary *_extensionIdentifierToData;
+    NSMapTable *_portsBySourceWebView;
+    NSMutableDictionary *_ports;
+    _WKRemoteObjectInterface *_bundleControllerRemoteObjectInterface;
+    _WKRemoteObjectInterface *_controllerRemoteObjectInterface;
+    NSMapTable *_selectorForwarders;
+    ? _delegateFlags;
+    NSMutableDictionary *_tabIDToPendingLanguageDetectionCompletionHandlersMap;
+    NSMutableDictionary *_nativeRequestIdentifiersToCompletionHandlers;
+    NSMapTable *_portIdentifiersPendingConnectionToDestinationWebView;
+}
+
+
+@property (weak, nonatomic) NSObject<WBSWebExtensionsControllerDelegate> *delegate;
+@property (readonly, nonatomic) WBSCoreAnalyticsExtensionsStatistics *extensionStatisticsReport;
+@property (readonly, nonatomic) NSObject<WBSWebExtensionWindow> *lastFocusedWindow;
+@property (readonly) BOOL showAllWebsiteAccessRequestsAsAlerts;
+@property (readonly) NSUInteger toolbarItemIdealPointSize;
+
+
++(CGFloat)pendingSiteAccessTimeoutInterval;
++(CGFloat)temporarySiteAccessTimeInterval;
++(id)_commandShortcutConflictsForExtension:(id)arg0 sortedWebExtensions:(id)arg1 ;
++(id)_composedIdentifierForStateOfExtensionWithBundleIdentifier:(id)arg0 developerIdentifier:(id)arg1 ;
++(id)_extensionPointIdentifier;
++(id)_firstConflctForCommand:(id)arg0 inSortedWebExtensions:(id)arg1 ;
++(id)_urlForExtensionSettings;
++(id)extensionURLScheme;
+-(BOOL)_canSendMessageFromWebView:(id)arg0 ;
+-(BOOL)_extensionHasWebNavigationPermissionRemovingListenerIfNot:(id)arg0 ;
+-(BOOL)_extensionShouldBeEnabled:(id)arg0 ;
+-(BOOL)anyWebExtensionContentBlockerEnabled;
+-(BOOL)extensionIsEnabled:(id)arg0 ;
+-(BOOL)fireOnCommandEventIfNecessaryForWebExtension:(id)arg0 commandName:(id)arg1 ;
+-(BOOL)hasShownPerSiteAccessPermissionForExtension:(id)arg0 ;
+-(BOOL)showOptionsForExtension:(id)arg0 requestingWebView:(id)arg1 ;
+-(BOOL)webViewHasOpenPorts:(id)arg0 ;
+-(id)_allTabs;
+-(id)_allWindows;
+-(id)_currentWindowForWebView:(id)arg0 extension:(id)arg1 ;
+-(id)_determineSourceStringForProgrammaticInjection:(id)arg0 extension:(id)arg1 ;
+-(id)_discoverabilityTitleForCommand:(id)arg0 webExtension:(id)arg1 ;
+-(id)_displayNameForExtension:(id)arg0 ;
+-(id)_displayVersionForExtension:(id)arg0 ;
+-(id)_duplicateTab:(id)arg0 ;
+-(id)_enabledWebExtensionsSortedByDisplayShortName;
+-(id)_extensionURLToLoadFromPersistentStateURL:(id)arg0 ;
+-(id)_extensionsToIncludeInContextMenuWithContext:(id)arg0 ;
+-(id)_filteredOriginsRemovingAllHostsPatterns:(id)arg0 containedAllHostsPattern:(*BOOL)arg1 ;
+-(id)_findTabInAnyWindowWithID:(CGFloat)arg0 ;
+-(id)_frameInfoFromNode:(id)arg0 parent:(id)arg1 ;
+-(id)_frontmostTabInWindow:(id)arg0 ;
+-(id)_generateBaseURIForExtension:(id)arg0 ;
+-(id)_getFrameInfoInFrameSubtree:(id)arg0 parent:(id)arg1 frameID:(int)arg2 ;
+-(id)_navigationDetailsForTab:(id)arg0 request:(id)arg1 frame:(id)arg2 ;
+-(id)_persistentStateURLForExtensionURL:(id)arg0 ;
+-(id)_registerNewPortWithID:(id)arg0 asConnectingFrom:(id)arg1 to:(id)arg2 extensionID:(id)arg3 applicationID:(id)arg4 ;
+-(id)_safariShortVersion;
+-(id)_senderFromWebView:(id)arg0 withRawSenderInfo:(id)arg1 forExtension:(id)arg2 ;
+-(id)_storageOfType:(NSInteger)arg0 forExtensionWithUniqueIdentifier:(id)arg1 ;
+-(id)_tabForTabID:(id)arg0 webView:(id)arg1 extension:(id)arg2 ;
+-(id)_tabForWebView:(id)arg0 ;
+-(id)_updatedExtensionStateForCurrentPermissions:(id)arg0 previousExtensionState:(id)arg1 ;
+-(id)_validateRulesetIDs:(id)arg0 webExtension:(id)arg1 ;
+-(id)_versionNumberForExtension:(id)arg0 ;
+-(id)_windowForWindowID:(id)arg0 webView:(id)arg1 extension:(id)arg2 ;
+-(id)bundleControllerProxyForWebView:(id)arg0 ;
+-(id)commandShortcutConflictsForExtension:(id)arg0 ;
+-(id)extensionWithBaseURIHost:(id)arg0 ;
+-(id)init;
+-(id)installationDateForExtension:(id)arg0 ;
+-(id)lastSeenBaseURIForExtension:(id)arg0 updatingWithCurrentBaseURI:(id)arg1 ;
+-(id)lastSeenUniqueIdentiferForWebExtension:(id)arg0 ;
+-(id)loadBackgroundPageListenersFromStorageForWebExtension:(id)arg0 ;
+-(id)loadBackgroundPageListenersVersionNumberFromStorageForWebExtension:(id)arg0 ;
+-(id)loadDeclarativeNetRequestErrorStringsForWebExtension:(id)arg0 ;
+-(id)loadDeclarativeNetRequestRulesetStateFromStorageForWebExtension:(id)arg0 ;
+-(id)substituteDataForExtensionURL:(id)arg0 usingMIMEType:(*id)arg1 ;
+-(id)webExtensionForBaseURIHost:(id)arg0 ;
+-(id)webExtensionForComposedIdentifier:(id)arg0 ;
+-(id)webExtensionForExtension:(id)arg0 ;
+-(id)webExtensionForExtensionIdentifier:(id)arg0 ;
+-(id)webExtensionKeyCommands;
+-(void)_addFrameInfoFromFrameSubtree:(id)arg0 parent:(id)arg1 toArray:(id)arg2 ;
+-(void)_addOrRemoveListenersIfNecessaryForExtension:(id)arg0 ;
+-(void)_addOrRemoveWebNavigationListenerIfNecessaryForExtension:(id)arg0 ;
+-(void)_addOrRemoveWebRequestListenerIfNecessaryForExtension:(id)arg0 ;
+-(void)_addWebNavigationListenerForExtension:(id)arg0 ;
+-(void)_addWebRequestListenerForExtension:(id)arg0 ;
+-(void)_cancelCheckIfNoBrowserWindowIsFocusedTimer;
+-(void)_captureVisibleTab:(id)arg0 format:(id)arg1 quality:(CGFloat)arg2 completionHandler:(id)arg3 ;
+-(void)_clearNewTabPreferenceIfNecessaryForRemovedExtensionWithComposedIdentifier:(id)arg0 ;
+-(void)_createNewTabInWindow:(id)arg0 tabIndex:(id)arg1 url:(id)arg2 makeActive:(BOOL)arg3 completionHandler:(id)arg4 ;
+-(void)_deleteStateForExtensionWithComposedIdentifier:(id)arg0 ;
+-(void)_deleteStorageForExtensionWithComposedIdentifier:(id)arg0 ;
+-(void)_enumerateMessageReceiversForEnabledExtensionsForEventType:(NSUInteger)arg0 completionHandler:(id)arg1 ;
+-(void)_fireOnChangedStorageEventForExtensionWithUniqueIdentifier:(id)arg0 changedKeysAndNewValues:(id)arg1 oldKeysAndValues:(id)arg2 forStorageOfType:(NSInteger)arg3 ;
+-(void)_fireOnChangedStorageEventForExtensionWithUniqueIdentifier:(id)arg0 removedKeysAndValues:(id)arg1 forStorageOfType:(NSInteger)arg2 ;
+-(void)_fireOnUpdatedEventForTabsMatchingOriginPatterns:(id)arg0 toExtension:(id)arg1 ;
+-(void)_getFramesFromFrameTree:(id)arg0 startingFrameID:(NSUInteger)arg1 shouldIncludeChildren:(BOOL)arg2 foundStartingFrame:(BOOL)arg3 toArray:(id)arg4 ;
+-(void)_getWindowStateForWindow:(id)arg0 queryOptions:(id)arg1 webExtension:(id)arg2 completionHandler:(id)arg3 ;
+-(void)_loadEnabledExtension:(id)arg0 ;
+-(void)_loadPermissionsFromStorageForWebExtension:(id)arg0 ;
+-(void)_notifyExtension:(id)arg0 storageWasChangedWithChanges:(id)arg1 forStorageOfType:(NSInteger)arg2 ;
+-(void)_notifyExtensionsIfNecessaryThatFocusChangedToWindowWithID:(CGFloat)arg0 isPopupWindow:(BOOL)arg1 ;
+-(void)_onConnectCompletionHandlerForExtension:(id)arg0 fromWebView:(id)arg1 fromPortWithID:(id)arg2 connectInfo:(id)arg3 sender:(id)arg4 ;
+-(void)_permissionsMayHaveBeenChangedExternallyForExtension:(id)arg0 previousExtensionState:(id)arg1 ;
+-(void)_pinTab:(id)arg0 ;
+-(void)_prepareToFireEventToExtensionWithUniqueIdentifierIfEnabled:(id)arg0 eventType:(NSUInteger)arg1 completionHandler:(id)arg2 ;
+-(void)_queueStartupAndInstallEventsForExtensionIfNecessary:(id)arg0 ;
+-(void)_relateOpenerTabIfExistsToTab:(id)arg0 properties:(id)arg1 ;
+-(void)_relateParentTab:(id)arg0 toTab:(id)arg1 ;
+-(void)_removePort:(id)arg0 webExtension:(id)arg1 ;
+-(void)_removeWebNavigationListenerForExtension:(id)arg0 ;
+-(void)_removeWebRequestListenerForExtension:(id)arg0 ;
+-(void)_saveDeclarativeNetRequestRulesetStateToStorageForWebExtension:(id)arg0 rulesetIDsToEnabledState:(id)arg1 ;
+-(void)_savePermissionsToStorageAndPostDidChangeNotificationSoonForWebExtension:(id)arg0 permissionsWereUpdatedDueToAnExternalChange:(BOOL)arg1 ;
+-(void)_savePermissionsToStorageForWebExtension:(id)arg0 ;
+-(void)_savePermissionsToStorageIfNecessaryAndPostDidChangeNotificationForWebExtension:(id)arg0 ;
+-(void)_setPortIdentifiersForInitiatingWebView:(id)arg0 fromPortWithID:(id)arg1 ;
+-(void)_showAccessRequestAlertForExtension:(id)arg0 domains:(id)arg1 callingAPIName:(id)arg2 responseBlock:(id)arg3 ;
+-(void)_showPromptForExtensionDisabledBecauseItDoesNotSupportThisVersionOfSafariWithMessage:(id)arg0 extensionIdentifier:(id)arg1 ;
+-(void)_toggleRulesetsForWebExtension:(id)arg0 rulesets:(id)arg1 newValue:(BOOL)arg2 rulesetIDsToEnabledState:(id)arg3 ;
+-(void)_unloadPreviouslyEnabledExtension:(id)arg0 ;
+-(void)_unpinTab:(id)arg0 ;
+-(void)_updateExtensionStateIfThisVersionOfSafariIsNotSupported:(id)arg0 ;
+-(void)_updateWebExtensionDataMapForExtension:(id)arg0 ;
+-(void)_updateWindow:(id)arg0 updateInfo:(id)arg1 ;
+-(void)_webExtensionDataPermissionsWereGranted:(id)arg0 ;
+-(void)_webExtensionDataPermissionsWereRevokedOrRemoved:(id)arg0 ;
+-(void)addListenerForExtensionWithIdentifier:(id)arg0 type:(NSUInteger)arg1 webView:(id)arg2 ;
+-(void)addListenersIfNecessaryForExtension:(id)arg0 ;
+-(void)captureVisibleTabInWindow:(id)arg0 format:(id)arg1 quality:(id)arg2 extensionIdentifier:(id)arg3 webView:(id)arg4 completionHandler:(id)arg5 ;
+-(void)clearAlarmWithName:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)closeTabsWithIDs:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)connectFromWebView:(id)arg0 fromPortWithID:(id)arg1 fromExtensionWithID:(id)arg2 toApplicationWithID:(id)arg3 ;
+-(void)connectFromWebView:(id)arg0 fromPortWithID:(id)arg1 fromExtensionWithID:(id)arg2 toExtensionWithID:(id)arg3 connectInfo:(id)arg4 rawSenderInfo:(id)arg5 ;
+-(void)connectFromWebView:(id)arg0 fromPortWithID:(id)arg1 fromExtensionWithID:(id)arg2 toTabWithID:(CGFloat)arg3 connectInfo:(id)arg4 rawSenderInfo:(id)arg5 ;
+-(void)consumePendingLanguageDetectionCompletionHandlersForTab:(id)arg0 languageCode:(id)arg1 ;
+-(void)createAlarmWithName:(id)arg0 alarmInfo:(id)arg1 extensionIdentifier:(id)arg2 ;
+-(void)createContextMenuItem:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)createTabWithProperties:(id)arg0 extensionIdentifier:(id)arg1 webView:(id)arg2 completionHandler:(id)arg3 ;
+-(void)deleteDatabaseForStorageOfType:(NSInteger)arg0 forExtensionWithUniqueIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)deleteValuesForKeys:(id)arg0 fromStorageOfType:(NSInteger)arg1 forExtensionWithUniqueIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)detectLanguageForTab:(id)arg0 extensionIdentifier:(id)arg1 webView:(id)arg2 completionHandler:(id)arg3 ;
+-(void)didActivateWindow:(id)arg0 ;
+-(void)didCloseTab:(id)arg0 windowIsClosing:(BOOL)arg1 ;
+-(void)didMoveTab:(id)arg0 fromIndex:(NSUInteger)arg1 toIndex:(NSUInteger)arg2 ;
+-(void)didMoveTab:(id)arg0 fromWindowWithID:(CGFloat)arg1 indexInOldWindow:(NSUInteger)arg2 ;
+-(void)didOpenTab:(id)arg0 ;
+-(void)didOpenWindow:(id)arg0 ;
+-(void)didSelectTab:(id)arg0 ;
+-(void)didShowPerSiteAccessPermissionForExtension:(id)arg0 ;
+-(void)disableToolbarItemForTab:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)disconnectAllPortsFromWebView:(id)arg0 ;
+-(void)duplicateTab:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)enableToolbarItemForTab:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)executeContextMenuItem:(id)arg0 ;
+-(void)executeScriptWithDetails:(id)arg0 fromExtensionWithID:(id)arg1 toTabWithID:(id)arg2 webView:(id)arg3 completionHandler:(id)arg4 ;
+-(void)fireOnUpdatedEventForTab:(id)arg0 toExtension:(id)arg1 withChangedProperties:(NSUInteger)arg2 ;
+-(void)fireOnUpdatedEventForTab:(id)arg0 withChangedProperties:(NSUInteger)arg1 ;
+-(void)getAlarmWithName:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)getAllAlarmsForExtensionWithIdentifier:(id)arg0 completionHandler:(id)arg1 ;
+-(void)getAllCookieStoresForExtensionIdentifier:(id)arg0 completionHandler:(id)arg1 ;
+-(void)getAllCookiesWithDetails:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)getAllFramesInfoInTabWithID:(CGFloat)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)getCookieWithURL:(id)arg0 name:(id)arg1 extensionIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)getEnabledDeclarativeNetRequestRulesetsForExtensionWithIdentifier:(id)arg0 completionHandler:(id)arg1 ;
+-(void)getFrameInfoInTabWithID:(CGFloat)arg0 frameWithID:(int)arg1 extensionIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)getInformationForAllWindowsForExtensionIdentifier:(id)arg0 getInfo:(id)arg1 completionHandler:(id)arg2 ;
+-(void)getInformationForLastFocusedWindowForExtensionIdentifier:(id)arg0 getInfo:(id)arg1 completionHandler:(id)arg2 ;
+-(void)getInformationForTab:(id)arg0 extensionIdentifier:(id)arg1 webView:(id)arg2 completionHandler:(id)arg3 ;
+-(void)getInformationForWindow:(id)arg0 getInfo:(id)arg1 extensionIdentifier:(id)arg2 webView:(id)arg3 completionHandler:(id)arg4 ;
+-(void)getStorageSizeForAllKeysInStorageOfType:(NSInteger)arg0 forExtensionWithUniqueIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)getStorageSizeForKeys:(id)arg0 inStorageOfType:(NSInteger)arg1 forExtensionWithUniqueIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)getToolbarItemBadgeTextForTab:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)getToolbarItemPopupForTab:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)getToolbarItemTitleForTab:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)getValuesForAllKeysFromStorageOfType:(NSInteger)arg0 forExtensionWithUniqueIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)getValuesForKeys:(id)arg0 fromStorageOfType:(NSInteger)arg1 forExtensionWithUniqueIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)getZoomForTab:(id)arg0 extensionIdentifier:(id)arg1 webView:(id)arg2 completionHandler:(id)arg3 ;
+-(void)goBackInTab:(id)arg0 extensionIdentifier:(id)arg1 webView:(id)arg2 completionHandler:(id)arg3 ;
+-(void)goForwardInTab:(id)arg0 extensionIdentifier:(id)arg1 webView:(id)arg2 completionHandler:(id)arg3 ;
+-(void)insertCSSWithDetails:(id)arg0 fromExtensionWithID:(id)arg1 toTabWithID:(id)arg2 webView:(id)arg3 completionHandler:(id)arg4 ;
+-(void)invalidateAlarmsForExtensionWithIdentifier:(id)arg0 ;
+-(void)languageDetectionStateDidChangeForTab:(id)arg0 ;
+-(void)loadBackgroundPageForExtensionWithID:(id)arg0 completionHandler:(id)arg1 ;
+-(void)loadPermissionsIfNecessaryForExtension:(id)arg0 ;
+-(void)navigationCommittedForTab:(id)arg0 request:(id)arg1 frame:(id)arg2 ;
+-(void)navigationFailedForTab:(id)arg0 request:(id)arg1 frame:(id)arg2 ;
+-(void)navigationFinishedForTab:(id)arg0 request:(id)arg1 frame:(id)arg2 ;
+-(void)navigationStartedForTab:(id)arg0 request:(id)arg1 frame:(id)arg2 ;
+-(void)openOptionsPageForExtensionIdentifier:(id)arg0 requestingWebView:(id)arg1 completionHandler:(id)arg2 ;
+-(void)postMessage:(id)arg0 fromPortWithID:(id)arg1 fromExtensionWithID:(id)arg2 ;
+-(void)queryTabs:(id)arg0 forExtensionWithID:(id)arg1 webView:(id)arg2 completionHandler:(id)arg3 ;
+-(void)registerRemoteObjectWithWebView:(id)arg0 ;
+-(void)reloadExtensionWithIdentifier:(id)arg0 ;
+-(void)reloadTab:(id)arg0 reloadFromOrigin:(BOOL)arg1 extensionIdentifier:(id)arg2 webView:(id)arg3 completionHandler:(id)arg4 ;
+-(void)removeAllContextMenuItemsForExtensionWithIdentifier:(id)arg0 completionHandler:(id)arg1 ;
+-(void)removeCSSWithDetails:(id)arg0 fromExtensionWithID:(id)arg1 toTabWithID:(id)arg2 webView:(id)arg3 completionHandler:(id)arg4 ;
+-(void)removeContentBlockerForExtension:(id)arg0 ;
+-(void)removeContextMenuItemWithIdentifier:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)removeCookieWithDetails:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)removeListenerForExtensionWithIdentifier:(id)arg0 type:(NSUInteger)arg1 webView:(id)arg2 ;
+-(void)removeListenersIfNecessaryForExtension:(id)arg0 ;
+-(void)removePermissions:(id)arg0 origins:(id)arg1 extensionIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)removeTemporaryStateAfterURLChangeIfNecessaryForTab:(id)arg0 currentURL:(id)arg1 previousURL:(id)arg2 ;
+-(void)requestPermissions:(id)arg0 origins:(id)arg1 extensionIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)saveBackgroundPageListenersToStorageForWebExtension:(id)arg0 ;
+-(void)saveDeclarativeNetRequestCompilationStateToStorageForWebExtension:(id)arg0 hash:(id)arg1 errorStrings:(id)arg2 completionHandler:(id)arg3 ;
+-(void)saveUniqueIdentifierToStorageForWebExtension:(id)arg0 ;
+-(void)sendMessage:(id)arg0 fromExtensionWithID:(id)arg1 fromWebView:(id)arg2 rawSenderInfo:(id)arg3 toExtensionWithID:(id)arg4 replyHandler:(id)arg5 ;
+-(void)sendMessage:(id)arg0 fromExtensionWithID:(id)arg1 fromWebView:(id)arg2 rawSenderInfo:(id)arg3 toTabWithID:(CGFloat)arg4 withOptions:(id)arg5 responseCallback:(id)arg6 ;
+-(void)sendMessage:(id)arg0 toApplicationWithID:(id)arg1 fromExtensionWithIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)sendMessageFromContainingApp:(id)arg0 toExtensionWithIdentifier:(id)arg1 ;
+-(void)setCookieWithDetails:(id)arg0 extensionIdentifier:(id)arg1 completionHandler:(id)arg2 ;
+-(void)setExtension:(id)arg0 isEnabled:(BOOL)arg1 skipSavingToStorage:(BOOL)arg2 ;
+-(void)setIconPathDictionary:(id)arg0 iconImageDataDictionary:(id)arg1 forTab:(id)arg2 extensionIdentifier:(id)arg3 completionHandler:(id)arg4 ;
+-(void)setKeyedData:(id)arg0 inStorageOfType:(NSInteger)arg1 forExtensionWithUniqueIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)setToolbarItemBadgeText:(id)arg0 forTab:(id)arg1 extensionIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)setToolbarItemPopupPath:(id)arg0 forTab:(id)arg1 extensionIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)setToolbarItemTitle:(id)arg0 forTab:(id)arg1 extensionIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)setZoomForTab:(id)arg0 zoomFactor:(id)arg1 extensionIdentifier:(id)arg2 webView:(id)arg3 completionHandler:(id)arg4 ;
+-(void)terminateConnectionFromPortWithID:(id)arg0 fromExtensionWithID:(id)arg1 ;
+-(void)unregisterRemoteObjectFromWebView:(id)arg0 ;
+-(void)updateContextMenuItemWithIdentifier:(id)arg0 properties:(id)arg1 extensionIdentifier:(id)arg2 completionHandler:(id)arg3 ;
+-(void)updateEnabledDeclarativeNetRequestRulesetsForExtensionWithIdentifier:(id)arg0 options:(id)arg1 completionHandler:(id)arg2 ;
+-(void)updateTab:(id)arg0 properties:(id)arg1 extensionIdentifier:(id)arg2 webView:(id)arg3 completionHandler:(id)arg4 ;
+-(void)updateWindow:(id)arg0 withInfo:(id)arg1 extensionIdentifier:(id)arg2 webView:(id)arg3 completionHandler:(id)arg4 ;
+
+
+@end
+
+
+#endif

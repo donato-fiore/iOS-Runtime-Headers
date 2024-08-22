@@ -1,0 +1,43 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CDPSTATECONTROLLER_H
+#define CDPSTATECONTROLLER_H
+
+
+
+#import "CDPController.h"
+
+@interface CDPStateController : CDPController
+
+
+
+-(BOOL)deleteRecoveryKeyWithError:(*id)arg0 ;
+-(BOOL)isManateeAvailable:(*id)arg0 ;
+-(BOOL)isRecoveryKeyAvailableWithError:(*id)arg0 ;
+-(BOOL)shouldPerformRepairWithOptionForceFetch:(BOOL)arg0 error:(*id)arg1 ;
+-(id)generateRandomRecoveryKey:(*id)arg0 ;
+-(void)attemptToEscrowPreRecord:(id)arg0 completion:(id)arg1 ;
+-(void)attemptToEscrowPreRecord:(id)arg0 preRecordUUID:(id)arg1 secretType:(NSUInteger)arg2 completion:(id)arg3 ;
+-(void)deleteRecoveryKey:(id)arg0 ;
+-(void)finishCyrusFlowAfterTermsAgreementWithContext:(id)arg0 ;
+-(void)finishOfflineLocalSecretChangeWithCompletion:(id)arg0 ;
+-(void)generateNewRecoveryKey:(id)arg0 ;
+-(void)handleCloudDataProtectionStateWithCompletion:(id)arg0 ;
+-(void)handleURLActionWithInfo:(id)arg0 ;
+-(void)handleURLActionWithInfo:(id)arg0 completion:(id)arg1 ;
+-(void)isRecoveryKeyAvailableWithCompletion:(id)arg0 ;
+-(void)localSecretChangedTo:(id)arg0 secretType:(NSUInteger)arg1 completion:(id)arg2 ;
+-(void)recoverAndSynchronizeWithSquirrel:(id)arg0 ;
+-(void)recoverWithSquirrel:(id)arg0 ;
+-(void)repairCloudDataProtectionStateWithCompletion:(id)arg0 ;
+-(void)startCircleApplicationApprovalServer:(id)arg0 ;
+-(void)startCircleApplicationApprovalServerSkipEscrowFetches:(id)arg0 ;
+
+
+@end
+
+
+#endif

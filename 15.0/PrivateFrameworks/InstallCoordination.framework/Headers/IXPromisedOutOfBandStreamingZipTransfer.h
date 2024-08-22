@@ -1,0 +1,56 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef IXPROMISEDOUTOFBANDSTREAMINGZIPTRANSFER_H
+#define IXPROMISEDOUTOFBANDSTREAMINGZIPTRANSFER_H
+
+@class NSString, NSURL, SZExtractor;
+@protocol SZExtractorDelegate, NSSecureCoding, SZExtractor;
+
+
+#import "IXOpaqueDataPromise.h"
+#import "IXPromisedOutOfBandStreamingZipTransferSeed.h"
+
+@interface IXPromisedOutOfBandStreamingZipTransfer : IXOpaqueDataPromise <SZExtractorDelegate, NSSecureCoding, SZExtractor>
+
+
+
+@property (nonatomic) NSUInteger archiveBytesConsumed;
+@property (nonatomic, getter=isComplete) BOOL complete;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) BOOL doesConsumeExtractedData;
+@property (readonly, nonatomic) NSURL *extractionPath;
+@property (retain, nonatomic) SZExtractor *extractor; // ivar: _extractor
+@property (weak, nonatomic) NSObject<SZExtractorDelegate> *extractorDelegate; // ivar: _extractorDelegate
+@property (readonly) NSUInteger hash;
+@property (retain, nonatomic) IXPromisedOutOfBandStreamingZipTransferSeed *seed;
+@property (readonly) Class superclass;
+@property (readonly, nonatomic) BOOL useProgressFromSZExtractor;
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)consumeExtractedDataIfNeeded;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithName:(id)arg0 client:(NSUInteger)arg1 streamingZipOptions:(id)arg2 archiveSize:(NSUInteger)arg3 diskSpaceNeeded:(NSUInteger)arg4 ;
+-(id)initWithSeed:(id)arg0 ;
+-(void)addBytesTransferred:(NSUInteger)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+-(void)extractionCompleteAtArchivePath:(id)arg0 ;
+-(void)extractionEnteredPassThroughMode;
+-(void)finishStreamWithCompletionBlock:(id)arg0 ;
+-(void)prepareForExtraction:(id)arg0 ;
+-(void)prepareForExtractionToPath:(id)arg0 completionBlock:(id)arg1 ;
+-(void)resetWithCompletion:(id)arg0 ;
+-(void)setExtractionProgress:(CGFloat)arg0 ;
+-(void)supplyBytes:(id)arg0 withCompletionBlock:(id)arg1 ;
+-(void)suspendStreamWithCompletionBlock:(id)arg0 ;
+-(void)terminateStreamWithError:(id)arg0 completionBlock:(id)arg1 ;
+
+
+@end
+
+
+#endif

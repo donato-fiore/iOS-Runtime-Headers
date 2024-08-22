@@ -1,0 +1,40 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef MLAPPLEGAZETTEER_H
+#define MLAPPLEGAZETTEER_H
+
+@class NSString;
+@protocol MLModelSpecificationLoader;
+
+
+#import "MLModel.h"
+#import "MLAppleGazetteerParameters.h"
+
+@interface MLAppleGazetteer : MLModel <MLModelSpecificationLoader>
+
+ {
+    *void gazetteerModel;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) MLAppleGazetteerParameters *parameters; // ivar: _parameters
+@property (readonly) Class superclass;
+
+
++(BOOL)saveAppleGazetteerModelToURL:(id)arg0 gazetteerParameters:(id)arg1 error:(*id)arg2 ;
++(id)loadModelFromSpecification:(*void)arg0 configuration:(id)arg1 error:(*id)arg2 ;
+-(id)initWithParameters:(id)arg0 modelDescription:(id)arg1 nlpHandle:(id)arg2 configuration:(id)arg3 error:(*id)arg4 ;
+-(id)predictionFromFeatures:(id)arg0 options:(id)arg1 error:(*id)arg2 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

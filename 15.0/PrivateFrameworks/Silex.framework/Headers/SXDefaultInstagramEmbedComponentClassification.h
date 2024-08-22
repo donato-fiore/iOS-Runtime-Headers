@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SXDEFAULTINSTAGRAMEMBEDCOMPONENTCLASSIFICATION_H
+#define SXDEFAULTINSTAGRAMEMBEDCOMPONENTCLASSIFICATION_H
+
+
+
+#import "SXDefaultEmbedComponentClassification.h"
+
+@interface SXDefaultInstagramEmbedComponentClassification : SXDefaultEmbedComponentClassification
+
+
+
++(BOOL)shouldRegister;
++(id)typeString;
+-(Class)componentModelClass;
+
+
+@end
+
+
+#endif

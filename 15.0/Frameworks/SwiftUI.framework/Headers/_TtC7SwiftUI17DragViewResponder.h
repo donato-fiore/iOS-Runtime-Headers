@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC7SWIFTUI17DRAGVIEWRESPONDER_H
+#define _TTC7SWIFTUI17DRAGVIEWRESPONDER_H
+
+@class TtC7SwiftUI23UIViewSnapshotResponder;
+
+
+
+@interface _TtC7SwiftUI17DragViewResponder : TtC7SwiftUI23UIViewSnapshotResponder {
+    ? isDragEnabled;
+    ? itemsForDragHandler;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

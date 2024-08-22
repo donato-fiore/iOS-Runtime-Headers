@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef PGGRAPHLOCATIONSTREETNODE_H
+#define PGGRAPHLOCATIONSTREETNODE_H
+
+
+
+#import "PGGraphNamedLocationNode.h"
+#import "PGGraphLocationStreetNodeCollection.h"
+
+@interface PGGraphLocationStreetNode : PGGraphNamedLocationNode
+
+@property (readonly, nonatomic) PGGraphLocationStreetNodeCollection *collection;
+
+
++(id)filter;
+-(id)initWithLabel:(id)arg0 domain:(unsigned short)arg1 weight:(float)arg2 properties:(id)arg3 ;
+-(id)label;
+
+
+@end
+
+
+#endif

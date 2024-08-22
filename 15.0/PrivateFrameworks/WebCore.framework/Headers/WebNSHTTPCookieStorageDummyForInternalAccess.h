@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef WEBNSHTTPCOOKIESTORAGEDUMMYFORINTERNALACCESS_H
+#define WEBNSHTTPCOOKIESTORAGEDUMMYFORINTERNALACCESS_H
+
+@class NSHTTPCookieStorageInternal;
+
+#import <Foundation/Foundation.h>
+
+
+@interface WebNSHTTPCookieStorageDummyForInternalAccess : NSObject {
+    NSHTTPCookieStorageInternal *_internal;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

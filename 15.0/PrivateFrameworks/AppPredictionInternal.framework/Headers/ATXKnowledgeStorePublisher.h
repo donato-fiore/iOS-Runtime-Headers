@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef ATXKNOWLEDGESTOREPUBLISHER_H
+#define ATXKNOWLEDGESTOREPUBLISHER_H
+
+@class BPSPublisher, _DKEventQuery;
+@protocol _DKKnowledgeQuerying;
+
+
+
+@interface ATXKnowledgeStorePublisher : BPSPublisher
+
+@property (readonly, nonatomic) _DKEventQuery *query; // ivar: _query
+@property (readonly, nonatomic) NSObject<_DKKnowledgeQuerying> *store; // ivar: _store
+
+
+-(id)init;
+-(id)initWithEventQuery:(id)arg0 knowledgeStore:(id)arg1 ;
+-(void)subscribe:(id)arg0 ;
+
+
+@end
+
+
+#endif

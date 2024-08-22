@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef MUAMENITYITEMVIEW_H
+#define MUAMENITYITEMVIEW_H
+
+@class MKViewWithHairline, UIImageView, UIView<MULabelViewProtocol>, NSLayoutConstraint;
+@protocol MUAmenityItemViewModel;
+
+
+
+@interface MUAmenityItemView : MKViewWithHairline {
+    UIImageView *_imageView;
+    UIView<MULabelViewProtocol> *_titleLabel;
+    NSLayoutConstraint *_imageWidthConstraint;
+}
+
+
+@property (retain, nonatomic) NSObject<MUAmenityItemViewModel> *viewModel; // ivar: _viewModel
+
+
+-(id)initWithFrame:(struct CGRect )arg0 ;
+-(void)_contentSizeDidChange;
+-(void)_setupConstraints;
+-(void)_setupSubviews;
+-(void)_updateAppearance;
+
+
+@end
+
+
+#endif

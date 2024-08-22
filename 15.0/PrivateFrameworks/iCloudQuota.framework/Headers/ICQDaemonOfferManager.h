@@ -1,0 +1,101 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef ICQDAEMONOFFERMANAGER_H
+#define ICQDAEMONOFFERMANAGER_H
+
+@class FLFollowUpController, NSURLSession, NSNumber;
+
+#import <Foundation/Foundation.h>
+
+#import "_ICQAccountManager.h"
+
+@interface ICQDaemonOfferManager : NSObject {
+    FLFollowUpController *_followUpController;
+}
+
+
+@property (readonly, nonatomic) _ICQAccountManager *accountManager; // ivar: _accountManager
+@property (nonatomic, getter=isBuddyOfferEnabled) BOOL buddyOfferEnabled;
+@property (nonatomic, getter=isLegacyDeviceStorageLevelNotificationEnabled) BOOL legacyDeviceStorageLevelNotificationEnabled;
+@property (readonly, nonatomic) NSURLSession *sharedURLSession; // ivar: _sharedURLSession
+@property (nonatomic) BOOL shouldDirectToStorageManagement;
+@property (nonatomic, getter=isSimulatedDeviceStorageAlmostFull) BOOL simulatedDeviceStorageAlmostFull;
+@property (retain, nonatomic) NSNumber *simulatedPhotosLibrarySize;
+
+
++(id)ckBackupDeviceID;
++(id)getCkBackupDeviceIDWithCompletionHandler:(id)arg0 ;
++(id)sharedDaemonOfferManager;
+-(BOOL)_attemptSetRequest:(id)arg0 toPostWithJSONDict:(id)arg1 ;
+-(BOOL)_isBackupEnabledForAccount:(id)arg0 ;
+-(BOOL)_isCacheValidForRequestType:(NSInteger)arg0 offerStubs:(id)arg1 ;
+-(BOOL)_useFetchOffersDataDirectly;
+-(Class)daemonOfferClassFromBundleId:(id)arg0 options:(id)arg1 ;
+-(NSUInteger)daemonOfferSource;
+-(id)URLForAccount:(id)arg0 quotaKey:(id)arg1 ;
+-(id)_getFetchOfferStubsFromStubs:(id)arg0 ;
+-(id)_getHandlerForBundleId:(SEL)arg0 options:(id)arg1 ;
+-(id)_getStubsForRequestType:(NSInteger)arg0 fromDaemonStubs:(id)arg1 ;
+-(id)_placeholderOfferForAccount:(id)arg0 isForPremium:(BOOL)arg1 isForBuddy:(BOOL)arg2 error:(id)arg3 ;
+-(id)_storageManagementFollowupActions;
+-(id)_storageManagementFollowupItem;
+-(id)_storageManagementFollowupNotification;
+-(id)init;
+-(id)initWithAccountManager:(id)arg0 ;
+-(id)soonestOfferOrStubExpirationDate;
+-(void)_addCommonHeadersToRequest:(id)arg0 account:(id)arg1 ;
+-(void)_addEntriesToPostDictionary:(id)arg0 forStub:(id)arg1 ;
+-(void)_clearStorageManagementFollowup;
+-(void)_daemonOfferStubsDictionaryForAccount:(id)arg0 requestType:(NSInteger)arg1 quotaReason:(id)arg2 completion:(id)arg3 ;
+-(void)_fetchDaemonOfferForAccount:(id)arg0 stub:(id)arg1 notificationID:(id)arg2 completion:(id)arg3 ;
+-(void)_fetchDaemonOfferStubsForAccount:(id)arg0 isForBuddy:(BOOL)arg1 quotaReason:(id)arg2 completion:(id)arg3 ;
+-(void)_fetchDictionaryForAccount:(id)arg0 quotaKey:(id)arg1 quotaReason:(id)arg2 stub:(id)arg3 notificationID:(id)arg4 contextDictionary:(id)arg5 completion:(id)arg6 ;
+-(void)_handlerMultipleStubs:(id)arg0 forAccount:(id)arg1 completion:(id)arg2 ;
+-(void)_logErrorsForFetchOfferResultWithOffer:(id)arg0 error:(id)arg1 isForBuddy:(BOOL)arg2 ;
+-(void)_mockFetchDictionaryForAccount:(id)arg0 quotaKey:(id)arg1 stub:(id)arg2 notificationID:(id)arg3 contextDictionary:(id)arg4 completion:(id)arg5 ;
+-(void)_postDaemonOfferChangedDueToPushDarwinNotificationRequestType:(NSInteger)arg0 ;
+-(void)_postFollowupForDaemonOffer:(id)arg0 completion:(id)arg1 ;
+-(void)_postOfferType:(id)arg0 isForBuddy:(BOOL)arg1 ;
+-(void)_postStorageManagementFollowup;
+-(void)_processPushNotificationCheckHardwareIDWithDictionary:(id)arg0 completion:(id)arg1 ;
+-(void)_processPushNotificationDictionary:(id)arg0 completion:(id)arg1 ;
+// -(void)_reconsiderOffersForAccount:(id)arg0 isForBuddy:(BOOL)arg1 quotaReason:(id)arg2 choiceHandler:(id)arg3 completion:(unk)arg4  ;
+// -(void)_reconsiderOffersForAccount:(id)arg0 isForBuddy:(BOOL)arg1 quotaReason:(id)arg2 options:(id)arg3 choiceHandler:(id)arg4 completion:(unk)arg5  ;
+-(void)_showDaemonAlertForOffer:(id)arg0 notificationDictionary:(id)arg1 store:(id)arg2 account:(id)arg3 completion:(id)arg4 ;
+-(void)_teardownCachedBuddyOffer;
+-(void)_teardownCachedDefaultOfferAndNotify:(BOOL)arg0 ;
+-(void)_teardownCachedOfferAndNotify:(BOOL)arg0 ;
+-(void)_teardownCachedOffersAndNotify:(BOOL)arg0 ;
+-(void)_teardownCachedPremiumOfferAndNotify:(BOOL)arg0 ;
+-(void)_updateOffer:(id)arg0 buttonId:(id)arg1 info:(id)arg2 account:(id)arg3 accountStore:(id)arg4 completion:(id)arg5 ;
+-(void)_updateQuotaForAccount:(id)arg0 withServerDictionary:(id)arg1 ;
+-(void)addCommonHeadersToRequest:(id)arg0 ;
+-(void)addPremiumOffersHeaderIfNeededForRequest:(id)arg0 ;
+-(void)clearAllFollowupsWithCompletion:(id)arg0 ;
+-(void)clearFollowupsIsPremiumOffer:(BOOL)arg0 completion:(id)arg1 ;
+-(void)daemonBuddyOfferDictionaryForAccount:(id)arg0 completion:(id)arg1 ;
+-(void)daemonOfferDictionaryForAccount:(id)arg0 options:(id)arg1 completion:(id)arg2 ;
+-(void)forcePostFollowup;
+-(void)postBuddyOfferType:(id)arg0 ;
+-(void)postOfferType:(id)arg0 ;
+-(void)processPushNotificationDictionary:(id)arg0 completion:(id)arg1 ;
+-(void)reconsiderOffersWithCompletion:(id)arg0 ;
+-(void)reconsiderOffersWithReason:(id)arg0 completion:(id)arg1 ;
+-(void)renewCredentialsWithCompletion:(id)arg0 ;
+-(void)startDirectingToStorageManagement;
+-(void)stopDirectingToStorageManagement;
+-(void)tearDownCachedPremiumOffer;
+-(void)teardownCachedBuddyOffer;
+-(void)teardownCachedOffer;
+-(void)teardownCachedOffers;
+-(void)teardownOffersForAccount:(id)arg0 completion:(id)arg1 ;
+-(void)updateOfferForAccount:(id)arg0 offerId:(id)arg1 buttonId:(id)arg2 info:(id)arg3 completion:(id)arg4 ;
+
+
+@end
+
+
+#endif

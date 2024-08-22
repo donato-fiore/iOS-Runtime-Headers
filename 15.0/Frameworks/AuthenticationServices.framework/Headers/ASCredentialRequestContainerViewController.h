@@ -1,0 +1,53 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef ASCREDENTIALREQUESTCONTAINERVIEWCONTROLLER_H
+#define ASCREDENTIALREQUESTCONTAINERVIEWCONTROLLER_H
+
+@class UIViewController, UITapGestureRecognizer, UIVisualEffectView, NSString;
+@protocol UIViewControllerTransitioningDelegate, UINavigationControllerDelegate, ASCredentialRequestContainerViewControllerDelegate, ASCredentialRequestPaneViewControllerDelegate;
+
+
+
+@interface ASCredentialRequestContainerViewController : UIViewController <UIViewControllerTransitioningDelegate, UINavigationControllerDelegate>
+
+ {
+    UITapGestureRecognizer *_tapGestureRecognizer;
+}
+
+
+@property (retain, nonatomic) UIVisualEffectView *blurBackgroundView; // ivar: _blurBackgroundView
+@property (nonatomic) CGSize containerContentSize; // ivar: _containerContentSize
+@property (readonly, copy) NSString *debugDescription;
+@property (weak, nonatomic) NSObject<ASCredentialRequestContainerViewControllerDelegate> *delegate; // ivar: _delegate
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (weak, nonatomic) NSObject<ASCredentialRequestPaneViewControllerDelegate> *paneDelegate; // ivar: _paneDelegate
+@property (retain, nonatomic) UIViewController *rootViewController; // ivar: _rootViewController
+@property (readonly) Class superclass;
+
+
+-(BOOL)_shouldDismiss;
+-(id)animationControllerForDismissedController:(id)arg0 ;
+-(id)animationControllerForPresentedController:(id)arg0 presentingController:(id)arg1 sourceController:(id)arg2 ;
+-(id)initWithRootViewController:(id)arg0 ;
+-(struct CGRect )_dismissalFrameForContentSize:(struct CGSize )arg0 ;
+-(struct CGRect )_layoutFrameForContentSize:(struct CGSize )arg0 ;
+-(void)_clearPaneDelegateForViewController:(id)arg0 ;
+-(void)_handleTapGesture:(id)arg0 ;
+-(void)_layoutContainerView:(BOOL)arg0 ;
+-(void)navigationController:(id)arg0 willShowViewController:(id)arg1 animated:(BOOL)arg2 ;
+-(void)preferredContentSizeDidChangeForChildContentContainer:(id)arg0 ;
+-(void)viewDidAppear:(BOOL)arg0 ;
+-(void)viewDidLoad;
+-(void)viewWillAppear:(BOOL)arg0 ;
+-(void)viewWillDisappear:(BOOL)arg0 ;
+-(void)viewWillTransitionToSize:(struct CGSize )arg0 withTransitionCoordinator:(id)arg1 ;
+
+
+@end
+
+
+#endif

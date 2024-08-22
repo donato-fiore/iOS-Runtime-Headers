@@ -1,0 +1,43 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC10REALITYKIT25__RKENTITYTRANSFORMACTION_H
+#define _TTC10REALITYKIT25__RKENTITYTRANSFORMACTION_H
+
+@class RKEntityAction;
+
+
+
+@interface _TtC10RealityKit25__RKEntityTransformAction : RKEntityAction {
+    ? location;
+    ? orientation;
+    ? scale;
+    ? duration;
+    ? moveType;
+    ? ease;
+    ? easeType;
+    ? respectPhysics;
+    ? physicsAngularCoefficient;
+    ? physicsLinearCoefficient;
+    ? relativeToEntity;
+    ? originalTranslation;
+    ? originalOrientation;
+    ? originalScale;
+    ? currentAnimation;
+    ? finishedSubscription;
+    ? terminatedSubscription;
+    ? wasHidden;
+}
+
+
+
+
+-(id)copyWithZone:(*void)arg0 ;
+
+
+@end
+
+
+#endif

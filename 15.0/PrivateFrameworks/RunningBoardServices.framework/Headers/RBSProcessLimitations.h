@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef RBSPROCESSLIMITATIONS_H
+#define RBSPROCESSLIMITATIONS_H
+
+@class NSString;
+@protocol RBSXPCSecureCoding;
+
+#import <Foundation/Foundation.h>
+
+
+@interface RBSProcessLimitations : NSObject <RBSXPCSecureCoding>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (nonatomic) CGFloat runTime; // ivar: _runTime
+@property (readonly) Class superclass;
+
+
++(BOOL)supportsRBSXPCSecureCoding;
+-(id)init;
+-(id)initWithRBSXPCCoder:(id)arg0 ;
+-(void)encodeWithRBSXPCCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

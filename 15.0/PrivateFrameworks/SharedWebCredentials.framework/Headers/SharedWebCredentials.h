@@ -1,0 +1,16 @@
+
+
+#include "_SWCPattern.h"
+#include "_SWCPatternList.h"
+#include "_SWCSubstitutionVariableList.h"
+#include "_SWCServiceSettings.h"
+#include "_SWCGeneration.h"
+#include "_SWCServiceSpecifier.h"
+#include "_SWCChatterboxResolver.h"
+#include "_SWCPrefs.h"
+#include "_SWCApplicationIdentifier.h"
+#include "_SWCServiceDetails.h"
+#include "_SWCPatternMatchingEngine.h"
+#include "_SWCPatternMatchingResult.h"
+#include "_SWCTrackingDomainInfo.h"
+#include "_SWCDomain.h"

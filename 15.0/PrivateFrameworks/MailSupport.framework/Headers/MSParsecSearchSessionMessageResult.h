@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef MSPARSECSEARCHSESSIONMESSAGERESULT_H
+#define MSPARSECSEARCHSESSIONMESSAGERESULT_H
+
+@class NSString;
+@protocol MSParsecSearchSessionResult;
+
+#import <Foundation/Foundation.h>
+
+
+@interface MSParsecSearchSessionMessageResult : NSObject <MSParsecSearchSessionResult>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) NSInteger messageAge; // ivar: _messageAge
+@property (readonly, nonatomic) NSString *resultID; // ivar: _resultID
+@property (readonly) Class superclass;
+
+
++(id)resultWithIdentifier:(id)arg0 ;
++(id)resultWithIdentifier:(id)arg0 date:(id)arg1 ;
+-(NSInteger)bucketedMessageAgeWithDate:(id)arg0 ;
+-(id)feedbackResult;
+-(id)initResultWithIdentifier:(id)arg0 date:(id)arg1 ;
+
+
+@end
+
+
+#endif

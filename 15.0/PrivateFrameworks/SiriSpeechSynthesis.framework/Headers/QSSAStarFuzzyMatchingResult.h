@@ -1,0 +1,43 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef QSSASTARFUZZYMATCHINGRESULT_H
+#define QSSASTARFUZZYMATCHINGRESULT_H
+
+@class NSMutableDictionary, NSData, NSString, NSArray;
+@protocol FLTBFBufferAccessor, NSCopying;
+
+#import <Foundation/Foundation.h>
+
+
+@interface QSSAStarFuzzyMatchingResult : NSObject <FLTBFBufferAccessor, NSCopying>
+
+ {
+    NSMutableDictionary *_storage;
+    NSData *_data;
+    *AStarFuzzyMatchingResult _root;
+}
+
+
+@property (readonly, nonatomic) NSString *debug_information;
+@property (readonly, nonatomic) NSArray *match_ids;
+@property (readonly, nonatomic) NSString *matched_result;
+@property (readonly, nonatomic) int tm_score;
+@property (readonly, nonatomic) NSInteger total_score;
+
+
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)flatbuffData;
+-(id)initAndVerifyWithFlatbuffData:(id)arg0 ;
+-(id)initWithFlatbuffData:(id)arg0 ;
+-(id)initWithFlatbuffData:(id)arg0 root:(struct AStarFuzzyMatchingResult *)arg1 ;
+-(id)initWithFlatbuffData:(id)arg0 root:(struct AStarFuzzyMatchingResult *)arg1 verify:(BOOL)arg2 ;
+-(struct Offset<siri::speech::schema_fb::AStarFuzzyMatchingResult> )addObjectToBuffer:(*void)arg0 ;
+
+
+@end
+
+
+#endif

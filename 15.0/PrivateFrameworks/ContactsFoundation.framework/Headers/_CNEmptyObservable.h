@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _CNEMPTYOBSERVABLE_H
+#define _CNEMPTYOBSERVABLE_H
+
+
+
+#import "CNObservable.h"
+
+@interface _CNEmptyObservable : CNObservable
+
+
+
+-(id)debugPipelineDescription;
+-(id)pipelineDescription:(id)arg0 ;
+// -(id)pipelineDescriptionWithOperation:(id)arg0 onObservable:(unk)arg1  ;
+-(id)subscribe:(id)arg0 ;
+
+
+@end
+
+
+#endif

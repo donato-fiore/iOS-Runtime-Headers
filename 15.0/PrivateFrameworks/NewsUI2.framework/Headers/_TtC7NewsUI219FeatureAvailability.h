@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC7NEWSUI219FEATUREAVAILABILITY_H
+#define _TTC7NEWSUI219FEATUREAVAILABILITY_H
+
+@class SwiftObject;
+@protocol TSFeatureAvailabilityType;
+
+
+
+@interface _TtC7NewsUI219FeatureAvailability : SwiftObject <TSFeatureAvailabilityType>
+
+ {
+    ? featureAvailabilityProvider;
+}
+
+
+@property (nonatomic, readonly) BOOL allowInAppMessages;
+@property (nonatomic, readonly) BOOL allowSharingAlways;
+@property (nonatomic, readonly) BOOL appleMagazineContent;
+@property (nonatomic, readonly) BOOL interstellarEnabled;
+@property (nonatomic, readonly) BOOL narrativeAudio;
+@property (nonatomic, readonly) BOOL searchFeaturedStoriesEnabled;
+@property (nonatomic, readonly) BOOL searchInExplicitViewEnabled;
+@property (nonatomic, readonly) BOOL useContinueReading;
+@property (nonatomic, readonly) BOOL useFlexiblePaywall;
+@property (nonatomic, readonly) BOOL useNewsArticleSearch;
+
+
+
+
+@end
+
+
+#endif

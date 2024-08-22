@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef USDATECOMPONENTSVALUETRANSFORMER_H
+#define USDATECOMPONENTSVALUETRANSFORMER_H
+
+@class NSSecureUnarchiveFromDataTransformer;
+
+
+
+@interface USDateComponentsValueTransformer : NSSecureUnarchiveFromDataTransformer
+
+
+
++(id)allowedTopLevelClasses;
+
+
+@end
+
+
+#endif

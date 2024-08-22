@@ -1,0 +1,42 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC16NEWSSUBSCRIPTION27FLEXIBLEPAYWALLVIEWPROVIDER_H
+#define _TTC16NEWSSUBSCRIPTION27FLEXIBLEPAYWALLVIEWPROVIDER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC16NewsSubscription27FlexiblePaywallViewProvider : NSObject {
+    ? delegate;
+    ? paywallView;
+    ? hardPaywallGradientView;
+    ? paywallCollectionView;
+    ? paywallModel;
+    ? feedLayoutSolver;
+    ? resolvedContent;
+    ? dataSource;
+    ? formatContentService;
+    ? layoutTaskQueue;
+    ? paywallLayoutProvider;
+    ? bundlePurchasePrewarmer;
+    ? purchaseProvider;
+    ? purchaseManager;
+    ? subscribeButtonTextProvider;
+    ? offerOverrideProvider;
+    ? individualPurchaseMetadata;
+}
+
+
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

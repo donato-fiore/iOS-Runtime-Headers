@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC19APPSTOREKITINTERNAL12POSTERLOCKUP_H
+#define _TTC19APPSTOREKITINTERNAL12POSTERLOCKUP_H
+
+@class TtC19AppStoreKitInternal6Lockup;
+
+
+
+@interface _TtC19AppStoreKitInternal12PosterLockup : TtC19AppStoreKitInternal6Lockup {
+    ? posterArtwork;
+    ? posterVideo;
+    ? epicHeading;
+    ? footerText;
+    ? isDark;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

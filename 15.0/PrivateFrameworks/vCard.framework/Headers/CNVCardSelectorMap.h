@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CNVCARDSELECTORMAP_H
+#define CNVCARDSELECTORMAP_H
+
+@class NSMutableArray;
+
+#import <Foundation/Foundation.h>
+
+
+@interface CNVCardSelectorMap : NSObject {
+    NSMutableArray *_strings;
+    NSMutableArray *_selectors;
+}
+
+
+
+
+-(SEL)selectorForString:(id)arg0 ;
+-(id)init;
+-(void)setSelector:(SEL)arg0 forString:(id)arg1 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,38 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef PKPUSHPROVISIONINGSHARINGMETADATA_H
+#define PKPUSHPROVISIONINGSHARINGMETADATA_H
+
+@class NSString;
+@protocol NSSecureCoding, NSCopying;
+
+#import <Foundation/Foundation.h>
+
+
+@interface PKPushProvisioningSharingMetadata : NSObject <NSSecureCoding, NSCopying>
+
+
+
+@property (copy, nonatomic) NSString *provisioningCredentialHash; // ivar: _provisioningCredentialHash
+@property (copy, nonatomic) NSString *sharingInstanceIdentifier; // ivar: _sharingInstanceIdentifier
+@property (nonatomic) NSUInteger sharingStatus; // ivar: _sharingStatus
+@property (nonatomic) NSInteger source; // ivar: _source
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)isEqualToEncryptedProvisioningTarget:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

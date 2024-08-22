@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef PAEGRADIENT_H
+#define PAEGRADIENT_H
+
+
+
+#import "PAEGeneratorDefaultBase.h"
+
+@interface PAEGradient : PAEGeneratorDefaultBase {
+    int _currentMethod;
+}
+
+
+
+
+-(BOOL)addParameters;
+-(BOOL)canThrowRenderOutput:(id)arg0 withInfo:(struct ? )arg1 ;
+-(BOOL)frameSetup:(struct ? )arg0 hardware:(*BOOL)arg1 software:(*BOOL)arg2 ;
+-(BOOL)initPAEGradientWithHeight:(id)arg0 ;
+-(BOOL)parameterChanged:(unsigned int)arg0 ;
+-(id)initWithAPIManager:(id)arg0 ;
+-(id)properties;
+
+
+@end
+
+
+#endif

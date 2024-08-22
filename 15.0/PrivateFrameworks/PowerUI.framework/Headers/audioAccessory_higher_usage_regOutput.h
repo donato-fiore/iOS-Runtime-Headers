@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef AUDIOACCESSORY_HIGHER_USAGE_REGOUTPUT_H
+#define AUDIOACCESSORY_HIGHER_USAGE_REGOUTPUT_H
+
+@class NSSet;
+@protocol MLFeatureProvider;
+
+#import <Foundation/Foundation.h>
+
+
+@interface audioAccessory_higher_usage_regOutput : NSObject <MLFeatureProvider>
+
+
+
+@property (nonatomic) CGFloat duration_pred; // ivar: _duration_pred
+@property (readonly, nonatomic) NSSet *featureNames;
+
+
+-(id)featureValueForName:(id)arg0 ;
+-(id)initWithDuration_pred:(CGFloat)arg0 ;
+
+
+@end
+
+
+#endif

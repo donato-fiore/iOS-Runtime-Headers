@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTCE19REMINDERKITINTERNALV10FOUNDATION3URLP33_C4CF88CCEEBFE10B546F9B83C3AB9A6B23SECURITYSCOPEDURLHOLDER_H
+#define _TTCE19REMINDERKITINTERNALV10FOUNDATION3URLP33_C4CF88CCEEBFE10B546F9B83C3AB9A6B23SECURITYSCOPEDURLHOLDER_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCE19ReminderKitInternalV10Foundation3URLP33_C4CF88CCEEBFE10B546F9B83C3AB9A6B23SecurityScopedURLHolder : SwiftObject {
+    ? fileURL;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

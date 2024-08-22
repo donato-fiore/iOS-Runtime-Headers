@@ -1,0 +1,15 @@
+
+
+#include "MAProgressHandler.h"
+#include "MAAbsoluteAssetId.h"
+#include "MAAsset.h"
+#include "MAAssetQuery.h"
+#include "ASAsset.h"
+#include "ASAssetQuery.h"
+#include "MAXpcManager.h"
+#include "MAAssetDiff.h"
+#include "MADownloadOptions.h"
+#include "MAMsuDownloadOptions.h"
+#include "MADownloadConfig.h"
+#include "MAProgressNotification.h"
+#include "MAXpcConnection.h"

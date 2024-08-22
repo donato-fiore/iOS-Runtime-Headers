@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef TSCHPRESETIMAGERDONUT_H
+#define TSCHPRESETIMAGERDONUT_H
+
+
+
+#import "TSCHPresetImagerRadial.h"
+
+@interface TSCHPresetImagerDonut : TSCHPresetImagerRadial
+
+
+
+-(id)p_chartType;
+-(struct CGPath *)newMutablePathWithRadius:(CGFloat)arg0 center:(struct CGPoint )arg1 startAngle:(CGFloat)arg2 endAngle:(CGFloat)arg3 ;
+
+
+@end
+
+
+#endif

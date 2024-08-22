@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef IDSSOCKETPAIRSESSIONENDMESSAGE_H
+#define IDSSOCKETPAIRSESSIONENDMESSAGE_H
+
+
+
+#import "IDSSocketPairDataMessage.h"
+
+@interface IDSSocketPairSessionEndMessage : IDSSocketPairDataMessage
+
+
+
+-(unsigned char)command;
+
+
+@end
+
+
+#endif

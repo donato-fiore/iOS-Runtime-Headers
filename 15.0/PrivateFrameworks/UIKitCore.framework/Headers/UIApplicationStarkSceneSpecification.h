@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef UIAPPLICATIONSTARKSCENESPECIFICATION_H
+#define UIAPPLICATIONSTARKSCENESPECIFICATION_H
+
+
+
+#import "UIApplicationSceneSpecification.h"
+
+@interface UIApplicationStarkSceneSpecification : UIApplicationSceneSpecification
+
+
+
+-(Class)settingsClass;
+-(id)baseSceneComponentClassDictionary;
+-(id)connectionHandlers;
+-(id)disconnectionHandlers;
+-(id)finalActionHandlers;
+-(id)initialSettingsDiffActions;
+-(id)uiSceneSessionRole;
+
+
+@end
+
+
+#endif

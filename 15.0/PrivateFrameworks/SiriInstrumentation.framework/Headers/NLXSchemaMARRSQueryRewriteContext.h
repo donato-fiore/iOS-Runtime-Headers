@@ -1,0 +1,45 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef NLXSCHEMAMARRSQUERYREWRITECONTEXT_H
+#define NLXSCHEMAMARRSQUERYREWRITECONTEXT_H
+
+@class NSData;
+
+
+#import "SISchemaInstrumentationMessage.h"
+#import "NLXSchemaMARRSQueryRewriteEvaluated.h"
+#import "NLXSchemaMARRSQueryRewriteFailed.h"
+#import "NLXSchemaMARRSQueryRewriteStarted.h"
+
+@interface NLXSchemaMARRSQueryRewriteContext : SISchemaInstrumentationMessage
+
+@property (retain, nonatomic) NLXSchemaMARRSQueryRewriteEvaluated *ended; // ivar: _ended
+@property (retain, nonatomic) NLXSchemaMARRSQueryRewriteEvaluated *evaluated; // ivar: _evaluated
+@property (retain, nonatomic) NLXSchemaMARRSQueryRewriteFailed *failed; // ivar: _failed
+@property (nonatomic) BOOL hasEnded; // ivar: _hasEnded
+@property (nonatomic) BOOL hasEvaluated; // ivar: _hasEvaluated
+@property (nonatomic) BOOL hasFailed; // ivar: _hasFailed
+@property (nonatomic) BOOL hasStarted; // ivar: _hasStarted
+@property (nonatomic) BOOL hasStartedOrChanged; // ivar: _hasStartedOrChanged
+@property (readonly, nonatomic) NSData *jsonData;
+@property (retain, nonatomic) NLXSchemaMARRSQueryRewriteStarted *started; // ivar: _started
+@property (retain, nonatomic) NLXSchemaMARRSQueryRewriteStarted *startedOrChanged; // ivar: _startedOrChanged
+@property (readonly, nonatomic) NSUInteger whichContextevent; // ivar: _whichContextevent
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(NSUInteger)hash;
+-(id)dictionaryRepresentation;
+-(id)initWithDictionary:(id)arg0 ;
+-(id)initWithJSON:(id)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

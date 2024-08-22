@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef PKPAYMENTREQUESTSHIPPINGCONTACTUPDATE_H
+#define PKPAYMENTREQUESTSHIPPINGCONTACTUPDATE_H
+
+@class NSArray;
+@protocol NSSecureCoding;
+
+
+#import "PKPaymentRequestUpdate.h"
+
+@interface PKPaymentRequestShippingContactUpdate : PKPaymentRequestUpdate <NSSecureCoding>
+
+
+
+@property (copy, nonatomic) NSArray *errors; // ivar: _errors
+@property (copy, nonatomic) NSArray *shippingMethods;
+
+
++(BOOL)supportsSecureCoding;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithErrors:(id)arg0 paymentSummaryItems:(id)arg1 shippingMethods:(id)arg2 ;
+-(id)initWithPaymentSummaryItems:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

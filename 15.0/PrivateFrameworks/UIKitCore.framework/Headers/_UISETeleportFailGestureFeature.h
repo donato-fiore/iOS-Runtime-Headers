@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _UISETELEPORTFAILGESTUREFEATURE_H
+#define _UISETELEPORTFAILGESTUREFEATURE_H
+
+@class UISEGestureFeature;
+
+
+
+@interface _UISETeleportFailGestureFeature : UISEGestureFeature {
+    CGPoint _lastLocation;
+}
+
+
+
+
+-(id)init;
+-(void)_incorporateSample:(struct _UISEGestureFeatureSample *)arg0 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef AMSUIWEBSUBSCRIPTIONACTION_H
+#define AMSUIWEBSUBSCRIPTIONACTION_H
+
+@class NSString;
+@protocol AMSUIWebActionRunnable;
+
+
+#import "AMSUIWebAction.h"
+
+@interface AMSUIWebSubscriptionAction : AMSUIWebAction <AMSUIWebActionRunnable>
+
+
+
+@property (nonatomic) NSInteger cachePolicy; // ivar: _cachePolicy
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) BOOL extendedCarrierCheck; // ivar: _extendedCarrierCheck
+@property (readonly) NSUInteger hash;
+@property (nonatomic) NSInteger mediaType; // ivar: _mediaType
+@property (readonly) Class superclass;
+
+
+-(id)initWithJSObject:(id)arg0 context:(id)arg1 ;
+-(id)runAction;
+
+
+@end
+
+
+#endif

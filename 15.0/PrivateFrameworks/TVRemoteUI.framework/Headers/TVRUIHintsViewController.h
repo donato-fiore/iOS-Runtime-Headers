@@ -1,0 +1,82 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef TVRUIHINTSVIEWCONTROLLER_H
+#define TVRUIHINTSVIEWCONTROLLER_H
+
+@class UIViewController, NSString, TPKContent, TPKContentController, TPKContentPopoverViewController, UIView;
+@protocol TPKContentControllerDelegate, TVRUIRemoteViewControllerDelegate, TVRUIContentPresenter, TVRUIHintsStyleProvider;
+
+
+#import "_TVRUICubicSpringAnimator.h"
+#import "TVRUIDeviceHardwareInfo.h"
+#import "TVRUIHintsGlyphView.h"
+
+@interface TVRUIHintsViewController : UIViewController <TPKContentControllerDelegate, TVRUIRemoteViewControllerDelegate, TVRUIContentPresenter>
+
+
+
+@property (nonatomic) BOOL allowSiriHint; // ivar: _allowSiriHint
+@property (nonatomic) BOOL allowTips; // ivar: _allowTips
+@property (nonatomic) BOOL allowVolumeHint; // ivar: _allowVolumeHint
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain, nonatomic) _TVRUICubicSpringAnimator *dismissalAnimator; // ivar: _dismissalAnimator
+@property (retain, nonatomic) TVRUIDeviceHardwareInfo *hardwareInfo; // ivar: _hardwareInfo
+@property (readonly) NSUInteger hash;
+@property (copy, nonatomic) NSString *lastSeenDeviceName; // ivar: _lastSeenDeviceName
+@property (retain, nonatomic) _TVRUICubicSpringAnimator *presentationAnimator; // ivar: _presentationAnimator
+@property (nonatomic, getter=isPresentingTip) BOOL presentingTip; // ivar: _presentingTip
+@property (retain, nonatomic) TVRUIHintsGlyphView *siriGlyphView; // ivar: _siriGlyphView
+@property (retain, nonatomic) NSObject<TVRUIHintsStyleProvider> *styleProvider; // ivar: _styleProvider
+@property (readonly) Class superclass;
+@property (nonatomic) BOOL supportsSiri; // ivar: _supportsSiri
+@property (retain, nonatomic) TPKContent *tipContent; // ivar: _tipContent
+@property (retain, nonatomic) TPKContentController *tipContentController; // ivar: _tipContentController
+@property (retain, nonatomic) TPKContentPopoverViewController *tipContentViewController; // ivar: _tipContentViewController
+@property (retain, nonatomic) UIView *userIntentButtonHint; // ivar: _userIntentButtonHint
+@property (retain, nonatomic) UIView *volumeButtonsHint; // ivar: _volumeButtonsHint
+@property (retain, nonatomic) TVRUIHintsGlyphView *volumeGlyphView; // ivar: _volumeGlyphView
+
+
+-(BOOL)_canShowWhileLocked;
+-(BOOL)hasPresentedContent;
+-(NSInteger)currentInterfaceOrientation;
+-(NSUInteger)_permittedArrowDirectionsForDevice:(id)arg0 ;
+-(id)contentController:(id)arg0 contentView:(id)arg1 iconForCustomizationID:(NSInteger)arg2 ;
+-(id)init;
+-(struct CGAffineTransform )_gylphTransformForOrientation:(NSInteger)arg0 ;
+-(struct CGRect )_frameForUserIntentButtonPresented:(BOOL)arg0 ;
+-(struct CGRect )_frameForVolumeButtonsPresented:(BOOL)arg0 ;
+-(void)_applyTransformForOrientation:(NSInteger)arg0 ;
+-(void)_cleanupHints;
+-(void)_dismissHints;
+-(void)_largeTextEnabledStatusChanged:(id)arg0 ;
+-(void)_presentTipContentViewControllerAnimated:(BOOL)arg0 ;
+-(void)_setupDebugUIIfEnabled;
+-(void)_setupTipsControllerIfNeeded;
+-(void)_setupUserIntentButtonHint;
+-(void)_setupVolumeButtonsHint;
+-(void)_updateUserIntentButtonHintFrame;
+-(void)_updateVolumeButtonsHintFrame;
+-(void)contentController:(id)arg0 contentDidBecomeAvailable:(id)arg1 animated:(BOOL)arg2 ;
+-(void)contentController:(id)arg0 didFinishWithContent:(id)arg1 animated:(BOOL)arg2 ;
+-(void)dealloc;
+-(void)device:(id)arg0 supportsSiri:(BOOL)arg1 volume:(BOOL)arg2 ;
+-(void)devicePickerWillExpand;
+-(void)dismissHints;
+-(void)dismissPresentedContentAnimated:(BOOL)arg0 completion:(id)arg1 ;
+-(void)remoteWillBeDismissed;
+-(void)requestHintsForSiri:(BOOL)arg0 volume:(BOOL)arg1 ;
+-(void)viewDidAppear:(BOOL)arg0 ;
+-(void)viewDidLoad;
+-(void)viewWillAppear:(BOOL)arg0 ;
+-(void)viewWillTransitionToSize:(struct CGSize )arg0 withTransitionCoordinator:(id)arg1 ;
+
+
+@end
+
+
+#endif

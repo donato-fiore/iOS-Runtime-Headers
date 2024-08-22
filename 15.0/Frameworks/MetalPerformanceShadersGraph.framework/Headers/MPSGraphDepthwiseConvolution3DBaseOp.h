@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef MPSGRAPHDEPTHWISECONVOLUTION3DBASEOP_H
+#define MPSGRAPHDEPTHWISECONVOLUTION3DBASEOP_H
+
+
+
+#import "MPSGraphOperation.h"
+#import "MPSGraphDepthwiseConvolution3DOpDescriptor.h"
+
+@interface MPSGraphDepthwiseConvolution3DBaseOp : MPSGraphOperation {
+    MPSGraphDepthwiseConvolution3DOpDescriptor *_desc;
+}
+
+
+
+
+-(id)initWithGraph:(id)arg0 inputTensors:(id)arg1 controlDependencies:(id)arg2 descriptor:(id)arg3 name:(id)arg4 ;
+
+
+@end
+
+
+#endif

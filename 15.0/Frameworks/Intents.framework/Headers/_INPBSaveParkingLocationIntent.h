@@ -1,0 +1,49 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _INPBSAVEPARKINGLOCATIONINTENT_H
+#define _INPBSAVEPARKINGLOCATIONINTENT_H
+
+@class PBCodable, NSString;
+@protocol _INPBSaveParkingLocationIntent, NSSecureCoding, NSCopying;
+
+
+#import "_INPBIntentMetadata.h"
+#import "_INPBLocation.h"
+#import "_INPBString.h"
+
+@interface _INPBSaveParkingLocationIntent : PBCodable <_INPBSaveParkingLocationIntent, NSSecureCoding, NSCopying>
+
+ {
+    ? _has;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) BOOL hasIntentMetadata;
+@property (readonly, nonatomic) BOOL hasParkingLocation;
+@property (readonly, nonatomic) BOOL hasParkingNote;
+@property (readonly) NSUInteger hash;
+@property (retain, nonatomic) _INPBIntentMetadata *intentMetadata; // ivar: _intentMetadata
+@property (retain, nonatomic) _INPBLocation *parkingLocation; // ivar: _parkingLocation
+@property (retain, nonatomic) _INPBString *parkingNote; // ivar: _parkingNote
+@property (readonly) Class superclass;
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)readFrom:(id)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)dictionaryRepresentation;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+-(void)writeTo:(id)arg0 ;
+
+
+@end
+
+
+#endif

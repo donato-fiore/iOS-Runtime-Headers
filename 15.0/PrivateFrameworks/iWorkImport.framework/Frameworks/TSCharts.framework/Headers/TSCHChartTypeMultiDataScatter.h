@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef TSCHCHARTTYPEMULTIDATASCATTER_H
+#define TSCHCHARTTYPEMULTIDATASCATTER_H
+
+
+
+#import "TSCHMultiDataChartType.h"
+
+@interface TSCHChartTypeMultiDataScatter : TSCHMultiDataChartType
+
+
+
+-(BOOL)supportsSeriesStroke;
+-(Class)presetImagerClass;
+-(Class)repClass;
+-(NSInteger)userInterfaceTag;
+-(id)allCDESectionLabels;
+-(id)defaultDataFileName;
+-(id)defaultSeriesType:(NSUInteger)arg0 ;
+-(id)genericToSpecificPropertyMap;
+-(id)init;
+-(id)name;
+-(id)userInterfaceName;
+
+
+@end
+
+
+#endif

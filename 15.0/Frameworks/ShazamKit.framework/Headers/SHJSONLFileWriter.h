@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SHJSONLFILEWRITER_H
+#define SHJSONLFILEWRITER_H
+
+@class NSURL;
+@protocol SHDataStream;
+
+#import <Foundation/Foundation.h>
+
+
+@interface SHJSONLFileWriter : NSObject
+
+@property (readonly, nonatomic) NSURL *destination; // ivar: _destination
+@property (readonly, nonatomic) NSObject<SHDataStream> *outputStream; // ivar: _outputStream
+
+
++(id)dataForJSONObject:(id)arg0 error:(*id)arg1 ;
+-(BOOL)closeWithError:(*id)arg0 ;
+-(BOOL)writeObject:(id)arg0 error:(*id)arg1 ;
+-(id)initWithDestination:(id)arg0 compression:(BOOL)arg1 ;
+-(id)streamForWritingToURL:(id)arg0 withCompression:(BOOL)arg1 ;
+-(void)linkDataStream:(id)arg0 ;
+
+
+@end
+
+
+#endif

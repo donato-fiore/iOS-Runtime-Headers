@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC7SWIFTUIP33_48FD17D73748FC4BE6C40DE75537727019CONTEXTMENUIDENTITY_H
+#define _TTC7SWIFTUIP33_48FD17D73748FC4BE6C40DE75537727019CONTEXTMENUIDENTITY_H
+
+@class NSString;
+@protocol NSCopying;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC7SwiftUIP33_48FD17D73748FC4BE6C40DE75537727019ContextMenuIdentity : NSObject <NSCopying>
+
+ {
+    ? base;
+}
+
+
+@property (nonatomic, readonly) NSString *description;
+@property (nonatomic, readonly) NSInteger hash;
+
+
+-(BOOL)isEqual:(id)arg0 ;
+-(id)copyWithZone:(*void)arg0 ;
+-(id)init;
+
+
+@end
+
+
+#endif

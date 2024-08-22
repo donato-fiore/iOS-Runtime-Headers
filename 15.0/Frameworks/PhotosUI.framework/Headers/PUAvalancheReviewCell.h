@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef PUAVALANCHEREVIEWCELL_H
+#define PUAVALANCHEREVIEWCELL_H
+
+
+
+#import "PUPhotosSharingGridCell.h"
+
+@interface PUAvalancheReviewCell : PUPhotosSharingGridCell
+
+
+
+-(void)setHighlighted:(BOOL)arg0 ;
+
+
+@end
+
+
+#endif

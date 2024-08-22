@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef WFMATCHTEXTINTENTHANDLER_H
+#define WFMATCHTEXTINTENTHANDLER_H
+
+@class NSString;
+@protocol WFMatchTextIntentHandling;
+
+#import <Foundation/Foundation.h>
+
+
+@interface WFMatchTextIntentHandler : NSObject <WFMatchTextIntentHandling>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(void)handleMatchText:(id)arg0 completion:(id)arg1 ;
+-(void)resolveCaseSensitiveForMatchText:(id)arg0 withCompletion:(id)arg1 ;
+-(void)resolvePatternForMatchText:(id)arg0 withCompletion:(id)arg1 ;
+-(void)resolveTextForMatchText:(id)arg0 withCompletion:(id)arg1 ;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,34 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef PXINSETLAYOUTPERFORMER_H
+#define PXINSETLAYOUTPERFORMER_H
+
+@class NSArray;
+@protocol PXMutableLayoutPerformer;
+
+
+#import "PXBaseLayoutPerformer.h"
+#import "PXLayoutPerformerOutput.h"
+
+@interface PXInsetLayoutPerformer : PXBaseLayoutPerformer <PXMutableLayoutPerformer>
+
+
+
+@property (retain, nonatomic) NSArray *children; // ivar: children
+@property (nonatomic) ? layoutInput;
+@property (nonatomic) UIEdgeInsets layoutInsets; // ivar: _layoutInsets
+@property (retain, nonatomic) PXLayoutPerformerOutput *layoutOutput;
+
+
++(struct CGSize )performLayoutWithLayoutInput:(struct ? )arg0 layoutOutput:(id)arg1 usingBlock:(id)arg2 ;
+-(struct CGSize )performLayout;
+-(void)prepareForReuse;
+
+
+@end
+
+
+#endif

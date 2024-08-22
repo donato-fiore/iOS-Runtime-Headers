@@ -1,0 +1,47 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CKVDATABASEREADER_H
+#define CKVDATABASEREADER_H
+
+@class NSString;
+@protocol CKVDatabaseReadOnlyAccess;
+
+#import <Foundation/Foundation.h>
+
+#import "CKVDatabaseConnection.h"
+#import "CKVProvisionalResourceManager.h"
+
+@interface CKVDatabaseReader : NSObject <CKVDatabaseReadOnlyAccess>
+
+ {
+    CKVDatabaseConnection *_connection;
+    CGFloat _lifespan;
+    CKVProvisionalResourceManager *_resourceManager;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
++(id)readerForDatabaseAtURL:(id)arg0 ;
+-(BOOL)activateWithError:(*id)arg0 operationBlock:(id)arg1 ;
+-(BOOL)deactivateWithError:(*id)arg0 ;
+-(BOOL)enumerateRecordResultsOfSelect:(id)arg0 recordClass:(Class)arg1 batchSize:(NSUInteger)arg2 offset:(NSUInteger)arg3 enumerateAll:(BOOL)arg4 error:(*id)arg5 usingBlock:(id)arg6 ;
+-(BOOL)enumerateRecordResultsOfSelect:(id)arg0 recordClass:(Class)arg1 error:(*id)arg2 usingBlock:(id)arg3 ;
+-(id)_activationBlock:(SEL)arg0 ;
+-(id)_deactivationBlock:(SEL)arg0 ;
+-(id)init;
+-(id)initWithConnection:(id)arg0 lifespan:(CGFloat)arg1 ;
+-(void)dealloc;
+
+
+@end
+
+
+#endif

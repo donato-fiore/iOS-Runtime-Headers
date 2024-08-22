@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _UIKBRTFAKEFINGERINFO_H
+#define _UIKBRTFAKEFINGERINFO_H
+
+@class UIKBRTFingerInfo;
+
+
+
+@interface _UIKBRTFakeFingerInfo : UIKBRTFingerInfo
+
+
+
+-(CGFloat)feedbackAlpha;
+
+
+@end
+
+
+#endif

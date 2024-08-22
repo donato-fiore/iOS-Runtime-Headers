@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef PXPROGRESSARCLAYER_H
+#define PXPROGRESSARCLAYER_H
+
+@class CALayer;
+
+
+
+@interface PXProgressArcLayer : CALayer
+
+@property (nonatomic) CGFloat endAngle; // ivar: _endAngle
+@property (nonatomic) CGFloat lineWidth; // ivar: _lineWidth
+@property (nonatomic) CGFloat radius; // ivar: _radius
+@property (nonatomic) CGFloat startAngle; // ivar: _startAngle
+
+
+-(id)init;
+-(void)drawInContext:(struct CGContext *)arg0 ;
+
+
+@end
+
+
+#endif

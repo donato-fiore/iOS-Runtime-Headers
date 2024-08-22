@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef TFFEEDBACKENTRYGROUPTOGGLE_H
+#define TFFEEDBACKENTRYGROUPTOGGLE_H
+
+
+
+#import "TFFeedbackEntry.h"
+
+@interface TFFeedbackEntryGroupToggle : TFFeedbackEntry
+
+
+
+-(id)initWithGroupIdentifier:(id)arg0 title:(id)arg1 ;
+
+
+@end
+
+
+#endif

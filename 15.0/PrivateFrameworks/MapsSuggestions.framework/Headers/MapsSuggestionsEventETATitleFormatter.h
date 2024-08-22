@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef MAPSSUGGESTIONSEVENTETATITLEFORMATTER_H
+#define MAPSSUGGESTIONSEVENTETATITLEFORMATTER_H
+
+
+
+#import "MapsSuggestionsBaseTitleFormatter.h"
+
+@interface MapsSuggestionsEventETATitleFormatter : MapsSuggestionsBaseTitleFormatter
+
+
+
+-(BOOL)shouldDecorateEntry:(id)arg0 withETA:(id)arg1 ;
+
+
+@end
+
+
+#endif

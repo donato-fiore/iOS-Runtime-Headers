@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef VCPGENERALCANCELLER_H
+#define VCPGENERALCANCELLER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface VCPGeneralCanceller : NSObject
+
+@property (nonatomic) BOOL canceled; // ivar: _canceled
+@property (copy, nonatomic) id *updateBlock; // ivar: _updateBlock
+
+
++(id)cancelerWithUpdateBlock:(id)arg0 ;
+
+
+@end
+
+
+#endif

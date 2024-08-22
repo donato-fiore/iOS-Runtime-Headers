@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef WFICONHOSTINGVIEWCONTROLLER_H
+#define WFICONHOSTINGVIEWCONTROLLER_H
+
+@class UIViewController, WFIcon;
+
+
+
+@interface WFIconHostingViewController : UIViewController {
+    ? hostingController;
+}
+
+
+@property (nonatomic, retain) WFIcon *icon; // ivar: icon
+
+
+-(id)init;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithNibName:(id)arg0 bundle:(id)arg1 ;
+-(void)viewDidLoad;
+
+
+@end
+
+
+#endif

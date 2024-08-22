@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef MPMODELSORTDESCRIPTOR_H
+#define MPMODELSORTDESCRIPTOR_H
+
+@class NSSortDescriptor, NSArray;
+
+
+
+@interface MPModelSortDescriptor : NSSortDescriptor
+
+@property (copy, nonatomic) NSArray *keyPath; // ivar: _keyPath
+
+
++(BOOL)supportsSecureCoding;
++(id)sortDescriptorWithKeyPath:(id)arg0 ascending:(BOOL)arg1 ;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

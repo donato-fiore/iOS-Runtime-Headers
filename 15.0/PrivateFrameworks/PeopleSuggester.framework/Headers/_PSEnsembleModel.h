@@ -1,0 +1,102 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _PSENSEMBLEMODEL_H
+#define _PSENSEMBLEMODEL_H
+
+@class NSSet, CNContactStore, NSArray, _CDInteractionStore, _CDInteractionCache, NSUserDefaults, PPContactStore, NSDictionary, PPTopicStore, TRIClient, NSString, TRITrackingId;
+@protocol _DKKnowledgeQuerying><_DKKnowledgeSaving;
+
+#import <Foundation/Foundation.h>
+
+#import "_PSConfidenceModelForSharing.h"
+#import "_PSInteractionAndContactMonitor.h"
+#import "_PSContactResolver.h"
+#import "_PSHeuristics.h"
+#import "_PSKNNModel.h"
+#import "_PSRuleMiningModel.h"
+#import "_PSSharingContactRankerModel.h"
+#import "_PSFTZKWOrchestrator.h"
+#import "_PSFTZKWTrialData.h"
+
+@interface _PSEnsembleModel : NSObject {
+    os_unfair_lock_s _lock;
+}
+
+
+@property BOOL PSConfidenceModelInUse; // ivar: _PSConfidenceModelInUse
+@property (nonatomic) BOOL allowNonSupportedBundleIDs; // ivar: _allowNonSupportedBundleIDs
+@property (retain, nonatomic) NSSet *cachedSupportedBundleIDs; // ivar: _cachedSupportedBundleIDs
+@property (retain, nonatomic) _PSConfidenceModelForSharing *confidenceModelForSharing; // ivar: _confidenceModelForSharing
+@property (retain, nonatomic) _PSInteractionAndContactMonitor *contactMonitor; // ivar: _contactMonitor
+@property (retain, nonatomic) _PSContactResolver *contactResolver; // ivar: _contactResolver
+@property (retain, nonatomic) CNContactStore *contactStore; // ivar: _contactStore
+@property (retain, nonatomic) NSArray *defaultContactKeysToFetch; // ivar: _defaultContactKeysToFetch
+@property (retain, nonatomic) NSArray *groupActivityInteractionCache; // ivar: _groupActivityInteractionCache
+@property (retain, nonatomic) _PSHeuristics *heuristics; // ivar: _heuristics
+@property (retain, nonatomic) _CDInteractionStore *interactionStore; // ivar: _interactionStore
+@property (retain, nonatomic) _PSKNNModel *knnMapsModel; // ivar: _knnMapsModel
+@property (retain, nonatomic) _PSKNNModel *knnModel; // ivar: _knnModel
+@property (retain, nonatomic) _PSKNNModel *knnNameOrContactRankerModel; // ivar: _knnNameOrContactRankerModel
+@property (retain, nonatomic) _PSKNNModel *knnSiriNLContactRankerModel; // ivar: _knnSiriNLContactRankerModel
+@property (retain, nonatomic) _PSKNNModel *knnZkwModel; // ivar: _knnZkwModel
+@property (retain, nonatomic) NSObject<_DKKnowledgeQuerying><_DKKnowledgeSaving> *knowledgeStore; // ivar: _knowledgeStore
+@property (retain, nonatomic) _CDInteractionCache *messageInteractionCache; // ivar: _messageInteractionCache
+@property (retain, nonatomic) NSUserDefaults *peopleSuggesterDefaults; // ivar: _peopleSuggesterDefaults
+@property (retain, nonatomic) PPContactStore *portraitContactStore; // ivar: _portraitContactStore
+@property (retain) NSDictionary *psConfig; // ivar: _psConfig
+@property (retain) NSDictionary *psConfigForAdaptableModel; // ivar: _psConfigForAdaptableModel
+@property (retain, nonatomic) _PSRuleMiningModel *ruleMiningModel; // ivar: _ruleMiningModel
+@property (retain, nonatomic) _CDInteractionCache *shareInteractionCache; // ivar: _shareInteractionCache
+@property (retain, nonatomic) _PSSharingContactRankerModel *sharingContactRankerModel; // ivar: _sharingContactRankerModel
+@property (retain, nonatomic) PPTopicStore *topicStore; // ivar: _topicStore
+@property (retain) TRIClient *trialClient; // ivar: _trialClient
+@property (retain, nonatomic) NSString *trialID; // ivar: _trialID
+@property (retain) TRITrackingId *trialTrackingID; // ivar: _trialTrackingID
+@property (retain, nonatomic) _PSFTZKWOrchestrator *zkwFTOrchestrator; // ivar: _zkwFTOrchestrator
+@property (retain, nonatomic) _PSFTZKWTrialData *zkwFTTrialData; // ivar: _zkwFTTrialData
+
+
+-(BOOL)copyRemoteRuleMinerMLModel:(id)arg0 ;
+-(BOOL)loadPSConfig:(id)arg0 ;
+-(id)_knnZKWSuggestionsWithPredictionContext:(id)arg0 modelConfiguration:(id)arg1 maxSuggestions:(NSUInteger)arg2 ;
+-(id)appExtensionSuggestionsFromContext:(id)arg0 ;
+-(id)autocompleteSearchResultsWithPredictionContext:(id)arg0 ;
+-(id)familyPredictionsWithMaxSuggestions:(NSUInteger)arg0 ;
+-(id)fetchShareSheetSupportedBundleIDs;
+-(id)getLatestTrialMLModelVersion;
+-(id)init;
+-(id)mapsSuggestionArrayWithArray:(id)arg0 appendingUniqueElementsFromArray:(id)arg1 contactResolver:(id)arg2 meContactId:(id)arg3 ;
+-(id)mergedSuggestionsWithFamilySuggestions:(id)arg0 shareSheetSuggestions:(id)arg1 maxSuggestions:(NSUInteger)arg2 supportedBundleIds:(id)arg3 ;
+-(id)predictWithMapsPredictionContext:(id)arg0 maxSuggestions:(NSUInteger)arg1 ;
+-(id)predictWithPredictionContext:(id)arg0 maxSuggestions:(NSUInteger)arg1 ;
+-(id)predictWithPredictionContext:(id)arg0 maxSuggestions:(NSUInteger)arg1 contactKeysToFetch:(id)arg2 ;
+-(id)rankedAutocompleteSuggestionsFromContext:(id)arg0 candidates:(id)arg1 ;
+-(id)rankedGlobalSuggestionsForSiriNLWithPredictionContext:(id)arg0 maxSuggestions:(NSUInteger)arg1 interactionId:(id)arg2 ;
+-(id)rankedGlobalSuggestionsWithPredictionContext:(id)arg0 contactsOnly:(BOOL)arg1 maxSuggestions:(NSUInteger)arg2 ;
+-(id)rankedHandlesFromCandidateHandles:(id)arg0 ;
+-(id)rankedNameSuggestionsWithPredictionContext:(id)arg0 name:(id)arg1 ;
+-(id)rankedSiriMLCRHandles:(id)arg0 context:(id)arg1 ;
+-(id)suggestZKWSuggestionsWithPredictionContext:(id)arg0 maxSuggestions:(NSUInteger)arg1 ;
+-(id)suggestionsFromSuggestionProxies:(id)arg0 supportedBundleIDs:(id)arg1 contactKeysToFetch:(id)arg2 meContactIdentifier:(id)arg3 maxSuggestions:(NSUInteger)arg4 ;
+-(void)addAdaptedModelUsageInfoToSuggestions:(id)arg0 ;
+-(void)addSupportedBundleIDs:(id)arg0 ;
+-(void)addUTIInfo:(id)arg0 predictionContext:(id)arg1 ;
+-(void)discardAdaptedModel;
+-(void)discardTrialModels;
+-(void)loadDefaultAdaptableModelConfig;
+-(void)loadDefaultPSConfig;
+-(void)populateCaches;
+-(void)populateCachesWithSupportedBundleIDs:(id)arg0 ;
+-(void)refreshCaches;
+-(void)registerWithTrial;
+-(void)updateFactorLevels;
+-(void)updateTrialID:(id)arg0 ;
+
+
+@end
+
+
+#endif

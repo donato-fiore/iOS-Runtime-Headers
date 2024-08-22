@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SKUINAVIGATIONBARSEGMENTSCONTROLLER_H
+#define SKUINAVIGATIONBARSEGMENTSCONTROLLER_H
+
+
+
+#import "SKUINavigationBarSectionController.h"
+#import "SKUISegmentedControlViewElementController.h"
+
+@interface SKUINavigationBarSegmentsController : SKUINavigationBarSectionController {
+    SKUISegmentedControlViewElementController *_underlyingController;
+}
+
+
+
+
+-(id)initWithViewElement:(id)arg0 ;
+-(id)view;
+-(void)reloadAfterDocumentUpdateWithNavigationItem:(id)arg0 ;
+-(void)willAppearInNavigationBar;
+
+
+@end
+
+
+#endif

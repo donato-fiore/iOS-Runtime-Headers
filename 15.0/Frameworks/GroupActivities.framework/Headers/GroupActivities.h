@@ -1,0 +1,18 @@
+
+
+#include "_TtC15GroupActivities14PlaybackSyncer.h"
+#include "_TtCC15GroupActivities14PlaybackSyncer27AVCoordinatorDelegateBridge.h"
+#include "_TtC15GroupActivities23GroupActivitySuggestion.h"
+#include "_TtC15GroupActivities18GroupStateObserver.h"
+#include "_TtC15GroupActivities21GroupSessionMessenger.h"
+#include "_TtC15GroupActivities13BinaryEncoder.h"
+#include "_TtC15GroupActivities13BinaryDecoder.h"
+#include "_TtC15GroupActivities12TopicManager.h"
+#include "_TtCC15GroupActivities12TopicManagerP33_007FAF8A5931F2FEE931BA63995187CF18ConversationClient.h"
+#include "_TtCC15GroupActivities12TopicManager12Subscription.h"
+#include "_TtC15GroupActivities23AVAudioSessionAssertion.h"
+#include "_TtC15GroupActivities21ReliableBroadcastLink.h"
+#include "_TtC15GroupActivities11LinkManager.h"
+#include "_TtC15GroupActivities5Topic.h"
+#include "_TtC15GroupActivities12Conversation.h"
+#include "_TtC15GroupActivities19ConversationManager.h"

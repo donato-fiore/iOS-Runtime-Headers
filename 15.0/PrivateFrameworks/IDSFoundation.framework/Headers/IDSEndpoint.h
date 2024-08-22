@@ -1,0 +1,64 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef IDSENDPOINT_H
+#define IDSENDPOINT_H
+
+@class NSData, NSString, NSDate, NSError;
+@protocol NSSecureCoding, NSCopying, IDSDestinationProtocol;
+
+#import <Foundation/Foundation.h>
+
+#import "IDSURI.h"
+#import "IDSEndpointCapabilities.h"
+#import "IDSFamilyEndpointData.h"
+#import "IDSMPPublicDeviceIdentityContainer.h"
+
+@interface IDSEndpoint : NSObject <NSSecureCoding, NSCopying, IDSDestinationProtocol>
+
+
+
+@property (readonly, nonatomic) NSData *KTLoggableData; // ivar: _KTLoggableData
+@property (retain, nonatomic) IDSURI *URI; // ivar: _URI
+@property (readonly, nonatomic) NSString *anonymizedSenderID; // ivar: _anonymizedSenderID
+@property (retain, nonatomic) IDSEndpointCapabilities *capabilities; // ivar: _capabilities
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) NSDate *expireDate; // ivar: _expireDate
+@property (readonly, nonatomic) IDSFamilyEndpointData *familyEndpointData; // ivar: _familyEndpointData
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) NSError *identityContainerDeserializationError; // ivar: _identityContainerDeserializationError
+@property (readonly, nonatomic) char legacyVersion; // ivar: _legacyVersion
+@property (readonly, nonatomic) BOOL mismatchedAccountFlag; // ivar: _mismatchedAccountFlag
+@property (readonly, nonatomic) short ngmVersion; // ivar: _ngmVersion
+@property (retain, nonatomic) IDSMPPublicDeviceIdentityContainer *publicDeviceIdentityContainer; // ivar: _publicDeviceIdentityContainer
+@property (retain, nonatomic) NSData *pushToken; // ivar: _pushToken
+@property (readonly, nonatomic) CGFloat queryTimeInterval; // ivar: _queryTimeInterval
+@property (readonly, nonatomic) NSDate *refreshDate; // ivar: _refreshDate
+@property (readonly, nonatomic) NSString *senderCorrelationIdentifier; // ivar: _senderCorrelationIdentifier
+@property (readonly, nonatomic) NSData *serializedLegacyPublicIdentity; // ivar: _serializedLegacyPublicIdentity
+@property (readonly, nonatomic) NSData *serializedNGMDeviceIdentity; // ivar: _serializedNGMDeviceIdentity
+@property (readonly, nonatomic) NSData *serializedNGMDevicePrekey; // ivar: _serializedNGMDevicePrekey
+@property (readonly, nonatomic) NSData *serializedPublicLegacyIdentity;
+@property (readonly, nonatomic) NSData *sessionToken; // ivar: _sessionToken
+@property (readonly) Class superclass;
+@property (readonly, nonatomic) BOOL verifiedBusiness; // ivar: _verifiedBusiness
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)isEqualToEndpoint:(id)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithURI:(id)arg0 capabilities:(id)arg1 ngmVersion:(short)arg2 legacyVersion:(char)arg3 KTLoggableData:(id)arg4 mismatchedAccountFlag:(BOOL)arg5 pushToken:(id)arg6 sessionToken:(id)arg7 expireDate:(id)arg8 refreshDate:(id)arg9 anonymizedSenderID:(id)arg10 verifiedBusiness:(BOOL)arg11 serializedPublicMessageProtectionIdentity:(id)arg12 senderCorrelationIdentifier:(id)arg13 queryTimeInterval:(CGFloat)arg14 serializedNGMDeviceIdentity:(id)arg15 serializedNGMDevicePrekey:(id)arg16 familyEndpointData:(id)arg17 ;
+-(id)initWithURI:(id)arg0 clientData:(id)arg1 KTLoggableData:(id)arg2 mismatchedAccountFlag:(BOOL)arg3 pushToken:(id)arg4 sessionToken:(id)arg5 expireDate:(id)arg6 refreshDate:(id)arg7 anonymizedSenderID:(id)arg8 verifiedBusiness:(BOOL)arg9 serializedPublicMessageProtectionIdentity:(id)arg10 senderCorrelationIdentifier:(id)arg11 queryTimeInterval:(CGFloat)arg12 serializedNGMDeviceIdentity:(id)arg13 serializedNGMDevicePrekey:(id)arg14 familyEndpointData:(id)arg15 ;
+-(id)initWithURI:(id)arg0 clientData:(id)arg1 pushToken:(id)arg2 sessionToken:(id)arg3 expireDate:(id)arg4 refreshDate:(id)arg5 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

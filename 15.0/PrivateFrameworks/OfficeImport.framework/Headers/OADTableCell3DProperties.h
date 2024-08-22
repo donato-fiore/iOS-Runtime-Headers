@@ -1,0 +1,23 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef OADTABLECELL3DPROPERTIES_H
+#define OADTABLECELL3DPROPERTIES_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface OADTableCell3DProperties : NSObject
+
+
+
+-(id)description;
+
+
+@end
+
+
+#endif

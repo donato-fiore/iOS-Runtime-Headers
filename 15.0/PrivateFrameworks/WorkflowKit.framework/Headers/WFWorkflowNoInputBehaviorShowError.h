@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef WFWORKFLOWNOINPUTBEHAVIORSHOWERROR_H
+#define WFWORKFLOWNOINPUTBEHAVIORSHOWERROR_H
+
+@class NSString;
+@protocol WFWorkflowNoInputBehavior;
+
+#import <Foundation/Foundation.h>
+
+
+@interface WFWorkflowNoInputBehaviorShowError : NSObject <WFWorkflowNoInputBehavior>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy, nonatomic) NSString *errorString; // ivar: _errorString
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
++(BOOL)resolvesInput;
++(id)behaviorName;
+-(id)initWithErrorString:(id)arg0 ;
+-(id)initWithSerializedRepresentation:(id)arg0 ;
+-(id)serializedRepresentation;
+-(void)resolveWithUserInterface:(id)arg0 runningDelegate:(id)arg1 completionHandler:(id)arg2 ;
+
+
+@end
+
+
+#endif

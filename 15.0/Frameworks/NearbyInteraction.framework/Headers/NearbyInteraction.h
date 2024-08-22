@@ -1,0 +1,18 @@
+
+
+#include "NIPlatformInfo.h"
+#include "NISession.h"
+#include "NICarKeyEventNotifier.h"
+#include "NIDeviceCapabilities.h"
+#include "NIDiscoveryToken.h"
+#include "NIConfiguration.h"
+#include "NINearbyPeerConfiguration.h"
+#include "NINearbyAccessoryConfiguration.h"
+#include "_NIWiFiRangingTestConfiguration.h"
+#include "NINearbyObject.h"
+#include "NIServerConnection.h"
+#include "NIExportedObjectForwarder.h"
+#include "NIHomeDeviceConfiguration.h"
+#include "NICarKeyConfiguration.h"
+#include "NIRegionPredicate.h"
+#include "NILocalization.h"

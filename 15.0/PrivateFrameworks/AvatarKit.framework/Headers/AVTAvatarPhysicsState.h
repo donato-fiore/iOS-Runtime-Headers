@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef AVTAVATARPHYSICSSTATE_H
+#define AVTAVATARPHYSICSSTATE_H
+
+@class NSDictionary;
+
+#import <Foundation/Foundation.h>
+
+
+@interface AVTAvatarPhysicsState : NSObject {
+    NSDictionary *_dictionaryRepresentation;
+}
+
+
+
+
+-(id)dictionaryRepresentation;
+-(id)initWithDictionaryRepresentation:(id)arg0 ;
+
+
+@end
+
+
+#endif

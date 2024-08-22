@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SBREVERSECOUNTEDSEMAPHORE_H
+#define SBREVERSECOUNTEDSEMAPHORE_H
+
+@protocol OS_dispatch_group;
+
+#import <Foundation/Foundation.h>
+
+
+@interface SBReverseCountedSemaphore : NSObject {
+    NSObject<OS_dispatch_group> *_group;
+}
+
+
+
+
+-(id)init;
+-(void)decrement;
+-(void)increment;
+-(void)wait;
+
+
+@end
+
+
+#endif

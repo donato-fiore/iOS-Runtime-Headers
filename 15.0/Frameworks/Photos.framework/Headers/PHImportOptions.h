@@ -1,0 +1,53 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef PHIMPORTOPTIONS_H
+#define PHIMPORTOPTIONS_H
+
+@class NSString, NSSortDescriptor, NSMutableDictionary;
+
+#import <Foundation/Foundation.h>
+
+#import "PHAssetCollection.h"
+#import "PHCollectionList.h"
+#import "PHImportSource.h"
+#import "PHPhotoLibrary.h"
+
+@interface PHImportOptions : NSObject {
+    options_bits _options_bits;
+}
+
+
+@property (nonatomic) BOOL allowDuplicates;
+@property (nonatomic) BOOL deleteAfterImport;
+@property (retain, nonatomic) PHAssetCollection *destinationAlbum; // ivar: _destinationAlbum
+@property (retain, nonatomic) PHCollectionList *destinationFolder; // ivar: _destinationFolder
+@property (nonatomic) unsigned char fileOperation;
+@property (nonatomic) BOOL hideProgress;
+@property (retain, nonatomic) PHImportSource *importSource; // ivar: _importSource
+@property (retain, nonatomic) PHPhotoLibrary *library; // ivar: _library
+@property (nonatomic) unsigned char metadataAddMode;
+@property (retain, nonatomic) NSString *personId; // ivar: _personId
+@property (nonatomic) BOOL preserveFolderStructure;
+@property (nonatomic) BOOL shouldImportAsReferenced;
+@property (nonatomic) BOOL skipAlertWhenFinished;
+@property (nonatomic) BOOL skipDiskSpaceCheck;
+@property (retain, nonatomic) NSSortDescriptor *sortDescriptor; // ivar: _sortDescriptor
+@property (retain, nonatomic) NSMutableDictionary *userIptcMetadata; // ivar: _userIptcMetadata
+
+
+-(BOOL)allowUnsupported;
+-(BOOL)omitImportComplete;
+-(id)init;
+-(short)importedBy;
+-(void)setAllowUnsupported:(BOOL)arg0 ;
+-(void)setImportedBy:(short)arg0 ;
+-(void)setOmitImportComplete:(BOOL)arg0 ;
+
+
+@end
+
+
+#endif

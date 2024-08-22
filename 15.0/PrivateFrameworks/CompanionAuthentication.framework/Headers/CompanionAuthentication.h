@@ -1,0 +1,17 @@
+
+
+#include "CASAppSignInResponse.h"
+#include "CASStorePurchaseRequest.h"
+#include "CASViewServicePresenterInterface.h"
+#include "CASSystemAuthenticationRequest.h"
+#include "CASAuthenticationSession.h"
+#include "CASDevice.h"
+#include "CASAppSignInRequest.h"
+#include "CASMetrics.h"
+#include "CASAuthenticationRequest.h"
+#include "CASServiceProxy.h"
+#include "CASPasswordCredential.h"
+#include "CASPaymentSheetPresentationContext.h"
+#include "CASAuthenticationResponse.h"
+#include "CASSystemAuthenticationResponse.h"
+#include "CASStorePurchaseResponse.h"

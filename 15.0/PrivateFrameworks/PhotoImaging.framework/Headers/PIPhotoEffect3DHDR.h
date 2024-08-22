@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef PIPHOTOEFFECT3DHDR_H
+#define PIPHOTOEFFECT3DHDR_H
+
+@class CIFilter, CIImage;
+
+
+
+@interface PIPhotoEffect3DHDR : CIFilter
+
+@property (retain) CIImage *inputDepthMap; // ivar: _inputDepthMap
+@property (retain) CIImage *inputImage; // ivar: _inputImage
+@property float inputThreshold; // ivar: _inputThreshold
+
+
++(id)kernel;
+-(id)outputImage;
+-(id)photoEffectName;
+
+
+@end
+
+
+#endif

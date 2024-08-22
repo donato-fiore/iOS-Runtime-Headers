@@ -1,0 +1,51 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef HMDCAMERARESIDENTMESSAGEHANDLER_H
+#define HMDCAMERARESIDENTMESSAGEHANDLER_H
+
+@class HMFObject, NSString, HMFUnfairLock, NSMutableArray;
+@protocol HMFLogging;
+
+
+#import "HMDAccessory.h"
+#import "HMDMessageDispatcher.h"
+#import "HMDHomeKitVersion.h"
+#import "HMDDevice.h"
+
+@interface HMDCameraResidentMessageHandler : HMFObject <HMFLogging>
+
+
+
+@property (readonly, weak) HMDAccessory *accessory; // ivar: _accessory
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) HMFUnfairLock *lock; // ivar: _lock
+@property (readonly, copy) NSString *logIdentifier; // ivar: _logIdentifier
+@property (readonly) HMDMessageDispatcher *messageDispatcher; // ivar: _messageDispatcher
+@property (readonly, copy) HMDHomeKitVersion *minimumSupportedResidentHomeKitVersion; // ivar: _minimumSupportedResidentHomeKitVersion
+@property (readonly) NSMutableArray *queuedMessages; // ivar: _queuedMessages
+@property (readonly) HMDDevice *remoteAccessDevice;
+@property (readonly, getter=isRemoteAccessDeviceReachable) BOOL remoteAccessDeviceReachable;
+@property (readonly) Class superclass;
+@property (readonly, getter=isUsingCompanionForRemoteAccessDevice) BOOL usingCompanionForRemoteAccessDevice;
+
+
++(id)logCategory;
+-(id)dequeueMessage;
+-(id)initWithAccessory:(id)arg0 ;
+-(id)initWithAccessory:(id)arg0 messageDispatcher:(id)arg1 minimumSupportedResidentHomeKitVersion:(id)arg2 ;
+-(id)nextMessage;
+-(void)enqueueMessage:(id)arg0 ;
+-(void)sendMessageWithName:(id)arg0 cameraSessionID:(id)arg1 payload:(id)arg2 target:(id)arg3 device:(id)arg4 responseQueue:(id)arg5 responseHandler:(id)arg6 ;
+-(void)sendMessageWithName:(id)arg0 cameraSessionID:(id)arg1 payload:(id)arg2 target:(id)arg3 responseQueue:(id)arg4 responseHandler:(id)arg5 ;
+-(void)sendNextMessage;
+
+
+@end
+
+
+#endif

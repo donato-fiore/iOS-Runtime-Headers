@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef VNOBJECTATPOINTDETECTORREVISION1_H
+#define VNOBJECTATPOINTDETECTORREVISION1_H
+
+
+
+#import "VNEspressoModelFileBasedDetector.h"
+
+@interface VNObjectAtPointDetectorRevision1 : VNEspressoModelFileBasedDetector {
+    shared_ptr<vision::mod::TapToBox> _tapToBox;
+}
+
+
+
+
++(NSUInteger)inputImageAspectRatioHandlingForConfigurationOptions:(id)arg0 ;
++(id)espressoModelFileNameForConfigurationOptions:(id)arg0 ;
++(id)espressoModelInputImageDimensionsBlobNameForConfigurationOptions:(id)arg0 ;
++(unsigned int)networkRequiredInputImagePixelFormatForConfigurationOptions:(id)arg0 ;
+-(BOOL)completeInitializationForSession:(id)arg0 error:(*id)arg1 ;
+-(id)processWithOptions:(id)arg0 regionOfInterest:(struct CGRect )arg1 warningRecorder:(id)arg2 error:(*id)arg3 progressHandler:(id)arg4 ;
+
+
+@end
+
+
+#endif

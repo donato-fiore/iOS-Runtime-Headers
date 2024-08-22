@@ -1,0 +1,44 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _HKEMERGENCYCONTACT_H
+#define _HKEMERGENCYCONTACT_H
+
+@class NSString, NSNumber;
+@protocol NSSecureCoding, NSCopying;
+
+#import <Foundation/Foundation.h>
+
+
+@interface _HKEmergencyContact : NSObject <NSSecureCoding, NSCopying>
+
+
+
+@property (copy, nonatomic) NSString *name; // ivar: _name
+@property (copy, nonatomic) NSString *nameContactIdentifier; // ivar: _nameContactIdentifier
+@property (retain, nonatomic) NSNumber *nameRecordID; // ivar: _nameRecordID
+@property (copy, nonatomic) NSString *phoneNumber; // ivar: _phoneNumber
+@property (copy, nonatomic) NSString *phoneNumberContactIdentifier; // ivar: _phoneNumberContactIdentifier
+@property (copy, nonatomic) NSString *phoneNumberLabel; // ivar: _phoneNumberLabel
+@property (retain, nonatomic) NSNumber *phoneNumberPropertyID; // ivar: _phoneNumberPropertyID
+@property (copy, nonatomic) NSString *relationship; // ivar: _relationship
+
+
++(BOOL)supportsSecureCoding;
++(id)emergencyContactUsingSimCardNumberWithContact:(id)arg0 property:(id)arg1 ;
++(id)emergencyContactWithContact:(id)arg0 property:(id)arg1 ;
+-(BOOL)isEqual:(id)arg0 ;
+-(BOOL)isEqualToSyncedContact:(id)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)init;
+-(id)initWithCoder:(id)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

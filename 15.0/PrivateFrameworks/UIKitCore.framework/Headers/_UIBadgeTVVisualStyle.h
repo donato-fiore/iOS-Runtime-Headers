@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _UIBADGETVVISUALSTYLE_H
+#define _UIBADGETVVISUALSTYLE_H
+
+@class UIBadgeVisualStyle;
+
+
+
+@interface _UIBadgeTVVisualStyle : UIBadgeVisualStyle
+
+
+
+-(CGFloat)cornerRadius;
+-(CGFloat)edgePadding;
+-(CGFloat)fontSize;
+-(CGFloat)maxWidth;
+-(id)defaultBadgeColor;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,40 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SAINTENTGROUPHANDLEINTENTCOMPLETED_H
+#define SAINTENTGROUPHANDLEINTENTCOMPLETED_H
+
+@class NSString;
+@protocol SAServerBoundCommand;
+
+
+#import "SABaseCommand.h"
+#import "SAIntentGroupProtobufMessage.h"
+
+@interface SAIntentGroupHandleIntentCompleted : SABaseCommand <SAServerBoundCommand>
+
+
+
+@property (copy, nonatomic) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (retain, nonatomic) SAIntentGroupProtobufMessage *intentResponse;
+@property (copy, nonatomic) NSString *jsonEncodedIntentResponse;
+@property (copy, nonatomic) NSString *refId;
+@property (readonly) Class superclass;
+
+
++(id)handleIntentCompleted;
++(id)handleIntentCompletedWithDictionary:(id)arg0 context:(id)arg1 ;
+-(BOOL)requiresResponse;
+-(id)encodedClassName;
+-(id)groupIdentifier;
+
+
+@end
+
+
+#endif

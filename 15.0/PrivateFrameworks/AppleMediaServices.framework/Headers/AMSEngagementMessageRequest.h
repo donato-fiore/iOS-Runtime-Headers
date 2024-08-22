@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef AMSENGAGEMENTMESSAGEREQUEST_H
+#define AMSENGAGEMENTMESSAGEREQUEST_H
+
+@class NSArray, NSDictionary, NSURL, NSString;
+
+#import <Foundation/Foundation.h>
+
+#import "AMSEngagementMessageAction.h"
+#import "AMSMetricsEvent.h"
+
+@interface AMSEngagementMessageRequest : NSObject
+
+@property (retain, nonatomic) NSArray *actions; // ivar: _actions
+@property (retain, nonatomic) NSDictionary *appearanceInfo; // ivar: _appearanceInfo
+@property (retain, nonatomic) AMSEngagementMessageAction *defaultAction; // ivar: _defaultAction
+@property (retain, nonatomic) NSURL *iconURL; // ivar: _iconURL
+@property (retain, nonatomic) AMSMetricsEvent *metricsEvent; // ivar: _metricsEvent
+@property (nonatomic) NSInteger presentationAction; // ivar: _presentationAction
+@property (nonatomic) NSInteger style; // ivar: _style
+@property (copy, nonatomic) NSString *subtitle; // ivar: _subtitle
+@property (copy, nonatomic) NSString *title; // ivar: _title
+
+
+-(id)_actionForMessageAction:(id)arg0 ;
+-(id)initWithJSObject:(id)arg0 ;
+-(id)makeDialogRequest;
+
+
+@end
+
+
+#endif

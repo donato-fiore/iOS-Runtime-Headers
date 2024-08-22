@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef __NSENUMERATOR0_H
+#define __NSENUMERATOR0_H
+
+
+
+#import "NSEnumerator.h"
+
+@interface __NSEnumerator0 : NSEnumerator
+
+
+
++(id)allocWithZone:(struct _NSZone *)arg0 ;
++(id)new;
++(id)sharedInstance;
+-(NSUInteger)retainCount;
+-(id)autorelease;
+-(id)init;
+-(id)nextObject;
+-(id)retain;
+-(void)release;
+
+
+@end
+
+
+#endif

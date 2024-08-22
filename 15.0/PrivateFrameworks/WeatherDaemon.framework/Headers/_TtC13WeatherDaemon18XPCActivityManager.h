@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC13WEATHERDAEMON18XPCACTIVITYMANAGER_H
+#define _TTC13WEATHERDAEMON18XPCACTIVITYMANAGER_H
+
+@class SwiftObject;
+
+
+
+@interface _TtC13WeatherDaemon18XPCActivityManager : SwiftObject {
+    ? activities;
+    ? handlers;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

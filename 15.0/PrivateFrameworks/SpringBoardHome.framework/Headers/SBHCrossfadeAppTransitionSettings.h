@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SBHCROSSFADEAPPTRANSITIONSETTINGS_H
+#define SBHCROSSFADEAPPTRANSITIONSETTINGS_H
+
+@class SBFAnimationSettings;
+
+
+#import "SBHCrossfadeZoomSettings.h"
+
+@interface SBHCrossfadeAppTransitionSettings : SBHCrossfadeZoomSettings
+
+@property (retain, nonatomic) SBFAnimationSettings *appSnapshotCornerRadiusSettings; // ivar: _appSnapshotCornerRadiusSettings
+
+
++(id)settingsControllerModule;
+-(void)setDefaultValues;
+
+
+@end
+
+
+#endif

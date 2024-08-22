@@ -1,0 +1,17 @@
+
+
+#include "BMCDProperty.h"
+#include "BMBasePropertyConfiguration.h"
+#include "BMCounterPropertyConfiguration.h"
+#include "BMStatePropertyConfiguration.h"
+#include "BMCollectionPropertyConfiguration.h"
+#include "BMCollector.h"
+#include "BMBaseDonor.h"
+#include "BMJavascriptBaseDonor.h"
+#include "BMPropertyValue.h"
+#include "BMCounterPropertyValue.h"
+#include "BMStatePropertyValue.h"
+#include "BMCDConfiguration.h"
+#include "_TtC23NewsEngagementCollector12LocalStorage.h"
+#include "BMManagerConfiguration.h"
+#include "BMManager.h"

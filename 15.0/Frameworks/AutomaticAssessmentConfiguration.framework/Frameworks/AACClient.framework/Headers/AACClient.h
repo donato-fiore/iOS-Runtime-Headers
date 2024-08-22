@@ -1,0 +1,17 @@
+
+
+#include "_TtC9AACClient25AECAssessmentStateConduit.h"
+#include "_TtC9AACClientP33_8E57ACA1EB1F0A0CB8F6ADAE6EA7784123AECNoOpPolicyScratchpad.h"
+#include "_TtC9AACClient18AECNoOpPolicyStore.h"
+#include "_TtC9AACClient21AECLifetimeConnection.h"
+#include "_TtC9AACClient12AECTaskQueue.h"
+#include "_TtC9AACClient42AECAssessmentConfigurationValidatorFactory.h"
+#include "_TtC9AACClientP33_EFD39109592C6EDA2BBCB1B6AD748AF525AECPolicyActivationRunner.h"
+#include "_TtC9AACClientP33_EFD39109592C6EDA2BBCB1B6AD748AF527AECPolicyDeactivationRunner.h"
+#include "_TtC9AACClientP33_16674D75A621CF5D8821BE5D8D8594FC43AECConcreteRestrictedWindowContentAssertion.h"
+#include "_TtC9AACClient38AECConcreteRestrictedContentPrimitives.h"
+#include "_TtC9AACClientP33_5888192FE4890FBCEE84B63B946F5CEA26AECAssessmentModeAssertion.h"
+#include "_TtC9AACClient20AECAssessmentSession.h"
+#include "_TtC9AACClient26AECAssessmentConfiguration.h"
+#include "_TtC9AACClient40AECUnionAssessmentConfigurationValidator.h"
+#include "_TtC9AACClient40AECAutocorrectModeConfigurationValidator.h"

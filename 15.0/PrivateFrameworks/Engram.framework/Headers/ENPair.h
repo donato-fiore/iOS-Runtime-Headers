@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef ENPAIR_H
+#define ENPAIR_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface ENPair : NSObject
+
+@property (retain, nonatomic) id *first; // ivar: _first
+@property (retain, nonatomic) id *second; // ivar: _second
+
+
+-(id)initWithFirst:(id)arg0 second:(id)arg1 ;
+
+
+@end
+
+
+#endif

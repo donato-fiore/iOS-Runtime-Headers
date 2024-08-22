@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef TRIPERSISTEDROLLOUTALLOCATIONSTATUS_H
+#define TRIPERSISTEDROLLOUTALLOCATIONSTATUS_H
+
+@class TRIPBMessage, NSMutableArray, NSString;
+
+
+
+@interface TRIPersistedRolloutAllocationStatus : TRIPBMessage
+
+@property (nonatomic) int deploymentId;
+@property (nonatomic) BOOL hasDeploymentId;
+@property (nonatomic) BOOL hasRolloutId;
+@property (retain, nonatomic) NSMutableArray *namespaceFactorPackArray;
+@property (readonly, nonatomic) NSUInteger namespaceFactorPackArray_Count;
+@property (copy, nonatomic) NSString *rolloutId;
+
+
++(id)descriptor;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,45 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef EKUITEXTSENDINGMANAGER_H
+#define EKUITEXTSENDINGMANAGER_H
+
+@class MFMessageComposeViewController, NSString, UIViewController;
+@protocol MFMessageComposeViewControllerDelegate;
+
+#import <Foundation/Foundation.h>
+
+
+@interface EKUITextSendingManager : NSObject <MFMessageComposeViewControllerDelegate>
+
+ {
+    MFMessageComposeViewController *_composeViewController;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (copy, nonatomic) id *messageSendingComplete; // ivar: _messageSendingComplete
+@property (readonly) Class superclass;
+@property (readonly, nonatomic) UIViewController *viewController;
+
+
++(BOOL)canSendMessageToContacts:(id)arg0 ;
++(BOOL)canSendMessageToRecipients:(id)arg0 ;
++(BOOL)messagingAvailable;
++(id)addressesForContacts:(id)arg0 ;
++(id)addressesforRecipients:(id)arg0 ;
++(void)getPhone:(*id)arg0 andEmail:(*id)arg1 forContact:(id)arg2 ;
+-(id)initWithContacts:(id)arg0 ;
+-(id)initWithRecipients:(id)arg0 ;
+-(void)messageComposeViewController:(id)arg0 didFinishWithResult:(NSInteger)arg1 ;
+-(void)setupControllerWithAddresses:(id)arg0 ;
+
+
+@end
+
+
+#endif

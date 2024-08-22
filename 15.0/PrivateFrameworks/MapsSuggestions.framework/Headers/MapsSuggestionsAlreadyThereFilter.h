@@ -1,0 +1,33 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef MAPSSUGGESTIONSALREADYTHEREFILTER_H
+#define MAPSSUGGESTIONSALREADYTHEREFILTER_H
+
+@class NSString;
+@protocol MapsSuggestionsFilter;
+
+
+#import "MapsSuggestionsBaseFilter.h"
+
+@interface MapsSuggestionsAlreadyThereFilter : MapsSuggestionsBaseFilter <MapsSuggestionsFilter>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+@property (readonly, nonatomic) NSString *uniqueName;
+
+
++(BOOL)isEnabled;
+-(BOOL)shouldKeepEntry:(id)arg0 ;
+
+
+@end
+
+
+#endif

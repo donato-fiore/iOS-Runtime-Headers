@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CDMSETACTIVEGRAPHRESPONSECOMMAND_H
+#define CDMSETACTIVEGRAPHRESPONSECOMMAND_H
+
+
+
+#import "CDMBaseCommand.h"
+
+@interface CDMSetActiveGraphResponseCommand : CDMBaseCommand
+
+
+
+-(BOOL)success;
+-(id)commandName;
+-(id)initWithFailure:(id)arg0 ;
+
+
+@end
+
+
+#endif

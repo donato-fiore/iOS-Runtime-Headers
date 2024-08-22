@@ -1,0 +1,37 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SWSESSIONSCRIPT_H
+#define SWSESSIONSCRIPT_H
+
+@class NSString, WKUserScript;
+@protocol SWScript, SWSession;
+
+#import <Foundation/Foundation.h>
+
+
+@interface SWSessionScript : NSObject <SWScript>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, nonatomic) NSString *executableScript;
+@property (readonly) NSUInteger hash;
+@property (readonly, nonatomic) NSString *identifier;
+@property (readonly, nonatomic) BOOL queueable;
+@property (readonly, nonatomic) NSObject<SWSession> *session; // ivar: _session
+@property (readonly) Class superclass;
+@property (readonly, nonatomic) WKUserScript *userScript;
+
+
+-(BOOL)queuable;
+-(id)initWithSession:(id)arg0 ;
+
+
+@end
+
+
+#endif

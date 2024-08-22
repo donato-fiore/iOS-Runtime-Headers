@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef ETOPTIMIZERDEF_H
+#define ETOPTIMIZERDEF_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface ETOptimizerDef : NSObject
+
+@property unsigned int batch_size; // ivar: _batch_size
+
+
+-(id)init;
+
+
+@end
+
+
+#endif

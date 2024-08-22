@@ -1,0 +1,41 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef QSSLANGUAGEPARAMETERS_H
+#define QSSLANGUAGEPARAMETERS_H
+
+@class NSMutableDictionary, NSData, NSString;
+@protocol FLTBFBufferAccessor, NSCopying;
+
+#import <Foundation/Foundation.h>
+
+
+@interface QSSLanguageParameters : NSObject <FLTBFBufferAccessor, NSCopying>
+
+ {
+    NSMutableDictionary *_storage;
+    NSData *_data;
+    *LanguageParameters _root;
+}
+
+
+@property (readonly, nonatomic) NSString *fork_id;
+@property (readonly, nonatomic) NSString *language;
+@property (readonly, nonatomic) NSString *request_locale;
+
+
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)flatbuffData;
+-(id)initAndVerifyWithFlatbuffData:(id)arg0 ;
+-(id)initWithFlatbuffData:(id)arg0 ;
+-(id)initWithFlatbuffData:(id)arg0 root:(struct LanguageParameters *)arg1 ;
+-(id)initWithFlatbuffData:(id)arg0 root:(struct LanguageParameters *)arg1 verify:(BOOL)arg2 ;
+-(struct Offset<siri::speech::schema_fb::LanguageParameters> )addObjectToBuffer:(*void)arg0 ;
+
+
+@end
+
+
+#endif

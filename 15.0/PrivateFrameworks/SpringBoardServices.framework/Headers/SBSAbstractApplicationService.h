@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SBSABSTRACTAPPLICATIONSERVICE_H
+#define SBSABSTRACTAPPLICATIONSERVICE_H
+
+
+
+#import "SBSAbstractFacilityService.h"
+#import "SBSApplicationClient.h"
+
+@interface SBSAbstractApplicationService : SBSAbstractFacilityService
+
+@property (readonly, nonatomic) SBSApplicationClient *client;
+
+
++(Class)serviceFacilityClientClass;
+
+
+@end
+
+
+#endif

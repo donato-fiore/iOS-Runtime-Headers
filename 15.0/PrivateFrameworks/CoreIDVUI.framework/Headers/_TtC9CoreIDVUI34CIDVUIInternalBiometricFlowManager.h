@@ -1,0 +1,31 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC9COREIDVUI34CIDVUIINTERNALBIOMETRICFLOWMANAGER_H
+#define _TTC9COREIDVUI34CIDVUIINTERNALBIOMETRICFLOWMANAGER_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface _TtC9CoreIDVUI34CIDVUIInternalBiometricFlowManager : NSObject {
+    ? context;
+    ? viewController;
+    ? bioBindingController;
+}
+
+
+
+
+-(id)init;
+-(void)deleteBoundACLWithCompletion:(id)arg0 ;
+-(void)evaluateBoundACLWithCompletion:(id)arg0 ;
+-(void)startBiometricBindingWithCompletion:(id)arg0 ;
+
+
+@end
+
+
+#endif

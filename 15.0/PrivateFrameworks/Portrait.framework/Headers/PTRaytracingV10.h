@@ -1,0 +1,57 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef PTRAYTRACINGV10_H
+#define PTRAYTRACINGV10_H
+
+@class NSString;
+@protocol RenderingIntegration, MTLDeviceSPI, MTLBuffer, MTLLibrary, MTLPipelineLibrary, MTLTexture;
+
+#import <Foundation/Foundation.h>
+
+#import "PTColor.h"
+#import "PTRaytracingUtils.h"
+#import "PTRenderDebugLayer.h"
+#import "PTPyramidYUV.h"
+
+@interface PTRaytracingV10 : NSObject <RenderingIntegration>
+
+ {
+    PTColor *_portraitColor;
+    PTRaytracingUtils *_raytracingUtils;
+    PTRenderDebugLayer *_debugLayer;
+    NSInteger _debugRendering;
+    PTPyramidYUV *_yuvPyramid;
+    CGSize _disparitySize;
+    CGSize _colorSize;
+    id<MTLDeviceSPI> *_device;
+    id<MTLBuffer> *_randomValues;
+    id<MTLLibrary> *_library;
+    id<MTLPipelineLibrary> *_pipelineLibrary;
+    id<MTLTexture> *_lumaRadiusTex;
+    id<MTLTexture> *_outColorLuma;
+    id<MTLTexture> *_outColorChroma;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(NSUInteger)minimumResourceHeapSize;
+-(id)createRenderStateWithQuality:(int)arg0 ;
+-(id)initWithDevice:(id)arg0 library:(id)arg1 pipelineLibrary:(id)arg2 colorSize:(struct CGSize )arg3 disparitySize:(struct CGSize )arg4 debugRendering:(NSInteger)arg5 verbose:(BOOL)arg6 gpuProfiling:(BOOL)arg7 config:(id)arg8 ;
+-(id)intermediateTextures;
+-(int)prewarm;
+-(int)renderContinuousWithSource:(id)arg0 renderRequest:(id)arg1 ;
+-(void)setResourceHeap:(id)arg0 ;
+
+
+@end
+
+
+#endif

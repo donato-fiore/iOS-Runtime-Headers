@@ -1,0 +1,32 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef HMDREMOTEMESSAGEDESTINATION_H
+#define HMDREMOTEMESSAGEDESTINATION_H
+
+@class HMFMessageDestination, NSString;
+@protocol HMDRemoteAddressable;
+
+
+
+@interface HMDRemoteMessageDestination : HMFMessageDestination <HMDRemoteAddressable>
+
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
++(id)allMessageDestinations;
++(id)allocWithZone:(struct _NSZone *)arg0 ;
+-(id)remoteDestinationString;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,39 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef WFSPEAKTEXTVOICEPICKERPARAMETER_H
+#define WFSPEAKTEXTVOICEPICKERPARAMETER_H
+
+@class WFEnumerationParameter, WFAction, NSString;
+@protocol WFActionEventObserver;
+
+
+
+@interface WFSpeakTextVoicePickerParameter : WFEnumerationParameter <WFActionEventObserver>
+
+
+
+@property (weak, nonatomic) WFAction *action; // ivar: _action
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
++(id)defaultVoiceForLanguageCode:(id)arg0 ;
+-(BOOL)isHidden;
+-(id)defaultSerializedRepresentation;
+-(id)localizedLabelForPossibleState:(id)arg0 ;
+-(id)possibleStates;
+-(id)selectedLanguageCode;
+-(id)sortedVoicesForLanguageCode:(id)arg0 ;
+-(id)voiceForIdentifier:(id)arg0 languageCode:(id)arg1 ;
+-(void)action:(id)arg0 parameterStateDidChangeForKey:(id)arg1 ;
+
+
+@end
+
+
+#endif

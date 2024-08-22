@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef DNDSMUTABLEIDSRECORDMETADATA_H
+#define DNDSMUTABLEIDSRECORDMETADATA_H
+
+@class NSDate;
+
+
+#import "DNDSIDSRecordMetadata.h"
+#import "DNDSIDSRecordID.h"
+
+@interface DNDSMutableIDSRecordMetadata : DNDSIDSRecordMetadata
+
+@property (nonatomic, getter=isDeleted) BOOL deleted;
+@property (copy, nonatomic) NSDate *lastModified;
+@property (copy, nonatomic) DNDSIDSRecordID *recordID;
+
+
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+
+
+@end
+
+
+#endif

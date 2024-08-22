@@ -1,0 +1,45 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef PXCURATEDLIBRARYFILTERACTIONPERFORMER_H
+#define PXCURATEDLIBRARYFILTERACTIONPERFORMER_H
+
+@class NSString;
+@protocol PXFilterControllerDelegate, UIAdaptivePresentationControllerDelegate;
+
+
+#import "PXCuratedLibraryActionPerformer.h"
+#import "PXUIFilterController.h"
+
+@interface PXCuratedLibraryFilterActionPerformer : PXCuratedLibraryActionPerformer <PXFilterControllerDelegate, UIAdaptivePresentationControllerDelegate>
+
+ {
+    PXUIFilterController *_filterController;
+}
+
+
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly) Class superclass;
+
+
+-(BOOL)canPerformWithActivityItems:(id)arg0 forActivity:(id)arg1 ;
+-(BOOL)performerResetsAfterCompletion;
+-(NSInteger)libraryTypeForFilterController:(id)arg0 ;
+-(id)activitySystemImageName;
+-(id)activityType;
+-(id)contentFilterHiddenTypesForFilterController:(id)arg0 ;
+-(id)initWithActionType:(id)arg0 viewModel:(id)arg1 ;
+-(void)filterController:(id)arg0 contentFilterStateChanged:(id)arg1 ;
+-(void)filterControllerDidComplete:(id)arg0 ;
+-(void)performUserInteractionTask;
+-(void)presentationControllerDidDismiss:(id)arg0 ;
+
+
+@end
+
+
+#endif

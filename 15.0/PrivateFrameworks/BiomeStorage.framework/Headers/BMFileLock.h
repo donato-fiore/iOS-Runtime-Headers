@@ -1,0 +1,24 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef BMFILELOCK_H
+#define BMFILELOCK_H
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface BMFileLock : NSObject
+
+
+
++(BOOL)acquireLockfile:(id)arg0 andRunBlock:(id)arg1 ;
+-(id)init;
+
+
+@end
+
+
+#endif

@@ -1,0 +1,25 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TVALERTACTIONCELL_H
+#define _TVALERTACTIONCELL_H
+
+@class UICollectionViewCell, UIView;
+
+
+
+@interface _TVAlertActionCell : UICollectionViewCell
+
+@property (retain, nonatomic) UIView *buttonView; // ivar: _buttonView
+
+
+-(id)preferredFocusEnvironments;
+-(void)prepareForReuse;
+
+
+@end
+
+
+#endif

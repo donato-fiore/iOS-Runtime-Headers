@@ -1,0 +1,30 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC12COREAUDIOKIT24AUMETERPARAMETERVIEWCELL_H
+#define _TTC12COREAUDIOKIT24AUMETERPARAMETERVIEWCELL_H
+
+@class TtC12CoreAudioKit30AUGenericViewTableViewCellBase, UILabel, NSLayoutConstraint, UIColor;
+
+
+#import "_TtC12CoreAudioKit11AUMeterView.h"
+
+@interface _TtC12CoreAudioKit24AUMeterParameterViewCell : TtC12CoreAudioKit30AUGenericViewTableViewCellBase
+
+@property (nonatomic, weak) UILabel *maxLabel; // ivar: maxLabel
+@property (nonatomic, weak) _TtC12CoreAudioKit11AUMeterView *meter; // ivar: meter
+@property (nonatomic, weak) UILabel *minLabel; // ivar: minLabel
+@property (nonatomic, weak) NSLayoutConstraint *minWidthConstraint; // ivar: minWidthConstraint
+@property (nonatomic, retain) UIColor *tintColor;
+@property (nonatomic, weak) UILabel *unitLabel; // ivar: unitLabel
+
+
+-(id)initWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

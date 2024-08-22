@@ -1,0 +1,27 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CVAPHOTOEXCEPTIONBASE_H
+#define CVAPHOTOEXCEPTIONBASE_H
+
+@class NSException;
+
+
+
+@interface CVAPhotoExceptionBase : NSException
+
+
+
+-(id)error;
+-(id)getReasonStr;
+-(id)initWithName:(id)arg0 reason:(id)arg1 userInfo:(id)arg2 ;
+-(int)getErrorCode;
+-(void)log;
+
+
+@end
+
+
+#endif

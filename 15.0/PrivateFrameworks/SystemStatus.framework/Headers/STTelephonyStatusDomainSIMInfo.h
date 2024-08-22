@@ -1,0 +1,59 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef STTELEPHONYSTATUSDOMAINSIMINFO_H
+#define STTELEPHONYSTATUSDOMAINSIMINFO_H
+
+@class NSString;
+@protocol STStatusDomainDataDifferencing, NSSecureCoding, STStatusDomainData;
+
+#import <Foundation/Foundation.h>
+
+
+@interface STTelephonyStatusDomainSIMInfo : NSObject <STStatusDomainDataDifferencing, NSSecureCoding, STStatusDomainData>
+
+
+
+@property (readonly, nonatomic, getter=isSIMPresent) BOOL SIMPresent; // ivar: _SIMPresent
+@property (readonly, nonatomic, getter=isCallForwardingEnabled) BOOL callForwardingEnabled; // ivar: _callForwardingEnabled
+@property (readonly, nonatomic) NSUInteger cellularServiceState; // ivar: _cellularServiceState
+@property (readonly, nonatomic) NSUInteger dataNetworkType; // ivar: _dataNetworkType
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (readonly, copy, nonatomic) NSString *label; // ivar: _label
+@property (readonly, nonatomic) NSUInteger maxSignalStrengthBars; // ivar: _maxSignalStrengthBars
+@property (readonly, nonatomic, getter=isPreferredForDataConnections) BOOL preferredForDataConnections; // ivar: _preferredForDataConnections
+@property (readonly, nonatomic, getter=isProvidingDataConnection) BOOL providingDataConnection; // ivar: _providingDataConnection
+@property (readonly, nonatomic, getter=isRegisteredWithoutCellular) BOOL registeredWithoutCellular; // ivar: _registeredWithoutCellular
+@property (readonly, copy, nonatomic) NSString *secondaryServiceDescription; // ivar: _secondaryServiceDescription
+@property (readonly, copy, nonatomic) NSString *serviceDescription; // ivar: _serviceDescription
+@property (readonly, nonatomic) NSUInteger serviceState; // ivar: _serviceState
+@property (readonly, copy, nonatomic) NSString *shortLabel; // ivar: _shortLabel
+@property (readonly, nonatomic) NSUInteger signalStrengthBars; // ivar: _signalStrengthBars
+@property (readonly) Class superclass;
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)dataByApplyingDiff:(id)arg0 ;
+-(id)descriptionBuilderWithMultilinePrefix:(id)arg0 ;
+-(id)descriptionWithMultilinePrefix:(id)arg0 ;
+-(id)diffFromData:(id)arg0 ;
+-(id)init;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithSIMInfo:(id)arg0 ;
+-(id)initWithSIMPresent:(BOOL)arg0 label:(id)arg1 shortLabel:(id)arg2 signalStrengthBars:(NSUInteger)arg3 maxSignalStrengthBars:(NSUInteger)arg4 serviceState:(NSUInteger)arg5 cellularServiceState:(NSUInteger)arg6 serviceDescription:(id)arg7 secondaryServiceDescription:(id)arg8 dataNetworkType:(NSUInteger)arg9 providingDataConnection:(BOOL)arg10 preferredForDataConnections:(BOOL)arg11 registeredWithoutCellular:(BOOL)arg12 callForwardingEnabled:(BOOL)arg13 ;
+-(id)mutableCopyWithZone:(struct _NSZone *)arg0 ;
+-(id)succinctDescription;
+-(id)succinctDescriptionBuilder;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

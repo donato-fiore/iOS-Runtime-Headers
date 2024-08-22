@@ -1,0 +1,26 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTC14CORECHARTSWIFT15OPASSEMBLEGROUP_H
+#define _TTC14CORECHARTSWIFT15OPASSEMBLEGROUP_H
+
+@class TtC14CoreChartSwift8Operator;
+
+
+
+@interface _TtC14CoreChartSwift15OpAssembleGroup : TtC14CoreChartSwift8Operator {
+    ? marks;
+    ? output;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

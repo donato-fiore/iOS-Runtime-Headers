@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef NSUNITCONVERTERRECIPROCAL_H
+#define NSUNITCONVERTERRECIPROCAL_H
+
+@protocol NSSecureCoding;
+
+
+#import "NSUnitConverter.h"
+
+@interface NSUnitConverterReciprocal : NSUnitConverter <NSSecureCoding>
+
+
+
+@property (readonly) CGFloat reciprocalValue; // ivar: _reciprocalValue
+
+
++(BOOL)supportsSecureCoding;
+-(BOOL)isEqual:(id)arg0 ;
+-(CGFloat)baseUnitValueFromValue:(CGFloat)arg0 ;
+-(CGFloat)valueFromBaseUnitValue:(CGFloat)arg0 ;
+-(id)copyWithZone:(struct _NSZone *)arg0 ;
+-(id)description;
+-(id)initWithCoder:(id)arg0 ;
+-(id)initWithReciprocalValue:(CGFloat)arg0 ;
+-(void)encodeWithCoder:(id)arg0 ;
+
+
+@end
+
+
+#endif

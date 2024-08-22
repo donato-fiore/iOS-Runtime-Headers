@@ -1,0 +1,29 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef _TTCV8CREATEML15MLSTYLETRANSFER23TRAININGSESSIONDELEGATE_H
+#define _TTCV8CREATEML15MLSTYLETRANSFER23TRAININGSESSIONDELEGATE_H
+
+@class SwiftObject;
+
+
+
+@interface _TtCV8CreateML15MLStyleTransfer23TrainingSessionDelegate : SwiftObject {
+    ? modelName;
+    ? sessionParameters;
+    ? trainingParameters;
+    ? model;
+    ? args;
+}
+
+
+
+
+
+
+@end
+
+
+#endif

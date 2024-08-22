@@ -1,0 +1,35 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef CIVIGNETTEEFFECT_H
+#define CIVIGNETTEEFFECT_H
+
+@class NSNumber;
+
+
+#import "CIFilter.h"
+#import "CIVector.h"
+#import "CIImage.h"
+
+@interface CIVignetteEffect : CIFilter
+
+@property (retain, nonatomic) CIVector *inputCenter; // ivar: inputCenter
+@property (retain, nonatomic) NSNumber *inputFalloff; // ivar: inputFalloff
+@property (retain, nonatomic) CIImage *inputImage; // ivar: inputImage
+@property (retain, nonatomic) NSNumber *inputIntensity; // ivar: inputIntensity
+@property (retain, nonatomic) NSNumber *inputRadius; // ivar: inputRadius
+
+
++(id)customAttributes;
+-(BOOL)_isIdentity;
+-(id)_negkernel;
+-(id)_poskernel;
+-(id)outputImage;
+
+
+@end
+
+
+#endif

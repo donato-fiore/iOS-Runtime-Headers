@@ -1,0 +1,41 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef SHDATACOMPRESSION_H
+#define SHDATACOMPRESSION_H
+
+@class NSString;
+@protocol SHDataStream;
+
+#import <Foundation/Foundation.h>
+
+
+@interface SHDataCompression : NSObject <SHDataStream>
+
+
+
+@property (nonatomic) int algorithm; // ivar: _algorithm
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSUInteger hash;
+@property (retain, nonatomic) NSObject<SHDataStream> *next; // ivar: _next
+@property (nonatomic) int operation; // ivar: _operation
+@property (readonly, nonatomic) ? stream; // ivar: _stream
+@property (readonly) Class superclass;
+
+
+-(BOOL)closeWithError:(*id)arg0 ;
+-(BOOL)performOperation:(int)arg0 withData:(id)arg1 algorithm:(int)arg2 flags:(int)arg3 error:(*id)arg4 ;
+-(BOOL)processData:(id)arg0 error:(*id)arg1 ;
+-(BOOL)processFileAtURL:(id)arg0 error:(*id)arg1 ;
+-(BOOL)setup;
+-(id)initWithOperation:(int)arg0 ;
+-(id)initWithOperation:(int)arg0 algorithm:(int)arg1 ;
+
+
+@end
+
+
+#endif

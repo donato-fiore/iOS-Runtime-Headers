@@ -1,0 +1,28 @@
+// Headers generated with ktool v2.0.0
+// https://github.com/cxnder/ktool | pip3 install k2l
+// Platform: IOS | Minimum OS: 15.0.0 | SDK: 15.0.0
+
+
+#ifndef TLKROUNDEDCORNERLABELS_H
+#define TLKROUNDEDCORNERLABELS_H
+
+@class NSMutableArray;
+
+
+#import "TLKStackView.h"
+
+@interface TLKRoundedCornerLabels : TLKStackView
+
+@property (nonatomic) NSUInteger prominence; // ivar: _prominence
+@property (retain, nonatomic) NSMutableArray *roundedLabels; // ivar: _roundedLabels
+@property (nonatomic) NSUInteger sizeConfiguration; // ivar: _sizeConfiguration
+
+
+-(id)init;
+-(void)updateRoundedText:(id)arg0 ;
+
+
+@end
+
+
+#endif
